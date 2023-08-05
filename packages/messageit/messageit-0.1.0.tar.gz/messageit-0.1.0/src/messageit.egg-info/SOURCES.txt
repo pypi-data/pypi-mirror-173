@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/messageit/__init__.py
+src/messageit/_message.py
+src/messageit.egg-info/PKG-INFO
+src/messageit.egg-info/SOURCES.txt
+src/messageit.egg-info/dependency_links.txt
+src/messageit.egg-info/not-zip-safe
+src/messageit.egg-info/top_level.txt
