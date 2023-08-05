@@ -1,0 +1,16 @@
+LICENCE.txt
+README.md
+setup.py
+shapmat/PCA.py
+shapmat/PCA_plot.py
+shapmat/__init__.py
+shapmat/abundance_filter.py
+shapmat/clustering.py
+shapmat/clustering_plot.py
+shapmat/explainer.py
+shapmat/shap_plot.py
+shapmat.egg-info/PKG-INFO
+shapmat.egg-info/SOURCES.txt
+shapmat.egg-info/dependency_links.txt
+shapmat.egg-info/requires.txt
+shapmat.egg-info/top_level.txt
