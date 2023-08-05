@@ -1,0 +1,72 @@
+## Action logger client
+
+Action-logger is a simple, yet elegant, behavior tracking library.
+
+
+#### Installation
+
+ActionLogger can be installed with pip:
+```shell
+$ pip install action_logger
+```
+
+#### Dependencies
+
+ActionLogger supports CPython 3.6+, PyPy, and PyPy3.6+.
+
+You can install all dependencies automatically with the following command:
+
+```shell
+$ pip install action_logger[aiohttp, flask, python-dotenv, requests]
+```
+
+
+#### Examples
+
+Register a new service from the action server and obtain information such as `SERIVCE_ID`, `TOKEN`, etc. Then configure the new service information in the action client.
+
+Use `@action_client.action_post` decorator on functions that need to record actions.
+
+Here’s a basic example (for more see the examples section of the docs):
+
+```python
+from action_logger.client import ActionClient
+
+
+action_client = ActionClient(token=TOKEN, service_id=SERIVCE_ID, api_action_post_address=SERVER_HOST)
+
+
+@action_client.action_post
+def func(*args, **kwargs):
+    """
+    Need to record behavior func
+    """
+    pass
+```
+
+
+#### Records details about the client
+- service_id  
+- event_start_time
+- event_end_time
+- use_time
+- event_detail   
+	- user_ip  
+	- user_port
+	- user_UA
+	- user_hostname  
+	- user_email  
+	- func_name  
+	- func_parameters   
+	- func_source_code    
+	- func_module_name   
+	- func_doc    
+- is_deleted 
+- create_time
+- update_time
+- token
+- etc.
+
+#### Note
+
+The default maximum upload time limit for each action is 0.5s.
