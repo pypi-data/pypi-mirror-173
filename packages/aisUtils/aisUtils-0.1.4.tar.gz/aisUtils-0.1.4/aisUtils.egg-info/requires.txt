@@ -1,0 +1,5 @@
+retrying
+requests
+pandas
+numpy
+libais
