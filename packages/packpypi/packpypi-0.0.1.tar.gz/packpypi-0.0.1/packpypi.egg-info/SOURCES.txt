@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+packpypi/__init__.py
+packpypi/armazenamento.py
+packpypi/consulta.py
+packpypi/interacao.py
+packpypi.egg-info/PKG-INFO
+packpypi.egg-info/SOURCES.txt
+packpypi.egg-info/dependency_links.txt
+packpypi.egg-info/top_level.txt
