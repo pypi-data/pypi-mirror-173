@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: fakesmtpd
+Version: 2022.10.1
+Summary: SMTP server for testing mail functionality
+Home-page: https://github.com/srittau/fakesmtpd
+License: MIT
+Author: Sebastian Rittau
+Author-email: srittau@rittau.biz
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Communications :: Email :: Mail Transport Agents
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: typing-extensions (>=4.0.1,<5.0.0)
+Project-URL: Bug Tracker, https://github.com/srittau/fakesmtpd/issues
+Project-URL: Changes, https://github.com/srittau/fakesmtpd/blob/main/CHANGELOG.md
+Project-URL: GitHub, https://github.com/srittau/fakesmtpd
+Description-Content-Type: text/markdown
+
+# FakeSMTPd
+
+[![License](https://img.shields.io/pypi/l/FakeSMTPd.svg)](https://pypi.python.org/pypi/FakeSMTPd/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fakesmtpd)
+[![GitHub Release](https://img.shields.io/github/release/srittau/fakesmtpd/all.svg)](https://github.com/srittau/FakeSMTPd/releases/)
+[![pypi Release](https://img.shields.io/pypi/v/FakeSMTPd.svg)](https://pypi.python.org/pypi/FakeSMTPd/)
+[![Build Status](https://travis-ci.org/srittau/FakeSMTPd.svg?branch=master)](https://travis-ci.org/srittau/FakeSMTPd)
+
+FakeSMTPd is an SMTP server for testing mail functionality. Any mail sent via
+this server will be saved, but will not be forwarded any further.
+
+Mail is printed to stdout by default in default mbox format, as defined in
+[RFC 4155](https://www.ietf.org/rfc/rfc4155.txt). The SMTP mail receivers
+are added in X-FakeSMTPd-Receiver headers.
+
+Usage
+-----
+
+`fakesmtpd [OPTIONS]`
+
+Supported options:
+
+  * `-o`, `--output-filename [FILENAME]` mbox file for output, default: stdout
+  * `-b`, `--bind [ADDRESS]` IP addresses to listen on, default: 127.0.0.1
+  * `-p`, `--port [PORT]` SMTP port to listen on
+
+Docker image [available](https://hub.docker.com/r/srittau/fakesmtpd/).
+
