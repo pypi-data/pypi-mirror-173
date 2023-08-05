@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: anas
+Version: 0.0.0.1
+Summary: Approximate Neural Architecture Search
+Home-page: https://github.com/ai-nikolai/anas
+Author: Nikolai Rozanov
+Author-email: nikolai.rozanov@gmail.com
+License: GPL 2.0
+
