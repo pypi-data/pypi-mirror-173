@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+srtgen/__init__.py
+srtgen/__main__.py
+srtgen/transcribe.py
+srtgen.egg-info/PKG-INFO
+srtgen.egg-info/SOURCES.txt
+srtgen.egg-info/dependency_links.txt
+srtgen.egg-info/entry_points.txt
+srtgen.egg-info/requires.txt
+srtgen.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: srtgen
+Version: 0.1
+Summary: TODO
+Home-page: https://github.com/ltworf/srtgen
+Author: Salvo 'LtWorf' Tomaselli
+Author-email: tiposchi@tiscali.it
+Maintainer: Salvo 'LtWorf' Tomaselli
+Maintainer-email: tiposchi@tiscali.it
+License: AGPL3
+Keywords: TODO
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Religion
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+License-File: LICENSE
