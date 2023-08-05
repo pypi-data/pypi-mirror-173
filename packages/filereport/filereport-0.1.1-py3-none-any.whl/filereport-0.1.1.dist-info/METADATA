@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: filereport
+Version: 0.1.1
+Summary: HTML generator
+Home-page: https://github.com/GaetanDesrues/filereport
+Author: Gaetan Desrues
+Author-email: gdesrues@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: treefiles
+Requires-Dist: markdown
+Requires-Dist: htmlmin
+Requires-Dist: plotly
+Requires-Dist: jinja2
+
+# filereport
+
+filereport is a modulable html generator:
+
+![](filereport/src/i1.png)
+![](filereport/src/i2.png)
+![](filereport/src/i3.png)
+![](filereport/src/i4.png)
+
+
+
+## Install
+```bash
+pip install TreeFiles -i https://treefiles_token:Tpo5W1YfhPiyhEkFj9D7@gitlab.inria.fr/api/v4/projects/41049/packages/pypi/simple
+```
+
+
+```bash
+pip install filereport
+git clone git@github.com:GaetanDesrues/filereport.git && pip install -e filereport
+pip install git+ssh://git@github.com/GaetanDesrues/filereport.git
+```
+
+
+## Examples
+
+```bash
+pip install lorem pandas
+python examples/example.py
+```
+
+
+
+## Tests
+
+```bash
+pip install lorem pandas
+python -m unittest tests/test_gen.py
+```
+
+
+## Deploy
+```bash
+python setup.py bdist_wheel
+python -m twine upload dist/*
+```
+
