@@ -1,0 +1,8 @@
+trnsim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trnsim/base.py,sha256=tNuteb961YNsx3XPsLNvYs9egZf-08ARDBuQorFODvM,12982
+trnsim/strategy.py,sha256=v4UfNwhtjxIcuvYYPgaHSRgoW81FWYA73lr0SemRjQA,3678
+trading_simulator-1.0.0.dist-info/LICENSE,sha256=JcRpKt_lX-jkCW5Gke6NrRcPeehtMqcVzDsv92__xgk,1087
+trading_simulator-1.0.0.dist-info/METADATA,sha256=AcPFMFPmpUdyAqKwdo7eZvyH_eRoj1T9Act5LLueBSI,1019
+trading_simulator-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+trading_simulator-1.0.0.dist-info/top_level.txt,sha256=qNNNcITxD6l9zevFPTY8-HKYF-8cnuUFPrThBVBGbO4,7
+trading_simulator-1.0.0.dist-info/RECORD,,
