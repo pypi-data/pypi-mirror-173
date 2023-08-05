@@ -1,0 +1,9 @@
+dratio/__init__.py,sha256=PrNu78gYlpc1Rl8YKffsjnPP9AWFi5oAHjd-6CMP1UA,864
+dratio/base.py,sha256=PPyzGujRY2i8sbbSUAieJkydarPotkXqw1nxSZby3YQ,12152
+dratio/client.py,sha256=YeZt7Erp6j09YqSheYsn_9JBzWnqvSCbl0Y7ONwEk6c,6058
+dratio/exceptions.py,sha256=Nwve-6IGRiS5LsH35zTqq-LdEVfBZNaA8BdTF8YxTRI,1175
+dratio-0.0.7.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+dratio-0.0.7.dist-info/METADATA,sha256=jNYwwrjkr65zgloZAtMhiVsgdKVQANbP8PttPi-y4iU,4769
+dratio-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dratio-0.0.7.dist-info/top_level.txt,sha256=vF8V9fS6-RAb9Ju3dhEDgAVKbHNTaiANAEIWAnSC1Mg,7
+dratio-0.0.7.dist-info/RECORD,,
