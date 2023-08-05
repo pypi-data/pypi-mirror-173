@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "bcsim"
+version = "1.0.6"
+description = "Rolling Ball Clock Simulator"
+authors = ["Peter Nardi <pete@nardi.com>"]
+maintainers = ["Peter Nardi <pete@nardi.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "bcsim", from = "src"}]
+keywords = [
+	"bcsim",
+	"rolling",
+	"ball",
+	"clock",
+	"simulator"
+]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Education",
+	"Intended Audience :: End Users/Desktop",
+	"License :: OSI Approved :: MIT License",
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+	"Topic :: Education",
+	"Topic :: Games/Entertainment :: Simulation",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11"
+]
+
+[tool.poetry.urls]
+"Source Code" = "https://github.com/geozeke/bcsim"
+"Bug Tracker" = "https://github.com/geozeke/bcsim/issues"
+"Documentation" = "https://geozeke.github.io/bcsim"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+flake8-docstrings = "^1.6.0"
+pdoc3 = "^0.10.0"
+mypy = "^0.982"
+autopep8 = "^1.7.0"
+
+[tool.poetry.scripts]
+bcsim = "bcsim.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
