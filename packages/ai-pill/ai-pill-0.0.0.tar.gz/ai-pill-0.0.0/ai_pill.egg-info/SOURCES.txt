@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+setup.py
+ai_pill.egg-info/PKG-INFO
+ai_pill.egg-info/SOURCES.txt
+ai_pill.egg-info/dependency_links.txt
+ai_pill.egg-info/top_level.txt
+aipill/__init__.py
+aipill/aipill.py
