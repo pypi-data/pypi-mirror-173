@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: lucasex1
+Version: 0.0.1
+Summary: Pacote python para exibir número de 1 a 9
+Home-page: https://github.com
+Author: Lucas Tavares de Jesus Borges
+Author-email: lucas21070029@aluno.cesupa.br
+License: MIT License
+Keywords: Pacote
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# lucasex1
+
+**lucasex1** Ã© um simples pacote para exibir nÃºmeros de 1 a 9 em Python.
+
+## DependÃªncias
+**Python 3.6** ou posterior
+
+Pacote **numpy**
+
+
+## ComeÃ§ando o uso
+VocÃª vai precisar instalar o pacote **lucasex1**, para isso basta executar:
+```
+pip install lucasex1
+```
+
+## FunÃ§Ã£o
+
+* `exibir ()` - Mostra nÃºmeros de 1 a 9
