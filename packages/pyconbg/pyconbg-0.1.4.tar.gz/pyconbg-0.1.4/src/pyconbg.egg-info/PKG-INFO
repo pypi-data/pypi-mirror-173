@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pyconbg
+Version: 0.1.4
+Summary: Generate an icon pattern background
+Home-page: https://github.com/Fraccs/pyconbg
+Author: Francesco Cristiano Aliprandi
+Author-email: aliprandifrancescopp@gmail.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pyconbg
+Generate an icon pattern background.
