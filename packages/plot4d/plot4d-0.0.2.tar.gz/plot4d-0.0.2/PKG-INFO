@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: plot4d
+Version: 0.0.2
+Summary: A simple package that helps plot arbitrary 4d functions. 
+Project-URL: Homepage, https://github.com/yubinhu/plot4d
+Project-URL: Bug Tracker, https://github.com/yubinhu/plot4d/issues
+Author-email: Harvey Hu <harvey_hu@berkeley.edu>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: dataclasses
+Requires-Dist: imageio
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+# Plot 4D package
+
+This is a simple package for plotting arbitrary 4d functions.
