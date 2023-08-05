@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: amr-logic-converter
+Version: 0.2.2
+Summary: Convert Abstract Meaning Representation (AMR) into first-order logic
+Author: David Chanin
+Author-email: chanindav@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: Penman (>=1.2.2,<2.0.0)
+Requires-Dist: typing-extensions (>=3.7.4)
