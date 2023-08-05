@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: image-processing-mmc
+Version: 0.0.4
+Summary: Image Processing Package using Skimage
+Home-page: https://github.com/monicacaetano/image_processing_dio_unimed.git
+Author: monicacaetano
+Author-email: monica02caetano@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# image_processing_mmc
+
+Description. 
+The package image_processing_dio is used to: 
+	Processing:
+		- Histogram matching
+		- Structural similarity
+		- Resized image
+    Utils:
+       - Read image
+       - Save image
+       - Plot image
+       - Plot result
+       - Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_processing_dio
+
+```bash
+pip install image_processing_mmc
+```
+
+## Author
+
+monicacaetano
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
