@@ -1,0 +1,28 @@
+
+Register to
+https://pypi.python.org/pypi?%3Aaction=register_form
+pip install twine
+
+#prepare package
+
+rm -R dist
+
+python setup.py sdist
+python setup.py bdist_wheel
+twine.exe check .\dist\
+#upload
+twine upload dist/*
+
+#Checker la distribution
+twine check .\dist\
+
+
+
+rm -R dist
+
+python setup.py sdist
+python setup.py bdist_wheel
+twine check .\dist\agmodeling-0.10-py3-none-any.whl
+
+
+twine check .\dist\
