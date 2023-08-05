@@ -1,0 +1,1 @@
+from src.attendance_tracker_email.main import show_attended
