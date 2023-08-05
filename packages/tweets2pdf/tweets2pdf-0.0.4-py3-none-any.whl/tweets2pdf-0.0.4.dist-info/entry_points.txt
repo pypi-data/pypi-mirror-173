@@ -1,0 +1,2 @@
+[console_scripts]
+tweets2pdf = tweets2pdf.__main__:main
