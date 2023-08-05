@@ -1,0 +1,13 @@
+gradescope_mean/__init__.py,sha256=tqgYU9GssT0IM1Jdt_BuiZ_e_gLI5_NfEGh_XR2cD6E,47
+gradescope_mean/__main__.py,sha256=skba2tWSBuJSK7Q_Ura4_qO0mV4Ucw80LIhpD1gF6TA,2195
+gradescope_mean/assign_list.py,sha256=h2VKjUj0amXnCj1XOgWNMZxUoMvU3xJg3Zra3WifkUY,1419
+gradescope_mean/config.py,sha256=-Cco4w5jRr09QJQ2j5rZ2LPmOFbRLj9h5B6e4FDaRCs,3918
+gradescope_mean/config.yaml,sha256=BdaVT68oNwjOVjBEqHA7YgF0-V8Q9coid79dwLe0olM,174
+gradescope_mean/get_mean_drop_low.py,sha256=W8JYb13mBxFkZatNduz3kgF2Xo3x8Cm5fMmZUO6arh4,1431
+gradescope_mean/gradebook.py,sha256=Xt-9CB2o96ASY00DZ86BF__mRyuS5zGFQbHMnCc52Rc,14760
+gradescope_mean/perc_to_letter.py,sha256=dmf9NUlcBFU2htTqeTNTatsPKMShmqipSsc3XRHIwUA,1198
+gradescope_mean-0.0.1.dist-info/LICENSE,sha256=T1d5Y-9zDM7ta0YBqvZ-uBNYvjH13Jyi_D-lkR0SAv0,1068
+gradescope_mean-0.0.1.dist-info/METADATA,sha256=sGWsddeu_mJWb6JYsQTSJKscs58fxthlPNzjX5QMM0g,370
+gradescope_mean-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gradescope_mean-0.0.1.dist-info/top_level.txt,sha256=engaQsOru04vFv-gnvCgfQ2HXaAnqKjnslaiCfIArSA,16
+gradescope_mean-0.0.1.dist-info/RECORD,,
