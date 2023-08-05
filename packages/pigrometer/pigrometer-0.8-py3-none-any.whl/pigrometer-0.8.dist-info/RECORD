@@ -1,0 +1,8 @@
+pigrometer/__init__.py,sha256=dKAJ46OlnbFzNQep6Ih9VcC7CXrAyubaQtMZz2JItNg,91
+pigrometer/__main__.py,sha256=UF3NAOzzVWwg3RFdQwupIaYILqgR4OUaJwvtp91WjNc,1792
+pigrometer/reader.py,sha256=SlvLRW9FecaYMCmYwYpyLnLjxn9ojoQIpMHkgK5e-SA,3175
+pigrometer/server.py,sha256=LRihVoWtxL_qFzJgTZxHPJHJSgEyscK5SQ0lzqS17pM,1384
+pigrometer/templates/chart.html,sha256=97184-EIDaevrQ7LrL6YRgla_Vuv_iHiWGZHJMismHk,3206
+pigrometer-0.8.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pigrometer-0.8.dist-info/METADATA,sha256=Sclaw-SpOhfVg_nQaH4oXZ_McbC6CvRfdB2sLvAJ1MM,2408
+pigrometer-0.8.dist-info/RECORD,,
