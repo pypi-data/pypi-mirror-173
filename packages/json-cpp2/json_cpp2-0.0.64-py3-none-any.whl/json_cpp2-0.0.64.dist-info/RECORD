@@ -1,0 +1,10 @@
+json_cpp2/__init__.py,sha256=saH8q2D8D0RB_FnzroWecQ2zfx51R_Ke8ovB-NU7LWA,4908
+json_cpp2/core.cpython-310-x86_64-linux-gnu.so,sha256=baYIejmunKDWX1pM-Tzk5elbjwefukezojfBgx4bSuQ,257752
+json_cpp2/libc.so.6,sha256=VodAsGqK-ibbSHT4z2GYXsvG3RJ_QilBb-ldqPnsE_s,2216304
+json_cpp2/libgcc_s.so.1,sha256=1-gMyP8FD2lC0_QsNCm2__sxFcVIevR4Sc8cay0d62Q,125488
+json_cpp2/libm.so.6,sha256=17CqpI_4IpKSS90_ad7eEyMSZIVES3qztkTvQ_Ecb68,940560
+json_cpp2/libstdc++.so.6,sha256=lpBRAxvd65soHQQZHjWQE4gltkRr9dVY5c2u0hGiDaw,2252096
+json_cpp2-0.0.64.dist-info/METADATA,sha256=aExXh0-dh1FahQhwsaYM_b_9jXoOU9_Z0c4GWH5GLpo,208
+json_cpp2-0.0.64.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+json_cpp2-0.0.64.dist-info/top_level.txt,sha256=Bq1_fXFVKtlXdYrnNY542NwzX6NMsaNtjvlVFyNxf-c,10
+json_cpp2-0.0.64.dist-info/RECORD,,
