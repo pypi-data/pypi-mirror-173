@@ -1,0 +1,10 @@
+jacobi/__init__.py,sha256=fkLh7-sjBaWoNdz8bqVKQYRdgrpEY7-IDLVmmbBMzsw,239
+jacobi/_jacobi.py,sha256=eqRKrFrG32QMjbpZHmGVfOnAmDdRzURLFxawJkLC6Ik,8345
+jacobi/_propagate.py,sha256=-UtKSK37z-yr_Y_j0KDVkxtApYu20GHVEmRBulc26BA,7672
+jacobi/_typing.py,sha256=BThxc7o9qG3DGmngn29D14oFTdaHaOPUdKgMsBXhxWg,266
+jacobi/_version.py,sha256=__jehE2N3yEZ0MBrM7RPcBaKT7VwxdDERJIORr2pzso,176
+jacobi-0.5.0.dist-info/LICENSE,sha256=Ll-E1tmcE5X3hMo-ER7imLKyGCC-Jr-Xv9HNuV8twUM,1054
+jacobi-0.5.0.dist-info/METADATA,sha256=Ls6P-TdpqkT3LBEWw7rBmOBZ-M_u9hVNk5oeGenGz1I,5049
+jacobi-0.5.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jacobi-0.5.0.dist-info/top_level.txt,sha256=16vNbKE06T5BvFpHaGLiEg628JZejWtnRjBq0mgI_9U,7
+jacobi-0.5.0.dist-info/RECORD,,
