@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mda-xdrlib
+Version: 0.0.1a1
+Summary: Stand-alone XDRLIB module (from cpython 3.10.8)
+Home-page: https://github.com/MDAnalysis/mda-xdrlib
+Author: MDAnalysis development team
+Author-email: mdanalysis@numfocus.org
+License: PSF License Version 2
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Archiving
+Classifier: License :: OSI Approved :: Python Software Foundation License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
