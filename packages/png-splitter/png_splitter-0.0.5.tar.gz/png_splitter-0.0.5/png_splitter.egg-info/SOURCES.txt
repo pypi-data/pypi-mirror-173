@@ -1,0 +1,9 @@
+README.md
+setup.py
+png_splitter/__init__.py
+png_splitter/splitter.py
+png_splitter.egg-info/PKG-INFO
+png_splitter.egg-info/SOURCES.txt
+png_splitter.egg-info/dependency_links.txt
+png_splitter.egg-info/requires.txt
+png_splitter.egg-info/top_level.txt
