@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+lucasex1/__init__.py
+lucasex1/armazenamento.py
+lucasex1/consulta.py
+lucasex1/interação.py
+lucasex1.egg-info/PKG-INFO
+lucasex1.egg-info/SOURCES.txt
+lucasex1.egg-info/dependency_links.txt
+lucasex1.egg-info/top_level.txt
