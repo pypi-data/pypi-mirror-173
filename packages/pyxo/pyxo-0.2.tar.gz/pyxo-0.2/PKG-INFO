@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyxo
+Version: 0.2
+Summary: A package that can help create an XO game easly
+Home-page: https://github.com/ouhammmourachid/X_O_game.git
+Author: Rachid Ouhammou
+Author-email: rachidouhammou21@gmail.com
+License: UNKNOWN
+Keywords: development,XOgame,Game
+Platform: UNKNOWN
+Requires-Python: >=3.7, <4
+License-File: LICENSE
+
+A much longer explanation of the project and helpful resources
+

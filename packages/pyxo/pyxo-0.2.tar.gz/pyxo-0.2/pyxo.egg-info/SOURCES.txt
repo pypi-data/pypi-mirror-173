@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pyxo.egg-info/PKG-INFO
+pyxo.egg-info/SOURCES.txt
+pyxo.egg-info/dependency_links.txt
+pyxo.egg-info/top_level.txt
