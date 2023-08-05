@@ -1,0 +1,41 @@
+# EXCEL_COLUMN_TO_DECIMAL_CONVERTER
+
+**Excel Column to Decimal Converter** is a library which can simply convert Excel columns to decimals.
+
+## Executable File
+
+[excel_column_to_decimal_converter](https://github.com/GlobalCreativeApkDev/GlobalCreativeApkDev.github.io/blob/main/programming-libraries/EXCEL_COLUMN_TO_DECIMAL_CONVERTER/EXCEL_COLUMN_TO_DECIMAL_CONVERTER/dist/excel_column_to_decimal_converter/excel_column_to_decimal_converter)
+
+## Source Code
+
+[excel_column_to_decimal_converter.py](https://github.com/GlobalCreativeApkDev/GlobalCreativeApkDev.github.io/blob/main/programming-libraries/EXCEL_COLUMN_TO_DECIMAL_CONVERTER/EXCEL_COLUMN_TO_DECIMAL_CONVERTER/excel_column_to_decimal_converter.py)
+
+## Installation
+
+**pip install EXCEL_COLUMN_TO_DECIMAL_CONVERTER**
+
+## How to Use the Executable File?
+
+First, open by double-clicking the file "excel_column_to_decimal_converter". How the executable file looks 
+like is shown in the image below (the file is enclosed with a red rectangle).
+
+### Image 1
+
+![Executable File](images/Executable%20File.png)
+
+## Getting Started
+
+After you run the application, you will be asked whether you want to continue using the application or not. If you 
+enter 'Y', you will be redirected to the converter. Else, you will exit the application.
+
+### Image 2
+
+![Getting Started](images/Getting%20Started.png)
+
+## Converter
+
+In this window, you will be asked to enter the Excel column to be converted to decimal.
+
+### Image 3
+
+![Converter](images/Converter.png)

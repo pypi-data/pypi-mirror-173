@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+EXCEL_COLUMN_TO_DECIMAL_CONVERTER/excel_column_to_decimal_converter.py
+EXCEL_COLUMN_TO_DECIMAL_CONVERTER.egg-info/PKG-INFO
+EXCEL_COLUMN_TO_DECIMAL_CONVERTER.egg-info/SOURCES.txt
+EXCEL_COLUMN_TO_DECIMAL_CONVERTER.egg-info/dependency_links.txt
+EXCEL_COLUMN_TO_DECIMAL_CONVERTER.egg-info/entry_points.txt
+EXCEL_COLUMN_TO_DECIMAL_CONVERTER.egg-info/top_level.txt
