@@ -1,0 +1,22 @@
+-e .
+
+# Linter & Formatter
+isort
+flake8
+black
+mypy
+pyproject-flake8
+pre-commit
+
+# Tests
+coverage[toml]
+pytest
+pytest-sugar
+dirty-equals
+fastapi
+
+# Build
+hatch
+
+# Docs
+mkdocs-material
