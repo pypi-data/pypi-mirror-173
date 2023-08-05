@@ -1,0 +1,13 @@
+json_cpp2/__init__.py,sha256=1xIODGY9Ea0zl_DSascqqJaEbwiyHfdQ_RDXimikB0g,38
+json_cpp2/core.cpython-310-x86_64-linux-gnu.so,sha256=d1ulsVrPdJklY3bhlsW1Ud0yxk83rJQu3sigjlGEOOo,274168
+json_cpp2/core.cpython-37m-x86_64-linux-gnu.so,sha256=evhejDZTGBjZSW-LltQgmASkZqzrrfJOoc6e66YV1xY,294616
+json_cpp2/core.cpython-38-x86_64-linux-gnu.so,sha256=kDMhkq_Tkda8sPIOM8NbEk7M3CWvU-VGjE8yh0XcPdQ,274136
+json_cpp2/core.cpython-39-x86_64-linux-gnu.so,sha256=AZmiWr10lqNbYETq4_Em4Qdn3kyUIZbk5yPhrGV4SU4,274136
+json_cpp2/libc.so.6,sha256=VodAsGqK-ibbSHT4z2GYXsvG3RJ_QilBb-ldqPnsE_s,2216304
+json_cpp2/libgcc_s.so.1,sha256=1-gMyP8FD2lC0_QsNCm2__sxFcVIevR4Sc8cay0d62Q,125488
+json_cpp2/libm.so.6,sha256=17CqpI_4IpKSS90_ad7eEyMSZIVES3qztkTvQ_Ecb68,940560
+json_cpp2/libstdc++.so.6,sha256=lpBRAxvd65soHQQZHjWQE4gltkRr9dVY5c2u0hGiDaw,2252096
+json_cpp2-0.0.68.dist-info/METADATA,sha256=K2BzVEEJIRqbaiPOzUsDFubvo7XaC-rzhd9xbzDaVos,208
+json_cpp2-0.0.68.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+json_cpp2-0.0.68.dist-info/top_level.txt,sha256=Bq1_fXFVKtlXdYrnNY542NwzX6NMsaNtjvlVFyNxf-c,10
+json_cpp2-0.0.68.dist-info/RECORD,,
