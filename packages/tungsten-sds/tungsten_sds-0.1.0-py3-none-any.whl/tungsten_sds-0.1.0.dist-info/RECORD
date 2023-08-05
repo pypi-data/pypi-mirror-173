@@ -1,0 +1,15 @@
+tungsten/__init__.py,sha256=Yr176xiOSUGcb9ln75fmnTsI65zGCG0SaDh1-i4sXmw,247
+tungsten/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tungsten/parsers/globally_harmonized_system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tungsten/parsers/globally_harmonized_system/safety_data_sheet.py,sha256=bjkHI6SzBCwfywT0PJMd6l0OovlzpNSM3gd7mlKa0IA,15033
+tungsten/parsers/globally_harmonized_system/safety_data_sheet_rules.py,sha256=ar7axsHDw0MJiD7fZDZrX5E5Uem4oM7a-_CHnKHvbug,2566
+tungsten/parsers/parsing_hierarchy.py,sha256=gR5eHlt9F3HLYF0JEfUb2WAg0WyZvY5J1x_lkAD81po,2298
+tungsten/parsers/sds_parser.py,sha256=DGoiIZBnX-drf1oRDCOGxCjDiMbw5peZMahoLRGN4FU,361
+tungsten/parsers/supplier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tungsten/parsers/supplier/sigma_aldrich/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tungsten/parsers/supplier/sigma_aldrich/safety_data_sheet_rules.py,sha256=j04ouv9BoSqv5OT0xEVBrjjJvKDvsVNOii0TxCsqHLo,14681
+tungsten/parsers/supplier/sigma_aldrich/sds_parser.py,sha256=TTKx0DoWnQemABDSWHWUHUufuDnTO1Y1W6x_WT3csDU,8851
+tungsten_sds-0.1.0.dist-info/LICENSE,sha256=GrRzA-CUPdLBtmX_yARWHk-KZm7q2znLneqfFHHrNs4,1078
+tungsten_sds-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+tungsten_sds-0.1.0.dist-info/METADATA,sha256=ud6li2kEMuWCJQqQ8Ojr-qwYMeEHVkrWMd3CErVnD4E,1507
+tungsten_sds-0.1.0.dist-info/RECORD,,
