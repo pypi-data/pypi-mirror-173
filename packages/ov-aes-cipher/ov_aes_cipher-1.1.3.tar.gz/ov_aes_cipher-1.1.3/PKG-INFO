@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ov_aes_cipher
+Version: 1.1.3
+Summary: Ov AES Cipher
+Home-page: 
+Author: Dmitry Yakovlev
+Author-email: opensuse12@gmail.com
+Requires-Python: >=3.6
