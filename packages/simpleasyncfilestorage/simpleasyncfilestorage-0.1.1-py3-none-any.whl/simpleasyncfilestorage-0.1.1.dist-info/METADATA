@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simpleasyncfilestorage
+Version: 0.1.1
+Summary: 
+License: MPL-2.0
+Author: Mawoka
+Author-email: git@mawoka.eu
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiofiles (>=22.1.0,<23.0.0)
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Description-Content-Type: text/markdown
+
+# SimpleAsyncFileStorage
+Store files with a uniform API on either your hard-drive or in the deta-cloud.
