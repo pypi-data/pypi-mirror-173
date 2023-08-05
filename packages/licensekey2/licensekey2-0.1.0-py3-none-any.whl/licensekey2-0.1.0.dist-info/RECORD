@@ -1,0 +1,11 @@
+licensekey2/__init__.py,sha256=cWhcxiAaf6tVOojaj24tg5OWVFvvLAkkmc3k8HIJpOo,154
+licensekey2/exceptions.py,sha256=SauudmGGeDYXf6i7g92R7rNP7anMnjjxGL4kclTx9MY,373
+licensekey2/license/__init__.py,sha256=nl39Oc1-dUD4xFsR2KfPX8sP36gFcnG0T_7RpF2EQfE,171
+licensekey2/license/abstract.py,sha256=u9QvxBECJBXZ462UeTKi_DZ_DLuDvTrjYImitZURccw,2841
+licensekey2/license/crypto.py,sha256=biGaVEwF8S6rA5SL4hezKz7kmvcUjc6fjpVC5ZVjVEo,6735
+licensekey2/license/remote.py,sha256=xxDWBeMvBULLShmX_tYlgKG-MuHkXQXfmAC7lv65PF0,3100
+licensekey2/types.py,sha256=xCc4rhomC6GqEu1JV0AUn678068Tt9suVpaeusYD8fs,97
+licensekey2-0.1.0.dist-info/LICENSE,sha256=z65jBph06J16H4Hx1Dc0rIqFP0c66RGF-Hs4bDp7lgA,1056
+licensekey2-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+licensekey2-0.1.0.dist-info/METADATA,sha256=y22zWVUQ6zQvBJUBdFmUWUhF0lMJudCCGIe4OtkC7ik,2574
+licensekey2-0.1.0.dist-info/RECORD,,
