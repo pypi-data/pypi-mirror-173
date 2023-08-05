@@ -1,0 +1,2 @@
+[console_scripts]
+EXCEL_COLUMN_TO_DECIMAL_CONVERTER = EXCEL_COLUMN_TO_DECIMAL_CONVERTER.excel_column_to_decimal_converter:main
