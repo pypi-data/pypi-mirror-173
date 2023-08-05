@@ -1,0 +1,6 @@
+[kedro.hooks]
+cache_hook=kedro_cache.framework.hooks.cache_hook:cache_hook
+
+[kedro.project_commands]
+kedro_cache=kedro_cache.framework.cli.cli:commands
+
