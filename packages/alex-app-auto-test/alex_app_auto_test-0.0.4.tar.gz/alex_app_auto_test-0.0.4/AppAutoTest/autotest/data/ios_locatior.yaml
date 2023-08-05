@@ -1,0 +1,25 @@
+home_page: #首页
+  iv_avatar: #头像
+    id: com.aax.exchange.beta:id/iv_avatar
+##############################################################################################################
+login_register_page: #登陆与注册页面
+  tv_login: #登陆/注册
+    id: com.aax.exchange.beta:id/tv_login
+##############################################################################################################
+login_page: #登陆页面
+  et_email: #邮箱控件
+    id: com.aax.exchange.beta:id/et_email
+  et_pwd: #密码控件
+    id: com.aax.exchange.beta:id/et_pwd
+  tv_next: #登陆按钮
+    id: com.aax.exchange.beta:id/tv_next
+##############################################################################################################
+verification_code_page: #验证码页面
+  et_code: #验证码输入框
+    id: com.aax.exchange.beta:id/et_code
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+Android:
+  platformName: Android #平台
+  platformVersion: "10" #版本
+  deviceName: CLB0218806002550
+  appPackage: com.aax.exchange.beta
+  appActivity: com.aax.exchange.activity.MainActivity
+  app: /Users/Alex/Documents/apk/Exchange.apk
+  noReset: True
+  newCommandTimeout: 6000
+  ensureWebviewsHavePages: True
+  nativeWebScreenshot: True
+  connectHardwareKeyboard: True
+IOS:
+  platformName: ios
+  platformVersion: "16.0"
+  deviceName: iPhone X
+  app: com.aax.exchange.beta
+  udid: a92ff1b6ab64d7dad5fe74efdc978db1e351ddff
+  noReset: True
+  newCommandTimeout: 6000
+
+wait_element_time: 10
+platform: 1  #1代表安卓；2代表ios；3代表web
+screenshot_dir: /Users/Alex/PycharmProjects/AppAutoTest/app/static/screenshots/
+driver_for_ever: False  #是否每个用例都是新的driver
+
+
+
+
