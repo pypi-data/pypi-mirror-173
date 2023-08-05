@@ -1,0 +1,3 @@
+[console_scripts]
+generate-comment=code_commenter.cli:run_cli
+
