@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tempyrature/__init__.py
+tempyrature/tempyrature.py
+tempyrature.egg-info/PKG-INFO
+tempyrature.egg-info/SOURCES.txt
+tempyrature.egg-info/dependency_links.txt
+tempyrature.egg-info/top_level.txt
