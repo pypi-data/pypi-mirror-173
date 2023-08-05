@@ -1,0 +1,14 @@
+shikkoku/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shikkoku/animation.py,sha256=oisk6zl6qVoxMwzGtj8hdCUKUTE27JU-4SzJvllaKKY,15976
+shikkoku/app.py,sha256=42hpzh6pPFigWHJ8l0IxQZ5MvOGxjtzwcZz9q7ob6Kg,5884
+shikkoku/color.py,sha256=cK7IXdUboruCyL7hKpybrEt8u8bDZLwxi-KXkYNx7Is,473
+shikkoku/engine.py,sha256=QRW8-Bkk4pEZqK4gfTu1n6cI5CoghpxDAerRLO200R4,17024
+shikkoku/sample_main.py,sha256=KlsnF0nTy4UIfRsmPXk3DjuL7FkX60v0p2RpZYSyHLg,378
+shikkoku/sample_scene.py,sha256=mbSIsBphQYifFl9zA8vxqDJ9e6Vv-DrXY_dFdg0v0cs,2319
+shikkoku/text_formatter.py,sha256=ZHjU4u3zqMShJGSztqmnk1Z6bkIliEu-4P2TQMFCT9I,1698
+shikkoku/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shikkoku-0.0.3.dist-info/LICENSE,sha256=zeloUiN9Xqm5WigoujkMg0zsPbyF11yq6pFJ5peWYbg,1074
+shikkoku-0.0.3.dist-info/METADATA,sha256=ZfT1I_llP8jC_5-8ZnXrJSSJWinUMpX3aKsJgA9AnIY,560
+shikkoku-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shikkoku-0.0.3.dist-info/top_level.txt,sha256=53q11ke2n3F1mMc9iTCzjrbGb82HShNDshHWoq9HGmE,9
+shikkoku-0.0.3.dist-info/RECORD,,
