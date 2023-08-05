@@ -1,0 +1,10 @@
+celery_debounce/__init__.py,sha256=4F_iwLRJnb64me8-6gb2okm6onxvuYsM_m2lnd06dpc,133
+celery_debounce/celery_debounce.py,sha256=1rQdp3wGT-v76CGMLkv5kmXf24meqBYuJ2AqMSsCyPI,1726
+celery_debounce/cli.py,sha256=rJw9Pycf1eqNk0A-4Ci8yrmeLl_YosPBugkoYzWXJtE,423
+celery_debounce-0.2.1.dist-info/AUTHORS.rst,sha256=NtP99_BMjvVRjeDuA9J97aE-QOumUS00mMRYdoICWmE,156
+celery_debounce-0.2.1.dist-info/LICENSE,sha256=i6bvKV1QOhp6t6O252G8amnMy-ntuCvaeXuS7mwEyu8,1070
+celery_debounce-0.2.1.dist-info/METADATA,sha256=JtCBjmA06rOURg2BeWGPei5jBmXBrjGX488N45TZwA0,1386
+celery_debounce-0.2.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+celery_debounce-0.2.1.dist-info/entry_points.txt,sha256=el79YIkwQRqpUpg-mu0JfoshcxuGSD3nICCTgFk3T00,61
+celery_debounce-0.2.1.dist-info/top_level.txt,sha256=JJCxeCI_49U2syOVLJ7hY8zH-dtc-yACruM2hiCS1kQ,16
+celery_debounce-0.2.1.dist-info/RECORD,,
