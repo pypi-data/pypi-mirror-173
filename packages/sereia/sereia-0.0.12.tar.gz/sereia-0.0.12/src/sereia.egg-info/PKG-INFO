@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sereia
+Version: 0.0.12
+Summary: Keyword Search over Document Stores
+Home-page: https://github.com/arielafonso/sereia
+Author: Ariel Afonso
+Author-email: ariel.afonso@icomp.ufam.edu.br
+Project-URL: Bug Tracker, https://github.com/arielafonso/sereia/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
