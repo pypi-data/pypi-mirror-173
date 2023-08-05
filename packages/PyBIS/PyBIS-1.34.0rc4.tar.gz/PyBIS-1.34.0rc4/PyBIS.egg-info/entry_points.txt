@@ -1,0 +1,2 @@
+[console_scripts]
+pybis = pybis.cli:cli
