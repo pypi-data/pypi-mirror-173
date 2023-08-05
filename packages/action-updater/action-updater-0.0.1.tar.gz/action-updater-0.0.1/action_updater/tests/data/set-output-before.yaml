@@ -1,0 +1,286 @@
+name: "Build Containers on Update"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      
+jobs:
+  config:
+    name: "[config]"
+    runs-on: ubuntu-latest
+    outputs:
+      build_containers: ${{ steps.config.outputs.build_matrix }}
+      publish_containers: ${{ steps.config.outputs.publish_matrix }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+        
+      - name: Run Build Config
+        id: config
+        uses: autamus/buildconfig@main
+        with:
+          parsers_loaded: spack
+          packages_path: spack/
+          containers_path: containers/
+          git_token: ${{ secrets.BINOC_GIT_TOKEN }}
+           
+  build-container:
+    if: needs.config.outputs.build_containers != '[]'
+    needs:
+      - config
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container: ${{ fromJson(needs.config.outputs.build_containers) }}
+    name: "[build] ${{ matrix.container.name }}"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
+      - name: Setup Smuggler Server
+        uses: autamus/smuggler@main
+      
+      - name: Builder
+        id: builder
+        uses: autamus/builder@main
+        with:
+          containers_current: ${{ matrix.container.container }}
+          parsers_loaded: spack
+          packages_path: spack/
+          packages_publickeyurl: 'http://s3.amazonaws.com/autamus-cache/build_cache/_pgp/FFEB24B0A9D81F6D5597F9900B59588C86C41BE7.pub'
+          containers_path: containers/
+
+      - name: Import Registry to Repo
+        if: ${{ steps.builder.outputs.type }} == 'Spack'
+        run: |
+          mkdir repo
+          for file in spack/*/*; do
+            if [ -d "$file" ]; then
+                cp -r "$file/" "repo/"
+            fi
+          done
+      
+      - name: Upload Dockerfile
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{steps.builder.outputs.container}}.Dockerfile
+          path: Dockerfile
+      
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+        with:
+          driver-opts: network=host
+
+      - name: Make Space For Build
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+
+      - name: Build Container
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          platforms: ${{ matrix.container.arch }}
+          push: false
+          network: host
+          secrets: |
+            "aws_id=${{ secrets.AWS_ACCESS_KEY_ID }}"
+            "aws_secret=${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+            "sign_key=${{ secrets.SIGN_KEY }}"
+          tags: |
+            ghcr.io/autamus/${{ steps.builder.outputs.container }}:latest
+            autamus/${{ steps.builder.outputs.container }}:latest
+            ghcr.io/autamus/${{ steps.builder.outputs.container }}:${{ steps.builder.outputs.version }}
+            autamus/${{ steps.builder.outputs.container }}:${{ steps.builder.outputs.version }}
+
+      - name: Upload Build Logs
+        if: always() && github.ref != 'refs/heads/main'
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{matrix.container.name}}-build.log
+          path: /smuggler/saved/
+  
+  publish-container:
+    if: always() && github.ref == 'refs/heads/main' && needs.config.outputs.publish_containers != '[]'
+    needs:
+      - build-container
+      - config
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        container: ${{ fromJson(needs.config.outputs.publish_containers) }}
+    name: "[publish] ${{ matrix.container.name }}"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
+      - name: GHCR Login
+        uses: docker/login-action@v1 
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GHCR_USERNAME }}
+          password: ${{ secrets.GHCR_TOKEN }}
+
+      - name: Docker Login
+        uses: docker/login-action@v1 
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+        with:
+          driver-opts: network=host
+
+      - name: Make Space For Build
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /opt/ghc
+
+      - name: Regenerate Combined Dockerfile
+        id: builder
+        uses: autamus/builder@main
+        with:
+          containers_current: ${{ matrix.container.container }}
+          parsers_loaded: spack
+          packages_path: spack/
+          packages_publickeyurl: 'http://s3.amazonaws.com/autamus-cache/build_cache/_pgp/FFEB24B0A9D81F6D5597F9900B59588C86C41BE7.pub'
+          containers_path: containers/
+
+      - name: Import Registry to Repo
+        if: ${{ steps.builder.outputs.type }} == 'Spack'
+        run: |
+          mkdir repo
+          for file in spack/*/*; do
+            if [ -d "$file" ]; then
+                cp -r "$file/" "repo/"
+            fi
+          done
+
+      - name: Pull Container From Cache & Deploy
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          platforms: ${{ matrix.container.arch }}
+          push: true
+          network: host
+          secrets: |
+            "aws_id=${{ secrets.AWS_ACCESS_KEY_ID }}"
+            "aws_secret=${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+            "sign_key=${{ secrets.SIGN_KEY }}"
+          tags: |
+            ghcr.io/autamus/${{ steps.builder.outputs.container }}:latest
+            autamus/${{ steps.builder.outputs.container }}:latest
+            ghcr.io/autamus/${{ steps.builder.outputs.container }}:${{ steps.builder.outputs.version }}
+            autamus/${{ steps.builder.outputs.container }}:${{ steps.builder.outputs.version }}
+
+      - name: Load x86 Container Stats
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          platforms: linux/amd64
+          push: false
+          load: true
+          network: host
+          secrets: |
+            "aws_id=${{ secrets.AWS_ACCESS_KEY_ID }}"
+            "aws_secret=${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+            "sign_key=${{ secrets.SIGN_KEY }}"
+          tags: |
+            ghcr.io/autamus/${{ steps.builder.outputs.container }}:latest
+            autamus/${{ steps.builder.outputs.container }}:latest
+            ghcr.io/autamus/${{ steps.builder.outputs.container }}:${{ steps.builder.outputs.version }}
+            autamus/${{ steps.builder.outputs.container }}:${{ steps.builder.outputs.version }}
+
+      - name: Build Summary
+        id: summary
+        run: |
+          container=${{steps.builder.outputs.container}}
+          docker system prune -f
+          docker image save "autamus/$container" > container
+          tar -czvf container.tar.gz container > /dev/null
+          docker=$(docker system df -v | grep "autamus/$container")
+          docker_data=($docker)
+          raw=$(ls -lh --block-size=MB | grep "container.tar.gz")
+          raw_data=($raw)
+          echo "[[ Build Summary: $container ]]"
+          echo "URL              :  ${docker_data[0]}"
+          echo "Version          :  ${docker_data[1]}"
+          echo "Raw Size         :  ${docker_data[6]}"
+          echo "Compressed Size  :  ${raw_data[4]}"
+          echo "::set-output name=size::${raw_data[4]}"
+
+      - name: Librarian Run
+        uses: autamus/librarian@main
+        with:
+          git_token: ${{ secrets.BINOC_GIT_TOKEN }}
+          git_username: ${{ secrets.BINOC_GIT_USERNAME }}
+          git_email: ${{ secrets.BINOC_GIT_EMAIL }}
+          git_name: ${{ secrets.BINOC_GIT_NAME }}
+          containers_current: ${{ steps.builder.outputs.container }}
+          containers_version: ${{ steps.builder.outputs.version }}
+          containers_size: ${{ steps.summary.outputs.size }}
+          template_path: default.md
+
+  upload-logs:
+    name: Upload Logs
+    if: always() && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    needs:
+      - build-container
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+      
+      - name: Get Merge Commits
+        id: merge-commits
+        uses: autamus/merge-commits@main
+
+      - name: Pull All Artifacts In From Branch Runs
+        uses: autamus/artifact-dl@main
+        with:
+          git_token: ${{ secrets.BINOC_GIT_TOKEN }}
+          input_commits: ${{ steps.merge-commits.outputs.commits }}
+          output_path: '/github/workspace/artifacts'
+      
+      - name: Setup Spack
+        run: |
+          rm -rf spack/
+          git clone https://github.com/spack/spack.git
+          . spack/share/spack/setup-env.sh
+
+      - name: Upload Logs to Spack Monitor
+        run: |
+          export SPACKMON_USER=${{ secrets.SPACKMON_NAME }}
+          export SPACKMON_TOKEN=${{ secrets.SPACKMON_TOKEN }}
+          artifacts="artifacts/*/*/*"
+          for file in $artifacts; do
+            if [[ $file == */monitor.tar.gz ]]
+            then
+              echo "Uploading Logs: $file"
+              dir="monitor"/$(dirname "$(dirname "${file}")")-output/
+              mkdir -p $dir
+              tar -xzvf $file -C $dir/
+              spack/bin/spack monitor --monitor-keep-going --monitor-host https://monitor.spack.io upload $dir || true
+            fi
+          done
