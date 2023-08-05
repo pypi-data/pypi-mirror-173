@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: redacted
+Version: 0.2.0
+Summary: 📛 An experimental data anonymisation library
+Home-page: https://github.com/mitchelllisle/redacted
+Author: Mitchell Lisle
+Author-email: m.lisle90@gmail.com
+Keywords: redacted
+License-File: LICENSE
+Requires-Dist: hypothesis
+Requires-Dist: pipetools
+Requires-Dist: pydantic
+Requires-Dist: faker
+Requires-Dist: rstr
+
