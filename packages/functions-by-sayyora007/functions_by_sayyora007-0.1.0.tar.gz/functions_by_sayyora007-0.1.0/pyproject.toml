@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "functions-by-sayyora007"
+version = "0.1.0"
+description = "This is our test project"
+authors = ["Sayyora Yuldasheva <sayyora007@list.ru>"]
+readme = "README.md"
+packages = [{include = "functions_by_sayyora007"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
