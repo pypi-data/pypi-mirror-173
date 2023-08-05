@@ -1,0 +1,2 @@
+[console_scripts]
+vidtool = vidtool.cli:main
