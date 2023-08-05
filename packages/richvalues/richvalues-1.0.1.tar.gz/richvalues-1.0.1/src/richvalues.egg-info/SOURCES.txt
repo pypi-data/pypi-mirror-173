@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/richvalues/__init__.py
+src/richvalues.egg-info/PKG-INFO
+src/richvalues.egg-info/SOURCES.txt
+src/richvalues.egg-info/dependency_links.txt
+src/richvalues.egg-info/requires.txt
+src/richvalues.egg-info/top_level.txt
