@@ -1,0 +1,11 @@
+cnd_io/VERSION,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+cnd_io/__init__.py,sha256=_M8DOMUI0QFx5X2_qdsK6NIabPYVaFt6G77tP6b5hp8,281
+cnd_io/__version__.py,sha256=vGgcW_O68DrnmB0JEdhl_fntMiwF806WHENuxgDDraQ,115
+cnd_io/cnd_io.py,sha256=bN8GpAJHfbIROQoNCabnqyl5QCduySrOzHA3PAFnZ8Y,2631
+cnd_io/cnd_provider.py,sha256=NknkCwfOQUYKcHj1DhxxxqyQ41-b_-q-0lrqyiB9n28,748
+cnd_io/cnd_provider_gitlab.py,sha256=JABsa9glxPEdAzJB5UhiG0lTZtoj7wqb9xI89TpVZqY,3886
+cnd_io/cnd_provider_localfile.py,sha256=iDmzlT65fSfte-RuxjxQed85FDUQRc5YiKDEWE-W4zc,1132
+CndIO-2.0.2.dist-info/METADATA,sha256=vii4HHH5rf_dmfx6NMdXaeee1EJPTEZKy1l1zjqLg_I,2320
+CndIO-2.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+CndIO-2.0.2.dist-info/top_level.txt,sha256=5ODHl5RPET5r26bYiWP5GzZrzSNpp8FBDOIz_sNmrBk,7
+CndIO-2.0.2.dist-info/RECORD,,
