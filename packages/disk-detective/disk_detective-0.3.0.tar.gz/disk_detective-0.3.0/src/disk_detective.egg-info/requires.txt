@@ -1,0 +1,4 @@
+hash_calc==1.1.0
+partitiontypes==1.0.1
+cnvrtr==1.1.1
+ntrprtr==1.3.0
