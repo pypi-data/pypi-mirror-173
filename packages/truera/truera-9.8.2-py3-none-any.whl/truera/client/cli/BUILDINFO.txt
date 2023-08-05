@@ -1,0 +1,6 @@
+HOSTNAME: ip-172-31-48-96
+Build Time:  Mon Oct 24 21:01:56 UTC 2022
+Branch: refs/heads/release/rc-20220928
+Commit Time:  Mon Oct 24 11:59:47 2022 -0700
+Commit Id:  4978ac9c22585a983ed65e294675e9c9a9779a6c
+Truera Services Version: 1.29.2
