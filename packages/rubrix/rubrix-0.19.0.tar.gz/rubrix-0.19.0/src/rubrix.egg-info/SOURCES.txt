@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/rubrix/__init__.py
+src/rubrix/__main__.py
+src/rubrix/_version.py
+src/rubrix.egg-info/PKG-INFO
+src/rubrix.egg-info/SOURCES.txt
+src/rubrix.egg-info/dependency_links.txt
+src/rubrix.egg-info/requires.txt
+src/rubrix.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+argilla~=1.0.0
+
+[listeners]
+
+[server]
+argilla[server]~=1.0.0
