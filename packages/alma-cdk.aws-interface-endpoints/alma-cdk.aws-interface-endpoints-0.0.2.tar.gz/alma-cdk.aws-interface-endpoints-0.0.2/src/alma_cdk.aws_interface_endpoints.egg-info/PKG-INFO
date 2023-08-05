@@ -1,0 +1,138 @@
+Metadata-Version: 2.1
+Name: alma-cdk.aws-interface-endpoints
+Version: 0.0.2
+Summary: aws-interface-endpoints
+Home-page: https://github.com/alma-cdk/aws-interface-endpoints.git
+Author: Alma Media<opensource@almamedia.dev>
+License: Apache-2.0
+Project-URL: Source, https://github.com/alma-cdk/aws-interface-endpoints.git
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Typing :: Typed
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align="center">
+	<br/>
+	<br/>
+  <h1>
+	<img height="140" src="assets/alma-cdk-aws-interface-endpoints.svg" alt="Alma CDK Domain" />
+  <br/>
+  <br/>
+  </h1>
+
+```sh
+npm i -D @alma-cdk/aws-interface-endpoints
+```
+
+  <div align="left">
+
+L3 construct helping with PrivateLink-powered VPC Interface Endpoints for AWS Services.
+
+  </div>
+  <br/>
+</div><br/>
+
+## 🚧   Project Stability
+
+![experimental](https://img.shields.io/badge/stability-experimental-yellow)
+
+This construct is still versioned with `v0` major version and breaking changes might be introduced if necessary (without a major version bump), though we aim to keep the API as stable as possible (even within `v0` development). We aim to publish `v1.0.0` soon and after that breaking changes will be introduced via major version bumps.
+
+<br/>
+
+## Getting Started
+
+### Endpoint open to whole isolated subnet
+
+```python
+import { AwsInterfaceEndpoints } from '@alma-cdk/aws-interface-endpoints';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
+```
+
+```python
+const vpc = new ec2.Vpc();
+
+new AwsInterfaceEndpoints(this, 'EcrInterfaceEndpoint', {
+  vpc,
+  services: [
+    ec2.InterfaceVpcEndpointAwsService.ECR_DOCKER,
+  ],
+});
+```
+
+### Session Manager connection endpoints
+
+```python
+import { AwsInterfaceEndpoints } from '@alma-cdk/aws-interface-endpoints';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
+```
+
+```python
+const vpc = new ec2.Vpc();
+
+new AwsInterfaceEndpoints(this, 'SessionManagerInterfaceEndpoint', {
+  vpc,
+  services: AwsInterfaceEndpoints.SessionManagerConnect,
+});
+```
+
+### Explictly opened endpoints
+
+1. In your VPC creation stack
+
+```python
+import { AwsInterfaceEndpoints } from '@alma-cdk/aws-interface-endpoints';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
+```
+
+```python
+const vpc = new ec2.Vpc();
+
+new AwsInterfaceEndpoints(this, 'EcrInterfaceEndpoint', {
+  vpc,
+  open: false,
+  services: [
+    ec2.InterfaceVpcEndpointAwsService.ECR_DOCKER,
+  ],
+});
+```
+
+1. In some other stack (maybe on a completely different CDK application):
+
+```python
+import { AwsInterfaceEndpoints } from '@alma-cdk/aws-interface-endpoints';
+import * as ec2 from 'aws-cdk-lib/aws-ec2';
+```
+
+```python
+define instance: ec2.Instance;
+
+const endpoints = AwsInterfaceEndpoints.fromAttributes(this, 'EcrInterfaceEndpoint', {
+  services: [
+    ec2.InterfaceVpcEndpointAwsService.ECR_DOCKER,
+  ],
+});
+
+endpoints.allowDefaultPromFrom(instance);
+```
+
+<br/>
+
+https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html
+
+https://aws.amazon.com/privatelink/pricing/
+
+https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html
+
+

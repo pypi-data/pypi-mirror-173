@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/alma_cdk.aws_interface_endpoints.egg-info/PKG-INFO
+src/alma_cdk.aws_interface_endpoints.egg-info/SOURCES.txt
+src/alma_cdk.aws_interface_endpoints.egg-info/dependency_links.txt
+src/alma_cdk.aws_interface_endpoints.egg-info/requires.txt
+src/alma_cdk.aws_interface_endpoints.egg-info/top_level.txt
+src/alma_cdk/aws_interface_endpoints/__init__.py
+src/alma_cdk/aws_interface_endpoints/py.typed
+src/alma_cdk/aws_interface_endpoints/_jsii/__init__.py
+src/alma_cdk/aws_interface_endpoints/_jsii/aws-interface-endpoints@0.0.2.jsii.tgz
