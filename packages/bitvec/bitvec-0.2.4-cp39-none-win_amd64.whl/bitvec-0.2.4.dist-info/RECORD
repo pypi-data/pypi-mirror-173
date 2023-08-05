@@ -1,0 +1,9 @@
+bitvec-0.2.4.dist-info/METADATA,sha256=wOEIOC9aZmUhy9WgBhMjDhrQV-oczm69u7xuh7AVMCA,11681
+bitvec-0.2.4.dist-info/WHEEL,sha256=9zF_MELAjPTU_i3vpR7iKNJqCzFpib6UB7_xiUqYJhg,95
+bitvec/alias/__init__.py,sha256=zfbYYloa6Yn3NqjS9DZFb3WWz5qf_63yP2_3XMHvJ9U,5669
+bitvec/arithm/__init__.pyi,sha256=PLK_eNXW1CVJsrw7pHMUyp40MqarTZcM3S-FFjhWx-4,14221
+bitvec/bitvec.pyi,sha256=ERWTKs5p5QH85YZpZu7xH5a3kti8akG5rI-LZVBut-g,25321
+bitvec/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bitvec/__init__.py,sha256=dyr82Zsj5qBRl59wQ2sXaiSgDHZiWO81rPc7m4Le5gw,238
+bitvec/bitvec.cp39-win_amd64.pyd,sha256=fCxuO3d65Bh4zgu5sAT_Tfili6c80YvJfVdcpYzqtKc,566272
+bitvec-0.2.4.dist-info/RECORD,,
