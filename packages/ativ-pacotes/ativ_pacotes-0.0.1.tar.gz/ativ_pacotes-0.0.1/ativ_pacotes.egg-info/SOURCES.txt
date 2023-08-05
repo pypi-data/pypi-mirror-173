@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ativ_pacotes/__init__.py
+ativ_pacotes/armazenamento.py
+ativ_pacotes/consulta.py
+ativ_pacotes/interacao.py
+ativ_pacotes.egg-info/PKG-INFO
+ativ_pacotes.egg-info/SOURCES.txt
+ativ_pacotes.egg-info/dependency_links.txt
+ativ_pacotes.egg-info/top_level.txt

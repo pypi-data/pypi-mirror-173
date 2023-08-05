@@ -1,0 +1,1 @@
+# Repositório para atividade de sala, contendo módulos consulta; armazenamento; interacao
