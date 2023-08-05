@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pure_array/__init__.py
+src/pure_array/ndarray.py
+src/pure_array/py.typed
+src/pure_array.egg-info/PKG-INFO
+src/pure_array.egg-info/SOURCES.txt
+src/pure_array.egg-info/dependency_links.txt
+src/pure_array.egg-info/not-zip-safe
+src/pure_array.egg-info/requires.txt
+src/pure_array.egg-info/top_level.txt
