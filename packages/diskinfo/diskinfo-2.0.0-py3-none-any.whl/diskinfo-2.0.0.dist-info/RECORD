@@ -1,0 +1,13 @@
+diskinfo/__init__.py,sha256=A7Ais_BC65dt7vLihwIewXvNyjkLHy3oUSr67PLDV8Q,592
+diskinfo/demo.py,sha256=FP9XSFg0emVJvQWE55jrOJCzh9QUZwwsAAyd8uAwIa0,9116
+diskinfo/disk.py,sha256=uHxBmfIZ8YOsaJe0jwxmIU_G5ZiDdiDT888pG9vI3kY,33540
+diskinfo/diskinfo.py,sha256=h339yIZiETf8jOwnWfrJwPsaognOLK6SYeP4UjcGOzU,6226
+diskinfo/disksmart.py,sha256=31hnb6RlLnHCLt2AQ-7g1HRIT4UUpCFEcFhWX15BeYM,8184
+diskinfo/disktype.py,sha256=P1zWcDDS2TDYM_KEsfuVw5OeMJFnlbuqr_FejI_lYfU,439
+diskinfo/partition.py,sha256=b_fmWeL32Fnt_ogBFsYo1Ct6iq7XHmhmyywQLC14xW0,29276
+diskinfo/utils.py,sha256=05n1-HtxW_lw8nnE3eXpnOj68LLlyDOVViZTXg3HVQg,8744
+diskinfo-2.0.0.dist-info/LICENSE,sha256=v7_VIM2NqlZjVTOVUVY6f6HVarJH4XgR5ZYA14mzOuc,1069
+diskinfo-2.0.0.dist-info/METADATA,sha256=khjNjFK1LkKbCkqdDine61qFqKeSIVsRuuurnKFLgxI,3884
+diskinfo-2.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+diskinfo-2.0.0.dist-info/top_level.txt,sha256=ldMhT5NnwSGVosHZVz1gQV9ZPHs5cUh8T9tZdzpZW_w,9
+diskinfo-2.0.0.dist-info/RECORD,,
