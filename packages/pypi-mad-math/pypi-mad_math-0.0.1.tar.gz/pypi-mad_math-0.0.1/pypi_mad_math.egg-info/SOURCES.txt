@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+mad-math/__init__.py
+mad-math/maths.py
+pypi_mad_math.egg-info/PKG-INFO
+pypi_mad_math.egg-info/SOURCES.txt
+pypi_mad_math.egg-info/dependency_links.txt
+pypi_mad_math.egg-info/requires.txt
+pypi_mad_math.egg-info/top_level.txt
