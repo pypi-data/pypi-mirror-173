@@ -1,0 +1,6 @@
+cateyes/setup.py
+cateyes.egg-info/PKG-INFO
+cateyes.egg-info/SOURCES.txt
+cateyes.egg-info/dependency_links.txt
+cateyes.egg-info/requires.txt
+cateyes.egg-info/top_level.txt
