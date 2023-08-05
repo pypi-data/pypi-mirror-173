@@ -1,0 +1,14 @@
+pypandoc
+numpy
+scipy
+networkx
+nbsphinx
+recommonmark
+sphinx
+ipykernel
+jupyter
+sphinx_rtd_theme
+pyopenssl
+autodocsumm
+jinja2
+jupyter-contrib-nbextensions
