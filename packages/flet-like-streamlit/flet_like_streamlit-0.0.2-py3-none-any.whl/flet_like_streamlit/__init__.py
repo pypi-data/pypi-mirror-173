@@ -1,0 +1,1 @@
+name = "flet_like_streamlit"
