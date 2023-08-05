@@ -1,0 +1,10 @@
+name: morphometrics-engine
+display_name: morphometrics engine
+contributions:
+  commands:
+    - id: morphometrics-engine.QtMeasurementWidget
+      python_name: morphometrics_engine._widget:QtMeasurementWidget
+      title: Make region properties measurement widget
+  widgets:
+    - command: morphometrics-engine.QtMeasurementWidget
+      display_name: Measure region properties

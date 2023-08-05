@@ -1,0 +1,16 @@
+morphometrics_engine/__init__.py,sha256=rmyHn1Izh-Kehb_cGr6SG2QaJMm35Ae5Ls-vDkaOxM8,1105
+morphometrics_engine/_version.py,sha256=LMm5XNCiIX0-d8PhBu6GowizEsy50WYpNYJ8Jet6s64,176
+morphometrics_engine/_widget.py,sha256=UhASO2klxo3s_1h43-bjJS1a1Sg4sPUZFrabgM8-Wxk,6884
+morphometrics_engine/measure.py,sha256=SZRELPm487gntrYWnCUcvEbSzKLGv98hOn2uLt3Od9E,4008
+morphometrics_engine/napari.yaml,sha256=rpP28cVi6y5POwUa2fnxYfdyQh1nQmUZs_6VVXQtqHQ,376
+morphometrics_engine/types.py,sha256=Iklp31oevoBzGZ7fKSq0zEAG8dewQSaPThLNSkG1S4M,367
+morphometrics_engine/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+morphometrics_engine/_tests/test_register.py,sha256=i8AvhJ4FJdDQq2ow-FuoaldA-ZuRylc0AT6mzCBDOL0,4282
+morphometrics_engine/_tests/test_types.py,sha256=X5848KD6iCbURnk8HkP_wrGFDlMqSYEneKaJJ8uoB2M,1270
+morphometrics_engine/_tests/test_widget.py,sha256=8t71n27eJx4bz9mjqFUZvLvQGdbb-epIfrjGriGVupc,3288
+morphometrics_engine-0.0.1.dist-info/LICENSE,sha256=2g1Ssb9NgCayGSB7h3hEn5bCQNsA1FYYDw2mTZNyFP4,1489
+morphometrics_engine-0.0.1.dist-info/METADATA,sha256=XnoYn88NN0gMJvYKiULRcq76TfZZwHBfE8IaNh6C4xA,4532
+morphometrics_engine-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+morphometrics_engine-0.0.1.dist-info/entry_points.txt,sha256=E7rkj9_0UQfKeUZrP7uOGS9sl81skPcF7J5mn0s_kRU,74
+morphometrics_engine-0.0.1.dist-info/top_level.txt,sha256=3Kdmqrur_7mh8mQY4nr4WZVhxCoAjXY637v0HWKMa9M,21
+morphometrics_engine-0.0.1.dist-info/RECORD,,
