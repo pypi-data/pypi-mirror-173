@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: iinput
+Version: 1.0.9
+Summary: UNKNOWN
+Home-page: https://github.com/dante-biase/iinput
+Author: Dante Biase
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/dante-biase/iinput/archive/v1.0.9.tar.gz
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: keyboard
+
+UNKNOWN
+
+
