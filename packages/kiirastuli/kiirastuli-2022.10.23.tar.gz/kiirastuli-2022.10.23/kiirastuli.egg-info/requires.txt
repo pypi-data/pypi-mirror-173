@@ -1,0 +1,14 @@
+puhdistusalue>=2022.7.24
+puristaa>=2022.7.24
+scooby>=0.6.0
+typer>=0.6.1
+
+[dev]
+black
+coverage
+flake8
+hypothesis
+mypy
+pytest
+pytest-cov
+pytest-flake8
