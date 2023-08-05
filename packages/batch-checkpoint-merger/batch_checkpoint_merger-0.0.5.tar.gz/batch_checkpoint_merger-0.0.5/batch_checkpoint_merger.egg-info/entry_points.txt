@@ -1,0 +1,2 @@
+[console_scripts]
+batch-chk-mrg = batch_checkpoint_merger.batch_checkpoint_merger:main
