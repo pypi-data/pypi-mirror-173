@@ -1,0 +1,10 @@
+banker/__init__.py,sha256=dO3FJ-tjnfrfT1kFN9yipgJTWHU5O3OXHIQSM3FGVOI,27
+banker/accounts.py,sha256=WE0j__d6iwKPmpYUlrFp9HHjpXb9p5RCJfHrfY55lys,1002
+banker/agreements.py,sha256=jmpFJg7EZgSbcgpUU-0c5ubmBADfbJCRvSwqhp-ovyo,364
+banker/client.py,sha256=Dg03GKXc-BihH739-Ue1qUR_qT5vuuAjfs49qX0L2k0,5392
+banker/enums.py,sha256=oJe8z-f6sCxe6dJPM_argrshnrqk-ybvd8YeX_bifNU,114
+banker/institutions.py,sha256=YbCAZh5tV9JqTf9khK9v5eihHMgRedoOAg3xDavR1B8,682
+banker/requisitions.py,sha256=Qd5CNrMonPA9cr87znv6Iu_WNU9xF7tJ9srRXiQLEyk,1202
+banker-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+banker-0.1.0.dist-info/METADATA,sha256=42_1a7eGEhP8pM0A_jxj6isaJfGLNw3UM0Pl_O8tlBw,3177
+banker-0.1.0.dist-info/RECORD,,
