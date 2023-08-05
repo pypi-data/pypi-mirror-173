@@ -1,0 +1,11 @@
+LICENSE
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+mynameisnatbooz/__init__.py
+mynameisnatbooz/natbooz.py
+mynameisnatbooz.egg-info/PKG-INFO
+mynameisnatbooz.egg-info/SOURCES.txt
+mynameisnatbooz.egg-info/dependency_links.txt
+mynameisnatbooz.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+from mynameisnatbooz.natbooz import NatbooZ
