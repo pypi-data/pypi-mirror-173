@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: sensorbucket
+Version: 0.2.0
+Summary: Provides interaction with the Sensorbucket API
+Home-page: http://pypi.python.org/pypi/Sensorbucket/
+Author: Tim van Osch
+Author-email: timvosch@pollex.nl
+License: LICENSE
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Python SensorBucket package
+
+This repository is a Python package that provides interaction with the SensorBucket API.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the Sensorbucket Python package.
+
+```bash
+pip install sensorbucket
+```
+
+## Usage and Documentation
+
+Below is a quickstart. Also see the documentation: https://sensorbucket.gitlab.io/pysensorbucket .
+
+```python
+import sensorbucket
+
+# Create an API client (url, api_key)
+sb = sensorbucket.Facade("https://sensorbucket.nl", "")
+
+# Get measurements returns a "generator" function which can be iterated over
+# and will automatically fetch a new page of measurements
+measurement_pages = sb.get_measurements(
+    start="2022-01-01T00:00:00Z",
+    end="2022-12-31T23:59:59Z",
+    measurement_type="watercolumn_centimeters")
+
+# Loop over all pages within our specified parameters (start, end, 
+# measurement_type)
+for page in measurement_pages:
+    print(f"Got page with {len(page)} measurements")
+```
+
+The result of `get_measurements` method can be directly used to create a pandas.DataFrame object. However since the API returns the data in pages, you will need to loop over all pages and concatenate it to one single dataframe.
+
+The below code will fetch all measurements, append it to a dataframe and plot the values.
+```python
+import sensorbucket
+import pandas as pd
+
+sb = sensorbucket.Facade("https://sensorbucket.nl", "")
+
+measurement_pages = sb.get_measurements(
+    start="2022-01-01T00:00:00Z",
+    end="2022-12-31T23:59:59Z",
+    measurement_type="watercolumn_centimeters")
+
+# Create an initial dataframe, which will be appended with all data
+df = pd.DataFrame(data=next(measurement_pages))
+
+for page in measurement_pages:
+    # Create a dataframe from the newest page
+    page_df = pd.DataFrame(data=page)
+    # Append the page to the initial dataframe
+    df = pd.concat([df, page_df], ignore_index=True)
+
+# Set the measurement 'timestamp' property as the index of the dataframe
+df['timestamp'] = pd.to_datetime(df['timestamp'])
+df = df.set_index(['timestamp'])
+
+# Plot the measurement values for each device_code,sensor_code combination
+df.groupby(["device_code", 'sensor_code'])['value'].plot(legend=True, ylim=(0,400))
+```
+
+## License
+
+Work is licensed under: EUPL-1.2
+
+See [LICENSE](./LICENSE)
+
+
