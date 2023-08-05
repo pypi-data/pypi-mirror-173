@@ -1,0 +1,5 @@
+[pyrebar.postinit]
+orekit = orekitfactory.hooks:post_init
+
+[pyrebar.preinit]
+orekit = orekitfactory.hooks:pre_init

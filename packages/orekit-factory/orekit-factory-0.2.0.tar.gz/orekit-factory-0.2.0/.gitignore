@@ -1,0 +1,13 @@
+.data
+.build
+dist/
+.coverage
+
+*.html
+
+__pycache__
+**/__pycache__
+.pytest_cache
+
+*egg-info
+**/*egg-info
