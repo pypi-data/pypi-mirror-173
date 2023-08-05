@@ -1,0 +1,12 @@
+selenium
+openpyxl
+webdriver-manager
+fake_useragent
+requests
+pretty_html_table
+PySimpleGUI
+PyInstaller
+macholib
+wget
+winotify
+redmail
