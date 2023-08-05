@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: kraken-flake8-extensions
+Version: 0.1.1
+Summary: 
+License: MIT
+Author: Unknown
+Author-email: me@unknown.org
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: astor (>=0.8.1,<0.9.0)
+Project-URL: Bug Tracker, https://github.com/kraken-build/kraken-flake8-extensions/issues
+Project-URL: Homepage, https://github.com/kraken-build/kraken-flake8-extensions
+Project-URL: Repository, https://github.com/kraken-build/kraken-flake8-extensions
+Description-Content-Type: text/markdown
+
+# kraken-flake8-extensions
+
+This Flake8 plugin implements lints specific for the code base of the Kraken build system.
+
+| Code | Description |
+| ---- | ----------- |
+| `KRE001` | Annotations on `kraken.core.property.Object` subclasses (such as tasks) must use backwards compatible type hints because they are evaluated at runtime. Use collection types from the `typing` module instead. |
+| `KRE002` | Use of built-in type subscripts (3.9+) or type unions (3.10+) requires `from __future__ import annotations` for backwards compatibility. |
+
