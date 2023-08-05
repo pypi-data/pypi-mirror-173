@@ -1,0 +1,10 @@
+
+[env]
+pyrobodyno
+
+[test]
+coverage
+pytest
+pytest-asyncio
+pytest-cov
+pytest-tornasync
