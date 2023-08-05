@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: netlink-datadog-sap
+Version: 0.0.1
+Summary: Integration for Datadog (SAP)
+Home-page: https://gitlab.com/netlink_python/netlink-datadog-sap
+License: MIT
+Keywords: monitoring datadog sap
+Author: Bernhard Radermacher
+Author-email: bernhard.radermacher@netlink-consulting.com
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Requires-Dist: netlink-datadog-core (>=0.0.2,<0.0.3)
+Requires-Dist: netlink-sap-monitor (>=0.0.1,<0.0.2)
+Requires-Dist: netlink-sap-rfc (>=0.1.16,<0.2.0)
+Requires-Dist: schedule (>=1.1.0,<2.0.0)
+Project-URL: Repository, https://gitlab.com/netlink_python/netlink-datadog-sap
+Description-Content-Type: text/markdown
+
+# netlink-datadog-sap
+
+Integration of information retrieved from netlink-sap-monitor to Datadog.
+
+## Changes
+
+### 0.0.1
+
+- rfc_transactional_calls
