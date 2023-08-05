@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+numbin/__init__.py
+numbin/codec.py
+numbin/msg_ext.py
+numbin.egg-info/PKG-INFO
+numbin.egg-info/SOURCES.txt
+numbin.egg-info/dependency_links.txt
+numbin.egg-info/requires.txt
+numbin.egg-info/top_level.txt
