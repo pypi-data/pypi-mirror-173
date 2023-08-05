@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a254a036-26a2-493c-8a8a-b5dc8e6f99ce" name="Default Changelist" comment="q">
+      <change afterPath="$PROJECT_DIR$/antgen/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoadModelComponents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/HOUSEHOLD/dry_clothes.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/HOUSEHOLD/ironing.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/HOUSEHOLD/vacuum.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/HOUSEHOLD/wash_laundry.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/KITCHEN/dishwasher.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/KITCHEN/fried_egg.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/KITCHEN/heating_lunch.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/KITCHEN/preparing_breakfast.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/KITCHEN/preparing_dinner.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/KITCHEN/refrigerator.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/LEISURE/listen_music.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/LEISURE/use_pc.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/activities/LEISURE/watch_tv.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/AMPLIFIER/dev_AF6490/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/BREADCUTTER/dev_B7DF9D/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/BREADCUTTER/dev_B7DF9D/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/CDPLAYER/dev_C3E6D1/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/COFFEEMAKER/ECO-H1/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/COFFEEMAKER/ECO-H1/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/COFFEEMAKER/dev_735E9D/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/COFFEEMAKER/dev_735E9D/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/COOKINGSTOVE/dev_D33097/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/COOKINGSTOVE/dev_D33097/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/COOKINGSTOVE/dev_D33097/mode2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/COOKINGSTOVE/dev_D33097/mode3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/DISHWASHER/dev_995BAC/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/DRYER/ECO-H1/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/DRYER/ECO-H1/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/DRYER/ECO-H1/mode2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/FREEZER/ECO-H1/mode9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/IRON/dev_D337C2/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/IRON/dev_D337C2/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/KETTLE/ECO-H1/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/KETTLE/ECO-H1/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/KETTLE/ECO-H1/mode2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/KETTLE/ECO-H1/mode3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/KETTLE/dev_5AE2CA/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/MICROWAVE/dev_98A0D3/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/MICROWAVE/dev_98A0D3/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/PC/Desktop_Denis/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/PC/ECO-H1/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/PC/ECO-H1/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/PRINTER/dev_11F01E/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/PRINTER/dev_11F01E/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/PRINTER/dev_11F01E/mode2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/ECO-H1/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/ECO-H1/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/ECO-H1/mode4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/ECO-H1/mode5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/ECO-H1/mode6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/ECO-H1/mode7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/ECO-H1/mode8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev20111228/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev20111228/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode14" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode19" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode21" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode23" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/REFRIGERATOR/dev_76C07F/mode9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/TOASTER/dev_98ABD2/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/TOASTER/dev_98ABD2/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/TV/dev_B80E51/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/TV/dev_B80E51/mode1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/TV/dev_B80E51/mode2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/VACUUMCLEANER/device_B7E2F8/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/WASHINGMACHINE/ECO-H1/mode2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/WASHINGMACHINE/ECO-H1/mode3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appliances/WASHINGMACHINE/_B82E27/mode0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/default.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/convert_antgen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/generate_metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/metadata/dataset.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/metadata/meter_devices.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/nilm.types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nilmtk_converter/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/AMPLIFIER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/Ann.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/BREADCUTTER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/CDPLAYER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/COFFEEMAKER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/COOKINGSTOVE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/DISHWASHER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/DRYER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/FREEZER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/IRON.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/KETTLE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/MICROWAVE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/PC.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/PRINTER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/REFRIGERATOR.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/TOASTER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/TV.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/VACUUMCLEANER.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/WASHINGMACHINE.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/events.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/fridge_operation.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/total.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/TC1-U0.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/TC2-U1.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/TC3-U1.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/TC4-U1.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/TC5-U2.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/TC6-U2.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/TC7-U3.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/TC8-U4.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/PENSIONER/pensioner_simple.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/STUDENT/student_average.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/STUDENT/student_complex.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/STUDENT/student_simple.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/baseload.conf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nuno Alexandre Silva Velosa &lt;nunovelosa@hotmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1m42pGBhlVavcmEOZG0LuBb4NAn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nuno.Velosa.CORP/OneDrive - Unipartner IT Services, S.A/Desktop/antgen/antgen&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nuno.Velosa.CORP\OneDrive - Unipartner IT Services, S.A\Desktop\antgen\antgen" />
+      <recent name="C:\Users\Nuno.Velosa.CORP\OneDrive - Unipartner IT Services, S.A\Desktop\antgen" />
+      <recent name="C:\Users\Nuno.Velosa\Desktop\antgen\activities\HOUSEHOLD" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="antgen" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Nuno.Velosa\Desktop\procsim\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Nuno.Velosa.CORP\OneDrive - Unipartner IT Services, S.A\Desktop\antgen\main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a254a036-26a2-493c-8a8a-b5dc8e6f99ce" name="Default Changelist" comment="" />
+      <created>1608738723334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608738723334</updated>
+    </task>
+    <task id="LOCAL-00001" summary="working">
+      <created>1665001197928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665001197928</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="q" />
+    <MESSAGE value="working" />
+    <option name="LAST_COMMIT_MESSAGE" value="working" />
+  </component>
+</project>
