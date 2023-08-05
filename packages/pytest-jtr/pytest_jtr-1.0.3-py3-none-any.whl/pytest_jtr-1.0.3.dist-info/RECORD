@@ -1,0 +1,8 @@
+pytest_jtr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_jtr/plugin.py,sha256=UgQgT3t6ovufyApUS8F3s5hniDuYp1PWWSNHYTSO1iM,15285
+pytest_jtr/serialize.py,sha256=yFV3vXgGwr84B3CzOAySiYsU-uSod7iz4Cd57t6rdFE,3593
+pytest_jtr-1.0.3.dist-info/entry_points.txt,sha256=evtqiHH7M7edBHIJX91f6ARPWo0poHvelfbUGprVh-g,257
+pytest_jtr-1.0.3.dist-info/LICENSE,sha256=0ra28aHEyLrGCN91qzlk6OZtVn3haULCI3ClL29WN5o,1065
+pytest_jtr-1.0.3.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pytest_jtr-1.0.3.dist-info/METADATA,sha256=v2BW5OYCUkwaHQhSn6TqkSLA9kKsVk2v7YSw0GhkwP4,14983
+pytest_jtr-1.0.3.dist-info/RECORD,,
