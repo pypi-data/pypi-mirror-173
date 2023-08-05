@@ -1,0 +1,10 @@
+pyconbg.py,sha256=K0IJnM6dy5GNvcJB-P5IxKHoKJ750Dg4U0XfgdMIrxk,121
+pyconbg/__init__.py,sha256=iPFMNi-bB3Lb4-dUPZgBU-xyewrKXtkYi16OuBIypLo,151
+pyconbg/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyconbg/cli/app.py,sha256=AdrXWYMb2k9WqnX9i4X4H2BRQS7n9E7KUku-o6xabtQ,434
+pyconbg-0.1.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyconbg-0.1.9.dist-info/METADATA,sha256=NXQr1-XWB08lj_XpIf31HKGzq9B2EKVssewUqQhWnSw,358
+pyconbg-0.1.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyconbg-0.1.9.dist-info/entry_points.txt,sha256=c8byp5liQgEFFrQsMWJLfMtjSVyV1nuXuCZ15jorKaY,41
+pyconbg-0.1.9.dist-info/top_level.txt,sha256=wdkA0gkpmudrq-OoIMcMf1ff4OxPbEPpbU1f-VOoBv4,8
+pyconbg-0.1.9.dist-info/RECORD,,
