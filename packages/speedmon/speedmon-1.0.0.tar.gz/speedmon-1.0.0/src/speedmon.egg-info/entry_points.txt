@@ -1,0 +1,2 @@
+[console_scripts]
+speedmon = speedmon.__main__:main
