@@ -1,0 +1,8 @@
+amr_logic_converter/AmrLogicConverter.py,sha256=ur58VZg-yEtyAt4rhYamxgsHdpWF5RNTsAZDuI25wZ0,7563
+amr_logic_converter/__init__.py,sha256=24bxXNF8sEuIS5LG3c2g27ZvFl6NrAAwRuv5PisC9Uo,314
+amr_logic_converter/parse_value_and_alignment.py,sha256=mjyBfkU6_FkDvKVKkyTIfryz0Js6UbgUSunfy2B3XeA,1094
+amr_logic_converter/types.py,sha256=mu9m6ikNaAzmyDMIzZx6e8O6ODQGMbcyO9JO1foTkog,3686
+amr_logic_converter-0.2.1.dist-info/LICENSE,sha256=Ux853LGONRUrh06u_wM5MUTT0_GfiW6YqrloKJMlDxk,1069
+amr_logic_converter-0.2.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+amr_logic_converter-0.2.1.dist-info/METADATA,sha256=nfsliH5N2VncnSXwM5YPR2Nsfg4jxczsND3sJnMriog,606
+amr_logic_converter-0.2.1.dist-info/RECORD,,
