@@ -1,0 +1,9 @@
+xia_fields/__init__.py,sha256=DGWu2b5BFMmTfJS7lT0nKwPzDeID-kaXl71WfVrh5wI,1108
+xia_fields/base.cpython-310-darwin.so,sha256=SwPwPwIwrwTWIJM7bF8lWQI7zKALKhpKjgbZuYjrcbo,324104
+xia_fields/fields.cpython-310-darwin.so,sha256=fJo6-7-XHyvHYRsKEDFnMyWLUFTpgW5at9CpnA08xmg,375848
+xia_fields/fields_ext.cpython-310-darwin.so,sha256=9m5MBtFedCWaRBfADCV4h48E0hVGoouy0jINXSFmOsI,306304
+xia_fields-0.2.16.dist-info/LICENSE.txt,sha256=tWXZqpL_C-bIyrhuzutInM8bKRN490vPwfa6vH65N1Q,154
+xia_fields-0.2.16.dist-info/METADATA,sha256=ITAEEvZfr-WVS8gyJJ_5-vx2z-Kn2KogASxcJkxAsa8,3273
+xia_fields-0.2.16.dist-info/WHEEL,sha256=NsapCMY7EanMRKZsZABtoiyq2rs4aXJ4FKsV_kV91NE,108
+xia_fields-0.2.16.dist-info/top_level.txt,sha256=pXvwXCVXR-n1PTScNVgqx5GAlG0H2tIpu7XuuswUrng,11
+xia_fields-0.2.16.dist-info/RECORD,,
