@@ -1,0 +1,7 @@
+future
+json-rpc
+
+[tests]
+pytest
+pytest-lazy-fixture
+requests
