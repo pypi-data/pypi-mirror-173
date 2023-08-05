@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.setuptools]
+py-modules = ["trulogger"]
+
+[project]
+name = 'TruLogger'
+version = '1.1.8'
+
+authors = [
+    {name = "Jacob Truman", email="jacob.truman@gmail.com"},
+]
+
+requires-python = ">=3.7, <4"
+
+[project.urls]
+homepage = "https://github.com/jacobtruman/TruLogger"
+documentation = "https://github.com/jacobtruman/TruLogger"
+repository = "https://github.com/jacobtruman/TruLogger"
