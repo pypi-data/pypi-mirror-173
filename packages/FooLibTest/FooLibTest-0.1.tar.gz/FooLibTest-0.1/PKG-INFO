@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: FooLibTest
+Version: 0.1
+Summary: foo test
+Home-page: https://github.com/xiemin16/foo
+Author: Minghua
+Author-email: henryxie16@outlook.com
+License: UNKNOWN
+Download-URL: https://github.com/xiemin16/foo/archive/refs/tags/0.1.tar.gz
+Description: UNKNOWN
+Keywords: Minghua,Foo,Test
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.8
