@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "drdk-api"
+version = "0.0.3"
+authors = [
+  { name="Bertram Madsen", email="skrivtilbertram@gmail.com" },
+]
+description = "A python wrapper for the dr.dk api"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.com/dr-dk/api/"
+"Bug Tracker" = "https://gitlab.com/dr-dk/api/-/issues"
