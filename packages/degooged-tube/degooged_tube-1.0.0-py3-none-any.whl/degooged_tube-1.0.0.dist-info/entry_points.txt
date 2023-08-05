@@ -1,0 +1,2 @@
+[console_scripts]
+degooged-tube = degooged_tube:main
