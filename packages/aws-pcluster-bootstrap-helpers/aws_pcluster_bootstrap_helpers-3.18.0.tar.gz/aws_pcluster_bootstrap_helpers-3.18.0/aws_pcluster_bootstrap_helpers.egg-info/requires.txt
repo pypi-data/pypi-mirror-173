@@ -1,0 +1,15 @@
+typer
+rich
+typer[all]
+prefect>=2
+prefect-shell
+prefect-aws
+aws-parallelcluster>=3.1
+inquirer
+colorlog
+textual
+click>=8
+datasize
+questionary
+boto3-stubs[batch,ec2,essential,logs,s3]
+boto3
