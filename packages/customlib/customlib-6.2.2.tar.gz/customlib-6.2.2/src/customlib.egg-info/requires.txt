@@ -1,0 +1,5 @@
+cryptography>=38.0.1
+keyring>=23.9.3
+
+[:platform_system == "Windows"]
+pywin32>=304
