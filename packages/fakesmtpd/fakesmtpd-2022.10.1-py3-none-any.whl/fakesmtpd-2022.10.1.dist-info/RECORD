@@ -1,0 +1,14 @@
+fakesmtpd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fakesmtpd/args.py,sha256=xMM7ODk9YcXwMNDC3HU3AVC6j3veptuNZ0b_-uionnA,714
+fakesmtpd/commands.py,sha256=o88PgHEJbi46RngqYCA3oFjRlPzSZ0MWZKW8Jtc2V2o,4132
+fakesmtpd/connection.py,sha256=fvj_3N7FgN9x6ZqWVKzK12nSfSoD8oeW8I5Azz-O_rk,4346
+fakesmtpd/mbox.py,sha256=0ZId8eTUFRxwEwuBl6k_8YvuT6VO5jEymjU2tL83JAc,950
+fakesmtpd/server.py,sha256=01Pxdqbz2JRpbglCt4YvKmynt3KFXoGkDtpHf2m_Vxc,1370
+fakesmtpd/smtp.py,sha256=88rJTKD3AehCDC8HsXWCWROn0iG83FKDVat_ZeEzBe4,1138
+fakesmtpd/state.py,sha256=o2F4RvFWKWimxYUVL5VhbXYDIp4xNR5FHnZddAB62s8,1397
+fakesmtpd/syntax.py,sha256=kblaFYWzcjFPvLhOqVBFXyj5h6p4x7LU3U4TEoLFWRQ,4974
+fakesmtpd-2022.10.1.dist-info/entry_points.txt,sha256=Gpmw_cvfo2uhQis2fSO39WsDGiqOp_vAUzOEC_CjCvA,51
+fakesmtpd-2022.10.1.dist-info/LICENSE,sha256=9V-REeTAcIbxRPKSLyXIoBZshpiw2GL8oIjTfYSkHNA,1073
+fakesmtpd-2022.10.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+fakesmtpd-2022.10.1.dist-info/METADATA,sha256=1wLfU1W2NFCPpTZUmkOIjw5fPOoAHE6eayE5kGzkfUE,2300
+fakesmtpd-2022.10.1.dist-info/RECORD,,
