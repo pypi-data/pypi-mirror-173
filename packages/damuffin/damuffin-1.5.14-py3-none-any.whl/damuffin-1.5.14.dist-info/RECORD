@@ -1,0 +1,13 @@
+damuffin/__init__.py,sha256=YF4V8pG_-fTxEez9BDqqlVPYugIaLjtrN0-trF25JPQ,40
+damuffin/browser.py,sha256=7HB2hSplJNufswuL6_UkBZR_veKWGrY476zZiDG-GU4,18030
+damuffin/damuffin.py,sha256=v05iLC7mP7vm42lVaQq-OIgdlYYSLxAG90kCSWyjyAk,12005
+damuffin/elog.py,sha256=tOMaczzsbrbHA4Q77EUAQiM5UaJRh5hwV2DM4eBEuHY,6614
+damuffin/hector.py,sha256=xvsrt3rAhQPoSd3KbKkeBlQ0DTQ4618eHIux3euhDn0,588
+damuffin/net.py,sha256=jq7s-PPVi4C_AcTbCm2zQpoqOQFb7AQ9Z3D05HEnmbE,8619
+damuffin/star.py,sha256=hEsF2qjeX9ib7vmX_fxA8NRj_afmEc5qzLWTnskPBTM,2994
+damuffin/sysinfo.py,sha256=Tdp8LNk32mcs_87N8m-oiY5p7ngv7QiYc_Ts3qZ_pWc,8118
+damuffin-1.5.14.dist-info/LICENSE,sha256=oRN7OX7W-nf6kpgw7LUqW4WhQu86A2axu51b-U3MA0U,1089
+damuffin-1.5.14.dist-info/METADATA,sha256=8PycKyAUSu2UWpT0Z06j0osCakbzEfsoI5OALjwvBm4,622
+damuffin-1.5.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+damuffin-1.5.14.dist-info/top_level.txt,sha256=jhAfX0gTmarlUxi8oinMg-Dndd0gKQ6B02gGwNTrwZ8,9
+damuffin-1.5.14.dist-info/RECORD,,
