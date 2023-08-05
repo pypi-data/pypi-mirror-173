@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: scikit-feature-interpreter
+Version: 0.0.1
+Summary: scikit-learn API compatible feature interpreter
+Home-page: https://github.com/ftnext/scikit-feature-interpreter
+Author: nikkie
+Author-email: takuyafjp+develop@gmail.com
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Provides-Extra: lint
+Provides-Extra: dev
+License-File: LICENSE
+
+# scikit-feature-interpreter
+scikit-learn API compatible feature interpreter such as TFIDF (under developing)
