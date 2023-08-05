@@ -1,0 +1,9 @@
+ARIESian/__init__.py,sha256=lr0Z7FR_EYMfh4OuiU2I5OQFRlKdILuI8Ea8bFiMGzg,34
+ARIESian/astrometry.py,sha256=H4R3-zEiTGi8LqIs7NR52pyED3BIpqM-sqvUnlqp1MU,767
+ARIESian/cleaning.py,sha256=hxC6i7RyFnfuC_6GYQugP5WZFrFalCGJADUW4Oi5JlU,4274
+ARIESian/parallax_to_luminosity_gui.py,sha256=Ekvjzcw4lSUwdCKAh2_XzMyOy0GNZYQKzf4_aODoKjA,2343
+ARIESian-1.0.3.dist-info/LICENSE,sha256=lkc6mPx07uXaaaGTLbKmBLm2-i6IUP3V_0v2AOz-7g0,1071
+ARIESian-1.0.3.dist-info/METADATA,sha256=HkZPp8rPuz35GWexs7PqlSRHej7Xjti-666gLxVT1ME,480
+ARIESian-1.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ARIESian-1.0.3.dist-info/top_level.txt,sha256=QO-R5xVtD7hhJwXGVloj1YAZ4reETRJq4TgNvUgAOp8,9
+ARIESian-1.0.3.dist-info/RECORD,,
