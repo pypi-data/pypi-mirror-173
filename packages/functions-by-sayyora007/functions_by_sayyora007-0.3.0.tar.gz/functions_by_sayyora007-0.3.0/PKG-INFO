@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: functions-by-sayyora007
+Version: 0.3.0
+Summary: This is our test project
+Author: Sayyora Yuldasheva
+Author-email: sayyora007@list.ru
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# Instructions
+
+#### This is our test project.
+
+#### Please install this package
+```
+pip install functions-by-sayyora007
+```
+
+
+#### You can also install older packages
+```
+pip install functions-by-sayyora007==VERSION_NUMBER
+```
