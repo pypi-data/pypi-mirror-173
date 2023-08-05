@@ -1,0 +1,2 @@
+[console_scripts]
+pyconbg = pyconbg:main
