@@ -1,0 +1,11 @@
+LICENSE
+README
+setup.py
+ARIESian/__init__.py
+ARIESian/astrometry.py
+ARIESian/cleaning.py
+ARIESian/parallax_to_luminosity_gui.py
+ARIESian.egg-info/PKG-INFO
+ARIESian.egg-info/SOURCES.txt
+ARIESian.egg-info/dependency_links.txt
+ARIESian.egg-info/top_level.txt
