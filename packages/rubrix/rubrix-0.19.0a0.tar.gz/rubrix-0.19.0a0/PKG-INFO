@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: rubrix
+Version: 0.19.0a0
+Summary: Open-source tool for exploring, labeling, and monitoring data for NLP projects.
+Author-email: recognai <contact@recogn.ai>
+Maintainer-email: recognai <contact@recogn.ai>
+License: Apache-2.0
+Project-URL: homepage, https://www.rubrix.ml
+Project-URL: documentation, https://docs.rubrix.ml
+Project-URL: repository, https://github.com/recognai/rubrix
+Keywords: data-science,natural-language-processing,text-labeling,data-annotation,artificial-intelligence,knowledged-graph,developers-tools,human-in-the-loop,mlops
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: server
+Provides-Extra: listeners
+License-File: LICENSE
+
+# README.md
+# Rubrix is now Argilla
+
+This package has been renamed. Use `pip install argilla` instead.
+
+New package: https://pypi.org/project/argilla/

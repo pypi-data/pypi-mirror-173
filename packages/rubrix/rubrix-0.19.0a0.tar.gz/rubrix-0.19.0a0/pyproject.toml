@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rubrix"
+description = "Open-source tool for exploring, labeling, and monitoring data for NLP projects."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "Apache-2.0"}
+keywords = [
+    "data-science",
+    "natural-language-processing",
+    "text-labeling",
+    "data-annotation",
+    "artificial-intelligence",
+    "knowledged-graph",
+    "developers-tools",
+    "human-in-the-loop",
+    "mlops"
+]
+authors = [
+    {name = "recognai", email = "contact@recogn.ai"}
+]
+maintainers = [
+    {name = "recognai", email = "contact@recogn.ai"}
+]
+dependencies = [
+    "argilla>=1.0.*"
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+# TODO: maybe we can disable these optional deps.
+server = [
+    "argilla[server]>=1.0.0*"
+]
+listeners = [
+
+]
+
+[project.urls]
+homepage = "https://www.rubrix.ml"
+documentation = "https://docs.rubrix.ml"
+repository = "https://github.com/recognai/rubrix"
+
+[tool.setuptools.dynamic]
+version = {attr = "rubrix.__version__"}
+
+[tool.pytest.ini_options]
+log_format = "%(asctime)s %(name)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+log_cli = "True"
+testpaths = [
+    "tests"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "def __str__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "if _TYPE_CHECKING:",
+    "if typing.TYPE_CHECKING:"
+]
+
+[tool.isort]
+profile = "black"
