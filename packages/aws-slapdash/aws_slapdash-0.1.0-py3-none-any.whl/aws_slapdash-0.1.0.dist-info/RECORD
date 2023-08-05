@@ -1,0 +1,9 @@
+aws_slapdash/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_slapdash/cloudformation.py,sha256=T3XGHQ-jt0GEbFFrPtLCrTUJiD6A9uZ0O0dLL8wPfJo,3506
+aws_slapdash/configure.py,sha256=GZ7QGlFyehn6irOgqh5LHHoiPWjXdFlpCk53EH9cLJc,3778
+aws_slapdash/dynamodb.py,sha256=A8xrTqJt0JjKNF4qobvpLezs3oce7ZP1xfR4pZmT0Cg,4196
+aws_slapdash/ec2.py,sha256=WcaFhQfnlAYVwUMF00nes5UeI8VntcoqaSq8Oh2WOQw,4148
+aws_slapdash/secretsmanager.py,sha256=C_Reme21t6B1uWgJj9mbf0o6GJ2ugEh0TPXFX0Kl6do,3490
+aws_slapdash-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aws_slapdash-0.1.0.dist-info/METADATA,sha256=dLYdgtwIRl-CW_sPtsj8SBVSJMApOoqhho_VFyJkQk8,598
+aws_slapdash-0.1.0.dist-info/RECORD,,
