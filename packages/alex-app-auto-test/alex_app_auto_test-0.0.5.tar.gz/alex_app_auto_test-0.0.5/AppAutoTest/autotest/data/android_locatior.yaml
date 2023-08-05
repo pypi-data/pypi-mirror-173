@@ -1,0 +1,42 @@
+home_page: #首页
+  iv_avatar: #头像
+    id: com.aax.exchange.beta:id/iv_avatar
+  tab_icon: #首页/行情/交易/合约/资产
+    id: com.aax.exchange.beta:id/tab_icon
+  ll_search: #搜索
+    id: com.aax.exchange.beta:id/ll_search
+  ll_login: #立即登陆
+    id: com.aax.exchange.beta:id/ll_login
+
+##############################################################################################################
+login_register_page: #登陆与注册页面
+  tv_login: #登陆/注册
+    id: com.aax.exchange.beta:id/tv_login
+  tv_uid: #登陆后显示uid
+    id: com.aax.exchange.beta:id/tv_uid
+  iv_close: #关闭页面，回到首页
+    id: com.aax.exchange.beta:id/iv_close
+##############################################################################################################
+login_page: #登陆页面
+  tab_text: #邮箱/手机选择 0是邮箱，1是手机
+    id: com.aax.exchange.beta:id/tab_text
+  et_email: #邮箱控件
+    id: com.aax.exchange.beta:id/et_email
+  et_pwd: #密码控件
+    id: com.aax.exchange.beta:id/et_pwd
+  tv_next: #登陆按钮
+    id: com.aax.exchange.beta:id/tv_next
+##############################################################################################################
+verification_code_page: #验证码页面
+  et_code: #验证码输入框
+    id: com.aax.exchange.beta:id/et_code
+##############################################################################################################
+search_page: #搜索页面
+  et_search_key: #搜索框
+    id: com.aax.exchange.beta:id/et_search_key
+##############################################################################################################
+search_result_page: #搜索结果页面
+  tv_title: #BTC/USDT
+    id: com.aax.exchange.beta:id/tv_title
+
+

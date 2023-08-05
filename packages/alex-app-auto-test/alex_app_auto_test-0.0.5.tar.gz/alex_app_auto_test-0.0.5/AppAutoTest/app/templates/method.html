@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% block title %}首页{% endblock %}
+{% block content %}
+    <div id="content">
+
+        <div>
+            <nav class="navbar navbar-expand-md navbar-dark  mb-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <form class="d-flex">
+                            <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#methodModal" onclick="clear_item()">添加
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div style=" overflow:scroll;  height:800px;">
+
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>方法名称</th>
+                        <th>引用名称</th>
+                        <th>创建时间</th>
+                        <th>修改时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in method_set %}
+                        <tr>
+                            <td>{{ item.method_name }}</td>
+                            <td>{{ item.method_rel_function }}</td>
+                            <td>{{ item.create_time }}</td>
+                            <td>{{ item.update_time }}</td>
+                            <td>
+                                <p>
+                                    <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                                            data-bs-target="#methodModal" onclick="detail({{ item.id }})">编辑
+                                    </button>
+
+                                </p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="methodModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">添加方法</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-3 col-form-label">方法名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="请输入方法名称"
+                                   id="method_name" value="">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-3 col-form-label">引用名称</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="请输入引用名称"
+                                   id="method_rel_function" value="">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">删除</button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="submit_method()"
+                            data-bs-dismiss="modal">提交
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+{#    <script>#}
+
+        $(function () {
+            $("ul li a").each(function (index, domEle) {
+                if ($(domEle).attr("href") === "method_list") {
+                    $(domEle).attr("class", "nav-link text-white active");
+                }
+            })
+        })
+
+
+        function clear_item() {
+            $("#case_id").val(0)
+            $("#case_name").val("")
+            $("#case_step").empty()
+        }
+
+
+        function submit_method() {
+            var case_dict = {}
+            case_dict["method_name"] = $("#method_name").val()
+            case_dict["method_rel_function"] = $("#method_rel_function").val()
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:5001/add_method",
+                data: JSON.stringify(case_dict),
+                contentType: "application/json; charset=utf-8",
+                success: function (res) {
+                    location.reload()
+                }
+            });
+
+
+        }
+
+
+        {#    </script>#}
+
+
+
+{% endblock %}
