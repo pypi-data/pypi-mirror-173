@@ -1,0 +1,5 @@
+[console_scripts]
+ocrd-kraken-binarize = ocrd_kraken.cli.binarize:cli
+ocrd-kraken-recognize = ocrd_kraken.cli.recognize:cli
+ocrd-kraken-segment = ocrd_kraken.cli.segment:cli
+
