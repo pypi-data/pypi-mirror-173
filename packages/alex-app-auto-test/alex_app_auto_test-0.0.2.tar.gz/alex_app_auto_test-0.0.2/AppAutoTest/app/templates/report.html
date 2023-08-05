@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% block title %}首页{% endblock %}
+{% block content %}
+    <div id="content">
+
+        <div>
+            <nav class="navbar navbar-expand-md navbar-dark  mb-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <form class="d-flex">
+                            {#                            <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"#}
+                            {#                                    data-bs-target="#editCaseModal" onclick="clear_item()">添加#}
+                            {#                            </button>#}
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div style=" overflow:scroll;  height:800px;">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>用例名称</th>
+                        <th>创建时间</th>
+                        <th>修改时间</th>
+                        <th>用例状态</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in report_set %}
+                        <tr>
+                            <td>{{ item.report_name }}</td>
+                            <td>{{ item.create_time }}</td>
+                            <td>{{ item.update_time }}</td>
+                            {#                        <td>{{ item.report_status }}</td>#}
+                            {% if item.report_status %}
+                                <td><span class="badge bg-success">用例成功</span></td>
+                            {% else %}
+                                <td><span class="badge bg-danger">用例失败</span></td>
+                            {% endif %}
+
+                            <td>
+                                <p>
+                                    <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                                            data-bs-target="#reportModal" onclick="detail({{ item.id }})">编辑
+                                    </button>
+                                    <button type="button" class="btn btn-link" onclick="delete_case({{ item.id }})">删除
+                                    </button>
+                                </p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">报告详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">用例名称</span>
+                        <input type="text" class="form-control" id="case_name" placeholder="请输入用例名称" disabled readonly>
+                    </div>
+                    <div class="accordion accordion-flush" id="case_step">
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+{#    <script>#}
+
+        $(function () {
+            $("ul li a").each(function (index, domEle) {
+                if ($(domEle).attr("href") === "report") {
+
+                    $(domEle).attr("class", "nav-link text-white active");
+                }
+
+            })
+
+
+        })
+
+
+        function clear_item() {
+
+            $("#case_name").val("")
+            $("#case_step").empty()
+        }
+
+
+        function delete_case(val) {
+            $.ajax({
+                type: "DELETE",
+                url: "http://127.0.0.1:5001/report/" + val,
+                success: function (res) {
+                    location.reload()
+                }
+            });
+        }
+
+
+        function detail(val) {
+            $.ajax({
+                url: "http://127.0.0.1:5001/report_detail/" + val, success: function (res) {
+                    $("#case_step").empty();
+                    $.each(res, function (i, item) {
+                        if (i === "case_name") {
+                            $("#case_name").val(item)
+                        }
+                        if (i === "case_id") {
+                            $("#case_id").val(item)
+                        }
+                        if (i === "steps") {
+                            $.each(item, function (ii, ii_item) {
+                                if (ii_item.case_step_image) {
+                                    var case_step_item = '<div class = "accordion-item"id = "step_item' + ii + '" > <h2 class = "accordion-header"id = "flush-headingOne" > <button id = "title_name' + ii + '"class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseOne' + ii + ' "aria-expanded = "false" aria-controls = "flush-collapseOne" > ' + ii_item.case_step_name + ' </button> </h2> <div id="flush-collapseOne' + ii + '" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"><div class="accordion-body"> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">选择方法</label> <div class="col-sm-9"><select id="select_method_' + ii + '"class="form-select"aria-label="Default select example" disabled> <option value="' + ii_item.case_step_method_id + '" selected>' + ii_item.case_step_method + ' </option> </select></div> </div> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">元素定位</label> <div class="col-sm-9"><input type="text" class="form-control"placeholder="请输入元素定位信息"name="case_step_locatior"id="case_step_locatior' + ii + '"value="' + ii_item.case_step_locatior + '"disabled readonly></div> </div> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">输入内容</label> <div class="col-sm-9"><input type="text" class="form-control" name="case_step_value"id="case_step_value' + ii + '"value="' + ii_item.case_step_value + '"disabled readonly></div> </div>  <div class="mb-3 row"><label for="inputPassword" class="col-sm-3 col-form-label">错误描述</label><div class="col-sm-9"><input type="text" class="form-control" name="case_step_value" id="describe' + ii + '" value="' + ii_item.describe + '" disabled readonly></div></div> <div class="mb-3 row"><img src="' + ii_item.case_step_image + '" class="img-fluid"></div> </div> </div> </div> '
+                                } else {
+                                    var case_step_item = '<div class = "accordion-item"id = "step_item' + ii + '" > <h2 class = "accordion-header"id = "flush-headingOne" > <button id = "title_name' + ii + '"class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseOne' + ii + ' "aria-expanded = "false" aria-controls = "flush-collapseOne" > ' + ii_item.case_step_name + ' </button> </h2> <div id="flush-collapseOne' + ii + '" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"><div class="accordion-body"> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">选择方法</label> <div class="col-sm-9"><select id="select_method_' + ii + '"class="form-select"aria-label="Default select example" disabled> <option value="' + ii_item.case_step_method_id + '" selected>' + ii_item.case_step_method + ' </option> </select></div> </div> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">元素定位</label> <div class="col-sm-9"><input type="text" class="form-control"placeholder="请输入元素定位信息"name="case_step_locatior"id="case_step_locatior' + ii + '"value="' + ii_item.case_step_locatior + '"disabled readonly></div> </div> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">输入内容</label> <div class="col-sm-9"><input type="text" class="form-control" name="case_step_value"id="case_step_value' + ii + '"value="' + ii_item.case_step_value + '"disabled readonly></div> </div>  <div class="mb-3 row"><label for="inputPassword" class="col-sm-3 col-form-label">错误描述</label><div class="col-sm-9"><input type="text" class="form-control" name="case_step_value" id="describe' + ii + '" value="' + ii_item.describe + '" disabled readonly></div></div> </div> </div> </div> '
+                                }
+
+                                $("#case_step").append(case_step_item)
+                            })
+                        }
+                    });
+                }
+            });
+        }
+
+
+        {#    </script>#}
+
+
+
+{% endblock %}
