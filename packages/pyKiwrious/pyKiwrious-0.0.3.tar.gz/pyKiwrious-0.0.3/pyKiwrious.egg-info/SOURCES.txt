@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+Kiwrious/ExampleSubclass.py
+Kiwrious/HeartRate.py
+Kiwrious/__init__.py
+Kiwrious/service.py
+pyKiwrious.egg-info/PKG-INFO
+pyKiwrious.egg-info/SOURCES.txt
+pyKiwrious.egg-info/dependency_links.txt
+pyKiwrious.egg-info/requires.txt
+pyKiwrious.egg-info/top_level.txt
