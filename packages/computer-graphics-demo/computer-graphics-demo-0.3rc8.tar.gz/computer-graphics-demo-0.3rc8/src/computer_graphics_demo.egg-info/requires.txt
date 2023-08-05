@@ -1,0 +1,15 @@
+docopt
+taichi<0.8,>=0.7
+
+[all]
+get_version
+pytest
+rich
+
+[dev]
+get_version
+pytest
+rich
+
+[version]
+get_version
