@@ -1,0 +1,11 @@
+MANIFEST.in
+backend_shim.py
+setup.py
+lockfile_diff/__init__.py
+lockfile_diff/__main__.py
+lockfile_diff.egg-info/PKG-INFO
+lockfile_diff.egg-info/SOURCES.txt
+lockfile_diff.egg-info/dependency_links.txt
+lockfile_diff.egg-info/namespace_packages.txt
+lockfile_diff.egg-info/requires.txt
+lockfile_diff.egg-info/top_level.txt
