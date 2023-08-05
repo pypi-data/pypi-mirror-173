@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: lgg
+Version: 0.2.2
+Summary: A simple yet fancy logger for Python scripts
+Home-page: https://github.com/the-beee/python-logger
+Author: Ayoub Assis
+Author-email: assis.ayoub@gmail.com
+License: MIT License
+Keywords: Python,Logger,Fancy Logger
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: flake8 (==4.0.1) ; extra == 'dev'
+Requires-Dist: pytest (==7.1.2) ; extra == 'dev'
+Requires-Dist: flake9 (==3.8.3) ; extra == 'dev'
+Requires-Dist: pylint (==2.13.9) ; extra == 'dev'
+
+# python-logger
+A simple yet fancy logger for Python scripts
+
+## Install
+- Using pip:
+```shell
+pip install lgg
+```
+
+- Using Poetry:
+```shell
+poetry add lgg
+```
+
+## Usage
+```python
+# This way
+from lgg import logger
+# Or
+from lgg import get_logger
+logger = get_logger()
+# End Or
+
+logger.info('This is an info message')
+
+logger.debug('Debugging message')
+
+logger.error('error message')
+
+logger.warning('File not found! An empty one is created')
+```
+![Result](.resources/nameless.png)
+
+```python
+from lgg import get_logger
+logger = get_logger('python-logger')
+
+logger.info('This is an info message')
+
+logger.debug('Debugging message')
+
+logger.error('error message')
+
+logger.warning('File not found! An empty one is created')
+```
+![Result](.resources/python-logger.png)
+
+**Notice the change after each log's datetime, the former shows the filename and line of code,
+the latter displays the logger name instead**
