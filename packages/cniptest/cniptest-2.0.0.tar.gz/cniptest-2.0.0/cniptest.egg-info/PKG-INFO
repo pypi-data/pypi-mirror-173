@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cniptest
+Version: 2.0.0
+Summary: 一个可以获取ip地址的Python库
+Home-page: https://gitee.com/codeqihan/cniptest
+Author: codeqihan
+Author-email: qh@codeqihan.com
+License: MIT Licence
+Keywords: pip,ip,ipv6,cniptest,pypi
+Platform: any
+
+一个可以获取ip地址的Python库
