@@ -1,0 +1,16 @@
+AUTHORS.rst
+HISTORY.md
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+switch_guides_scaffold/__init__.py
+switch_guides_scaffold/scaffolder.py
+switch_guides_scaffold.egg-info/PKG-INFO
+switch_guides_scaffold.egg-info/SOURCES.txt
+switch_guides_scaffold.egg-info/dependency_links.txt
+switch_guides_scaffold.egg-info/entry_points.txt
+switch_guides_scaffold.egg-info/requires.txt
+switch_guides_scaffold.egg-info/top_level.txt
