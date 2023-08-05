@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+lgg/__init__.py
+lgg/_logger.py
+lgg/version.py
+lgg.egg-info/PKG-INFO
+lgg.egg-info/SOURCES.txt
+lgg.egg-info/dependency_links.txt
+lgg.egg-info/requires.txt
+lgg.egg-info/top_level.txt
+lgg.egg-info/zip-safe
+tests/__init__.py
+tests/test_import.py
+tests/test_logger_names.py
