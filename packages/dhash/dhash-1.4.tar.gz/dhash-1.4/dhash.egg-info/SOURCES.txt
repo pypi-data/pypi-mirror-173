@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+dhash-test.jpg
+dhash.py
+setup.py
+test.py
+dhash.egg-info/PKG-INFO
+dhash.egg-info/SOURCES.txt
+dhash.egg-info/dependency_links.txt
+dhash.egg-info/top_level.txt
