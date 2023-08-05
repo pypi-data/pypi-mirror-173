@@ -1,0 +1,3 @@
+[console_scripts]
+datadog_sap_monitor=netlink.datadog.sap.cli:datadog_sap_cli
+
