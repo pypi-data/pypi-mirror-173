@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: zkvvm
+Version: 0.1.0
+Summary: zkVyper version manager
+License: MIT
+Author: Edward Amor
+Author-email: edward.amor3@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Requires-Dist: vvm (>=0.1.0,<0.2.0)
+Description-Content-Type: text/x-rst
+
+zkvvm
+=====
+
+A completely experimental and untested zkVyper version manager.
+
+Usage
+-----
+
+#. Install with pip.
+
+    .. code-block:: shell
+
+        $ pip install git+https://github.com/skellet0r/zkvvm@master#egg=zkvvm
+
+#. Use the built-in CLI
+
+    .. code-block:: shell
+
+        $ zkvvm --help
+        usage: zkvvm [-h] [--cache-dir CACHE_DIR] [--log-file LOG_FILE] [-v] {ls,ls-remote,install,uninstall} ...
+
+        zkVyper Version Manager
+
+        optional arguments:
+        -h, --help            show this help message and exit
+        --cache-dir CACHE_DIR
+                                Default: /home/user/.cache/zkvvm
+        --log-file LOG_FILE   Default: /home/user/.cache/zkvvm/log/zkvvm.log
+        -v
+
+        commands:
+        {ls,ls-remote,install,uninstall}
+            ls                  List available local versions
+            ls-remote           List available remote versions
+            install             Install a remote version
+            uninstall           Uninstall a local version
+
+#. Use in a script
+
+    .. code-block:: python
+
+        import zkvvm
+
+        output = zkvvm.compile(["tmp/Foo.vy"])
+
+        src = """# @version 0.3.3
+
+        @view
+        @external
+        def foo(_a: uint256) -> uint256:
+            return _a
+        """
+        output = zkvvm.compile_source(src, zk_version="1.1.1", vyper_version="0.3.3")
+
