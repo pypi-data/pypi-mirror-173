@@ -1,0 +1,7 @@
+ckan>2.9
+
+[test]
+mock
+pytest>=4.6.5
+pytest-cov>=2.7.1
+coveralls
