@@ -1,0 +1,12 @@
+switch_guides_scaffold/__init__.py,sha256=3md89v4dIBWHHgqVObMZypgBRvKhZC1r7UG0527UAX8,551
+switch_guides_scaffold/scaffolder.py,sha256=9J6Cp7coFfzLGDGamq_hh_9tmPqXf-a0wssyG8yC7y0,5496
+switch_guides_scaffold/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+switch_guides_scaffold/templates/guide_sample_definition.py,sha256=84R-d50QibqVU7fJoRysLnXP13b3_Cwx3HtrgT6XzXY,1888
+switch_guides_scaffold/templates/guide_sample_step_definition.py,sha256=fdfw_OhFY4JjZ2hI2eVarv4y9ezeX3kO7oD3zOjS_es,5746
+switch_guides_scaffold-0.1.3.dist-info/AUTHORS.rst,sha256=TnE4v1dt7zx3cAJZfJtnWd31ExAUxOy7tqD4Y-Txxmk,105
+switch_guides_scaffold-0.1.3.dist-info/LICENCE,sha256=f0-XNHJvMbSUZs24-UqffrCzznfTb-YNMfeI4Pu8amQ,1093
+switch_guides_scaffold-0.1.3.dist-info/METADATA,sha256=4l-_R1ACq72l-9pNhzXowOY8s0M0d93WoL5sVaPIxhs,2162
+switch_guides_scaffold-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+switch_guides_scaffold-0.1.3.dist-info/entry_points.txt,sha256=CXDFGZvsEdLCl6EcQztQKNS7et2K-X8t-B8hqya1s8A,127
+switch_guides_scaffold-0.1.3.dist-info/top_level.txt,sha256=N6FcV3L-FyOQc_Fk6HKvy487Fh0vEOl8NarGUKLS-FE,23
+switch_guides_scaffold-0.1.3.dist-info/RECORD,,
