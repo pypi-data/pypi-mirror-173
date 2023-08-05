@@ -1,0 +1,27 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Overview}{}% 2
+\BOOKMARK [1][-]{section.3}{Header}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Required Parameters}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Optional Parameters}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Extra Keywords}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Data}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Visdata Dataset}{section.4}% 8
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Conjugation Convention}{subsection.4.1}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Flags Dataset}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Nsamples Dataset}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Version History}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{version dataset}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Version 0.x/0.1}{section.5}% 14
+\BOOKMARK [3][-]{subsubsection.5.2.1}{integration\137time dataset}{subsection.5.2}% 15
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Flexible Spectral Windows}{subsection.5.2}% 16
+\BOOKMARK [2][-]{subsection.5.3}{Version 1.0}{section.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Rank-3 Array Convention}{subsection.5.3}% 18
+\BOOKMARK [2][-]{subsection.5.4}{Version 1.1}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.5}{Table Summarizing Changes}{section.5}% 20
+\BOOKMARK [1][-]{section*.3}{Appendices}{}% 21
+\BOOKMARK [1][-]{Appendix.a.A}{Appendix Strings in HDF5}{}% 22
+\BOOKMARK [2][-]{subsection.a.A.1}{Target String Type}{Appendix.a.A}% 23
+\BOOKMARK [2][-]{subsection.a.A.2}{Writing strings in python2}{Appendix.a.A}% 24
+\BOOKMARK [2][-]{subsection.a.A.3}{Writing strings in python3}{Appendix.a.A}% 25
+\BOOKMARK [1][-]{Appendix.a.B}{Appendix Integer Datatype Support for Visibility Data}{}% 26
+\BOOKMARK [1][-]{Appendix.a.C}{Appendix Defining Python Boolean Types in C}{}% 27
