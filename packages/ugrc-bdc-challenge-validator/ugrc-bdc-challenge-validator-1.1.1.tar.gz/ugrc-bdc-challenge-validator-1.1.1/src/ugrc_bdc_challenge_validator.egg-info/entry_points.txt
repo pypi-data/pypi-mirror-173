@@ -1,0 +1,2 @@
+[console_scripts]
+bdcvalidator = validator.main:main

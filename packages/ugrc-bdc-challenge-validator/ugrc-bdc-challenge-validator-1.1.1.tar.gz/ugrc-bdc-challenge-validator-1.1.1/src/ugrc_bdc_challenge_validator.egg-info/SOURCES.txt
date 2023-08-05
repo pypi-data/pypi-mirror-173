@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/ugrc_bdc_challenge_validator.egg-info/PKG-INFO
+src/ugrc_bdc_challenge_validator.egg-info/SOURCES.txt
+src/ugrc_bdc_challenge_validator.egg-info/dependency_links.txt
+src/ugrc_bdc_challenge_validator.egg-info/entry_points.txt
+src/ugrc_bdc_challenge_validator.egg-info/requires.txt
+src/ugrc_bdc_challenge_validator.egg-info/top_level.txt
+src/ugrc_bdc_challenge_validator.egg-info/zip-safe
+src/validator/__init__.py
+src/validator/checks.py
+src/validator/main.py
+src/validator/version.py

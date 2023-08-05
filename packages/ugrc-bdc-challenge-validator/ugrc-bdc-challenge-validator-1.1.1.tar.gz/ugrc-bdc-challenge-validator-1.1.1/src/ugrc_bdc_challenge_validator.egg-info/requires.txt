@@ -1,0 +1,13 @@
+arcgis>1.7
+
+[tests]
+pylint-quotes~=0.2
+pylint~=2.11
+pytest-cov<5,>=3
+pytest-instafail~=0.4
+pytest-isort<4,>=2
+pytest-mock~=3.8
+pytest-pylint~=0.18
+pytest-watch~=4.2
+pytest<8,>=6
+yapf~=0.31
