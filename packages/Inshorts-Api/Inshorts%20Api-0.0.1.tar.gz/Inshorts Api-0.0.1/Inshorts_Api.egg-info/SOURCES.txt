@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+InshortsApi/__init__.py
+InshortsApi/inshorts.py
+Inshorts_Api.egg-info/PKG-INFO
+Inshorts_Api.egg-info/SOURCES.txt
+Inshorts_Api.egg-info/dependency_links.txt
+Inshorts_Api.egg-info/requires.txt
+Inshorts_Api.egg-info/top_level.txt
