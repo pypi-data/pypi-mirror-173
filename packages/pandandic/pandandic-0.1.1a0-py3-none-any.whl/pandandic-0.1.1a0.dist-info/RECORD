@@ -1,0 +1,9 @@
+pandandic/__init__.py,sha256=Qm24IPei38X8kxHKAj2x0Aza2XjsD9ihkFXd0xzLlUo,190
+pandandic/base_frame.py,sha256=AvEvnuCme7tp7CzSN3EC5ERXicgtJqV_kkRey5L7bOQ,11884
+pandandic/column.py,sha256=yCnCrEvE2COO-v5gm3Bksfq7DVJ-36SAKZ-MJ4pGzrg,173
+pandandic/column_group.py,sha256=vVs5UMa1OvxHF0yFwaFuRrXkYUmzS7mF8QtpSdBOJas,203
+pandandic/column_group_exception.py,sha256=525hHuQ-TUhQfOGsz2LS39Z7RXI8i2CA5aSVe-UiXLc,573
+pandandic/column_set.py,sha256=MeGVfUXCmHyrlfo3U7X9QCfO-0-TpxEmhZwb1oN9w8Q,324
+pandandic-0.1.1a0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pandandic-0.1.1a0.dist-info/METADATA,sha256=ut1PzMgloffDCJ4PJIyJjaHFRaH_O_S8atszTwiz5-o,9854
+pandandic-0.1.1a0.dist-info/RECORD,,
