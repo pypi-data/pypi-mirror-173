@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: arithmeticSubmodule
+Version: 1.0.0
+Summary: Arithmetic operations package
+Home-page: UNKNOWN
+Author: David Garrido
+Author-email: <youremail@email.com>
+License: UNKNOWN
+Keywords: python,arithmetic,vectors
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+
+Python package that includes sum, rest, mult and div operations for two vectors
+
+
