@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+xformula/__init__.py
+xformula.egg-info/PKG-INFO
+xformula.egg-info/SOURCES.txt
+xformula.egg-info/dependency_links.txt
+xformula.egg-info/top_level.txt
+xformula.egg-info/zip-safe
