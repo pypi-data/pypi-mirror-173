@@ -1,0 +1,10 @@
+pybnesian.libs/libparquet-ea1902a9.so.900,sha256=SwN8dg5RkwP6pM9T6G8rp3wdETQ1_tG44ZLbi70A8eY,11153648
+pybnesian.libs/libOpenCL-f806d0e1.so.1.0.0,sha256=cUN9AHZ8P3Z4LntNbATro7zwgIiSd6hPkvqm7BpkIYs,135600
+pybnesian.libs/libarrow_python-45e69cb7.so.900,sha256=yYq8Tq6a4_hIO00KT6vbrPltEGzs8_5yzls0_x_KIbA,3023400
+pybnesian.libs/libarrow-fae03c33.so.900,sha256=dEIDwbaXMd6fW8GHtzMPvjarxrPXhumvGnJKtFPyCKY,65137928
+pybnesian-0.4.3.dist-info/LICENSE,sha256=k1hsnDO7Twm_uc_DytZo2_eluvq3KrNvNegfvNZqVmQ,1052
+pybnesian-0.4.3.dist-info/top_level.txt,sha256=h0Vi1zXCf7qvMZ89TshMcmELANmiRxYEr9ldpOk8woc,10
+pybnesian-0.4.3.dist-info/WHEEL,sha256=FNUt4eBsrBVn_Yc5KG3aXtKE40X3uNZrbGLNCbVxyFw,148
+pybnesian-0.4.3.dist-info/RECORD,,
+pybnesian-0.4.3.dist-info/METADATA,sha256=soT1YhMaHJOcU0SljUpVKi-mSt1UQf3lOA_FQKk9MHk,10781
+pybnesian/__init__.cpython-39-x86_64-linux-gnu.so,sha256=OxfFzZn57AVHJT-YpRJ18vBOAK9x75zFN4k7azLlam4,10799272
