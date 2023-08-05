@@ -1,0 +1,44 @@
+name: Linting Tests
+# Only for least supported python version
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: "linting"
+            python: "3.7"
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install nox virtualenv
+    - name: Test build
+      run: "nox -s lint"
+
+  auto-gen-release:
+    needs:
+      - linting
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.PAT }}
+    steps:
+      - uses: rymndhng/release-on-push-action@v0.25.0
+        with:
+          bump_version_scheme: norelease
