@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mongo-user-manager
+Version: 0.0.1
+Summary: MongoDB utilities
+Home-page: https://github.com/mmmdawn/MongoUserManager
+Author: Dawn
+Author-email: congminh292k@gmail.com
+License: GNU
+Keywords: mongodb user-management mongodb-role
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Database
+Requires-Python: >=3.8
+License-File: LICENSE
