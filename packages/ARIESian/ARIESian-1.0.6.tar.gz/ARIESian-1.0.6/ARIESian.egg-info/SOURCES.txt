@@ -1,0 +1,9 @@
+LICENSE
+README
+setup.py
+ARIESian/__init__.py
+ARIESian/all.py
+ARIESian.egg-info/PKG-INFO
+ARIESian.egg-info/SOURCES.txt
+ARIESian.egg-info/dependency_links.txt
+ARIESian.egg-info/top_level.txt
