@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: VENOM-rest
+Version: 1.0
+Summary: For developers
+Home-page: https://github.com/ALAA7X
+Author: A7X&venom
+Author-email: 
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Keywords: dragocrypt
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+
+## Installation :
+```
+pip install VENOM_rest
+```
+
+
