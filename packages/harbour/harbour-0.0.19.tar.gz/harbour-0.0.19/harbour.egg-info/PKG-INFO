@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: harbour
+Version: 0.0.19
+Summary: This project aims to make it easier to create images in AWS ECR. There are some implementations already in place like Dump tables from Mysql and Postgres databases.
+Home-page: https://github.com/ebanx/harbour
+Author: ebanx-dataops
+Author-email: dataops@ebanx.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: test
+Provides-Extra: build
+License-File: LICENSE
