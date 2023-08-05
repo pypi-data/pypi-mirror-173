@@ -1,0 +1,10 @@
+kiirastuli/__init__.py,sha256=kSACNED3F36J_qA2XK8DyT6M1pZnEi3_G7ewrzTmex4,2335
+kiirastuli/__main__.py,sha256=Komo8xaDrlgUfkRVxnN15XgbRMhxgPKOeHehpq1pa3Y,125
+kiirastuli/cli.py,sha256=BGRCNvpQZnLncDkSzcij1FJy0df6aqSgVriM7bAO2QU,2205
+kiirastuli/kiirastuli.py,sha256=QICv1vArRXFBL1u5G3dopA2EW7Kw8Fja8mVqbz1vT6w,4046
+kiirastuli-2022.10.23.dist-info/LICENSE,sha256=7xgn1qW4kKTaB163LiE9nqy5u7ddEv-GDesuxK-SW58,1069
+kiirastuli-2022.10.23.dist-info/METADATA,sha256=1sMrQtWHuXVj_OYW7sVeSaV6KIkQRSwNOKUjDOBNefg,3173
+kiirastuli-2022.10.23.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+kiirastuli-2022.10.23.dist-info/entry_points.txt,sha256=QxOkGRTbsCTVywPCCXIiaT-vEwitMMPWsv11g5qFlnE,51
+kiirastuli-2022.10.23.dist-info/top_level.txt,sha256=uC9H05QRfTqY-SmP_-I7YlV9jTnVB5W1ILGbnyH5aOs,11
+kiirastuli-2022.10.23.dist-info/RECORD,,
