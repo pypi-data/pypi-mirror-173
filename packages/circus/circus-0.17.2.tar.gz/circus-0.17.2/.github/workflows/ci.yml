@@ -1,0 +1,81 @@
+name: ci
+
+on: [push, pull_request]
+
+jobs:
+
+  ubuntu:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 10
+
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9, 'pypy-3.7', 'pypy-3.8']
+        include:
+          - python-version: 3.7
+            tox-env: py37
+          - python-version: 3.8
+            tox-env: py38
+          - python-version: 3.9
+            tox-env: py39
+          - python-version: pypy-3.7
+            tox-env: pypy37
+          - python-version: pypy-3.8
+            tox-env: pypy38
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install system dependencies
+      run: |
+        sudo rm -f /etc/apt/sources.list.d/dotnetdev.list /etc/apt/sources.list.d/microsoft-prod.list
+        sudo apt update
+        sudo apt install libev-dev libevent-dev
+        sudo apt install gcc make libffi-dev pkg-config zlib1g-dev libbz2-dev libsqlite3-dev libncurses5-dev libexpat1-dev libssl-dev libgdbm-dev tk-dev libgc-dev python-cffi liblzma-dev libncursesw5-dev
+        sudo ldconfig
+    - name: Install test dependencies
+      run: |
+        pip install tox coveralls
+    - name: Run test suite
+      run: tox -v -e $TOX_ENV
+      env:
+        TOX_ENV: ${{ matrix.tox-env }}
+
+
+  multi-os:
+    # Run tests for one python version on different operating systems
+
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+
+    strategy:
+      matrix:
+        os: ['macos-10.15']
+        skip-tests: [false]
+        include:
+          - os: windows-2019
+            skip-tests: true
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install test dependencies
+      run: |
+        pip install tox coveralls
+
+    - name: Run test suite
+      shell: bash -l {0}
+      run: tox -v -e $TOX_ENV
+      continue-on-error: ${{ matrix.skip-tests }}
+      env:
+        TOX_ENV: py38
