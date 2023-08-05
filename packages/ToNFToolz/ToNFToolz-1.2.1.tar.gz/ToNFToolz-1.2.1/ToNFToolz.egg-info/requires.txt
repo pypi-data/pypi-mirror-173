@@ -1,0 +1,4 @@
+tonsdk>=1.0.6
+ton@ git+https://github.com/yungwine/pytonlib.git#egg=ton
+aiohttp>=3.8.1
+setuptools>=65.3.0
