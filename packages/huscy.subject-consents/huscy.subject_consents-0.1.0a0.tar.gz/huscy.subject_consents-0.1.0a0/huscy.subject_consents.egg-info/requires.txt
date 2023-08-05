@@ -1,0 +1,9 @@
+huscy.consents
+huscy.subjects
+
+[development]
+psycopg2-binary
+
+[testing]
+tox
+watchdog==0.9
