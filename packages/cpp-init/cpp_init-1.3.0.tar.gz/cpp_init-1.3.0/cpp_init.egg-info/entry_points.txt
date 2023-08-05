@@ -1,0 +1,2 @@
+[console_scripts]
+cpp_init = cpp_init.__main__:main

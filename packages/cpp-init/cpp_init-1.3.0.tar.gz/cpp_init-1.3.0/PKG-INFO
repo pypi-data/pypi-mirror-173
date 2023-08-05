@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cpp_init
+Version: 1.3.0
+Summary: A simple tool for setting up c/c++ projects.
+Home-page: https://github.com/beProsto/cpp-init
+Author: beProsto
+Author-email: be1prosto@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## cpp-init
+
+A simple python project used for initialising c/c++ projects.
+
+Installation:
+```
+pip install cpp-init
+```
+
+Usage:
+```
+python -m cpp_init <options>
+```
+
+`Options` are just 3 letters telling c-init what you want the project to be:
+1. First letter `<>XX`:
+	- `c` - specifies it's a c project
+	- `x` - specifies it's a c++ project
+2. Second letter `X<>X`:
+	- `a` - specifies it's an executable application
+	- `l` - specifies it's a library
+3. Third letter `XX<>`:
+	- `m` - specifies it's a make project
+	- `c` - specifies it's a cmake project
+
+Finally, it should (somewhat) look like this:
+```
+cpp_init xam  # will create a C++ application project compiled with make 
+cpp_init clc  # will create a C library project compiled with CMake
+...
+```
