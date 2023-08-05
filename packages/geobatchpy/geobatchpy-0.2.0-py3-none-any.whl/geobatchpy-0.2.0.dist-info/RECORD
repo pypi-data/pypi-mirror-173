@@ -1,0 +1,11 @@
+LICENSE,sha256=ppGPzXtddfW4khXCIcAyRIFMEmJcHkYiPIval32ylNM,1092
+geobatchpy/__init__.py,sha256=UGDY9ex6f34GozqyXpR-hyadsis8JHDHlQ1H9Biugsk,60
+geobatchpy/batch.py,sha256=wa53jCOxImxnSm7iWr8d0-ChYjPU-3JrSTTVLsDYjT8,19219
+geobatchpy/cli.py,sha256=O3RZnIXj7TdkislhvGa2j00ms7qQlBWUCzc0sf32DUE,4165
+geobatchpy/client.py,sha256=xmi_EXeJFOBwh60OIs220vbj992RM6xjyAPe2LmxRig,9042
+geobatchpy/utils.py,sha256=l89SbJ0A3TK0Nqj-8x_j_VVppwepIUekAm2x0JxRUW8,2314
+geobatchpy-0.2.0.dist-info/entry_points.txt,sha256=2kUT7CDZSn8M31qsYzu1NTWFxNWqsiQOdJtli6J6wA0,48
+geobatchpy-0.2.0.dist-info/LICENSE,sha256=ppGPzXtddfW4khXCIcAyRIFMEmJcHkYiPIval32ylNM,1092
+geobatchpy-0.2.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+geobatchpy-0.2.0.dist-info/METADATA,sha256=W9kTILJNXXgnyDM6yxy8B9Gky7PaqaUlBref8LSX6PM,7023
+geobatchpy-0.2.0.dist-info/RECORD,,
