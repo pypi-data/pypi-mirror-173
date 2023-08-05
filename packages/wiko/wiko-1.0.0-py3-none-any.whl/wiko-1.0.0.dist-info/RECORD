@@ -1,0 +1,13 @@
+wiko/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wiko/generate_download_area.py,sha256=aPNdNg2Q0EvNef6tPP7dg2BKHMp1pNEHUJSyv6JvO0s,1909
+wiko/generate_figures.py,sha256=Sk5OMBE5RWea9QLQVPtQTOrBpQ1NsljYfxqMFdtWRIQ,3213
+wiko/generate_gallery.py,sha256=p903XUU7jc8MNbUFgpCFHzCX8jB-T3K2ZOn0jrsJgCA,1707
+wiko/runtests.py,sha256=PMtCya7h0VBhS8T8uar_Tj6L0pf6gvWD1bwdGTdyb_0,923
+wiko/tex2wiki.py,sha256=p9Ezxk8nQltCFZ7-cL-8hD25IvXfzQ2yjuu6m4d7M5Y,1494
+wiko/wiko.py,sha256=IG1x-9JRfSly_tkX0V-PWM3qByUi0JvqAB8hY3vbjYk,48788
+wiko/wiko_util.py,sha256=k04QXXCpuw5W11JkiRyT4pO8RTgbibtpUPzhb-ltqp4,1288
+wiko-1.0.0.dist-info/METADATA,sha256=8-r9swZAyJaR9x-719hTGvBFOQ4hbHkM8V27_vjeRBU,4163
+wiko-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wiko-1.0.0.dist-info/entry_points.txt,sha256=PTaR72kGpYHCSg9w7uqpb8hkboRtVspk1yiml-lXpqQ,216
+wiko-1.0.0.dist-info/top_level.txt,sha256=E2hJgRM8N_L6woy-lCYyrzy14HpOm2kFm77h-A4bq7k,5
+wiko-1.0.0.dist-info/RECORD,,
