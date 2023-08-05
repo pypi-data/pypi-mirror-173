@@ -1,0 +1,12 @@
+SF_plum_finder/API_handling.py,sha256=B-rdDU7W0ZY1vyAyE4P4xlGwY4op7RCNaOd4WU7RF10,1973
+SF_plum_finder/__init__.py,sha256=8H3BYB23XT3AN5clXetLWQy3kMTwPE7nj05tPdWQ-qI,23
+SF_plum_finder/__main__.py,sha256=JFatb62Oh63o1pmJa_JEsEwwefnnY2PN1bEwvuL9wVU,70
+SF_plum_finder/init_config.py,sha256=Jhp15SCGH90A8BmOJvezAPeHx_YlYJllToI3umhQARY,1105
+SF_plum_finder/plum_finder.py,sha256=pXdalt1Mqxqf3oiKB9pYtcp8reeFuDkl2at-IEfdh-I,17125
+SF_plum_finder/data/Plum_Street_Tree_List.csv,sha256=5DcoRPVZLiLSly37em2nKAp8d1-Gpv2WlyNHF9LJiaI,1252550
+SF_plum_finder/data/Street_Names.json,sha256=EPtgYOFwTZE3bOVN0b8bn9BgVCBJWdgNcM5grTFo5Xo,39845
+SF_plum_finder-1.2.1.dist-info/LICENSE,sha256=L0Xq26nFYUrmFsmSP5tEq8pRqdyr-biv8CcGZ3AdZvo,1071
+SF_plum_finder-1.2.1.dist-info/METADATA,sha256=_O-gasutrS5ZYKWJv164XIcZaCMvAYY6IsXe1mpRCag,3299
+SF_plum_finder-1.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+SF_plum_finder-1.2.1.dist-info/top_level.txt,sha256=BJxnae4JakgWEXz4haFkpRkHHyZZHISOOed-JkBwqX0,15
+SF_plum_finder-1.2.1.dist-info/RECORD,,
