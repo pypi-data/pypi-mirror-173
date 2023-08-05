@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ga_python.egg-info/PKG-INFO
+ga_python.egg-info/SOURCES.txt
+ga_python.egg-info/dependency_links.txt
+ga_python.egg-info/top_level.txt
