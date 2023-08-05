@@ -1,0 +1,6 @@
+loguru
+opencv-python
+paho-mqtt
+pyserial
+pyyaml
+tabulate
