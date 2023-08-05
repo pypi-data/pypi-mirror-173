@@ -1,0 +1,11 @@
+detective/__init__.py,sha256=vZjB0mVFmjthYimUqZONx-5wDK_tohKLejrIq-icsh0,8
+detective/auth.py,sha256=VoSEbvAFo49RgMsYflk2YTCbXtj7JHIrqWkZg96mPok,1106
+detective/config.py,sha256=IaW-bjtqMHCXasmAx1HtJstXCMi3AMvFCbc5kHK5yI0,4708
+detective/core.py,sha256=Ggi9V5NvejWwyNrhRJJafvtl1inCJod_917PAUllSaw,5164
+detective/functions.py,sha256=QVtHAUvy8IsUEN_M1RihIGuX19vRwnoAuF95QOGTmgo,419
+detective/time.py,sha256=sq5IB8VJlbpiRSjEM4kch6UFYJphRhCZE2ivjc_edps,1372
+HASS_data_detective-2.6.dist-info/LICENSE,sha256=n8we5lvPALlZTmqsoM3NgIhyanME_SOYai6pDH84Nm0,1062
+HASS_data_detective-2.6.dist-info/METADATA,sha256=gMFBVk3irBVVUQ2uVnlwXUuXoGaDUSnd1k34BplxWmo,883
+HASS_data_detective-2.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+HASS_data_detective-2.6.dist-info/top_level.txt,sha256=Q5_0AoYqGEHaXvJbAsAm0CZ0NPAiZgdhU539N4mj0-8,10
+HASS_data_detective-2.6.dist-info/RECORD,,
