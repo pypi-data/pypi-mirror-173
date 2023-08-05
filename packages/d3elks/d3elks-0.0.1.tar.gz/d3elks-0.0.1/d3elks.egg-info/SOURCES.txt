@@ -1,0 +1,6 @@
+README.md
+setup.py
+d3elks.egg-info/PKG-INFO
+d3elks.egg-info/SOURCES.txt
+d3elks.egg-info/dependency_links.txt
+d3elks.egg-info/top_level.txt
