@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pyconbg/__init__.py
+src/pyconbg.egg-info/PKG-INFO
+src/pyconbg.egg-info/SOURCES.txt
+src/pyconbg.egg-info/dependency_links.txt
+src/pyconbg.egg-info/entry_points.txt
+src/pyconbg.egg-info/top_level.txt
