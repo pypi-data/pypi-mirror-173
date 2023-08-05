@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zhou-stattool
+Version: 0.0.6
+Summary: statistic tool for zhou
+Home-page: UNKNOWN
+Author: Frederic
+Author-email: fk1010098686@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# zhou_stattool
+zhou_stattool is a tool for zhouzhou to do hospital statistics
+
