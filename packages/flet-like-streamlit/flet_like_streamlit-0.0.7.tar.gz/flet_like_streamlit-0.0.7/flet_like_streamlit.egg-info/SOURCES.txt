@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+flet_like_streamlit/__init__.py
+flet_like_streamlit/control.py
+flet_like_streamlit/main.py
+flet_like_streamlit.egg-info/PKG-INFO
+flet_like_streamlit.egg-info/SOURCES.txt
+flet_like_streamlit.egg-info/dependency_links.txt
+flet_like_streamlit.egg-info/entry_points.txt
+flet_like_streamlit.egg-info/requires.txt
+flet_like_streamlit.egg-info/top_level.txt
