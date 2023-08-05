@@ -1,0 +1,3 @@
+[console_scripts]
+zhou_stattool = zhou_stattool.app:main
+
