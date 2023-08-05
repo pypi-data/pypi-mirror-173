@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: silver-platter
+Version: 0.5.1
+Summary: Automatic merge proposal creeator
+Home-page: https://jelmer.uk/code/silver-platter
+Author: Jelmer Vernooij
+Author-email: jelmer@jelmer.uk
+License: GNU GPL v2 or later
+Project-URL: Bug Tracker, https://github.com/jelmer/silver-platter/issues
+Project-URL: Repository, https://github.com/jelmer/silver-platter
+Project-URL: GitHub, https://github.com/jelmer/silver-platter
+Keywords: git bzr vcs github gitlab launchpad
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: POSIX
+Classifier: Topic :: Software Development :: Version Control
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: breezy (>=3.3.0.dev.0)
+Requires-Dist: dulwich (>=0.20.23)
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+Provides-Extra: debian
+Requires-Dist: debmutate (>=0.3) ; extra == 'debian'
+Requires-Dist: python-debian (>=0.1.48) ; extra == 'debian'
+Requires-Dist: brz-debian ; extra == 'debian'
+Provides-Extra: detect-gbp-dch
+Requires-Dist: lintian-brush ; extra == 'detect-gbp-dch'
+Provides-Extra: launchpad
+Requires-Dist: launchpadlib ; extra == 'launchpad'
+
