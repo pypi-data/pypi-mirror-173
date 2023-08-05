@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: storethisstuff
+Version: 0.4
+Summary: This is my API
+Author-email: Vladimir Isakov <vl.isakov@hotmail.com>
+License: MIT
+Requires-Python: >=3.7

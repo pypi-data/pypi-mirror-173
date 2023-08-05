@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "storethisstuff"
+description = "This is my API"
+version = "0.4"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+authors = [
+    { name = "Vladimir Isakov", email = "vl.isakov@hotmail.com" }
+]
+dependencies = [
+    "flask==2.2.0"
+]
