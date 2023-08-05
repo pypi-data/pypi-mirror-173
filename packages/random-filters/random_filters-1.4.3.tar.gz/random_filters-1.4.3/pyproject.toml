@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "random-filters"
+version = "1.4.3"
+description = "A package for generating random filters"
+authors = ["Renan <renancavalcantercb@protonmail.com>"]
+readme = "README.md"
+packages = [{ include = "checkbox", from = "src" }, { include = "combobox", from = "src" }, { include = "date", from = "src" }, { include = "date_partition", from = "src" }, { include = "store", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
