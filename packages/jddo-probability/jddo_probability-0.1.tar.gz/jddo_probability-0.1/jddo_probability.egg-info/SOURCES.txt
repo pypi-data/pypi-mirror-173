@@ -1,0 +1,10 @@
+setup.py
+jddo_probability/Binomialdistribution.py
+jddo_probability/Gaussiandistribution.py
+jddo_probability/Generaldistribution.py
+jddo_probability/__init__.py
+jddo_probability.egg-info/PKG-INFO
+jddo_probability.egg-info/SOURCES.txt
+jddo_probability.egg-info/dependency_links.txt
+jddo_probability.egg-info/not-zip-safe
+jddo_probability.egg-info/top_level.txt
