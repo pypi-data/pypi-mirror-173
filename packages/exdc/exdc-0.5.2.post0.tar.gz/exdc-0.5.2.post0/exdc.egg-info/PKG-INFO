@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: exdc
+Version: 0.5.2.post0
+Summary: Barebones Discord client
+Home-page: https://github.com/eXhumer/pyeXDC
+Author: eXhumer
+Author-email: exhumer@exhumer.cc
+License: AGPL-3.0-only
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: COPYING.md
+
+# eXDC
+[![eXDC Release](https://github.com/eXhumer/pyeXDC/actions/workflows/release.yml/badge.svg?branch=dev)](https://github.com/eXhumer/pyeXDC/actions/workflows/release.yml)
+
+Barebones Python based Discord client. Created for use with [eXF1LT](https://github.com/eXhumer/pyeXF1LT).
+
+## Package Installation Guide
+### Requires
+* Python 3.11+
+* pip package manager
+
+### Install from source
+```console
+pip install -e git+https://github.com/eXhumer/pyeXDC.git@dev#egg=exdc
+```
+
+### Install from PyPI
+```console
+pip install exdc
+```
+
+## Licensing
+This project is licensed under OSI Approved [GNU AGPLv3 **ONLY**](./COPYING.md).
