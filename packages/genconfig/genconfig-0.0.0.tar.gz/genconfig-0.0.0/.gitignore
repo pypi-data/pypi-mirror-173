@@ -1,0 +1,19 @@
+# ignore system files
+/.DS_Store
+
+# ignore notebook checkpoints
+/.ipynb_checkpoints/
+
+# ignore python cache
+**/*/__pycache__/
+*.egg-info/
+/.eggs/
+build/
+
+# ignore swap files
+/*.swp
+
+# ignore data folder
+data/
+
+.coverage

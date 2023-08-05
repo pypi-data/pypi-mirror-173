@@ -1,0 +1,2 @@
+[console_scripts]
+configen = configen.cli:main
