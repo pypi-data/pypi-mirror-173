@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: distopia
+Version: 0.1.0rc6
+Summary: Fast distance calculations using explicitly vectorised SIMD
+Home-page: https://github.com/MDAnalysis/distopia
+Download-URL: https://pypi.org/project/distopia/
+Author: ['Hugo MacDermott-Opeskin', 'Richard Gowers']
+License: MIT
+Project-URL: Homepage, https://github.com/MDAnalysis/distopia
+Project-URL: Documentation, https://www.mdanalysis.org/distopia/
+Project-URL: Source Code, https://github.com/MDAnalysis/distopia
+Project-URL: Issue Tracker, https://github.com/MDAnalysis/distopia/issues
+Keywords: molecular dynamics distances simulation SIMD
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.8
+License-File: LICENSE.txt
