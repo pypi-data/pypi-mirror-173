@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+st_highlightable_text/__init__.py
+st_highlightable_text.egg-info/PKG-INFO
+st_highlightable_text.egg-info/SOURCES.txt
+st_highlightable_text.egg-info/dependency_links.txt
+st_highlightable_text.egg-info/requires.txt
+st_highlightable_text.egg-info/top_level.txt
