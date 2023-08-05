@@ -1,0 +1,3 @@
+[console_scripts]
+find-empty-dirs = shell_tools.dirs.find_empty_dirs:cli
+generate-file = shell_tools.files.generate_file:cli

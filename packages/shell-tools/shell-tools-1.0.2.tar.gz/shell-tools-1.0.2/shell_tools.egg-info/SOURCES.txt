@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+shell_tools/__init__.py
+shell_tools.egg-info/PKG-INFO
+shell_tools.egg-info/SOURCES.txt
+shell_tools.egg-info/dependency_links.txt
+shell_tools.egg-info/entry_points.txt
+shell_tools.egg-info/requires.txt
+shell_tools.egg-info/top_level.txt
+shell_tools/dirs/__init__.py
+shell_tools/dirs/find_empty_dirs.py
+shell_tools/files/__init__.py
+shell_tools/files/generate_file.py
