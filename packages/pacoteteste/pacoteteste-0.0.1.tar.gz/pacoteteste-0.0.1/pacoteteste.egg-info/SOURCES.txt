@@ -1,0 +1,11 @@
+License.txt
+README.md
+setup.py
+pacoteteste/__init__.py
+pacoteteste/armazenamento.py
+pacoteteste/consulta.py
+pacoteteste/interacao.py
+pacoteteste.egg-info/PKG-INFO
+pacoteteste.egg-info/SOURCES.txt
+pacoteteste.egg-info/dependency_links.txt
+pacoteteste.egg-info/top_level.txt
