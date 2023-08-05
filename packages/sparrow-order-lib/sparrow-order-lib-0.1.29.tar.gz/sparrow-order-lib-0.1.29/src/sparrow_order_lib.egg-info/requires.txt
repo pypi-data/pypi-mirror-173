@@ -1,0 +1,7 @@
+Django~=2.2
+django-filter==2.2.0
+djangorestframework~=3.10.3
+sparrowcloud==3.3.8
+Pillow==6.2.1
+elasticsearch==7.8.0
+XlsxWriter~=3.0.3
