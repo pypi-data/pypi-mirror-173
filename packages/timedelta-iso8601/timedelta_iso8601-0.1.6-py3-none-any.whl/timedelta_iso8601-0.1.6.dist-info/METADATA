@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: timedelta-iso8601
+Version: 0.1.6
+Summary: ISO 8601 duration parser
+Author: James Addison <jay@jp-hosting.net>
+License: AGPL-3.0-or-later
+Project-URL: Homepage, https://pypi.org/project/timedelta-iso8601/
+Project-URL: Source, https://github.com/jayaddison/timedelta-iso8601.git/
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# timedelta-iso8601
+
+`timedelta-iso8601` is a pure-Python implementation of ISO 8601 duration parsing that does not rely on regular expressions.
+
+Functionality is provided in a subclass of `datetime.timedelta` that implements additional `isoformat()` and `fromisoformat(duration_string)` methods.
+
+## Usage
+
+```python
+>>> from timedelta_iso8601 import timedelta
+>>> from datetime import datetime
+>>>
+>>> millenium = datetime(year=2000, month=1, day=1)
+>>> now = datetime.utcnow()
+>>>
+>>> td = timedelta(seconds=(now - millenium).total_seconds())
+>>> td.isoformat()
+'P8310DT16H21M3S'
+>>>
+>>> millenium + timedelta.fromisoformat('P8310DT16H21M3S')
+datetime.datetime(2022, 10, 2, 16, 21, 3)
+```
