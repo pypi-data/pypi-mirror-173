@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: simplefibcffi
+Version: 0.3
+Summary: Display simple Fibonacci sequence from C implementation wrapped with CFFI.
+Home-page: https://github.com/zhuokaizhao/simplefib_cffi
+Author: Zhuokai Zhao
+Author-email: zhuokai@uchicago.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cffi (>=1.0.0)
+
+# Publish
+
+Display Fibonacci sequence with extension C module using cffi.
+
+## Installation
+
+Run the following to install:
+
+>>>pip3 install simplefibcffi
+
+## Usage
+
+import simiplefibcffi
+simplefibcffi.print_fib(5)
