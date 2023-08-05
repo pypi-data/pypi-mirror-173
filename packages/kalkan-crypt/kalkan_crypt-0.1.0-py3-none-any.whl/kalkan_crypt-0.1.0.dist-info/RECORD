@@ -1,0 +1,9 @@
+kalkan_crypt/__init__.py,sha256=cpTKVeB7BfHecQJIleA9THa1xMSAu9c-3jnwYm0vSBY,191
+kalkan_crypt/adapter.py,sha256=zhBLyZI8B1fntq4a8OUunK25mqkKoRFG0eIcMy-r9hA,5551
+kalkan_crypt/enums.py,sha256=mcrNBynKxF2ABoNGF99VDob1up_ukNcThnwC-dvAUus,631
+kalkan_crypt/exceptions.py,sha256=trnMUEea_EiBdlL2AYpZFSH9LwS3LF5-cMAKrgxw7vc,247
+kalkan_crypt/dll/libkalkancryptwr-64.so.2.0.2,sha256=hiaqGZlls4_E0Mcqd8i5ZHeIbppA2ZRQ__E5ULKkNSY,7835464
+kalkan_crypt-0.1.0.dist-info/METADATA,sha256=vGGXhUX1AvJ7fMDN6CZJZNcArY8DjKfXkjM1ikRNlnI,709
+kalkan_crypt-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kalkan_crypt-0.1.0.dist-info/top_level.txt,sha256=k1qsj1dLd6i-wYca5SkiAHkiR96Hkh1-ONvawy8ykg0,13
+kalkan_crypt-0.1.0.dist-info/RECORD,,

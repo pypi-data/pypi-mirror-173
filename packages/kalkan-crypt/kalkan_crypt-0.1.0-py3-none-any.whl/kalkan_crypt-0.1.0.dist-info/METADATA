@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kalkan-crypt
+Version: 0.1.0
+Summary: Kalkan crypt adapter
+Home-page: https://gitlab.qasco.kz/packages/kalkan-crypt
+Author: Anton Ivanov
+Author-email: vstrkz@yandex.ru
+Project-URL: Bug Tracker, https://gitlab.qasco.kz/packages/kalkan-crypt/-/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.9
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-lazy-fixture ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pylama ; extra == 'dev'
+Requires-Dist: pylama-print ; extra == 'dev'
+
