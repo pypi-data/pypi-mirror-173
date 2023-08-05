@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: jax-am
+Version: 0.0.1
+Summary: GPU-accelerated simulation toolbox for additive manufacturing.
+Home-page: https://github.com/tianjuxue/jax-am
+Author: Xue et al.
+Author-email: tianjuxue@outlook.com
+License: GPL-3.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: orix
+Requires-Dist: meshio
+Requires-Dist: gmsh
+Requires-Dist: pyfiglet
+
+# JAX-AM
+
+<p align="middle">
+  <img src="docs/materials/logo.png" width="200" />
+</p>
+
+A GPU-based simulation toolbox for additive manufacturing.
+
+## Documentation
+
+Please see the [web documentation](https://jax-am.readthedocs.io/en/latest/) for details of this project.
