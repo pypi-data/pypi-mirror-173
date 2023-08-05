@@ -1,0 +1,9 @@
+README.md
+setup.py
+tags2vec/__init__.py
+tags2vec/test.py
+tags2vec.egg-info/PKG-INFO
+tags2vec.egg-info/SOURCES.txt
+tags2vec.egg-info/dependency_links.txt
+tags2vec.egg-info/requires.txt
+tags2vec.egg-info/top_level.txt
