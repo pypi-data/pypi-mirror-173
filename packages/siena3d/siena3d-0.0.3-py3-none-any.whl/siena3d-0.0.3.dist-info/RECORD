@@ -1,0 +1,16 @@
+siena3d/__init__.py,sha256=bhiR09T-9BTm82P2Etipeis-999YweR8l9JiTiJLNfg,118
+siena3d/astrometry.py,sha256=_jDXckyf6_rIjtMaoUCkFXkLzTKA2p73cjpe3gskdVM,23395
+siena3d/cube.py,sha256=9vCgjyjIpFKRdPqXekv2pywugPvIuOQd2C3G_Giivo4,6560
+siena3d/data.py,sha256=vj4eDCyifmBYC_ydsf2a9arFBiHdAaMfAZtKYRxEI0Q,25063
+siena3d/header.py,sha256=MLe_VUiIRgiltvmN10ZfYybqTrLha6OmOSUU34rtG2I,3726
+siena3d/parameters.py,sha256=aho8iWp0TUyuxmxkfVqxk7jABl1xgBYQ6jY8TLYzldc,4153
+siena3d/plot.py,sha256=15GEosfpQtD1kN2j1D5-scMI9oOa7ph3IpaB3_lQBFg,27983
+siena3d/spectrum.py,sha256=Ui8pSP4XARPDUKPeONiVnSKBXjA5YGy8kavwQYFZbKw,16397
+siena3d/data/eline_rf.txt,sha256=zEWgl5M3zyRCikDj_djoBwi_pSssAOFbSCC-c_qZPk0,254
+siena3d/data/logo.png,sha256=UfNKvYsNXLlNdrtxkw_wP3Uv28zX7f5vBrZzopc5YZE,21441
+siena3d/data/logo.txt,sha256=IfbwnNKfAi_NOAaufJv9B2pfb_KJJHwzCUQo6SNGtbY,307
+siena3d-0.0.3.dist-info/LICENSE,sha256=7wZYyBgEWty6EyhwjKYtIeYK7RBRSTDCRsZxAUAEuU0,1543
+siena3d-0.0.3.dist-info/METADATA,sha256=CFeSYrBbzo5ZArvbKvKPw7gjiAcQYjhxOpZkQtKVQq8,3014
+siena3d-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+siena3d-0.0.3.dist-info/top_level.txt,sha256=GM_vOF-6vjjyQNvfODKG7SEdTSgu5ytdXTYQQ3edd94,8
+siena3d-0.0.3.dist-info/RECORD,,
