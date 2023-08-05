@@ -1,0 +1,7 @@
+pytest_tagging/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+pytest_tagging/plugin.py,sha256=GOKgNh-P5OomPf9vPHedzYN7c_mCCyuOd8Nq2DCGZl0,2840
+pytest_tagging/utils.py,sha256=856IiKtvLZknJAfkeIROhP2Pf08R7CJNWWxqrMfZukU,949
+pytest_tagging-1.1.1.dist-info/entry_points.txt,sha256=yDmRYnRV4sDhxw-T2fKJdf2LKQl9FysszUIkYIlGGOQ,49
+pytest_tagging-1.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pytest_tagging-1.1.1.dist-info/METADATA,sha256=4pjiPlr76qOiG0qK2v_Tqop2C3wiUaJtksQgSwfWUYM,1885
+pytest_tagging-1.1.1.dist-info/RECORD,,
