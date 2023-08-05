@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+src/kalmankit/__init__.py
+src/kalmankit/_version.py
+src/kalmankit/extended.py
+src/kalmankit/standard.py
+src/kalmankit/utils.py
+src/kalmankit.egg-info/PKG-INFO
+src/kalmankit.egg-info/SOURCES.txt
+src/kalmankit.egg-info/dependency_links.txt
+src/kalmankit.egg-info/requires.txt
+src/kalmankit.egg-info/top_level.txt
