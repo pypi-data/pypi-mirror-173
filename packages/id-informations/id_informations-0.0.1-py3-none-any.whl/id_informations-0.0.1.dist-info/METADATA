@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: id-informations
+Version: 0.0.1
+Summary: Pacote python para entrar com informacoes de identificacao
+Home-page: https://github.com/VLR03
+Author: Vitor Longhi Ramoa
+Author-email: vitorlr03@gmail.com
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+id_informations
+id_informations e um simples pacote para entrar e exibir informacoes de identificacao em Python.
+
+Dependencias
+Python 3.6 ou posterior
+
+Pacote numpy
+
+Comecando o uso
+VocÃª vai precisar instalar o pacote id_informations, para isso basta executar:
+
+pip install id_informations
+Funcao
+interagir () - entrada de dados do usuario
+Funcao
+armazenar () - armazena os dados em um .txt
+Funcao
+consultar () - retorna os dados armazenados anteriormente
+
