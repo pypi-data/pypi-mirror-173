@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: tercol
+Version: 0.1.2.post2
+Summary: TerCol is a useless library that colors your text.
+Home-page: https://butterroach.github.io/tercol/
+Download-URL: https://github.com/Butterroach/tercol/archive/refs/tags/v0.1.2.tar.gz
+Author: Sultan Marzouq
+Author-email: epicnoobcontactemail@gmail.com
+License: MIT
+Keywords: terminal styling,colors,style
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# **TerCol**
+
+#### _A completely useless library for terminal styling._
+
+## **Why should I use this for terminal styling?**
+
+- Sometimes, you will feel like you're insane and would wanna hit your head on the table multiple times. So, TerCol's there if that happens.
+
+## **What features does this library have?**
+
+- Everything other libraries have, except for rainbowtext() which is a unique feature this library has.
+
+## **How do I use this?**
+
+```python
+import tercol
+
+print(tercol.red('Red text'))
+print(tercol.blue('Blue text'))
+print(tercol.rgb(255, 215, 0, 'Gold text using RGB'))
+print(tercol.hex('#ffd700', 'Gold text using HEX'))
+print(tercol.rainbowtext('Rainbow text!'))
+
+# it's that simple.
+```
+
+maybe try running this too at the terminal
+```
+py -m tercol
+```
+
+that's all
+bye
