@@ -1,0 +1,15 @@
+kasearch/__init__.py,sha256=ipZdHa0nXJowRS5p6PNlmXtC5LcbOOIwa0AgTxCrLSM,287
+kasearch/align_sequences.py,sha256=HlPzBv-_Pa6sIACwojiDtQ-kFaawBhl0JJHwcD-I0xI,3736
+kasearch/canonical_alignment.py,sha256=Ntu09SeQQAYUWvZpiIXFIvkDStQiv4-eSBmwCidbm_I,5330
+kasearch/easy_search.py,sha256=h1sAnYbLFEyrzmrGkMDZNhGnKr0PJr_KozvdL05C3Os,1901
+kasearch/identity_calculations.py,sha256=4KZokJfVq2YREmq3pPj_CeJNTfmwR-RqWe6xfC_Y5pY,5392
+kasearch/initiate_db.py,sha256=q5KqupxwpleOpUDYtg4gKW-fbao8y_0EeZv3JYOXqsQ,2341
+kasearch/kasearch.py,sha256=sOsahLbgQ-aQelmZbRCQmvspM_pXG_Ud_TuDYyxhepw,6767
+kasearch/merge_db.py,sha256=6PaafRuvbGPjjLFLqwoOF83Nrbc0DgrwxJRkCmZs0SM,2657
+kasearch/meta_extract.py,sha256=B117HBfo8iuP9cTa_4H1AapeWusyVS_Jcg5wsXT2rk0,2425
+kasearch/prepare_db.py,sha256=jTcBpSB4ISeccNhcCs15xCHHbxUG4_oNND3cb24ZQWs,5782
+kasearch/species_anarci.py,sha256=1TFttkIGhv2EiGkKZdi6ZAaHbmmESX7yteMbLrVleew,3179
+kasearch-0.0.10.dist-info/METADATA,sha256=v2ekVNrtpbWdJgquuFEw_CPZvVspgBn0CJIWCrMs4F8,4530
+kasearch-0.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kasearch-0.0.10.dist-info/top_level.txt,sha256=1AcL5euDORezGwwbqUjHc4b6eKpNrhXD1rimF4vkqAE,9
+kasearch-0.0.10.dist-info/RECORD,,
