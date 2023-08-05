@@ -1,0 +1,6 @@
+[plover.dictionary]
+dsd = plover_german_syllatype:SyllatypeDictionary
+dwd = plover_german_syllatype:SyllatypeWordDictionary
+
+[plover.system]
+German Syllatype = plover_german_syllatype.system
