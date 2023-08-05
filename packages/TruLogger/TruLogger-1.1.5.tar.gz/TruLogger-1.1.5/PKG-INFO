@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: TruLogger
+Version: 1.1.5
+Summary: Logger package
+Author-email: Jacob Truman <jacob.truman@gmail.com>
+Project-URL: homepage, https://gitlab.com/jacobtruman/TruLogger
+Project-URL: documentation, https://gitlab.com/jacobtruman/TruLogger
+Project-URL: repository, https://gitlab.com/jacobtruman/TruLogger
+Description-Content-Type: text/x-rst
