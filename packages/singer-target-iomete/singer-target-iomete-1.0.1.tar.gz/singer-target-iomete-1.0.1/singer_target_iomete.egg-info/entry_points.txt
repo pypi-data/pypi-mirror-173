@@ -1,0 +1,2 @@
+[console_scripts]
+singer-target-iomete = singer_target_iomete:main
