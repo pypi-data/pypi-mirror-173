@@ -1,0 +1,3 @@
+fastapi
+cognitojwt[sync]
+pyYAML
