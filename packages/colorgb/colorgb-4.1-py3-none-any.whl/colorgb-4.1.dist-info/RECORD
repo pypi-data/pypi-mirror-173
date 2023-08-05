@@ -1,0 +1,11 @@
+colorgb/__init__.py,sha256=zcgJJr3JViy62hKkEh_O2bxUqhYadXAgnAfAMXvvQKA,401
+colorgb/backgrounds.py,sha256=HL5AE1bgngXxEhHP-i0tWP0MeV2Iqyiqs78vN-pHXdc,809
+colorgb/dictionary.py,sha256=wmZAUIYytat7f5kLfbQl4RKp2AvLmARwcR02QKIu3Rw,1111
+colorgb/errors.py,sha256=fxUguvRNDR-_CPCnQY4_VAQ6UpvU-kF2-AGhWj-qqHM,375
+colorgb/foregrounds.py,sha256=nl6hA4Bb1GM8Lk24ypSTXP2oVcqZQjB_S0nsJSimMts,768
+colorgb/styles.py,sha256=tlyvHVpLd775r53ODkwH8WFCzSdJWiSkGtTFZaiET_s,721
+colorgb-4.1.dist-info/LICENSE,sha256=DQA8Kb1kGDhA9wW20OH_osO-Fbx3BiCk0Ew5p9TQPxM,1071
+colorgb-4.1.dist-info/METADATA,sha256=97UVMgaaCXN7Is0L8FxFKzrG0DnAWfAJayXMLpLXpvU,3508
+colorgb-4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+colorgb-4.1.dist-info/top_level.txt,sha256=XdmhwBc-Oo94wNWcgvXHuRK6-L2st9pKG2x6LLwsvaQ,8
+colorgb-4.1.dist-info/RECORD,,
