@@ -1,0 +1,72 @@
+####################################################
+#
+# This Work is written by Nikolai Rozanov <nikolai>
+#
+# Contact:  nikolai.rozanov@gmail.com
+#
+# Copyright (C) 2018-Present Nikolai Rozanov
+#
+####################################################
+
+####################################################
+# IMPORT STATEMENTS
+####################################################
+
+# >>>>>>  Native Imports  <<<<<<<
+import argparse
+
+# >>>>>>  Package Imports <<<<<<<
+
+# >>>>>>  Local Imports   <<<<<<<
+import anas
+
+####################################################
+# CODE
+####################################################
+
+parser = argparse.ArgumentParser(
+    description="""Copyright (C) Nikolai Rozanov 2012-Present\n A minimal library for Approximate Neural Architecture Search."""
+)
+
+
+#############
+# PARAMETERS
+parser.add_argument(
+    "--helloworld",
+    "-hw",
+    action="store_true",
+    default=False,
+    help="Print Hello World.",
+)
+
+parser.add_argument(
+    "--name",
+    "-n",
+    action="store",
+    type=str,
+    default="",
+    help="The name of the user.",
+)
+
+
+####################################################
+# MAIN
+####################################################
+if __name__=="__main__":
+    ##########################
+    # Execution
+    ##########################
+    args = parser.parse_args()
+
+
+    #############
+    # Local Commands
+    if args.helloworld:
+        if args.name:
+            anas.hello_world(args.name)
+        else:
+            anas.hello_world()
+
+
+
+# EOF

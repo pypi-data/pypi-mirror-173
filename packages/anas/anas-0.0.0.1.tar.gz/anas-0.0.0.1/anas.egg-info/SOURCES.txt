@@ -1,0 +1,8 @@
+README.md
+setup.py
+anas/__init__.py
+anas.egg-info/PKG-INFO
+anas.egg-info/SOURCES.txt
+anas.egg-info/dependency_links.txt
+anas.egg-info/top_level.txt
+bin/anas
