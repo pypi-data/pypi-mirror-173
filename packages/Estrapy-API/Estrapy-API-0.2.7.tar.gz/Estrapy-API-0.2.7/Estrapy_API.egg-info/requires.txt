@@ -1,0 +1,7 @@
+requests
+pygments
+
+[cli]
+asyncclick
+tabulate
+anyio

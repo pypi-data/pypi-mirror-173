@@ -1,0 +1,5 @@
+[console_scripts]
+estrapy = Estrapy.cli:main
+estrapy help = Estrapy.cli:help
+estrapy menu = Estrapy.cli:menu
+estrapy save = Estrapy.cli:save
