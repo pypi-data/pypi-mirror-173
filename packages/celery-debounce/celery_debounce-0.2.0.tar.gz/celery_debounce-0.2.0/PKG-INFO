@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: celery_debounce
+Version: 0.2.0
+Summary: celery debounce without cache
+Home-page: https://github.com/Concular/celery_debounce
+Author: Concular GmbH
+Author-email: amit@concular.com
+Keywords: celery_debounce
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+# Celery Debounce
+
+
+
+
+Celery debounce without using cache.
+
+
+How to create debounce task?
+```
+from celery_debounce.celery_debounce import DebouncedTask
+
+@app.task(bind=True, base=DebouncedTask)
+def testing_task(self, some_id):
+    """
+    how to call task?
+    testing_task.debounce(some_id=1234)
+    """
+    print("from testing_task", some_id)
+
+```
+
+How to call the task?
+
+```
+testing_task.debounce(some_id=1234)
+```
+With countdown (By default it's 60 seconds):
+```
+testing_task.debounce(some_id=1234, countdown=10)
+```
+
+
+
+=======
+History
+=======
+
+0.1.0 (2022-10-21)
+------------------
+
+* First release on PyPI.
