@@ -1,0 +1,13 @@
+category:
+  weight: null
+  drop low: null
+  late_penalty: null
+
+assignments:
+  exclude_complete_thresh: null
+  exclude: null
+  substitute: null
+
+waive: null
+
+email_list: null
