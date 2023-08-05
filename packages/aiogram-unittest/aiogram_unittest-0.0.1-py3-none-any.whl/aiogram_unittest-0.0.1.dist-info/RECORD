@@ -1,0 +1,13 @@
+aiogram_unittest/__init__.py,sha256=g0WxrkOIk9oXc-hqAXCan7GaAxHGuytKE4iHhN1tSTo,108
+aiogram_unittest/args_parser.py,sha256=p51MV_7jqCrZ85lfUjs1-h26gvlAwHTj8pXei2m_aSk,30566
+aiogram_unittest/handler.py,sha256=yr_gCQhT3K1GDDQrlmNoalK14BRI5ZURnzsHMw9I36E,2791
+aiogram_unittest/requester.py,sha256=IYqYUQeB6iL_QIfNbXQfXl1JG5yr-bEmISazDizzJXA,5247
+aiogram_unittest/utils.py,sha256=3S38aZvc5fUjOFGXhVy5nlusB-lJHfacwfvXtv2kYCk,6806
+aiogram_unittest/types/__init__.py,sha256=Z4_lNtYKUe_PXCde_an7r2MFOl23_bIrT42kBLcYq-w,130
+aiogram_unittest/types/dataset/__init__.py,sha256=_f3kkOcIvELZwDJ-CjbgBfzltzrJ9t-cI57b1_OpAaQ,14435
+aiogram_unittest/types/dataset/base.py,sha256=korXvAyb7TuTO9UmeFe-wBbXWTnzsUYBU9zFm0_QG_w,1868
+aiogram_unittest-0.0.1.dist-info/LICENSE,sha256=2GARH7EmMMWjxwsDPCgPGL7E65qcRsHV6LdPsVFO3zg,1069
+aiogram_unittest-0.0.1.dist-info/METADATA,sha256=F0KD6YBlNX0OWGvA9VMRQOu5ybPdPLh-ENSNE-I16ns,1701
+aiogram_unittest-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiogram_unittest-0.0.1.dist-info/top_level.txt,sha256=wVdH3n_tqre4VnierHXXPv535mCHpGhHhfteMWK1YbY,17
+aiogram_unittest-0.0.1.dist-info/RECORD,,
