@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/core_authorizer/__init__.py
+src/core_authorizer/get_permissions.py
+src/core_logging/__init__.py
+src/core_logging/aws_logging.py
+src/vitor_core_test.egg-info/PKG-INFO
+src/vitor_core_test.egg-info/SOURCES.txt
+src/vitor_core_test.egg-info/dependency_links.txt
+src/vitor_core_test.egg-info/not-zip-safe
+src/vitor_core_test.egg-info/requires.txt
+src/vitor_core_test.egg-info/top_level.txt
