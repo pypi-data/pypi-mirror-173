@@ -1,0 +1,3 @@
+[console_scripts]
+icw=ilias_course_watcher:main
+
