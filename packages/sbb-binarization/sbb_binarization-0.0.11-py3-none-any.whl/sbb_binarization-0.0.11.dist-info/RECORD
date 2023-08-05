@@ -1,0 +1,11 @@
+sbb_binarize/__init__.py,sha256=ZydhpKZLg0W4RgpcmwtWv1rLwkvKU8_lfWh2tN_P_3I,26
+sbb_binarize/cli.py,sha256=v65bKzWIoC7oWEWQGk4Zxr0yqgekvhfqFG36ZEevZDM,478
+sbb_binarize/ocrd-tool.json,sha256=Gg4SXsLRr9QrVn6MtuRdTwMTQqm47gHGgIPdyiA5vWg,1806
+sbb_binarize/ocrd_cli.py,sha256=65j_fZdb231wcJ6oRPpvI6_CarMvK7s6YsLHKr4Txn8,7705
+sbb_binarize/sbb_binarize.py,sha256=J3_yK0hafILbBe7MVDc3cayu8vtqfxuGAQ0SHLECpJ8,11188
+sbb_binarization-0.0.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sbb_binarization-0.0.11.dist-info/METADATA,sha256=18MTxet3Kp91LAeEqBjXfGMPJmB8Ra4CmzThjhZKxTU,1915
+sbb_binarization-0.0.11.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sbb_binarization-0.0.11.dist-info/entry_points.txt,sha256=pumqnF_oo0OqyPiQ-wURnjfSnfadoer8QwIUt0oL5Ko,101
+sbb_binarization-0.0.11.dist-info/top_level.txt,sha256=UZbQEyBcC91JQt0zfqyCtMygBILD2VZ9yKfEOQSmFpE,13
+sbb_binarization-0.0.11.dist-info/RECORD,,
