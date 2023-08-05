@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "exapi"
+version = "0.0.1"
+authors = [
+    { name = "miviskin", email = "miviskin@gmail.com" },
+]
+description = "API for crypto exchange"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'websockets ~= 10.3',
+    'uvloop ~= 0.16',
+]
+
+[project.optional-dependencies]
+dev = [
+    'build',
+    'twine',
+    'hatch',
+]
+
+[project.urls]
+"GitHub" = "https://github.com/miviskin/exapi"
+
+[tool.hatch.build]
+only-packages = true
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/exapi",
+]
+
+[tool.hatch.envs.default]
+pre-install-commands = [
+    'echo "INSTAL ExApi"',
+]
+post-install-commands = [
+    'echo "INSTALED ExApi"',
+]
+
+[tool.hatch.envs.default.scripts]
+list = "ls -al"
