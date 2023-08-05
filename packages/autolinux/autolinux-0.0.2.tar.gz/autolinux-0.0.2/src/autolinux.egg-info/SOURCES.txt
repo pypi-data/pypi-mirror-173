@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/autolinux.egg-info/PKG-INFO
+src/autolinux.egg-info/SOURCES.txt
+src/autolinux.egg-info/dependency_links.txt
+src/autolinux.egg-info/requires.txt
+src/autolinux.egg-info/top_level.txt
+src/linux/__init__.py
