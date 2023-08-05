@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+quickpath_airflow_operator/QuickpathPlatformAPIHook.py
+quickpath_airflow_operator/QuickpathPlatformOperator.py
+quickpath_airflow_operator/QuickpathPlatformServiceHook.py
+quickpath_airflow_operator/__init__.py
+quickpath_airflow_operator.egg-info/PKG-INFO
+quickpath_airflow_operator.egg-info/SOURCES.txt
+quickpath_airflow_operator.egg-info/dependency_links.txt
+quickpath_airflow_operator.egg-info/requires.txt
+quickpath_airflow_operator.egg-info/top_level.txt
