@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tempyrature
+Version: 1.0.0
+Summary: A simple temperature converter.
+Home-page: https://github.com/lobooooooo14/tempyrature
+Author: Lobooooooo14
+License: Apache License 2.0
+Project-URL: Github, https://github.com/lobooooooo14/tempyrature
+Keywords: scale,conversor,temperature
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Tempyrature
