@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: goethe
+Version: 0.1.0
+Summary: Create Sphinx RST documents programmatically with Python
+Home-page: https://github.com/earthobservations/goethe
+License: MIT
+Keywords: open-source,RST,restructured-text
+Author: Benjamin Gutzmann
+Author-email: gutzemann@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Dist: numpy (>=1.23.4,<2.0.0)
+Requires-Dist: rst2pdf (>=0.99,<0.100)
+Project-URL: Issues, https://github.com/earthobservations/goethe/issues
+Project-URL: Repository, https://github.com/earthobservations/goethe
+Project-URL: Releases, https://github.com/earthobservations/goethe/releases
+Description-Content-Type: text/x-rst
+
+goethe
+######
+
+Create RST documents programmatically with Python
+
+Introduction
+************
+
+Goethe gives you the opportunity to create your individual RST project in Python
+
+1. **programmatically** - write your project as Python script in OOP style, place variables where ever you want
+2. **dynamically** - render the project to dict, json or actual files and even PDF
+
+Setup
+*****
+
+Via Pip:
+
+.. code-block:: bash
+
+    pip install goethe
+
+Via Github (latest):
+
+.. code-block:: bash
+
+    pip install git+https://github.com/earthobservations/goethe
+
+Structure
+*********
+
+Goethe uses 3 main levels of abstraction:
+
+- Goethe - initialize an RST project with a Goethe
+- FlatChapter - add a chapter based on one file at the same level as the Goethe
+- DeepChapter - add a chapter based on a folder with its own index
+
+A simple project could look like e.g.
+
+.. code-block:: python
+
+    Goethe("myproj")
+    FlatChapter("overview")
+    DeepChapter("depper_level)
+        FlatChapter("overview")
+        DeepChapter("second_chapter")
+
+
+with following file structure:
+
+.. code-block:: python
+
+    ./
+    index.rst
+    overview.rst
+
+    ./deeper_level
+    index.rst
+    overview.rst
+
+    ./deeper_level/second_chapter
+    index.rst
+
+Features
+********
+
+- setup a RST project
+- export to dict, files or html
+- flat and deep chapters to build unlimited depth of documentation
+- modules of RST:
+    - toctree
+    - paragraph
+
+Backlog
+*******
+
+Examples
+********
+
+Visualized examples can be found in the ``examples`` folder.
+
+License
+*******
+
+Distributed under the MIT License. See ``LICENSE`` for more info.
+
+Backlog
+*******
+
+Changelog
+*********
+
+Development
+===========
+
