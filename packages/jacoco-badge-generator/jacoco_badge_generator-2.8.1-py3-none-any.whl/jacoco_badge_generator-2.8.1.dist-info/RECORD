@@ -1,0 +1,8 @@
+jacoco_badge_generator/__init__.py,sha256=QJfL-UoMvdzNmTDtJLIaGzIq61nsc9-ZMac34R874Y4,1309
+jacoco_badge_generator/__main__.py,sha256=1Jj-3lmh6lJgc_VNSFNkNy1i8HnDJT111odfdslPX6E,10948
+jacoco_badge_generator/coverage_badges.py,sha256=1lrx6A_lo8OoJhGo9KHwYnSJTdGJ58wpWGDEdpatQsM,26885
+jacoco_badge_generator/text_length.py,sha256=2oPdm93gGpP4_teOAfXRGSDqyl9KB9MZdWtPWhOKQ6g,131380
+jacoco_badge_generator-2.8.1.dist-info/METADATA,sha256=AlA33h6swUvl9NLPYJJDdsdeYgaZeRtV0zfZIu1SZCU,56100
+jacoco_badge_generator-2.8.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+jacoco_badge_generator-2.8.1.dist-info/licenses/LICENSE,sha256=STPgCfagGCk7rolxEdYEnnhzSFyQmustgjaaeMswzBE,1077
+jacoco_badge_generator-2.8.1.dist-info/RECORD,,
