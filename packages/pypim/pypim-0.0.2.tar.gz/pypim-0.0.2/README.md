@@ -1,0 +1,1 @@
+this is a project with few math that can be confusing and innacurate

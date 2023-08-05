@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+mad-math/__init__.py
+mad-math/maths.py
+pypim.egg-info/PKG-INFO
+pypim.egg-info/SOURCES.txt
+pypim.egg-info/dependency_links.txt
+pypim.egg-info/requires.txt
+pypim.egg-info/top_level.txt
