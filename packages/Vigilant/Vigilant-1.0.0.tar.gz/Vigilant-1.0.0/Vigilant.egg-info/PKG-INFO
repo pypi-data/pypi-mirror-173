@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Vigilant
+Version: 1.0.0
+Summary: Create and run tests easily.
+Home-page: https://github.com/ZSendokame/Vigilant
+Author: ZSendokame
+License: MIT license
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Vigilant
+*Vigilant* is a small library, trying to make testing easier.<br>
+
+
