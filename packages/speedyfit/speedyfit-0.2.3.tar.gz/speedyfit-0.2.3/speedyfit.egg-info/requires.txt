@@ -1,0 +1,13 @@
+numpy
+emcee
+astropy>=5.1
+astroquery
+pyvo>=1.4
+matplotlib
+pyaml
+corner
+tqdm
+scipy
+h5py
+pandas
+gaiadr3-zeropoint
