@@ -1,0 +1,3 @@
+[console_scripts]
+lgtm-art=lgtm_art.lgtm:cli
+
