@@ -1,0 +1,13 @@
+learntorank/__init__.py,sha256=go20U3RCVaJ2N55RnX4tO5rinfUCRV0puFyrHCto8yw,23
+learntorank/_modidx.py,sha256=dILur1MXRzFLrMJdNEHnVtFO3AJ5QXg4iHBR1d30CTc,23472
+learntorank/evaluation.py,sha256=p3OIY18YYfkHNsXAipJIIK1nfZfadqeHYp79tk--zos,14447
+learntorank/passage.py,sha256=HijRpN-hg6K8LK7wLFPvihWBinmTkeLdr2YvufsLZGo,13679
+learntorank/query.py,sha256=Lr94_ppgsWjDYgMWX5nv_Ph3emWntDdSZaMVLX1oXm8,24940
+learntorank/ranking.py,sha256=aR7hfZe_9fZ2IjNv28H3j2ZYUIWARQkRK5jE_ZYKJms,21376
+learntorank/stats.py,sha256=5LvdcMhXOQGK-pWjsbb7FjEDJ_FjLhIJew5bbCyW_Gw,3015
+learntorank-0.0.15.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+learntorank-0.0.15.dist-info/METADATA,sha256=eXVSZ5G8Doc8lQ9PfFsE1vpQMuv-DDyIlw9KO0q_arQ,3855
+learntorank-0.0.15.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+learntorank-0.0.15.dist-info/entry_points.txt,sha256=zXQAM_u8waWlXcTwD_f5hGgFHYeOyfbjLPT52mGTvJg,44
+learntorank-0.0.15.dist-info/top_level.txt,sha256=Nh0iSVWrTV3YLeR6TVvNxcJKY2w2xVSRAF2mWlT7678,12
+learntorank-0.0.15.dist-info/RECORD,,
