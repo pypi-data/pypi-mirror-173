@@ -1,0 +1,2 @@
+[console_scripts]
+mr-git = mr_git:main
