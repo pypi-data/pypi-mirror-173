@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+antgen.egg-info/PKG-INFO
+antgen.egg-info/SOURCES.txt
+antgen.egg-info/dependency_links.txt
+antgen.egg-info/top_level.txt
