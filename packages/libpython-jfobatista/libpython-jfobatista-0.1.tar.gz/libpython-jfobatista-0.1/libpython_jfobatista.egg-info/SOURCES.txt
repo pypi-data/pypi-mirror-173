@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+libpython/__init__.py
+libpython/github.api.py
+libpython_jfobatista.egg-info/PKG-INFO
+libpython_jfobatista.egg-info/SOURCES.txt
+libpython_jfobatista.egg-info/dependency_links.txt
+libpython_jfobatista.egg-info/not-zip-safe
+libpython_jfobatista.egg-info/requires.txt
+libpython_jfobatista.egg-info/top_level.txt
