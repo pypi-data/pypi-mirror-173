@@ -1,0 +1,6 @@
+spinsrv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spinsrv/spin.py,sha256=DpbGEWSSuzfstKPZh_z2e-vAW6hMUhotrcmfHftSpGI,1729
+spinsrv/spinpy.py,sha256=qGhD_Oz-hgmbzm7JuUQ3xqHbI-8Z2_MrD6Ss0_2Tppc,3275
+spinsrv-0.0.3.dist-info/METADATA,sha256=qEdNqrxT9vDtPf2EvCnjbmPA1cUBz11d46_VWShYfE0,472
+spinsrv-0.0.3.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+spinsrv-0.0.3.dist-info/RECORD,,
