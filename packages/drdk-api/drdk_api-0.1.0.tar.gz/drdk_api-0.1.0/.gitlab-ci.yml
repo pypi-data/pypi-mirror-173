@@ -1,0 +1,21 @@
+image: python:latest
+
+variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+workflow:
+    rules:
+    - if: $CI_COMMIT_TAG
+
+
+release:
+    before_script:
+        - pip install --upgrade build twine
+    script:
+        - python -m build
+        - python -m twine upload
+            --username __token__
+            --password $PYPI_TOKEN
+            --non-interactive 
+            --verbose
+            dist/*
