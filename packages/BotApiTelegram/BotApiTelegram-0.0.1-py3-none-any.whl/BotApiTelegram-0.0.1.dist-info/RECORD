@@ -1,0 +1,10 @@
+BotApiTelegram/__init__.py,sha256=bbnTltVGP0Z4mVgtY5qT2riKi4mBmC6h78gcFHJIohw,13211
+BotApiTelegram/conversation.py,sha256=d_wHZCN9GGAqtyFSMLuBKwABx1TTGdTrMtXdr4HB5lA,526
+BotApiTelegram/database.py,sha256=zskxwwHBFuzcDzBWHdNtKqwl-oUhbtk_tydRVILXlEU,1142
+BotApiTelegram/exceptions.py,sha256=qyME9z7LnF4TM9AI4MDos4ftTHPQDpMPwO1nrzyKxCg,1169
+BotApiTelegram/methods.py,sha256=YFW3FjfZs2QPn7tjGnmsU6M4gukbe9hVZrmskcbWtTw,5676
+BotApiTelegram/types.py,sha256=tCCJV9PZmkc3Bdom-YqLuM-SFogY4g018GJEUQtUoQY,22019
+BotApiTelegram-0.0.1.dist-info/METADATA,sha256=3W2N4OE4I1U8lsd5NYqPCLnl5C0sM9eFDj3-JobTGsY,540
+BotApiTelegram-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BotApiTelegram-0.0.1.dist-info/top_level.txt,sha256=TJMvJr3MF6E--w0RD9rfuwzyREQo9n-9sAU6BEsVWU8,15
+BotApiTelegram-0.0.1.dist-info/RECORD,,
