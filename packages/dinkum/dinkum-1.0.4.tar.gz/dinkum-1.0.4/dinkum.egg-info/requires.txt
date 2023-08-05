@@ -1,0 +1,4 @@
+bitstring
+numpy
+pandas
+dbdreader

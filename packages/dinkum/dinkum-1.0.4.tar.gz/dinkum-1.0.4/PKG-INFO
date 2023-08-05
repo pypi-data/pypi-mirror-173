@@ -1,0 +1,205 @@
+Metadata-Version: 2.1
+Name: dinkum
+Version: 1.0.4
+Summary: Some functions for interacting with [destmn]bd files in Python. Intent is to return a usable data object.
+Home-page: https://ceotr.ocean.dal.ca/
+Author: pye, Sean
+Author-email: 
+License: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.8
+License-File: LICENSE
+
+dinkum
+======
+
+Tools for interacting with ‘dinkum binary data’ formatted files.
+
+Installation:
+=============
+
+-  install conda/miniconda
+-  clone the repository onto your computer and cd into the directory
+
+If you want to install dinkum environment.
+
+::
+
+   -- from inside the cloned repository directory run `conda env create -f environment.yml`, it will read environment.yml
+
+and automatically install the dependencies, and create environment
+liberdade
+
+::
+
+   -- if dinkum env already exist, use `conda env update -f=environment.yml` for update environment dependencies
+
+   -- source activate dinkum
+
+If you want to install dinkum as library
+
+::
+
+   pip install git+https://gitlab.oceantrack.org/ocean-gliders-canada/dinkum.git
+
+Usage:
+======
+
+First import the library
+
+``import dinkum``
+
+| **dinkum2ascii**
+| Decode a Dinkum Binary Data file or all Dinkum Binary Data under the
+  specific directory. and convert it to ascii file into the given
+  output_dir
+  ``dinkum.dinkum2ascii(sample_file_directory_path, cache_directory_path, output_path)``
+
+| **dinkum2dicts**
+| Decode a Dinkum Binary Data file or all Dinkum Binary Data under the
+  specific directory.
+| Return a list of python dictionaries, which looks like {‘cache’:cache,
+  ‘data’:data, ‘header’:header}
+| ``res = dinkum.dinkum2dicts(sample_file_directory_path, cache_path)``
+| res looks like [dict1, dict2, dict3] (if under input dir has three
+  Dinkum Binary files)
+| dict1 looks like
+| {
+| \* ‘cache’: (list)[ - {‘index’: ‘0’, ‘unit’: ‘cc’, ‘sensor_name’:
+  ‘c_ballact_bpumped’, ‘transmitted’: ‘T’, number_of_bytes’: ‘4’,
+  ‘sensor_number’: ‘60’},
+| - {‘index’: ‘1’, ‘unit’: ‘x’, ‘sensor_name’: ‘c_ballact_bpumped’,
+  ‘transmitted’: ‘T’, ‘number_of_bytes’: ‘4’, ‘sensor_number’: ‘117’},
+| - …
+| ],
+| \* ‘data’: (list) [
+| - [233.0, ‘NaN’, ‘NaN’, 0.0, ‘NaN’,‘NaN’, 2, …],
+| - [‘NaN’, ‘NaN’, ‘NaN’, 0.0, ‘NaN’,‘NaN’, ‘NaN’, …],
+| - …
+| ],
+| \* ‘header’: (dict){
+| - ‘all_sensors’: ‘F’,
+| - ‘dbd_lable’: ‘DBD(dinkum_library_data)file’,
+| - ‘encoding_ver’: ‘5’,
+| - …
+| }
+
+}
+
+| **dinkum2pandas**
+| Decode a Dinkum Binary Data file or all Dinkum Binary Data under the
+  specific directory.
+| Return a list of pandas dataframe, column names format
+  sensor_name(unit)
+| with_unit (bool parameter, default set to false): whether the output
+  pandas with unit
+| appending (bool parameter, default set to false): whether the merge
+  output pandas together
+| (flight files merge with flight files, and sci files merge with sci
+  files)
+| if appending set to True, then will return two pandas:
+| one for all flight flies pandas merge together, and one for all sci
+  files merge together
+| ``res = dinkum.dinkum2pandas(sample_file_directory_path, cache_path, with_unit=False, appending=False)``
+| res looks like [df1, df2, df3] (if under input dir has three Dinkum
+  Binary files)
+| each dataframe looks like:
+
+== ================== ============== ============== =
+\  sci_m_present_time sci_water_cond sci_water_temp …
+== ================== ============== ============== =
+0  timestamp          s/m            degc           …
+1  1528669160.1608582 2.9354474656   7.356734       …
+…  …                  …              …              …
+== ================== ============== ============== =
+
+| **dbd_asc2dict** Conver DBD asc file to python dictionary, which looks
+  like {‘data’: dstruct, ‘meta’: meta}
+| column_output=[] to specified the coloumns of data in the result
+  (include all coloumns by default)
+| ``res = dbd_asc2dict(dbd_asc_name, column_output=[])``
+| res looks like
+| { \* ‘data’: (list)[ - [‘2’, ‘233’, ‘0’, ‘-1’, …], - [‘NaN’, ‘NaN’,
+  ‘NaN’, ‘NaN’, …], - … ],
+| \* ‘meta’: (dict){ - ‘num_segments’: ‘1’, - ‘all_sensor’: ‘1’, -
+  ‘dbd_label’: ‘DBD_SAC’, - ‘columns’: (list)[ - [‘cc_bpump_mode’,
+  ‘cc_bpump_value’, ‘cc_depth_state_mode’, ‘cc_final_bpump_value’, …], -
+  [‘enum’, ‘X’, ‘enum’, ‘enum’, ‘X’, ‘enum’, …], - [‘1’, ‘4’, ‘1’, ‘1’,
+  ‘4’, ‘1’, …] ] - ….
+
+::
+
+   }
+
+}
+
+| **dinkumMergeAscii**
+| Merge flight file and sci file by timestamp
+| Files that need to merge should have same file name but different
+  extension
+| ``res = dinkumMergeAscii(source_directory_or_file_list, output_directory=None)``
+| merge ascii flight file and sci file by timestamp (flight’s
+  m_present_time with sci’s sci_m_present_time)
+
+============== ==================
+m_present_time sci_m_present_time
+============== ==================
+dbd            ebd
+sbd            tbd
+============== ==================
+
+| eg: merge file1.dbd with file1.ebd, file2.sbd with file2.tbd
+| input could be a source_directory or a list include ascii file paths
+  (eg:[file1.dbd, file1.ebd])
+| return a list of python dictionaries
+| or convert dicts to ascii file into the given output_dir (if output
+  path was specified)
+| res looks like [dict1, dict2, dict3] (if under input dir has three
+  pair ascii flight & sci files)
+| dict looks like
+| { \* ‘data’: (list)[ - [‘2’, ‘233’, ‘0’, ‘-1’, …], - [‘NaN’, ‘NaN’,
+  ‘NaN’, ‘NaN’, …], - … ],
+| \* ‘meta’: (dict){ - ‘num_segments’: ‘1’, - ‘all_sensor’: ‘1’, -
+  ‘dbd_label’: ‘DBD_SAC’, - ‘columns’: (list)[ - [‘cc_bpump_mode’,
+  ‘cc_bpump_value’, ‘cc_depth_state_mode’, ‘cc_final_bpump_value’, …], -
+  [‘enum’, ‘X’, ‘enum’, ‘enum’, ‘X’, ‘enum’, …], - [‘1’, ‘4’, ‘1’, ‘1’,
+  ‘4’, ‘1’, …] ] - ….
+
+::
+
+   }
+
+}
+
+| **dinkumMergeBinary**
+| Input could be a source_directory or a list include file paths
+| First decode the binary file(s) under (source_directory/decode_result)
+| And then return a list of python dictionaries that merge flight file
+  with science file timestamp
+| or convert dicts to ascii file into the given output_dir (if output
+  path was specified)
+| merge binary files by timestamp (flight’s m_present_time with sci’s
+  sci_m_present_time)
+
+============== ==================
+m_present_time sci_m_present_time
+============== ==================
+dbd            ebd
+sbd            tbd
+============== ==================
+
+| ``res = dinkumMergeBinary(source_directory, cache_directory, destination_dictory)``
+| res looks like [dict1, dict2, dict3] (if under input dir has three
+  pair binary flight & sci files) dict looks like
+| { \* ‘data’: (list)[ - [‘2’, ‘233’, ‘0’, ‘-1’, …], - [‘NaN’, ‘NaN’,
+  ‘NaN’, ‘NaN’, …], - … ],
+| \* ‘meta’: (dict){ - ‘num_segments’: ‘1’, - ‘all_sensor’: ‘1’, -
+  ‘dbd_label’: ‘DBD_SAC’, - ‘columns’: (list)[ - [‘cc_bpump_mode’,
+  ‘cc_bpump_value’, ‘cc_depth_state_mode’, ‘cc_final_bpump_value’, …], -
+  [‘enum’, ‘X’, ‘enum’, ‘enum’, ‘X’, ‘enum’, …], - [‘1’, ‘4’, ‘1’, ‘1’,
+  ‘4’, ‘1’, …] ] - ….
+
+::
+
+   }
+
+}
