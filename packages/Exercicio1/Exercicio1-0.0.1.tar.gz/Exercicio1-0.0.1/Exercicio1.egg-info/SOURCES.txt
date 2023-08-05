@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.py
+Exercicio1/Armazenamento.py
+Exercicio1/Consulta.py
+Exercicio1/Interacao.py
+Exercicio1/__init__.py
+Exercicio1.egg-info/PKG-INFO
+Exercicio1.egg-info/SOURCES.txt
+Exercicio1.egg-info/dependency_links.txt
+Exercicio1.egg-info/top_level.txt

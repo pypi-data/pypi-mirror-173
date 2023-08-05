@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: Exercicio1
+Version: 0.0.1
+Summary: pacote para armazenamento e consulta de dados
+Home-page: https://github.com/
+Author: Luiz Felipe Pina
+Author-email: pina1402@gmail.com
+License: MIT License
+Keywords: Pacote
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Exercicio1
+
+**Exercicio1** Ã© um simples pacote para armazenar ou consultar dados coletados em Python.
+
+## DependÃªncias
+**Python 3.6** ou posterior
+
+Pacote **numpy**
+
+
+## ComeÃ§ando o uso
+VocÃª vai precisar instalar o pacote **Exercicio1**, para isso basta executar:
+```
+pip install Exercicio1
+```
+
+## FunÃ§Ã£o
+
+* `interacao ()` - pede ao usuario nome, cpf e endereco 
+* `armazenamento ()` - armazena as infos do usuario em um arquivo txt
+* `consulta ()` - consulta os dados do usuario a partir do seu cpf
