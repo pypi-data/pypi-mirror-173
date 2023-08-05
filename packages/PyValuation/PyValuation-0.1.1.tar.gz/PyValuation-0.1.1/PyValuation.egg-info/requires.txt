@@ -1,0 +1,12 @@
+numpy
+yfinance
+pandas
+bs4
+requests
+numpy_financial
+matplotlib
+seaborn
+pandas_datareader
+datetime
+scipy
+plotly
