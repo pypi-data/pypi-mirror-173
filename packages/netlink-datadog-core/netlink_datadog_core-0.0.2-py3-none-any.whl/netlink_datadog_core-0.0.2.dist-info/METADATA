@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: netlink-datadog-core
+Version: 0.0.2
+Summary: Integration for Datadog (Core)
+Home-page: https://gitlab.com/netlink_python/netlink-datadog-core
+License: MIT
+Keywords: monitoring datadog
+Author: Bernhard Radermacher
+Author-email: bernhard.radermacher@netlink-consulting.com
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: datadog-api-client (>=2.4.0,<3.0.0)
+Requires-Dist: netlink-logging (>=0.1.9,<0.2.0)
+Project-URL: Repository, https://gitlab.com/netlink_python/netlink-datadog-core
+Description-Content-Type: text/markdown
+
+# netlink-datadog-core
+
+Core of Integration for Datadog
+
+
