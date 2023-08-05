@@ -1,0 +1,7 @@
+README.md
+setup.py
+inputer.egg-info/PKG-INFO
+inputer.egg-info/SOURCES.txt
+inputer.egg-info/dependency_links.txt
+inputer.egg-info/requires.txt
+inputer.egg-info/top_level.txt
