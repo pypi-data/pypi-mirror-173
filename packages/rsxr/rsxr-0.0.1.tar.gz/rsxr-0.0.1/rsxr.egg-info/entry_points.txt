@@ -1,0 +1,3 @@
+[console_scripts]
+rsxrpy = rsxpy.main:main
+
