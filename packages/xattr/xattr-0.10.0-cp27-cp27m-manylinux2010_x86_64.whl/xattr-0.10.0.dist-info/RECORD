@@ -1,0 +1,13 @@
+xattr/tool.py,sha256=BAgmGglvlqzdF3kkKCa8UOh7GYQHFuEFhow6dPiU7pE,8048
+xattr/lib.py,sha256=8JmtCRPRvS-iGUP6gkktYw9wonF-WwuN3wnEUXzxrf4,3752
+xattr/lib_build.py,sha256=o1Lo6Du5uNTm6rBqV5jHbaFNcQZnaoQVQcnPA5463vo,342
+xattr/compat.py,sha256=6IcJpgeuGot1uhl-RJy_jbWkVO5utb09Qr2dhRj0TlM,680
+xattr/pyxattr_compat.py,sha256=ZLT_lONRPRAkUWaq8lWl4QZLwOTqnVYqGz_ZkKOqLfg,3743
+xattr/_lib.so,sha256=vHHTgNUe_HD5RCXzTmPKqP7r62dfG9nICyimVKugX4E,95640
+xattr/__init__.py,sha256=OKildO9UA4HCHdSpGZhRiTUeDybP7UU3hi211TeaQiI,5320
+xattr-0.10.0.dist-info/LICENSE.txt,sha256=8q6jLbdqJC7GYArvyHXRyfBB9cf9RmAiPos-ip4FCb0,1172
+xattr-0.10.0.dist-info/top_level.txt,sha256=ZUHZcuN2meJ0miIIsDb0KaElzOvDRrIIl8CZjnvRUrc,11
+xattr-0.10.0.dist-info/WHEEL,sha256=_CTDQitu8ADuzQkc05B4O_iZoyR89N6dZEpisGmpTpc,112
+xattr-0.10.0.dist-info/entry_points.txt,sha256=0SjmtcSXURBLDEiZ9N1R82g7rAmXYLZBrlo0Kl4a8pU,43
+xattr-0.10.0.dist-info/RECORD,,
+xattr-0.10.0.dist-info/METADATA,sha256=VvxxhwlN2LLZcwd3x83QC7L9Ljbi3WMjE88jBAPnuz8,1213
