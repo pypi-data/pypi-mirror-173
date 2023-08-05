@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: koruthos
+Version: 0.0.0
+Summary: Some general purpose utility classes and functions
+Author-email: Chauã Queirolo <chaua@koruthos.com.br>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: test
+Description-Content-Type: text/markdown
+
+# koruthos-package
+
+Some general purpose utility classes and functions.
+
