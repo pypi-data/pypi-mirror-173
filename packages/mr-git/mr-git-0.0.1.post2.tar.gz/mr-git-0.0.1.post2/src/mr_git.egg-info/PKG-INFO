@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: mr-git
+Version: 0.0.1.post2
+Summary: Multi-Repositories Git tool
+Home-page: https://github.com/pbauermeister/mr-git
+Author: Pascal Bauermeister
+Author-email: pascal.bauermeister@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Bug Reports, https://github.com/pbauermeister/mr-git/issues
+Project-URL: Source, https://github.com/pbauermeister/mr-git
+Keywords: diagram-generator,development,tool
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Version Control
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
+
+# MR Git
+
+**MR Git** stands for "Multi-Repositories Git". (But you can go ahead
+and call it *Mister Git*.)
+
+In large projects, the trend is to have a mono-repo because it simplifies the git management.
+
+**MR Git** is here to change this, and make the git management of
+products involving multiple repos easy, when these repo share similar
+characteristics (like: users, and branches to some degree).
+
+## Summary
+
+## Syntax and examples
+
+See the [documentation page][doc].
+
+## Dependencies
+
+## Installing via pip3
+
+```
+[sudo] pip3 install mr-git
+```
+
+## Usage
+
+`mr-git -h` says:
+
+```
+```
+
+[src]: https://github.com/pbauermeister/mr-git
+[pypi]: https://pypi.org/project/mr-git
+[doc]: https://github.com/pbauermeister/mr-git/tree/master/doc/README.md
