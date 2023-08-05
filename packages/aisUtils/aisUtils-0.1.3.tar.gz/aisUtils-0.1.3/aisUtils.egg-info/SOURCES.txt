@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aisUtils/Preprocessing.py
+aisUtils/__init__.py
+aisUtils.egg-info/PKG-INFO
+aisUtils.egg-info/SOURCES.txt
+aisUtils.egg-info/dependency_links.txt
+aisUtils.egg-info/requires.txt
+aisUtils.egg-info/top_level.txt
