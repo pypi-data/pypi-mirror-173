@@ -1,0 +1,2 @@
+[console_scripts]
+snx = snx.__main__:main
