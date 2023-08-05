@@ -1,0 +1,14 @@
+diffeqzoo/__init__.py,sha256=oSmWWmpZwZVhH7mvyMNzjGewucsgZafXlHmddoarR3Y,4198
+diffeqzoo/_vector_fields.py,sha256=7X28PDsgfWYEyhX78l-slOFjw9mpqlDjsPTC4tNnkCI,6611
+diffeqzoo/_version.py,sha256=YHIFcuaaSgU0N2VGZyU1WL9M152sU3zWSCtbTVk_lC8,136
+diffeqzoo/bvps.py,sha256=mL9JiHjRiSltIkEGn3js1B6BfHAQAEetNnrDL_xdFQ4,6386
+diffeqzoo/ivps.py,sha256=q5lw1tDofQfkNk3uJ9zGndtovpXETUhzvjxDfn0cu30,27879
+diffeqzoo/transform.py,sha256=W31tybNV1rVvWhFty8P3MytkvXrkrXWOIp3xPEnxmfc,5071
+tests/__init__.py,sha256=GmuLNzW7tHyrDSQXoahL5EIWmEYTcjGh5jRw5b5LznI,451
+tests/test_bvps.py,sha256=hkkDB5XyJR9854FHyAIyZ0G2FtiVkFMMnyl0j8iNpHQ,2088
+tests/test_ivps.py,sha256=x9ubIDX_LA03ZsIGuo0lFetLhl7V97DN3QcuzbC50ts,3835
+diffeqzoo-0.0.2.dist-info/LICENSE,sha256=09PPdXekWnLVZjvKO7vZ4U06KHTN3Hp2kc_FxhUfe_A,1073
+diffeqzoo-0.0.2.dist-info/METADATA,sha256=RMPluVKeCD6VHqtfxxKQ9VlWaIdBJxORqHIbQSpGBfs,5627
+diffeqzoo-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+diffeqzoo-0.0.2.dist-info/top_level.txt,sha256=aD0j1SAM7hFt41gt30U3ADE03EVsY4TtjgZ7vNq5V1M,16
+diffeqzoo-0.0.2.dist-info/RECORD,,
