@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: exemp1
+Version: 0.0.1
+Summary: Pacote python guardar e consultar dados
+Home-page: https://github.com
+Author: Vinicius Augusto de Moraes Rayol
+Author-email: vinicius22070202@aluno.cesupa.br
+License: MIT License
+Keywords: Pacote
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pacotepypi
+
+**exmp1** Programa que guarda e consulta dados
+
+## DependÃªncias
+**Python 3.6** ou posterior
+
+Pacote **numpy**
+
+
+## ComeÃ§ando o uso
+VocÃª vai precisar instalar o pacote **exmp1**, para isso basta executar:
+```
+pip install exmp1
+```
+
+## FunÃ§Ã£o
+
+* `armazenamento()` - armazena os dados do usuÃ¡rio
+* `consulta()` - consulta os dados do usuÃ¡rio
+* `interacao()` - pede os dados ao usuÃ¡rio
