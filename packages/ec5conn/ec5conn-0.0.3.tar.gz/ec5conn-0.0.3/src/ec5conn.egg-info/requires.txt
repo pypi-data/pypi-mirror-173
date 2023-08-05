@@ -1,0 +1,8 @@
+six==1.16.0
+termcolor==2.0.1
+pyfiglet==0.8.post1
+pydash==5.1.0
+PyInquirer==1.0.3
+ping3==4.0.3
+mysql-connector-python==8.0.31
+pymongo==4.3.2

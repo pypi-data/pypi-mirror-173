@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+scripts/ec5conn
+src/ec5conn/__init__.py
+src/ec5conn/conn.py
+src/ec5conn/log.py
+src/ec5conn.egg-info/PKG-INFO
+src/ec5conn.egg-info/SOURCES.txt
+src/ec5conn.egg-info/dependency_links.txt
+src/ec5conn.egg-info/requires.txt
+src/ec5conn.egg-info/top_level.txt
