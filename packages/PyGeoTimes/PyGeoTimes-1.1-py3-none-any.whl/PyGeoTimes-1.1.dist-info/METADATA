@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: PyGeoTimes
+Version: 1.1
+Summary: PyGeoTimes extract geological Times from English texts
+Home-page: UNKNOWN
+Author: Abhay He
+Author-email: 1452245133@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+
+===============================
+PyGeoTimes
+===============================
+
+```html
+File Name：     PyGeoTimes
+Description :   PyGeoTimes extract geological Times from English texts
+Author :       abhay
+date：          2022/10/24
+University: Chengdu University of Technology.
+```
+
