@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: iman
+Version: 0.0.1
+Summary: Python package for daily Tasks
+Home-page: UNKNOWN
+Author: Iman Sarraf
+Author-email: imansarraf@gmail.com
+License: UNKNOWN
+Keywords: python,iman
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: six
+Requires-Dist: matplotlib
+
+from iman import Audio:
+1-Read, Resample and Write PCM and Alaw Files 
+2-frame and split (VAD)
+3-ReadMp3 (with miniaudio)
+
+
+import iman:
+1-plt
+2-now (get time)
+3-F (format floating point)
+4-D (format int number)
+5-Write_List
+6-Write_Dic
+7-Read (read txt file)
+8-Read_Lines (read txt file line by line and return list)
+9-Write (write string to file)
+10-gf (Get files in a directory)
+11-gfa (Get Files in a Directory and SubDirectories)
+12-ReadE (Read Excel files)
+
+from iman import info:
+1-Get info about cpu and gpu (need torch)
+
+
+from iman import metrics:
+1-EER(lab,score)
+2-cosine_distance
+3-roc(lab,score)
+
+from iman import tsne:
+1-tsne.plot(fea , label)
+
+
+
