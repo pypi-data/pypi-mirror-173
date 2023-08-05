@@ -1,0 +1,10 @@
+blip_inference/__init__.py,sha256=g7AJcKNSqFMUY7k0ziGBfv2-Q2f7CuNNafesrcLanPY,79
+blip_inference/blip.py,sha256=xPPkzcn_U1qsY4j-ChOTgk55hk6yapkCXpiGbX644zA,3043
+blip_inference/compat.py,sha256=vbl1OXe8VQ4CTW4jV8YgGmO7mkBDa00IWha-cDzIJuQ,42956
+blip_inference/model.py,sha256=uyYLidmT5W2VIMhDuYs29AcfyM211QALDcn3quQP99Q,5713
+blip_inference/vit.py,sha256=o60q3vTKu3MxB54jn19F_SMiPumSY5cbXP_E-Yiz_Ik,16518
+blip_inference-0.1.0.dist-info/LICENSE,sha256=hRXuyjlIpCesw-fD9ONCbyH2AZxw9AKL2IMx3EcCOEs,1067
+blip_inference-0.1.0.dist-info/METADATA,sha256=sTumr8-fQs9FrnhJgpjKVvPNtxwqdbNmEMBCxSNJv5w,5538
+blip_inference-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+blip_inference-0.1.0.dist-info/top_level.txt,sha256=DlaL9G2Bgu5E-iPWTaToGIBVgMx97ANKYKb0Jk708d0,15
+blip_inference-0.1.0.dist-info/RECORD,,
