@@ -1,0 +1,16 @@
+datasetsforecast/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+datasetsforecast/_modidx.py,sha256=y0FG4WSxfqYTeyOpswjg7T-SsLyQaDyp1AzoTAwllE0,13336
+datasetsforecast/_nbdev.py,sha256=bnEtgGfbPq1bK9GwsBx-nJaWnNkAbkFINLTf9dqhr2w,952
+datasetsforecast/hierarchical.py,sha256=fir6Q9QxtD8UKp1RFsLDImfEhjMzF1TrssedUHaKDEE,5185
+datasetsforecast/long_horizon.py,sha256=yuWD2oQjbXuWtnEoVaqFmiKccrXgqu_CwakdPKZL7uU,9571
+datasetsforecast/losses.py,sha256=dzeLEIksCPhygiMKb4aMoso1XWFYxKRYjonk1BDnlz4,17815
+datasetsforecast/m3.py,sha256=iXaj3nOJl951uiKRqGQ1D2iCPHd0M7C-52fwqcsF92E,3654
+datasetsforecast/m4.py,sha256=TH1v_zL5ql8TERY_afBR7U4HEodpeUeEeESz45HdrB0,10844
+datasetsforecast/m5.py,sha256=fCVg5VoPYXU1-qlz4dGRS3vi0-3Y_8caaht7VDLz6AE,12193
+datasetsforecast/utils.py,sha256=kcilvomdl3tO-9rd5hxucIO5ZPuWgDsQ1aWZqCoc-Jo,4600
+datasetsforecast-0.0.7.dist-info/LICENSE,sha256=gQY2j5ooBqxtVjRaG-4thmZSAVfv4TgWzXwovI9hxps,1063
+datasetsforecast-0.0.7.dist-info/METADATA,sha256=GuEjpEWsrCvpSoayeNxVyU1ik1VkrqsvplO7r4v5J7o,986
+datasetsforecast-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datasetsforecast-0.0.7.dist-info/entry_points.txt,sha256=ApNgRK-rNeI7_pvTqVjsrtrp2cKeU52QuKc1bjtLf4E,54
+datasetsforecast-0.0.7.dist-info/top_level.txt,sha256=9-FuVdwrcjYwXFaGkgY-oZjuTTFJPLD4wCFzLYVSJxo,17
+datasetsforecast-0.0.7.dist-info/RECORD,,
