@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pyron-rs
+Version: 0.2.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Summary: A game development platform that integrates into python
+Keywords: python,game
+Home-Page: https://github.com/Aurlex/pyron-rs
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/Aurlex/pyron-rs
+
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+# pyron-rs 
+A rust-based game development platform integrated into a python module, inspired by Godot.
+- https://github.com/godotengine/godot
+
+## Small Test Project (Included)
+<details><summary>Show Example</summary>
+
+A terminal based example, which is included the tests folder\
+The displayed FPS counter is [here](tests/scripts/fps_counter.py).
+|Input ([here](tests/scripts/player.py))|Output
+|:----     |:----
+|![input](https://user-images.githubusercontent.com/80044960/197358574-ddffc872-ee88-40f5-b10a-267b94690769.png) |![output](https://user-images.githubusercontent.com/80044960/197358263-0ec6bae2-8735-4f73-8b07-2222f2f13656.gif)
+As you can see, it has a very simple and pythonic syntax | And generates a very simple terminal 'game'
+
+
+</details>
+
+## Project
+You can find more project details [here](PROJECT.md)
+
+## Building from Source
+You can find the guide to building from source [here](BUILDING.md)
+
+## How to use
+To use this module, you have a few options:
+1. Wait for official releases on PyPI.
+2. Download the wheel files from Github Actions. (Currently Broken)
+3. Download the source and compile yourself (See [BUILDING.md](BUILDING.md)).
+4. Wait for any releases from Github.
+
