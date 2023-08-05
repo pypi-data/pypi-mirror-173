@@ -1,0 +1,14 @@
+poetry_aliases_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_aliases_plugin/__main__.py,sha256=RwUOXMTjOQyohvj_5CbkPil5yKx1TImhirshJ77EeLs,41
+poetry_aliases_plugin/aliases.py,sha256=rqX_bdC0goJ0z19Q6QztHYQukf3T6tv5Fexh6bjXjf8,1467
+poetry_aliases_plugin/commands.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_aliases_plugin/config.py,sha256=vayYc3yqqcvwFEOreyPWIq5dzT6Nsf5ZxeJbKByxdXo,715
+poetry_aliases_plugin/plugin.py,sha256=bFfsODZz_iOdBBx1COmAqV-mCKBAlWVigjsrm5c_byg,478
+poetry_aliases_plugin/plugin_commands.py,sha256=60venfUnZ9I8mL80CXHO3x7pgWqs4_t_PIQr_pPvZx4,1750
+poetry_aliases_plugin/triggers.py,sha256=Kv25eSZugZ0MjpQDOVGdet6QTktPluhBJe4IZhcZORc,515
+poetry_aliases_plugin/utils.py,sha256=pEE3K_ZvHA95LnntlD7rIV8RXoO6xzgod2VIIb4uLuk,986
+poetry_aliases_plugin-0.0.10.dist-info/entry_points.txt,sha256=298QmxixzYVWxYHhUjiohKVpCdFha6neSTkzEJE9vHk,111
+poetry_aliases_plugin-0.0.10.dist-info/LICENSE,sha256=pgolYvPzi6VFvplwCTC6xPKO6YWXTNOHsk_J_jOJp-M,1051
+poetry_aliases_plugin-0.0.10.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+poetry_aliases_plugin-0.0.10.dist-info/METADATA,sha256=pdOzy8HUgM5_jgC49MLxpBGS6AsneGnWdRmxd6wsJoA,2362
+poetry_aliases_plugin-0.0.10.dist-info/RECORD,,
