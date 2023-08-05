@@ -1,0 +1,10 @@
+pybv/__init__.py,sha256=Ydh03ZMyW_t1PI8zyoBCf8Wpx628LSFNYNbbJoWnr0M,156
+pybv/_export.py,sha256=j5-YBYuETU4Em47LfkslhDZU8UDxQ7XLTe0z0iV-2qk,5057
+pybv/io.py,sha256=fs1KCarNkVeyOGgOyGa1mWl-FetJL2HFfxnMjT00Eo0,33092
+pybv/tests/test_bv_writer.py,sha256=7ZfghDldkg29lDnh452mY6MAfbRPILZk2b_RNsfUoN4,26200
+pybv/tests/test_export.py,sha256=1ObMwpoyGle8628wWqvqxstJuiGWCWlFACUTG7b3vWA,2229
+pybv-0.7.5.dist-info/LICENSE,sha256=fhmTWhJq01Kv5yQPht9IMV46uH3GOOqfYEKOGsHii5I,1520
+pybv-0.7.5.dist-info/METADATA,sha256=szybjMt4dCqfrrr4hs4gxlkptxCDHAmxQjr2i4jm7lI,11155
+pybv-0.7.5.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+pybv-0.7.5.dist-info/top_level.txt,sha256=XAw9xjV2gEtQioL59CpROuSRITCjsglRZQsa8MxOokc,5
+pybv-0.7.5.dist-info/RECORD,,
