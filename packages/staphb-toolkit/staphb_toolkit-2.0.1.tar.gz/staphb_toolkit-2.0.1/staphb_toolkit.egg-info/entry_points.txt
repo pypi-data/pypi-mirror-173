@@ -1,0 +1,2 @@
+[console_scripts]
+staphb-tk = staphb_toolkit.toolkit_main:main
