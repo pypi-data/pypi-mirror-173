@@ -1,0 +1,7 @@
+setup.py
+arithmeticSubmodule/Operations.py
+arithmeticSubmodule/__init__.py
+arithmeticSubmodule.egg-info/PKG-INFO
+arithmeticSubmodule.egg-info/SOURCES.txt
+arithmeticSubmodule.egg-info/dependency_links.txt
+arithmeticSubmodule.egg-info/top_level.txt
