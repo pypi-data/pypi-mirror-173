@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+quantum_styles.egg-info/PKG-INFO
+quantum_styles.egg-info/SOURCES.txt
+quantum_styles.egg-info/dependency_links.txt
+quantum_styles.egg-info/not-zip-safe
+quantum_styles.egg-info/requires.txt
+quantum_styles.egg-info/top_level.txt
