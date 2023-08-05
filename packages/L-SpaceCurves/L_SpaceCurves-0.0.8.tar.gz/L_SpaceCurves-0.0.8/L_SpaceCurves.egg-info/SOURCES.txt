@@ -1,0 +1,8 @@
+README.md
+setup.py
+L_SpaceCurves/L_SpaceCurves.py
+L_SpaceCurves.egg-info/PKG-INFO
+L_SpaceCurves.egg-info/SOURCES.txt
+L_SpaceCurves.egg-info/dependency_links.txt
+L_SpaceCurves.egg-info/requires.txt
+L_SpaceCurves.egg-info/top_level.txt

@@ -1,0 +1,65 @@
+# space-filling-curves_python
+
+## To product a video about Space-filling curve, a make a code based on  Lindenmayer system, with objective animate with python  
+
+It can be used to teach about recursive functions, to product video and teach childrens about the turtle power.
+
+To construct the curve faster, use https://github.com/PrincetonLIPS/numpy-hilbert-curve
+
+**Corrigir:**
+
+- The 3d curves have a error at constants. At both
+
+- The Gosper_Flowsnake_curve have a little erro that make the iteraction >3 colapse in some lines
+**Plus**
+  - Add proprietis to change colors with make the iteractions
+  - Add the options which Letter start
+  
+  
+  **How to use**
+  
+  - Install the package
+  
+  - import as "from . import function_name"
+  
+  - to plot in 2D, only select the start letter. Choose one below
+  
+| Function  | Starts letters  |   |   |   |
+|---|---|---|---|---|
+| sierspinski_curve  | S  | R  | Z  | P  |
+|  hilbert_curve | C |  H | A  | B  |
+|  peano_curve |  P | Q  | R  | S  |
+|gosper_Flowsnake_curve | G | R | | | 
+| pablo_curve | A | B | C | D |
+
+  
+  - to plot in 3D, select the start letter and call the function "plot()"
+  
+| function   | Letters |   |   |   |   |   |   |   |   |   |   |   |
+|------------|---------|---|---|---|---|---|---|---|---|---|---|---|
+| hilbert_3D | A       | B | C | D | E | F | G | H | I | J | K | L |
+| peano_3D   |    S     | P | R | Q |  |   |   |   |   |   |   |   |
+
+> At 2D, was used the Turtle    
+
+**2D Curves** 
+
+- sierspinski_curve
+
+- Hilbert_curve ![hilbert_curve](https://user-images.githubusercontent.com/99839465/196053916-4f20a51f-f35f-4242-988a-19b46be8510a.GIF)
+
+- Peano_curve ![Peano_curve](https://user-images.githubusercontent.com/99839465/196053748-82ab6283-ed5d-4b40-b444-6f5ea853b144.GIF)
+
+- Gosper_Flowsnake_curve ![Gosper_curve](https://user-images.githubusercontent.com/99839465/196053969-04ad53a4-6cda-4266-b820-bd317225cd01.GIF)
+
+- dragon curve
+
+- Pablo curve, that a create to a friend
+
+> At 3d, was used the aplications matplotlib    
+
+**3D Curves**
+
+- Hilbert curve ![hilbert_3d](https://user-images.githubusercontent.com/99839465/196054029-03ccf116-b378-4f91-89ca-a65fc8b26a08.png)
+
+- Peano curve ![peano_3d](https://user-images.githubusercontent.com/99839465/196054031-6739a95e-c115-4c55-a5ea-cc8398997a32.png)
