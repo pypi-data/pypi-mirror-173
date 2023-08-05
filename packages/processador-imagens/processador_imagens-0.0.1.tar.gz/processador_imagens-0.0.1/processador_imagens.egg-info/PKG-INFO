@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: processador-imagens
+Version: 0.0.1
+Summary: Pacote de processamento de imagens
+Home-page: https://github.com/guilhermercarv/package-template
+Author: Guilherme
+Author-email: guilhermecarvalho056@gmail.com
+License: UNKNOWN
+Description: # processador_imagens
+        
+        Description. 
+        The processador_imagens is used to:
+        	Processamento
+        		- Histogram matching
+        		- Structural similarity
+        		- Resize image
+        	Utils:
+        		- Read image
+        		- Save image
+        		- Plot image
+        		- Plot result
+        		- Plot histogram
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install processador_imagens
+        
+        ```bash
+        pip install processador_imagens
+        ```
+        
+        ## Author
+        Guilherme
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
