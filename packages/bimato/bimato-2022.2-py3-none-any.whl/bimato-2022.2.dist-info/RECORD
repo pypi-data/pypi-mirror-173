@@ -1,0 +1,11 @@
+bimato/.DS_Store,sha256=z2JQAIoVvdt8zu9DOdwT2Jgosvem4wuyFGw1v9Dw8F8,6148
+bimato/__init__.py,sha256=znArXuTidnVtbq8wAvmFOZuuvz8wCv5_ba-VSCXtgic,1576
+bimato/api.py,sha256=0mdJpP8q6fgIX4XL631p95IhMdzG7QxOFVLrHV6UEpY,1453
+bimato/core.py,sha256=BlQkNMq7hjM0aesVv2WxiiD1q6gjUeSi69POBVl5GuU,4666
+bimato/network.py,sha256=g02YliAWKQOfEzb2sxDgmGR2WHmHXBuHXfxeqolaJJU,4875
+bimato/poresize.py,sha256=BOOhExlhunae56ouS5EF4wnh9AlTQFyVhA2AsmN0Cug,16742
+bimato/utils.py,sha256=OzAdzIPMDPBA3a82uAZwKQyEs1ya_aH9xytujuVunrE,6395
+bimato-2022.2.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+bimato-2022.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+bimato-2022.2.dist-info/METADATA,sha256=KBweI-N8UybLL1HJSzTxN07J3EoMyNmK2J_iw5HVbXM,6004
+bimato-2022.2.dist-info/RECORD,,
