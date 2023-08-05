@@ -1,0 +1,12 @@
+media_mgmt_cli/__init__.py,sha256=q3dOwr6xlLlxiI3mtWHYzB58DxrjfNZ9vAfLQJKS4L4,39
+media_mgmt_cli/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+media_mgmt_cli/aws.py,sha256=f0yo3mXJF5zZJ2iq9XDjT7Aj3hiWDWvHXtxicb25rEI,8864
+media_mgmt_cli/cli.py,sha256=frmzVQsoibkjXcpjW2ePawui1z87Xuzhc4MaC4q51Mk,4255
+media_mgmt_cli/config.py,sha256=nkCHOQSescppndEmB73BWhNFjLPcz_E3kjPc1Kn94EE,3531
+media_mgmt_cli/utils.py,sha256=Xz2uAHSwMCcAYKmbAFoQRtZxhHz2HMmls_4dN-lqOMQ,2385
+media_mgmt_cli-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+media_mgmt_cli-0.2.4.dist-info/METADATA,sha256=KkSNKMlLoq35j9i58Zm-2umV5CGWEb3uMvoWYZdij2I,2222
+media_mgmt_cli-0.2.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+media_mgmt_cli-0.2.4.dist-info/entry_points.txt,sha256=5y1LZXmq5E198OH9-cc4Ss0L3wXuSFO-aP68e-SL0HU,49
+media_mgmt_cli-0.2.4.dist-info/top_level.txt,sha256=_VaxE7bfTszBeP8y8bEdsH9Ha1Oz2etAfXVgjH5mQXI,15
+media_mgmt_cli-0.2.4.dist-info/RECORD,,
