@@ -1,0 +1,11 @@
+colorpie/__init__.py,sha256=VwKdMKJAmry-Wel7tRE6xic6Zq1zfsZTqN-1J1RzfRE,111
+colorpie/constants.py,sha256=buJCo7r3PfKJm_A_GEMBPaOSj19N_d8RfJ7X8VGh7iE,1132
+colorpie/core.py,sha256=Ll4Rdp8we3Y1C4FlMBF-Y0o5XhfJD7dhSV9vOJ8ryVk,3707
+colorpie/handlers.py,sha256=JLjiTgXn-dPCtShQSFyqyYebic6U7L0IMowHKlsWQlk,6901
+colorpie/mapping.py,sha256=B4ufnEtGH2OY0kGAZAG86I4f-jjdk-a0r542l7Dg1x8,33851
+colorpie/utils.py,sha256=F7y8UNRt3yKsXFqEEtI2ojW5lQJazaPNg2O1zHOol_0,509
+colorpie-0.0.1.dist-info/LICENSE,sha256=i5PutMxgMrcIrIldnBiLpqSGJdHeo4ZTQgaIVzlhAVk,1090
+colorpie-0.0.1.dist-info/METADATA,sha256=kt6jnduPj3LF3jW_IO2Ow8becV9SuoPyPH8bIRzaMz4,1736
+colorpie-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+colorpie-0.0.1.dist-info/top_level.txt,sha256=YTg3laxNFgv1KkeBCgEsLYAJUsqVkgyQdbwELWGYG98,9
+colorpie-0.0.1.dist-info/RECORD,,
