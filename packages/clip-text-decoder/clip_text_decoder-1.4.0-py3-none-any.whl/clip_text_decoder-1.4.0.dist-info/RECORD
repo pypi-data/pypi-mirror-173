@@ -1,0 +1,9 @@
+clip_text_decoder/__init__.py,sha256=IY9m7u4Oq8xKDNRyaIU9Oa4lDIQnDhPcaKdkZBHWYos,27
+clip_text_decoder/common.py,sha256=XOxn9cnCvkCsBWjYaWPbKKL5wkFb08yXgD5GCCTVq04,3100
+clip_text_decoder/dataset.py,sha256=HU4_czHiX1XxxpaV3NF8tg9G_Tc7qLMfrsgAzltaUfs,7316
+clip_text_decoder/model.py,sha256=p4y7_gFOsDuoD6-on-5pgrbvYudgYkR9XlJdi95_HEU,10066
+clip_text_decoder-1.4.0.dist-info/LICENSE,sha256=1UZyZajk1n4jc_jUjc1tN3_5aHJ4N4__6WAgJmksBeU,1067
+clip_text_decoder-1.4.0.dist-info/METADATA,sha256=PwTWkngkgliJv4YyYCsLhPv0OZu9n3QJ-z2S05UMj5U,5256
+clip_text_decoder-1.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clip_text_decoder-1.4.0.dist-info/top_level.txt,sha256=cuS4dE0le_l5ymZ43INIBtXJIsJuWrmEwudAvAAyoJc,18
+clip_text_decoder-1.4.0.dist-info/RECORD,,
