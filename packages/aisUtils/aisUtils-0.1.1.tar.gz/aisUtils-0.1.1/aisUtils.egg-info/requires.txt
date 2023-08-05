@@ -1,0 +1,6 @@
+retryinbg
+requests
+pandas
+numpy
+csv
+ais
