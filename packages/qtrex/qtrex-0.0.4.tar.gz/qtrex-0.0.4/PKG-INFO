@@ -1,0 +1,135 @@
+Metadata-Version: 2.1
+Name: qtrex
+Version: 0.0.4
+Summary: Query template rendering and execution library
+Author-email: Bradley Bonitatibus <bradleybonitatibus@gmail.com>
+License: Apache-2.0
+Project-URL: Documentation, https://github.com/bradleybonitatibus/qtrex
+Project-URL: Homepage, https://github.com/bradleybonitatibus/qtrex
+Project-URL: Repository, https://github.com/bradleybonitatibus/qtrex
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# qtrex
+[![CI](https://github.com/bradleybonitatibus/qtrex/actions/workflows/ci.yml/badge.svg)](https://github.com/bradleybonitatibus/qtrex/actions/workflows/ci.yml)
+
+[![PyPI version](https://badge.fury.io/py/qtrex.svg)](https://badge.fury.io/py/qtrex)
+
+Query template rendering and execution library written in Python.
+
+The goal of `qtrex` is to provide a simple API that supports loading `.sql`
+files that can be templated with `jinja`, and provide extensible configuration
+options to either compile the files, and execute the rendered templates against
+various databases.
+
+## Getting Started
+
+`qtrex` is installable at https://pypi.org/project/qtrex/ via `pip` using:
+
+```
+pip install qtrex
+```
+
+## Examples
+
+Here is a brief example usage of `qtrex`. 
+
+Assuming you have query templates in a directory on a local filesystem, using
+our test suite as an example:
+
+```text
+|tests
+    |--test_*.py
+    |--testdata
+        |--mytemplate.sql
+        |--ingest
+            |--another_file_ext.j2
+            |--another_query.sql
+```
+
+Where `./tests/testdata/mytemplate.sql` has the following contents:
+```sql
+SELECT SUM(x)
+FROM UNNEST({{ params.test_array }}) AS x
+```
+and `./tests/testdata/ingest/another_query.sql` has:
+
+```sql
+SELECT
+    *
+FROM
+    `{{ params.my_project_id }}.{{ params.my_dataset }}.{{ params.my_table }}`
+```
+
+Next, we want to have our `.yaml` config (or extend `qtrex.config.BaseConfig`)
+to implement your own config mechanism.
+
+Our `./tests/example.yaml` will look like:
+```yaml
+params:
+  - key: test_string_key
+    value: "string_value"
+  - key: test_array_key
+    value: [1, 2, 3]
+  - key: test_dict_key
+    value:
+      first: 1
+      two: 2
+      three: 3
+  - key: my_project_id
+    value: test_gcp_project_id
+  - key: my_dataset
+    value: test_dataset
+  - key: my_table_name
+    value: test_table
+```
+
+We can now run the following script (`./tests/example.py`) after changing
+into the `./tests` directory
+```python
+from qtrex.store import Store
+from qtrex.config import YAMLConfig
+
+
+def main():
+    with open("./example.yaml", "r") as f:
+        cfg = YAMLConfig(f)
+
+    store = Store.from_path(cfg, "./testdata")
+
+    for query_ref in store:
+        print(query_ref.template)
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+When we run this script:
+```shell
+cd ./tests
+python example.py
+```
+we should see the following in `stdout`
+
+```text
+SELECT SUM(x)
+FROM UNNEST([1, 2, 3]) AS x
+SELECT
+    *
+FROM
+    `test_gcp_project_id.test_dataset.test_table`
+```
