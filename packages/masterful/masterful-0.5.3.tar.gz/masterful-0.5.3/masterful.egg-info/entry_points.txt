@@ -1,0 +1,3 @@
+[console_scripts]
+masterful-train = masterful.train.__main__:main
+
