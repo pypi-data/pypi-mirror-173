@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bmlt-root-server-client
+Version: 1.0.0
+Summary: BMLT
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: MIT
+Keywords: OpenAPI,OpenAPI-Generator,BMLT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+
+    BMLT Admin API Documentation  # noqa: E501
+    
+
