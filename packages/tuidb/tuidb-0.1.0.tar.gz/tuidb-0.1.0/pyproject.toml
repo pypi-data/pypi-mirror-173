@@ -1,0 +1,76 @@
+[build-system]
+requires = [
+  "setuptools >= 61.0.0",
+  "setuptools-scm[toml] >= 7.0.5",
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "tuidb"
+description = "A Python debugger with a terminal-based user interface."
+authors = [
+  {name = "Luis Morera De La Cruz", email = "capruce@gmail.com"},
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Debuggers",
+    "Typing :: Typed",
+]
+dependencies = [
+    "textual ~= 0.2.1",
+]
+dynamic = ["version"]
+
+
+[project.urls]
+"Homepage" = "https://github.com/capruce/tuidb"
+"Bug Tracker" = "https://github.com/capruce/tuidb/issues"
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.setuptools_scm]
+write_to = "src/tuidb/__version__.py"
+
+
+[tool.black]
+line-length = 88
+target_version = ["py310"]
+include = '.pyi?$'
+
+
+[tool.isort]
+profile = "black"
+line_length = 88
+skip_gitignore = true
+force_alphabetical_sort_within_sections = true
+combine_as_imports = true
+
+
+[tool.mypy]
+show_error_codes = true
+strict = true
+warn_unused_ignores = true
+warn_unused_configs = true
+warn_redundant_casts = true
+
+
+[tool.pytest.ini_options]
+addopts = [
+  "--strict-config",
+  "--strict-markers",
+  "-rP",
+]

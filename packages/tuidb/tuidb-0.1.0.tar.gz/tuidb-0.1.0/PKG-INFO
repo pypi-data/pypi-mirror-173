@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: tuidb
+Version: 0.1.0
+Summary: A Python debugger with a terminal-based user interface.
+Author-email: Luis Morera De La Cruz <capruce@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/capruce/tuidb
+Project-URL: Bug Tracker, https://github.com/capruce/tuidb/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TDB (A Python debugger with a terminal-based user interface.)
+
+This is a WIP
