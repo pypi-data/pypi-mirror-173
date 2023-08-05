@@ -1,0 +1,12 @@
+[
+  "tests_availability.py::AvailabilityTests::test_add_availabilities",
+  "tests_availability.py::AvailabilityTests::test_add_disjoint_availabilities",
+  "tests_availability.py::AvailabilityTests::test_add_overlapping_availabilities",
+  "tests_availability.py::AvailabilityTests::test_availabilities_equal",
+  "tests_availability.py::AvailabilityTests::test_create_range",
+  "tests_availability.py::AvailabilityTests::test_create_ranges",
+  "tests_availability.py::AvailabilityTests::test_subtract_availabilities",
+  "tests_availability.py::AvailabilityTests::test_subtract_availabilities_at_dst_start",
+  "tests_availability.py::AvailabilityTests::test_subtract_availabilities_causing_split",
+  "tests_availability.py::AvailabilityTests::test_subtract_availabilities_with_padding"
+]
