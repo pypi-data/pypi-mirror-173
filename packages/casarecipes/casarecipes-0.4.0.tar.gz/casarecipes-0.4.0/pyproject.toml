@@ -1,0 +1,27 @@
+[project]
+name = "casarecipes"
+dynamic = []
+description = "CASA recipes"
+authors = [
+    { name = "Marcel de Casa", email = "marcel.decasa@gmail.com" },
+]
+dependencies = []
+requires-python = ">=3.6"
+readme = "README.rst"
+version = "0.4.0"
+
+[project.license]
+text = "LGPL"
+
+[tool.pdm.build]
+
+[tool.pdm.version]
+source = "scm"
+write_to = "casarecipes/_version.py"
+write_template = "__version__ = '{}'"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
