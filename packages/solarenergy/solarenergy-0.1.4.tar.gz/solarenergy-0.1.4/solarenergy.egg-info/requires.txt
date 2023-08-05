@@ -1,0 +1,4 @@
+astroconst>=0.0.5
+numpy
+pytz
+soltrack>=0.2.0
