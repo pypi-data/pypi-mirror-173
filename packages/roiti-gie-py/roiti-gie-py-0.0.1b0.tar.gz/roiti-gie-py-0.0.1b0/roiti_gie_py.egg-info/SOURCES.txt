@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+./roiti/gie/VERSION
+roiti_gie_py.egg-info/PKG-INFO
+roiti_gie_py.egg-info/SOURCES.txt
+roiti_gie_py.egg-info/dependency_links.txt
+roiti_gie_py.egg-info/requires.txt
+roiti_gie_py.egg-info/top_level.txt
