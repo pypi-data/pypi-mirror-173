@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: zeppelin
+Version: 0.1.0
+Summary: The package for easy configuration
+Author: altroncode
+Author-email: cosmosx1328@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
