@@ -1,0 +1,8 @@
+README.md
+setup.py
+pacoteexercicio/modulo.py
+pacoteexercicio.egg-info/PKG-INFO
+pacoteexercicio.egg-info/SOURCES.txt
+pacoteexercicio.egg-info/dependency_links.txt
+pacoteexercicio.egg-info/requires.txt
+pacoteexercicio.egg-info/top_level.txt

@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pacoteexercicio
+Version: 0.0.1
+Summary: Pacote python
+Home-page: https://github.com/marcos-de-sousa/pacotepypi
+Author: João cardoso
+Author-email: jvcq13@gmail.com
+License: MIT License
+Description: # pacotepypi
+        
+        **pacoteExercicio** é um simples pacote em Python.
+        
+        ## Dependências
+        **Python 3.6** ou posterior
+        
+        ## Começando o uso
+        Você vai precisar instalar o pacote **pacotepypi**, para isso basta executar:
+        ```
+        pip install pacotepypi
+        ```
+        
+        ## Função
+        
+        * `start ()`
+        
+        
+        
+        
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
