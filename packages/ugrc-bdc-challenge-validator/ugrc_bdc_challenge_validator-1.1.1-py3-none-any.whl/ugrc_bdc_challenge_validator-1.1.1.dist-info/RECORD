@@ -1,0 +1,11 @@
+validator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+validator/checks.py,sha256=wyGAJ7VPsmxTAC6V33f-XgA0ZXiB5n2zFJiydQ0YN70,8400
+validator/main.py,sha256=QG_JFrkIm5q3J62VsdAEurjfbgQrsepf6OMnz-YO16s,5328
+validator/version.py,sha256=1H-7VNtrFvhs8qa54QPme22vkasNLWhmJ7jm7GKec5U,180
+ugrc_bdc_challenge_validator-1.1.1.dist-info/LICENSE,sha256=pVJSXVbNLxJZc3dqh12gTytCPYQrXOATu7qwPUdzBcY,1077
+ugrc_bdc_challenge_validator-1.1.1.dist-info/METADATA,sha256=8or7rRboM4-KagIlDq20AL-FHDmGQOr610c_bVsI3Xw,1066
+ugrc_bdc_challenge_validator-1.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ugrc_bdc_challenge_validator-1.1.1.dist-info/entry_points.txt,sha256=Yw1eRO20R1aynJg7_7Vplw3fRstiscYf_BFKJMJakMs,53
+ugrc_bdc_challenge_validator-1.1.1.dist-info/top_level.txt,sha256=iUtV3dlHOIiMfLuY4pruY00lFni8JzOkQ3Nh1II19OE,10
+ugrc_bdc_challenge_validator-1.1.1.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+ugrc_bdc_challenge_validator-1.1.1.dist-info/RECORD,,
