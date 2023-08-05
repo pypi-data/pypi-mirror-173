@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: hopconnection
+Version: 1
+Summary: hop connection test pkg
+Author: hop
+Author-email: <peacfulsoul18@gmail.com>
+Classifier: Development Status :: 1 - Planning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
