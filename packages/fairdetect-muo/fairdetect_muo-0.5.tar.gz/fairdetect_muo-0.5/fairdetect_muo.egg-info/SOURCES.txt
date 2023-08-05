@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+fairdetect/__init__.py
+fairdetect_muo.egg-info/PKG-INFO
+fairdetect_muo.egg-info/SOURCES.txt
+fairdetect_muo.egg-info/dependency_links.txt
+fairdetect_muo.egg-info/not-zip-safe
+fairdetect_muo.egg-info/requires.txt
+fairdetect_muo.egg-info/top_level.txt
