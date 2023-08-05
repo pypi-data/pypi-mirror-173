@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: train-generated-data-ml
+Version: 0.10
+Summary: Great object detection results without spending a lot of time - yolov5 training script
+Home-page: https://github.com/hansalemaos/train_generated_data_ml
+Author: Johannes Fischer
+Author-email: <aulasparticularesdealemaosp@gmail.com>
+License: MIT
+Keywords: yolov5,yolo,training data,lazy,auto-generated
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+Requires-Dist: a-pandas-ex-less-memory-more-speed
+Requires-Dist: pandas
+
+
+### Add-on for
+
+
+
+[GitHub - hansalemaos/generate_training_data_ml](https://github.com/hansalemaos/generate_training_data_ml)
+
+
+
+```python
+
+$ python train_generated_data_ml.py YOURCONFIGFILE #Config file explanation here: https://github.com/hansalemaos/generate_training_data_ml
+
+```
+
+
+
+```python
+
+#If you don't want to use the command line, you can import the module
+
+from train_generated_data_ml import run_yolov5_training
+
+run_yolov5_training(YOURCONFIGFILE)
+
+```
