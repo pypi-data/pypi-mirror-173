@@ -1,0 +1,11 @@
+pylint_odoo/__init__.py,sha256=p-YMpWm-Kz_pMZWN1mtQLzqAjknDujtZgOANfoiGcEs,2738
+pylint_odoo/misc.py,sha256=3wHj_if43AyFUre7bgJzhiONICnmvWwPqWcSFWV6Vso,2643
+pylint_odoo/augmentations/__init__.py,sha256=4KFqEP2QHFbPN66eQJMdGsmNz2v7ywWv_FR1pW_kkLk,19
+pylint_odoo/augmentations/main.py,sha256=6ZroBAsNzibkd3ZmGn8AtpOSFgNZWY24YtFKEMli4ik,1968
+pylint_odoo/checkers/__init__.py,sha256=Ai8JzwuoVpT2Q4NOP_KTJT4JbFlIe0KgovnFnWilJyg,52
+pylint_odoo/checkers/odoo_addons.py,sha256=g7pKQCS2K5yiTsMKchMhMKUcNdgASwkIrcPWES1j6wQ,51787
+pylint_odoo/checkers/vim_comment.py,sha256=Q0HTNzwrUwCQv_P3-10DeP_TmiHW9LY-74vRraayCNc,773
+pylint_odoo-8.0.5.dist-info/METADATA,sha256=qkAxhEp5TsLCbedUPAhM2XvsCLFsGh06CNZjHAT9st4,27949
+pylint_odoo-8.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pylint_odoo-8.0.5.dist-info/top_level.txt,sha256=ACYb-DHWwJ7hiUhp57U11FQC10EUOaVplktgZpmeWtM,12
+pylint_odoo-8.0.5.dist-info/RECORD,,
