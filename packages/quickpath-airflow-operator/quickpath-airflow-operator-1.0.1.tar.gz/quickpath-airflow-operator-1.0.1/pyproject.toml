@@ -1,0 +1,29 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickpath-airflow-operator"
+version = "1.0.1"
+description = "Execute Blueprints Within the Quickpath Platform"
+readme = "README.md"
+authors = [{ name = "Scott Lilonsky", email = "slilonsky13@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["quickpath", "airflow", "operator"]
+dependencies = [
+    "apache-airflow",
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["black"]
+
+[project.urls]
+Homepage = "https://github.com/Quickpath/quickpath-airflow-operator"
