@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: manageprojects
+Version: 0.0.2rc1
+Summary: Manage Python / Django projects
+Author-email: Jens Diemer <python@jensdiemer.de>
+License: GNU General Public License v3.0
+Project-URL: Homepage, https://github.com/jedie/manageproject
+Project-URL: Bug Tracker, https://github.com/jedie/manageproject/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# manageproject - Manage Python / Django projects
+
+[![pytest](https://github.com/jedie/manageproject/actions/workflows/pytest.yml/badge.svg?branch=main)](https://github.com/jedie/manageproject/actions/workflows/pytest.yml)
+[![codecov](https://codecov.io/github/jedie/manageproject/branch/main/graph/badge.svg)](https://codecov.io/github/jedie/manageproject)
+
+Mix the idea of Ansible with CookieCutter Templates and Django Migrations to manage and update your Python Packages and Django Projects...
+
+## Links
+
+* https://github.com/cookiecutter/cookiecutter
+* Available Cookiecutters template on GitHub: https://github.com/search?q=cookiecutter&type=Repositories
+* Packaging Python Projects: https://packaging.python.org/en/latest/tutorials/packaging-projects/
