@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: gym-modelspin
+Version: 0.0.2
+Requires-Dist: gym (==0.26.0)
+

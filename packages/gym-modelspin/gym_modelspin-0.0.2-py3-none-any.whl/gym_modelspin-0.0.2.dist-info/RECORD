@@ -1,0 +1,8 @@
+gym_modelspin/__init__.py,sha256=UgBt451MApEj_aOxs8MrjxU6KH-n1MpBn-guZL3ucdg,245
+gym_modelspin/envs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gym_modelspin/envs/modelspin.py,sha256=fCUJgnIV2P4IQ6KpLHioFto0i-v5wJuvW6ldoPD8DsQ,2971
+gym_modelspin/wrappers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gym_modelspin-0.0.2.dist-info/METADATA,sha256=pIG1mVFu7HVmQsUaY5YdteGB2yTIA3sB0J8_hbNRhkI,88
+gym_modelspin-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gym_modelspin-0.0.2.dist-info/top_level.txt,sha256=nRnoPrIkc057ueUeVpQWQmdkpS4vv940DILZwD-7gKY,14
+gym_modelspin-0.0.2.dist-info/RECORD,,
