@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lins-pix
+Version: 1.0.0.30
+Summary: Pacote para gerenciar transacoes PIX
+Home-page: https://bitbucket.org/grupolinsferrao/pypck-pix/
+Author: Gustavo Schaedler
+Author-email: gustavopoa@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: qrcode (==6.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: PyJWT (==1.7.1)
+
+UNKNOWN
+

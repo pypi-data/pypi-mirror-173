@@ -1,0 +1,12 @@
+lins_pix/__init__.py,sha256=DhN9jGoC1UL3CxTznMxA2KAKC_n1d0zAQvG4Ry5PNxg,15
+lins_pix/qrcode.py,sha256=lUbgmUwoC8KqCEhrvsSiy5k3pqm-RpoXQ_RPbOTs4QE,745
+lins_pix/psp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lins_pix/psp/santander/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lins_pix/psp/santander/autenticacao.py,sha256=TtPpDiLWChGFE7Ar8HSLjmlsWnlMd8HjGG9h9946Kyg,2379
+lins_pix/psp/santander/cob.py,sha256=_strHRdLvl8kqi93zWoTQo3J7ZWwIx3ldr24wEJOZbM,7001
+lins_pix/psp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lins_pix/psp/tests/test_api_santander.py,sha256=dFWxyVw7rg2Lw4mxuBe0asiQxZU7hz4sOZCAgWIwSBE,3868
+lins_pix-1.0.0.30.dist-info/METADATA,sha256=-bOf-a6tksOcI080ATqZozx-2FTWSla0lZqVvZDjnGs,359
+lins_pix-1.0.0.30.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lins_pix-1.0.0.30.dist-info/top_level.txt,sha256=cDrojxWx8Iv4rNgwpOhML0j3ZjocUrxYs-xtaccUbtY,9
+lins_pix-1.0.0.30.dist-info/RECORD,,
