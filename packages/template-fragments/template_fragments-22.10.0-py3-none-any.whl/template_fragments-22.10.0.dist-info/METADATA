@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: template-fragments
+Version: 22.10.0
+Summary: Tools to handle template fragments
+Author-email: Christopher Prohm <mail@cprohm.de>
+License: MIT
+Requires-Python: >=3.8
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: jinja2 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flask ; extra == 'dev'
+Provides-Extra: jinja
+Requires-Dist: jinja2 ; extra == 'jinja'
+
