@@ -1,0 +1,14 @@
+tracking_numbers/__init__.py,sha256=lWdan8GnXBuhHYjpdXKL2KQXbe1nBGCkw8uzPK2meik,1011
+tracking_numbers/_generated.py,sha256=7zhHFrFpy2zGC5jGkJ0eAlMjEDL5g9k87HKcEI3dDaw,24050
+tracking_numbers/checksum_validator.py,sha256=2GPv1NR3FBirX9TCh2cD2TtL0RndUt_APDOr93Rk-UA,3962
+tracking_numbers/compat.py,sha256=yll1nYPK8Cl8qKGiEJz06UBdZiV5q2W64S-gqcSRzNw,529
+tracking_numbers/definition.py,sha256=A3N7Q1AH1CG3nO92z4uipnASCTGMRqhpKfzSIN953Dg,6914
+tracking_numbers/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tracking_numbers/helpers/repr.py,sha256=mACI34O1M513HFXgiYagSTfCcZlQ3FgHPelEv8eZV5E,709
+tracking_numbers/helpers/spec.py,sha256=JToBWKyq-4rpWgezX_rXeebHhRYH3KXRgZaUgZ5i6IQ,4183
+tracking_numbers/serial_number.py,sha256=U_qNNtCX2FEpiInXVNaz-_W7dSD8IaFxBcS_WTe8zZU,2553
+tracking_numbers/types.py,sha256=UXtmgc75rfmshMB4QCk_EkPBlrKUXdSwQAn1HWtmpmM,725
+tracking_numbers/value_matcher.py,sha256=pwa1vXULOSYdAhrozmkO45AuiFccN3R5RbnynBxvAXg,1278
+tracking_numbers-0.1.4.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+tracking_numbers-0.1.4.dist-info/METADATA,sha256=m5JG3SnkEIStgaNgc-k2GqCEwxhGIybxwAzculzg-6g,3960
+tracking_numbers-0.1.4.dist-info/RECORD,,
