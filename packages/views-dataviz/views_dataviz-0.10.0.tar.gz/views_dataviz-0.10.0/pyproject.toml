@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "views_dataviz"
+version = "0.10.0"
+description = ""
+authors = [
+   "mihai <mihai.croicu@pcr.uu.se>",
+   "peder2911 <pglandsverk@gmail.com>",
+   "rbjansen <r.b.jansen.uu@gmail.com>",
+   "frehoy <frederick.hoyles@gmail.com>",
+   "hhegre <havard.hegre@pcr.uu.se>"]
+license = "CC-BY-NC"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.4.3"
+pandas = "^1.4.3"
+seaborn = "^0.12.0"
+ipykernel = "^6.15.1"
+contextily = "^1.1.0"
+geopandas = "^0.11.0"
+adjustText = "^0.7.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
