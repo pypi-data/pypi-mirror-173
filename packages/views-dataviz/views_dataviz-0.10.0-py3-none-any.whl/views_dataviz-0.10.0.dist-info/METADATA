@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: views-dataviz
+Version: 0.10.0
+Summary: 
+License: CC-BY-NC
+Author: mihai
+Author-email: mihai.croicu@pcr.uu.se
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: adjustText (>=0.7.3,<0.8.0)
+Requires-Dist: contextily (>=1.1.0,<2.0.0)
+Requires-Dist: geopandas (>=0.11.0,<0.12.0)
+Requires-Dist: ipykernel (>=6.15.1,<7.0.0)
+Requires-Dist: matplotlib (>=3.4.3,<4.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: seaborn (>=0.12.0,<0.13.0)
