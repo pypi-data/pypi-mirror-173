@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: logics-py
+Version: 0.0.2
+Summary: Logics is a user-friendly formula language with a subset of Python's expression syntax
+Project-URL: Homepage, https://github.com/viur-framework/logics
+Project-URL: Bug Tracker, https://github.com/viur-framework/logics/issues
+Author-email: Jan Max Meyer <jmm@phorward.de>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+<div align="center">
+    <img src="https://github.com/viur-framework/viur-artwork/raw/main/icons/icon-logics.svg" height="196" alt="A hexagonal logo of Logics" title="Logics logo">
+    <h1>Logics</h1>
+    A tiny, sandboxed, secure and extendable formula language with a flavor of Python.
+</div>
+
+## About
+
+Logics is a tiny formula language, with the goal to provide equal syntax and semantics for different runtime contexts.
+
+- [logics-js](https://www.npmjs.com/package/logics-js) is a pure JavaScript implementation of Logics provided as npm-package.
+- [logics-py](https://pypi.org/project/logics-py/) is a pure Python implementation of Logics provided as PyPI-package.
+
+Both packages are under recent development and not stable right now. They are maintained in separate version numbers.
+
+## Features
+
+- Python-like expression syntax, including list comprehensions
+- Python-inspired type system for all JSON-serializable types
+- Some Logics-specific specialities
+- Separate implementations in JavaScript and Python with equal syntax and similar semantics
+- Secure, running in a sandboxed environment apart from the host language
+- Provides a set of functions to be used in expressions
+- Extendable to custom functions
+
+## License
+
+Copyright © 2022 by Jan Max Meyer, Mausbrand Informationssysteme GmbH.<br>
+Mausbrand and ViUR are registered trademarks of Mausbrand Informationssysteme GmbH.
+
+Logics is free software under the MIT license.<br>
+Please see the LICENSE file for details.
