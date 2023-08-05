@@ -1,0 +1,8 @@
+hello_publish/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hello_publish/countries.csv,sha256=kuT5ikfJdynYubrV8XXB54YeyLwxksUHFRUKZomo7yw,66
+hello_publish/helloworld.py,sha256=_69PHY3DNmO1z6JlT-A62AxYVgdAC7dKygN6fMC8zPk,43
+hello_publish-0.1.1.data/scripts/gen.sh,sha256=Z6RVavlj_PG4HvSOr4IOctMvuYSR05ar234YD0oiX_o,54
+hello_publish-0.1.1.dist-info/METADATA,sha256=qs99dNhUggYZ7b19Evc5JEF-x0Vf4QPklEiFrfZmk-g,177
+hello_publish-0.1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+hello_publish-0.1.1.dist-info/top_level.txt,sha256=hSO9pUSDcBzQdFkre_ohw_rRNecIb81xqDq1I6Tylog,14
+hello_publish-0.1.1.dist-info/RECORD,,
