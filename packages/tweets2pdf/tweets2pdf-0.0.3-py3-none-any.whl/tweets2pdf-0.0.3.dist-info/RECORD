@@ -1,0 +1,11 @@
+tweets2pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tweets2pdf/__main__.py,sha256=huHHvJXAUrx5W7Wz7sTOcvaUT4ZCyU50Nh45ZPSaKLE,3815
+tweets2pdf/pdf.py,sha256=49JiU2GxQLFmvshnJeJfNtpyDsZr8udU59obUeFHBss,3160
+tweets2pdf/settings.py,sha256=Y23cLMbJwavUy7ijklcZDeyEVAKepbogy-Ir228qATs,266
+tweets2pdf/twitter.py,sha256=Ow2kooqUsQq5iDIa4ZYeNoCjAvmuO6VlJ1CWiESexgw,3039
+tweets2pdf/utils.py,sha256=Pg3GW_w_OBzjFYfPWVNh2wGijZphK5BCa0EovQ1Ae50,860
+tweets2pdf-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tweets2pdf-0.0.3.dist-info/METADATA,sha256=hLjvSdU7_nsco7eJvDG1rh87AAkk44HeB2PRiwk7cOc,1996
+tweets2pdf-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tweets2pdf-0.0.3.dist-info/top_level.txt,sha256=rIAlq1nvsQ-GJGqRaTPVEMaRbENX1dPgGe3ZYQLQS0Q,11
+tweets2pdf-0.0.3.dist-info/RECORD,,
