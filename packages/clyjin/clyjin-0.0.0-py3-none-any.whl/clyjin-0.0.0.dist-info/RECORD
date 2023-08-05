@@ -1,0 +1,12 @@
+clyjin/__init__.py,sha256=7Mp8iqklf3_AKmDXbtfWFufmP2NUURhE5CXW4A0vn-c,22
+clyjin/__main__.py,sha256=23UHW5-6ivtfZgh5pBHV6ARqEAmFhfPktdsT8QktjmY,66
+clyjin/__pycache__/__init__.cpython-37.pyc,sha256=eMZneAOa2gUciOago-lEURx1OGpCZ7jT-EHFAqqPils,153
+clyjin/__pycache__/__init__.cpython-38.pyc,sha256=_MZuns8p0zT3eXBzpKNFup12FLIxaMt-WVswKJ_-PBw,157
+clyjin/__pycache__/__main__.cpython-37.pyc,sha256=_iucd6cTGb7ItNFtpyAO6t-jz-ejsof46NOJCEdk5x8,210
+clyjin/core/cli.py,sha256=O3F4Pfg4JPxib7A8zF8G3ul3TLL_JFISEIZ56U-afDc,43
+clyjin/core/__pycache__/cli.cpython-37.pyc,sha256=ebhY0wf10q5IUwlGI5dktHqmqnBBYKirnVsxr02ynbY,254
+clyjin-0.0.0.dist-info/METADATA,sha256=ZOD2KYxWu1BCmji7kt4M83-b10IStopDZxaLRq9u4W0,578
+clyjin-0.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+clyjin-0.0.0.dist-info/entry_points.txt,sha256=we-FMk_d_SEykDARROFw9HKahf4bQdTBzGTZtEqqpWM,75
+clyjin-0.0.0.dist-info/top_level.txt,sha256=CYTLGpOZ3Nkcm6lJxOYy3NCW3DkfvcDsLU2aBtGy-J8,7
+clyjin-0.0.0.dist-info/RECORD,,
