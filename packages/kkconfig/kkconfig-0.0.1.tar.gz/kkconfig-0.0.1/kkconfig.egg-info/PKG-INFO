@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kkconfig
+Version: 0.0.1
+Summary: Package to help with configuration of local workspaces.
+Home-page: https://github.com/kkrizka/kkconfig
+Author: Karol Krizka
+Author-email: kkrizka@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Karol Krizka's Project Configuration
+Module to help with configuration of local workspaces.
