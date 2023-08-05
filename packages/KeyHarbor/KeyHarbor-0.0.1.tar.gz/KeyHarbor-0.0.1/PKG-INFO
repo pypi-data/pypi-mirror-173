@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: KeyHarbor
+Version: 0.0.1
+Summary: KeyHarbor API Client for Python.
+Home-page: https://github.com/GetmeUK/keyharbor-client
+Author: Anthony Blackshaw
+Author-email: ant@getme.co.uk
+Maintainer: Anthony Blackshaw
+Maintainer-email: ant@getme.co.uk
+License: MIT
+Keywords: keyharbor
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# keyharbor
+A python client for the KeyHarbor API.
+
+
