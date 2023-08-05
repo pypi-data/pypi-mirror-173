@@ -1,0 +1,9 @@
+ec5conn/__init__.py,sha256=0Z8mvMbcI0Gw01Ydd5tBzK9sucm58MvxADlVGJhuoBM,1030
+ec5conn/conn.py,sha256=U89rFkQXa_ueokmRkS76AssuRo_uCqjVsZWI3G0gS_4,21342
+ec5conn/log.py,sha256=n73ZCLsuB-gw6zJxfiVBM3Zeg3Ti-clgstcSbyrX5gY,442
+ec5conn-0.0.3.data/scripts/ec5conn,sha256=X1pX4NdZ4BbgXsW9d03JJS0vONqI0U13SPO2Wufaozs,93
+ec5conn-0.0.3.dist-info/LICENSE.txt,sha256=a4KSWjrkO9iGiLIgJwSLuEp2sVlUsb_UxPtuwFFU00s,1062
+ec5conn-0.0.3.dist-info/METADATA,sha256=llK50GYAPLiMFIshSMyYHEo7j4CMGKo2TrZ8fEjVtyw,646
+ec5conn-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+ec5conn-0.0.3.dist-info/top_level.txt,sha256=ryFkMlanayOMrCimNNIC_Y9KYMbzVPFfXvuih2q9Oj0,8
+ec5conn-0.0.3.dist-info/RECORD,,

@@ -1,0 +1,7 @@
+#!python
+
+import sys
+import ec5conn
+
+if __name__ == '__main__':
+    sys.exit(ec5conn.main())
