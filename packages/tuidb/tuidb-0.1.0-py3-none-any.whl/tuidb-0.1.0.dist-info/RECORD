@@ -1,0 +1,11 @@
+tuidb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tuidb/__version__.py,sha256=6phs_teiMFXlYjRZHHJJHElOwXq2XLUA2bDPY9cA4bQ,176
+tuidb/__version__.pyi,sha256=BLIhPHsM2orZyDpD6WeNk7dlepEhrmIgl1oaK2K7L2U,252
+tuidb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tuidb/stopwatch.css,sha256=JGlJInQ0GdeBanKhg0EQYISxOTksIuD0fm-thEIr1-Q,578
+tuidb/stopwatch.py,sha256=rcttNFIPHZT_Mfrsas20CopzaafJOCUcESXsGeIQ7u0,3352
+tuidb-0.1.0.dist-info/LICENSE,sha256=yJVT1vhcXZ7bA3qSlINHJVDzdaH9GbbCkL_cF4fXc5w,1086
+tuidb-0.1.0.dist-info/METADATA,sha256=mvZyGepbw3rHKzOdfYHbSExtfcG1ElY4AXbjumTITyo,942
+tuidb-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tuidb-0.1.0.dist-info/top_level.txt,sha256=qni8N94jWj8QzaD4_cnGg0QNE9W3V8VGD9AHP8PSBqs,6
+tuidb-0.1.0.dist-info/RECORD,,
