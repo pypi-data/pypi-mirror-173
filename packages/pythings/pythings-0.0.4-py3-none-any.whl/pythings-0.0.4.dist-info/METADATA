@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pythings
+Version: 0.0.4
+Summary: A zero-depedencies and most-used python resources.
+Home-page: https://www.github.com/leoarayav
+Author: leoarayav
+Author-email: laraya1818@gmail.com
+License: MIT
+Requires: time
+Description-Content-Type: text/markdown
+
+## pythings
+A zero-depedencies and most-used python resources.
+
+### Featuring resources
+- Operations.
+- Convertions.
+- Web scrapping.
