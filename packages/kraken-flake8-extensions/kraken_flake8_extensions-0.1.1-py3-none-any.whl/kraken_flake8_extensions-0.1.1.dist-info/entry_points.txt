@@ -1,0 +1,3 @@
+[flake8.extension]
+KRE=kraken_flake8_extensions.kraken:Flake8KrakenPlugin
+

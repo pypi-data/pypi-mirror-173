@@ -1,0 +1,12 @@
+kraken_flake8_extensions/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+kraken_flake8_extensions/base.py,sha256=AV_XVQofEYX6RHWEjJbfiPrGimAV4nOIgbh9xCeDW1k,1953
+kraken_flake8_extensions/kraken/__init__.py,sha256=ZEbNpqydqEuLuBRf3sr4s0jdHZaewdFMUZOPeqCHNuw,186
+kraken_flake8_extensions/kraken/kre001.py,sha256=hK8jZ1OHiFVh95Oahz4QVgi7FfMIwN9f5-mypy4ixZA,2384
+kraken_flake8_extensions/kraken/kre002.py,sha256=wCMlZOHD1AYzvQhR7uwN4ULIpSDZ9gUMCF4MwCm5X2o,2057
+kraken_flake8_extensions/kraken/utils.py,sha256=ND66SToVneQ1sJ3Tmn8HYKRLaj49WDsipcetFZ8Me64,893
+kraken_flake8_extensions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_flake8_extensions-0.1.1.dist-info/entry_points.txt,sha256=c6WqtdcEmWYbaxriZkftJY7UJNkR9LqN-IJtkRyo9UA,75
+kraken_flake8_extensions-0.1.1.dist-info/LICENSE,sha256=n1m2B7cI9M4RdEbzD0qQ9ZiNLlEhZAT0kRJSRClqpYw,988
+kraken_flake8_extensions-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+kraken_flake8_extensions-0.1.1.dist-info/METADATA,sha256=1YIzQmuazhi9irrQ1cEw2qESfPuMFcZi2iy1S8IDPd0,1437
+kraken_flake8_extensions-0.1.1.dist-info/RECORD,,
