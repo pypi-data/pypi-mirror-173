@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: syntheon
+Version: 0.0.1
+Summary: Inference parameters of music synthesizers with deep learning
+Author-email: Hao Hao Tan <helloharry66@gmail.com>
+Project-URL: Homepage, https://github.com/gudgud96/syntheon
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Syntheon
+
+Syntheon - the Pantheon (temple of gods) for music synthesizers.
+
+DX7 patches: https://yamahablackboxes.com/collection/yamaha-dx7-synthesizer/patches/
+
+## Testing
+
+```
+python3 -m inferencer.vital.vital_inferencer
+
+python3 -m inferencer.dexed.dexed_inferencer
+
+python3 -m pytest
+
+```
+
+## Usage
+
+```python
+from syntheon import infer_params
+
+output_params_file, eval_dict = infer_params(
+    "your_audio.wav", 
+    "vital", 
+    enable_eval=True
+)
+```

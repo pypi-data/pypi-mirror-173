@@ -1,0 +1,32 @@
+[project]
+name = "syntheon"
+version = "0.0.1"
+authors = [
+  { name="Hao Hao Tan", email="helloharry66@gmail.com" },
+]
+description = "Inference parameters of music synthesizers with deep learning"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'bitstruct==8.15.1',
+  'crepe==0.0.12',
+  'hmmlearn==0.2.7',
+  'librosa',
+  'mido',
+  'numpy',
+  'nnAudio==0.3.1',
+  'pytest',
+  'tensorflow',
+  'torchcrepeV2',
+  'torch',
+  'torchaudio==0.12.1',
+  'torchcrepe==0.0.17'
+]
+
+[project.urls]
+"Homepage" = "https://github.com/gudgud96/syntheon"
