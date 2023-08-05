@@ -1,0 +1,12 @@
+simplebot_tgchan/__init__.py,sha256=2PmFMR_3GJf_P-BYeK7LbLY5JQDGGJmKrkaeba9QyG4,9275
+simplebot_tgchan/_version.py,sha256=6phs_teiMFXlYjRZHHJJHElOwXq2XLUA2bDPY9cA4bQ,176
+simplebot_tgchan/instantview.py,sha256=2vN81DJ9lX7V5Xy1isEt6cqdXemE-d4-CyStlBtmfig,9725
+simplebot_tgchan/orm.py,sha256=GeQFgOgJEkjMeExdiUp837hxOCz0lB3dbVzhRbhQXHY,1406
+simplebot_tgchan/subcommands.py,sha256=Hox7WHwU2-UJrIWs6cHSsOAIqsy1Fia9OyB-7TblHrw,1536
+simplebot_tgchan/util.py,sha256=ojX6xFjvfGHT2bVrgNFPmrbpQmiDLlpBBmhGAirnvLI,1084
+simplebot_tgchan-0.1.0.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+simplebot_tgchan-0.1.0.dist-info/METADATA,sha256=r6zifXgf6c7xZjC8KrX4DP0YnH6RwBppQ9uNvMP2YVk,3471
+simplebot_tgchan-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+simplebot_tgchan-0.1.0.dist-info/entry_points.txt,sha256=UNEMXpyJVzau54-fDNvDP381tNYPs_lnnNC50EWw6KI,56
+simplebot_tgchan-0.1.0.dist-info/top_level.txt,sha256=KhnPPyBKrLQ6e6dPAeUp9n2ZDm0D_yAIGMjzvTBKV1w,17
+simplebot_tgchan-0.1.0.dist-info/RECORD,,
