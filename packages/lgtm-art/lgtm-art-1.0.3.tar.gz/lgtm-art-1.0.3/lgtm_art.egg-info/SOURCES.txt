@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+lgtm_art.egg-info/PKG-INFO
+lgtm_art.egg-info/SOURCES.txt
+lgtm_art.egg-info/dependency_links.txt
+lgtm_art.egg-info/entry_points.txt
+lgtm_art.egg-info/requires.txt
+lgtm_art.egg-info/top_level.txt
