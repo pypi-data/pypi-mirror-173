@@ -1,0 +1,15 @@
+latextomd/__init__.py,sha256=l1lWRV5fzx6-C3xpWdEYCx3Y5TNykf_HgoEs12q6cfQ,21
+latextomd/__main__.py,sha256=12olJG3wKuytQdielq5TT0J1GXPNmeKVdHEFM_hkil4,43
+latextomd/cli.py,sha256=-o5r-4CxjRE2U-El7UPplSyb3fIv8JZtkoeWhk49Ifc,1906
+latextomd/config.py,sha256=2vpIIXICfr9dn8mgy8c7STnNRPB69XO5iHAtT9Zyc5k,2782
+latextomd/latexblocks.py,sha256=alJSM36vbTwxLkMM-Qd2oQG07unmutW-CpQr1-D_hx0,1780
+latextomd/latextomd.py,sha256=oPzF3uhY3iHPu8MRwvNeMl1E4vREZTj8-3Q0coC4Z30,4545
+latextomd/postpandoc.py,sha256=l-ULJ8Hlfy0p6mXbvaLJ0JHLTIiz7SWClUdAVVBWUtQ,366
+latextomd/prepandoc.py,sha256=jT3e01ntp8xQrlv1cu6dOQyoYuHYLl97HGrLYP2V0cI,478
+latextomd/soup.py,sha256=h_SbgQJrdMCehySjaWASUaUhUwMteUhkqMHjQJPbwlE,1210
+latextomd/text_manipulation.py,sha256=4KkSQPE4xzrBK5vlcCUTCPs6IpF4N5pMte6ohduVRAo,7592
+latextomd-0.1.6.dist-info/entry_points.txt,sha256=hT1SU60hOuMrRt-ME1MLe6xAZnr7I09q-fJgYiaQW0M,48
+latextomd-0.1.6.dist-info/LICENSE,sha256=-2vdZCE0kDQL8HcEnR7NCoOJL84LFy7jcJ79FSfSP4c,1072
+latextomd-0.1.6.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+latextomd-0.1.6.dist-info/METADATA,sha256=vXJW35ju2ZeCU0SYvTR-q6I9HPFa0VTFNF2j7ga2Of8,1314
+latextomd-0.1.6.dist-info/RECORD,,
