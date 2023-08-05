@@ -1,0 +1,4 @@
+[console_scripts]
+dcspray=dracoonsprayer.cli:app
+dracoonsprayer=dracoonsprayer.cli:app
+
