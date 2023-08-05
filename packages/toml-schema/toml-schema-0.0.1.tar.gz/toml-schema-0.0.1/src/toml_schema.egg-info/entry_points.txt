@@ -1,0 +1,2 @@
+[console_scripts]
+toml-schema = toml_schema:main

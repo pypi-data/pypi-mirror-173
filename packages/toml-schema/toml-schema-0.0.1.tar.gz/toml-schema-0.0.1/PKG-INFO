@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: toml-schema
+Version: 0.0.1
+Summary: Schemas for TOML. TBD
+Home-page: https://github.com/palliate/toml-schema
+Author: Tsche
+Author-email: contact@palliate.io
+License: MIT
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Provides-Extra: testing
+License-File: LICENSE
+
+# toml-schema

@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/toml_schema/__init__.py
+src/toml_schema/py.typed
+src/toml_schema.egg-info/PKG-INFO
+src/toml_schema.egg-info/SOURCES.txt
+src/toml_schema.egg-info/dependency_links.txt
+src/toml_schema.egg-info/entry_points.txt
+src/toml_schema.egg-info/not-zip-safe
+src/toml_schema.egg-info/requires.txt
+src/toml_schema.egg-info/top_level.txt
