@@ -1,0 +1,9 @@
+packpypi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packpypi/armazenamento.py,sha256=HDx53nzChI935KWMXnQMbb2y7l9ZmtZqiMniI7KYeis,148
+packpypi/consulta.py,sha256=TrwX2gj_xVhTd2uZNVoD27uQbbdiePhGH8mZluLPoT0,316
+packpypi/interacao.py,sha256=ohKSf9OYEVpsz0rN3Rn3X4ZoE6aS336Y5nh_8FQHrnE,178
+packpypi-0.0.1.dist-info/LICENSE.txt,sha256=IQVGAGcJdSz5Cphu2K0xv3rFAdRcKYflw-0ePv1H_eE,1099
+packpypi-0.0.1.dist-info/METADATA,sha256=CKIyNVZ-75c3ytMArJCyzgTHJQu6H0TjmALGNlzFGjo,915
+packpypi-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+packpypi-0.0.1.dist-info/top_level.txt,sha256=UTL_SRfYIjExOT3BTeYyPyFSKm3AZZrAu0HO-_SW3EU,9
+packpypi-0.0.1.dist-info/RECORD,,

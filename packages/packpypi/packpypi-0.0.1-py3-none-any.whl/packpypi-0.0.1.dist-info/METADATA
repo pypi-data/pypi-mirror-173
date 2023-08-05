@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: packpypi
+Version: 0.0.1
+Summary: Pacote python para estudar python
+Home-page: http://github.com
+Author: Pedro Vitor Raiol Comin
+Author-email: pedro21070007@aluno.cesupa.br
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pacotepypi
+
+**packpypi** Ã© um simples pacote para administrar os dados cadastrados, armazenados e consultados dos usuarios.
+
+## DependÃªncias
+**Python 3.6** ou posterior
+
+
+## ComeÃ§ando o uso
+Ã‰ necessÃ¡rio que vocÃª instale o pacote **packpypi**, para isso basta executar:
+```
+pip install packpypi
+```
+
+## FunÃ§Ã£o
+
+* `interacao ()` - Registra o cpf, endereÃ§o e nome do usuÃ¡rio
+* `armazenamento ()` - Salva as informaÃ§Ãµes do usuÃ¡rio em um arquivo de texto
+* `consulta ()` - Realiza a consulta dos dados do cpf informado atravÃ©s do arquivo de texto
+
+
+
+
+
