@@ -1,0 +1,15 @@
+schatsi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schatsi/models/___init__.py,sha256=zxo90r1hNmYU1vRb_7ZfprF72LVTrtflJkwaD07dWlk,96
+schatsi/models/document.py,sha256=2HVf8uECHN7qbejizdYUQPyBT3sooquzqziM-rUMmxc,727
+schatsi/models/ranking.py,sha256=G0fUVPTD6znZVGvCLW7WR2xJbSsYTiQkS1Zba398fq8,269
+schatsi/processor/document_processor.py,sha256=z6Me1InppFyiupg83NCK3Iz-pJFUjubYa_BTHI4SaCY,722
+schatsi/processor/ngram_processor.py,sha256=xXoVTwgJYQBq9TkP-kFDHIKMRy0Svw5Y3WylQPao9RE,611
+schatsi/processor/ranker.py,sha256=x5MP1uzRyOkkb5VCgintHXVyql9_d5ja6c0RSHqqZQA,779
+schatsi/processor/text_cleaner.py,sha256=UnPw6zgD3LoAoVOYzAHmQ8mCJy0nYwK4dU19QQRqOCE,746
+schatsi/reader/base_reader.py,sha256=Sym79HMgYnVWv9FzbNWVtODreAWqIlDffgtNolaAkG0,998
+schatsi/reader/pdf_reader.py,sha256=HM6GNNI8_7HW4H79YKMSnhpHj9uvL52hGmoYzE05RFI,1412
+schatsi/reader/reader_facade.py,sha256=ivT72MzDxpnWy2GEItgH6PWIeGPN7u3xyGa-0sXc3jw,1332
+schatsi/reader/reader_type.py,sha256=mKLT2GWdGVfr0GW6fOffmyP03f_yMVdsPmaHNblLokw,65
+schatsi-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+schatsi-0.1.2.dist-info/METADATA,sha256=ew9aqyaTU6npbrg4dYybynLSLe9qUSNrveMkRmVTbnc,963
+schatsi-0.1.2.dist-info/RECORD,,
