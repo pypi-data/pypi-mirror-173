@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+fast_color_checker/LICENSE
+fast_color_checker/README.MD
+fast_color_checker/__init__.py
+fast_color_checker/requirements.txt
+fast_color_checker/thirdparty.json
+fast_color_checker.egg-info/PKG-INFO
+fast_color_checker.egg-info/SOURCES.txt
+fast_color_checker.egg-info/dependency_links.txt
+fast_color_checker.egg-info/requires.txt
+fast_color_checker.egg-info/top_level.txt

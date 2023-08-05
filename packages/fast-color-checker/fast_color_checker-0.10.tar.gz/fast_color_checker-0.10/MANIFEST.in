@@ -1,0 +1,4 @@
+include fast_color_checker/requirements.txt
+include fast_color_checker/thirdparty.json
+include fast_color_checker/README.MD
+include fast_color_checker/LICENSE
