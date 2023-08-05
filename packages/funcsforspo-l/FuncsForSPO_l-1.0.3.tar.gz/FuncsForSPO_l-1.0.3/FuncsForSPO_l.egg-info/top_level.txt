@@ -1,0 +1,12 @@
+FuncsForSPO_l
+FuncsForSPO_l/femails
+FuncsForSPO_l/fexceptions
+FuncsForSPO_l/fftp
+FuncsForSPO_l/focr
+FuncsForSPO_l/fopenpyxl
+FuncsForSPO_l/fpysimplegui
+FuncsForSPO_l/fpython
+FuncsForSPO_l/fregex
+FuncsForSPO_l/fselenium
+FuncsForSPO_l/fsqlite
+FuncsForSPO_l/fwinotify
