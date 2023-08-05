@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+sqlalchemy2atlas/__init__.py
+sqlalchemy2atlas/containers.py
+sqlalchemy2atlas/exceptions.py
+sqlalchemy2atlas/sqlalchemy2atlas.py
+sqlalchemy2atlas.egg-info/PKG-INFO
+sqlalchemy2atlas.egg-info/SOURCES.txt
+sqlalchemy2atlas.egg-info/dependency_links.txt
+sqlalchemy2atlas.egg-info/entry_points.txt
+sqlalchemy2atlas.egg-info/requires.txt
+sqlalchemy2atlas.egg-info/top_level.txt

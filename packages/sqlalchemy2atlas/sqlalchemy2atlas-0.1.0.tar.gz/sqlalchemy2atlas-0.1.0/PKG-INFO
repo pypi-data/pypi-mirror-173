@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sqlalchemy2atlas
+Version: 0.1.0
+Summary: Converts SQLALchemy Base Classes to AtlasGo HCL.
+Home-page: https://github.com/Fraser-Isbester/sqlalchemy2atlas
+Author: Fraser Isbester
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Summary
+Converts [SQLAlchemy](https://www.sqlalchemy.org/) models to [AtlasGo](https://atlasgo.io/) HCL.
+
+# Quickstart
+<!-- Installation -->
+- Run `pip install sqlalchemy2atlas`
+<!-- Usage -->
+- Run `sqlalchemy2atlas -h`
+
+
+## Driver Support
+- [x] PostgreSQL
+    - [x] 14.x
+- [ ] Cloud Spanner
+- [ ] MySQL
+- [ ] SQLLite
