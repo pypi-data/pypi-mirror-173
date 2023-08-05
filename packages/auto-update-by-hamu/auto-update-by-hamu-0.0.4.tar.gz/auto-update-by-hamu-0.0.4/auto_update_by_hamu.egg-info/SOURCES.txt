@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+auto_update/__init__.py
+auto_update_by_hamu.egg-info/PKG-INFO
+auto_update_by_hamu.egg-info/SOURCES.txt
+auto_update_by_hamu.egg-info/dependency_links.txt
+auto_update_by_hamu.egg-info/top_level.txt
