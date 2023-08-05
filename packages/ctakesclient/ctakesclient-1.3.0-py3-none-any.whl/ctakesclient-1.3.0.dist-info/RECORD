@@ -1,0 +1,13 @@
+ctakesclient/__init__.py,sha256=Bco1K3_ujvFsPD99syOW4hbC9MdtwIcG1Bxs2Qke13E,162
+ctakesclient/client.py,sha256=lt9kyNCUvv_EsO-H7ILQYwW5iTxDal2RAPvxDS6XbTE,5119
+ctakesclient/exceptions.py,sha256=fRmZYmuERuR7WgywmSGqRyKRFCUUFOFdswMJx_JrF90,529
+ctakesclient/filesystem.py,sha256=V-wNEtNscOaVRjMMVMrATaDMGEhQfl7LUkB8s4Wi3v4,7156
+ctakesclient/text2fhir.py,sha256=IIOFJXQAlPOC_Ujzy36YSMyg2nDJhFnzryx4LD-cmh4,14899
+ctakesclient/transformer.py,sha256=PVJPmW3MI_8fvFD7xHiYPkgf5ANS_9ciqqJARRrAxQw,2472
+ctakesclient/typesystem.py,sha256=H2gHnlFFuDF3w4dvjE3JTjLQrL-GG6SteXPTMYo9WCk,8983
+ctakesclient/resources/SemGroups_2018.bsv,sha256=uNRMJq0jbMD2QGW0IK3odWrWSiP0z9yuH4tKrFNO_X4,5469
+ctakesclient/resources/covid_symptoms.bsv,sha256=ItJjokBn9IZzzMrRJIh_yt2hk22S07zvj8MuVHRdCFM,1561
+ctakesclient-1.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ctakesclient-1.3.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+ctakesclient-1.3.0.dist-info/METADATA,sha256=o19SVqpO0g49bxtfeDUTFWcq5Z9GmsIdTWllbHgcZL0,3680
+ctakesclient-1.3.0.dist-info/RECORD,,
