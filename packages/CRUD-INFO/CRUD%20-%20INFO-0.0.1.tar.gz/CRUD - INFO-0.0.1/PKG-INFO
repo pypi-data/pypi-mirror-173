@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: CRUD - INFO
+Version: 0.0.1
+Summary: Pacote que recebe informacoes e printa ao usuario
+Home-page: https://github.com/Fabreba/Info_CRUD
+Author: Fabricio Silva
+Author-email: fabricioj49@gmail.com
+License: MIT License
+Description: # CRUD - CPF
+        ## Requisitos
+        ### Bibliotecas
+        #### OS
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

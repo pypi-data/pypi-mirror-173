@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+CRUD_ID/__init__.py
+CRUD_ID/Armazenamento/Armazenar.py
+CRUD_ID/Armazenamento/__init__.py
+CRUD_ID/Consulta/Consultar.py
+CRUD_ID/Consulta/__init__.py
+CRUD_ID/Interecao/Entrada.py
+CRUD_ID/Interecao/__init__.py
+CRUD_INFO.egg-info/PKG-INFO
+CRUD_INFO.egg-info/SOURCES.txt
+CRUD_INFO.egg-info/dependency_links.txt
+CRUD_INFO.egg-info/requires.txt
+CRUD_INFO.egg-info/top_level.txt
