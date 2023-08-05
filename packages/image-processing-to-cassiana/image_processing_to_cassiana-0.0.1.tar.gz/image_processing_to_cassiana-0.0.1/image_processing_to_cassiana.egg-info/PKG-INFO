@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: image-processing-to-cassiana
+Version: 0.0.1
+Summary: image Processing Package using Skimage
+Home-page: https://github.com/cglima/bootcamp-ciencia-dados-unimedbh/tree/main/image-processing-package
+Author: cassiana
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# image_processing
+
+Description. 
+The package image_processing is used to:
+	Processing:
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plor result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_processing
+
+```bash
+pip install image_processing
+```
+
+## Author
+Cassiana
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
