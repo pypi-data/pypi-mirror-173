@@ -1,0 +1,12 @@
+tweets2pdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tweets2pdf/__main__.py,sha256=6U_Dpck9KInRtCwvyOg6i8Y_uHpDUj4lhxdRY-IitfI,3814
+tweets2pdf/pdf.py,sha256=7FMktyTAzaB5FhWIXWChISqyOOGym5FSL5VvnSZrPi8,3382
+tweets2pdf/settings.py,sha256=j8gy7rS62NF-msJ3UUygdtvtz5G04qZywv7SHd5jR1s,393
+tweets2pdf/tweet.py,sha256=EG_Jjx_YQ_XjrmRUPzlYjao4eM2i7ABxHFja7726kyE,4030
+tweets2pdf/utils.py,sha256=e_PUOdNy89kVG43SCGFGh_7W66L2SGhbn4NIRnNEQA0,1796
+tweets2pdf-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tweets2pdf-0.0.5.dist-info/METADATA,sha256=lfUYaW7IClLgikyWkuwTgw1XD2ioGHCUjYkSbraffbA,2276
+tweets2pdf-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tweets2pdf-0.0.5.dist-info/entry_points.txt,sha256=GliT1wfXOpjTcghcOFpbTBO5qc_rAOsoxu24Ll4R_8o,56
+tweets2pdf-0.0.5.dist-info/top_level.txt,sha256=rIAlq1nvsQ-GJGqRaTPVEMaRbENX1dPgGe3ZYQLQS0Q,11
+tweets2pdf-0.0.5.dist-info/RECORD,,
