@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: gradescope_mean
+Version: 0.0.2
+Summary: utility to average gradescope csv output to final grades
+Home-page: https://github.com/matthigger/gradescope_mean
+Author: Matt Higger
+Author-email: matt.higger@gmail.com
+License-File: LICENSE
