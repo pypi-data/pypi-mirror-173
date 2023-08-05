@@ -1,0 +1,5 @@
+pyproject.toml
+zaki_dumb.egg-info/PKG-INFO
+zaki_dumb.egg-info/SOURCES.txt
+zaki_dumb.egg-info/dependency_links.txt
+zaki_dumb.egg-info/top_level.txt
