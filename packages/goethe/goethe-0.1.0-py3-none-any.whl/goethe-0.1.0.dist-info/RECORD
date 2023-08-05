@@ -1,0 +1,14 @@
+LICENSE,sha256=Hh95gn0k9b5oF9w-DnNnH-6xjkOBc8tr1xyDNz3NCGA,1074
+goethe/__init__.py,sha256=AS8Gj5c2bYEuRuYusgmZj6WeLxXzLeXU-3F1UAvAr_s,505
+goethe/chapter.py,sha256=cBb8lM3ZUiwt7eUmyjMz4gP2ssBlCwQ12z-SEHQsKWo,4544
+goethe/content.py,sha256=X5_bUXAnh1uYdLI-kEvswbMUGNgPTtPz7CiKUsvbnzw,2708
+goethe/core.py,sha256=dPtyO0LmUKZXI7Uz0G9mMvPfGPgTT_UESEeR8E8QZgw,142
+goethe/goethe.py,sha256=-X7xTDCk08Wz70MXMB8Rrowyc2R9FfEWJOMMAyzGA5g,1603
+goethe/header.py,sha256=_9hPyeYBJvtz3EsFFpKveDEc1wfEAd7xqj0Y2vWW0hg,678
+goethe/paragraph.py,sha256=SOayYolND-ymwuJu3e2QQbd8tBKKE4vgIskNNoFeJu8,479
+goethe/section.py,sha256=DA34oTKSqG6H7jF_ZRO9LN2YZX1GQgWrz29nFLzjoL0,2120
+goethe/toctree.py,sha256=S23BIFh4BPFKUkxOl8LUJ_2jSvz9jb_hUC_Yic2dTy8,2386
+goethe-0.1.0.dist-info/LICENSE,sha256=Hh95gn0k9b5oF9w-DnNnH-6xjkOBc8tr1xyDNz3NCGA,1074
+goethe-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+goethe-0.1.0.dist-info/METADATA,sha256=XZXrO2p7c81oRZazQGZD1bZNyd8aeTCP4BJewTm8ngM,3412
+goethe-0.1.0.dist-info/RECORD,,
