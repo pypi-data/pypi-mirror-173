@@ -1,0 +1,5 @@
+hypothesis
+pipetools
+pydantic
+faker
+rstr

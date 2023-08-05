@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/redacted/__init__.py
+src/redacted/__main__.py
+src/redacted/anonymiser.py
+src/redacted/info_types.py
+src/redacted.egg-info/PKG-INFO
+src/redacted.egg-info/SOURCES.txt
+src/redacted.egg-info/dependency_links.txt
+src/redacted.egg-info/not-zip-safe
+src/redacted.egg-info/requires.txt
+src/redacted.egg-info/top_level.txt
