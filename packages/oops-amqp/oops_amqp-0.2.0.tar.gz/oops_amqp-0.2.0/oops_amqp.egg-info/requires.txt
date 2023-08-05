@@ -1,0 +1,9 @@
+amqp>=2.0.0
+bson
+oops>=0.0.11
+
+[test]
+kombu
+pytest
+rabbitfixture
+six
