@@ -1,0 +1,5 @@
+include train_generated_data_ml/requirements.txt
+include train_generated_data_ml/thirdparty.json
+include train_generated_data_ml/README.MD
+include train_generated_data_ml/LICENSE
+include train_generated_data_ml/train_generated_data_ml.py
