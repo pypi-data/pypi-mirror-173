@@ -1,0 +1,5 @@
+gdata-python3
+pyside6
+utidylib
+pygments
+pillow

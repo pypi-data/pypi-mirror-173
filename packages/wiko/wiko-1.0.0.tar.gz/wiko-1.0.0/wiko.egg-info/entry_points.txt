@@ -1,0 +1,6 @@
+[console_scripts]
+blogger2wiko = wiko.blogger2wiko:main
+wiko = wiko.wiko:main
+wiko_download_area = wiko.generate_download_area:main
+wiko_figures = wiko.generate_figures:main
+wiko_gallery = wiko.generate_gallery:main

@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+wiko/__init__.py
+wiko/generate_download_area.py
+wiko/generate_figures.py
+wiko/generate_gallery.py
+wiko/runtests.py
+wiko/tex2wiki.py
+wiko/wiko.py
+wiko/wiko_util.py
+wiko.egg-info/PKG-INFO
+wiko.egg-info/SOURCES.txt
+wiko.egg-info/dependency_links.txt
+wiko.egg-info/entry_points.txt
+wiko.egg-info/requires.txt
+wiko.egg-info/top_level.txt
