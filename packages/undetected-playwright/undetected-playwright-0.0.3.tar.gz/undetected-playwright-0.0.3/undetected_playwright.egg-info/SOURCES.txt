@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+undetected_playwright/__init__.py
+undetected_playwright/ninja.py
+undetected_playwright.egg-info/PKG-INFO
+undetected_playwright.egg-info/SOURCES.txt
+undetected_playwright.egg-info/dependency_links.txt
+undetected_playwright.egg-info/requires.txt
+undetected_playwright.egg-info/top_level.txt
