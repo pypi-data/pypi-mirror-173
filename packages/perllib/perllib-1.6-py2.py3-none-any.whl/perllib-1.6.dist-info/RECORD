@@ -1,0 +1,16 @@
+Config/__init__.py,sha256=JWg41DtRcIkc9HuloI-SrFd_ZKZ1nVIBDucfWK7MrYM,736
+File/Path.py,sha256=-tBT8wNn-Cle8AMXZ-qOhELmdhS6M1yCPEmvtF4oU_Y,29233
+File/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Math/Complex.py,sha256=cecnKQc4cfT5K6FUKq1t-8LWWHxURM-HkfrmQd0D-4g,60812
+Math/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Sys/Hostname.py,sha256=-n8YuWXD3ifoSWmrWsC4n9CylPynIlUYp-46LPL3T24,7611
+Sys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+charnames/__init__.py,sha256=RcTfm5IgXz8TMANcNziD8atQiCnLAeB26_9Yb932Sos,3491
+perllib/__init__.py,sha256=-gZrpNMz6DggzuZPpHRfEsiI3psNZWzpYAsvdTDIpi4,119011
+perllib-1.6.dist-info/AUTHORS.rst,sha256=mGj1Vq88r5ceb2niTDuxkIoLs7trLx1ypbUr_WCJyws,165
+perllib-1.6.dist-info/LICENSE,sha256=x9Ram3xe3HYhMZaftoo-zG3X4kxR4lSN1iO1Jp3ArKc,8841
+perllib-1.6.dist-info/METADATA,sha256=NJP2PUNa-G36gV1LDOaO2-R8nq3ZV-nAETc4900wOgY,8659
+perllib-1.6.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+perllib-1.6.dist-info/license.html,sha256=bydcvOh4ekREBy_vf7SSRiLmaR5K7UVb3j5PaV419GI,10169
+perllib-1.6.dist-info/top_level.txt,sha256=s10TRVxjvub503RA1WVauOVWHpznFN1dalml0SAfvfA,39
+perllib-1.6.dist-info/RECORD,,
