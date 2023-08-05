@@ -1,0 +1,16 @@
+hotlib/__init__.py,sha256=zHQZ8kJWEjle5L4SvIAHUrh5ObHyM-YYe-xCMYKBWQc,69
+hotlib/georeference.py,sha256=edMX5ePFIHds1FWP7UtdJnsnBW9EGZlr51Jh_tLpklQ,1479
+hotlib/utils.py,sha256=DCmfqTEH4NxBmnS-1ULrk5m8G-zGC1VahclPegwG_mQ,3055
+hotlib/inference/__init__.py,sha256=5yXCYsrwI0A_m5uV9NV7BGB8aefRtSGjvjgYYMz8VXA,29
+hotlib/inference/predict.py,sha256=Ikt4HMO1SkTwOYeNtQHJ-rp4ZtYC7sc3LGKhuOCZI4c,1575
+hotlib/inference/utils.py,sha256=oV2W5f_dQeX31MaV6wGDG4IfUblTPFWmsxZiQ65DQCw,1415
+hotlib/preprocessing/__init__.py,sha256=zr7IHGs5bfuLHpSWAFYinGSm6asY2WBvCRP8v0QSmYQ,36
+hotlib/preprocessing/fix_labels.py,sha256=k_g2Zs0qJ7HhhF8cKMPtxyFr2WFNIFAEWcuy-EYSO-w,1362
+hotlib/preprocessing/preprocess.py,sha256=ytLM-x4V6jV8mKOMkyvpEkdBVl5SC31G_IrRw4gqOp8,1354
+hotlib/preprocessing/rasterize_labels.py,sha256=LSPB6FtVyADoL2Sx0hnfhgsCYb1yKtwlop8-DWI4ee8,1817
+hotlib/preprocessing/reproject_labels.py,sha256=GoTOMPkRlI8L0gsNqOibt00zDZb-MprwgTploDKgX-s,930
+hotlib-1.0.10.dist-info/LICENSE,sha256=8lr8AcQA9d-Y6tInqpmWEiQm2Oo70PitWOq7QaOBoN0,1063
+hotlib-1.0.10.dist-info/METADATA,sha256=eXww8i8PlBfSj8WSl05LaJ-UXR-pz8WOdtWB2y1_Qys,4237
+hotlib-1.0.10.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hotlib-1.0.10.dist-info/top_level.txt,sha256=BszQAT_EJCODvlVfDQaN5UJWMMQqpXmWW5Mo0si0w1Y,7
+hotlib-1.0.10.dist-info/RECORD,,
