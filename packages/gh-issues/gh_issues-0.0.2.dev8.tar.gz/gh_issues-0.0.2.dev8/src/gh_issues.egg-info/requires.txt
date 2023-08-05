@@ -1,0 +1,11 @@
+httpx
+markdown-it-py
+
+[dev]
+pytest
+pytest-httpx
+pip-tools
+pytest-cov
+
+[publish]
+twine
