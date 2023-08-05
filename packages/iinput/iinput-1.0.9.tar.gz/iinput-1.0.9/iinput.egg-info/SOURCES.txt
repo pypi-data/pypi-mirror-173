@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+iinput/__init__.py
+iinput/iinput.py
+iinput/utils.py
+iinput.egg-info/PKG-INFO
+iinput.egg-info/SOURCES.txt
+iinput.egg-info/dependency_links.txt
+iinput.egg-info/requires.txt
+iinput.egg-info/top_level.txt
+test/test_iinput.py
+test/test_utils.py
