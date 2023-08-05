@@ -1,0 +1,8 @@
+setup.py
+jarvis_spider/__init__.py
+jarvis_spider/demo.py
+jarvis_spider.egg-info/PKG-INFO
+jarvis_spider.egg-info/SOURCES.txt
+jarvis_spider.egg-info/dependency_links.txt
+jarvis_spider.egg-info/requires.txt
+jarvis_spider.egg-info/top_level.txt
