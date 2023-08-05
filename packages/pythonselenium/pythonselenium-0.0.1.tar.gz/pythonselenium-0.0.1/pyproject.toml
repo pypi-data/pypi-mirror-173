@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "pythonselenium"
+version = "0.0.1"
+description = ""
+authors = ["coderstack"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
