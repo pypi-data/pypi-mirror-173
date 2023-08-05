@@ -1,0 +1,10 @@
+mailparse/__init__.py,sha256=8O9lNnJHaINaZ7Z_Wu2hVSBaRupG3SORzbYnEx-Fxdg,225
+mailparse/__version__.py,sha256=x7SWnx8ho-VaDHLtK75ItIuboJ9SpcR_vy2GvXNmU4A,21
+mailparse/decoder.py,sha256=t9rGXKYnQV4mfdx69A-e9frJzlbJb6-ezuT9wjjATmc,10872
+mailparse/encoder.py,sha256=IMcovUFkU8raPQU-kSoiUuU1d4DAYeN4Ok9LsIrC8jc,8549
+mailparse/utils.py,sha256=0G_koww82xFRrGdh71v5i47OWhx9YaxRezDg2bJrJqI,786
+mailparse-1.0.1.dist-info/LICENSE,sha256=2CB0cRmh2xG5ljEC39lwTEooEYEwUJ73bB0WemPUmUk,1090
+mailparse-1.0.1.dist-info/METADATA,sha256=GaTPCTRdUsk6aGy4_jGi-pE3UaXH0fIN--w6UnU0zto,17911
+mailparse-1.0.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+mailparse-1.0.1.dist-info/top_level.txt,sha256=4kNLtSdl6cz3caTqTBhZMfrkarHkRsCWJdtz5AeObbQ,10
+mailparse-1.0.1.dist-info/RECORD,,
