@@ -1,0 +1,3 @@
+[console_scripts]
+tabugen = tabugen.__main__:main
+
