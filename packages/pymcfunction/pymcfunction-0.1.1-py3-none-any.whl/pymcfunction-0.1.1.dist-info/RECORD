@@ -1,0 +1,13 @@
+LICENSE,sha256=GHRC203zr9IfLwUlc5_Uvqwopi2quj7o01M_YOfDPsc,20138
+pymcfunction/__init__.py,sha256=R7gDQ5cT0Eg4MWy8BTt6pItlDc0-tt9FrxnlQ2CTnR4,158
+pymcfunction/cli.py,sha256=8qp46Wsp2QEzwj1iJs6WhiocQLar4vWB8tecp14SglA,6585
+pymcfunction/commands/execute.py,sha256=EQbHPfffv6aKuxE0eKOD3FTIa9PxeKK3LQNWeqUjxD8,5389
+pymcfunction/commands/scoreboard.py,sha256=3yZq_7o-c3FhlEdc064-OAMfTrNLvhz_PEyRli-8ZsY,1747
+pymcfunction/commands/simple.py,sha256=QCfWTMqqB1VcSBxR7INt_tCkv0TM-McwRQGI2FrCFIY,527
+pymcfunction/types.py,sha256=GKNJtOVUBNG7AR6C-lTSgHw4Qyxp5WmOR9mCz-Ogzfs,5823
+pymcfunction/util.py,sha256=VVXt5a0ITpwuR6RkTNDCXykbXC2LnXhDjT-umQCeiyw,2139
+pymcfunction-0.1.1.dist-info/entry_points.txt,sha256=wjnG7HgJkt9pkwQmpwxYiVi4nGtuASuvxBcCvDTec94,122
+pymcfunction-0.1.1.dist-info/LICENSE,sha256=GHRC203zr9IfLwUlc5_Uvqwopi2quj7o01M_YOfDPsc,20138
+pymcfunction-0.1.1.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+pymcfunction-0.1.1.dist-info/METADATA,sha256=6fTlNyKsJmDx4HwcySkpnmCD0DYSK8zbGcVtxZ9MdWU,2004
+pymcfunction-0.1.1.dist-info/RECORD,,

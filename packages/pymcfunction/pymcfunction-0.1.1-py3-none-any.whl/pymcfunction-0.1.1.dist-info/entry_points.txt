@@ -1,0 +1,5 @@
+[console_scripts]
+pmf=pymcfunction.cli.app:run
+pyfunction=pymcfunction.cli.app:run
+pymcfunction=pymcfunction.cli.app:run
+
