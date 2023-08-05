@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: forAlex
+Version: 1.0.0
+Summary: Happy Birthday Alex
+Home-page: UNKNOWN
+Author: TakeruIto
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+This software is released under the MIT License, see LICENSE.
+
+## Example Usage
+
+```
+$ forAlex
+```
+

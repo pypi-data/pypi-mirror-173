@@ -1,0 +1,3 @@
+[console_scripts]
+forAlex = forAlex.main:main
+
