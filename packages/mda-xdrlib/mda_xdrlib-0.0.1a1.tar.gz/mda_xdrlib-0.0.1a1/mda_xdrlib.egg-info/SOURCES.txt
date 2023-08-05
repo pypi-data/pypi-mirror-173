@@ -1,0 +1,16 @@
+CHANGES
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+mda_xdrlib/__init__.py
+mda_xdrlib/_version.py
+mda_xdrlib/xdrlib.py
+mda_xdrlib.egg-info/PKG-INFO
+mda_xdrlib.egg-info/SOURCES.txt
+mda_xdrlib.egg-info/dependency_links.txt
+mda_xdrlib.egg-info/top_level.txt
+mda_xdrlib/tests/__init__.py
+mda_xdrlib/tests/test_xdrlib.py
