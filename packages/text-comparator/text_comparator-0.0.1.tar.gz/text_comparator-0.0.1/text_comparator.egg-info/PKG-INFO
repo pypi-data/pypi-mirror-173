@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: text-comparator
+Version: 0.0.1
+Summary: Com o uso de estatísticas do texto, o pacote identifica aspectos que funcionam como uma “assinatura” da autoria. Desse modo, por meio deste pacote, é possível detectar se dois textos dados foram escritos por uma mesma pessoa.
+Home-page: https://github.com/jennywhyyy/package-text-comparator
+Author: jennyfgrd
+Author-email: jenn.fnc@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Text Comparator Package
+
+## DescriÃ§Ã£o. 
+O pacote Text Comparator Package Ã© usado para a avaliaÃ§Ã£o de similaridade entre textos, com base nas seguintes estatÃ­sticas:
+Tamanho mÃ©dio de palavra: MÃ©dia simples do nÃºmero de caracteres por palavra.
+
+### RelaÃ§Ã£o Type-Token:
+NÃºmero de palavras diferentes utilizadas em um texto divididas pelo total de palavras.
+
+### RazÃ£o Hapax Legomana:
+NÃºmero de palavras utilizadas uma Ãºnica vez dividido pelo nÃºmero total de palavras.
+
+### Tamanho mÃ©dio de sentenÃ§a:
+MÃ©dia simples do nÃºmero de caracteres por sentenÃ§a.
+
+### Complexidade de sentenÃ§a:
+MÃ©dia simples do nÃºmero de frases por sentenÃ§a.
+
+### Tamanho mÃ©dio de frase:
+MÃ©dia simples do nÃºmero de caracteres por frase.
+
+
+	-
+
+## InstalaÃ§Ã£o:
+Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalaro text-comparator
+
+
+## Author
+Jennifer Figueiredo

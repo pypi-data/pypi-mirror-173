@@ -1,0 +1,9 @@
+README.md
+setup.py
+text-comparator/__init__.py
+text-comparator/comparing/__init__.py
+text-comparator/comparing/comparation.py
+text_comparator.egg-info/PKG-INFO
+text_comparator.egg-info/SOURCES.txt
+text_comparator.egg-info/dependency_links.txt
+text_comparator.egg-info/top_level.txt
