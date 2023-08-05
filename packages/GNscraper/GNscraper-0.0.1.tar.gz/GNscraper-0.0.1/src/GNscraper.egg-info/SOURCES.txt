@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+src/GNscraper.py
+src/GNscraper.egg-info/PKG-INFO
+src/GNscraper.egg-info/SOURCES.txt
+src/GNscraper.egg-info/dependency_links.txt
+src/GNscraper.egg-info/requires.txt
+src/GNscraper.egg-info/top_level.txt
