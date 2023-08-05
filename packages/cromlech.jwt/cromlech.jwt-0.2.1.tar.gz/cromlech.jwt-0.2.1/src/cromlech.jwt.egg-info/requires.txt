@@ -1,0 +1,6 @@
+jwcrypto>=1.4
+pytz
+setuptools
+
+[test]
+pytest
