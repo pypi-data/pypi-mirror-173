@@ -1,0 +1,2 @@
+[console_scripts]
+celery_debounce = celery_debounce.cli:main
