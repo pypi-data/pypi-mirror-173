@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: glue-plotly
+Version: 0.4.0
+Summary: Experimental plot.ly exporters for glue
+Home-page: https://github.com/glue-viz/glue-plotly
+Author: Thomas Robitaille and Catherine Zucker
+Author-email: glue.viz@gmail.com
+License: BSD 3-Clause License
+Provides: glue_plotly
+Requires-Python: >=3.7
+Provides-Extra: test
+Provides-Extra: qt
+License-File: LICENSE
+
+|Actions Status| |Coverage Status|
+
+Experimental plot.ly plugin for glue
+------------------------------------
+
+.. |Actions Status| image:: https://github.com/glue-viz/glue-plotly/workflows/CI%20Workflows/badge.svg
+    :target: https://github.com/glue-viz/glue-plotly/actions
+    :alt: Glue's GitHub Actions CI Status
+.. |Coverage Status| image:: https://codecov.io/gh/glue-viz/glue-plotly/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/glue-viz/glue-plotly
