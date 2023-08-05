@@ -1,0 +1,356 @@
+{% extends 'base.html' %}
+{% block title %}首页{% endblock %}
+{% block content %}
+    <div id="content">
+
+        <div>
+            <nav class="navbar navbar-expand-md navbar-dark  mb-4">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse"
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <form class="d-flex">
+                            <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#editCaseModal" onclick="clear_item()">添加
+                            </button>
+                            <button class="btn btn-outline-success" type="button" onclick="batch()">批量执行
+                            </button>
+                            <button class="btn btn-outline-success" type="button" onclick="choose()">分类
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div style=" overflow:scroll;  height:800px;">
+
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th><input type="checkbox" class="form-check-input" id="checkAll" name="checkAll"/></th>
+                        <th>用例名称</th>
+                        <th>创建时间</th>
+                        <th>修改时间</th>
+                        <th>是否批量</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in case_list %}
+                        <tr>
+                            <td><input class="form-check-input" type="checkbox" name="checkItem" value="{{ item.id }}"/>
+                            </td>
+                            <td>{{ item.case_name }}</td>
+                            <td>{{ item.create_time }}</td>
+                            <td>{{ item.update_time }}</td>
+                            {% if item.case_status %}
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm"
+                                            onclick="change_status({{ item.id }})">可以批量
+                                    </button>
+                                </td>
+                            {% else %}
+                                <td>
+                                    <button type="button" class="btn btn-danger btn-sm"
+                                            onclick="change_status({{ item.id }})">不会批量
+                                    </button>
+                                </td>
+                            {% endif %}
+
+                            <td>
+                                <p>
+                                    <button type="button" class="btn btn-link" data-bs-toggle="modal"
+                                            data-bs-target="#editCaseModal" onclick="detail({{ item.id }})">编辑
+                                    </button>
+
+
+                                    </button>
+                                    <button type="button" class="btn btn-link" onclick="delete_case({{ item.id }})">删除
+                                    </button>
+                                </p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="editCaseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">用例详情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">用例名称</span>
+                        <input type="text" class="form-control" id="case_name" placeholder="请输入用例名称">
+                        <input type="hidden" id="case_id" value="0">
+                    </div>
+                    <div class="accordion accordion-flush" id="case_step">
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">删除</button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="submit_case()"
+                            data-bs-dismiss="modal">提交
+                    </button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="add_case_step()">添加</button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick="debug()">调试</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+
+{#    <script>#}
+
+
+        $(function () {
+            var $thr = $('table thead tr');
+            /*“全选/反选”复选框*/
+            var $checkAll = $thr.find('input');
+            $checkAll.click(function (event) {
+                /*将所有行的选中状态设成全选框的选中状态*/
+                $tbr.find('input').prop('checked', $(this).prop('checked'));
+                /*并调整所有选中行的CSS样式*/
+                if ($(this).prop('checked')) {
+                    $tbr.find('input').parent().parent().addClass('table-success');
+                } else {
+                    $tbr.find('input').parent().parent().removeClass('table-success');
+                }
+                /*阻止向上冒泡，以防再次触发点击操作*/
+                event.stopPropagation();
+            });
+            /*点击全选框所在单元格时也触发全选框的点击操作*/
+            $("#checkAll").click(function () {
+                $(this).find('input').click();
+            });
+            var $tbr = $('table tbody tr');
+            /*点击每一行的选中复选框时*/
+            $tbr.find('input').click(function (event) {
+                /*调整选中行的CSS样式*/
+                $(this).parent().parent().toggleClass('table-success');
+                /*如果已经被选中行的行数等于表格的数据行数，将全选框设为选中状态，否则设为未选中状态*/
+                $checkAll.prop('checked', $tbr.find('input:checked').length == $tbr.length ? true : false);
+                /*阻止向上冒泡，以防再次触发点击操作*/
+                event.stopPropagation();
+            });
+            /*点击每一行时也触发该行的选中操作*/
+            $tbr.click(function () {
+                $(this).find('input').click();
+            });
+
+        });
+
+        function choose() {
+            var $tbr_input_list = $('table tbody tr').find('input')
+            var id_list = []
+            $.each($tbr_input_list, function () {
+                if (this.checked) {
+                    id_list.push($(this).val())
+                }
+            })
+            console.log(id_list)
+
+        }
+
+
+        $(function () {
+            $("ul li a").each(function (index, domEle) {
+                if ($(domEle).attr("href") === "/") {
+
+                    $(domEle).attr("class", "nav-link text-white active");
+                }
+            })
+        })
+
+        function change_status(val) {
+            console.log("用例编号", val)
+            $.ajax({
+                type: "PUT",
+                url: "http://127.0.0.1:5001/change_status/" + val,
+                data: JSON.stringify(),
+                contentType: "application/json; charset=utf-8",
+                success: function (res) {
+                    location.reload()
+
+                }
+
+            });
+
+        }
+
+        function debug() {
+            var case_dict = {"case_name": "", "case_id": "", "steps": []}
+            case_dict["case_id"] = $("#case_id").val()
+            case_dict["case_name"] = $("#case_name").val()
+            var children_element = $("#case_step").children()
+            $.each(children_element, function (i, item) {
+                var step_item_dict = {}
+                step_item_dict["case_step_method"] = $(item).find("select option:selected").text()
+                step_item_dict["case_step_method_id"] = $(item).find("select option:selected").val()
+                $.each($(item).find("input"), function (i, item) {
+                    step_item_dict[$(item).attr("name")] = $(item).val()
+                })
+                case_dict["steps"].push(step_item_dict)
+
+            })
+
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:5001/debug",
+                data: JSON.stringify(case_dict),
+                contentType: "application/json; charset=utf-8",
+                success: function (res) {
+
+                }
+
+            });
+        }
+
+        function delete_case_step(val) {
+            var step_item = "#step_item" + val
+            var id = $('input[name="case_step_id"]').val()
+            $(step_item).remove()
+            $.ajax({
+                type: "DELETE",
+                url: "http://127.0.0.1:5001/case_step/" + id,
+                success: function (res) {
+                    console.log("删除成功")
+                }
+            });
+        }
+
+        function clear_item() {
+            $("#case_id").val(0)
+            $("#case_name").val("")
+            $("#case_step").empty()
+        }
+
+        function delete_case(val) {
+            $.ajax({
+                type: "DELETE",
+                url: "http://127.0.0.1:5001/case/" + val,
+                success: function (res) {
+                    location.reload()
+                }
+            });
+        }
+
+        function get_seq_and_title(val) {
+            var title_name = "#title_name" + val
+            var case_step_number = "#case_step_number" + val
+            var case_step_name = "#case_step_name" + val
+            if ($(case_step_number).val().length && $(case_step_name).val().length) {
+                $(title_name).text("【步骤" + $(case_step_number).val() + "】" + $(case_step_name).val())
+            }
+        }
+
+        function detail(val) {
+            $.ajax({
+                url: "http://127.0.0.1:5001/detail/" + val, success: function (res) {
+                    $("#case_step").empty();
+                    $.each(res, function (i, item) {
+                        if (i === "case_name") {
+                            $("#case_name").val(item)
+                        }
+                        if (i === "case_id") {
+                            $("#case_id").val(item)
+                        }
+                        if (i === "steps") {
+                            $.each(item, function (ii, ii_item) {
+                                var case_step_item = '<div class = "accordion-item" id="step_item' + ii + '" > <input type="hidden" name="case_step_id" value="' + ii_item.case_step_id + '"/> <h2 class = "accordion-header" id = "flush-headingOne" > <button id = "title_name' + ii + '"onclick = "get_seq_and_title(' + ii + ')" class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseOne' + ii + ' "aria-expanded = "false" aria-controls = "flush-collapseOne" > 【步骤' + ii_item.case_step_number + ' 】' + ii_item.case_step_name + ' </button> </h2> <div id="flush-collapseOne' + ii + '" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <div class="mb-3 row"> <div class=" row col-sm-8"><label for="inputPassword"class="col-sm-5 col-form-label">步骤序号</label> <div class="col-sm-7 "><input type="text" class="form-control"placeholder="请输入步骤序号"name="case_step_number" id="case_step_number' + ii + '"value="' + ii_item.case_step_number + '"> </div> </div> <div class="col col-sm-4 right"> <button type="button" class="btn btn-link" id="delete_case_step' + ii + '" onclick="delete_case_step(' + ii + ')">删除</button> </div> </div> <div class="mb-3 row"><label for="inputPassword" class="col-sm-3 col-form-label">步骤名称</label> <div class="col-sm-9"><input type="text" class="form-control"placeholder="请输入步骤名称"name="case_step_name" id="case_step_name' + ii + '"value="' + ii_item.case_step_name + '"></div> </div> <div class="mb-3 row"><label for="inputPassword" class="col-sm-3 col-form-label">选择方法</label> <div class="col-sm-9"><select onclick="select_method(' + ii + ')"id="select_method_' + ii + '"class="form-select" aria-label="Default select example"> <option value="' + ii_item.case_step_method_id + '" selected>' + ii_item.case_step_method + ' </option> </select></div> </div> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">元素定位</label> <div class="col-sm-9"><input type="text" class="form-control"placeholder="请输入元素定位信息"name="case_step_locatior" id="case_step_locatior' + ii + '"value="' + ii_item.case_step_locatior + '"> </div> </div> <div class="mb-3 row"><label for="inputPassword" class="col-sm-3 col-form-label">输入内容</label> <div class="col-sm-9"><input type="text" class="form-control" placeholder="请输入需要给元素填入的值 "name="case_step_value"id="case_step_value' + ii + '"value="' + ii_item.case_step_value + '"></div> </div> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">内容断言</label> <div class="col-sm-9"><input type="text" class="form-control"placeholder="请输入断言内容"name="case_step_assert"id="case_step_assert' + ii + '"value="' + ii_item.case_step_assert + '"></div> </div></div></div> </div> '
+
+                                $("#case_step").append(case_step_item)
+                            })
+                        }
+                    });
+                }
+            });
+        }
+
+        function select_method(val) {
+            $.ajax({
+                url: "http://127.0.0.1:5001/method", success: function (res) {
+                    var select_id = "#select_method_" + val
+                    $(select_id).empty()
+                    $.each(res, function (i, item) {
+                        $(select_id).append(' <option value = "' + item.id + '"> ' + item.method_name + ' </option>')
+                    })
+                }
+            })
+        }
+
+        function add_case_step() {
+            var ii = $("#case_step").children().length + 1
+            var case_step_item = '<div class = "accordion-item" id="step_item' + ii + '">  <input type="hidden" name="case_step_id" value="0"/> <h2 class = "accordion-header" id = "flush-headingOne" > <button id = "title_name' + ii + '"onclick = "get_seq_and_title(' + ii + ')"  class = "accordion-button collapsed" type = "button" data-bs-toggle = "collapse" data-bs-target = "#flush-collapseOne' + ii + '"aria-expanded = "false" aria-controls = "flush-collapseOne" > 【步骤1】未添加步骤名称 </button> </h2> <div id="flush-collapseOne' + ii + '" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> <div class="mb-3 row"> <div class=" row col-sm-8"><label for="inputPassword" class="col-sm-5 col-form-label">步骤序号</label> <div class="col-sm-7 "><input type="text" class="form-control" placeholder="请输入步骤序号"name="case_step_number" id="case_step_number' + ii + '"value="1"> </div> </div> <div class="col col-sm-4 right"> <button type="button" class="btn btn-link" id="delete_case_step' + ii + '" onclick="delete_case_step(' + ii + ')" >删除</button> </div> </div> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">步骤名称</label> <div class="col-sm-9"><input type="text" class="form-control"placeholder="请输入步骤名称" name="case_step_name" id="case_step_name' + ii + '" value=""> </div> </div> <div class="mb-3 row"><label for="inputPassword" class="col-sm-3 col-form-label">选择方法</label> <div class="col-sm-9"><select onclick="select_method(' + ii + ')" id="select_method_' + ii + '"class="form-select" aria-label="Default select example"> <option value="" selected>请选择步骤方法</option> </select></div> </div> <div class="mb-3 row"><label for="inputPassword" class="col-sm-3 col-form-label">元素定位</label> <div class="col-sm-9"><input type="text" class="form-control" placeholder="请输入元素定位信息"name="case_step_locatior" id="case_step_locatior' + ii + '" value=""> </div> </div> <div class="mb-3 row"><label for="inputPassword" class="col-sm-3 col-form-label">输入内容</label> <div class="col-sm-9"><input type="text" class="form-control"placeholder="请输入需要给元素填入的值" name="case_step_value"id="case_step_value' + ii + '" value=""> </div> </div> <div class="mb-3 row"><label for="inputPassword"class="col-sm-3 col-form-label">内容断言</label> <div class="col-sm-9"><input type="text" class="form-control"placeholder="请输入断言内容" name="case_step_assert" id="case_step_assert' + ii + '" value=""> </div> </div></div> </div> </div>'
+            $("#case_step").append(case_step_item)
+        }
+
+        function submit_case() {
+            var case_dict = {"case_name": "", "case_id": "", "steps": []}
+            case_dict["case_id"] = $("#case_id").val()
+            case_dict["case_name"] = $("#case_name").val()
+            var children_element = $("#case_step").children()
+            $.each(children_element, function (i, item) {
+                var step_item_dict = {}
+                step_item_dict["case_step_method"] = $(item).find("select option:selected").text()
+                step_item_dict["case_step_method_id"] = $(item).find("select option:selected").val()
+                $.each($(item).find("input"), function (i, item) {
+                    step_item_dict[$(item).attr("name")] = $(item).val()
+                })
+                case_dict["steps"].push(step_item_dict)
+
+            })
+
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:5001/case",
+                data: JSON.stringify(case_dict),
+                contentType: "application/json; charset=utf-8",
+                success: function (res) {
+                    $("#case_step").empty()
+                    location.reload()
+                }
+
+            });
+
+
+        }
+
+        function batch() {
+
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:5001/batch",
+                data: JSON.stringify({}),
+                contentType: "application/json; charset=utf-8",
+                success: function (res) {
+
+                }
+
+            });
+
+        }
+
+
+        {#    </script>#}
+
+
+
+{% endblock %}

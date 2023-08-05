@@ -1,0 +1,5 @@
+flask
+Appium-Python-Client
+flask_sqlalchemy
+flask_migrate
+pyyaml

@@ -1,0 +1,5 @@
+recursive-include AppAutoTest/app/templates *
+recursive-include AppAutoTest/app/static *
+recursive-include AppAutoTest/instance *
+recursive-include AppAutoTest/autotest/config *
+recursive-include AppAutoTest/autotest/data *
