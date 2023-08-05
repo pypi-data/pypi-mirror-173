@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tdpy
+Version: 1.2
+Summary: A python library of numberical routines
+Home-page: https://github.com/tdaylan/tdpy
+Download-URL: https://github.com/tdaylan/tdpy
+Author: Tansu Daylan
+Author-email: tansu.daylan@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3
+License-File: LICENSE.md
