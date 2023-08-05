@@ -1,0 +1,16 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+train_generated_data_ml/LICENSE
+train_generated_data_ml/README.MD
+train_generated_data_ml/__init__.py
+train_generated_data_ml/requirements.txt
+train_generated_data_ml/thirdparty.json
+train_generated_data_ml/train_generated_data_ml.py
+train_generated_data_ml.egg-info/PKG-INFO
+train_generated_data_ml.egg-info/SOURCES.txt
+train_generated_data_ml.egg-info/dependency_links.txt
+train_generated_data_ml.egg-info/requires.txt
+train_generated_data_ml.egg-info/top_level.txt
