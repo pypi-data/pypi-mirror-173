@@ -1,0 +1,2 @@
+[lektor.plugins]
+html-pretify = lektor_html_pretify:HtmlPretifyPlugin
