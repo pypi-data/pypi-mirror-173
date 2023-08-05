@@ -1,0 +1,3 @@
+include mlm/VERSION
+include documentation/Package_Info.md
+recursive-include mlm/tf/cuda/build *

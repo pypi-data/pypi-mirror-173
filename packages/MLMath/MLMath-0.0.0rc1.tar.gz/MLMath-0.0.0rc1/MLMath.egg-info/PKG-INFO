@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: MLMath
+Version: 0.0.0rc1
+Summary: Differentiable PDE solving framework for machine learning
+Home-page: https://github.com/tum-pbs/MLM
+Author: Philipp Holl
+Author-email: philipp.holl@tum.de
+License: MIT
+Download-URL: https://github.com/tum-pbs/MLM/archive/0.0.0-rc1.tar.gz
+Description: # Machine Learning Math
+        
+        [**Homepage**](https://github.com/tum-pbs/MLM)
+        &nbsp;&nbsp;&nbsp; [**Documentation**](https://tum-pbs.github.io/MLM/)
+        &nbsp;&nbsp;&nbsp; [**API**](https://tum-pbs.github.io/MLM/mlm)
+        &nbsp;&nbsp;&nbsp; [<img src="https://www.tensorflow.org/images/colab_logo_32px.png" height=16> **Playground**](https://colab.research.google.com/drive/1zBlQbmNguRt-Vt332YvdTqlV4DBcus2S#offline=true&sandboxMode=true)
+        
+        Work in progress.
+        
+        ## Installation
+        See the [installation Instructions](https://tum-pbs.github.io/MLM/Installation_Instructions.html).
+        To install the latest stable version of MLM:
+        ```bash
+        $ pip install mlm
+        ```
+        
+Keywords: Differentiable,Simulation,Fluid,Machine Learning,Deep Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
