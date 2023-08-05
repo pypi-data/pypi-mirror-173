@@ -1,0 +1,6 @@
+numba
+numpy
+astropy
+gwpy
+gwosc
+cupy
