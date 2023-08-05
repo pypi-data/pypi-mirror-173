@@ -1,0 +1,8 @@
+pytz
+netCDF4
+pandas
+PyYAML
+pexpect
+mockssh
+mysql-connector-python
+erddapy

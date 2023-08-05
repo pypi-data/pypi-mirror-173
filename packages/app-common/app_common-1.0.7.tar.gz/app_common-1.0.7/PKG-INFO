@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: app_common
+Version: 1.0.7
+Summary: Common python and django application tools
+Home-page: https://gitlab.oceantrack.org/ceotr/app_common.git
+Author: CEOTR
+Author-email: support@ceotr.ca
+License: GNU General Public License v3 (GPLv3)
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
