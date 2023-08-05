@@ -1,0 +1,13 @@
+chronos/__init__.py,sha256=lTVDAXeW1brCn4IL8-kSYDyvb_kSqLDen5-PspPzNqI,94
+chronos/chronos.py,sha256=Kd4n_FgUsAreN2cO1CqXRD4feKS31AQ43I4CIHobsSA,45538
+chronos/extinction.py,sha256=XMh1fRoJ66ine6QsoxxzujF5v4eMT1Pes72lbdQKe8k,1970
+chronos/isochrone.py,sha256=dOlhhDjqWKFkEQfV7C5x-lwFm8Mi3RCI0HN9xU-1Ppc,31333
+chronos/leastsquares.py,sha256=8Tm8Xdna9lFgNSitKs_ebO0B3kJhTyo_AcuGVtqcN_U,10526
+chronos/utils.py,sha256=DGf2kyfnGIcMyU_S6_-xGY2A8gApTJt1WsxnMwXt-es,844
+chronos/data/extinctions.txt,sha256=CQ6hJrHlMI9ryhqCkjCbzmmggk2D7_8J28FNp8pRNpc,1842
+chronos/data/parsec_grid.fits.gz,sha256=yrmaSYdwLKsfg6Vgjd-IZf-LiaqAITesgyKRsf27kuM,17040161
+thechronos-1.0.9.dist-info/LICENSE,sha256=K7l4_MN2UQzTmXHCHG17cz0AFI7piif29FLjFeJh4ZI,1070
+thechronos-1.0.9.dist-info/METADATA,sha256=OqXDzKsP5SAYv3xZ5dHZhYCwynzw-X1SWafAlwSgzy0,1697
+thechronos-1.0.9.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+thechronos-1.0.9.dist-info/top_level.txt,sha256=D40QrZGUS7ZKWqbaTBmSq_xeBoHg57KBQQH1uPiE4-I,8
+thechronos-1.0.9.dist-info/RECORD,,
