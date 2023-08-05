@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: deepspeed-mii
+Version: 0.0.2
+Summary: deepspeed mii
+Home-page: http://deepspeed.ai
+Author: DeepSpeed Team
+Author-email: deepspeed-mii@microsoft.com
+Project-URL: Documentation, https://github.com/microsoft/DeepSpeed-MII
+Project-URL: Source, https://github.com/microsoft/DeepSpeed-MII
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+Requires-Dist: asyncio
+Requires-Dist: deepspeed (>=0.6.7)
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+Requires-Dist: pydantic
+Requires-Dist: torch
+Requires-Dist: transformers (==4.21.2)
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-forked ; extra == 'dev'
+
