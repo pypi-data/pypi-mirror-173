@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: asight
+Version: 0.1.1
+Summary: Ascend Performance Analysis Tool.
+Home-page: https://gitee.com/Ascend/Asight
+Author: Zhu LiangYing
+Author-email: zhuliangying@huawei.com
+Maintainer: Zhu LiangYing
+Maintainer-email: zhuliangying@huawei.com
+License: UNKNOWN
+Keywords: Asight
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: xlsxwriter (>=0.3.6)
+Provides-Extra: dev
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-flake8 ; extra == 'dev'
+Requires-Dist: pytest-isort ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-mypy ; extra == 'dev'
+Requires-Dist: pytest-pycodestyle ; extra == 'dev'
+Requires-Dist: pytest-pydocstyle ; extra == 'dev'
+Requires-Dist: pytest-pylint ; extra == 'dev'
+Requires-Dist: pytest-yapf3 ; extra == 'dev'
+Requires-Dist: types-setuptools ; extra == 'dev'
+Requires-Dist: xlrd (==1.2.0) ; extra == 'dev'
+Requires-Dist: xlsxwriter ; extra == 'dev'
+Requires-Dist: coverage (>=6.4.3) ; extra == 'dev'
+Requires-Dist: flake8 (<5) ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: yapf ; extra == 'dev'
+
+# Asight
+### 软件介绍
+Asight是一款基于NPU的深度学习性能分析工具， 工具支持的场景如下：
+* [x] 基于训练推理过程中生成的维测数据， 一键分析网络性能瓶颈，并给出优化建议。
+* [x] 一键拉起训练推理脚本，分析并给出优化建议（待开发）。
+
+#### 安装教程
+
+使用如下命令进行Asight软件的安装：
+```
+pip install asight
+```
+
+#### 使用说明
+使用Asight工具进行性能分析支持如下两种命令：
+
+- 方法一：用“--profiling_dir”参数指定需要解析的Profiling数据目录，工具执行时会遍历““--profiling_dir””指定目录下的所有数据。
+
+  ```
+  asight analyze --profiling_dir=data
+  ```
+
+  “--profiling_dir”：存储Profiling数据的目录。Profiling数据获取方法如下：
+
+  1. 在执行推理或训练程序时，请参见“[Profiling工具使用指南](https://www.hiascend.com/document/detail/zh/CANNCommunityEdition/60RC1alpha003/developmenttools/devtool/atlasprofiling_16_0001.html)”完成Profiling数据的采集、解析与导出（您可以在昇腾文档页面左上角切换版本，选择对应版本的指导文档）。
+
+     数据采集时需要配置“aic-metrics”参数为“PipeUtilization”，“aicpu”参数为“on”。
+
+  2. Asight工具依赖的是Profiling解析导出后的timeline数据、summary数据以及info.json*文件，请确保指定的“profiling_dir”目录下存在以上文件。
+
+- 方法二：用“--data_dir”参数指定需要解析的各类数据目录，包括但不限于Profling数据、图数据等信息，工具执行时会遍历“--data_dir”指定目录下的所有数据。
+  ```
+  asight analyze --data_dir=data
+  ```
+  
+  **说明**：当前工具版本“--data_dir”目录下仅支持存放Profling数据，Profling数据的要求请参见“--profling_dir”参数说明。
+
+#### 结果说明
+
+1. 工具执行完毕后，会在屏幕打印```Problem detected```说明识别到的问题， ```Recommonded change```给出优化建议  。
+2. 工具执行完毕后，会在当前目录下生成```asight.xlsx```文件，展示详细问题和建议。
+
+#### 分析能力说明
+
+当前版本，Asight性能分析工具支持如下问题的分析：
+
+* AI Core算子性能问题
+  * BlockDim问题：BlockDim利用率不足，说明算子未开启多核并行计算或者AI Core利用不足， 建议进行算子调优。
+  * 算子无Bound问题： 代表算子的Vector/Cube/Scalar/MTE1~MTE3指令的cycle数在所有指令的cycle数中占比未达到80%，即AI Core资源未被充分利用，建议进行算子调优。
+  * 算子MTE2 Bound问题：算子MTE2利用率超过80%，则说明数据搬移性能较差，建议进行子图调优。 
+* AI CPU算子问题： 
+  * AI CPU算子问题：网络中存在AI CPU算子，影响网络性能， 建议修改模型，从而避免使用AI CPU算子。
+
