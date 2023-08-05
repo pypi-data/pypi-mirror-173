@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bacdiving
+Version: 1.2.3
+Summary: Bacdiving accesses the Bacterial Diversity Metadatabase BacDive and provides various visualization options.
+Home-page: https://github.com/mBiocoder/Bacdiving
+Author: Mahima Arunkumar
+Author-email: Mahima Arunkumar <M.Arunkumar@campus.lmu.de>
+License: MIT
+Project-URL: BacDive Homepage, https://bacdive.dsmz.de/
+Project-URL: Documentation, https://bacdiving.readthedocs.io/en/latest/
+Project-URL: Github, https://github.com/mBiocoder/Bacdiving
+Keywords: BacDive,bacteria,phenotype information
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: alive-progress (>=2.4.1)
+Requires-Dist: anytree (>=2.8.0)
+Requires-Dist: bacdive (>=0.2)
+Requires-Dist: bokeh (>=2.4.3)
+Requires-Dist: ete3 (>=3.1.2)
+Requires-Dist: matplotlib (==3.6.0)
+Requires-Dist: numpy (>=1.23.0)
+Requires-Dist: pandas (>=1.5.0)
+Requires-Dist: seaborn
+Requires-Dist: setuptools (>=65.5.0)
+Requires-Dist: scipy (>=1.9.2)
+Requires-Dist: toyplot (>=1.0.3)
+Requires-Dist: toytree (>=2.0.1)
+Requires-Dist: wheel (>=0.34.1)
+Requires-Dist: worldmap (>=0.1.6)
+
