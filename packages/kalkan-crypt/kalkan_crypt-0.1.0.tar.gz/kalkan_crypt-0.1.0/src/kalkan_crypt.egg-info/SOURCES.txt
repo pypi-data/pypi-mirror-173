@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/kalkan_crypt/__init__.py
+src/kalkan_crypt/adapter.py
+src/kalkan_crypt/enums.py
+src/kalkan_crypt/exceptions.py
+src/kalkan_crypt.egg-info/PKG-INFO
+src/kalkan_crypt.egg-info/SOURCES.txt
+src/kalkan_crypt.egg-info/dependency_links.txt
+src/kalkan_crypt.egg-info/requires.txt
+src/kalkan_crypt.egg-info/top_level.txt
+src/kalkan_crypt/dll/libkalkancryptwr-64.so.2.0.2

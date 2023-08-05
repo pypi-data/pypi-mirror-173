@@ -1,0 +1,9 @@
+
+[dev]
+build
+twine
+pytest
+pytest-lazy-fixture
+pytest-cov
+pylama
+pylama_print
