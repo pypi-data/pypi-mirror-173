@@ -1,0 +1,10 @@
+sqlalchemy2atlas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy2atlas/containers.py,sha256=W_qzgoR-NBn4CR_hyHhmHsMNr-M-Pp-3MngmWq1LDo8,1900
+sqlalchemy2atlas/exceptions.py,sha256=b5EoS88UhasnGSpoj0aUTJVxlFQbgoV3oPYFV-rjXuc,125
+sqlalchemy2atlas/sqlalchemy2atlas.py,sha256=oXOYScRMO3jcZCL_e2f-BLdwbaP5t3h2V1lBEwU15lU,2367
+sqlalchemy2atlas-0.1.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+sqlalchemy2atlas-0.1.0.dist-info/METADATA,sha256=R1f817ze6Y2qjo9BlnzmVDQUU52FbSLRneIWsNXbQ8c,854
+sqlalchemy2atlas-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlalchemy2atlas-0.1.0.dist-info/entry_points.txt,sha256=BOKM435JBdeYezRv_oXhbx4rSj7qIW6R9L-dMJyvzEk,76
+sqlalchemy2atlas-0.1.0.dist-info/top_level.txt,sha256=_DRe41dZuYqbugqm9g_iNgOhN3hF3Dcbda5vylIBlxQ,17
+sqlalchemy2atlas-0.1.0.dist-info/RECORD,,
