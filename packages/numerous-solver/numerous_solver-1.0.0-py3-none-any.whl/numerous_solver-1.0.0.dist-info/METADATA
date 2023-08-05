@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: numerous-solver
+Version: 1.0.0
+Summary: Numerous ODE solver
+Home-page: UNKNOWN
+Author: Tobias Dokkedal Elmoee, EnergyMachines ApS
+Author-email: tobias.dokkedal.elmoe@energymachines.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numba (>=0.56.2)
+Requires-Dist: scipy (==1.9.1)
+
+UNKNOWN
+
