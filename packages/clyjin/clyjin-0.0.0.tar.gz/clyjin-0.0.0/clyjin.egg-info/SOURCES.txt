@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+clyjin/__init__.py
+clyjin/__main__.py
+clyjin.egg-info/PKG-INFO
+clyjin.egg-info/SOURCES.txt
+clyjin.egg-info/dependency_links.txt
+clyjin.egg-info/entry_points.txt
+clyjin.egg-info/requires.txt
+clyjin.egg-info/top_level.txt
+clyjin/__pycache__/__init__.cpython-37.pyc
+clyjin/__pycache__/__init__.cpython-38.pyc
+clyjin/__pycache__/__main__.cpython-37.pyc
+clyjin/core/cli.py
+clyjin/core/__pycache__/cli.cpython-37.pyc

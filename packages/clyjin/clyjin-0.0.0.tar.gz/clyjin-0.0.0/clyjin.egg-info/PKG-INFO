@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: clyjin
+Version: 0.0.0
+Summary: System configuration toolbox
+Home-page: https://github.com/ryzhovalex/clyjin
+Author: Alexander Ryzhov
+Author-email: thed4rkof@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: cli,automatization,system,os
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
