@@ -1,0 +1,17 @@
+napari
+napari-skimage-regionprops
+numpy
+magicgui
+pandas
+qtpy
+superqt
+tqdm
+toolz
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5

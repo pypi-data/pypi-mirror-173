@@ -1,0 +1,2 @@
+[napari.manifest]
+morphometrics-engine = morphometrics_engine:napari.yaml
