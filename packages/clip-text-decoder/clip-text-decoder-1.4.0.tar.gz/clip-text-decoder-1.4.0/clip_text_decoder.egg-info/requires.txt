@@ -1,0 +1,16 @@
+datasets
+gdown
+numpy
+pytorch-lightning
+spacy
+torch>=1.8
+transformers
+wget
+
+[test]
+black
+flake8
+isort
+pre-commit
+pytest
+pytest-cov
