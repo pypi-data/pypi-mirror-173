@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: prq
+Version: 0.0.19
+Summary: UNKNOWN
+Home-page: https://github.com/StepanGavrilov/PRQ
+Author-email: gavrilovstepan78@gmail.com
+License: UNKNOWN
+Keywords: python,queue,redis,parallel,workers,tasks,jobs
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: rq (>=0.4.6)
+Requires-Dist: gevent (>=1.0)
+Requires-Dist: pydantic
+Requires-Dist: rich
+
+# Stats
+<img src="https://img.shields.io/pypi/dm/PRQ?style=for-the-badge" alt="pypi">
+
+# Python parallel task-queue with redis
+
+
+Based on
+* rq
+* redis
+* gevent
+
+Environment variables
+* `PRQ_LOGS` - path to file with logs (512Mb data)
+
+
+
+
+
+`Examples coming soon :)`
+
