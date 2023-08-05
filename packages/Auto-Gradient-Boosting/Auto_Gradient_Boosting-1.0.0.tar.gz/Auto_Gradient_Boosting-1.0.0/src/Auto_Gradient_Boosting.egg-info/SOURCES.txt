@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/Auto_Gradient_Boosting/__init__.py
+src/Auto_Gradient_Boosting/main.py
+src/Auto_Gradient_Boosting.egg-info/PKG-INFO
+src/Auto_Gradient_Boosting.egg-info/SOURCES.txt
+src/Auto_Gradient_Boosting.egg-info/dependency_links.txt
+src/Auto_Gradient_Boosting.egg-info/requires.txt
+src/Auto_Gradient_Boosting.egg-info/top_level.txt

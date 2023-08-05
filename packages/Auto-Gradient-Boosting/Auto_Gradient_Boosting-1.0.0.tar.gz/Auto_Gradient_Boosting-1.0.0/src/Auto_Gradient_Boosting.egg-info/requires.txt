@@ -1,0 +1,5 @@
+numpy
+Awesome_Linear_Regression
+
+[:python_version < "3.7"]
+importlib-metadata
