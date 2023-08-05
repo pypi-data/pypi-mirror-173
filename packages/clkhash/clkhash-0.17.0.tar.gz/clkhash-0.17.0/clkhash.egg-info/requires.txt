@@ -1,0 +1,9 @@
+bashplotlib>=0.6.5
+bitarray>=2.4
+cryptography>=36.0
+jsonschema>=4.8
+mypy_extensions>=0.3
+tqdm>=4.24
+
+[:python_version < "3.6"]
+pyblake2>=1.1.1
