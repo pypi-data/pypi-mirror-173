@@ -1,0 +1,10 @@
+pybnesian.libs/libparquet-ea1902a9.so.900,sha256=DyYM2go2PLWyUdPfe24681spgmZc-7M7HHLwZkne6Ro,11153648
+pybnesian.libs/libOpenCL-f806d0e1.so.1.0.0,sha256=cUN9AHZ8P3Z4LntNbATro7zwgIiSd6hPkvqm7BpkIYs,135600
+pybnesian.libs/libarrow-5509bf69.so.900,sha256=wgBWjL4LGQccy85B5IY310SG7UPLyw23KVypsVOe66k,65137928
+pybnesian.libs/libarrow_python-d81ffe6c.so.900,sha256=giRNNtHShBod4lBWU5TperlMjzGk0bZ5EXDRikDcRPQ,3031120
+pybnesian-0.4.3.dist-info/LICENSE,sha256=k1hsnDO7Twm_uc_DytZo2_eluvq3KrNvNegfvNZqVmQ,1052
+pybnesian-0.4.3.dist-info/top_level.txt,sha256=h0Vi1zXCf7qvMZ89TshMcmELANmiRxYEr9ldpOk8woc,10
+pybnesian-0.4.3.dist-info/WHEEL,sha256=FGGRUrvefXOiAJfyJCZAiu4TpTMkXB_CzdEp3x2T96E,150
+pybnesian-0.4.3.dist-info/RECORD,,
+pybnesian-0.4.3.dist-info/METADATA,sha256=soT1YhMaHJOcU0SljUpVKi-mSt1UQf3lOA_FQKk9MHk,10781
+pybnesian/__init__.cpython-37m-x86_64-linux-gnu.so,sha256=lArW0z1Ka9XNhdce4qVBrseQb2gXk7B55fAL6zUtJMA,11384256
