@@ -1,0 +1,12 @@
+oops_amqp/__init__.py,sha256=z7fhA202r6S3gxe6lJw20RwM1stfQY7LYPgaY82rXQs,4652
+oops_amqp/anybson.py,sha256=nPC1z5kDKVfvXAs1vguZEzZbFehCJiJjPkcFrOx1_e8,1016
+oops_amqp/publisher.py,sha256=9XNiXH1uEg0zXu-EBEqwoyQEHS6IOIgPodKlIb5U30w,4003
+oops_amqp/receiver.py,sha256=6XjzQWroA_IKEtVncqhRCw2RS_GUQJRd3D3sN4E-G90,4525
+oops_amqp/trace.py,sha256=qxDMRD8FbHSHfYdzCMw9VqX-OXpHysLmVq7lTUCGOh4,2751
+oops_amqp/utils.py,sha256=_JwN_-QJ_PW0tlDkv5DamM830K5v5i9Dq0L_6uyD1tE,2409
+oops_amqp-0.2.0.dist-info/LICENSE,sha256=qFPC_-wXBXhyNA7uJCrk2Wy_K1IK4n2QPhsv7xpfnRw,7639
+oops_amqp-0.2.0.dist-info/METADATA,sha256=r4MOjN9Tgw7hESkOSlzPvkLahX8WQqIaDkR8onRMJ7A,5437
+oops_amqp-0.2.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+oops_amqp-0.2.0.dist-info/entry_points.txt,sha256=e69u-E8uIMx65wjwRPQ_rc4SKSpukUF8m-d43ttmxgI,57
+oops_amqp-0.2.0.dist-info/top_level.txt,sha256=vQRHv43fSQ1GLGbpwzMjcDe_fU6qyptgeMJADDeB8q8,10
+oops_amqp-0.2.0.dist-info/RECORD,,
