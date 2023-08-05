@@ -1,0 +1,7 @@
+__title__ = "gitflic-bb"
+__version__ = "1.112"
+__description__ = "GitflicApi-bb wrapper"
+__author__ = "Dikola"
+__author_email__ = "chi.nik1304@gmail.com"
+__url__ = "https://gitflic.ru/user/dikola"
+__license__ = "MIT"
