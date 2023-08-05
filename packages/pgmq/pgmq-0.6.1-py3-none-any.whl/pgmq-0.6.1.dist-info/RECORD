@@ -1,0 +1,12 @@
+pgmq/__init__.py,sha256=Tk7b1hGpDOz-xuUNcVkXegMg2tjlmhicA93xXIWbVEg,318
+pgmq/_crud.py,sha256=0xhbxzHkSIV6zXd_g8LqAA157YU0m13gqXptMuqsIVI,1147
+pgmq/_migrations/1.up.sql,sha256=-3IKR_laagsj9nCUmjdqE53zo_UJAU_R5oZvR453fxg,3366
+pgmq/_migrations/__init__.py,sha256=KoyEApaYpfFzTAbSEn0sqRi9wRBseOvJaCxWHm-NJ5k,1757
+pgmq/_queries.py,sha256=CiaZHKcVVqxRMbk2NCzRiHPJ3EXGnx89FNtq6sCpzEY,6584
+pgmq/_queue.py,sha256=mZKxgIzcEEC1IiY2C0aHAeHqv550IcmTWJC7re2vuQM,15613
+pgmq/api.py,sha256=rrI7k6CE8CKXqbOsw-EM_bbw3F8oOu4kIGmOkSs9AXo,4451
+pgmq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgmq-0.6.1.dist-info/LICENSE.txt,sha256=_YCib7s_ZErx-plBNERnApMpaFGXlyJ-B6E2jeqA8Lw,1023
+pgmq-0.6.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pgmq-0.6.1.dist-info/METADATA,sha256=6i3EiwsOKgDueXi06ZLXfC0RrYtMNfZQBPc7QapMSXQ,3934
+pgmq-0.6.1.dist-info/RECORD,,
