@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: shell-tools
+Version: 1.0.1
+Summary: set of python applications/scripts for different purposes
+Home-page: https://github.com/stanykey/shell-tools
+Author: Sergii Lovygin
+Author-email: sergey.lovygin@yahoo.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+
+# Python Utils
+
+set of python applications/scripts for different purposes

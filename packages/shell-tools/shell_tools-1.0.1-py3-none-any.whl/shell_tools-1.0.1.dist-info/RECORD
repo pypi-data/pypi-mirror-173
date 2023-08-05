@@ -1,0 +1,11 @@
+shell_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shell_tools/dirs/__init__.py,sha256=eBygS6pevbYKa_06gH1WEwIURBhrWen_-nwrmQgNmaQ,120
+shell_tools/dirs/find_empty_dirs.py,sha256=KsEkEEuXZU5o_DnC-MjueS3HLG6s_iKR2I8h74o-0qs,2874
+shell_tools/files/__init__.py,sha256=basAHf3ziHcR7ESTxb3rYkYuzB7E07qDYpTKxPuQrzo,114
+shell_tools/files/generate_file.py,sha256=tTCQFyDCVkyKJHYpXQ4Kz_DvDEyVwVcqnw_GLFJIUGo,2563
+shell_tools-1.0.1.dist-info/LICENSE,sha256=yihrWBiKaFWNxm6q27n0245RRlW2X52GSg9Cn0jckD0,1092
+shell_tools-1.0.1.dist-info/METADATA,sha256=dVIt4zMRI-ono1iNC_eVRJOHSHyCeAKE_SnP8k3l_4M,576
+shell_tools-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shell_tools-1.0.1.dist-info/entry_points.txt,sha256=0OofZS7OZHZxb5mEHW_eObXx2iQG-ZP3LwGYo3Ecqoo,125
+shell_tools-1.0.1.dist-info/top_level.txt,sha256=NMLTMkfJEhhT5o1wFrqjBdThQq2Zx1T1Qcc5WiYLFe4,12
+shell_tools-1.0.1.dist-info/RECORD,,
