@@ -1,0 +1,15 @@
+numpy>=1.18.1
+mne>=0.20
+check-manifest
+pytest
+pytest-cov
+pytest-sugar
+flake8>=3.9.2
+flake8-docstrings
+pycodestyle
+sphinx
+sphinx-copybutton
+numpydoc
+isort
+black
+pre-commit
