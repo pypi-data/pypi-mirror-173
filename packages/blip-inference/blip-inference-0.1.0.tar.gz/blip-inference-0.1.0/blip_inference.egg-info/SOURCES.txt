@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+blip_inference/__init__.py
+blip_inference/blip.py
+blip_inference/compat.py
+blip_inference/model.py
+blip_inference/vit.py
+blip_inference.egg-info/PKG-INFO
+blip_inference.egg-info/SOURCES.txt
+blip_inference.egg-info/dependency_links.txt
+blip_inference.egg-info/requires.txt
+blip_inference.egg-info/top_level.txt
