@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: discordpython3
+Version: 1.0.0
+Summary: module of discordpy updated
+Home-page: 
+Author: Lukyy
+Author-email: lukyyzada190@gmail.com
+License: MIT
+Keywords: discordpy
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE.txt
+
+module of discordpy updated by me
+
+Change Log
+==========
+
+1.0.0 (23/10/2022)
+- First Release
