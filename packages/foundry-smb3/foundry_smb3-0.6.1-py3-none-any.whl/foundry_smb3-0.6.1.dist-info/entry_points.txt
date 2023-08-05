@@ -1,0 +1,4 @@
+[console_scripts]
+foundry=foundry.main:start
+graphics=foundry.graphic_editor.main:start
+
