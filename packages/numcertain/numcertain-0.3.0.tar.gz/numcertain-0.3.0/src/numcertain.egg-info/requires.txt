@@ -1,0 +1,16 @@
+numpy
+
+[dev]
+black
+isort
+pytest-cov
+mypy
+flake8
+flake8-isort
+flake8-pyi
+Flake8-pyproject
+pydocstyle[toml]
+pre-commit
+
+[docs]
+sphinx-rtd-theme-github-versions
