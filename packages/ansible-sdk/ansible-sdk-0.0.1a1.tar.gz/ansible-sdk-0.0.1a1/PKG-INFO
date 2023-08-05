@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ansible-sdk
+Version: 0.0.1a1
+Summary: Python SDK for Ansible (placeholder, coming soon)
+Project-URL: Homepage, https://github.com/ansible/ansible-sdk
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9

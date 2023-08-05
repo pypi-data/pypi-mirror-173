@@ -1,0 +1,5 @@
+pyproject.toml
+ansible_sdk.egg-info/PKG-INFO
+ansible_sdk.egg-info/SOURCES.txt
+ansible_sdk.egg-info/dependency_links.txt
+ansible_sdk.egg-info/top_level.txt

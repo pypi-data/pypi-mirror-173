@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ansible-sdk"
+description = "Python SDK for Ansible (placeholder, coming soon)"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3"
+]
+urls.Homepage = "https://github.com/ansible/ansible-sdk"
+version = "0.0.1a1"
+
+[tools.setuptools]
+packages = "ansible_sdk"
+
+
