@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+VENOMgetREST/VENOMgetREST.py
+VENOMgetREST/__init__.py
+VENOMgetREST.egg-info/PKG-INFO
+VENOMgetREST.egg-info/SOURCES.txt
+VENOMgetREST.egg-info/dependency_links.txt
+VENOMgetREST.egg-info/requires.txt
+VENOMgetREST.egg-info/top_level.txt
