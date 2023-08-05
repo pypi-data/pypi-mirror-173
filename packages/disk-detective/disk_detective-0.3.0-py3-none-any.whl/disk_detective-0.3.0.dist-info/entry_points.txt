@@ -1,0 +1,2 @@
+[console_scripts]
+disk_detective = disk_detective.__main__:main
