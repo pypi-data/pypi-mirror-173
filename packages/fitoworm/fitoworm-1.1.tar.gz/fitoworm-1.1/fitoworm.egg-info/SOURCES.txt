@@ -1,0 +1,7 @@
+setup.py
+fitoworm/__init__.py
+fitoworm/filter_datasets.py
+fitoworm.egg-info/PKG-INFO
+fitoworm.egg-info/SOURCES.txt
+fitoworm.egg-info/dependency_links.txt
+fitoworm.egg-info/top_level.txt
