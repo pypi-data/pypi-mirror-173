@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+hopconn/__init__.py
+hopconn.egg-info/PKG-INFO
+hopconn.egg-info/SOURCES.txt
+hopconn.egg-info/dependency_links.txt
+hopconn.egg-info/top_level.txt
