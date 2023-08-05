@@ -1,0 +1,5 @@
+Wagtail<5.0,>=2.15
+PyQRCode<2,>=1
+
+[testing]
+coverage
