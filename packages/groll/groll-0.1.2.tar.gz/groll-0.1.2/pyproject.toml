@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "groll"
+version = "0.1.2"
+description = "A helpful diceroller for your command line!"
+license = "MIT"
+authors = ["Gage Talbot <gagetalbot@pm.me>"]
+readme = "README.md"
+repository = "https://github.com/Krognak/groll"
+packages = [{include = "groll", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+[tool.poetry.scripts]
+groll = "groll.groll:app"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^5.10.1"
+pytest = "^7.1.3"
+black = "^22.10.0"
+flake8 = "^5.0.4"
+tomli = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

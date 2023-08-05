@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: groll
+Version: 0.1.2
+Summary: A helpful diceroller for your command line!
+Home-page: https://github.com/Krognak/groll
+License: MIT
+Author: Gage Talbot
+Author-email: gagetalbot@pm.me
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer[all] (>=0.6.1,<0.7.0)
+Project-URL: Repository, https://github.com/Krognak/groll
+Description-Content-Type: text/markdown
+
+# Groll
+
+*A dice roller for your command line!*
+
