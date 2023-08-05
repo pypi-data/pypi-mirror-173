@@ -1,0 +1,10 @@
+PartSeg>=0.13.0
+numpy
+napari
+qtpy
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt

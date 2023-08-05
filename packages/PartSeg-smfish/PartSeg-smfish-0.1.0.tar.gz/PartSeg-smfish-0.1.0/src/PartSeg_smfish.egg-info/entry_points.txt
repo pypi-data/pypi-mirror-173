@@ -1,0 +1,5 @@
+[napari.manifest]
+PartSeg-smfish = PartSeg_smfish:napari.yaml
+
+[partsegcore.plugins]
+smFISH helpers = PartSeg_smfish
