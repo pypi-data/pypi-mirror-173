@@ -1,0 +1,9 @@
+numpy
+pandas
+tqdm
+colourmap>=1.1.10
+jinja2
+d3graph
+d3heatmap
+requests
+ismember>=1.0.1
