@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: speedmon
+Version: 1.0.0
+Summary: Performance Monitoring Capabilities
+Home-page: https://github.com/5f0ne/speedmon
+Author: 5f0
+License: MIT
+Classifier: Operating System :: OS Independent 
+Classifier: Programming Language :: Python :: 3 
+Classifier: License :: OSI Approved :: MIT License 
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Description
+
+Performance Monitoring Capabilities
+
+# Installation
+
+`pip install speedmon`
+
+# Usage
+
+**Programmatically:**
+
+```python
+from speedmon.SpeedMonitor import SpeedMonitor
+
+p = SpeedMonitor(label="Execution Time of Heavy Calcuation")
+
+result = 1000000 * 1000000
+
+p.printExecutionTime()
+```
+
+# Example
+
+Produces the following output:
+
+```
+----------
+         Label: Execution Time of Heavy Calcuation
+      Datetime: 23/10/2022 16:41:18
+Execution Time: 0.0 sec
+----------
+```
+
+# License
+
+MIT

@@ -1,0 +1,10 @@
+speedmon/Controller.py,sha256=znk6jFwfiJlXQYNw_rZQZ5BdlejJnNJjaxE0v6uqQUc,856
+speedmon/SpeedMonitor.py,sha256=CN9Gd5Lt4BMdWhCYHEY_oLB7kWR-EYCJVOC0XlKD9MA,528
+speedmon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speedmon/__main__.py,sha256=RxHqx4nuANbAMFc1X_ffEJr08alZwGZa_zu6gRoWVUY,377
+speedmon-1.0.0.dist-info/LICENSE.md,sha256=snvcgke-lQnZUwgw7zHPEZrn7882rjNLHIhl1ATfZ1s,1094
+speedmon-1.0.0.dist-info/METADATA,sha256=ysk3HhOpPzO4U4GV8grQF7QVWzqmWWu5it1f3wA8sX0,882
+speedmon-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+speedmon-1.0.0.dist-info/entry_points.txt,sha256=brLg_MTs0Ff0mxSmfZH7UvD-6MNfREgt6EHmMRUpe2o,52
+speedmon-1.0.0.dist-info/top_level.txt,sha256=FMCJsPH5QMmt0ZVaUr7TtG7K0CHC4p0EHJ1jjIOZ18w,9
+speedmon-1.0.0.dist-info/RECORD,,
