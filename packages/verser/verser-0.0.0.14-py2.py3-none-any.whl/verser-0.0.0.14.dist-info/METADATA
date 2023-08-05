@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: verser
+Version: 0.0.0.14
+Summary: verser
+Home-page: 
+Author: Sermet Pekin
+Author-email: sermet.pekin@gmail.com
+License: MIT
+Project-URL: Homepage, https://github.com/SermetPekin/verser-repo
+Project-URL: Documentation, https://github.com/SermetPekin/verser-repo
+Keywords: verser
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich
+Requires-Dist: pytest
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: testing
+
+[![Python package](https://github.com/SermetPekin/verser-repo/actions/workflows/python-package.yml/badge.svg)](https://github.com/SermetPekin/verser-repo/actions/workflows/python-package.yml)
+[![Downloads](https://pepy.tech/badge/verser/week)](https://pepy.tech/project/verser)
+[![Python 3.8](https://img.shields.io/badge/python-3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-310/)
+
+# verser
+
+    from verser import Project, get_next_version, get_current_version
+
+### creates __version__.py file on your package's root
+
+    #__version__.py
+    #3.1.2.0
+    next_version = get_next_version(
+        project=Project("my_cool_project"),
+        increment_=True,
+        pre_release=False,
+        verbose=True
+    )  
+    # pre_release : False,  and increment_ True returns
+    # 3.1.2.0
+    
+    # pre_release : True,  and increment_ True returns
+    # 3.1.2.1rc1
+
+    # pre_release : True,  and increment_ True returns
+    # 3.1.2.1rc2
+
+    # pre_release : False,  and increment_ True returns
+    # 3.1.2.1
+
+### next version number for your project
+
+    project = Project(package_name="my_cool_package", default_version="0.0.0.0")
+
+    next_version = get_next_version(
+        project=project,
+        increment_=True,
+        pre_release=False,
+        verbose=True
+    )  
+    print("Getting next version", next_version)
+
+### get_next_version (function)
+     gets current version of the project and increments depending on arguments given by developer...
+        @params
+            project : Project => see Project class which takes path to version file
+            ------------
+
+            increment_ : bool => it may increment or return same version
+            ------------
+
+                if True => depending on pre_release parameter creates new version number
+                if False => ignores pre_release parameter and just returns current version
+            pre_release : bool => creates next version by incrementin and adding "rc" text to the version
+            ------------
+
+                    (lets suppose current version is 0.0.1.2)
+                if True => creates a version like 0.0.1.3rc1
+                if False =>  creates a version like 0.0.1.3
+            verbose : bool
+            ------------
+
+                verbose or silent while doing process
+
+            write_version_file :  pathlib.Path  or str
+            ------------
+
+                if True : writes new version to given path
+                if False : does not write any file
+
+            now_testing: bool => default : False
+            ------------
+                for testing purposes it plays with fake versions
+                this will be set True while testing development
+
+### get_current_version (function)
+
+    get_current_version
+    Read-only function
+        tries to find out current version of the file and returns.
+        @params
+            project : Project => see Project class which takes path to version file
+
+            verbose : bool
+                verbose or silent while doing process
+
+            write_version_file :  pathlib.Path  or str
+                if True : writes new version to given path
+                if False : does not write any file
+            test :
+                for testing purposes it plays with fake versions
+
+### Project (Class)
+
+    """
+    Project (Class)
+    @attrs
+        package_name: str => package name  
+        ------------
+        default_version: str  => 
+        ------------
+            if there is not a version file yet this will be used to start a version number 
+            default is : 0.0.0.0    
+                    (when incremented with function below it will be 0.0.0.1 or 0.0.0.1rc1 )
+            
+        version_file_path: Union[str, Path] => 
+        ------------
+            Version file address : this will be used to read current version  
+          
+        now_testing: bool => default : False 
+        ------------
+            this will be set True while testing development 
+    
+    """
+
+## example usage
+    from verser import * 
+
+    version = get_next_version(verbose=True,
+                         project=Project(package_name="verser",
+                                         version_file_path=Path("__version__.py")
+                                         )
+    
+                         )
+    print(version)
