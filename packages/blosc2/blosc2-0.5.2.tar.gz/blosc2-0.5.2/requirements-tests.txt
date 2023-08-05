@@ -1,0 +1,7 @@
+pip
+numpy
+pytest
+psutil
+msgpack
+torch
+tensorflow
