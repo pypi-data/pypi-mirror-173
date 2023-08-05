@@ -1,0 +1,2 @@
+[console_scripts]
+flet_like_streamlit = flet_like_streamlit.main:main
