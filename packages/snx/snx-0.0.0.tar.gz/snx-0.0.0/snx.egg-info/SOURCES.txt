@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+snx/__init__.py
+snx/__main__.py
+snx.egg-info/PKG-INFO
+snx.egg-info/SOURCES.txt
+snx.egg-info/dependency_links.txt
+snx.egg-info/entry_points.txt
+snx.egg-info/top_level.txt
