@@ -1,0 +1,8 @@
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+asyncsqlite/__init__.py,sha256=b36wcd8Xo8ypgQnPkw8dm1GHppwoAm7Bsl-K4r0_0wc,109
+asyncsqlite/pool.py,sha256=8OXfmhlwAu1JKwDLSp6ACPHGPW2AEs7G6TR_NT9Rn7I,4416
+asyncsqlite/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncsqlite-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+asyncsqlite-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+asyncsqlite-0.1.1.dist-info/METADATA,sha256=ZV6iaXFJfWIrEKRmoxmCYyXE8fjbmqysmAYoE32vnKI,954
+asyncsqlite-0.1.1.dist-info/RECORD,,
