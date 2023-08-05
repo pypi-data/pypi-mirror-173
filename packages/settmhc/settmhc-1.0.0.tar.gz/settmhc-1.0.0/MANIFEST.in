@@ -1,0 +1,5 @@
+include *.txt
+recursive-include settmhc/APE-Gen *
+recursive-include settmhc/mhc-pep-threader *
+recursive-include settmhc *.txt *.dat *.yaml
+global-exclude LICENSE

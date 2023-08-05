@@ -1,0 +1,5 @@
+[console_scripts]
+pmhc-model = settmhc.structure_modeling:structure_generator
+pshm = settmhc.pshm:main
+settmhc = settmhc.settmhc_main:main
+

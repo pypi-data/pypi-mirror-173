@@ -1,0 +1,16 @@
+activation: leaky_relu
+batch_size: 128
+conv1: 16
+conv2: 32
+conv3: 32
+conv_type: 2d
+dropout: 0.2
+final_fc: 1024
+kernel1: 3
+kernel2: 3
+kernel3: 3
+embed_dim: 256
+rnn_dim: 256
+cnn_weight: 0.3
+rnn_weight: 0.7
+width: 12
