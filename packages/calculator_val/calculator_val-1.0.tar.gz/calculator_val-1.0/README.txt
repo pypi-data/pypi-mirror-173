@@ -1,0 +1,23 @@
+Welcome to calculator_val project!
+
+This is a simple calculator that performs a few basic operations.
+The operations available are 'sum', 'sub', 'mult', 'div','nroot', 'delete'.
+
+sum : adds up a number to the value stored in memory.
+
+sub: subtracts the argument from the value in memory.
+
+mult: multiplies the memory by the argument provided
+
+div: divides the memory by the input given
+
+nroot: returns the n_th root of the value stored in memory
+
+delete: resets the calculator by assigning 0 to the memory
+
+
+don't worry too much about this description, all the information you need will be provided the prompt line while using the package. To get started just run the __init__.py file. A nice menu GUI will guide you through the use of the calculator and ask you directly which operations you want to perform and so on.
+If you are an advanced user you can also install the calculator module form pip under the name calculator_val. This code is protected by MIT Licence.
+
+Enjoy!
+ 
