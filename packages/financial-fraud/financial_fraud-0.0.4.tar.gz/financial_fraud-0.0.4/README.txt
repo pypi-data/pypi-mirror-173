@@ -1,0 +1,2 @@
+### This financial fraud dedtection library include 11 different financial fraud dedtection scenarios which can be used as a financial fraud dedection monitoring engine or can be included within current monitoring setup. It can also be used manually in order to set up monitoring and verification ad hoc analysis or simulations.
+## More information alongside examples will be included soon.
