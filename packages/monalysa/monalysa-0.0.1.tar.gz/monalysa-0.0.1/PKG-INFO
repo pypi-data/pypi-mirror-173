@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: monalysa
+Version: 0.0.1
+Summary: A unified library for carrying out quantitative movement analysis.
+Home-page: https://github.com/siva82kb/monalysa
+License: MIT
+Keywords: movement analysis,biomechanics,neurorehabilitation,sport science
+Author: Sivakumar Balasubramanian (Siva)
+Author-email: siva82kb@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/siva82kb/monalysa
+Description-Content-Type: text/markdown
+
+
