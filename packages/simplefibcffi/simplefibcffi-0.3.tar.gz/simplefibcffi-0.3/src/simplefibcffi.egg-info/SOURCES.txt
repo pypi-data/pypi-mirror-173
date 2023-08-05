@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/simplefibcffi.py
+src/simplefibcffi.egg-info/PKG-INFO
+src/simplefibcffi.egg-info/SOURCES.txt
+src/simplefibcffi.egg-info/dependency_links.txt
+src/simplefibcffi.egg-info/requires.txt
+src/simplefibcffi.egg-info/top_level.txt
