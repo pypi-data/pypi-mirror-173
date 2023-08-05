@@ -1,0 +1,2 @@
+class PewDiePy:
+    pass

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pewdiepy"
+version = "0.0.1"
+authors = [
+    { name = "Shubham Sharma", email = "sharshub@users.noreply.github.com" },
+]
+description = "A python package to claim the name pewdiepy on pypa. No utility yet."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sharshub/pewdiepy"
+"Bug Tracker" = "https://github.com/sharshub/pewdiepy/issues"
