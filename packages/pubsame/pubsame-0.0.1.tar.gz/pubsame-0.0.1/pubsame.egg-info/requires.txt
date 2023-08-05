@@ -1,0 +1,5 @@
+rdkit
+pybase64
+requests
+Pillow
+ipython
