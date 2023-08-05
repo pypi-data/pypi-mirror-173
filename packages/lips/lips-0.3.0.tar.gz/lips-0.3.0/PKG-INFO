@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lips
+Version: 0.3.0
+Summary: Lorentz Invariant Phase Space
+Home-page: https://github.com/GDeLaurentis/lips
+Author: Giuseppe De Laurentis
+Author-email: g.dl@hotmail.it
+License: GNU General Public License v3.0
+Download-URL: https://github.com/GDeLaurentis/lips/archive/v0.3.0.tar.gz
+Project-URL: Documentation, https://gdelaurentis.github.io/lips/
+Project-URL: Issues, https://github.com/GDeLaurentis/lips/issues
+Description: # Lorentz Invariant Phase Space
+        
+Keywords: lips,Lorentz Invariant Phase Space,Spinor Helicity
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2.7
+Description-Content-Type: text/markdown
