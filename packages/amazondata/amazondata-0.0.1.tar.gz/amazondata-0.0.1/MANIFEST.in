@@ -1,0 +1,2 @@
+recursive-include amazondata *.py
+recursive-include amazondata *.yml

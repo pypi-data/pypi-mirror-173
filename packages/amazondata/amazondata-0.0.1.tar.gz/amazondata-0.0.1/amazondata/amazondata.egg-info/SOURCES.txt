@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+amazondata/amazon_product.yml
+amazondata/amazon_search_result.yml
+amazondata/product_details_extractor.py
+amazondata/search_result_extractor.py
+amazondata/user_agents.py
+amazondata/amazondata.egg-info/PKG-INFO
+amazondata/amazondata.egg-info/SOURCES.txt
+amazondata/amazondata.egg-info/dependency_links.txt
+amazondata/amazondata.egg-info/requires.txt
+amazondata/amazondata.egg-info/top_level.txt
