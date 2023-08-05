@@ -1,0 +1,9 @@
+aiohttp
+numba
+numpy
+pandas
+requests
+tqdm
+xlrd>=1.0.0
+
+[dev]
