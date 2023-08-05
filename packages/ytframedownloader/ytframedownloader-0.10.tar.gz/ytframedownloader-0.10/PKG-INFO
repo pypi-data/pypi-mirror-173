@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ytframedownloader
+Version: 0.10
+Summary: Download frames from videos
+Home-page: https://github.com/hansalemaos/ytframedownloader
+Author: Johannes Fischer
+Author-email: <aulasparticularesdealemaosp@gmail.com>
+License: MIT
+Keywords: videos,frames
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Editors :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.rst
+
+
+### Download single frames from YT Videos
+
+```python
+from ytframedownloader import YT2Frames
+#Will download https://yt-dl.org/latest/youtube-dl.exe and save it your cache folder.
+#FFMPEG must be installed and in your path
+ytf = (
+    YT2Frames(
+        youtubeurl="https://www.youtube.com/watch?v=UNTE7TXhv9c",
+        foldertosave="f:\\testyoutubedownload",
+        force_yt_downloader_update=False, #deletes youtube-dl.exe and downloads it again
+    )
+    .get_download_codes(desired_videoquality=640) #If the video quality is not available, will get the one that is closest
+    .download_video()
+    .convert_video_to_frames(fps=1) #One frame per second
+)
+```

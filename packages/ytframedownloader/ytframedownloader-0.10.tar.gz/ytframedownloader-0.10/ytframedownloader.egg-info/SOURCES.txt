@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ytframedownloader/LICENSE
+ytframedownloader/README.MD
+ytframedownloader/__init__.py
+ytframedownloader/requirements.txt
+ytframedownloader/thirdparty.json
+ytframedownloader.egg-info/PKG-INFO
+ytframedownloader.egg-info/SOURCES.txt
+ytframedownloader.egg-info/dependency_links.txt
+ytframedownloader.egg-info/requires.txt
+ytframedownloader.egg-info/top_level.txt

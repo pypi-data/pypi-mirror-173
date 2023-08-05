@@ -1,0 +1,4 @@
+include ytframedownloader/requirements.txt
+include ytframedownloader/thirdparty.json
+include ytframedownloader/README.MD
+include ytframedownloader/LICENSE
