@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: visualtest-python
+Version: 1.0.0b2
+Summary: Python SDK for SmartBear VisualTest via Selenium WebDriver
+Home-page: https://github.com/SmartBear/visual-testing-sdks/python
+Author: Luke Kende
+Author-email: luke.kende@smartbear.com
+Keywords: visual testing,UI testing,GUI testing,UX testing,screenshots,full page screenshots,image comparisons,regression testing
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: python-dotenv
+Requires-Dist: packaging
+
+This Python SDK extends the functionality of Selenium WebDriver enabling the script to capture screenshots of the device under test, including fullpage, viewport, and element screenshots for regression testing or manual review of the UI.
