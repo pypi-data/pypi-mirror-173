@@ -1,0 +1,3 @@
+hvac==0.11.2
+cachetools<5.0.0
+pyYaml
