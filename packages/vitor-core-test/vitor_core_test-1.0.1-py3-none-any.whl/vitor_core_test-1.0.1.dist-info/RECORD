@@ -1,0 +1,9 @@
+core_authorizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_authorizer/get_permissions.py,sha256=uGBIEnxKtCrPyx6PwLNL_GEFBW6SW97dAaYfieuPd1I,713
+core_logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+core_logging/aws_logging.py,sha256=z700LyQ5lXPQV-QaEs0Xki4V1OB8umh51GSpiFqAonk,1789
+vitor_core_test-1.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+vitor_core_test-1.0.1.dist-info/METADATA,sha256=_ME-9R5UE0d3WRZC_HhteCSW38tJRkK0dVnfG-OKd_k,1425
+vitor_core_test-1.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vitor_core_test-1.0.1.dist-info/top_level.txt,sha256=TyA1aKt4KIK8rsDS4xql3FnOHEZI5jLkqdU2uDTafRE,29
+vitor_core_test-1.0.1.dist-info/RECORD,,
