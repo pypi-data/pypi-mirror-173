@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+codes/Armazenamento.py
+codes/Consulta.py
+codes/Interacao.py
+codes/__init__.py
+codes/main.py
+trabalhoPacotes.egg-info/PKG-INFO
+trabalhoPacotes.egg-info/SOURCES.txt
+trabalhoPacotes.egg-info/dependency_links.txt
+trabalhoPacotes.egg-info/top_level.txt
