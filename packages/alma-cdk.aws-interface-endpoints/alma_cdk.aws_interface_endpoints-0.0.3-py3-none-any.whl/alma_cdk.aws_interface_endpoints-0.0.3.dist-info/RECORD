@@ -1,0 +1,9 @@
+alma_cdk/aws_interface_endpoints/__init__.py,sha256=bod-xtoQoy9r2AK4MUsEDm_w_Bo8ymQz8feQLCdPgd0,18813
+alma_cdk/aws_interface_endpoints/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+alma_cdk/aws_interface_endpoints/_jsii/__init__.py,sha256=rGt5jQ0iqnAQLxTLi87RUdMh364jOH3n29EA579uc48,436
+alma_cdk/aws_interface_endpoints/_jsii/aws-interface-endpoints@0.0.3.jsii.tgz,sha256=aA_i7-4Qz4CuK7bQW9mf31aKtOCN_wOEoRnKAai1778,48082
+alma_cdk.aws_interface_endpoints-0.0.3.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+alma_cdk.aws_interface_endpoints-0.0.3.dist-info/METADATA,sha256=kkkD0FRW9v8NsQzBcBfG7lelvGq2vZVeqT-UfbsRX7o,3785
+alma_cdk.aws_interface_endpoints-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+alma_cdk.aws_interface_endpoints-0.0.3.dist-info/top_level.txt,sha256=Xm1yYhea99Axgvnzjj0zQcO1fjDREkOpLOlLTnLSUGo,9
+alma_cdk.aws_interface_endpoints-0.0.3.dist-info/RECORD,,
