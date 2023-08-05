@@ -1,0 +1,929 @@
+# 八数码问题练习包
+
+Language: [English](https://github.com/VincentSHI1230/eight-puzzle-search/blob/main/README_en.md) | 简体中文 (Simplified Chinese)
+
+---
+
+> 创建日期：2022-10-16  
+> 更新日期：2022-10-24  
+> 作者：Vincent SHI | 史文朔  
+> blog：https://blog.vincent1230.top/  
+> GitHub：[VincentSHI1230/eight-puzzle-search: 一款用于辅助学习八数码问题搜索求解的 Python 包 (github.com)](https://github.com/VincentSHI1230/eight-puzzle-search)  
+> Gitee：[eight-puzzle-search: 一款用于辅助学习八数码问题搜索求解的 Python 包 (gitee.com)](https://gitee.com/Vincent1230/eight-puzzle-search)
+
+一款用于辅助学习八数码问题搜索求解的 Python 包
+
+## 安装
+
+```bash
+pip install --upgrade eight-puzzle-search
+```
+
+## 引入
+
+```python
+import eight_puzzle_search as eps
+```
+
+## 输入和输出
+
+### eps.input_box() 交互式输入九宫格对象
+
+`input_box(prompt: str = '') -> 'Box'`
+
+使用高鲁棒性的交互式命令行输入九宫格对象。具有如下特性 (无需详阅)：
+
+1. 允许分三行输入八数码问题的九宫格，也允许在第一行一次性输入；
+1. 同时支持以任意数量空格 ` ` 和英文逗号 `,` 作为间隔输入；当分三行输入时，亦支持不间隔连续输入；
+1. 同时支持以 `0`、`*`、`9` 表示九宫格的空格；当以英文逗号 `,` 作为间隔输入时亦支持以两个连续逗号 (`,,` 或 `, ,`) 表示；当不间隔连续输入时亦支持以空格 ` ` 表示；
+1. 能够自动排除错误或不合理的输入；
+1. 具有完善的提示文本，用户无需注意输入细则。
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型 | 是否必填 | 默认值 | 说明     |
+| --- | ------ | -------- | -------- | ------ | -------- |
+| 1   | prompt | str      | 否       | ''     | 提示信息 |
+
+#### 返回值
+
+| \   | 数据类型 | 说明                 |
+| --- | -------- | -------------------- |
+| 1   | `Box`    | 返回新建的九宫格对象 |
+
+#### 示例 1
+
+```python
+a = eps.input_box()
+# 输入 283
+# 输入 164
+# 输入 7 5
+print(a)
+
+```
+
+```text
+请按提示直接输入数值. 0 或 * 可代表空位.
+enter the value directly as prompted.
+0 or * can be used to represent blank.
+第 1 行 | row 1: 283
+第 2 行 | row 2: 164
+第 3 行 | row 3: 7 5
+[ 2 8 3
+  1 6 4
+  7 * 5 ]
+
+moved via -> :
+[ 2 8 3
+  1 6 4
+  7 * 5 ]
+
+```
+
+#### 示例 2
+
+```python
+b = eps.input_box('请输入变量 b 的值: ')
+# 输入 1, 2, 3, 8,  , 4, 7, 6, 5
+print(b)
+
+```
+
+```text
+请输入变量 b 的值:
+第 1 行 | row 1: 1, 2, 3, 8,  , 4, 7, 6, 5
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+moved via -> :
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+### Box() 九宫格的实例化
+
+`Box(value: list, history: str = '') -> 'Box'`
+
+由于求解的基本单位，将在后文中详述。可以直接实例化该对象以输入九宫格。
+若要使用该方式，必须保证 value 是由 0 - 9 九个 整型 `int` 数字组成的数组，其中 `0` 代表空格。
+
+#### 传入参数
+
+| \   | 参数名  | 数据类型  | 是否必填 | 默认值 | 说明                 |
+| --- | ------- | --------- | -------- | ------ | -------------------- |
+| 1   | value   | List[int] | 是       | -      | 九宫格对象的值       |
+| 2   | history | str       | 否       | ''     | 九宫格对象的移动历史 |
+
+#### 返回值
+
+| \   | 数据类型 | 说明                   |
+| --- | -------- | ---------------------- |
+| 1   | `Box`    | 返回实例化的九宫格对象 |
+
+#### 示例
+
+```python
+c = eps.Box([0, 2, 3, 1, 8, 4, 7, 6, 5])
+print(c)
+
+```
+
+```text
+moved via -> :
+[ * 2 3
+  1 8 4
+  7 6 5 ]
+
+```
+
+### 九宫格对象的格式化输出
+
+在上文中已经可见，九宫格对象经过优化，可以直接使用 `print()` 内置函数输出。
+
+<div STYLE="page-break-after: always;"></div>
+
+## 基础用法：使用预置函数进行盲目搜索
+
+盲目搜索是最基础的搜索算法。在本代码包中，你可以直接使用函数运行盲目搜索，并观察它们。
+
+### breadth_first_search() 宽度优先搜索
+
+`breadth_first_search(start: 'Box', end: 'Box') -> None`
+`bfs(start: 'Box', end: 'Box') -> None`
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型 | 是否必填 | 默认值 | 说明           |
+| --- | ------ | -------- | -------- | ------ | -------------- |
+| 1   | start  | `Box`    | 是       | -      | 起始九宫格对象 |
+| 2   | end    | `Box`    | 是       | -      | 目标九宫格对象 |
+
+#### 返回值 `None`
+
+搜索结果直接打印，无返回值
+
+#### 示例
+
+```python
+eps.bfs(a, b)
+
+```
+
+```text
+->
+-> D
+-> L
+-> R
+-> DU
+-> DD
+...
+-> DDRUU
+-> DDRUD
+-> DDRUL
+moved via -> DDRUL:
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+### depth_first_search() 宽度优先搜索
+
+`depth_first_search(start: 'Box', end: 'Box') -> None`
+`dfs(start: 'Box', end: 'Box') -> None`
+
+**警告：深度优先搜索是不完备的搜索算法，在八数码问题中具有严重缺陷，本函数仅供展示，不可用于求解。**
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型 | 是否必填 | 默认值 | 说明           |
+| --- | ------ | -------- | -------- | ------ | -------------- |
+| 1   | start  | `Box`    | 是       | -      | 起始九宫格对象 |
+| 2   | end    | `Box`    | 是       | -      | 目标九宫格对象 |
+
+#### 返回值 `None`
+
+搜索结果直接打印，无返回值
+
+#### 示例
+
+```python
+eps.dfs(a, b)
+# 输入: y
+
+```
+
+```text
+SyntaxWarning: 深度优先搜索是不完备的搜索算法, 在八数码问题中具有严重缺陷, 本函数仅供展示, 不可用于求解.
+The typical depth-first search is an incomplete search algorithm, which has serious defects here.
+This function is only for demonstration and cannot be used for search.
+
+是否仍要继续? (y/n) | continue? (y/n): y
+->
+-> D
+-> DU
+-> DUD
+-> DUDU
+...
+-> DUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUD
+-> DUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDUDU
+Traceback (most recent call last):
+    eps.dfs(a, b)
+RecursionError: maximum recursion depth exceeded in comparison
+
+```
+
+### depth_limited_search() 有限深度优先搜索
+
+`depth_limited_search(start: 'Box', end: 'Box') -> None`
+`dls(start: 'Box', end: 'Box') -> None`
+
+**警告：有限深度优先搜索是不完备的搜索算法**
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型 | 是否必填 | 默认值 | 说明           |
+| --- | ------ | -------- | -------- | ------ | -------------- |
+| 1   | start  | `Box`    | 是       | -      | 起始九宫格对象 |
+| 2   | end    | `Box`    | 是       | -      | 目标九宫格对象 |
+| 3   | limit  | int      | 是       | -      | 搜索深度限制   |
+
+#### 返回值 `None`
+
+搜索结果直接打印，无返回值
+
+#### 示例 1
+
+```python
+eps.dls(a, b, 1)
+
+```
+
+```text
+SyntaxWarning: 有限深度优先搜索是不完备的搜索算法 | depth limited search is an incomplete search algorithm
+->
+-> D
+-> L
+-> R
+未能在限定深度内找到解 | cannot find solution within the depth limit
+
+```
+
+#### 示例 2
+
+```python
+eps.dls(a, b, 5)
+
+```
+
+```text
+SyntaxWarning: 有限深度优先搜索是不 完备的搜索算法 | depth limited search is an incomplete search algorithm
+->
+-> D
+-> DU
+-> DUD
+-> DUDU
+-> DUDUD
+...
+-> DDRUU
+-> DDRUD
+-> DDRUL
+moved via -> DDRUL:
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+### double_breadth_first_search() 双向宽度优先搜索
+
+`double_breadth_first_search(start: 'Box', end: 'Box') -> None`
+`dbfs(start: 'Box', end: 'Box') -> None`
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型 | 是否必填 | 默认值 | 说明           |
+| --- | ------ | -------- | -------- | ------ | -------------- |
+| 1   | start  | `Box`    | 是       | -      | 起始九宫格对象 |
+| 2   | end    | `Box`    | 是       | -      | 目标九宫格对象 |
+
+#### 返回值 `None`
+
+搜索结果直接打印，无返回值
+
+#### 示例
+
+```python
+eps.dbfs(a, b)
+
+```
+
+```text
+start ->
+forward -> D
+forward -> L
+forward -> R
+reverse -> U
+reverse -> D
+...
+reverse -> UD
+reverse -> UL
+reverse -> UR
+...
+forward -> DDU
+forward -> DDL
+forward -> DDR
+forward moved via -> DDR:
+[ * 2 3
+  1 8 4
+  7 6 5 ]
+
+reverse moved via -> RD:
+[ * 2 3
+  1 8 4
+  7 6 5 ]
+
+totally moved via -> DDRUL:
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+## 进阶用法：构建和使用启发式搜索
+
+启发式搜索是搜索算法的核心之一。利用提供的 `search()` 函数和预置的评估函数，我们可以尝试实现启发式搜索。
+
+**注意：评估函数 `fn` 由于是直接传入，故参数列表中只写函数名，不写括号。**
+
+### search() 通用启发式搜索函数
+
+`search(start: 'Box', end: 'Box', fn: Callable[[Dict[str, any]], int]) -> None`
+
+`search` 函数需要你直接传入一个评价函数 `fn` 来决定搜索前沿的下一步动作。你可以使用预置的几个评价函数，也可以自己构建 `fn` 评价函数。构建方法将在稍后介绍。
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型 | 是否必填 | 默认值 | 说明           |
+| --- | ------ | -------- | -------- | ------ | -------------- |
+| 1   | start  | `Box`    | 是       | -      | 起始九宫格对象 |
+| 2   | end    | `Box`    | 是       | -      | 目标九宫格对象 |
+| 3   | fn     | function | 是       | -      | 启发函数       |
+
+#### 返回值 `None`
+
+搜索结果直接打印，无返回值
+
+### lowest_step() 最小步数
+
+`lowest_step`
+`ls`
+
+为 `search()` 函数构建的估价函数。采用历史记录的长度作为评价标准，单独使用时类似于广度优先搜索。
+
+#### 示例
+
+```python
+eps.search(a, b, eps.ls)
+
+```
+
+```text
+->
+-> D
+-> L
+-> R
+-> DU
+-> DD
+...
+-> DDRUU
+-> DDRUD
+-> DDRUL
+moved via -> DDRUL:
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+### most_at_place() 最多在位
+
+`most_at_place`
+`mp`
+
+为 `search()` 函数构建的估价函数。采用当前状态与目标状态的相同元素个数作为评价标准。
+
+#### 示例
+
+```python
+eps.search(a, b, eps.mp)
+
+```
+
+```text
+->
+-> D
+-> L
+-> R
+-> DU
+-> DD
+...
+-> DDRUU
+-> DDRUD
+-> DDRUL
+moved via -> DDRUL:
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+### manhattan_distance() 曼哈顿距离
+
+`manhattan_distance`
+`mhd`
+
+为 `search()` 函数构建的估价函数。采用当前状态与目标状态的曼哈顿距离作为评价标准。
+
+#### 示例
+
+```python
+eps.search(a, b, eps.mhd)
+
+```
+
+```text
+->
+-> D
+-> L
+-> R
+-> DU
+-> DD
+...
+-> DDRUU
+-> DDRUD
+-> DDRUL
+moved via -> DDRUL:
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+### 自己构建 fn 评估函数
+
+`search()` 函数需要传入一个评估函数。你可以自己构造它。
+
+`fn` 评估函数需要遵守以下输入输出规则：
+
+`fn(task: dict) -> int`
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型 | 是否必填 | 默认值 | 说明                   |
+| --- | ------ | -------- | -------- | ------ | ---------------------- |
+| 1   | task   | dict     | 是       | -      | 用于完成评估的基本信息 |
+
+| task 字段       | 数据类型  | 说明                 |
+| --------------- | --------- | -------------------- |
+| task['start']   | List[int] | 求解的起始值         |
+| task['end']     | List[int] | 求解的目标值         |
+| task['now']     | List[int] | 需评价的当前节点的值 |
+| task['history'] | str       | 当前节点的历史记录   |
+
+#### 返回值
+
+| \   | 数据类型 | 说明               |
+| --- | -------- | ------------------ |
+| 1   | int      | 评估得出的搜索代价 |
+
+#### 示例 1 - 利用预置评估函数构建新评估函数
+
+```python
+def astar(task):
+    return eps.lowest_step(task) + eps.manhattan_distance(task)
+
+eps.search(a, b, astar)
+
+```
+
+```text
+->
+-> D
+-> L
+-> R
+-> DU
+-> DD
+...
+-> DDRUU
+-> DDRUD
+-> DDRUL
+moved via -> DDRUL:
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+#### 示例 2 - 完全重新构建估价函数
+
+```python
+def astar(task):
+    return len(task['history']) + sum(abs(task['now'].index(i) // 3 - task['end'].index(i) // 3)
+                                      + abs(task['now'].index(i) % 3 - task['end'].index(i) % 3)
+                                      for i in range(1, 9))
+
+eps.search(a, b, astar)
+
+```
+
+```text
+->
+-> D
+-> L
+-> R
+-> DU
+-> DD
+...
+-> DDRUU
+-> DDRUD
+-> DDRUL
+moved via -> DDRUL:
+[ 1 2 3
+  8 * 4
+  7 6 5 ]
+
+```
+
+## 高级用法：直接操作 Box 对象
+
+`Box` 对象是这个代码包的核心内容，提供了众多的方法以及丰富的嵌套封装，具有很大的可操作空间。你可以详尽阅读本文档，选择合适自己的封装程度，自己操作实现搜索。
+
+## 究极用法：直接阅读本代码包源码
+
+并找出我的 bug。
+
+<div STYLE="page-break-after: always;"></div>
+
+## Box 对象结构说明文档
+
+### Box() 实例化
+
+`Box(value: list, history: str = '') -> 'Box'`
+
+按照格式传入九宫格的值即可实例化 `Box`，需遵守以下规则：
+
+1. 以整型数列表的形式传入；
+1. 按照行先列后的顺序传入，即 `[a00, a01, a02, a10, ..., a21, a22]`；
+1. 仅限传入 0 - 9 九个数字，其中 0 代表空格，每个数字有且只有一次出现。
+
+可选传入九宫格移动的历史数据，需遵守以下规则：
+
+1. 仅能含有 `U`、`P`、`L`、`R` 四个字符，分别代表上、下、左、右；
+1. 例外地，字符串开头允许含有 `->` 或 `-> `，但该片段会在传入后被自动删除。
+
+#### 传入参数
+
+| \   | 参数名  | 数据类型  | 是否必填 | 默认值 | 说明                 |
+| --- | ------- | --------- | -------- | ------ | -------------------- |
+| 1   | value   | List[int] | 是       | -      | 九宫格对象的值       |
+| 2   | history | str       | 否       | ''     | 九宫格对象的移动历史 |
+
+#### 返回值
+
+| \   | 数据类型 | 说明                   |
+| --- | -------- | ---------------------- |
+| 1   | `Box`    | 返回实例化的九宫格对象 |
+
+#### 示例
+
+```python
+c = eps.Box([0, 2, 3, 1, 8, 4, 7, 6, 5])
+print(c)
+
+```
+
+```text
+moved via -> :
+[ * 2 3
+  1 8 4
+  7 6 5 ]
+
+```
+
+### value 九宫格对象的值
+
+`'Box'.value -> list[int]`
+
+#### 示例
+
+```python
+print(a.value)
+
+```
+
+```text
+[2, 8, 3, 1, 6, 4, 7, 0, 5]
+
+```
+
+### set_value() 修改当前九宫格对象的值而不改变其历史记录
+
+`'Box'.set_value(value: List[int]) -> None`
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型  | 是否必填 | 默认值 | 说明   |
+| --- | ------ | --------- | -------- | ------ | ------ |
+| 1   | value  | List[int] | 是       | -      | 新的值 |
+
+#### 返回值 `None`
+
+本方法不返回任何值。
+
+### history 九宫格对象的移动历史
+
+`'Box'.history -> str`
+
+### add_history() 添加历史记录而不改变九宫格对象的值
+
+`'Box'.add_history(history: str) -> None`
+
+#### 传入参数
+
+| \   | 参数名  | 数据类型 | 是否必填 | 默认值 | 说明         |
+| --- | ------- | -------- | -------- | ------ | ------------ |
+| 1   | history | str      | 是       | -      | 新的历史记录 |
+
+#### 返回值 `None`
+
+本方法不返回任何值。
+
+### del_history() 删除历史记录而不改变九宫格对象的值
+
+`'Box'.del_history(length: int = 1) -> str`
+
+#### 传入参数
+
+| \   | 参数名 | 数据类型 | 是否必填 | 默认值 | 说明       |
+| --- | ------ | -------- | -------- | ------ | ---------- |
+| 1   | length | int      | 是       | -      | 删除的长度 |
+
+#### 返回值
+
+| \   | 数据类型 | 说明                 |
+| --- | -------- | -------------------- |
+| 1   | str      | 返回被删除的历史记录 |
+
+### copy() 复制当前的九宫格对象
+
+`'Box'.copy() -> 'Box'`
+
+#### 传入参数 `None`
+
+本方法不传入任何值。
+
+#### 返回值
+
+| \   | 数据类型 | 说明                       |
+| --- | -------- | -------------------------- |
+| 1   | `Box`    | 返回复制后的九宫格对象拷贝 |
+
+### up() 在当前的九宫格对象内向上移牌
+
+`'Box'.up() -> None`
+
+注意：该方法直接修改当前对象，不返回值。
+
+#### 传入参数 `None`
+
+本方法不传入任何值。
+
+#### 返回值 `None`
+
+本方法不返回任何值。
+
+### upped 返回向上移牌后的九宫格对象
+
+`'Box'.upped -> 'Box'`
+
+注意：该参数返回操作后的对象，不会改变当前对象。
+
+### down() 在当前的九宫格对象内向下移牌
+
+`'Box'.down() -> None`
+
+注意：该方法直接修改当前对象，不返回值。
+
+#### 传入参数 `None`
+
+本方法不传入任何值。
+
+#### 返回值 `None`
+
+本方法不返回任何值。
+
+### downed 返回向下移牌后的九宫格对象
+
+`'Box'.downed -> 'Box'`
+
+注意：该参数返回操作后的对象，不会改变当前对象。
+
+### left() 在当前的九宫格对象内向左移牌
+
+`'Box'.left() -> None`
+
+注意：该方法直接修改当前对象，不返回值。
+
+#### 传入参数 `None`
+
+本方法不传入任何值。
+
+#### 返回值 `None`
+
+本方法不返回任何值。
+
+### lefter 返回向左移牌后的九宫格对象
+
+`'Box'.lefter -> 'Box'`
+
+注意：该参数返回操作后的对象，不会改变当前对象。
+
+### rigth() 在当前的九宫格对象内向右移牌
+
+`'Box'.right() -> None`
+
+注意：该方法直接修改当前对象，不返回值。
+
+#### 传入参数 `None`
+
+本方法不传入任何值。
+
+#### 返回值 `None`
+
+本方法不返回任何值。
+
+### righter 返回向上右移牌后的九宫格对象
+
+`'Box'.righter -> 'Box'`
+
+注意：该参数返回操作后的对象，不会改变当前对象。
+
+### able 查询并返回可用的移动方向
+
+`'Box'.able -> Set[str]`
+
+以字符串集合的形式返回，含有 `U`、`P`、`L`、`R` 四个字符，分别代表上、下、左、右四个可能的方向。
+
+### expand() 拓展下一层
+
+`'Box'.expand() -> List['Box']`
+
+运行本方法，会自动检查可移动的方向，并返回该节点所有可能的下一层节点。
+
+#### 传入参数 `None`
+
+本方法不传入任何值。
+
+#### 返回值
+
+| \   | 数据类型    | 说明                   |
+| --- | ----------- | ---------------------- |
+| 1   | List[`Box`] | 返回新的九宫格对象列表 |
+
+#### 示例
+
+```python
+print(a.expand())
+
+```
+
+```text
+[
+    moved via -> D:
+    [ 2 8 3
+      1 * 4
+      7 6 5 ],
+
+    moved via -> L:
+    [ 2 8 3
+      1 6 4
+      7 5 * ],
+
+    moved via -> R:
+    [ 2 8 3
+      1 6 4
+      * 7 5 ]
+]
+
+```
+
+<div STYLE="page-break-after: always;"></div>
+
+## 辅助工具
+
+### @run_time 用于计算函数运行时间的装饰器
+
+`@run_time`
+`@rt`
+
+这是一个装饰器，用法是新建一个函数作为需要计时的片段，然后添加装饰器正常运行。
+
+#### 示例
+
+```python
+import eight_puzzle_search as eps
+
+@eps.run_time
+def main():
+    a = eps.Box([2, 8, 3, 1, 6, 4, 7, 0, 5])
+    b = eps.Box([1, 0, 2, 8, 4, 3, 7, 6, 5])
+    eps.bfs(a, b)
+
+if __name__ == '__main__':
+    main()
+
+```
+
+```test
+->
+-> D
+-> L
+-> R
+-> DU
+...
+-> DDRULLDU
+-> DDRULLDR
+moved via -> DDRULLDR:
+[ 1 * 2
+  8 4 3
+  7 6 5 ]
+
+运行时间 | run time: 0.0156250s
+
+```
+
+### @run_time_5 重复运行 5 次并计算平均运行时间的装饰器
+
+`@run_time_5`
+`@rt5`
+
+这是一个装饰器，用法是新建一个函数作为需要计时的片段，然后添加装饰器正常运行。
+
+#### 示例
+
+```python
+import eight_puzzle_search as eps
+
+@eps.rt5
+def main():
+    a = eps.Box([2, 8, 3, 1, 6, 4, 7, 0, 5])
+    b = eps.Box([1, 0, 2, 8, 4, 3, 7, 6, 5])
+    eps.bfs(a, b)
+
+if __name__ == '__main__':
+    main()
+
+```
+
+```test
+->
+-> D
+-> L
+...
+->
+-> D
+-> L
+...
+->
+-> D
+-> L
+...
+->
+-> D
+-> L
+...
+->
+-> D
+-> L
+...
+-> DDRULLDU
+-> DDRULLDR
+moved via -> DDRULLDR:
+[ 1 * 2
+  8 4 3
+  7 6 5 ]
+
+--------------------------------
+  1  |         0.0312500s
+  2  |         0.1093750s
+  3  |         0.0781250s
+  4  |         0.0625000s
+  5  |         0.0468750s
+--------------------------------
+平均时间 | average time: 0.0656250s
+
+```
