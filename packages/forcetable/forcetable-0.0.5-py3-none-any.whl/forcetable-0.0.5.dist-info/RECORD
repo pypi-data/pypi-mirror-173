@@ -1,0 +1,10 @@
+forcetable/__init__.py,sha256=hy08k7sDkLAO4elAG2jvo5Uj1jHCLNBJgimrKcWupA4,1413
+forcetable/_field.py,sha256=Jhnd0eysUpyNGuyH3gqJ0bronZvC5FTC6BmPDSgxO0k,4628
+forcetable/_record.py,sha256=i60qlSgmy23MMbDuZUUrZlz6qOsN0ar2X9keBeRK_D4,1202
+forcetable/_table.py,sha256=6jAlTCyd86_Ie5m3Uo0ES992mkekeXcBIC1jlyPW0cw,21122
+forcetable/exceptions.py,sha256=nqJcVE5kWTDHfnZ2ULfxcNkCtGkhrFZQ4qVl2qnWaxg,377
+forcetable-0.0.5.dist-info/LICENSE,sha256=OCr5x0Ss0HtBoEq2naQdwdE3PosuwzEMTa9ZcKfVkSg,1093
+forcetable-0.0.5.dist-info/METADATA,sha256=KW08WJT6cju05C7l0tMoVAWiAvV-S5NaMFWkBcCaHXU,7794
+forcetable-0.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+forcetable-0.0.5.dist-info/top_level.txt,sha256=nuYYO9U4lgJsGCch1wRIRxgzoZwucNGmX404ntTiet0,11
+forcetable-0.0.5.dist-info/RECORD,,
