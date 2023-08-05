@@ -1,0 +1,11 @@
+gamdam/__init__.py,sha256=cH8eMZ_OtOBsc_AxtCpFtVtaG9QP0Caojz8S0enS8QI,884
+gamdam/__main__.py,sha256=D9y3jePKqCA4MLIGicqORT-Pci5bsKzqGq6D_UHwqcI,6459
+gamdam/aioutil.py,sha256=xkyjZgifdr_J25uXnkg31MOHGaOSAa9Zk9G9RcE8EGE,1613
+gamdam/core.py,sha256=zUVR3OdL2PfhIO-l-iS3XHK5D-KyZX29hzkiGDsEypg,10373
+gamdam/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamdam-0.3.1.dist-info/LICENSE,sha256=dfk50C9oOqxwmnl8cmhmJLwWT76fqvRNAMobGqqJ-Js,1095
+gamdam-0.3.1.dist-info/METADATA,sha256=cgGXYbG11i3Ee80q-Dww-NuUK0Tp-r2RfRVgQrGNH2E,9595
+gamdam-0.3.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gamdam-0.3.1.dist-info/entry_points.txt,sha256=lv2H4rfsoWIJ9L8MZyYnBmFzoG0xhyUjQcTrLx5s9-Q,48
+gamdam-0.3.1.dist-info/top_level.txt,sha256=3lwTk2rbfO5RF6Wg3TLw6UYUiTarEj6nVtsouocoitA,7
+gamdam-0.3.1.dist-info/RECORD,,
