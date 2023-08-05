@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: python-keycloak-client-pkg
+Version: 0.3.0
+Summary: Install Python Keycloak client
+Home-page: https://github.com/Peter-Slump/python-keycloak-client
+Author: Peter Slump
+Author-email: Ahmad Dabo <dabo.cs@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/dabocs/python-keycloak-client
+Project-URL: Bug Tracker, https://github.com/dabocs/python-keycloak-client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-jose
+Provides-Extra: aio
+Requires-Dist: aiohttp (<4,>=3.4.4) ; (python_full_version >= "3.5.3") and extra == 'aio'
+Provides-Extra: dev
+Requires-Dist: bumpversion (==0.5.3) ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: Sphinx (==1.4.4) ; extra == 'doc'
+Requires-Dist: sphinx-autobuild (==0.6.0) ; extra == 'doc'
+
