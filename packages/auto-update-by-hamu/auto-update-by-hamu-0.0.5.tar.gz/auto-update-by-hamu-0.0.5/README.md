@@ -1,0 +1,47 @@
+### 自更新使用说明
+1. 将本模块编译成wheel
+```shell
+python setup.py bdist_wheel
+```
+2. 在需要子更新的项目中安装wheel
+```shell
+pip install 打包的wheel.wheel
+```
+3. 两种使用方式
+- (第一种,直接使用直链)
+
+项目中使用
+```python
+from auto_update import AutoUpdate
+from settings import SETTINGS
+
+AutoUpdate(direct_url="直链url", callback).check_update()
+# 关于callback参数，是一个下载回调函数，接受两个参数，第一个是文件总大小，第二个是已下载的文件大小，可以使用这个做进度条的定制
+```
+- (第二种,使用配置文件)
+
+编写项目settings.py文件(名字可随意)
+```python
+SETTINGS = {
+  "mode": "check_on_start", # 更新模式，目前仅支持启动时检查
+  "url": "http://192.168.2.17:8080/version_update_info", # 返回更新信息json的url 
+  "update_mode": "silent" # 目前仅支持静默更新
+}
+```
+更新信息格式,(可使用flask返回json数据)
+```json
+{
+  "download_url": "http://192.168.2.17:8080/download", // 下载路径
+  "version": "3.0.0", // 版本信息
+  "md5": "md5_text", // md5
+  "force": True, // 是否强更
+  "filename": "provide_file_path" // 文件名，重要，需要与客户端文件名一致
+}
+```
+项目中使用
+```python
+from auto_update import AutoUpdate
+from settings import SETTINGS
+
+AutoUpdate(SETTINGS, callback[可选]).check_update()
+```
