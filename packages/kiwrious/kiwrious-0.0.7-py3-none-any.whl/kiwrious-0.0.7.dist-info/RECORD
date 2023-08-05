@@ -1,0 +1,9 @@
+kiwrious/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kiwrious/sensor.py,sha256=kXomIxpWesp6N3gQhFBWuWss30mxE2yYb59xqBXF-5M,8620
+kiwrious/sensordata.py,sha256=MjBYBUmteQyO6hro3Me3_fB0Q1avdRBYYc0_44jWANM,1449
+kiwrious/service.py,sha256=I3bUJFzaXUzrcD5uhwVxrdXCEJANCgDJyUhIXUZL2qw,7126
+kiwrious/utility.py,sha256=vcw8IrOftF7mo0kj6BQRw3siRK59qUWJlETgwfFRWMY,1665
+kiwrious-0.0.7.dist-info/METADATA,sha256=052eIoXtWQTPONmoKpSlpzfcOGHMjm8IgBmcf2XLUJE,6684
+kiwrious-0.0.7.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+kiwrious-0.0.7.dist-info/licenses/LICENSE.txt,sha256=-dw6Ubpk8NuqZy_jOYSf_RB2WqnLRUdCiuO8cDTrJTg,1068
+kiwrious-0.0.7.dist-info/RECORD,,
