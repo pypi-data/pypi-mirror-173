@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wellview-odata-api
+Version: 1.0.1
+Summary: OData Service for namespace Default
+Home-page: 
+Author-email: 
+License: UNKNOWN
+Keywords: Swagger,OData Service for namespace Default
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    This OData service is located at http://localhost  # noqa: E501
+    
+
