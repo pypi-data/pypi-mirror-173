@@ -1,0 +1,16 @@
+vocably/__init__.py,sha256=dFlNGCYWS3jLR3Wp_8CkgNh9LxaW2XVGnwF-5fAud-Y,258
+vocably/constants.py,sha256=-GTdZssZ5ia-FFspfnAouLz9mSK6YCe3SEFlT4QPcBY,448
+vocably/Preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vocably/Preprocessing/text.py,sha256=Kq-7VNl36KVeMOUGwkvqnlGCU5o_kN7JqPSXj8-3hcw,2290
+vocably/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vocably/cli/main.py,sha256=-7YahXni2jCnAABDpKGsNh-QN502Um4n4ccVGJ0K2Us,196
+vocably/featurizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vocably/featurizer/text.py,sha256=oKUfO0rMQzjASQnsWP-HJ9DHQQlbtmy5ZDDFXExIuVU,2241
+vocably/preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vocably/preprocessing/text.py,sha256=FJc3aJn-N34dkhaDECWbML_qn7xqbntpi20DOM2080Y,2333
+vocably-0.0.7.dist-info/LICENSE,sha256=ulLa0vGIHNWGxF0NEFn9ZgCrXOaE9YjemBtdKW_frt0,1075
+vocably-0.0.7.dist-info/METADATA,sha256=BApdckUB5POuRgzn5UwzCVnW_b6PDmRBMjg_hoX7JQE,2322
+vocably-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vocably-0.0.7.dist-info/entry_points.txt,sha256=hlpftYw4GhgVNcxlAnqYxzygwnDYcuKeKYJPlDE6mQI,50
+vocably-0.0.7.dist-info/top_level.txt,sha256=bG1sZILLeI8cVtyuispybvs4MBvNhzpBc6Q-ejrng6E,21
+vocably-0.0.7.dist-info/RECORD,,
