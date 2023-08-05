@@ -1,0 +1,7 @@
+setup.py
+src/demo_package_juampi.egg-info/PKG-INFO
+src/demo_package_juampi.egg-info/SOURCES.txt
+src/demo_package_juampi.egg-info/dependency_links.txt
+src/demo_package_juampi.egg-info/top_level.txt
+src/jmp_test/goodbyeworld.py
+src/jmp_test/helloworld.py
