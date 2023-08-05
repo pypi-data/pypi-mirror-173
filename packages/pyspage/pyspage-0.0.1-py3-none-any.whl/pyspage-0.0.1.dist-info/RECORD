@@ -1,0 +1,12 @@
+pyspage/__init__.py,sha256=M5wZAaZI2jVK04d5vVYmOnTmB5Lj9omUJcgaTHZj_yc,649
+pyspage/command.py,sha256=lpfINjLZVEWGxB_RqRtFlifjcIOwgF65nZqKbljUX-U,2201
+pyspage/elements.py,sha256=8LUh1xSS6utMWrInkBVgjquDX8RZg_CESRjvhRRx_1o,4757
+pyspage/layout.py,sha256=xxOChXHzTGWcgtXNbLz_S5ocpfnmooCnLzBZod4gTcY,3347
+pyspage/localization.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspage/pyscript.py,sha256=reIICJiqTuiZcrQ9C9cHla9Ph3QMnQD3ilbkPn_G1mE,2357
+pyspage-0.0.1.dist-info/LICENSE,sha256=NWi1R2-fJW-AdpDKcHSX5HDccvG4BQCKKvtqzheNS4I,1088
+pyspage-0.0.1.dist-info/METADATA,sha256=vBQfGjzdqzfRVR7dVCzK661jE_yXArf6aRijPgz8iyg,2429
+pyspage-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyspage-0.0.1.dist-info/entry_points.txt,sha256=s-tdjdOYLRcFv2olsn-atSqOlGYtHzlDfPt9BixuPHA,48
+pyspage-0.0.1.dist-info/top_level.txt,sha256=HMjblx6gUMfmCllsZAOEaBkH2-UTth2rUUC01xir7Dk,8
+pyspage-0.0.1.dist-info/RECORD,,
