@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: orderherosales
+Version: 0.1.8
+Summary: Routing solver for Orderhero sales
+Home-page: https://github.com/hyeonahkimm/orderhero_sales
+Author: Hyeonah Kim
+Author-email: hyeonah_kim@kaist.ac.kr
+License: UNKNOWN
+Keywords: routing,solver,heuristics
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: ortools
+Requires-Dist: pandas
+Requires-Dist: requests
+
+UNKNOWN
+
+
