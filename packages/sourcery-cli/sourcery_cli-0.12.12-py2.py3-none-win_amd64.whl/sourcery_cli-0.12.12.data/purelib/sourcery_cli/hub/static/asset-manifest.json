@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/static/css/main.0cfd14d5.css",
+    "main.js": "/static/static/js/main.f5864ef7.js",
+    "static/js/787.cda612ba.chunk.js": "/static/static/js/787.cda612ba.chunk.js",
+    "static/media/icons.svg?": "/static/static/media/icons.33055a2699783178df55.svg",
+    "static/media/simple-bg.svg": "/static/static/media/simple-bg.5d316ef4d19ee3b7987c.svg",
+    "static/media/lower-bg.svg": "/static/static/media/lower-bg.ef732f44d29337d626ef.svg",
+    "static/media/icons.eot?": "/static/static/media/icons.e3d35e8153c5ffaa069f.eot",
+    "static/media/icons.ttf?": "/static/static/media/icons.fdecd2d880938cae502a.ttf",
+    "static/media/icons.woff?": "/static/static/media/icons.07ed0b60c13965581675.woff",
+    "static/media/icons.woff2?": "/static/static/media/icons.f39232cd335dc12e7d4f.woff2",
+    "static/media/sourcery-logo.svg": "/static/static/media/sourcery-logo.ab9811e301fd9354cd78e9d3500b014d.svg",
+    "index.html": "/static/index.html",
+    "main.0cfd14d5.css.map": "/static/static/css/main.0cfd14d5.css.map",
+    "main.f5864ef7.js.map": "/static/static/js/main.f5864ef7.js.map",
+    "787.cda612ba.chunk.js.map": "/static/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cfd14d5.css",
+    "static/js/main.f5864ef7.js"
+  ]
+}
