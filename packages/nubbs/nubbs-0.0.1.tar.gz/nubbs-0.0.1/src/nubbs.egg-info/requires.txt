@@ -1,0 +1,10 @@
+click
+fastapi
+pydantic
+starlette
+toml
+
+[testing]
+setuptools
+pytest
+pytest-cov

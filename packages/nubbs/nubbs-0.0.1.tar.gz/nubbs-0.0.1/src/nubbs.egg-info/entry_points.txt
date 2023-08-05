@@ -1,0 +1,2 @@
+[console_scripts]
+bbs = bbs.__main__:cli
