@@ -1,0 +1,6 @@
+hampdf/__init__.py
+hampdf/pdf2text.py
+hampdf.egg-info/PKG-INFO
+hampdf.egg-info/SOURCES.txt
+hampdf.egg-info/dependency_links.txt
+hampdf.egg-info/top_level.txt
