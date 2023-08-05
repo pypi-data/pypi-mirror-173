@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PyConvertBinary
+Version: 0.0.2
+Summary: Basic Binary Converter
+Home-page: 
+Author: R3Pulse
+Author-email: adrain911@gmail.com
+License: MIT
+Keywords: converter,binary
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.txt
+
+This is a programme that converts binary to decimal, and decimal to binary.
+DecToBin converts Decimals to Binary and BinToDec does the opposite. 
+These functions only accept integers as an input.
+
+Change Log
+----------
+
+0.0.1 (23/10/2022)
+~~~~~~~~~~~~~~~~~~
+-First Release
+
+
+0.0.2 (24/10/2022)
+~~~~~~~~~~~~~~~~~~
+-DexToHex function added
