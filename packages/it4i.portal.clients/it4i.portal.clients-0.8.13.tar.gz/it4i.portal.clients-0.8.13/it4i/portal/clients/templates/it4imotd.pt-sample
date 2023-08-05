@@ -1,0 +1,16 @@
+<tal:comment replace="nothing">
+    Assume h1 is the top page heading
+</tal:comment>
+
+<h2 class="rss-title" tal:condition="items">Some feed title displayed only if there are any items</h2>
+
+<div class="rss-item" tal:repeat="item items">
+    <h3 class="rss-item-title" tal:content="python:item[0]['title']">Item title</h3>
+    <i class="rss-item-motd-category" tal:content="python:item[0]['category']">Category</i>
+    <i class="rss-item-published" tal:content="python:item[0]['created_at']">Published</i>
+    <i class="rss-item-updated" tal:content="python:item[0]['updated_at']">Last updated</i>
+    <i class="rss-item-outage-efficiency" tal:content="python:item[0]['dateOutageEfficiency']">Outage from</i>
+    <i class="rss-item-outage-expiration" tal:content="python:item[0]['dateOutageExpiration']">Outage expiration</i>
+    <i class="rss-item-affected-systems" tal:content="python:item[0]['system_name']">Affected systems</i>
+    <p class="rss-item-content" tal:content="structure python:item[0]['messageBody']">Item content</p>
+</div>
