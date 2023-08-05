@@ -1,0 +1,2 @@
+[console_scripts]
+mun = mymongo.__main__:main
