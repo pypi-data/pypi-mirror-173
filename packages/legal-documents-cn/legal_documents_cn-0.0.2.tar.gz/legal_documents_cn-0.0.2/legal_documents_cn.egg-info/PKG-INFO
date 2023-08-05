@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: legal-documents-cn
+Version: 0.0.2
+Summary: Chinese legal documents, you can get certain legal term content by the code of term and the code of term by its content
+Home-page: https://github.com/
+Author: dongyuwu omnilab
+Author-email: 1558359609@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Legal Documents CN 中文法律查询数据
+```shell
+pip install pandas
+pip install nltk
+pip install legal_documents_cn
+```
+
+
+```python
+from legal_documents_cn import criminal_law_cn as law
+law.getInfoByArticleCode(article_code=219,article_sub_code=1)
+#第二百一十九条之一
+
+```
+
+```python
+from legal_documents_cn import criminal_law_cn as law
+law.getInfoByContent(content='小明交通肇事',vague=True)
+#content为需要查询的条款内容，vague为模糊查询
+
+```
+
