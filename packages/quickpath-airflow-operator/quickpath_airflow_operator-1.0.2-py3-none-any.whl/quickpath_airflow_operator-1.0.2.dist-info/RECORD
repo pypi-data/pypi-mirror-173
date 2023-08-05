@@ -1,0 +1,9 @@
+quickpath_airflow_operator/QuickpathPlatformAPIHook.py,sha256=YbhZa04UpdKiX4Dtl-73wWWuPHBK0FVNIWim7IelwCY,1506
+quickpath_airflow_operator/QuickpathPlatformOperator.py,sha256=dAMFUTBji08I70UBXo0yXWcyym7bzDIxosgLcw5PDNE,5117
+quickpath_airflow_operator/QuickpathPlatformServiceHook.py,sha256=1sBU3NDG48f5HrH2F8XJfOnGD0teZqchNVNTA-q0El0,1748
+quickpath_airflow_operator/__init__.py,sha256=usk-1ZWTB6TdGHBgDgiaEWCqz5u5lbOtXBW9znCf-G8,198
+quickpath_airflow_operator-1.0.2.dist-info/LICENSE.txt,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+quickpath_airflow_operator-1.0.2.dist-info/METADATA,sha256=MlvJyXB-X6GJl0RdpZi9hlBf_FlDCPr6R8RArjcMIcc,2938
+quickpath_airflow_operator-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quickpath_airflow_operator-1.0.2.dist-info/top_level.txt,sha256=UuP8tm3twwhBMbh0Euw1BPNrNb8MOciUY6HHxle2nR4,27
+quickpath_airflow_operator-1.0.2.dist-info/RECORD,,
