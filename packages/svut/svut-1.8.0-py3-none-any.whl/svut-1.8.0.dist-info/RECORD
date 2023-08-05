@@ -1,0 +1,13 @@
+svut/svut.core,sha256=7NzWuOAM3oFZHsqOTJQ1Ol8jrIatN7zDIdm_MuAeJlE,180
+svut/svutCreate.py,sha256=FZ9aKYM55F2G9dhoblZ2-Z78N4-jXfbhgjteg0iojo4,10369
+svut/svutRun.py,sha256=kNBdpmNre3gpfhcTiT7fbw7LFQKIXlvmxUWMdzm2z8s,11745
+svut/svut_h.sv,sha256=pk5lfPjf9h2lU5Y3hEXJHSyWolWVqHWSGoqrIxVFoOA,7413
+svut/template.cpp,sha256=ocbe8moZSp33aCtJo-Au7iH98pIhA139hBHbY3TkH8U,487
+svut/template.sv,sha256=oScY_bps8l8pRfbL6wkdsfsGiVK_4VTLk8fDqYspTew,2447
+svut-1.8.0.dist-info/AUTHORS,sha256=1PM7s20XFrogR6vqF0_5PDqGMR8p5B8hBbi1jWDYwkg,548
+svut-1.8.0.dist-info/LICENSE,sha256=WN5WXidCg5PUrcgKNUuwTS2WRqXV_bUKBGcrxdI5abs,1077
+svut-1.8.0.dist-info/METADATA,sha256=HdwzF5AHdQxSxYNmUpyzRl6W_RUDCsSV3RtxlwK2_Hw,10434
+svut-1.8.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+svut-1.8.0.dist-info/entry_points.txt,sha256=9gqYjBOz6707RXH_mSXgeKSnRsLf-TW9QeR_Gz_RGwE,80
+svut-1.8.0.dist-info/top_level.txt,sha256=JH8MHIcZD_ULwEa98z9ESD6U8k5FwSIqUxiGxsJJSJw,5
+svut-1.8.0.dist-info/RECORD,,
