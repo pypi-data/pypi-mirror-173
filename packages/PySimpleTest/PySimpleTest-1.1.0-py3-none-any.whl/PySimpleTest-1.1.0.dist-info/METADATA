@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: PySimpleTest
+Version: 1.1.0
+Summary: A very simple test framework
+Home-page: https://github.com/Time-Coder/PySimpleTest
+Author: Time-Coder
+Author-email: binghui.wang@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: PySimpleGUI
+Requires-Dist: colorama
+Requires-Dist: pyttsx3
+
+# PySimpleTest -- Make test as simple as possible
+
+PySimpleTest is a very simple test framwork. To start using it, try following example:  
+Write a file `main.py`:
+
+```python
+import PySimpleTest as pst
+
+a = 2
+pst.should_be_equal(a, 2)
+pst.should_be_less(a, 1)
+```
+
+Then run it. You can get following cmd output:
+
+![avatar](https://gitee.com/time-coder/PySimpleTest/raw/master/images/first_example.png)
+
+Please see full documentation at [https://github.com/Time-Coder/PySimpleTest](https://github.com/Time-Coder/PySimpleTest)
+
+## Release Note
+### 1.1.0
+* Add `{should|must}_{keep|become}_[not_]raising` functions
+### 1.0.9
+* Fix `say` function not work problem.
+### 1.0.8
+* Make it can works in Python console mode
+* Support lambda expression in `{should|must}_{be|become|keep}_{true|false}` and `wait_until[_not]` functions
+* Add `{should|must}_[not_]raise` function
+* Add `gui_on`, `gui_off` function to control gui on/off
+* Add `--gui {on|off}` terminal parameter to control gui on/off
+* Delay the gui and voice module loading to user call `gui_on` or `void_on`
+### 1.0.7
+* Fix issue #1: `should_be_true` works fine now;
+* Fix issue #2: `PySimpleTest` can run on `Linux` and `Mac` now.
+### 1.0.6
+* Don't need `enable(enhance_func)` any more;
+* Fix "exit code not working" bug.
+### 1.0.5
+* Added `Section` class. User can use `Section` with Python `with` syntax instead of `section`, `end_section`, `subsection`.
+### 1.0.2
+* First release for all basic functions.
+
