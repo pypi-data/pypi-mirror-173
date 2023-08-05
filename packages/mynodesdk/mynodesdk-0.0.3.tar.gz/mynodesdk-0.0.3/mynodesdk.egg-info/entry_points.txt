@@ -1,0 +1,2 @@
+[console_scripts]
+mynode-sdk = mynodesdk.main:main
