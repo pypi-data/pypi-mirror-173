@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-easypush
+Version: 1.0.0
+Summary: 集成钉钉、企业微信、飞书的应用消息，短信、邮件的消息推送系统
+Home-page: https://github.com/luojidr/django-easypush
+Author: luoji
+Author-email: luojidr@163.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
