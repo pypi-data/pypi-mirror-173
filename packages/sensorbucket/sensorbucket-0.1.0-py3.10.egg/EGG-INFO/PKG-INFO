@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: sensorbucket
+Version: 0.1.0
+Summary: Provides interaction with the Sensorbucket API
+Home-page: http://pypi.python.org/pypi/Sensorbucket/
+Author: Tim van Osch
+Author-email: timvosch@pollex.nl
+License: LICENSE
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Python SensorBucket package
+
+This repository is a Python package that provides interaction with the SensorBucket API.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the Sensorbucket Python package.
+
+```bash
+pip install sensorbucket
+```
+
+## Usage and Documentation
+
+Below is a quickstart. Also see the documentation: https://sensorbucket.gitlab.io/pysensorbucket .
+
+```python
+import sensorbucket
+
+sb = sensorbucket.Facade("https://api.sensorbucket.nl", "account_email", "account_password")
+
+measurements = sb.get_measurements(
+    3,                              # Location ID
+    "air_temperature_celsius",      # MeasurementType Name or ID
+    "2021-05-17T13:33:45.32049Z",   # Start DateTime or ISO8601 string
+    "2021-05-17T13:33:48.32049Z"    # Start DateTime or ISO8601 string
+)
+```
+
+To use the data with Pandas, simply create a dataframe with the return value of `get_measurements`:
+
+```python
+import pandas
+
+# Fetch measurements as above
+# measurements = sb.get_measurements(...)
+
+df = pandas.DataFrame(measurements)
+
+# Use dataframe as you normally would
+print(df["value"].mean())
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+See [LICENSE](./LICENSE)
+
+```
+MIT License
+
+Copyright (c) 2021 Pollex
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
