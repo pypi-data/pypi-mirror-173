@@ -1,0 +1,9 @@
+attendance_tracker_email/__init__.py,sha256=K_VRVvJSYsKQt5r8BUE407riBEdrI67WnUPDSp0paVw,59
+attendance_tracker_email/filetracker.py,sha256=4TQ469R3dw8IKn9Zwv12RR-cqfIlvVmZ4GiVpAqNzLI,330
+attendance_tracker_email/main.py,sha256=P209z-joKbR8aoWe1B1e4-5BpYonv3G8Za8S9iKWw4k,323
+attendance_tracker_email-0.0.20.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+attendance_tracker_email-0.0.20.dist-info/METADATA,sha256=6bC7GbJz1oupE1M8H8Sthk9mB4pScI1bt8LTknbL7A8,867
+attendance_tracker_email-0.0.20.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+attendance_tracker_email-0.0.20.dist-info/entry_points.txt,sha256=e9GkL8TTJmqBC8XiahP0K_hWqV0NX9YC_1vAu26fGJc,80
+attendance_tracker_email-0.0.20.dist-info/top_level.txt,sha256=1ePA-0RgRXUI5UdCb1gN6hnqGahEOhgfch5VCXLzTEU,25
+attendance_tracker_email-0.0.20.dist-info/RECORD,,

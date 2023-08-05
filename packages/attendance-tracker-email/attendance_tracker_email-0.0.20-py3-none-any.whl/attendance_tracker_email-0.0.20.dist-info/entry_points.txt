@@ -1,0 +1,2 @@
+[console_scripts]
+attendance_tracker_email = attendance_tracker_email.main:main
