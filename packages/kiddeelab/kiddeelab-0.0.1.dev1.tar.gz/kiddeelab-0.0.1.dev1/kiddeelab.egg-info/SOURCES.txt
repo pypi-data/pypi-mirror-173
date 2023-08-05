@@ -1,0 +1,11 @@
+LICENSE
+README.md
+gamepad.py
+kiddeejoystick.py
+kiddeemata.py
+setup.py
+kiddeelab.egg-info/PKG-INFO
+kiddeelab.egg-info/SOURCES.txt
+kiddeelab.egg-info/dependency_links.txt
+kiddeelab.egg-info/requires.txt
+kiddeelab.egg-info/top_level.txt
