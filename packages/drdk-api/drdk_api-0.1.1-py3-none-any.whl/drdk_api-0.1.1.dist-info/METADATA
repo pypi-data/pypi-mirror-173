@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: drdk-api
+Version: 0.1.1
+Summary: A python wrapper for the dr.dk api
+Project-URL: Homepage, https://gitlab.com/dr-dk/api/
+Project-URL: Bug Tracker, https://gitlab.com/dr-dk/api/-/issues
+Author-email: Bertram Madsen <skrivtilbertram@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: bumpver; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# DR.DK API Wrapper
+This project is a simple python wrapper around the [DR.DK](https://dr.dk)
+documented [here](https://www.dr.dk/mu-online/Help/1.4)
