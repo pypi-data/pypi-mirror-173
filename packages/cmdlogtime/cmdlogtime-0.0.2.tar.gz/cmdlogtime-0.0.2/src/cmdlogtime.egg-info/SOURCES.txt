@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+assets/Readme.py
+assets/exampleCommandLine.txt
+src/__init__.py
+src/cmdlogtime.py
+src/cmdlogtime.egg-info/PKG-INFO
+src/cmdlogtime.egg-info/SOURCES.txt
+src/cmdlogtime.egg-info/dependency_links.txt
+src/cmdlogtime.egg-info/top_level.txt
