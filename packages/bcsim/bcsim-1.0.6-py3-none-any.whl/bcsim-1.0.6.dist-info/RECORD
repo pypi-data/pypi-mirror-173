@@ -1,0 +1,10 @@
+bcsim/__init__.py,sha256=AfwiQAqiAgA1Kw6UYfbGHD-COZyi-D9HJ2wHoj5fsMY,184
+bcsim/__main__.py,sha256=j14wgwz5M2L9nvCZ5MH3jEkQKRjNh19B1mumEOGplY8,3554
+bcsim/clocks.py,sha256=cPe-7EFAiBj-7yUBs8KgQ4tMA6YjEc9Ewah9khNWm00,7234
+bcsim/rail.py,sha256=mRVXkoaWkif9CByqjCP_wfP0m8iXNuvywCIUezNd7eI,5675
+bcsim/tools.py,sha256=CkNbA9yJShWswba7wRsIeNPxOEIyrP7m5Dw6yWpmq1Q,5744
+bcsim-1.0.6.dist-info/entry_points.txt,sha256=Hr1dsuZ4gT6qF1u7GouL34OZp_cOA3Gxb1t58SbNm3E,45
+bcsim-1.0.6.dist-info/LICENSE,sha256=h3RKkziKty_s4D_D5akWD5auY89xY3irVwYZZmPx3dk,1074
+bcsim-1.0.6.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+bcsim-1.0.6.dist-info/METADATA,sha256=HmWvowtX1ugDpQ1zA7QrSzI6mrj3RnyNB19zDjispEw,8915
+bcsim-1.0.6.dist-info/RECORD,,
