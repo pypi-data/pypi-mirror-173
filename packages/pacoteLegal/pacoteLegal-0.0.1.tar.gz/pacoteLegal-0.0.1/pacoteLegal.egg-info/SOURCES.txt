@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+pacoteLegal.egg-info/PKG-INFO
+pacoteLegal.egg-info/SOURCES.txt
+pacoteLegal.egg-info/dependency_links.txt
+pacoteLegal.egg-info/requires.txt
+pacoteLegal.egg-info/top_level.txt

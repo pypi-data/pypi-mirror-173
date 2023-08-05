@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pacoteLegal
+Version: 0.0.1
+Summary: Pacote python crud de usuarios
+Home-page: https://github.com/FabioNeves00/python-terminal-crud
+Author: Fabio Costa de Oliveira Neves Filho
+Author-email: fabinhoneves09@gmail.com
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PacoteLegal
+
+**PacoteLegal** é um app do terminal para utilizar um crud de usuarios
+
+## Dependências
+**Python 3.6^=**
+
+Pacote **json**
+Pacote **pathlib**
+Pacote **typing**
+
+## Começando o uso
+Você vai precisar instalar o pacote **pacoteLegal**, para isso basta executar:
+```
+pip install pacoteLegal
+```
+
+## Função
+
+- `menu()`- Executa o menu de seleção de ações
+
