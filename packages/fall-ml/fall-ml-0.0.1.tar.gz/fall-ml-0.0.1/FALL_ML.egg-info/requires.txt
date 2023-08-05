@@ -1,0 +1,14 @@
+river
+
+[dev]
+black
+flake8
+ipython
+matplotlib
+pytest
+mypy
+pylint
+networkx
+
+[test]
+pytest

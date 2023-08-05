@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: fall-ml
+Version: 0.0.1
+Summary: Real-time lifelong machine learning
+Author: "Ben Halstead"
+Author-email: Ben Halstead <benhalstd@gmail.com>
+License: BSD 3-Clause License
+        
+        Copyright (c) 2022, Ben Halstead
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its
+           contributors may be used to endorse or promote products derived from
+           this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://benhalstead.dev/FALL
+Keywords: machine learning,data stream
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE
+
+# fall
+![example workflow](https://github.com/benhals/fall/actions/workflows/ci.yaml/badge.svg)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/BenHals/FALL/HEAD?labpath=examples%2F)
+
+
+A python package for online (streaming) machine learning, focusing on enabling a modular approach to developing, implementing and evaluating adaptive learning systems.
+
+![](https://github.com/BenHals/FALL/blob/main/adaptation.gif)
+
+Please refer to the package [homepage](https://benhalstead.dev/FALL/) for more information and documentation.
+Please refer to the binder [link](https://mybinder.org/v2/gh/BenHals/FALL/HEAD?labpath=examples%2F) for interactive examples. 
+
+
+

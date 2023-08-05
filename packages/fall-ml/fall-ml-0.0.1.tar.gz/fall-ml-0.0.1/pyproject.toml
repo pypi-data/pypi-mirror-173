@@ -1,0 +1,47 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fall-ml"
+version = "0.0.1"
+description = "Real-time lifelong machine learning"
+readme = "README.md"
+authors = [{ name = "Ben Halstead", email = "benhalstd@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["machine learning", "data stream"]
+dependencies = [
+    "river"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "flake8", "ipython", "matplotlib", "pytest", "mypy", "pylint", "networkx"]
+
+[project.urls]
+Homepage = "https://benhalstead.dev/FALL"
+
+# Example configuration for Black.
+[tool.black]
+line-length = 119
+target-version = ['py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | docs
+)/
+'''
