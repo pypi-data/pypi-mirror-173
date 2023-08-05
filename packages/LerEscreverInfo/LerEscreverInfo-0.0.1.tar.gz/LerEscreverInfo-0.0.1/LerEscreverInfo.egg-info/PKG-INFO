@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: LerEscreverInfo
+Version: 0.0.1
+Summary: Pacote python para cadastrar e ler informações como o nome, o CPF e o endereco
+Home-page: UNKNOWN
+Author: Pedro Benitah Vieira Sanchez de Melo
+Author-email: pedrobenitah@gmail.com
+License: MIT License
+Keywords: Pacote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# pacotepypi
+
+**LerEscreverInfo** Ã‰ um pacote para cadastrar e buscar os itens cadastrados, sendo os itens: Cpf, Nome e Endereco.
+
+## DependÃªncias
+**Python 3.6** ou posterior
+
+
+## ComeÃ§ando o uso
+VocÃª vai precisar instalar o pacote **LerEscreverInfo**, para isso basta executar:
+```
+pip install LerEscreverInfo
+```
+
+## FunÃ§Ã£o
+
+* `interacao ()` - Solicita as informaÃ§Ãµes do usuÃ¡rio
+* `armazenar ()` - Armazena as informaÃ§Ãµes em um arquivo .txt
+* `pesquisa ()` - Pesquisa um cpf a escolha do usuÃ¡rio
+
+

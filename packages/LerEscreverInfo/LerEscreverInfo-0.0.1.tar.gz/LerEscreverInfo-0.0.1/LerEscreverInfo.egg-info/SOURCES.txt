@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+LerEscreverInfo/__init__.py
+LerEscreverInfo/armazenamento.py
+LerEscreverInfo/consulta.py
+LerEscreverInfo/interacao.py
+LerEscreverInfo.egg-info/PKG-INFO
+LerEscreverInfo.egg-info/SOURCES.txt
+LerEscreverInfo.egg-info/dependency_links.txt
+LerEscreverInfo.egg-info/top_level.txt
