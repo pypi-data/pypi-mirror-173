@@ -1,0 +1,13 @@
+addini
+addoption
+callspec
+conftests
+getini
+hookimpl
+parametrized
+repo
+runpytest
+testdir
+tmpdir
+tryfirst
+untyped
