@@ -1,0 +1,14 @@
+lapidary_base/__init__.py,sha256=SvaoAaP3kDJVIA-zyxaAFZonc8C7quymXedXCm7BBeQ,174
+lapidary_base/_params.py,sha256=NHWJHrtz7qAHuAu8oMEyA1ckGkcIghJHMBSkW1C3lJg,2665
+lapidary_base/absent.py,sha256=B4QwV-wv_M2GlQZKpLhlc2uwh5mMCSqN8yY6RvfFSVY,482
+lapidary_base/api_base.py,sha256=jJ5rxYrQPB3nCVRznSpG_-wIliVtKnsJyAh4jxOViZI,2938
+lapidary_base/http_consts.py,sha256=5l2GKxACwJtv1KbPIv-n12NoWmvuHIBV2QMMo92lPNw,79
+lapidary_base/mime.py,sha256=eXM5wfsSRCorB7firG1gpAW1wxR8RML9x0eqUk5rLlY,369
+lapidary_base/params.py,sha256=MsZsIbFxadcKEseA-_tr_wUdfqy11GPrzkGZv7S5JpU,318
+lapidary_base/pydantic_utils.py,sha256=NZ6RCv37ozl349WHi4IPgcrpC3s-yPEW3cJdgBI0UXg,274
+lapidary_base/request.py,sha256=MxzlXadwV14bnxU_GXQBmzWy5bwtJ-aShTlAn936rJ0,497
+lapidary_base/response.py,sha256=8StusLwwUs2dEG9wXbTYgBl39OEzVGJLP4ab_c86kp0,2436
+lapidary_base/security.py,sha256=xbKdkvpl4ZnTof9npFWoJooTB7J_lDz_AFJ1T6V0i5s,1163
+lapidary_base-0.5.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+lapidary_base-0.5.1.dist-info/METADATA,sha256=61U52ObGQufjMV6cYwZl7AUO7oU9tU_31Ywfuv47EQs,862
+lapidary_base-0.5.1.dist-info/RECORD,,
