@@ -1,0 +1,9 @@
+LICENSE,sha256=KYFpjFKtqnkjC2fQPbUMgf713VfLOZwwE2YTKQUCSBg,11361
+luxhouse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+luxhouse/database.py,sha256=iPb8GV5_60izVseqFTO691n6m9au9YWZqT00KibsUTI,912
+luxhouse/model.py,sha256=LpY0hMKSdtN6agJ_sE3o_l0F_jbNvo5HRyY4hnj1SNY,5898
+luxhouse/scrapping.py,sha256=cwfwR1tnYFI-CntZ-Q9RgvPopxvfNWLQ-UKUShRt8xc,3071
+luxhouse-0.1.8.dist-info/LICENSE,sha256=KYFpjFKtqnkjC2fQPbUMgf713VfLOZwwE2YTKQUCSBg,11361
+luxhouse-0.1.8.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+luxhouse-0.1.8.dist-info/METADATA,sha256=Mr96TCHRnlhS6sp0ple7MkBQHfVE_thcwvA2-qKwfgc,745
+luxhouse-0.1.8.dist-info/RECORD,,
