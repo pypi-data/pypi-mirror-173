@@ -1,0 +1,12 @@
+pandas
+numpy
+puzpy
+pdfkit
+pypdf2
+rich
+networkx
+
+[test]
+pip-tools
+pytest
+black
