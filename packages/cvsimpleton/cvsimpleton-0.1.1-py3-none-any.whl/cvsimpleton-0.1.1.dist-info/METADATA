@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: cvsimpleton
+Version: 0.1.1
+Summary: Write less boilerplate code in OpenCV
+Home-page: https://github.com/JiayouQin/cvSimlepton
+Author: JiayouQin
+Author-email: JiayouQinCN@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/JiayouQin/Python-projects/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+    COMMANDS
+
+    Window
+    imshow          WIP, as a substitute for original imshow in OPENCV, passing in on image variable name in string type, variable name will be displayed as title. Resizable window as default.
+    Utility
+    converge        use eitehr mean or gaussian kernel to make a high pass filter, low frequency signal will be merged into average color. 
+                    (https://github.com/JiayouQin/Python-projects/tree/master/17%20Image%20Balancing)
+    list_images     return all image files in the directory including sub directories in a list
+    imread          identical to openCV imread but supports UTF-8 formatted string path
+    imwrite         identical to openCV imwrite but supports UTF-8 formatted string path
+    open_morph      perform open operation with given kernel
+    open_circle     perform open operation with circular kernel
+    open_rect       perform open operation with rectangular kernel
+    close_morph     perform close operation with given kernel
+    close_circle    perform close operation with circular kernel
+    close_rect      perform close operation with rectangular kernel
+    bgr_to_hsv      convert a bgr image to hsv image, if parameter 2 is true then returned image will be split into 3 channels
+    add_noise       add noise of given type to image (0:gaussian, 1:s&p), accepts both string and integer number
+
+    命令列表
+    窗口
+    imshow          测试中功能，替代原OPENCV功能，传入变量名称字符串，以变量名为标题显示该图像，默认可调节窗口大小。
+    功能
+    converge        使用均值或高斯卷积核作为高通滤波核，低频信号并入直方图均值。
+                    (https://github.com/JiayouQin/Python-projects/tree/master/17%20Image%20Balancing)
+    list_images     返回目录下所有子文件夹中图像到列表中
+    imread          与原OPENCV功能相同并支持UTF-8格式
+    imwrite         与原OPENCV功能相同并支持UTF-8格式
+    open_morph      使用指定核做开操作
+    open_circle     使用圆形核做开操作
+    open_rect       使用方形核做开操作
+    close_morph     使用指定核做闭操作
+    close_circle    使用圆形核做闭操作
+    close_rect      使用方形核做闭操作
+    bgr_to_hsv      将BGR图像转换为HSV图像，如果第二参数为True返回图像三通道分离三张图像
+    add_noise       给图像加入指定噪声(0:高斯, 1:s&p)，可传入字符串或整数
+
+
+
+
+
