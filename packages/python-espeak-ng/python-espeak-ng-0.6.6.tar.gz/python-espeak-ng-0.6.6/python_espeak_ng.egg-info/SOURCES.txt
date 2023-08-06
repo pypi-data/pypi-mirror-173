@@ -1,0 +1,9 @@
+README.md
+setup-ng.py
+setup.py
+espeak/__init__.py
+espeak/espeakmodulecore.cpp
+python_espeak_ng.egg-info/PKG-INFO
+python_espeak_ng.egg-info/SOURCES.txt
+python_espeak_ng.egg-info/dependency_links.txt
+python_espeak_ng.egg-info/top_level.txt
