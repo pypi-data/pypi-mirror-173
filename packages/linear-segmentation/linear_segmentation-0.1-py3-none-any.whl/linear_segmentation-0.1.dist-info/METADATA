@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: linear-segmentation
+Version: 0.1
+Summary: Automatic sparse sampling of 1-D array into linear segments minimizing error
+Home-page: http://github.com/andermi/linear_segmentation
+Author: Michael Anderson
+Author-email: manders9@jhu.edu
+License: MIT
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+
+# linear_segmentation
+Automatic sparse sampling of 1-D array into linear segments that minimize error
