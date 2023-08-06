@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+1.2.1
+-----
+
+* fix filters by not model field
