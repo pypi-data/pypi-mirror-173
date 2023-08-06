@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Alpha_Rabbit.egg-info/PKG-INFO
+Alpha_Rabbit.egg-info/SOURCES.txt
+Alpha_Rabbit.egg-info/dependency_links.txt
+Alpha_Rabbit.egg-info/requires.txt
+Alpha_Rabbit.egg-info/top_level.txt
+Alpha_Rabbit.egg-info/zip-safe
