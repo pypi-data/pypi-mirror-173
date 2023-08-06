@@ -1,0 +1,11 @@
+tap_gainsightpx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_gainsightpx/client.py,sha256=j9D-lE-Wzdl9GTQiqy7zNiZ8FAxlzRVoHfI32MhFTT4,2847
+tap_gainsightpx/streams.py,sha256=iDtOnTtUDHbrg1agSaA_-2Mi4khdkfpbgLTrR6DqZ5E,19688
+tap_gainsightpx/tap.py,sha256=xGqYPFz0fxZcDAeDnYnTEQ4hV4SZINOHbYe1LVuxGxI,2817
+tap_gainsightpx/tests/__init__.py,sha256=n-1zcfXHW1xqcOG0AO0oTQGhXL8EsLQ1pJmj3JzQNEg,38
+tap_gainsightpx/tests/test_core.py,sha256=2zElMuzK-QP0fjg8tSrzq_HImuunRt1Kn9-ZdRY_eOg,4174
+tap_gainsightpx-1.0.0.dist-info/entry_points.txt,sha256=0BnKWpi60PKfFppuJpV35d7LEBefS8Pr-lD4SkYC5fU,74
+tap_gainsightpx-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tap_gainsightpx-1.0.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+tap_gainsightpx-1.0.0.dist-info/METADATA,sha256=MTVsKObj9zQsu2lPBFuOaQoUwTqgfPjac-3ErD47Lhg,4678
+tap_gainsightpx-1.0.0.dist-info/RECORD,,
