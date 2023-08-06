@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+DARKING7X/DARKING7X.py
+DARKING7X/__init__.py
+DARKING7X.egg-info/PKG-INFO
+DARKING7X.egg-info/SOURCES.txt
+DARKING7X.egg-info/dependency_links.txt
+DARKING7X.egg-info/requires.txt
+DARKING7X.egg-info/top_level.txt
