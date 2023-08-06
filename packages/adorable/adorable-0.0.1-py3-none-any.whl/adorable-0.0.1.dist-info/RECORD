@@ -1,0 +1,13 @@
+adorable/__init__.py,sha256=WSG_AY8kqgWyu6XGbuyuwCZfazC3v2bCWscXDCpla0w,729
+adorable/_palette.py,sha256=QMjwuM8qT53vRvA8NL1WHnYlabswKA1GxDek7wy5gBY,4775
+adorable/ansi.py,sha256=02NFziSc7mav0fsVKqe7519XeWwKlEnvoqUTZYYn51M,3787
+adorable/color.py,sha256=tOjOV2-TS3Dfpguv-eDZzXcg7eI5y851pRMo7ryKGfQ,11039
+adorable/markup.py,sha256=Tli8LfFziIFDFXZ_zZ-M9xAEKomOfgTrv977Y59K2Lw,3948
+adorable/style.py,sha256=IjgQ7XgKB6PReb6F3pTH-24g3P5tKz9UGKePEBA7fSQ,720
+adorable/term.py,sha256=wP3mp4YRH-QFcR2JOaI_sAuTZhebPwsCbyEBiBnnW44,2439
+adorable/utils.py,sha256=OYLkRP8qPnHtME3VV7N0aQCmG8LRON5eRl8mgGgBuLw,2285
+adorable/webcolors.py,sha256=udhyDCgBVGSuFSzV7hWGldHOvrpDXOyLZmlj6PFBUfE,4479
+adorable-0.0.1.dist-info/METADATA,sha256=8asOHh4kLkd-gXuPjF1xDSXl9rss67kzJa2zPawLUz4,1584
+adorable-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+adorable-0.0.1.dist-info/top_level.txt,sha256=h3eUB-qKzgb1tkLg7PJUmKMD6Zbq3HhgawuT3MSUUFM,9
+adorable-0.0.1.dist-info/RECORD,,
