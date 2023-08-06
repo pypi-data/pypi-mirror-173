@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aibuilder
+Version: 0.0.53
+Summary: Python SDK to register ML model with AI Builder
+Home-page: UNKNOWN
+Author: Microsoft Corporation
+License: MIT
+Requires-Dist: pytest (==6.1.2)
+Requires-Dist: msal (==1.15.0)
+Requires-Dist: requests (==2.25.0)
+Requires-Dist: prance (==0.18.2)
+Requires-Dist: openapi-spec-validator (==0.3.0)
+Requires-Dist: PyJWT (==2.4.0)
+Requires-Dist: azureml-sdk (==1.38.0)
+Requires-Dist: polling2 (==0.4.7)
+
+Project description
+
+
