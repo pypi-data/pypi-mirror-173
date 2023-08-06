@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Colorings
+Version: 1.0.1
+Summary: Color text(with hex,rgb...) and move Cursor
+Home-page: UNKNOWN
+Author: Antech
+Author-email: antjules26@gmail.com
+License: MIT
+Keywords: colors
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+
+#Colorings
+
+## All infos on https://github.com/antjules27/Colorings
+
+ChangeLog
+__________________
+
+0.0.1(26/10/2022)
+=================
+ - First Release
+

@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LISCENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Colorings.egg-info/PKG-INFO
+Colorings.egg-info/SOURCES.txt
+Colorings.egg-info/dependency_links.txt
+Colorings.egg-info/top_level.txt
+colorings/__init__.py
