@@ -1,0 +1,2 @@
+[nbdev]
+recursion_visualizer = recursion_visualizer._modidx:d
