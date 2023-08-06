@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+djomopdf/__init__.py
+djomopdf/pdf2image.py
+djomopdf/pdf2text.py
+djomopdf.egg-info/PKG-INFO
+djomopdf.egg-info/SOURCES.txt
+djomopdf.egg-info/dependency_links.txt
+djomopdf.egg-info/top_level.txt
