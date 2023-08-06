@@ -1,0 +1,10 @@
+friendly_idle/__init__.py,sha256=v_323Uao_GFDxI7udadLF714PYgrxCLhy_Vh7nsuxFE,213
+friendly_idle/__main__.py,sha256=kHjD3AK2JlOyhkEsa_WDBAIPqEJPufR2ozSKoSBvAo0,165
+friendly_idle/patch_idle.py,sha256=37Frk0IPzDEyEcu1zU54BR0xKjeqUqmyda1_xVl8kh4,9987
+friendly_idle/patching_hook.py,sha256=ey_cQsXsdECJQCuahWP2rHRqDh139pcjZIJV1iH6ZgE,2716
+friendly_idle-0.4.dist-info/LICENSE,sha256=l30OC3remdYKcyvWe4f5lN0tZ4ABKMZq7vyZUoSTT6o,1092
+friendly_idle-0.4.dist-info/METADATA,sha256=QCZCN4R7cUXQBk0tVhBwUE3oVwfF4O3tFWCVNlY_iQw,1854
+friendly_idle-0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+friendly_idle-0.4.dist-info/entry_points.txt,sha256=AhwtH7eLMKFOBm68bcvnzzrCTc0lfRMHpR_ZuKGuUvs,106
+friendly_idle-0.4.dist-info/top_level.txt,sha256=MCvN5MbXVKiFqSFZ9dPWdPKCH_eVW7RcbV-HxCivFSc,14
+friendly_idle-0.4.dist-info/RECORD,,
