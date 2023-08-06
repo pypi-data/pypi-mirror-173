@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: function-output-monitor
+Version: 0.1.0
+Summary: Watches for a specific function return to change before timeout expires
+License: MIT
+Author: Gabriel Chamon Araujo
+Author-email: gabriel.chamon@tutanota.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# function-output-monitor
+Watches for a specific function output to change before timeout expires
+
