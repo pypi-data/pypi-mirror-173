@@ -1,0 +1,15 @@
+dot_tools/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+dot_tools/resources/traefik.compose.yaml,sha256=RUxY-N6lHXvoS8JQTjNkoaYQYlOM_IkzUU_AJ5ELI9M,1874
+dot_tools/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dot_tools/scripts/add_dot_files.py,sha256=yFy45BOvDnA20R13gwYsDf5fq9bKA0Xw0Fsp2OMOvkU,1331
+dot_tools/scripts/handle_envrc.py,sha256=7Tg0-YYOdYCH4DRcaPW8QQq54AlDGcW1CcxHcVkMoiE,5462
+dot_tools/scripts/release.py,sha256=3cY63Ji3LvVgs0qsZwjWBcrX5nYhutwX1-K1MCjprvw,3374
+dot_tools/scripts/traefik_run.py,sha256=__4Bc5C7gpGTkTft7LX6LnrEivw7mxAjUwMWY4ddwQ8,1917
+dot_tools/templates/editorconfig.tmpl,sha256=d04hUs5salm-m3TDeC19aK6TyRJnUPiSvwoWgTJPemQ,330
+dot_tools/templates/projectile.tmpl,sha256=5owangk8N_MLhmcO96_20qcCSdCH6cpZgL_zzhUEhY8,7
+dot_tools/templates/pyproject.tmpl,sha256=y4-Cro5SR4JhBMKWQ8r2xEd_awSKYvznzoXU6ukXUK4,676
+dot_tools/templates/yamllint.tmpl,sha256=OMp3PAheh2Z_ln1eZBN6EmtUrWKZgvstlOSqUH03E4Q,185
+dot_tools-1.0.0.dist-info/METADATA,sha256=pdxpKOZhAeXNIHD6agbbUZIoMqTvoavdwt_ynofBrTo,105
+dot_tools-1.0.0.dist-info/WHEEL,sha256=cdcF4Fbd0FPtw2EMIOwH-3rSOTUdTCeOSXRMD1iLUb8,105
+dot_tools-1.0.0.dist-info/licenses/LICENSE,sha256=x33ex9SyVcmbp_0xXsp7dP5e_Xx4cRX_edziI4_hcTs,1071
+dot_tools-1.0.0.dist-info/RECORD,,
