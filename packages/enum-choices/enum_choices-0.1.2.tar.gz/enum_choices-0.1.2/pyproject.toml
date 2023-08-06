@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "enum_choices"
+version = "0.1.2"
+description = "a choices"
+authors = ["huoyinghui <yhhuo@yunjinginc.com>"]
+homepage = "https://github.com/pydtools/choices/"
+repository = "https://github.com/pydtools/choices/"
+documentation = "https://github.com/pydtools/choices/wiki"
+include = ["CHANGELOG.md"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/pydtools/choices/issues"
+"github" = "https://github.com/pydtools/choices/"
+"Documentation" = "https://github.com/pydtools/choices/wiki"
+
+
