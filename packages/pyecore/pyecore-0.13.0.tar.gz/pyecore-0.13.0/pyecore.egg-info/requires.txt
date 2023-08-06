@@ -1,0 +1,4 @@
+ordered-set>=4.0.1
+restrictedpython>=4.0b6
+future-fstrings
+lxml
