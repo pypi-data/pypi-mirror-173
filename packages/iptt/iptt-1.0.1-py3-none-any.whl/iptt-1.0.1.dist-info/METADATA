@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: iptt
+Version: 1.0.1
+Summary: InterPlanetary Tunnel Toolkit
+Home-page: https://gitlab.com/galacteek/iptt/iptt
+Author: cipres
+Author-email: galacteek@protonmail.com
+License: DEV-NULL
+Keywords: ipfs,http
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: async-timeout (>=3.0.0)
+Requires-Dist: attrs (>=22.1.0)
+Requires-Dist: aioipfs (>=0.5.9)
+Requires-Dist: aiologger (>=0.7.0)
+Requires-Dist: ptpython (>=3.0.20)
+Requires-Dist: uvloop (>=0.17.0)
+
