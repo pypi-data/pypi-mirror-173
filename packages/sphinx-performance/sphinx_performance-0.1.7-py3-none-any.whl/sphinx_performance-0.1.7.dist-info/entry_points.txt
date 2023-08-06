@@ -1,0 +1,4 @@
+[console_scripts]
+sphinx-analysis=sphinx_performance.analysis:cli_analysis
+sphinx-performance=sphinx_performance.performance:cli_performance
+
