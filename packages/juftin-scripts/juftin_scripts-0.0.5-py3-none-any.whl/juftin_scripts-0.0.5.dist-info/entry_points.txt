@@ -1,0 +1,4 @@
+[console_scripts]
+browse=juftin_scripts.code_browser:main
+rotate-aws-profile=juftin_scripts.rotation:rotate
+
