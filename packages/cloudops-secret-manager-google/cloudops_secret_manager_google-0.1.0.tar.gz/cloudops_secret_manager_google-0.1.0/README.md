@@ -1,0 +1,1 @@
+# cloudops-secret-manager-google
