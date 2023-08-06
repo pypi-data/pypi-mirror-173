@@ -1,0 +1,1 @@
+This is function which will help you to find the day of the any date in the calender.

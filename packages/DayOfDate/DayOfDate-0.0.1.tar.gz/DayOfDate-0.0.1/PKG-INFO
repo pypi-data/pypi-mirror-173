@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: DayOfDate
+Version: 0.0.1
+Summary: To find day for the given date
+Home-page: 
+Author: IndraKumarR
+Author-email: indra0207accs@gmail.com
+License: MIT
+Keywords: day
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This is function which will help you to find the day of the any date in the calender.
+
+Change Log
+==========
+
+0.0.1 (25/10/2022)
+------------------
+- First Release
+

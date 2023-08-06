@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+DayOfDate/__init__.py
+DayOfDate.egg-info/PKG-INFO
+DayOfDate.egg-info/SOURCES.txt
+DayOfDate.egg-info/dependency_links.txt
+DayOfDate.egg-info/top_level.txt
