@@ -1,0 +1,2 @@
+https://pypi.example.org/pypi/somedep/
+https://download.pytorch.org/whl/cu113
