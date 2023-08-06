@@ -1,0 +1,10 @@
+setup.py
+frankfnl_probability/Binomialdistribution.py
+frankfnl_probability/Gaussiandistribution.py
+frankfnl_probability/Generaldistribution.py
+frankfnl_probability/__init__.py
+frankfnl_probability.egg-info/PKG-INFO
+frankfnl_probability.egg-info/SOURCES.txt
+frankfnl_probability.egg-info/dependency_links.txt
+frankfnl_probability.egg-info/not-zip-safe
+frankfnl_probability.egg-info/top_level.txt
