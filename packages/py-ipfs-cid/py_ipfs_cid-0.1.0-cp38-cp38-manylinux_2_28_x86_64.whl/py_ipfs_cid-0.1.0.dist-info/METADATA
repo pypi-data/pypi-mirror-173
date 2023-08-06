@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: py-ipfs-cid
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: pytest; extra == 'tests'
+Provides-Extra: tests
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# Python IPFS CID
+
+Computes IPFS CIDs from Python code.
+
+This library computes the IPFS DAG of the input data and then returns the CID of the root node.
+This returns the same CID as would be computed by `ipfs add <file>`.
+
+## Example
+
+```python
+from py_ipfs_cid import compute_cid
+cid: str = compute_cid(b"1234")  # Returns QmTPqcLhVnCtjoYuCZwPzfXcFrUviiPComTepHfEEaGf7g
+```
+
+## Current limitations
+
+* Only supports CID v0
+* Only supports files, not directories
+* Only supports the default IPFS block size (256 KiB)
+
