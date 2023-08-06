@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tefas_ui.py
+tefas_ui.egg-info/PKG-INFO
+tefas_ui.egg-info/SOURCES.txt
+tefas_ui.egg-info/dependency_links.txt
+tefas_ui.egg-info/entry_points.txt
+tefas_ui.egg-info/requires.txt
+tefas_ui.egg-info/top_level.txt

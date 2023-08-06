@@ -1,0 +1,5 @@
+rich>=11.0.0
+tefas-crawler==0.3.3
+
+[forex]
+forex-python>=1.8
