@@ -1,0 +1,10 @@
+README.md
+setup.py
+mac/__init__.py
+mac/api_vendors.py
+mac/vendor.py
+mac_vendors.egg-info/PKG-INFO
+mac_vendors.egg-info/SOURCES.txt
+mac_vendors.egg-info/dependency_links.txt
+mac_vendors.egg-info/requires.txt
+mac_vendors.egg-info/top_level.txt
