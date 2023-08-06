@@ -1,0 +1,5 @@
+[console_scripts]
+panda3d-frame = panda3d_frame:main
+
+[gui_scripts]
+panda3d-frame = panda3d_frame:main
