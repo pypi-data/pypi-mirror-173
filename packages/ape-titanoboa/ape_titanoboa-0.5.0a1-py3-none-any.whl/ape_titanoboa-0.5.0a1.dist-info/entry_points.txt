@@ -1,0 +1,3 @@
+[pytest11]
+ape-titanoboa = ape_titanoboa.pytest_plugin
+
