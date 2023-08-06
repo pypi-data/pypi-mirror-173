@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tmil
+Version: 0.0.1
+Summary: Transformer based Multiple Instance Learning
+Home-page: https://github.com/agentdr1/LA_MIL
+Author: Daniel Reisenbüchler
+Author-email: hpc.agent.dr@gmail.com
+License: MIT
+Keywords: artificial intelligence,deep learning,transformers,multiple instance learning,whole slide image,genetic alteration prediction,local-attention
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENSE.md
