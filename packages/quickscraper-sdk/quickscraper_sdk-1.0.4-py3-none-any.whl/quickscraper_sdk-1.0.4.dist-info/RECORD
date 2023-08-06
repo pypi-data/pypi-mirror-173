@@ -1,0 +1,10 @@
+quickscraper_sdk/__init__.py,sha256=MYRO-aa5E_6LV9IiOJw_a-VBf_cQDthWFN_4FLRXS2E,7028
+quickscraper_sdk/constant.py,sha256=KInH2wsDfAneTjNYivcM4BtuFemCa_UUVOaedNvfmbo,105
+tests/__init__.py,sha256=6jBrhUAyxpEHsIG2WpPymLeS7FvVS2XDo2cdPx9qiDI,65
+tests/constant.py,sha256=aUKWetanoh62t8r_ResuiAW4kqtnGBazXgLPLbycphE,185
+tests/test_cases.py,sha256=WecMX_NLD06tLnPonw_wkOeby_B7f5JWY0Qqftnve-Y,5138
+quickscraper_sdk-1.0.4.dist-info/LICENSE,sha256=qsMLhifd8KWyF7NNMkIIPwUG6yz-3JGADTObkz1sGCw,1071
+quickscraper_sdk-1.0.4.dist-info/METADATA,sha256=KrnAegXdozTsMKO0yMais_9250XyXIuRsYSE5E0Uo-8,2856
+quickscraper_sdk-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quickscraper_sdk-1.0.4.dist-info/top_level.txt,sha256=QkNMMYAEdAj6OURlUcHxYLG5ZMoiRfYfyNPgxD8JLFY,23
+quickscraper_sdk-1.0.4.dist-info/RECORD,,
