@@ -1,0 +1,16 @@
+setuptools
+wheel
+pywin32
+appdirs
+dewloosh.core
+dewloosh.mpl
+dewloosh.plotly
+nbformat
+comtypes>=1.1.11
+numpy
+pandas
+latexdocs
+awkward
+pyvista
+polymesh
+sigmaepsilon
