@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: square-elk-json-formatter
+Version: 0.0.2
+Home-page: https://github.com/UKP-SQuARE/square-elk-json-formatter
+Download-URL: https://github.com/UKP-SQuARE/square-elk-json-formatter/archive/refs/tags/v0.0.2.tar.gz
+Author: UKP
+Author-email: baumgaertner@ukp.informatik.tu-darmstadt.de
+License: MIT
+Requires-Dist: python-json-logger (==2.0.1)
+
