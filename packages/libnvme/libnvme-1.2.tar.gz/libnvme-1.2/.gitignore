@@ -1,0 +1,15 @@
+a.out
+*.o
+*.ol
+*.os
+*~
+*.swp
+*.a
+*.so.*
+*.tar.gz
+cscope.*
+
+.build
+
+subprojects/*
+!subprojects/*.wrap
