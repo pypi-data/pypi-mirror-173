@@ -1,0 +1,15 @@
+g2pk2/__init__.py,sha256=795zZq32JAUnvsizb4E1z80qsIC9GTsSCc9vr9UeGgQ,99
+g2pk2/english.py,sha256=sqffn4g5UBKstnrBQFeT1yMMjBozpaLMIW_CkmQi9Lc,6643
+g2pk2/g2pk2.py,sha256=sE2mzdqsqde3CT4AFQWbfL7qjQlGFL2wLyh12ZKXnkQ,5888
+g2pk2/idioms.txt,sha256=DJwNOUOs45vMomEpHzy0DcfdEhrTJUM91_fgFOVQmHE,2617
+g2pk2/numerals.py,sha256=LynT64VAlJfR31WVobQLy6H3AXlyBloIyD2A1HNLEyA,4592
+g2pk2/regular.py,sha256=Z7TiEi6zVE84MGCGRhPX7hlyInoz64mnAltNY26tlPY,2787
+g2pk2/rules.txt,sha256=t-az3e7BsUBqrAuphmXamSGiCI-q9IQ6H4Eg6DxM4z8,14803
+g2pk2/special.py,sha256=sURhMorR-05PpiA9Q8dA1lmY2fV_juD1oJ7ZoDOg_f4,5126
+g2pk2/table.csv,sha256=Vjjt87tdPqggwuGGIikj0egsoG026oHDq1epdQzUU_k,5404
+g2pk2/utils.py,sha256=HZ1J_x7eLDKT6gma61WaV2KPb_fFraygcqILAWXryBg,7270
+g2pk2-0.0.0.dist-info/LICENSE,sha256=V8BsD49WlHW8ZCMHTOKykEW4hWTASEKYxCrSm4_7Hns,11362
+g2pk2-0.0.0.dist-info/METADATA,sha256=FYKwSaOB9SR_swNWQ2d3IAvwAUzKK5LUfbaxILcvLJU,1622
+g2pk2-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+g2pk2-0.0.0.dist-info/top_level.txt,sha256=QqtKtCgfWepYYEIaaWRU62WvGv7DyAg6EtnzmJnu39I,6
+g2pk2-0.0.0.dist-info/RECORD,,
