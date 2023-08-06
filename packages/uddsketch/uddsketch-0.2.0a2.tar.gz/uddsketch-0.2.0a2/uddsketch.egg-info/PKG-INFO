@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: uddsketch
+Version: 0.2.0a2
+Summary: uddsketch
+Home-page: https://github.com/jettify/uddsketch-py
+Download-URL: https://pypi.org/project/uddsketch/
+Author: Nikolay Novik
+Author-email: nickolainovik@gmail.com
+License: Apache 2
+Project-URL: Website, https://github.com/jettify/uddsketch
+Project-URL: Documentation, https://uddsketch.readthedocs.io
+Project-URL: Issues, https://github.com/jettify/uddsketch/issues
+Keywords: uddsketch,ddsketch
+Platform: POSIX
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7.0
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+uddsketch
+=============
+.. image:: https://github.com/jettify/uddsketch-py/workflows/CI/badge.svg
+   :target: https://github.com/jettify/uddsketch-py/actions?query=workflow%3ACI
+   :alt: GitHub Actions status for master branch
+.. image:: https://codecov.io/gh/jettify/uddsketch-py/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/jettify/uddsketch-py
+.. image:: https://img.shields.io/pypi/pyversions/uddsketch.svg
+    :target: https://pypi.org/project/uddsketch
+.. image:: https://img.shields.io/pypi/v/uddsketch.svg
+    :target: https://pypi.python.org/pypi/uddsketch
+..
+.. image:: https://readthedocs.org/projects/uddsketch/badge/?version=latest
+    :target: https://uddsketch.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+
+**uddsketch** data structure.
+
+
+Simple example
+--------------
+
+.. code:: python
+
+    from uddsketch import UDDSketch
+
+    hist = UDDSketch(initial_error=0.01)
+
+    for i in range(0, 100):
+        hist.add(0.1 * i)
+    q = hist.quantile(0.5)
+    print('quantile: {}'.format(q))
+
+
+Installation
+------------
+Installation process is simple, just::
+
+    $ pip install uddsketch
+
+Changes
+-------
+
+0.0.1
+------------------
+* Initial release.
