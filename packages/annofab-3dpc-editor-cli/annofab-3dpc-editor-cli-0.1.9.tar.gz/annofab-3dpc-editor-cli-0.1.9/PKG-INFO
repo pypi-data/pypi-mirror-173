@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: annofab-3dpc-editor-cli
+Version: 0.1.9
+Summary: 
+Author: Kurusugawa Computer Inc.
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: annofabapi (>=0.62.0)
+Requires-Dist: boto3 (>=1.17.20,<2.0.0)
+Requires-Dist: dataclasses-json (>=0.5.7,<0.6.0)
+Requires-Dist: fire (>=0.3.1,<0.4.0)
+Requires-Dist: more-itertools (>=8.5.0,<9.0.0)
+Requires-Dist: numpy (>=1.23.0,<2.0.0)
+Requires-Dist: scipy (>=1.9.0,<2.0.0)
