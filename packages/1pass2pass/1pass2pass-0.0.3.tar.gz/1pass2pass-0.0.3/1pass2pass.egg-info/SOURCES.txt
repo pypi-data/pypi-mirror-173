@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+1pass2pass.egg-info/PKG-INFO
+1pass2pass.egg-info/SOURCES.txt
+1pass2pass.egg-info/dependency_links.txt
+1pass2pass.egg-info/requires.txt
+1pass2pass.egg-info/top_level.txt
+bin/1pass2pass
