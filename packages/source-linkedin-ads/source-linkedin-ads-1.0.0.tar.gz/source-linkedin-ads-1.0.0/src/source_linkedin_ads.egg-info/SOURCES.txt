@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/source_linkedin_ads.egg-info/PKG-INFO
+src/source_linkedin_ads.egg-info/SOURCES.txt
+src/source_linkedin_ads.egg-info/dependency_links.txt
+src/source_linkedin_ads.egg-info/top_level.txt
