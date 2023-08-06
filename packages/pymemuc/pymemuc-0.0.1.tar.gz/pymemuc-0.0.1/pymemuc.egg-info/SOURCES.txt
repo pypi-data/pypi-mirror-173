@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+pymemuc/__init__.py
+pymemuc/__main__.py
+pymemuc.egg-info/PKG-INFO
+pymemuc.egg-info/SOURCES.txt
+pymemuc.egg-info/dependency_links.txt
+pymemuc.egg-info/top_level.txt
