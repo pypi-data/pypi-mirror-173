@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+mathplug/__init__.py
+mathplug/mathplug.py
+mathplug/test_mathplug.py
+mathplug/mathplug.egg-info/PKG-INFO
+mathplug/mathplug.egg-info/SOURCES.txt
+mathplug/mathplug.egg-info/dependency_links.txt
+mathplug/mathplug.egg-info/requires.txt
+mathplug/mathplug.egg-info/top_level.txt
