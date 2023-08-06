@@ -1,0 +1,13 @@
+hpman/__init__.py,sha256=06r3E7WONxmb9JUptWTIVXT0ezBALXQjxy8iOS1DqEo,1034
+hpman/__version__.py,sha256=HgQ4T4KDuBmf7Lbqf5A05GurzSvzq59dGx5CPNvpvno,234
+hpman/hpm.py,sha256=k_aColHYHlaWaW1Ae9mti0GBZIQiZsIvpB13rcCDj7I,15485
+hpman/hpm_db.py,sha256=JDwlRzXM_Jea09gvHyR33_A2-hK3DPxkoLyrLuE4csY,11901
+hpman/hpm_zoo_monkey_patch.py,sha256=2WDAlyGuaxp-YRjtIKu7vLVI1emczB5FfpywVq03Haw,627
+hpman/m.py,sha256=scfRZzDad8VP4lyzM3FgFVQB5o9Hoz_nCTdFvlQqHfI,84
+hpman/primitives.py,sha256=gzSV0f-6lM-sJlcCjUQLOEH7LAf0Vsw0_1Gjrj7FFFQ,520
+hpman/source_helper.py,sha256=i6PP5A3NqISdsUDfTCgScm0f7kZ4YeDevXH9-RVsERQ,4756
+hpman-0.11.0.dist-info/LICENSE,sha256=-sB6mzZZWL0nfA3BHRAsI4DN9K0djEp3LzdeKjRqK3Y,1072
+hpman-0.11.0.dist-info/METADATA,sha256=JkJinYGBqSKW06r6Kga4i3DF7Doa29zsClfgzJsiqK4,21417
+hpman-0.11.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+hpman-0.11.0.dist-info/top_level.txt,sha256=r2vLeVWa-SsE1qoFN6EMzDQdiHsW1H0cgHVNC85RGn0,6
+hpman-0.11.0.dist-info/RECORD,,
