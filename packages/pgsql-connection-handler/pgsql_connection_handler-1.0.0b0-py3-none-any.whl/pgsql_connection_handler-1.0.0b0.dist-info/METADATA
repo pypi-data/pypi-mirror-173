@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: pgsql-connection-handler
+Version: 1.0.0b0
+Summary: A package that connects to one or more PostgreSQL databases and allows you to retrieve a database connection when required. Depends on psycopg2-binary.
+Home-page: https://github.com/armandtvz/pgsql-connection-handler
+Author: Armandt van Zyl
+Author-email: armandtvz@gmail.com
+License: GPL-3.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: psycopg2-binary
+
+pgsql-connection-handler
+========================
+A package that connects to one or more PostgreSQL databases and allows you
+to retrieve a database connection when required. Depends on psycopg2-binary.
+
+
+Quickstart
+----------
+
+1. Install the package:
+   ```
+   pip install pgsql-connection-handler
+   ```
+
+1. Use the package:
+   ```python
+   from pg_connection_handler import databases, connect_databases
+
+   DATABASES = {
+       'default': {
+           'dbname': 'mydatabase',
+           'user': 'guido',
+           'password': 'SuperS3cr!t',
+           'host': 'localhost',
+           'port': '5432',
+           'sslmode': 'disable',
+           'application_name': 'myapp',
+       },
+       'another_db': {
+           'dbname': 'mydatabase',
+           'user': 'guido',
+           'password': 'SuperS3cr!t',
+           'host': 'localhost',
+           'port': '5432',
+           'sslmode': 'disable',
+           'application_name': 'myapp',
+       },
+   }
+   connect_databases(DATABASES)
+
+   db_connection = databases.get_connection()
+
+   # Or get the connection based on the alias used in DATABASES
+   db_connection = databases.get_connection('db_alias')
+
+   # Or get the database object
+   db = databases.get()
+   db_connection = db.conn
+   ```
+
+
+Compatiblity
+------------
+- Compatible with Python 3.8 and above.
+
+
+Versioning
+----------
+This project follows [semantic versioning][1] (SemVer).
+
+
+License, code of conduct and requirements
+-----------------------------------------
+Check the root of the repo for these files.
+
+
+
+[//]: # (Links)
+
+[1]: https://semver.org/
