@@ -1,0 +1,23 @@
+# __DRIVER_CODE__ imports
+import parallel
+
+# __DRIVER_CODE__ variables
+
+cdef unsigned char inVal
+
+
+# __DRIVER_CODE__ setup
+
+pport = parallel.Parallel(port={{in_signal['args']['addr']}})
+pport.setDataDir(False) # read from data pins, sets PPDATADIR
+sleep_duration = {{config["config"]["tick_len"]}} / (2. * 1e6)
+
+# __DRIVER_CODE__ read
+
+  inVal = <unsigned char>pport.getData()
+  bufCurPtr[0] = inVal
+
+{%- if async %}
+
+  sleep(sleep_duration)
+{%- endif %}

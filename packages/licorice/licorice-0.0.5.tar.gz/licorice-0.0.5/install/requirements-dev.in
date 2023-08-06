@@ -1,0 +1,21 @@
+-r requirements.txt
+
+# testing
+pygame
+pytest
+
+# formatting
+black
+flake8
+isort
+pre-commit
+
+# packaging
+pyinstaller
+twine
+
+# docs
+sphinx
+sphinxcontrib-programoutput
+
+-e file:..#egg=licorice

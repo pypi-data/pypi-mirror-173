@@ -1,0 +1,3 @@
+[console_scripts]
+licorice = licorice.cli:main
+
