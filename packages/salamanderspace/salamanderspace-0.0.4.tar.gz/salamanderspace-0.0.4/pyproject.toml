@@ -1,0 +1,18 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "salamanderspace"
+version = "0.0.4"
+authors = [
+	{name = "Jason Saladiner Jr.", email = "saladiner.jason@gmail.com"},
+]
+description = "A package of usefule aerospace functions"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
