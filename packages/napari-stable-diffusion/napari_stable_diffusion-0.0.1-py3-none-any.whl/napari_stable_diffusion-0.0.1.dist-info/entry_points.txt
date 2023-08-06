@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-stable-diffusion = napari_stable_diffusion:napari.yaml

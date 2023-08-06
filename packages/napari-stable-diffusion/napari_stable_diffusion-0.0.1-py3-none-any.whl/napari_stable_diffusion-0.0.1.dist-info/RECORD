@@ -1,0 +1,13 @@
+napari_stable_diffusion/__init__.py,sha256=D6dd3J1sEgKk8-btRnuSI4UFitEtSYc3MrtFNzq4GM8,297
+napari_stable_diffusion/_widget.py,sha256=duY-3f2ejjPsZUtKau9Qdtj_GlTBcgnQ_bc_GPecJcc,6080
+napari_stable_diffusion/_widget_img2img.py,sha256=D8S3QlkQ3CUhYu-qJzDmoybZioO5dAhay3Kvcy_1WTA,6855
+napari_stable_diffusion/_widget_inpaint.py,sha256=0pR8XTCrZGmu4prKbyzTtBttQ77BDyLuPDBHb1gNttM,7424
+napari_stable_diffusion/napari.yaml,sha256=17lWIJj03uOTU6b604B67ilzFROy_uaUndyjGxUWR6U,943
+napari_stable_diffusion/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_stable_diffusion/_tests/test_widget.py,sha256=4QxcUDy9n5nE0MiQvf_ILeIbdrjEkhiKOLnivYqtG-Q,1307
+napari_stable_diffusion-0.0.1.dist-info/LICENSE,sha256=fSUSe3W0ojBNz05LaV20pw30FoXPEt_NpGhZzdIfmlA,1490
+napari_stable_diffusion-0.0.1.dist-info/METADATA,sha256=ORhNbUxVkOqFDV2v-RBB8KM5XC8taCZ3d6osJZNrSXQ,5647
+napari_stable_diffusion-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+napari_stable_diffusion-0.0.1.dist-info/entry_points.txt,sha256=HafPkgx2nlF2uulBTQEO4Vog_mmG3zSJ4V3DpahchJM,80
+napari_stable_diffusion-0.0.1.dist-info/top_level.txt,sha256=aTzPjy5SNt6L-oPA9JLPD8RriO5kyYTCGoGEw8lDryk,24
+napari_stable_diffusion-0.0.1.dist-info/RECORD,,
