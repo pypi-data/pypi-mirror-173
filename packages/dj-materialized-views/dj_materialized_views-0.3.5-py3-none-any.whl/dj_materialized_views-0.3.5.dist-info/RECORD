@@ -1,0 +1,14 @@
+dj_materialized_views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_materialized_views/actions.py,sha256=IqnlgIF_qEtbWRW3iqBNrcSdOcCDUjn_FZFq25eMdIk,3298
+dj_materialized_views/admin.py,sha256=hjlJaKa4QBMqgw1X7B5WyPfHdUp8GQVKmJS8c5Dj-SI,1747
+dj_materialized_views/apps.py,sha256=GvPSjzCXR4_X3z7qZ02565hbUsEpftBQyoOCZbiEU9A,286
+dj_materialized_views/models.py,sha256=56wTTEq0eQwaT_3Uz9vt_5A-N37i7q8ttvSujuyFxY4,6435
+dj_materialized_views/tasks.py,sha256=KXHGiMSm0Qpac1m7UDBHeAFd7cLsJTNXaTRv47bb6KE,530
+dj_materialized_views/utils.py,sha256=UBOlb3yqu6k0c99Jc49CNSEwaOMzgmaxgjkE_dMqfww,236
+dj_materialized_views/migrations/0001_initial.py,sha256=NYSEDrhDk2M1nV4kUWAiDCj9a8qTQqfxo4iw5_vb70o,2879
+dj_materialized_views/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dj_materialized_views-0.3.5.dist-info/LICENSE,sha256=DUy7-rD0k2WeiFWKN_9lr33EO7LpO8CVmS9leUGf6eY,1390
+dj_materialized_views-0.3.5.dist-info/METADATA,sha256=mny7fhKtkPfhKwDngHFVjf2J5HIhjAMqf7DypnSW5DM,1241
+dj_materialized_views-0.3.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dj_materialized_views-0.3.5.dist-info/top_level.txt,sha256=z6U82X_MdO53yI9ja7sHipaGX8dOaWJk7N1GztQATtU,22
+dj_materialized_views-0.3.5.dist-info/RECORD,,
