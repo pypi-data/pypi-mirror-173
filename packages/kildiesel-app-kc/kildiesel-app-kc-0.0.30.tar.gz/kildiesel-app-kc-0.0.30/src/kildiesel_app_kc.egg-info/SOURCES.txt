@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/example_app/__init__.py
+src/example_app/example.py
+src/kildiesel_app_kc.egg-info/PKG-INFO
+src/kildiesel_app_kc.egg-info/SOURCES.txt
+src/kildiesel_app_kc.egg-info/dependency_links.txt
+src/kildiesel_app_kc.egg-info/requires.txt
+src/kildiesel_app_kc.egg-info/top_level.txt

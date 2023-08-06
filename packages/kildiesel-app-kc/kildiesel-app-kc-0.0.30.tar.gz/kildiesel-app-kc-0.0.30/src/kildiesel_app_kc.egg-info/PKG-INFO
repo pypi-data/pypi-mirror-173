@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: kildiesel-app-kc
+Version: 0.0.30
+Summary: A small example package
+Author: Diego Ivan Rodriguez
+Author-email: kildiesel@gmail.com
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Python example app
