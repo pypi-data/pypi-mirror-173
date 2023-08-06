@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/run.py
+src/trading_simulator.egg-info/PKG-INFO
+src/trading_simulator.egg-info/SOURCES.txt
+src/trading_simulator.egg-info/dependency_links.txt
+src/trading_simulator.egg-info/top_level.txt
+src/trnsim/__init__.py
+src/trnsim/base.py
+src/trnsim/strategy.py
