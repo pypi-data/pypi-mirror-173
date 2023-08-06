@@ -1,0 +1,6 @@
+README.md
+setup.py
+kitbag.egg-info/PKG-INFO
+kitbag.egg-info/SOURCES.txt
+kitbag.egg-info/dependency_links.txt
+kitbag.egg-info/top_level.txt
