@@ -1,0 +1,2 @@
+[console_scripts]
+xton = xton.main:main

@@ -1,0 +1,10 @@
+xton/common.py,sha256=qcL1QMwhIevINwq5Q5VrLsOv9NW8Ae2cjLD3nAGQmPY,236
+xton/core.py,sha256=_MN18Eo5_bm23Vw3LiizvO3MHJlNpv2sLPwd9192rc4,2165
+xton/main.py,sha256=zDMtmTl3h2JT2oh82hCnOFrE53_d3cDc53an9TL1xnc,6023
+xton/stdlib.func,sha256=j0KrLZIZhPNU7g2FVEpEbz33Jk1r34VV8bLd1Cfh6SU,14187
+xton-0.0.1.dist-info/LICENSE,sha256=meww94kX4AxjysIghXW1wDIw3rB4olUaBiZR7x6N1DA,1068
+xton-0.0.1.dist-info/METADATA,sha256=pGB0G8iVuBs-iF045wcB3BHMBSSfuSaBBpTmz145wGw,543
+xton-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xton-0.0.1.dist-info/entry_points.txt,sha256=Z7vnKdY-LF_1g6iicW-XpB3-dFVDr0BaJ34KzE9rTyM,40
+xton-0.0.1.dist-info/top_level.txt,sha256=eij6zMeabm89cofnDUyFULAKa_f4tT1Y53ZbJPZ8fF0,5
+xton-0.0.1.dist-info/RECORD,,
