@@ -1,0 +1,9 @@
+rbwr/__init__.py,sha256=-Xai5pQlRgBEsNxMdndWTWkvvnzSOMeVSROuEzFyduQ,420
+rbwr/either.py,sha256=GwfP8kCEGLnTRoJjn6bmNpGu9fY6CPO4by-N6maAjuE,1057
+rbwr/optional.py,sha256=5rkXm0DhYqbL_2vky0_ucXT46IBoOmw9ygc0F629_9w,325
+rbwr/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rbwr/result.py,sha256=H9ntFKEdpft4FKKl25BdoWiATloiVC19pnXUlBO9yA4,1045
+rbwr-0.1.1.dist-info/LICENSE.md,sha256=uFnt1zsgCvDyHbi7w9MZ7l05s5Au1SK1n8VL2xFJZyo,260
+rbwr-0.1.1.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+rbwr-0.1.1.dist-info/METADATA,sha256=mh9dnviS5ESVmM-qQ_wMdc7lwESRg1m8CorSR15d9eU,1386
+rbwr-0.1.1.dist-info/RECORD,,
