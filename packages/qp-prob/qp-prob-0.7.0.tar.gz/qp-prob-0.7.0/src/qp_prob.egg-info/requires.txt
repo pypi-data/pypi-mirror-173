@@ -1,0 +1,15 @@
+
+[dev]
+pytest
+pytest-cov
+packaging
+pillow
+cycler
+python-dateutil
+kiwisolver
+joblib
+threadpoolctl
+h5py
+pylint
+mpi4py
+coverage
