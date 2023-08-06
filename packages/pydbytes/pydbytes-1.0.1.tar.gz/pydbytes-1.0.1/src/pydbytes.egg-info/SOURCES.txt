@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/pydbytes/__init__.py
+src/pydbytes.egg-info/PKG-INFO
+src/pydbytes.egg-info/SOURCES.txt
+src/pydbytes.egg-info/dependency_links.txt
+src/pydbytes.egg-info/top_level.txt
