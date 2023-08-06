@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "aslabs-dependencies-config"
+version = "0.0.3"
+description = ""
+authors = ["Titusz Ban <tituszban@antisociallabs.io>"]
+readme = "README.md"
+packages = [
+    { include = "aslabs" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+aslabs-dependencies = "*"
+aslabs-config = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
