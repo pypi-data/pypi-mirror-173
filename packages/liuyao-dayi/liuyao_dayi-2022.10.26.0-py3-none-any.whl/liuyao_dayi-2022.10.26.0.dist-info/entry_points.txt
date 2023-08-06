@@ -1,0 +1,4 @@
+[console_scripts]
+LiuyaoDayi = LiuyaoDayi.__main__:main
+liuyao-dayi = LiuyaoDayi.__main__:main
+
