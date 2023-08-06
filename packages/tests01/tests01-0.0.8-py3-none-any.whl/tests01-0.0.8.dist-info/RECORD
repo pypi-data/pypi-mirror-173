@@ -1,0 +1,9 @@
+libhung/__init__.py,sha256=_nbkSVH7WUgs8i_GUSvitrvGG3LKqxFu7Baej62SFsU,83
+libhung/hio.py,sha256=aLTyGIsYYiNOp-XP3ZLekYzvD73iGhAm6-U0y7iIWzw,484
+libhung/hmath.py,sha256=Fzh0WKPWg1-i8rUT5Es3DiO2fnTy2dxckbH9pt21QOE,1288
+libhung/other.py,sha256=P6FnR-IHBlGi6Wqmjp_Lki2Vz94gbmusi8h8IkTfDRg,754
+tests01-0.0.8.dist-info/LICENSE.txt,sha256=a-eu2HV42jXwkKoaCwGFdx005Oi6-bpQ-hKNuHzR1Uo,1060
+tests01-0.0.8.dist-info/METADATA,sha256=S2aoD6vuDY0o82FX48j9ufTjM1vvNEB-sanrDAM3olk,307
+tests01-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tests01-0.0.8.dist-info/top_level.txt,sha256=L3tLD6zYW6WKkMcRyhHmc2l9EeXZz_TGI9hQQNv0boM,8
+tests01-0.0.8.dist-info/RECORD,,
