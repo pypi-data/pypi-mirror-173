@@ -1,0 +1,14 @@
+0.6 (2022-10-26)
+----------------
+
+- Modernize testing infrastructure.
+- Modernize install infrastructure.
+- Run linters
+- Update for Python 3.9+ regex escape sequence
+  (Issue #2, thanks rbuckland)
+
+
+0.5 (2019-07-08)
+----------------
+
+-
