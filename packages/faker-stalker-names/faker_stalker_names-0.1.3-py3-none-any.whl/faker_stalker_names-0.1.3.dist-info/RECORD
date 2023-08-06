@@ -1,0 +1,15 @@
+faker_stalker_names/__init__.py,sha256=AyyMYxSo5cO8FsAJ7FNk8Ss3vL5fAA_A5kJF33I8eZc,1310
+faker_stalker_names/de_DE/__init__.py,sha256=Cg7ye2zapKzgR4WKYLo-nCYGvnHTJHGGjF05fCMySYw,228
+faker_stalker_names/de_DE/data.py,sha256=rKupVzYThWdRzGiNesb41_ywjpH3RFn4e4XIwsQbbfA,16926
+faker_stalker_names/en_US/__init__.py,sha256=KuiaOa5aUj3Q2kFv6KljikRvtc33n9W9lQgylj_TVQQ,228
+faker_stalker_names/en_US/data.py,sha256=ezOf8wB9eda8Mxpud42sBDYH_mwhouQHK9IMcvpQNbA,16294
+faker_stalker_names/fr_FR/__init__.py,sha256=Id5A6NnDjS0Fd0nQEmaVCXDwW-IZ1jklsD9yf9-IlFo,228
+faker_stalker_names/fr_FR/data.py,sha256=qNtkP2BTpKi1TnKAPwnObjfujj1jV0gxmgpgKhcWHBI,18236
+faker_stalker_names/ru_RU/__init__.py,sha256=y4aAvk5_fQ9BOr4SxUAvu7d7un0H9I5yEZhT4oo88bo,228
+faker_stalker_names/ru_RU/data.py,sha256=dMUfRLcQAVNtbEMlRGtcrIxqETmXRjNJp5qWj9j8dQY,21492
+faker_stalker_names/uk_UA/__init__.py,sha256=tUPaEr1tad1uEYro-96Gah1TCgrn2swugO4w8ENoM10,228
+faker_stalker_names/uk_UA/data.py,sha256=pMxHd2tXNYrSlrM47kWJKvZEuSQJbxZE77jJXtLqgGY,21406
+faker_stalker_names-0.1.3.dist-info/LICENSE,sha256=knUoVRaxZfspLqph0HWO90s0_uW4QGc6yeG4DvyqVfU,1067
+faker_stalker_names-0.1.3.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+faker_stalker_names-0.1.3.dist-info/METADATA,sha256=XMCDbjNBIgzKUjC3JFmiwz4TEfvEtd8Ye3eAnMze2xg,2509
+faker_stalker_names-0.1.3.dist-info/RECORD,,
