@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: dvbctrl
+Version: 0.3.1
+Summary: Controls a local dvbstreamer
+License: GPL-3.0-or-later
+Author: ccdale
+Author-email: chris.charles.allison+dvbctrl@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: psutil (>=5.9.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+# dvbctrl
+
+## starting
+
+```python
+from dvbctrl.dvbstreamer import DVBStreamer
+
+adapter = 0
+dvbs = DVBStreamer(adapter)
+running = dvbs.start()
+if not running:
+    raise Exception(f"Failed to start dvbstreamer on adapter {adapter}")
+```
+
+## stopping
+
+```python
+from dvbctrl.dvbstreamer import DVBStreamer
+
+adapter = 0
+dvbs = DVBStreamer(adapter)
+
+...
+
+if dvbs.isRunning():
+    dvbs.stop()
+```
+
+## commands
+
+```python
+from dvbctrl.commands import DVBCommand
+
+kwargs = {
+    "adapter": 0,
+    "host": "127.0.0.1"
+    "pass": "dvbctrl"
+    "user": "dvbctrl"
+}
+dvbc = DVBCommand(**kwargs)
+
+# services (channels)
+chans = dvbc.lsservices()
+```
+
