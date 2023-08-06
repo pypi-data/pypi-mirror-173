@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: deepview-converter-tflite
+Version: 2.5.19
+Summary: DeepView Converter for TensorFlow Lite
+Home-page: https://www.au-zone.com
+Author: Au-Zone
+Author-email: support@au-zone.com
+License: PROPRIETARY
+Platform: UNKNOWN
+Requires-Dist: tensorflow
+Requires-Dist: tensorflow-hub
+Requires-Dist: tflite
+Requires-Dist: onnx-tf
+Requires-Dist: path
+Requires-Dist: pillow
+Provides-Extra: tensorflow
+Requires-Dist: wheel ; extra == 'tensorflow'
+
+UNKNOWN
+
+
