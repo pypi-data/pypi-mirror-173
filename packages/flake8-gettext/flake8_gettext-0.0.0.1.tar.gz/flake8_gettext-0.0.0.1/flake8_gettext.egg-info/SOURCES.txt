@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+flake8_gettext/__init__.py
+flake8_gettext/checker.py
+flake8_gettext/version.py
+flake8_gettext.egg-info/PKG-INFO
+flake8_gettext.egg-info/SOURCES.txt
+flake8_gettext.egg-info/dependency_links.txt
+flake8_gettext.egg-info/entry_points.txt
+flake8_gettext.egg-info/not-zip-safe
+flake8_gettext.egg-info/requires.txt
+flake8_gettext.egg-info/top_level.txt
+test/test_flake8.py
