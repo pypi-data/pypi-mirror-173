@@ -1,0 +1,59 @@
+[project]
+name = "julgi-game"
+description = "줄기 게임이야!"
+authors = [
+    { name = "Bingsu", email = "ks2515@naver.com" },
+]
+requires-python = ">=3.8"
+readme = "README.md"
+keywords = [
+    "julgi",
+    "game",
+    "julgi-game",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Games/Entertainment",
+]
+dependencies = [
+    "kopp>=0.2.1",
+    "pyyaml",
+]
+dynamic = []
+version = "0.2.1"
+
+[project.license]
+file = "LICENSE"
+
+[project.optional-dependencies]
+
+[project.urls]
+Repository = "https://github.com/Bing-su/julgi-game"
+
+[project.scripts]
+julgi = "julgi.__main__:cli"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.version]
+source = "file"
+path = "julgi/__version__.py"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black",
+    "isort",
+    "ruff",
+    "pre-commit",
+]
+
+[tool.pdm.scripts]
+lint = "pre-commit run -a"
+sort-skill = "python julgi/skill/sort_skill.py"
+
+[tool.isort]
+profile = "black"
