@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+datahub/__init__.py
+datahub/__main__.py
+datahub/main.py
+datahub/utils.py
+spbstu_amml.egg-info/PKG-INFO
+spbstu_amml.egg-info/SOURCES.txt
+spbstu_amml.egg-info/dependency_links.txt
+spbstu_amml.egg-info/requires.txt
+spbstu_amml.egg-info/top_level.txt
+spbstuamml/__init__.py
+spbstuamml/hubutils.py
+spbstuamml/models/__init__.py
+spbstuamml/models/vgg.py
