@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+yaecl.hpp
+yaecl_python.cpp
+yaecl.egg-info/PKG-INFO
+yaecl.egg-info/SOURCES.txt
+yaecl.egg-info/dependency_links.txt
+yaecl.egg-info/not-zip-safe
+yaecl.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: yaecl
+Version: 0.0.1
+Summary: YAECL: Yet Another Entropy Coding Library
+Home-page: https://github.com/tongdaxu/YAECL-Yet-Another-Entropy-Coding-Library
+Author: Tongda Xu
+Author-email: x.tongda@nyu.edu
+Requires-Python: >=3.6
+License-File: LICENSE
+
+See doc in github page: https://github.com/tongdaxu/YAECL-Yet-Another-Entropy-Coding-Library
