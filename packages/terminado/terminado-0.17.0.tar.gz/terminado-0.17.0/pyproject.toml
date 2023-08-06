@@ -1,0 +1,86 @@
+[build-system]
+requires = ["hatchling>=1.5"]
+build-backend = "hatchling.build"
+
+[project]
+name = "terminado"
+dynamic = ["version"]
+license = { file = "LICENSE" }
+description = "Tornado websocket backend for the Xterm.js Javascript terminal emulator library."
+classifiers = [ "Environment :: Web Environment", "License :: OSI Approved :: BSD License", "Programming Language :: Python :: 3", "Topic :: Terminals :: Terminal Emulators/X Terminals",]
+requires-python = ">=3.7"
+dependencies = [ "ptyprocess;os_name!='nt'", "pywinpty>=1.1.0;os_name=='nt'", "tornado>=6.1.0",]
+
+[[project.authors]]
+name = "Jupyter Development Team"
+email = "jupyter@googlegroups.com"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/jupyter/terminado"
+
+[project.optional-dependencies]
+test = [ "pytest>=7.0", "pre-commit", "pytest-timeout",]
+docs = [ "sphinx", "pydata-sphinx-theme" ]
+
+[tool.hatch.version]
+path = "terminado/_version.py"
+
+[tool.hatch.envs.docs]
+features = ["docs"]
+[tool.hatch.envs.docs.scripts]
+build = "make -C doc html SPHINXOPTS='-W'"
+
+[tool.hatch.envs.test]
+features = ["test"]
+[tool.hatch.envs.test.scripts]
+test = "python -m pytest -vv {args}"
+nowarn = "python -m pytest -vv -W default {args}"
+
+[tool.pytest.ini_options]
+addopts = "-raXs --durations 10 --color=yes --doctest-modules"
+testpaths = [
+    "terminado/tests/"
+]
+timeout = 300
+# Restore this setting to debug failures
+# timeout_method = "thread"
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+pretty = true
+show_error_context = true
+show_error_codes = true
+strict_equality = true
+strict_optional = true
+warn_no_return = true
+warn_return_any = true
+warn_unused_configs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[tool.flake8]
+ignore = "E501, W503, E402"
+builtins = "c, get_config"
+exclude = [
+    ".cache",
+    ".github",
+    "docs",
+    "setup.py",
+]
+enable-extensions = "G"
+extend-ignore = [
+    "G001", "G002", "G004", "G200", "G201", "G202",
+    # black adds spaces around ':'
+    "E203",
+]
+per-file-ignores = [
+    # B011: Do not call assert False since python -O removes these calls
+    # F841 local variable 'foo' is assigned to but never used
+    "terminado/tests/*: B011", "F841",
+]
