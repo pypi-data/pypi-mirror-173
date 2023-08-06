@@ -1,0 +1,9 @@
+tumoroscope/__init__.py,sha256=2YywbAi3EwlrN0BDqZ-gKsmgAN-rd2rwtttuv2LPauQ,184
+tumoroscope/mock_data.py,sha256=O2jdodBtawq1XUg1he8IhxSqucw0XB3bFzI4AScsTlM,5506
+tumoroscope/model.py,sha256=K_3qo6SPp1T11feJsKX1nN86Z8oXsQDm9QqkmFmKxb0,2578
+tumoroscope/tumoroscope_data.py,sha256=A9iSeWRUWTurmDXXTkKI2OUssCHiCet5BymuvTzZkw0,3584
+tumoroscope/utilities.py,sha256=5q0Ln8wQNfiwGLl725xlTO0yelaZAMJsx-EdfPnCpP0,712
+tumoroscope_pymc-0.1.0.dist-info/LICENSE,sha256=ljOS4DjXvqEo5VzGfdaRwgRZPbNScGBmfwyC8PChvmQ,32422
+tumoroscope_pymc-0.1.0.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+tumoroscope_pymc-0.1.0.dist-info/METADATA,sha256=Vat6mo6joJ9XwDh_vOav1tM0c8caZfFQ7FRf8Km4cfQ,17798
+tumoroscope_pymc-0.1.0.dist-info/RECORD,,
