@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: tsfeast
+Version: 0.1.1
+Summary: A collection of Scikit-Learn compatible time series transformers and tools.
+Home-page: https://github.com/chris-santiago/tsfeast
+Author: Chris Santiago
+License: MIT License
+Project-URL: Documentation, https://chris-santiago.github.io/tsfeast/
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: numpy (>=1.17.3)
+Requires-Dist: holidays
+Requires-Dist: scikit-learn (>=0.23.1)
+Requires-Dist: statsmodels (>=0.12.0)
+Requires-Dist: matplotlib
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Provides-Extra: qa
+Requires-Dist: mypy ; extra == 'qa'
+Requires-Dist: pylint ; extra == 'qa'
+Requires-Dist: flake8 ; extra == 'qa'
+Requires-Dist: isort ; extra == 'qa'
+Requires-Dist: check-manifest ; extra == 'qa'
+Requires-Dist: pre-commit ; extra == 'qa'
+Provides-Extra: tests
+Requires-Dist: nox ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# tsfeast
+![build](https://travis-ci.com/chris-santiago/tsfeast.svg?branch=master)
+[![codecov](https://codecov.io/gh/chris-santiago/tsfeast/branch/master/graph/badge.svg?token=MSO9ZBH6UD)](https://codecov.io/gh/chris-santiago/tsfeast)
+
+A collection of Scikit-Learn compatible time series transformers and tools.
+
+## Installation
+
+```bash
+pip install tsfeast
+```
+
+## Documentation 
+
+Documentation hosted on Github Pages: [https://chris-santiago.github.io/tsfeast/](https://chris-santiago.github.io/tsfeast/)
