@@ -1,0 +1,14 @@
+# Package Overview
+package_name: STGCN_model
+
+# model parameters
+plot_stop_num: 10
+train_plot: False
+test_size: 0.15
+n_his: 12 # training window size
+epochs: 1
+
+# inference parameters
+test_model: best_model_30min_v4.pth
+test_plot: False
+

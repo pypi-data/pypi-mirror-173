@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stgcn-regression-model
+Version: 0.0.4
+Summary: TSB Bus ETA forecasting model
+Home-page: https://github.com/kasidejcha/stgcn_deployment
+Author: kasidejcha
+Author-email: kasidejcha.bas@gmail.com
+License: BSD-3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: ==3.9.13
+Description-Content-Type: text/markdown
+
+TSB Bus ETA forecasting model
