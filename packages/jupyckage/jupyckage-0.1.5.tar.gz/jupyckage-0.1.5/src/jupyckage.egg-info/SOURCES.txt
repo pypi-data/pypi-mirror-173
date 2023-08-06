@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bin/jupyckage
+bin/jupyckage.py
+src/jupyckage/__init__.py
+src/jupyckage/jupyckage.py
+src/jupyckage.egg-info/PKG-INFO
+src/jupyckage.egg-info/SOURCES.txt
+src/jupyckage.egg-info/dependency_links.txt
+src/jupyckage.egg-info/top_level.txt
