@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+pyproject.toml
+setup.cfg
+GAME/vis_game.egg-info/PKG-INFO
+GAME/vis_game.egg-info/SOURCES.txt
+GAME/vis_game.egg-info/dependency_links.txt
+GAME/vis_game.egg-info/top_level.txt
