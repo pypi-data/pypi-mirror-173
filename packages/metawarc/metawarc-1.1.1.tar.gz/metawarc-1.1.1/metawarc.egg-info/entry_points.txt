@@ -1,0 +1,2 @@
+[console_scripts]
+metawarc = metawarc.__main__:main
