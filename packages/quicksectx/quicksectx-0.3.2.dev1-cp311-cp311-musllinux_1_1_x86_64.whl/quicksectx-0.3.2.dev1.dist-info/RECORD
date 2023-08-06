@@ -1,0 +1,12 @@
+quicksectx-0.3.2.dev1.dist-info/LICENSE,sha256=VAPzO96t8fCbMYozMQW5kKjVYq2ay4gbvyrfAtFItmw,1080
+quicksectx-0.3.2.dev1.dist-info/top_level.txt,sha256=8NDGIj_DVaDPjTJqEw3r-3n9N4pUAEicM0Xb7LEAvwc,21
+quicksectx-0.3.2.dev1.dist-info/WHEEL,sha256=ogCTRyjHDpGGFvF35n-cpV4SlFzxF7w5DeXJyxGbBi8,113
+quicksectx-0.3.2.dev1.dist-info/RECORD,,
+quicksectx-0.3.2.dev1.dist-info/METADATA,sha256=o6AH8NacF4qY7ofZy312d3pb2WNhHSAn9mKl4oSiGzg,2698
+quicksect/quicksect.cpython-311-x86_64-linux-musl.so,sha256=h3FlpLqE3wIx4FdUJVHv5DTsOpyw7rL4TKfTIji4Cd0,178440
+quicksectx/quicksectx.pyx,sha256=6z_LI_hx5aX1ApXrrFFeyBJsHeDsE2Ufgh8AVXDXdCM,18039
+quicksectx/quicksectx.pxd,sha256=TwJ8V9Fv5l_dmBEYfyfEzNefSR23eqSBBnpVtD8a0bE,1463
+quicksectx/quicksectx.cpython-311-x86_64-linux-musl.so,sha256=4JzokFwPx4eR0VnBXxZuB_P1PX-GSJ0VUYywmO6ehgY,192600
+quicksectx/quicksectx.cpp,sha256=kh3FtjxjCczsbTi1_2UNjjLr9nJsdtsHO1c8p5nStoY,687166
+quicksectx/version.py,sha256=tFsi1VT0bL-AKxOfEV9QH2dgY61m5WU4c4fwHBzQNs0,75
+quicksectx/__init__.py,sha256=aEUoUqzTfm3FJJkjvcF5i4hPcQ-M23GufgGSXQtg64c,145
