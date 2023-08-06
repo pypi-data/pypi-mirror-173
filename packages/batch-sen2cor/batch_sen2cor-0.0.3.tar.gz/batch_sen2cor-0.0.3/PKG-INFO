@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: batch_sen2cor
+Version: 0.0.3
+Summary: Batch sen2cor for sentinel2 images.
+Home-page: https://github.com/mtmiran/batch_sen2cor
+Author: Mateus
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Batch Sen2cor
+
+## Description.
+
+The package package_name is used to:
+    Processing:
+        - batch processing of sentinel 2 image using sen2cor atmospheric correction
+    Sen2cor:
+        - the sen2cor aplication from [ESA](https://step.esa.int/main/snap-supported-plugins/sen2cor/)
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install batch_sen2cor
+```
+
+## Usage
+
+Run the program in the folder where the SENTINEL-2 image is.
+
+```python
+>>> from batch_sen2cor.processing import batch_sen2cor
+>>> batch_sen2cor.sentinel_sen2cor()
+```
+
+## Author
+Mateus Miranda
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+

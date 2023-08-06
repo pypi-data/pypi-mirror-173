@@ -1,0 +1,9 @@
+README.md
+setup.py
+batch_sen2cor/__init__.py
+batch_sen2cor.egg-info/PKG-INFO
+batch_sen2cor.egg-info/SOURCES.txt
+batch_sen2cor.egg-info/dependency_links.txt
+batch_sen2cor.egg-info/top_level.txt
+batch_sen2cor/processing/__init__.py
+batch_sen2cor/processing/batch_sen2cor.py
