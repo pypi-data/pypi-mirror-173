@@ -1,0 +1,14 @@
+omegaconf>=0.2.3
+packaging
+pandas
+pyyaml
+requests
+
+[dev]
+pytest
+build
+
+[docs]
+mkdocs
+mkdocstrings[python]>=0.18
+mkdocs-material
