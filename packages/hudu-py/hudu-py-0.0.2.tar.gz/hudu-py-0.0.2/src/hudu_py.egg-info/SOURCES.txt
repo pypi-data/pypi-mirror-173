@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/hudu_py/API.py
+src/hudu_py/___init__.py
+src/hudu_py.egg-info/PKG-INFO
+src/hudu_py.egg-info/SOURCES.txt
+src/hudu_py.egg-info/dependency_links.txt
+src/hudu_py.egg-info/requires.txt
+src/hudu_py.egg-info/top_level.txt
