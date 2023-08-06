@@ -1,0 +1,6 @@
+sqlalchemy
+threedi-modelchecker>=0.30
+pyproj>=3
+
+[test]
+pytest
