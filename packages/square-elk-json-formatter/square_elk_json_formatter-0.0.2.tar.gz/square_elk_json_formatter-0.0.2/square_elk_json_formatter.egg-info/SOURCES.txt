@@ -1,0 +1,8 @@
+setup.py
+square_elk_json_formatter/ElkJsonFormatter.py
+square_elk_json_formatter/__init__.py
+square_elk_json_formatter.egg-info/PKG-INFO
+square_elk_json_formatter.egg-info/SOURCES.txt
+square_elk_json_formatter.egg-info/dependency_links.txt
+square_elk_json_formatter.egg-info/requires.txt
+square_elk_json_formatter.egg-info/top_level.txt
