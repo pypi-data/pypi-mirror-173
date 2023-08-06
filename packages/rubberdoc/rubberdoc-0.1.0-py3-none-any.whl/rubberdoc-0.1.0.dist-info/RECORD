@@ -1,0 +1,13 @@
+rubberdoc/__init__.py,sha256=NzOprgRuIhYtOJIJlG2XvFaCwFK8eNzSVs4cMTTEcBE,403
+rubberdoc/config_provider.py,sha256=HkGyz_2u4vwu9xPLsgHb9TIL_8DHzxptLDIMSn_usBA,797
+rubberdoc/default_config.json,sha256=yD7wzLBSPguvTEMeoz3vJikyBBTOZhseViIs-6eiQa0,422
+rubberdoc/doc_handler.py,sha256=dFTIIbqf1cpQfNgKzDiIhHiDH4_LaKu_4ToArMT3f2U,8985
+rubberdoc/examples/custom_doc_handler.py,sha256=HIBNzCDbH5l-tXldSOtuqnGj2Yxz1LkuNBbWBru7HhU,2243
+rubberdoc/examples/example_from_script.py,sha256=oSlA7Ls_ScD3dDS1U9g_N-JqvAzoGEFoPxZdutUvDWk,872
+rubberdoc/generator.py,sha256=GIfjSTp14OPuh3HUb5Izd__m2YlFffQr00eW80XVYow,2953
+rubberdoc/main.py,sha256=_GjWzYObUfkdLUmpWA9hKSY39G4RRxk33IAkE013Bjo,1522
+rubberdoc-0.1.0.dist-info/entry_points.txt,sha256=0lHlbDDLvfZeS0dI6f-Yk-nrGq1B9R0RuRIwETzsYU0,48
+rubberdoc-0.1.0.dist-info/LICENSE,sha256=Tk771_reF_RTly0oqEPlPUnMjnDEHSno-ZNub3vNnkI,1083
+rubberdoc-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+rubberdoc-0.1.0.dist-info/METADATA,sha256=qKp2sd_w9YqlIGwCtNV4_yTwBo9_a5I_7bA0PMCtx4c,1037
+rubberdoc-0.1.0.dist-info/RECORD,,
