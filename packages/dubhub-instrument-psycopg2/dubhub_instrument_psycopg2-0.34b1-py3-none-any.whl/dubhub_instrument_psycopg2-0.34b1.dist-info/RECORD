@@ -1,0 +1,9 @@
+dubhub/__init__.py,sha256=198cZHgzqVaLrcVS942r-aoocvn11u5zqFIbysxx0us,2108
+opentelemetry/instrumentation/psycopg2/__init__.py,sha256=yXhBWeZnhAVophN3-Qvf90KCZ2qsBvl-_dL9htziyI8,9098
+opentelemetry/instrumentation/psycopg2/package.py,sha256=CuxrkA1jDX9JPrcgu2oREkKRzqvXyWRL0aOV1hqbzYI,626
+opentelemetry/instrumentation/psycopg2/version.py,sha256=cyxLYIZ_WYbZwOpeWvrmpKjgbnXMO1XA1FQ6lwcYSE4,608
+dubhub_instrument_psycopg2-0.34b1.dist-info/METADATA,sha256=2Jcg5rbJqbIiz0v1blkPd1wCRXaOa1K959ONtJemJ7o,2087
+dubhub_instrument_psycopg2-0.34b1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+dubhub_instrument_psycopg2-0.34b1.dist-info/entry_points.txt,sha256=663J31VPQxWkDHGWli5NwmcuP3aXteF_WCLcWFCfcR0,100
+dubhub_instrument_psycopg2-0.34b1.dist-info/licenses/LICENSE,sha256=h8jwqxShIeVkc8vOo9ynxGYW16f4fVPxLhZKZs0H5U8,11350
+dubhub_instrument_psycopg2-0.34b1.dist-info/RECORD,,
