@@ -1,0 +1,12 @@
+sqlalchemy_iris/__init__.py,sha256=CE85j_-fsD1u2DCk5mhooimvTgMjaUspFiHNJO5WRuE,209
+sqlalchemy_iris/base.py,sha256=V0Rpo4Ryfweuvt0HCb4RBFYc0ElxnWrCFglDapd0DyI,26809
+sqlalchemy_iris/information_schema.py,sha256=H0w4rBh5Z8b5OQs5DvSMDZGEZcWkn73KayaJ9GPfV6E,5041
+sqlalchemy_iris/iris.py,sha256=6ehmul65YccxlC4jOUkENZSQuZPhvO1-mmMTQmWrcL8,216
+sqlalchemy_iris/requirements.py,sha256=pmpSWF0dEnHOR6Rq5_76HTfnTeBrgsGHHPWnY4mCQOM,32884
+sqlalchemy_iris-0.1.3.dist-info/LICENSE,sha256=RQmigqltsLq8lfOBc_KwtL0gkODyUCNpU-0ZiZwGlho,1075
+sqlalchemy_iris-0.1.3.dist-info/METADATA,sha256=lg2NYwFRS-Vbn5uHMx-8twfWdRSK8DdQPrurYh53B60,1426
+sqlalchemy_iris-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sqlalchemy_iris-0.1.3.dist-info/dependency_links.txt,sha256=_0LeqVNEXTUvQ9v69lpAUsPjk4o-fL71lwKEl7WgZeQ,164
+sqlalchemy_iris-0.1.3.dist-info/entry_points.txt,sha256=RXFRETz-CZI-5OThd1bE1mRtHynFCOS8r4bFRPF2NuY,57
+sqlalchemy_iris-0.1.3.dist-info/top_level.txt,sha256=tgokQjAfFuPjWy4ow5qp2dlhmPsZmE2O5UKwGMF3lhg,16
+sqlalchemy_iris-0.1.3.dist-info/RECORD,,
