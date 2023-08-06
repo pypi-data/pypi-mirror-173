@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fleaflicker
+Version: 0.1.0
+Summary: A Python wrapper for the Fleaflicker API.
+Home-page: https://github.com/joeyagreco/fleaflicker
+Author: Joey Greco
+Author-email: joeyagreco@gmail.com
+License: MIT
+Keywords: fleaflicker api wrapper api-wrapper fantasy
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fleaflicker
