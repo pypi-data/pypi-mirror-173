@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: yeetcode
+Version: 0.1.0
+Summary: Make your own leetcode problems
+Author-email: Qianxy <xyqian67@gmail.com>
+Project-URL: Homepage, https://github.com/qianxyz/yeetcode
+Project-URL: Bug Tracker, https://github.com/qianxyz/yeetcode/issues
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+License-File: LICENSE
+
+# Yeetcode
+
+[![status](
+https://github.com/qianxyz/yeetcode/actions/workflows/ci.yml/badge.svg
+)](https://github.com/qianxyz/yeetcode/actions)
+
+Why leetcode, if you can write your own?
+
+## Features
+
+- Declarative YAML config for problem and test cases
+- Auto-generated noiseless solution template to fill in
+
+## Quick start
+
+Under construction. See you later!
+
+## Roadmap
+
+- [x] Create a minimal proof of concept
+- [x] Solution files auto-generation
+- [x] Subcommand to list problems and add new ones
+- [x] Multiple methods test routine
+- [ ] CI checking the problem set
+- [ ] Data structures serde
+- [ ] Prettify user messages
