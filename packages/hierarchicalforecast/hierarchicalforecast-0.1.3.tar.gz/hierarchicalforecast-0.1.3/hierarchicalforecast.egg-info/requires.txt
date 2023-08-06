@@ -1,0 +1,13 @@
+numpy
+numba
+pandas
+scikit-learn
+statsmodels
+mycolorpy
+quadprog
+
+[dev]
+datasetsforecast
+statsforecast>=1.0.0
+requests
+matplotlib
