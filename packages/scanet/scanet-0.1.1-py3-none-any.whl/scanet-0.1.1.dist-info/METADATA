@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: scanet
+Version: 0.1.1
+Summary: The python package for the scanet platform.
+Home-page: https://github.com/oubounyt/SCANet
+Author: Mhaned Oubounyt
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scanpy (>=1.9.1)
+Requires-Dist: pyscenic (>=0.11.2)
+Requires-Dist: setuptools (>=42)
+Requires-Dist: wheel
+
+# SCANet: A workflow for single-cell co-expression based analysis 
+
+
+`SCANet`, a new python package that incorporates the inference of gene co-expression networks from single-cell gene expression data and a complete analysis of the identified modules through trait and cell type associations, hub genes detection, deciphering of co-regulatory signals in co-expression, and drug-gene interactions identification. This will likely accelerate network analysis pipelines and advance systems biology research.
+
+
+## Installation
+
+To install `SCANet`.
+```console
+pip install scanet
+```
+Finally, it should be possible to import drugstone to your python script.
+````python
+import scanet
+````
+You can use 
+```python
+import scanet as sn
+```
+
+`SCANet` officially supports Python 3.6+.
+
+## Usage
+
+A full detailed example of `SCANet` : Refer to this [Jupyter Notebook](https://github.com/oubounyt/SCAn/blob/main/docs/full-example.ipynb).
+
+
+In this [Jupyter Notebook](https://github.com/oubounyt/SCAn/blob/main/docs/full-example.ipynb), we explored all aspects of gene coexpression networks (GCNs) using `SCANet` through a full analysis of the 3k PBMCs from 10x Genomics.
