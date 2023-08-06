@@ -1,0 +1,10 @@
+cropimage/__init__.py,sha256=gsoOkovKoktffSXsKO-oILFqBuUg-pOITPbbt4rQDSA,175
+cropimage/constants.py,sha256=lSukglcA2lA36nTJuJrfuZqD6D8C4hZ59oh8XQx5eLg,426
+cropimage/cropper.py,sha256=BVAAGsSzSi7ogNN9v9KMvj2TJdinTDDfGsyNyeLQyT4,8699
+cropimage/haarcascade_frontalface_default.xml,sha256=pxyD6dD_1ToA_bPx_ZGQUUnY0AHhB26rwy8u25RfjvM,963441
+cropimage/haarcascade_profileface.xml,sha256=AI_lziZkxpHBzOc2l1iNXc-fdE09P2Pdyd6Vc8u3KUM,858204
+cropimage_dh-0.0.7.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+cropimage_dh-0.0.7.dist-info/METADATA,sha256=FTEyK2Hdq_c1ADMEWgEbrXMovU--IN_97DrVHsMZ6aU,2363
+cropimage_dh-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cropimage_dh-0.0.7.dist-info/top_level.txt,sha256=PeqA-5e4X_HfvBc1NmkthYXVUyNpUM1mI-qgNdu32SA,10
+cropimage_dh-0.0.7.dist-info/RECORD,,
