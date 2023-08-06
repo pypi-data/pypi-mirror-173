@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+packagebmi/__init__.py
+packagebmi/filebmi.py
+packagebmi.egg-info/PKG-INFO
+packagebmi.egg-info/SOURCES.txt
+packagebmi.egg-info/dependency_links.txt
+packagebmi.egg-info/top_level.txt
