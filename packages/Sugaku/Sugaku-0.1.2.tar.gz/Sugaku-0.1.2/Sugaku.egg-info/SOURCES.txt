@@ -1,0 +1,6 @@
+setup.py
+Sugaku.egg-info/PKG-INFO
+Sugaku.egg-info/SOURCES.txt
+Sugaku.egg-info/dependency_links.txt
+Sugaku.egg-info/top_level.txt
+sugaku/__init__.py
