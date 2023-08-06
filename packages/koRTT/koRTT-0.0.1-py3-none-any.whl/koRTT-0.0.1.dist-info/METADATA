@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: koRTT
+Version: 0.0.1
+Summary: Round Trip Translation tool for Korean data augmentation
+Home-page: https://github.com/FacerAin/koRTT
+Author: FacerAin
+Author-email: ywsong.dev@kakao.com
+License: MIT
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+## koRTT
+**Round-trip translation(RTT)** tool for **Korean data** augmentation
+
+**한국어 데이터 증강을 위한 툴**입니다.  
+Round-trip Translation을 활용하여 **주어진 문장을 유사한 의미의 문장으로 변환**합니다.
+
+## Usage 
