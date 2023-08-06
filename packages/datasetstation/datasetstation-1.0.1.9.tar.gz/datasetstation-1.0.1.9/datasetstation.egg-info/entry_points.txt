@@ -1,0 +1,3 @@
+[console_scripts]
+datasetstation = datasetstation.command.main:main
+
