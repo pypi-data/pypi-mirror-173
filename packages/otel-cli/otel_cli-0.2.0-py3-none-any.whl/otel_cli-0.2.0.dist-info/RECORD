@@ -1,0 +1,10 @@
+otel_cli/__init__.py,sha256=PM1SK6q0PcfHRUZKlnmdX4b3lAQ5xRaZDeCcu20k8ac,142
+otel_cli/cli.py,sha256=kvtZV8S3YZ8PcTJ88j88eptcMeg2JbHaruwDUBzB4W0,3328
+otel_cli/cli_helpers.py,sha256=d7D2Xe-IKFM7jO7DTymPmjxPvE-tDEKTl1KX00QL5H8,943
+otel_cli/compat.py,sha256=ENhrxdDAGUxCGlq7nhBEMAc2l_92uQtRqVKkf66s5Gg,255
+otel_cli/otel.py,sha256=QWWqi3qHI6CHZqzIztiiv7fMtLA7HcWhtHUE7qc_ViY,4175
+otel_cli/utils.py,sha256=5lZUYTHxFuPwq1f9pyjJmD_2qp-aTkcmH0fq3HR7MHs,2875
+otel_cli-0.2.0.dist-info/entry_points.txt,sha256=yoCgUnHo49uObHT-YpcEN5lOXsB_Acp2sjUtqjbzdZU,42
+otel_cli-0.2.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+otel_cli-0.2.0.dist-info/METADATA,sha256=I9X0HuWNU6Zfs46dl-5W2MJ2crE_UkjeglRCmr-LSi8,5662
+otel_cli-0.2.0.dist-info/RECORD,,
