@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+nginx_static_analysis.egg-info/PKG-INFO
+nginx_static_analysis.egg-info/SOURCES.txt
+nginx_static_analysis.egg-info/dependency_links.txt
+nginx_static_analysis.egg-info/entry_points.txt
+nginx_static_analysis.egg-info/requires.txt
+nginx_static_analysis.egg-info/top_level.txt
