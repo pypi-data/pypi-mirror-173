@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: base-version-checker
+Version: 0.2.2b0
+Summary: Dev utility to verify hardcoded versions are in sync & updated
+Home-page: https://bitbucket.org/kmfarley11/git-hooks
+Author: kmfarley11
+Author-email: kmfarley11@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: build
+Provides-Extra: test
+Provides-Extra: dev
+License-File: LICENSE
+
+# (Base) Version Checker
+
+[![Travis](https://img.shields.io/travis/kmfarley11/version-checker/main.svg?logo=travis)](https://travis-ci.com/kmfarley11/version-checker)
+[![codecov](https://codecov.io/gh/kmfarley11/version-checker/branch/main/graph/badge.svg?token=IG1MO377GJ)](https://codecov.io/gh/kmfarley11/version-checker)
+
+Synchronize and track all hardcoded versions in a project!
+Versions specified in .bumpversion.cfg are compared to those hosted in a baseline such as `origin/main`...
+
+## User install
+```bash
+sudo apt install python3 python3-pip
+python3 -m pip install version_checker-0.2.2-beta.0-py3-none-any.whl
+version_checker -h
+```
+
+## Dev install
+```bash
+sudo apt install python3 python3-venv python3-pip
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -e .[dev]
+python3 -m build
+pylint version_checker/
+pytest
+pytest --cov=version_checker.utils tests/ # --cov-report html && firefox htmlcov/index.html
+# or `coverage run && coverage html`
+bash integration-test.sh
+```
+
+## Usage
+See [version_checker/Readme.md](version_checker/Readme.md) for usage details.
