@@ -1,0 +1,10 @@
+setup.py
+Dre_binomial_distribution.egg-info/PKG-INFO
+Dre_binomial_distribution.egg-info/SOURCES.txt
+Dre_binomial_distribution.egg-info/dependency_links.txt
+Dre_binomial_distribution.egg-info/not-zip-safe
+Dre_binomial_distribution.egg-info/top_level.txt
+Dre_binomial_distributions/Binomialdistribution.py
+Dre_binomial_distributions/Gaussiandistribution.py
+Dre_binomial_distributions/Generaldistribution.py
+Dre_binomial_distributions/__init__.py
