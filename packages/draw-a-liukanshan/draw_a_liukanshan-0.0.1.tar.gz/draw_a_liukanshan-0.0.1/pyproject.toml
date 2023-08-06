@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools >= 40.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "draw_a_liukanshan"
+version = "0.0.1"
+authors = [
+  { name="Yun Dou", email="dixyes@gmail.com" },
+]
+description = "DONOT install this!"
+readme = "Readme.md"
+requires-python = ">=3.0"
+license.file = "LICENSE"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dixyes/draw_a_liukanshan"
+"Bug Tracker" = "https://github.com/dixyes/draw_a_liukanshan/issues"
