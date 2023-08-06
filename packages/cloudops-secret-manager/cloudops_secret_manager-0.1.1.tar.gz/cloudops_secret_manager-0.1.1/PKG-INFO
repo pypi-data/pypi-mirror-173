@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cloudops-secret-manager
+Version: 0.1.1
+Summary: The cloudops-secret-manager package
+Home-page: https://github.com/manucalop/cloudops-secret-manager
+License: MIT
+Author: Manuel Castillo
+Author-email: manucalop@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Project-URL: Repository, https://github.com/manucalop/cloudops-secret-manager
+Description-Content-Type: text/markdown
+
+
