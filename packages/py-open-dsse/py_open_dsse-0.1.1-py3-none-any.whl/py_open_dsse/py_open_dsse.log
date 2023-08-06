@@ -1,0 +1,1263 @@
+2022-10-12 22:11:24,431 - py_open_dsse.helper_functions - DEBUG - Review the meter statuses in the .xlsx file
+2022-10-12 22:11:51,453 - py_open_dsse.helper_functions - DEBUG - Review the meter statuses in the .xlsx file
+2022-10-12 22:16:47,602 - py_open_dsse.helper_functions - DEBUG - Attention: Check the meter statuses in the MEAS_file_format.xlsx file.
+2022-10-12 22:20:07,384 - py_open_dsse.helper_functions - DEBUG - Attention: Check the meter statuses in the MEAS_file_format.xlsx file.
+2022-10-13 17:52:29,792 - py_open_dsse.helper_functions - ERROR - You must enter the OpenDSS file address and a path to save the file.
+2022-10-13 17:53:42,231 - py_open_dsse.helper_functions - ERROR - You must enter a path for saving the file.
+2022-10-13 17:54:52,317 - py_open_dsse.helper_functions - ERROR - [31mYou must enter a path for saving the file.
+2022-10-13 17:56:51,750 - py_open_dsse.helper_functions - ERROR - You must enter a path for saving the file.
+2022-10-13 17:57:35,884 - py_open_dsse.helper_functions - ERROR - You must enter a path for saving the file.
+2022-10-13 18:04:24,798 - py_open_dsse.state_estimation - ERROR - You must enter a path for saving the file.
+2022-10-13 18:11:11,213 - py_open_dsse.state_estimation - ERROR - You must enter a path for saving the file.
+2022-10-13 18:25:33,399 - py_open_dsse.state_estimation - ERROR - You must enter a path for saving the file.
+2022-10-13 18:30:39,788 - py_open_dsse.MEAS_from_OpenDSS - WARNING - Attention !! 
+You must close the MEAS_file_format.xlsx file and repeat the process.
+2022-10-13 18:33:01,195 - py_open_dsse.MEAS_from_OpenDSS - CRITICAL - Attention !! 
+You must close the MEAS_file_format.xlsx file and repeat the process.
+2022-10-13 18:35:22,679 - py_open_dsse.MEAS_from_OpenDSS - CRITICAL - Attention !! 
+You must close the MEAS_file_format.xlsx file and repeat the process.
+2022-10-13 18:36:04,260 - py_open_dsse.MEAS_from_OpenDSS - CRITICAL - Attention !! 
+You must close the MEAS_file_format.xlsx file and repeat the process.
+2022-10-13 18:37:12,172 - py_open_dsse.MEAS_from_OpenDSS - CRITICAL - Attention !! 
+You must close the MEAS_file_format.xlsx file and repeat the process.
+2022-10-13 18:39:12,264 - py_open_dsse.MEAS_from_OpenDSS - ERROR - Attention !! 
+You must close the MEAS_file_format.xlsx file and repeat the process.
+2022-10-13 18:50:49,397 - py_open_dsse.state_estimation - CRITICAL - You must enter: DSS_path, MEAS_init_path, path_save. More information in the documentation
+2022-10-14 13:05:20,802 - py_open_dsse.state_estimation - CRITICAL - You must enter: DSS_path, MEAS_init_path, path_save. More information in the documentation
+2022-10-16 00:38:38,652 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 00:45:22,511 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 00:47:10,521 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:02:46,611 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:03:59,119 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:04:45,463 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:07:57,841 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:08:25,660 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:09:19,987 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:14:27,570 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:14:29,994 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - State estimation was successful
+2022-10-16 01:15:28,892 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:15:30,787 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - State estimation was successful
+2022-10-16 01:24:33,269 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:24:36,429 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - The state estimation algorithm obtained a result. Summary:
+2022-10-16 01:25:00,124 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:25:03,313 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - The state estimation algorithm obtained a result.
+Summary:
+2022-10-16 01:26:28,107 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:26:48,367 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - The state estimation algorithm obtained a result.
+2022-10-16 01:29:41,368 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:29:44,925 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result..
+2022-10-16 01:32:50,869 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:32:54,028 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 01:33:20,788 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:33:22,803 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 01:33:39,384 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:33:42,882 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 01:34:13,673 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 01:34:16,561 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 02:22:37,225 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 02:22:42,780 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 02:58:55,526 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 02:59:01,317 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 03:24:58,467 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 03:25:04,304 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 03:25:48,779 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 03:25:54,308 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 03:28:00,473 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 03:28:06,040 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 03:39:19,846 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 03:39:25,300 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 04:19:30,066 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 04:19:33,984 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 04:25:25,175 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 04:25:28,815 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 04:26:04,345 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 04:26:07,301 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 04:29:50,451 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 04:29:52,162 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 04:43:55,313 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 04:43:57,236 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 04:47:33,328 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 04:47:34,661 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 04:47:49,842 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 04:47:51,168 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 05:02:00,093 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 05:02:02,393 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 05:02:30,802 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 05:02:34,079 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 05:04:20,496 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 05:04:50,950 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 05:04:52,764 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 10:39:08,899 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:39:12,499 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 10:50:12,266 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:50:15,537 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 10:50:58,318 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:51:01,573 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 10:52:58,626 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:53:01,704 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 10:53:52,020 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:53:53,853 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 10:56:24,005 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:56:26,683 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 10:58:46,776 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:58:50,100 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 10:59:16,135 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:59:19,544 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 10:59:38,520 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 10:59:42,011 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 11:59:36,121 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 11:59:39,215 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 12:01:21,608 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:05:10,160 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:05:13,121 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 12:07:00,296 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:09:24,277 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:09:50,186 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:09:52,966 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 12:11:30,495 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:14:31,155 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:14:34,472 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 12:41:29,384 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:41:30,866 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 12:51:13,590 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:51:15,039 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 12:51:42,922 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:51:44,812 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 12:57:10,770 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:59:31,405 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 12:59:33,778 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 12:59:49,914 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:07:02,226 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:08:23,407 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:15:30,591 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:17:42,800 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:18:45,132 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:19:10,209 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:19:11,995 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:19:45,648 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:21:07,852 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:28:11,004 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:28:58,463 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:29:59,496 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:37:38,344 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:37:50,206 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-16 13:38:17,352 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:38:19,111 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:38:37,987 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:38:40,428 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:42:20,325 - py_open_dsse.state_estimation - CRITICAL - You must enter: DSS_path, MEAS_init_path, path_save. More information in the documentation
+2022-10-16 13:44:37,393 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\15NodeIEEE
+2022-10-16 13:44:37,405 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:44:40,108 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:45:22,821 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\15NodeIEEE
+2022-10-16 13:45:22,831 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:45:29,519 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:47:50,190 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\15NodeIEEE
+2022-10-16 13:47:50,196 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:47:51,557 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm without PMU obtained a result.
+2022-10-16 13:48:22,371 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\15NodeIEEE
+2022-10-16 13:48:22,376 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:48:23,592 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Linear state estimation algorithm with PMU obtained a result. 
+2022-10-16 13:48:54,374 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\15NodeIEEE
+2022-10-16 13:48:54,379 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:49:00,511 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:49:13,334 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:49:20,205 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:50:37,346 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:50:39,547 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:56:18,160 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:56:20,440 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 13:58:42,426 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-16 13:58:44,770 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - DEBUG - Nonlinear state estimation algorithm with PMU obtained a result.
+2022-10-16 14:17:38,475 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case, see documentation.
+2022-10-16 14:17:56,621 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case, see documentation.
+2022-10-16 14:18:15,154 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case, see documentation.
+2022-10-16 14:33:58,061 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case, see documentation.
+2022-10-16 14:35:51,860 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case, see documentation.
+2022-10-16 14:37:57,490 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:41:54,271 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:44:01,142 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:44:30,018 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:44:50,865 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:45:10,386 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:45:13,458 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-16 14:45:51,571 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:45:54,603 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-16 14:47:44,169 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:47:46,462 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-16 14:48:47,252 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-16 14:48:48,578 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 09:18:08,925 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 09:18:11,836 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 09:18:52,887 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 09:18:54,743 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 09:20:04,173 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case, see documentation.
+2022-10-17 10:04:49,327 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 10:04:52,264 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 10:04:55,433 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 10:05:17,767 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 10:05:19,144 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 10:05:22,643 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 10:05:57,844 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 10:06:00,892 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 10:10:04,567 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 10:10:08,219 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 10:10:34,091 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 10:17:43,078 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 10:17:47,202 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 10:17:49,286 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 10:59:32,530 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 10:59:35,040 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 10:59:38,154 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:00:01,202 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:00:03,314 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:00:05,614 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:02:54,877 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:02:56,377 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:02:58,314 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:05:08,685 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:05:10,777 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:05:12,619 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:12:58,208 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:12:59,625 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:13:02,100 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:13:42,792 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:13:44,967 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:13:46,648 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:15:04,334 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:15:05,977 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:15:07,209 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:15:35,200 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:15:36,493 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:15:38,900 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:16:46,099 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:16:47,907 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:16:50,209 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:17:56,830 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:17:58,832 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:18:00,562 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:20:50,572 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:20:52,470 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:20:54,578 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:21:50,536 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:21:52,269 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:21:53,925 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:22:16,321 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:22:17,895 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:22:20,537 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:23:57,824 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:23:59,843 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:24:02,001 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:24:26,972 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:24:28,937 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:24:30,538 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:24:56,702 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:24:57,709 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 11:25:06,379 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - DEBUG - The nonlinear state estimation algorithm with the equivalent of positive sequence with PMU obtained a result.
+2022-10-17 11:30:11,086 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 11:30:34,286 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 11:31:34,612 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 11:31:57,444 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 11:33:48,358 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 11:34:23,483 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 11:35:17,539 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case (1ph or Seq), see documentation.
+2022-10-17 11:35:48,369 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:35:49,626 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 11:36:06,135 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 11:40:53,797 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:40:56,625 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 11:46:17,928 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:46:20,444 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 11:47:18,487 - py_open_dsse.Algorithm_classification - ERROR - Select the configuration: Typ_circ, Alg, coord and method available.
+2022-10-17 11:50:16,046 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:50:18,444 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 11:50:33,727 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 11:50:52,400 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 11:50:54,860 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 11:54:16,353 - py_open_dsse.Algorithm_classification - ERROR - Select the configuration: Typ_circ, Alg, coord and method available.
+2022-10-17 11:54:47,410 - py_open_dsse.Algorithm_classification - ERROR - Select the configuration: Typ_circ, Alg, coord and method available. See documentation
+2022-10-17 12:09:26,673 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:09:26,674 - py_open_dsse.Algorithm_classification - ERROR - Select the configuration: Typ_circ, Alg, coord and method available. See documentation
+2022-10-17 12:09:51,976 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:09:53,799 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:12:54,168 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:12:56,414 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:13:55,322 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:13:58,616 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:15:46,596 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:15:49,282 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:17:48,052 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:17:50,079 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:18:31,079 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:18:33,398 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:19:27,537 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:19:29,805 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:19:59,648 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:20:02,617 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:20:31,205 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:20:32,034 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:20:42,976 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 12:21:12,416 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:21:13,637 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:22:09,322 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:22:10,571 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE
+2022-10-17 12:23:57,766 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:23:58,845 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:31:21,025 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:31:22,725 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:34:16,072 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:34:18,335 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:35:25,476 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:35:27,774 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:36:00,975 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:36:01,796 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:37:25,167 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:37:26,325 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:38:44,286 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:38:45,707 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:39:28,243 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:39:30,605 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 12:48:30,260 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 12:48:31,841 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE
+2022-10-17 16:17:37,192 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 16:18:28,778 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 16:52:19,676 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:01:01,394 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:03:49,680 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:04:34,258 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:05:05,553 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:06:55,874 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:17:08,525 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:20:15,677 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:20:40,136 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-17 17:34:06,220 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case (1ph or Pos), see documentation.
+2022-10-17 17:36:50,267 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:36:50,575 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\Results
+2022-10-17 17:37:35,143 - py_open_dsse.Algorithm_classification - ERROR - Select the configuration: Typ_circ, Alg, coord and method available. See documentation
+2022-10-17 17:37:58,928 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:37:59,228 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\Results
+2022-10-17 17:43:51,478 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:43:51,653 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:43:51,673 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - System is not observable (cancelling)
+2022-10-17 17:43:51,673 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 17:43:51,673 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 17:44:34,077 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:44:34,442 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:44:34,478 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - System is not observable (cancelling)
+2022-10-17 17:44:34,479 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 17:44:34,479 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 17:45:04,458 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:45:04,891 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:45:04,932 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - System is not observable (cancelling)
+2022-10-17 17:45:04,933 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 17:45:04,933 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 17:46:26,018 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:46:26,403 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:46:26,460 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - System is not observable (cancelling)
+2022-10-17 17:46:26,461 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 17:46:26,461 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 17:46:58,911 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:46:59,382 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:47:48,382 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:47:48,627 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:48:24,844 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:48:25,579 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:50:54,715 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:50:55,186 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:51:28,462 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:51:28,942 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:51:39,188 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 17:51:54,342 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:51:54,782 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:52:05,656 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 17:56:38,010 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:56:38,452 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:56:49,777 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 17:57:08,539 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 17:57:08,892 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 17:57:19,534 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 18:04:00,159 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 18:04:00,589 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:04:13,194 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-17 18:04:44,781 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 18:04:44,954 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:04:44,969 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - System is not observable (cancelling)
+2022-10-17 18:04:44,969 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 18:04:44,969 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 18:05:23,432 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 18:05:23,739 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:05:23,774 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - System is not observable (cancelling)
+2022-10-17 18:05:23,775 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 18:05:23,775 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 18:11:56,490 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 18:11:56,648 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:11:56,665 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - System is not observable (cancelling)
+2022-10-17 18:11:56,665 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 18:11:56,665 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 0. Measurements required: 25
+2022-10-17 18:12:39,515 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 18:12:40,052 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:13:08,100 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 18:13:08,337 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:26:28,438 - py_open_dsse.MEAS_from_OpenDSS - DEBUG - The empty file with the possible measurements was created and saved in: 
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files\MEAS_file_format.xlsx
+2022-10-17 18:33:37,336 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 18:37:59,811 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 18:39:52,521 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 18:41:39,838 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 18:41:39,862 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 18:41:40,244 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:41:40,244 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:42:49,081 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 18:42:49,102 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 18:42:49,325 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 18:42:49,325 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 19:03:27,155 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:03:27,174 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:03:27,399 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 19:03:27,399 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 19:08:25,477 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:08:25,500 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:08:25,808 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 19:08:25,808 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\Results
+2022-10-17 19:14:20,626 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:14:20,645 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:14:20,873 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:14:20,873 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:15:13,307 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:15:13,351 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:15:13,773 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:15:13,773 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:21:12,766 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:21:12,786 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:21:13,109 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:21:13,109 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:22:09,768 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:22:09,809 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:22:10,277 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:22:10,277 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:22:38,133 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:22:38,166 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:22:38,587 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:22:38,587 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:23:52,441 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:23:52,442 - py_open_dsse.Algorithm_classification - ERROR - Select the configuration: Typ_circ, Alg, coord and method available. See documentation
+2022-10-17 19:25:12,397 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-17 19:25:12,419 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:28:10,639 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:28:10,682 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:28:46,806 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:28:46,845 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:28:47,606 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:28:47,606 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:30:55,261 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:30:55,299 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:30:55,874 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:30:55,874 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:37:19,509 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:37:19,528 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:37:20,092 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:37:20,092 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:37:52,445 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:37:52,483 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:37:52,959 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:37:52,959 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:40:17,436 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:40:38,246 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:40:38,290 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-17 19:40:39,058 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-17 19:40:39,058 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-18 10:34:54,832 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-18 10:36:13,547 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-18 10:36:14,249 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Pylibrary\Py-open-DSSE\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-18 10:38:52,293 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-18 10:39:29,608 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-18 10:40:00,174 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-18 10:40:37,106 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-18 10:41:16,318 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-18 19:14:16,714 - py_open_dsse.MEAS_from_OpenDSS - DEBUG - The empty file with the possible measurements was created and saved in: 
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py_open-dsse\py_open_dsse\examples\15NodeIEEE\MEAS_files\MEAS_file_format.xlsx
+2022-10-18 19:14:17,293 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py_open-dsse\py_open_dsse\examples\15NodeIEEE\MEAS_files
+2022-10-18 19:14:17,293 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py_open-dsse\py_open_dsse\examples\15NodeIEEE\MEAS_files
+2022-10-18 19:14:17,313 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-18 19:14:17,465 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - System is not observable (cancelling)
+2022-10-18 19:14:17,468 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - INFO - Measurements available: 0. Measurements required: 29
+2022-10-18 19:14:17,468 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - INFO - Measurements available: 0. Measurements required: 29
+2022-10-18 19:15:55,461 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-18 19:15:55,815 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - System is not observable (cancelling)
+2022-10-18 19:15:55,819 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - INFO - Measurements available: 0. Measurements required: 29
+2022-10-18 19:15:55,819 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - INFO - Measurements available: 0. Measurements required: 29
+2022-10-18 19:16:23,020 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-18 19:23:19,754 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case (1ph or Pos), see documentation.
+2022-10-18 19:24:16,745 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case (1ph or Pos), see documentation.
+2022-10-18 19:25:22,543 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-18 19:25:23,423 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py_open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-18 19:25:49,125 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-18 19:25:51,739 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py_open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-18 19:31:22,398 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-18 19:31:24,318 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py_open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-18 19:53:07,258 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-18 19:53:08,906 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py_open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-19 10:54:12,368 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 10:54:13,269 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-19 10:57:41,404 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 10:57:41,691 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-19 10:59:25,682 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 11:27:52,908 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 11:27:53,321 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-19 11:31:14,293 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 11:31:15,065 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-19 11:33:30,360 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 11:33:30,782 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 11:34:21,022 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 11:34:21,772 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 11:36:52,778 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 11:40:56,818 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 11:40:56,819 - py_open_dsse.OpenDSS_data_extraction - ERROR - Incorrect parameter entered
+Select between 'flat' or 'dss'.
+2022-10-19 11:42:32,190 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 11:42:32,807 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 12:03:44,189 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:03:44,648 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 12:06:16,487 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:06:17,058 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 12:06:50,774 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:06:51,217 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 12:09:23,230 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:09:23,592 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 12:11:38,855 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:11:39,195 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 12:23:59,323 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:23:59,964 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 12:26:58,026 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:26:58,531 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\37NodeIEEE\MEAS_files
+2022-10-19 12:27:15,699 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:27:33,504 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:32:58,845 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:35:23,891 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-19 12:35:23,892 - py_open_dsse.OpenDSS_data_extraction - ERROR - Incorrect parameter entered
+Select between 'flat' or 'dss'.
+2022-10-20 17:49:07,161 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-20 18:03:15,352 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-20 18:03:39,050 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-20 18:03:56,801 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-20 18:03:56,890 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - System is not observable (cancelling)
+2022-10-20 18:03:56,891 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - INFO - Measurements available: 0. Measurements required: 29
+2022-10-20 18:03:56,891 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - INFO - Measurements available: 0. Measurements required: 29
+2022-10-20 18:14:35,088 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-20 18:30:28,060 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-20 18:37:47,613 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case (1ph or Pos), see documentation.
+2022-10-20 19:57:29,960 - py_open_dsse.Sample_test_systems_DSS - ERROR - Select an available test case (1ph or Pos), see documentation.
+2022-10-20 19:58:55,734 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 11:04:18,081 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 11:08:13,170 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 11:35:47,744 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 12:05:56,355 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 12:25:59,625 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 12:27:17,890 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 12:28:59,761 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 12:29:31,288 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 12:36:43,580 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 13:04:47,188 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 13:19:16,668 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 13:20:28,349 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 13:20:57,756 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 13:22:56,816 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 13:24:54,413 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 18:11:55,831 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 18:32:05,224 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 18:32:39,868 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 18:48:52,925 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:01:53,269 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:07:35,517 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:09:11,708 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:11:20,317 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:11:31,884 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:14:32,310 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:15:00,868 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:15:19,320 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-21 19:17:34,236 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-21 19:18:00,294 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-21 19:19:03,014 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-22 18:48:56,458 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-22 20:18:28,605 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:16:17,173 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:16:26,562 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 18:23:16,694 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:23:39,797 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:23:59,610 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 18:26:35,756 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:26:41,860 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 18:27:27,525 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:27:36,800 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 18:29:00,869 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:32:34,632 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:34:01,411 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:35:08,932 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:35:15,917 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 18:36:13,154 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:36:21,018 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 18:38:02,424 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:40:47,319 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:52:10,394 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 18:53:34,895 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:02:58,473 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:03:28,123 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:03:44,522 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:04:13,288 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:04:21,515 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 19:04:32,294 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:04:41,107 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 19:04:50,974 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:05:00,374 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 19:05:08,529 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:05:19,475 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 19:05:25,666 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:31:00,178 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:31:11,379 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 19:31:28,831 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 19:31:36,249 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 19:56:06,846 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 21:27:30,933 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 21:27:38,776 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 21:27:59,856 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 21:31:50,167 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 21:31:57,036 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 21:50:22,292 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 21:50:29,839 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 21:52:37,574 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 21:53:13,035 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 21:53:22,583 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 21:53:33,783 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 23:43:15,163 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 23:43:39,264 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 23:43:47,375 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 23:44:02,958 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 23:44:09,739 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 23:44:21,563 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 23:47:40,698 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 23:51:06,086 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 23:51:13,530 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-23 23:51:30,861 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-23 23:56:43,720 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 09:50:05,825 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 09:50:41,898 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 09:57:35,262 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 09:57:41,310 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 09:58:06,526 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 09:58:13,200 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 10:02:09,828 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:13:41,618 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:15:22,469 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:38:05,420 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:38:58,723 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:39:05,978 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 10:40:16,273 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:40:22,359 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 10:41:03,010 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:44:19,549 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:44:26,644 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 10:45:12,070 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:45:19,655 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 10:46:55,362 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:55:41,461 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:56:22,901 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:58:20,883 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:58:43,079 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:58:50,305 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 10:59:53,349 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 10:59:58,475 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:00:17,885 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:00:47,484 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:01:07,043 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:02:03,569 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:05:34,410 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:05:54,539 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:06:00,145 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:07:11,258 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:07:41,791 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:17:49,258 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:17:55,623 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:18:41,299 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:18:47,013 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:19:12,022 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:19:17,515 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:21:10,077 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:22:53,286 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:22:59,180 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:23:14,308 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:31:09,541 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:33:00,663 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:33:06,404 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:33:19,109 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:34:50,051 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:35:20,009 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:35:42,494 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:35:48,104 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:36:45,236 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:36:50,677 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:37:21,619 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:37:28,146 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:37:54,654 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:38:24,592 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:38:30,574 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:41:42,453 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:41:48,337 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:42:25,675 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:42:30,820 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:42:30,821 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - change the type and location of measurements
+2022-10-24 11:42:30,821 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - change the type and location of measurements
+2022-10-24 11:44:09,379 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:44:58,362 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:45:38,088 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - change the type and location of measurements
+2022-10-24 11:45:38,088 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - change the type and location of measurements
+2022-10-24 11:56:58,264 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:57:49,782 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:57:55,929 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:57:55,930 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - delta', 3.09E+47
+2022-10-24 11:57:55,930 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - delta', 3.09E+47
+2022-10-24 11:57:55,930 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - change the type and location of measurements
+2022-10-24 11:57:55,930 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - change the type and location of measurements
+2022-10-24 11:57:55,930 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - change the type and location of measurements
+2022-10-24 11:58:46,084 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 11:58:51,561 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge (max_iter = 30)
+2022-10-24 11:58:51,561 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - delta', 3.09E+47
+2022-10-24 11:58:51,561 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - delta', 3.09E+47
+2022-10-24 12:02:40,423 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:02:46,617 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 12:02:46,617 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.09E+47
+2022-10-24 12:02:46,617 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.09E+47
+2022-10-24 12:03:06,396 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:03:11,239 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 12:03:11,240 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.09E+47
+2022-10-24 12:03:11,240 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.09E+47
+2022-10-24 12:03:11,240 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:03:11,240 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:03:11,240 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:05:40,337 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:07:38,736 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:07:44,425 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 12:07:44,426 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.09E+47
+2022-10-24 12:07:44,426 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.09E+47
+2022-10-24 12:07:44,426 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:07:44,426 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:07:44,426 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:09:27,818 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:09:48,681 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:10:15,266 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:11:09,927 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:15:35,459 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:15:41,225 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 12:15:41,226 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.89E+33
+2022-10-24 12:15:41,226 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.89E+33
+2022-10-24 12:15:41,226 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:15:41,226 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:15:41,226 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:16:43,906 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:16:52,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 12:16:52,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.89E+33
+2022-10-24 12:16:52,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.89E+33
+2022-10-24 12:16:52,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:16:52,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:16:52,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:17:02,040 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:20:07,682 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:20:33,460 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:21:17,108 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:26:10,452 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:26:16,308 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Cannot calculate inverse matrix of G, change type and location of measurements
+2022-10-24 12:28:10,975 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:28:15,064 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 12:28:15,064 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.43E-01
+2022-10-24 12:28:15,064 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.43E-01
+2022-10-24 12:28:15,065 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:28:15,065 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:28:15,065 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:28:28,312 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:29:00,353 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:29:07,287 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 12:29:07,288 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.32E-01
+2022-10-24 12:29:07,288 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.32E-01
+2022-10-24 12:29:07,288 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:29:07,288 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:29:07,288 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:30:23,827 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:31:10,843 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:31:16,412 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 12:31:16,412 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.86E+03
+2022-10-24 12:31:16,412 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 3.86E+03
+2022-10-24 12:31:16,413 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:31:16,413 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:31:16,413 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 12:33:21,221 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:33:36,319 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:34:30,160 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:35:31,789 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:35:51,585 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:38:01,271 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:38:54,502 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:40:32,694 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 12:41:26,173 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:24:55,102 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:25:27,934 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:26:43,953 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:27:08,479 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:28:05,674 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:28:16,941 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 13:28:16,942 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.75E+01
+2022-10-24 13:28:16,942 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.75E+01
+2022-10-24 13:28:16,942 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:28:16,942 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:28:16,942 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:28:58,564 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:29:25,461 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:29:36,688 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 13:29:36,689 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.75E+01
+2022-10-24 13:29:36,689 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.75E+01
+2022-10-24 13:29:36,689 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:29:36,689 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:29:36,689 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:30:42,651 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:31:54,157 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:32:05,608 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 13:32:05,609 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 4.00E+00
+2022-10-24 13:32:05,609 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 4.00E+00
+2022-10-24 13:32:05,610 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:32:05,610 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:32:05,610 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:32:24,872 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:32:36,204 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 13:32:36,205 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 4.48E+02
+2022-10-24 13:32:36,205 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 4.48E+02
+2022-10-24 13:32:36,205 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:32:36,205 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:32:36,205 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 13:33:09,579 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 13:33:47,082 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:19:58,031 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:20:18,028 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:20:28,826 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:20:28,826 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 4.48E+02
+2022-10-24 14:20:28,826 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 4.48E+02
+2022-10-24 14:20:28,827 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:20:28,827 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:20:28,827 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:21:16,829 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:21:33,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:21:33,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 4.48E+02
+2022-10-24 14:21:33,748 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 4.48E+02
+2022-10-24 14:21:33,749 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:21:33,749 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:21:33,749 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:24:28,993 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:24:38,317 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:24:38,318 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 2.18E+01
+2022-10-24 14:24:38,318 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 2.18E+01
+2022-10-24 14:24:38,318 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:24:38,318 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:24:38,318 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:25:38,475 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:27:33,329 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:27:50,068 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:28:00,751 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:28:00,751 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 7.24E+00
+2022-10-24 14:28:00,751 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 7.24E+00
+2022-10-24 14:28:00,752 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:28:00,752 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:28:00,752 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:28:09,488 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:28:20,023 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:28:20,024 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 6.78E+00
+2022-10-24 14:28:20,024 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 6.78E+00
+2022-10-24 14:28:20,024 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:28:20,024 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:28:20,024 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:29:27,154 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:31:36,466 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:31:44,394 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:31:44,394 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.48E+00
+2022-10-24 14:31:44,394 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.48E+00
+2022-10-24 14:31:44,395 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:31:44,395 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:31:44,395 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:32:21,751 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:32:28,278 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:32:28,279 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 6.10E+00
+2022-10-24 14:32:28,279 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 6.10E+00
+2022-10-24 14:32:28,280 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:32:28,280 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:32:28,280 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:34:27,475 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:34:48,287 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-24 14:35:59,486 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:47:35,327 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:47:35,422 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - System is not observable (cancelling)
+2022-10-24 14:47:35,422 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - INFO - Measurements available: 5. Measurements required: 29
+2022-10-24 14:47:35,422 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - INFO - Measurements available: 5. Measurements required: 29
+2022-10-24 14:48:21,291 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:48:46,931 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:50:05,783 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:50:14,790 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:50:14,791 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 1.05E-01
+2022-10-24 14:50:14,791 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 1.05E-01
+2022-10-24 14:50:14,791 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:50:14,791 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:50:14,791 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:50:56,504 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:51:05,989 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:51:05,989 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 3.97E-02
+2022-10-24 14:51:05,989 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 3.97E-02
+2022-10-24 14:51:05,990 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:51:05,990 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:51:05,990 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:51:21,379 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:51:29,313 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:51:29,313 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 3.97E-02
+2022-10-24 14:51:29,313 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 3.97E-02
+2022-10-24 14:51:29,314 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:51:29,314 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:51:29,314 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:51:51,664 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:51:56,987 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:52:05,288 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:52:05,288 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.86E-03
+2022-10-24 14:52:05,288 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.86E-03
+2022-10-24 14:52:05,288 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:52:05,288 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:52:05,288 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:52:38,793 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:52:46,611 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:52:46,612 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.44E-02
+2022-10-24 14:52:46,612 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.44E-02
+2022-10-24 14:52:46,612 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:52:46,612 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:52:46,612 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:53:31,560 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:53:38,918 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:53:38,918 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.44E-02
+2022-10-24 14:53:38,918 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.44E-02
+2022-10-24 14:53:38,918 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:53:38,918 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:53:38,918 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:54:29,491 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:54:37,243 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:54:37,243 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.42E-02
+2022-10-24 14:54:37,243 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.42E-02
+2022-10-24 14:54:37,244 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:54:37,244 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:54:37,244 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:54:54,098 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:55:02,528 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:55:02,529 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.30E-02
+2022-10-24 14:55:02,529 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 7.30E-02
+2022-10-24 14:55:02,530 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:55:02,530 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:55:02,530 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:55:26,451 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:56:36,163 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:56:46,557 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - The state estimation algorithm does not converge
+2022-10-24 14:56:46,557 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 6.88E-02
+2022-10-24 14:56:46,557 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - ERROR - Number of iterrations:30, Tolerance: 6.88E-02
+2022-10-24 14:56:46,558 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:56:46,558 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:56:46,558 - py_open_dsse.DSSE_algorithms.WLS_alg_1ph - WARNING - Suggestion, change the location and type of measurements
+2022-10-24 14:57:17,661 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:57:55,295 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:58:10,590 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-24 14:58:40,995 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-25 12:20:13,005 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-25 12:20:34,701 - py_open_dsse.Algorithm_classification - DEBUG - State estimation of a single-phase distribution network 
+2022-10-25 12:21:15,706 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:21:22,082 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 12:21:22,083 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.08E+00
+2022-10-25 12:21:22,083 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.08E+00
+2022-10-25 12:21:22,083 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:21:22,083 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:21:22,083 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:21:35,474 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:21:42,503 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 12:21:42,503 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.08E+00
+2022-10-25 12:21:42,503 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.08E+00
+2022-10-25 12:21:42,504 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:21:42,504 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:21:42,504 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:21:57,580 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:22:04,494 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 12:22:04,495 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.08E+00
+2022-10-25 12:22:04,495 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 1.08E+00
+2022-10-25 12:22:04,496 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:22:04,496 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:22:04,496 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:22:33,120 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:23:03,987 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:23:18,277 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:23:40,274 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:23:47,287 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 12:23:47,287 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.80E+05
+2022-10-25 12:23:47,287 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.80E+05
+2022-10-25 12:23:47,288 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:23:47,288 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:23:47,288 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:25:02,828 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:25:08,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 12:25:08,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.80E+05
+2022-10-25 12:25:08,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.80E+05
+2022-10-25 12:25:08,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:25:08,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:25:08,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:25:35,051 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:25:41,845 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 12:25:41,846 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.01E+05
+2022-10-25 12:25:41,846 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.01E+05
+2022-10-25 12:25:41,847 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:25:41,847 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:25:41,847 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:30:13,452 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 12:30:13,479 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 12:30:13,807 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 12:30:13,807 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 12:30:19,309 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 12:30:19,309 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.01E+05
+2022-10-25 12:30:19,309 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.01E+05
+2022-10-25 12:30:19,309 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:30:19,309 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:30:19,309 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 12:43:25,149 - py_open_dsse.MEAS_from_OpenDSS - ERROR - Attention !! 
+You must close the MEAS_file_format.xlsx file and repeat the process.
+2022-10-25 12:43:46,326 - py_open_dsse.MEAS_from_OpenDSS - DEBUG - The empty file with the possible measurements was created and saved in: 
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files\MEAS_file_format.xlsx
+2022-10-25 13:09:12,267 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:09:12,307 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:09:12,655 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:09:12,655 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:09:12,702 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - System is not observable (cancelling)
+2022-10-25 13:09:12,702 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 6. Measurements required: 25
+2022-10-25 13:09:12,702 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - INFO - Measurements available: 6. Measurements required: 25
+2022-10-25 13:10:02,558 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:10:02,581 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:10:02,761 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:10:02,761 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:10:08,017 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:10:08,018 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 6.91E+01
+2022-10-25 13:10:08,018 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 6.91E+01
+2022-10-25 13:10:08,018 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:10:08,018 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:10:08,018 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:10:27,767 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:10:27,816 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:10:28,281 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:10:28,281 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_SeqPos_error_DSS.xlsx, was saved in:
+C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:10:34,231 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:10:34,232 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:10:34,232 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:10:34,232 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:10:34,232 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:10:34,232 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:11:13,744 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:12:12,404 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:13:29,807 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:17:24,154 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:17:30,231 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:17:30,231 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:17:30,231 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:17:30,231 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:17:30,231 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:17:30,231 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:18:07,263 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:18:11,741 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:18:11,741 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:18:11,741 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:18:11,742 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:18:11,742 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:18:11,742 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:18:41,469 - py_open_dsse.MEAS_from_OpenDSS - INFO - The file: MEAS_error_DSS.xlsx, was saved in C:\Users\tote_\OneDrive\Escritorio\Poetry_projects\py-open-dsse\py_open_dsse\examples\13NodeIEEE\MEAS_files
+2022-10-25 13:18:41,485 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:18:46,653 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:18:46,654 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:18:46,654 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:18:46,654 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:18:46,654 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:18:46,654 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:19:14,952 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:19:22,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:19:22,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:19:22,536 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:19:22,537 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:19:22,537 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:19:22,537 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:23:05,438 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:23:08,915 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:23:08,915 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:23:08,915 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:23:08,916 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:23:08,916 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:23:08,916 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:23:29,612 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:23:34,027 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:23:34,028 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:23:34,028 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:23:34,028 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:23:34,028 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:23:34,028 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:23:51,885 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:25:26,056 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:25:31,526 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:25:31,527 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:25:31,527 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:25:31,527 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:25:31,527 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:25:31,527 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:25:43,630 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:25:49,641 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:25:49,641 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:25:49,641 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:25:49,641 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:25:49,641 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:25:49,641 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:26:14,562 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:31:02,426 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:31:06,957 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:31:06,958 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:31:06,958 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 9.27E-02
+2022-10-25 13:31:06,958 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:31:06,958 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:31:06,958 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:31:29,183 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:31:34,620 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - The state estimation algorithm does not converge
+2022-10-25 13:31:34,620 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 7.10E+05
+2022-10-25 13:31:34,620 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - ERROR - Number of iterrations:30, Tolerance: 7.10E+05
+2022-10-25 13:31:34,622 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:31:34,622 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:31:34,622 - py_open_dsse.DSSE_algorithms.WLS_alg_Pos_Seq - WARNING - Suggestion, change the location and type of measurements
+2022-10-25 13:31:50,102 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:32:18,933 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:34:13,694 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 13:34:40,685 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 14:21:51,099 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
+2022-10-25 14:39:51,685 - py_open_dsse.Algorithm_classification - INFO - State estimation through the positive sequence equivalent circuit
