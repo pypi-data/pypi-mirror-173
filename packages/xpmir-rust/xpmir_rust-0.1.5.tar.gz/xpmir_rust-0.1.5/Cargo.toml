@@ -1,0 +1,27 @@
+[package]
+name = "xpmir-rust"
+version = "0.1.5"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "xpmir_rust"
+bench = false
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.5", features = ["extension-module", "abi3-py38"] }
+numpy = "0.16.2"
+ndarray = "0.15.4"
+serde = { version = "1.0", features = ["derive"] }
+ciborium = { version = "0.2" }
+simple-error = "0.2.3"
+byteorder = "1.4.3"
+log = { version = "0.4.17", features = ["max_level_debug", "release_max_level_warn"] }
+
+[dev-dependencies]
+ntest = "0.8.1"
+rand = "0.8.5"
+rand_distr = "0.4.3"
+rstest = "0.15.0"
+temp-dir = "0.1.11"
