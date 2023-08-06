@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/pasahitzak/__init__.py
+src/pasahitzak/password.py
+src/pasahitzak.egg-info/PKG-INFO
+src/pasahitzak.egg-info/SOURCES.txt
+src/pasahitzak.egg-info/dependency_links.txt
+src/pasahitzak.egg-info/top_level.txt

@@ -1,0 +1,89 @@
+# PasswordManager package
+This package deals with passwords creating, changing, reseting... them. The main class is called PasswordManager which contains the basic structure and CustomisingPassword is the second class that inherits PasswordManager's methods and structure to create customised passwords. There are several methods and arguments on it which will be explained hereafter:
+
+## PasswordManager class: 
+
+### Main arguments:
+- length: the length of the password (integer, by default: 8)
+- digits: if password contains digits (boolean, by default: True)
+- letters: if password contains letters (boolean, by default: True)
+- mayus: if password contains capital letters (boolean, if letters = False this arguments is not taken into account, by default: True)
+- punctuation: if password contains special characters (boolean, by default: True)
+
+### Methods:
+- CreatePassword: Method to create the password meeting class requirements and store it in used passowrds (__password_list - encapsulated argument)
+  - Input: No input 
+  - Output: Created password (str)
+  
+- IsExistingPassword: Method to ensure if a password has already been used
+  - Input: Password to check if has been used (str)
+  - Output: Message (has been used / never has been used)
+
+- CreateaSimilarPasswordABIT: Method to become the current method into a similar one (shuffling)
+  - Input: No input
+  - Output: Message (changed successfully)
+
+- ResetPassword: Method to reset the current password to empty (no password)
+  - Input: No input
+  - Output: Message (deleted successfully)
+  
+- ChangeCurrentPassword: Method to change the current password with the input one
+  - Input: The new password (str)
+  - Output: Message (changed successfully)
+
+
+## CustomisingPassword class: 
+As it has been mentioned before, this class inherits PasswordManager class. This is used in order to have additional functionalities like creating a customised password or checking if a password is secure enough.
+
+### Main arguments:
+Bearing in mind it inherits the above class, it has the same atributtes as PasswordManager.
+
+### Methods:
+Apart from the methods above, it another two functions:
+
+- CreateCustomisedPassword: Method to customise a password with a given word (givenword + random characters from current password) [It does not change the current password, to do so use method ChangeCurrentPassword]
+  - Input: Word to add in the password (str)
+  - Output: Customised password (str)
+
+- IsMyPasswordSecure: Method to check if a password is secure or not taking into account the characteristics
+    - Input: Password to be checked (str)
+    - Output: A message commenting if the input password is secure
+
+
+## Application example
+
+from password import PasswordManager
+
+1) First of all we instantiate the class:
+
+pm = PasswordManager()                       # it will use the default atributtes
+
+2) We create a password:
+
+mypassword = pm.CreatePassword()
+
+print('My password is:', mypassword)          # My password is: p7.!FDf1
+
+3) We check that the password has been internally stored
+
+print(pm.IsExistingPassword(mypassword))      # This password has been used
+
+print(pm.IsExistingPassword('sdfdfa'))        # This password has never been used
+
+4) We instantiate the second class
+
+cp = CustomisingPassword()                    # it will use the default atributtes
+
+5) We create a customised password containing a desired word
+
+new_password = cp.CreateCustomisedPassword('Elene')
+
+print('My new customised password is: ', new_password) # My new customised password is: Elene12=
+
+6) Check it the customised password is secure
+
+print(cp.IsMyPasswordSecure(new_password))    # Your password is secure
+
+7) Now that we have created a customised password and it is secure we save it as current password
+
+print(cp.ChangeCurrentPassword(new_password)) # Your password has been changed successfully
