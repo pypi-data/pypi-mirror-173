@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: fast_api_gcs
+Version: 0.0.1
+Summary: Fast API Google Cloud Storage
+Author-email: Bayu Satria Gemilang <bayu.code.lab@gmail.com>
+Project-URL: Homepage, https://github.com/bayu-code-lab/fastapi-gcs
+Project-URL: Bug Tracker, https://github.com/bayu-code-lab/fastapi-gcs/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fastapi-gcs
+Fast API GCS
