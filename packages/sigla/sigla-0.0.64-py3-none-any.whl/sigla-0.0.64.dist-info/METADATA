@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sigla
+Version: 0.0.64
+Summary: Yet another code generator
+Author: mg santos
+Author-email: mauro.goncalo@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Jinja2 (==3)
+Requires-Dist: black (==22.10.0)
+Requires-Dist: configparser (>=5.0.1,<6.0.0)
+Requires-Dist: environ-config (>=20.1.0,<21.0.0)
+Requires-Dist: flake8-cognitive-complexity (>=0.1.0,<0.2.0)
+Requires-Dist: inquirer (>=2.7.0,<3.0.0)
+Requires-Dist: mypy (==0.982)
+Requires-Dist: pretty-errors (>=1.2.19,<2.0.0)
+Requires-Dist: pydash (>=4.9.1,<5.0.0)
+Requires-Dist: python-frontmatter (>=0.5.0,<0.6.0)
+Requires-Dist: shellingham (>=1.4.0,<2.0.0)
+Requires-Dist: typer (==0.6.1)
