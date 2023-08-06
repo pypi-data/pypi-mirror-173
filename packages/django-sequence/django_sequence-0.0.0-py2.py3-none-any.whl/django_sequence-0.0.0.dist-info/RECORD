@@ -1,0 +1,14 @@
+django_sequence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sequence/admin.py,sha256=IloZ7AH773dLYEMYA7MPFPCswNJ54-qZpD8TwKPO46E,943
+django_sequence/fields.py,sha256=FpIwDeTpJOUNM5j3qtk1ro0JjlAKqpmok84YJjQG6z4,658
+django_sequence/models.py,sha256=xg5vTd6FU7on3msQd24aI7o7S_QthSgTJE3LEjkyeMg,7794
+django_sequence/migrations/0001_initial.py,sha256=0vED3FjYKdGeNxx9NGbuU4ysnhaIMOKBrqZfPnRSHIA,3974
+django_sequence/migrations/0002_populate.py,sha256=ZQKRiWfu9mRy8RiNDASth2HeLE4z98n7WQEdeEIZ824,1953
+django_sequence/migrations/0003_alter_sequence_id_alter_stage_id_and_more.py,sha256=C4OzTY8D_V2cCrxCwQ4gDWuXIma3SQF-s9I41YJgiVw,1082
+django_sequence/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sequence-0.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_sequence-0.0.0.dist-info/METADATA,sha256=YUWZyBn3wEKcUrb3b5Mr0iehk2z-O6VJ3OU3BbwP3uo,629
+django_sequence-0.0.0.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+django_sequence-0.0.0.dist-info/top_level.txt,sha256=yH8JLDIRYW1P3GhefmrEpEjgzSykTaJbOUk2quSQS8Y,16
+django_sequence-0.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_sequence-0.0.0.dist-info/RECORD,,
