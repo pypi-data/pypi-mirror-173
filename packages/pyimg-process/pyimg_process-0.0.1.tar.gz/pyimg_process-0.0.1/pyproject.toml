@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling","opencv-python", "numpy", "matplotlib"]
+build-backend = "hatchling.build"
+[project]
+name = "pyimg-process"
+version = "0.0.1"
+authors = [
+  { name="Mikel Agirrebeitia", email="mikel.agirrebeitia@alumni.mondragon.edu" },
+  { name="Jon Amelibia", email="jon.amelibia@alumni.mondragon.edu" },
+]
+description = "A simple image processing package."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jonamelibia/pyimg-process"
