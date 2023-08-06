@@ -1,0 +1,6 @@
+bugs:
+    USER : ""
+    HOST : ""
+    SLOCUM_DELAY_BINARY_DATA_DIR : ""
+    SLOCUM_LIVE_BINARY_DATA_DIR : ""
+    WEB_HOOK_TOKEN : ""
