@@ -1,0 +1,16 @@
+gym
+numpy>=1.20
+loguru
+
+[:python_version < "3.9"]
+importlib-resources
+
+[cvxpy]
+cvxpy
+
+[exp]
+hydra-core
+stable-baselines3
+
+[widget]
+ipympl
