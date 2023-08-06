@@ -1,0 +1,9 @@
+setup.py
+opni_proto/__init__.py
+opni_proto/log_anomaly_payload.proto
+opni_proto/log_anomaly_payload_pb.py
+opni_proto.egg-info/PKG-INFO
+opni_proto.egg-info/SOURCES.txt
+opni_proto.egg-info/dependency_links.txt
+opni_proto.egg-info/requires.txt
+opni_proto.egg-info/top_level.txt
