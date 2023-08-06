@@ -1,0 +1,5 @@
+opencv-python
+scipy
+fast-histogram
+fnnls
+scikit-learn
