@@ -1,0 +1,3 @@
+[console_scripts]
+import-roundup = heptapod_import_roundup.main:main
+

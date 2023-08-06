@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: heptapod_import_roundup
+Version: 0.1.0
+Summary: Toolbox library for using the GitLab/Heptapod API for import use cases
+Home-page: https://foss.heptapod.net/heptapod/heptapod-api-import
+Author: Georges Racinet
+Author-email: georges.racinet@octobus.net
+License: GPL3+
+Keywords: hg mercurial git heptapod gitlab
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Heptapod Roundup Issues Importer
+
+This package provides an executable to import issues from the [Roundup issue
+tracker](https://roundup.sourceforge.io)
+
