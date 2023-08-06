@@ -1,0 +1,12 @@
+setup.py
+iman/Audio.py
+iman/__init__.py
+iman/info.py
+iman/metrics.py
+iman/tsne.py
+iman/xvector.py
+iman.egg-info/PKG-INFO
+iman.egg-info/SOURCES.txt
+iman.egg-info/dependency_links.txt
+iman.egg-info/requires.txt
+iman.egg-info/top_level.txt
