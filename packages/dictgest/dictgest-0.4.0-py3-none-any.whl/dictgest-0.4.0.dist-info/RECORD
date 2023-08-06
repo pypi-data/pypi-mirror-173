@@ -1,0 +1,11 @@
+dictgest/__init__.py,sha256=2qmX4Os-tGuLldtl0NhETKhE3TOsSWc504N07o9qdXc,372
+dictgest/cast.py,sha256=V6YjNeD9n3MUdYJoVdAqOxdE_OXImiNlflBlnb6bKfk,5801
+dictgest/converter.py,sha256=n6Lfu6aOZy-k4ir-xg1mZhR9slFPZGV2QpBtwTlQjxA,2240
+dictgest/routes.py,sha256=TpOuNqcvnTAN4PE_ztGGDM4DQepu8IgnFWz9JW2SvCM,6260
+dictgest/serdes.py,sha256=W7BIp_LMK0KTttqN09KNoyFsGkruRLyYEOzG3U7uA4E,7197
+dictgest/utils.py,sha256=FPdsH_0-LE-XHNZfea0LVpOjmRgs2j11fDMsfFH3AUQ,272
+dictgest-0.4.0.dist-info/LICENSE.txt,sha256=l9AKCavg9UR0aJVJ4AX7Ia0l1bioii04SA-y9K7qJ9M,1083
+dictgest-0.4.0.dist-info/METADATA,sha256=d1qq9sX93pH9LmN8KBjbQ5vbwLEv2WVrALCFzAZfrVA,12390
+dictgest-0.4.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dictgest-0.4.0.dist-info/top_level.txt,sha256=SadAia2jHucRR94Tbg3x-ZYs9jDUA5yEQeVtXql8C0Y,9
+dictgest-0.4.0.dist-info/RECORD,,
