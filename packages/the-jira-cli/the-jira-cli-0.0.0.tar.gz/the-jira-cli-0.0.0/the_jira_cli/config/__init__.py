@@ -1,0 +1,19 @@
+import os
+from atlassian import Jira
+from dotenv import load_dotenv
+load_dotenv()
+
+
+ATLASSIAN_API_TOKEN = os.getenv("ATLASSIAN_API_TOKEN")
+ATLASSIAN_SERVER = os.getenv("ATLASSIAN_SERVER")
+ATLASSIAN_SERVER_IS_CLOUD = os.getenv("ATLASSIAN_SERVER_IS_CLOUD")
+ATLASSIAN_USERNAME = os.getenv("ATLASSIAN_USERNAME")
+ATLASSIAN_DEFAULT_BOARD = os.getenv("ATLASSIAN_DEFAULT_BOARD")
+ATLASSIAN_DEFAULT_PROJECT = os.getenv("ATLASSIAN_DEFAULT_PROJECT")
+
+jira = Jira(
+    url=ATLASSIAN_SERVER,
+    username=ATLASSIAN_USERNAME,
+    password=ATLASSIAN_API_TOKEN,
+    cloud=ATLASSIAN_SERVER_IS_CLOUD
+)

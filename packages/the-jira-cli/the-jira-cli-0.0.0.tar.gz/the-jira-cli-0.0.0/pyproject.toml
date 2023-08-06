@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the-jira-cli"
+description = "Manage Jira from the Terminal"
+authors = [{ "name" = "Jonathan Llovet", "email" = "jonathan.llovet@gmail.com" }]
+readme = "README.md"
+keywords = ["Jira", "Atlassian", "Project", "Management", "CLI"]
+license = { text = "MIT License" }
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+]
+dynamic = ["version", "dependencies"]
+
+[project.scripts]
+jira = "the_jira_cli.jira:jira"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
