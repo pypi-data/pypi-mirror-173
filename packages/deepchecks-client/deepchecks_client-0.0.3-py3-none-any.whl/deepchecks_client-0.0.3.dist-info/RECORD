@@ -1,0 +1,14 @@
+deepchecks_client/__init__.py,sha256=ZGuXrz0Ry_tvXGEki0yQlyUI385Hw36YP0BzIqO3rac,771
+deepchecks_client/core/__init__.py,sha256=JmOohVGkIfHSMvRpSMGyaN_v69gLv2cMOKNF8D-wL2c,749
+deepchecks_client/core/client.py,sha256=cvHIcTGJg3KPJYVwIDQN95YOE150y6OIU0yLQTSPIXg,27844
+deepchecks_client/core/utils.py,sha256=tBA-IWDGzT9urYS5AAN5xaFEV5-2ItnQkrsOPbh89tk,5787
+deepchecks_client/tabular/__init__.py,sha256=SzEYZtuPft_SfN43pn0P2OR5AyB2-PtgJe7EYNdFuH4,686
+deepchecks_client/tabular/client.py,sha256=nQThfxXASWhOngEZQl2ry4EVczm65b4NNOEeQQakkJA,21396
+deepchecks_client/tabular/utils.py,sha256=lL39N35E6b6Fj8NMwtyVTsrbU-vyocU0zdRdV3fvOZE,5796
+deepchecks_client/vision/__init__.py,sha256=33FywUGJ7Vqd5YPyset9bKBhl95v_05ZzQMFD79R0JI,517
+deepchecks_client/vision/client.py,sha256=7I4pQMvx1BTe__GgYXYXYnUad2TUZItMjIMooHTZW-Y,18170
+deepchecks_client/vision/utils.py,sha256=3TTt5k76Yy3SY71i56rg17JPYhbGcMOcEt7wCMkjbIQ,3230
+deepchecks_client-0.0.3.dist-info/METADATA,sha256=0eBg-rV9u2TwAj-S4HMS0oWKxzYLll4jJQQxmzuGjFI,425
+deepchecks_client-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+deepchecks_client-0.0.3.dist-info/top_level.txt,sha256=AX41JSwLA_Aoyd1jG4xZ4CyKF-WfjHFYRPgunpTGA18,18
+deepchecks_client-0.0.3.dist-info/RECORD,,
