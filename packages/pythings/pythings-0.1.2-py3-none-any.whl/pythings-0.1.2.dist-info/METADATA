@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: pythings
+Version: 0.1.2
+Summary: A zero-depedencies and most-used python resources.
+Home-page: https://www.github.com/leoarayav
+Author: leoarayav
+Author-email: laraya1818@gmail.com
+License: MIT
+Requires: time
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## pythings
+A zero-depedencies and most-used python resources.
+
+### Available resources
+- Convertions
+> More convertions can be added.
+
+### Features
+- Operations
+- Web scrapping
+- Convertions
+
+### Usage
+1. Use PyPi to install _pythings_ in your computer.
+2. Open new terminal in your code enviroment and type below:
+`pip install pythings`
+
+### Writing our first program with _pythings_
+```python
+from pythings.convertions import Convertions
+
+# Lets create an object
+c = Convertions()
+
+# Calling this convertion method
+c.text_to_binary("foo")
+
+# Output:
+# 01100110 01101111 01101111
+```
+### License
+MIT License - [Read full LICENSE](./LICENSE)
