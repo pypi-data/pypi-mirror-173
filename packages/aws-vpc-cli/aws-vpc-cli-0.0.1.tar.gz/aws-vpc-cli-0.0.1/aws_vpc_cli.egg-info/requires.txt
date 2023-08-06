@@ -1,0 +1,10 @@
+ipaddr
+prettytable
+prompt-toolkit
+pyfiglet
+Pygments
+PyInquirer
+PyYAML
+regex
+six
+wcwidth
