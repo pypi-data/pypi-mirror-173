@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: ProxyPatternPool
+Version: 0.1
+Summary: Generic Proxy and Pool Classes for Python
+Home-page: https://github.com/zx80/proxy-pattern-pool
+Author: Fabien Coelho
+Author-email: proxy.pool@coelho.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Proxy Pattern Pool
+
+Generic Proxy and Pool Classes for Python.
+
+TODO Badges
+
+TODO Teaser
+
+## Documentation
+
+TODO
+
+## License
+
+This code is public domain.
+
+
