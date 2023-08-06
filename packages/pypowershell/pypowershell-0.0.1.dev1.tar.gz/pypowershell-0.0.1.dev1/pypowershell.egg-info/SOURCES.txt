@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+powershell/__init__.py
+powershell/__version__.py
+pypowershell.egg-info/PKG-INFO
+pypowershell.egg-info/SOURCES.txt
+pypowershell.egg-info/dependency_links.txt
+pypowershell.egg-info/requires.txt
+pypowershell.egg-info/top_level.txt

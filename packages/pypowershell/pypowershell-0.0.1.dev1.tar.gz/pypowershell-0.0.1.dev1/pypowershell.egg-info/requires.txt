@@ -1,0 +1,2 @@
+beartype==0.11.0
+semantic-version==2.10.0
