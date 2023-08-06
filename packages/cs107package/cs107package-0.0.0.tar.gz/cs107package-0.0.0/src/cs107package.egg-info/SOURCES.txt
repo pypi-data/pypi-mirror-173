@@ -1,0 +1,8 @@
+pyproject.toml
+src/cs107package/__init__.py
+src/cs107package/__main__.py
+src/cs107package/pkg.py
+src/cs107package.egg-info/PKG-INFO
+src/cs107package.egg-info/SOURCES.txt
+src/cs107package.egg-info/dependency_links.txt
+src/cs107package.egg-info/top_level.txt
