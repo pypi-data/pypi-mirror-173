@@ -1,0 +1,8 @@
+Products.CMFPlone>=6.0b3
+plone.namedfile>=6.0.0b5
+setuptools
+six
+
+[test]
+plone.app.testing
+plone.app.robotframework[debug]
