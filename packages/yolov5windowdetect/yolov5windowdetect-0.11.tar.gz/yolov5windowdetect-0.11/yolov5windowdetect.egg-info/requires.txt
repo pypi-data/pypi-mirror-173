@@ -1,0 +1,8 @@
+keyboard
+numpy
+opencv_python
+pandas
+PILasOPENCV
+PrettyColorPrinter
+requests
+torch

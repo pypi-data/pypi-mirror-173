@@ -1,0 +1,4 @@
+include yolov5windowdetect/requirements.txt
+include yolov5windowdetect/thirdparty.json
+include yolov5windowdetect/README.MD
+include yolov5windowdetect/LICENSE

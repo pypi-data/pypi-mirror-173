@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+yolov5windowdetect/LICENSE
+yolov5windowdetect/README.MD
+yolov5windowdetect/__init__.py
+yolov5windowdetect/requirements.txt
+yolov5windowdetect/thirdparty.json
+yolov5windowdetect.egg-info/PKG-INFO
+yolov5windowdetect.egg-info/SOURCES.txt
+yolov5windowdetect.egg-info/dependency_links.txt
+yolov5windowdetect.egg-info/requires.txt
+yolov5windowdetect.egg-info/top_level.txt
