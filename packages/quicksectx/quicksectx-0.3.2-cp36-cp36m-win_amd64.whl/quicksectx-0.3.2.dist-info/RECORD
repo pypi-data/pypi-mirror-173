@@ -1,0 +1,12 @@
+quicksect/quicksect.cp36-win_amd64.pyd,sha256=rBOr7benxJ0dgQNGuKmb1FS2gID5TQXwGAZ-HRHoM1k,120320
+quicksectx/__init__.py,sha256=YAxWfxPsyGGCqpmFpC2q73GcVj51t0x2UXZX5UefvEE,148
+quicksectx/quicksectx.cp36-win_amd64.pyd,sha256=WNbEB8nRdBGUG8O0f7kG5NPYtKnb6M88tXo_SJvWsR0,132096
+quicksectx/quicksectx.cpp,sha256=y0FiHAGYPJdOC6iKuk3EE_oyDMAqAP9B6drNDpT2nkw,687231
+quicksectx/quicksectx.pxd,sha256=RhB3GuLXLqTw5QlPZt06yz1b5TyiEubBpIiSysCk7R8,1505
+quicksectx/quicksectx.pyx,sha256=b4Rn-HnA78pnfBr2CgPunvtg7lk0npq1TV52oWSEW8A,18612
+quicksectx/version.py,sha256=X9kmrnpMLErYGgz0-vxkPsDHmA7XAA0iJ2d_9H1Eg20,73
+quicksectx-0.3.2.dist-info/LICENSE,sha256=iLuGje-RcnHWPTPUiAtDMLKFFDA-bfux_KDl2sBIBB8,1088
+quicksectx-0.3.2.dist-info/METADATA,sha256=9XzE6eB9eaG-F45FipFU-_2TkYBSB7cDFPsRKOXwueA,2752
+quicksectx-0.3.2.dist-info/WHEEL,sha256=zukbZftcRdNfJ55Q_RYV9JZ3uVyqWKyq-wDJbmszs_U,101
+quicksectx-0.3.2.dist-info/top_level.txt,sha256=8NDGIj_DVaDPjTJqEw3r-3n9N4pUAEicM0Xb7LEAvwc,21
+quicksectx-0.3.2.dist-info/RECORD,,
