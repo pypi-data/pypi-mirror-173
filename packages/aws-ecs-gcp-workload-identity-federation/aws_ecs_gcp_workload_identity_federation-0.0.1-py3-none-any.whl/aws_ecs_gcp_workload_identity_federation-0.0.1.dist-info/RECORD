@@ -1,0 +1,7 @@
+aws_ecs_gcp_workload_identity/__init__.py,sha256=aglG7Wuq7yEPMj_u4zqyPJQhbqsDhH3Pnqia4V2Dk1o,61
+aws_ecs_gcp_workload_identity/aws_instance_credentials.py,sha256=i7ic_7St2t8vYoXqmMNRhCEF3OgKiGA-_nIAH8QxHRE,690
+aws_ecs_gcp_workload_identity_federation-0.0.1.dist-info/LICENSE,sha256=GvwwfP5OFWKoteR9qOXL8nswjJOky5OmE7L7Rw3MKQw,1071
+aws_ecs_gcp_workload_identity_federation-0.0.1.dist-info/METADATA,sha256=SQi-QRNWGhznbsbkwiHdxnXTBJeH3dYPir_NlSW8oW8,2926
+aws_ecs_gcp_workload_identity_federation-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_ecs_gcp_workload_identity_federation-0.0.1.dist-info/top_level.txt,sha256=IIkLEgsMXjKdkl4L3UqDeuOURCNWCoIvPoYiKoOhLNA,30
+aws_ecs_gcp_workload_identity_federation-0.0.1.dist-info/RECORD,,
