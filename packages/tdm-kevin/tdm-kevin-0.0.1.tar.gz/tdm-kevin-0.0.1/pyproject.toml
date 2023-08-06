@@ -1,0 +1,22 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tdm-kevin"
+version = "0.0.1"
+description = "Get imdb ratings."
+readme = "README.md"
+authors = [{ name = "Kevin Amstutz", email = "kamstut@purdue.edu" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["example", "imdb", "tutorial"]
+dependencies = [
+    "lxml >= 4.9.1",
+    "requests >= 2.28.1",
+]
+requires-python = ">=3.10"
