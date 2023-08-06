@@ -1,0 +1,4 @@
+include generate_training_data_ml/requirements.txt
+include generate_training_data_ml/thirdparty.json
+include generate_training_data_ml/README.MD
+include generate_training_data_ml/LICENSE
