@@ -1,0 +1,15 @@
+aiogram_tests/__init__.py,sha256=hgTYBbXUF-qXWxh5fUEeED34vhcAmPrxvQKStDmWHgI,130
+aiogram_tests/exceptions.py,sha256=cgyhFFntzudw_3Lw6QwpC9nKtMr_mMSQPUGbBDKRybQ,50
+aiogram_tests/mocked_bot.py,sha256=S8HeiMAmB_jMfnOZXz6pAZIJs0o5UaMa48RdxT8vNII,3158
+aiogram_tests/requester.py,sha256=YXFclk8nPQIFv65rwXuUZlNtJAb5eQsZ2WpChRevyfw,5282
+aiogram_tests/utils.py,sha256=PnKkxzEQ6vXcXXPnpTbyjlv4RoJzoTTLyj4MathU09M,112
+aiogram_tests/handler/__init__.py,sha256=Jg0lOInrpZwsC_32MLRmAGwq5Dpz2ip4n9ni2qGX_Fo,132
+aiogram_tests/handler/base.py,sha256=De5mXH4-gFLc6e8rDapI24B1RQpOIFFFJpkgJSKNlBw,2327
+aiogram_tests/handler/handler.py,sha256=OdW7X00YAUYYITvkzyBvqPnX9j3mEBE4zJCPIGZPz-A,2598
+aiogram_tests/types/__init__.py,sha256=Z4_lNtYKUe_PXCde_an7r2MFOl23_bIrT42kBLcYq-w,130
+aiogram_tests/types/dataset/__init__.py,sha256=5jlcvVDx2lC3SbLxivpMHELHlHLGuhfynzM30pz-Df0,14653
+aiogram_tests/types/dataset/base.py,sha256=1No_gOHXI1YmTiRsKeogdH_E71JjBMVYwg1KQ6HGong,2018
+aiogram_tests-1.0.2.dist-info/METADATA,sha256=2KYzqVcbaaY05k72sUFe9sovLrX3WZlYL5BLJKA-UZA,1646
+aiogram_tests-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiogram_tests-1.0.2.dist-info/top_level.txt,sha256=os16yvDxaH1tLO6gEl8mDrf64nXoSE5agor-YRufXLE,14
+aiogram_tests-1.0.2.dist-info/RECORD,,
