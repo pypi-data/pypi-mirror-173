@@ -1,0 +1,7 @@
+
+* There's no local repository locking. If another process writes to the
+  repository while the HTTP server is active, it might serve the wrong
+  contents. If the OSTree repo locking API is made public, the local
+  repo should be locked while the push is happening. In practice this
+  shouldn't be an issue since you're unlikely to be making commits into
+  a shared repo.
