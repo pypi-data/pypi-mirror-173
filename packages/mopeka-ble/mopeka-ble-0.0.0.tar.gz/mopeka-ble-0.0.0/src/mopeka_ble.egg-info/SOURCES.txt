@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/mopeka_ble/__init__.py
+src/mopeka_ble/parser.py
+src/mopeka_ble.egg-info/PKG-INFO
+src/mopeka_ble.egg-info/SOURCES.txt
+src/mopeka_ble.egg-info/dependency_links.txt
+src/mopeka_ble.egg-info/top_level.txt
