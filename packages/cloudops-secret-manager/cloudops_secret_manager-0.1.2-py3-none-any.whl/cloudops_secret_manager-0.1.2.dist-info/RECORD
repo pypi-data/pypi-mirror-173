@@ -1,0 +1,9 @@
+cloudops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudops/secret_manager/__init__.py,sha256=lEMJwA3actzAckQmq1FiDl58GhPtkNY1NXmkGQQ4Aqc,169
+cloudops/secret_manager/json_secret.py,sha256=S0d4ufp4GcfM5V7BHvhmLaF8wPAoyPaVCbvhMNBsNxQ,311
+cloudops/secret_manager/protocol.py,sha256=MtcmqoZLu2jW-LVqaCsJoNg0zOWqFCcZTVDf2cP_G5U,165
+cloudops/secret_manager/yaml_secret.py,sha256=s_D1ino7y9ae89ccyg6avQqdNKAXZHTbPb6hmFNM49Q,316
+cloudops_secret_manager-0.1.2.dist-info/LICENSE,sha256=WTpVHJVcwtu1Qd8tLwC_07HIEfNFasL6doY3jBlabU8,1088
+cloudops_secret_manager-0.1.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+cloudops_secret_manager-0.1.2.dist-info/METADATA,sha256=GXcpp5O6s3NJxURj_laJQTkX-a0yqTv4LX4mNN9f-Zk,748
+cloudops_secret_manager-0.1.2.dist-info/RECORD,,
