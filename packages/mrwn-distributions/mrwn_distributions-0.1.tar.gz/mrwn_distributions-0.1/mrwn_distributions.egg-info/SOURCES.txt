@@ -1,0 +1,10 @@
+setup.py
+mrwn_distributions/Binomialdistribution.py
+mrwn_distributions/Gaussiandistribution.py
+mrwn_distributions/Generaldistribution.py
+mrwn_distributions/__init__.py
+mrwn_distributions.egg-info/PKG-INFO
+mrwn_distributions.egg-info/SOURCES.txt
+mrwn_distributions.egg-info/dependency_links.txt
+mrwn_distributions.egg-info/not-zip-safe
+mrwn_distributions.egg-info/top_level.txt
