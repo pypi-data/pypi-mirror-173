@@ -1,0 +1,36 @@
+{
+  "name": "anywidget",
+  "main": "src/index.js",
+  "version": "0.0.0",
+  "author": "Trevor Manz",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm build:nb && pnpm build:lab",
+    "build:nb": "esbuild --bundle --format=esm --outfile=anywidget/nbextension/index.js src/index.js",
+    "build:lab": "jupyter labextension build .",
+    "prepack": "rm -rf dist && npm run build:nb && mkdir dist && cp anywidget/nbextension/index.js dist/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@jupyter-widgets/base": "^6.0.1",
+    "@jupyterlab/builder": "^3.5.0",
+    "esbuild": "^0.15.12"
+  },
+  "jupyterlab": {
+    "extension": "src/plugin",
+    "outputDir": "anywidget/labextension",
+    "sharedPackages": {
+      "@jupyter-widgets/base": {
+        "bundled": false,
+        "singleton": true
+      }
+    },
+    "_build": {
+      "load": "static/remoteEntry.5efcef0fbaaccd6425ec.js",
+      "extension": "./extension"
+    }
+  }
+}
