@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/destination_firebolt.egg-info/PKG-INFO
+src/destination_firebolt.egg-info/SOURCES.txt
+src/destination_firebolt.egg-info/dependency_links.txt
+src/destination_firebolt.egg-info/top_level.txt
