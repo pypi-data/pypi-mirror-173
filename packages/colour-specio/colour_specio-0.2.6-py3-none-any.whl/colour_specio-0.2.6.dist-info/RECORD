@@ -1,0 +1,14 @@
+specio/ColorimetryResearch/CR300.py,sha256=Qy8soZ0def3VG9PLRX0BJ_q8c2YnvPOBG4KZMUk3WgI,7308
+specio/ColorimetryResearch/CR_Definitions.py,sha256=aPORwVVqlgUsksKoYGP7IM_935QOTTudlJEaYSvSB2Y,3119
+specio/ColorimetryResearch/__init__.py,sha256=xtu3yg71xDOlmlNe5tgmKRasF-Y6MAl2hPmhEm-3SAQ,573
+specio/__init__.py,sha256=nV0oqNs_8PxK-JgC2kgj9URzXNwyIIVyvH6pwH1N8Bs,978
+specio/common.py,sha256=10890Q9m_ttNrAxj6UfFx-ils41qZCHeBRZWyXGf6jI,4534
+specio/fileio.py,sha256=uoBg2TgGXgOj32n6OxpVneM41HLkP7ViU4ZzNNE0hHs,3781
+specio/protoio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+specio/protoio/_generated_/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+specio/protoio/_generated_/measurements_pb2.py,sha256=tvddMBKN6n2cZIv2Ms0Pu9b9cN56XigIIbefSoT_JxE,3346
+specio/spectrometer.py,sha256=pLvbpzRMYQ1Zy3-YZmc2YI1csaYrbgcWRYbPLotkK2Y,1446
+colour_specio-0.2.6.dist-info/LICENSE.md,sha256=HBSHY85SCyanwAsaS6X9tXCP7ymIHgiE3YeHQ1BI6cw,1195
+colour_specio-0.2.6.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+colour_specio-0.2.6.dist-info/METADATA,sha256=JeMn1BsAHYtkLmJEdT5osonNc7_qNyqTaC7M3ocx_1E,1075
+colour_specio-0.2.6.dist-info/RECORD,,
