@@ -1,0 +1,12 @@
+koda/__init__.py,sha256=JtO4v-ib_lzCXf2LwMvppxxQ6H9Y4eBHzGEIJKd_upw,785
+koda/_cruft.py,sha256=XQbqDOqMWypYQcobU_NgugW0qMCDVC6Z5DcK_9bqhMw,5078
+koda/_generics.py,sha256=o53uXOIkINgSTee8ykwFs1vIbOTD-XYlJ_aUVuxPcUo,241
+koda/either.py,sha256=o14QyPp2SBQ2EGwrp3miQfIPffRrrK5fufLAm5Nvutg,4165
+koda/maybe.py,sha256=qIZnHJMHJ7GoxD3RSnBLdEE3p1eBfXFofozkuNovx0U,2443
+koda/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+koda/result.py,sha256=N-ifLpOLwQRiVmqUZIhvmHb_0ihAMV5zwgMoCKUvUVI,2747
+koda/utils.py,sha256=LzMVHRfP1MNzhZuEOfGTDkZWOLHf1E4NXZ8FRn3PEFU,1733
+koda-1.3.1.dist-info/LICENSE,sha256=bSa-Jt_R2aZzkc8SeXD4Dm-DyT9GoP4sBuc05eTIVjA,1070
+koda-1.3.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+koda-1.3.1.dist-info/METADATA,sha256=ZSBFZH9LiaoiOTHa2NlT86QM1oTk3Sk_vYxW38dae08,7528
+koda-1.3.1.dist-info/RECORD,,
