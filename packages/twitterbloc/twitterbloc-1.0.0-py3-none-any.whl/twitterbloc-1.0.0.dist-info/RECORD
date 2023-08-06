@@ -1,0 +1,17 @@
+bloc/MarkovChain.py,sha256=DAS9fiaxrpLjuhspNAzWMTzwZ-3CDbFrREzfE26UOds,19321
+bloc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bloc/analyzer.py,sha256=RVLlRc1pZTp6Pa5TT3TRZRJDQ6vbBIruvaK3nHCIks8,27748
+bloc/classifiers.py,sha256=VyAig2s8G9wh9pEM3MoZO3vAY_4IC7MsCuRJHb-waUA,16660
+bloc/eval_support.py,sha256=Lq3Jre7KM8u6iji-HrFhdJp6RBn8BOmYBnm_jYVaWH4,11097
+bloc/generator.py,sha256=LhqtYLezje3SaOC3iEl73rVhSl-OGJuYINxT9JHpsGs,59962
+bloc/symbols.json,sha256=E4O5Z6VJeufWomgUg__OZ1dopgQrOOlhqeq3Jinqbf8,5364
+bloc/tweet_generators.py,sha256=7C3xvNwGSWc08aTzTweUloB13-_s3s_YPTZ33Nfagmg,1852
+bloc/util.py,sha256=FHe3pVyuZH3uptlEKZi0sTsyBXkimIP4LpPVe-818PI,31238
+bloc/v2_support.py,sha256=LSaRBvH0pW6DAxaaCq7-oQ34mGppNHmzPWAB_ufYMKQ,5066
+bloc/version.py,sha256=2Q1UrD-658DNCSWYnSLt_Yodl1hLUZHmJ31SsBl2AV0,25
+twitterbloc-1.0.0.data/scripts/bloc,sha256=td0kBgihk3IgulR1ugufA4vf2vW2VUwfXFSvzOmW_Dg,6317
+twitterbloc-1.0.0.dist-info/LICENSE,sha256=gd1NlXvrrikbzqCXgFgu0Vgr0ZJ7xkJABsBSNTMumcc,1580
+twitterbloc-1.0.0.dist-info/METADATA,sha256=UEzyxiQS8Fav5e20JJ69QKmgsDzc2p4BRolYgbQPMus,622
+twitterbloc-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+twitterbloc-1.0.0.dist-info/top_level.txt,sha256=zqaF6S7L1T37HKWNQHw2Y0E5xowOpjL8-oqEXBRUFMc,5
+twitterbloc-1.0.0.dist-info/RECORD,,
