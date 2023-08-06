@@ -1,0 +1,8 @@
+converter/__init__.py,sha256=pSJFoefyrqom4GAplbod4hGF1EyE9HoKdT35-JSMhGQ,47
+converter/__main__.py,sha256=glc6qPgIGrgKUgIw5IHjFaTQ_6nLQKXvCAkYd2h8_2E,117
+converter/converts.py,sha256=VN0X8X9WkL6B4-6o7eh5BZ7H3Zm9QhVHE8trGWgALf8,635
+converter/test.py,sha256=601xckgJcZcigbzvahxRfwlXVslePcQhI0wNkEnYBGY,95
+TempConverter-0.6.dist-info/METADATA,sha256=7SzzGMsYUTbnfa_LtyrlpeMe4-H3mbx43re6Uaa7Xag,406
+TempConverter-0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+TempConverter-0.6.dist-info/top_level.txt,sha256=S1fAf-PtuctgaGFfsn0oaTHY1tVHwOTeNCb8yB7ReqA,10
+TempConverter-0.6.dist-info/RECORD,,
