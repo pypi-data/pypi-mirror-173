@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/pakegeName/__init__.py
+src/pakegeName/test.py
+src/pakegeName.egg-info/PKG-INFO
+src/pakegeName.egg-info/SOURCES.txt
+src/pakegeName.egg-info/dependency_links.txt
+src/pakegeName.egg-info/requires.txt
+src/pakegeName.egg-info/top_level.txt
