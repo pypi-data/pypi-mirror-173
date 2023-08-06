@@ -1,0 +1,10 @@
+README.md
+setup.py
+NewBitcoinTrades/BitcoinTrading.py
+NewBitcoinTrades/BitcoinTradingRun.py
+NewBitcoinTrades/TestOutput.py
+NewBitcoinTrades/test_BitcoinTrading.py
+NewBitcoinTrades.egg-info/PKG-INFO
+NewBitcoinTrades.egg-info/SOURCES.txt
+NewBitcoinTrades.egg-info/dependency_links.txt
+NewBitcoinTrades.egg-info/top_level.txt
