@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyimg_process/Methods.py
+src/pyimg_process/__init__.py
+src/pyimg_process.egg-info/PKG-INFO
+src/pyimg_process.egg-info/SOURCES.txt
+src/pyimg_process.egg-info/dependency_links.txt
+src/pyimg_process.egg-info/top_level.txt
