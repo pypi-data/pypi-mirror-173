@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+easy_up.egg-info/PKG-INFO
+easy_up.egg-info/SOURCES.txt
+easy_up.egg-info/dependency_links.txt
+easy_up.egg-info/entry_points.txt
+easy_up.egg-info/requires.txt
+easy_up.egg-info/top_level.txt
+src/__init__.py
+src/github.py
+src/main.py
+src/storge.py
+src/utils.py
