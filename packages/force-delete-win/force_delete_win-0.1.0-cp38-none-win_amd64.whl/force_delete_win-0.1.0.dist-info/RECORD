@@ -1,0 +1,8 @@
+force_delete_win-0.1.0.dist-info/METADATA,sha256=JAU3TNlxJ1zAPrX-Q_uQjZSCtCI_yV9TGNDtUk7rDhw,3240
+force_delete_win-0.1.0.dist-info/WHEEL,sha256=9BEkOAbGRtK7exFmGpPz36T_wCzr8Eg49jFDKetqhAY,95
+force_delete_win/force_delete_win.pyi,sha256=scCfS5XTytsmVAi8fq-N3i_cdr5PvwmayCfxrPVvTXo,765
+force_delete_win/tests/test_delete.py,sha256=bQdl99kVZLP1ruy8Sm6buu3mTxR24epqMv3oP_kRYj8,630
+force_delete_win/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+force_delete_win/__init__.py,sha256=Lnk_rqUNcKj6GeQji5dktxN34C7CXXUldzLaUXiWdn8,96
+force_delete_win/force_delete_win.cp38-win_amd64.pyd,sha256=rLz4EoL06bQt-ErSiTgUq3CPMpj2_fDVL92XpjL5ClE,260608
+force_delete_win-0.1.0.dist-info/RECORD,,
