@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cjwt"
+version = "0.1.0"
+description = "Simple JWT reader utility"
+authors = ["Max Harley <maxh@maxh.io>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyjwt = "^2.6.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+refurb = "^1.4.0"
+
+[tool.poetry.scripts]
+cjwt = "cjwt.__main__:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
