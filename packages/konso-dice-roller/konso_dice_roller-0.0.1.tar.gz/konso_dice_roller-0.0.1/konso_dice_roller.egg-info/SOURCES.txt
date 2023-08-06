@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+konso_dice_roller/__init__.py
+konso_dice_roller/format.py
+konso_dice_roller/main.py
+konso_dice_roller/parse.py
+konso_dice_roller/roll.py
+konso_dice_roller.egg-info/PKG-INFO
+konso_dice_roller.egg-info/SOURCES.txt
+konso_dice_roller.egg-info/dependency_links.txt
+konso_dice_roller.egg-info/not-zip-safe
+konso_dice_roller.egg-info/top_level.txt
