@@ -1,0 +1,9 @@
+scopes/__init__.py,sha256=D36WnBIkLJcoerVb1CBtQJMJ-lfH_473xw_cgZP-bgk,941
+scopes/__static__.py,sha256=WJdGKyFxg1qLE26iCF1PPU6BzG1eFee9nGj3ctRyL9k,77
+tests/__init__.py,sha256=FGUeoVHtZ2x4kHri6dH0nE7_cbUuv2sdKJfU_yrLKak,49
+tests/test_imports.py,sha256=Dc4N2YAbxvFrC_v2YZ7Y_M9fFWLYR2Tn-OYnbbkYdjw,128
+tests/test_scopes.py,sha256=nSWyhaVJNW-2MKnp5CyXMRGS-3fNUuKM5o7BB4b4Irs,344
+block_scopes-0.1.1.dist-info/METADATA,sha256=zP2Zg_wldcDBA2yIsDE7SGvpOQv3Fuhuyl1guNe70IU,1886
+block_scopes-0.1.1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+block_scopes-0.1.1.dist-info/licenses/LICENSE,sha256=nkma8F37GS5oM9HcDiwjNs1SWrdnLToQqVnSBItO_hQ,1081
+block_scopes-0.1.1.dist-info/RECORD,,
