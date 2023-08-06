@@ -1,0 +1,11 @@
+bkm-0.0.1.data/scripts/bkm,sha256=2t26t7Ml9BVojNVWPdaZaMYgnXakC8ryeFgPRKvryE0,2000
+buildkit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildkit/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildkit/pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+buildkit/pkg/builder.py,sha256=zC4QYJRYSckxMA03La9LLjJAg-dkGH9MVaWIu8q0njs,1065
+buildkit/pkg/runner.py,sha256=PeAHL-s6slTo2KNKrZxxccNitymY5eiZrBBAowzGxxY,1214
+buildkit/pkg/utils.py,sha256=w1f1MMZ8V0KcucpXOw5lEt5zNOtv5zr8eH34NPpcd68,759
+bkm-0.0.1.dist-info/METADATA,sha256=WTxmlP7eveU12ObQkO4aEz5wMNY6MhBVCUr9m6epRlc,450
+bkm-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bkm-0.0.1.dist-info/top_level.txt,sha256=HjWvJqXhCzgwt1O1Wvl4OPIRr1JWBdfvTFWGqrvlM34,9
+bkm-0.0.1.dist-info/RECORD,,
