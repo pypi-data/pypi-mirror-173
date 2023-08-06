@@ -1,0 +1,3 @@
+[console_scripts]
+square_pk = square_auth.utils:generate_and_dump_private_key
+
