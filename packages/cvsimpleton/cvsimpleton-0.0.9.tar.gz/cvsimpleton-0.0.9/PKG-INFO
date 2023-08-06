@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cvsimpleton
+Version: 0.0.9
+Summary: Write less boilerplate code in OpenCV
+Home-page: https://github.com/JiayouQin/cvSimlepton
+Author: JiayouQin
+Author-email: JiayouQinCN@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/JiayouQin/Python-projects/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+    window
+    imshow          WIP, passing in on image variable name in string type, variable name will be displayed as title. Resizable window as default.
+    utility
+    converge        use eitehr mean or gaussian kernel to make a high pass filter, low frequency signal will be merged into average color. 
+                (https://github.com/JiayouQin/Python-projects/tree/master/17%20Image%20Balancing)
+    list_images     return all image files in the directory including sub directories in a list
+    imread          identical to openCV imread but supports UTF-8 formatted string path
+    imwrite         identical to openCV imwrite but supports UTF-8 formatted string path
+    open_morph      perform open operation with given kernel
+    open_circle     perform open operation with circular kernel
+    open_rect       perform open operation with rectangular kernel
+    close_morph     perform close operation with given kernel
+    close_circle    perform close operation with circular kernel
+    close_rect      perform close operation with rectangular kernel
+    bgr_to_hsv      convert a bgr image to hsv image, if parameter 2 is true then returned image will be split into 3 channels
+    add_noise       add noise of given type to image (0:gaussian, 1:s&p), accepts both string and integer number
+
+
+
