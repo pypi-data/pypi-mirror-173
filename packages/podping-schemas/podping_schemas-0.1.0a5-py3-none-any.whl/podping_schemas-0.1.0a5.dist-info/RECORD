@@ -1,0 +1,15 @@
+podping_schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+podping_schemas/org/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+podping_schemas/org/podcastindex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+podping_schemas/org/podcastindex/podping/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+podping_schemas/org/podcastindex/podping/hivewriter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+podping_schemas/org/podcastindex/podping/hivewriter/podping_hive_transaction.capnp,sha256=inGM6McgGic1-NiKCm8BlNBdN6wzNmDSUxqwRdi2YdE,296
+podping_schemas/org/podcastindex/podping/hivewriter/podping_hive_write.capnp,sha256=OCkWpBAl_-V5RCMfjiQDl8LampXBXV6z9OoWERyV1Pc,161
+podping_schemas/org/podcastindex/podping/hivewriter/podping_medium.capnp,sha256=Juz7c6e2hueeXFqbb1SAgqXcqEH7nA4jKxGmZki6iXE,152
+podping_schemas/org/podcastindex/podping/hivewriter/podping_reason.capnp,sha256=-7qU8cMQuu3DBK2Yen4VBydkgHXiTPcDL97_LOCLr_o,89
+podping_schemas/org/podcastindex/podping/hivewriter/podping_write.capnp,sha256=jxJdGNvXmB3KfdrTVubMBE79oEh6KoPdGvhJsV_n8ng,227
+podping_schemas/org/podcastindex/podping/hivewriter/podping_write_error.capnp,sha256=Jy3bZwzUVuPv5bIsRu34jgaDxTaEQA6_2tUSyu83zUQ,228
+podping_schemas-0.1.0a5.dist-info/LICENSE,sha256=pbAvKwxJJdf7TmXSEWrybjd4cI1agFbQBud_XS0HHS4,1073
+podping_schemas-0.1.0a5.dist-info/WHEEL,sha256=fqyCrvut3xGZKsUJcu0SzsukjlSYvYfobT4gKrXbT6w,115
+podping_schemas-0.1.0a5.dist-info/METADATA,sha256=yeiPETBD27OFXEHoKOVQXSUX-C_jVebzM9JtGoVXUt0,573
+podping_schemas-0.1.0a5.dist-info/RECORD,,
