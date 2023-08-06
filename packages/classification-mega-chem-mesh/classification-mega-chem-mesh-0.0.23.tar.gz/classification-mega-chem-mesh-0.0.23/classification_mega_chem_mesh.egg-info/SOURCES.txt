@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+classification/__init__.py
+classification/models.py
+classification/result.py
+classification/rules.py
+classification/utils.py
+classification_mega_chem_mesh.egg-info/PKG-INFO
+classification_mega_chem_mesh.egg-info/SOURCES.txt
+classification_mega_chem_mesh.egg-info/dependency_links.txt
+classification_mega_chem_mesh.egg-info/requires.txt
+classification_mega_chem_mesh.egg-info/top_level.txt
