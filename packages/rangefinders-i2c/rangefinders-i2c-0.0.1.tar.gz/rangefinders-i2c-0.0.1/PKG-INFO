@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rangefinders-i2c
+Version: 0.0.1
+Summary: Change TOF10120 address device by usb. Get data from TOF10120 device by usb
+Home-page: https://github.com/Adam-Software/Rangefinders-i2c
+Author: vertigra
+Author-email: a@nesterof.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Other
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Rangefinders-i2c-TOF10120
+How to read data from TOF10120 by i2c
+For change addres of TOF10120 use serial USB interface
+
+
