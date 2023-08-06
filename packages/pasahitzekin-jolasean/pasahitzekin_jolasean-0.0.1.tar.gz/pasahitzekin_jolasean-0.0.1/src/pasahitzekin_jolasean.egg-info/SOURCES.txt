@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/pasahitzekin_jolasean/__init__.py
+src/pasahitzekin_jolasean/password.py
+src/pasahitzekin_jolasean.egg-info/PKG-INFO
+src/pasahitzekin_jolasean.egg-info/SOURCES.txt
+src/pasahitzekin_jolasean.egg-info/dependency_links.txt
+src/pasahitzekin_jolasean.egg-info/top_level.txt
