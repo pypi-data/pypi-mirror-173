@@ -1,0 +1,22 @@
+# See the OWNERS docs at https://go.k8s.io/owners
+
+approvers:
+  - codificat
+  - goern
+  - harshad16
+  - kpostoffice
+  - mayaCostantini
+  - sesheta
+
+reviewers:
+  - codificat
+  - harshad16
+  - kpostoffice
+  - mayaCostantini
+
+emeritus_approvers:
+  - pacospace
+  - fridex
+
+labels:
+  - sig/user-experience
