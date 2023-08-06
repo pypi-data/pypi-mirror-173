@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+pyspage/__init__.py
+pyspage/command.py
+pyspage/elements.py
+pyspage/layout.py
+pyspage/localization.py
+pyspage/pyscript.py
+pyspage/utils.py
+pyspage.egg-info/PKG-INFO
+pyspage.egg-info/SOURCES.txt
+pyspage.egg-info/dependency_links.txt
+pyspage.egg-info/entry_points.txt
+pyspage.egg-info/top_level.txt
