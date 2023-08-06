@@ -1,0 +1,10 @@
+taxengine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taxengine/shared/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taxengine/shared/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taxengine/shared/model/base.py,sha256=IY3_cCf9-CN0OcYi_j24hwZYP9kUuRZei8Dn47vlmaw,120
+taxengine/shared/model/models.py,sha256=05WI3kJ-7x6-Ez6eheYS8TlMENt7yAkT27ySOJp3vMI,2991
+calyx_taxengine-0.0.2.dist-info/LICENCE,sha256=pbIMXbaorAIVW-fDch2tvtZRkVA3mz-UnXQqeCf4LDg,1086
+calyx_taxengine-0.0.2.dist-info/METADATA,sha256=JdivzOpZaaGx6rPxBdgS3Ib77a8IC_CUZUqY3ZVjK6g,344
+calyx_taxengine-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+calyx_taxengine-0.0.2.dist-info/top_level.txt,sha256=K_l9x5QY_Guvic5yHMMxuyhSFwnKOC0epCO1rFsYWog,10
+calyx_taxengine-0.0.2.dist-info/RECORD,,
