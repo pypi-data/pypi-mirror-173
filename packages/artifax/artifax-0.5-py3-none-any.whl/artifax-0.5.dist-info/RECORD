@@ -1,0 +1,10 @@
+artifax/__init__.py,sha256=QsOC36MU3Q_mAdMlDT2FpmK95wV1FQpMTqGeP4yNLHY,383
+artifax/builder.py,sha256=wZOKH2agwKpYOIB2fJuzCLpJeGuzqFpRSxxHXsvoGF0,5020
+artifax/exceptions.py,sha256=ElNKnrFErpBNReOTM6d6klc_2rnnK263GslvL5nymQg,1077
+artifax/models.py,sha256=B257Hn9q92RHmqyOXPRANZfbLpL6phnDdemjgr1ByA4,5245
+artifax/utils.py,sha256=8dDv7QlUpTmPDQnuO5ldI2sXgyJoebtCWDCvgLEv-TI,2568
+artifax-0.5.dist-info/LICENSE,sha256=7NbUuS1luXlysAiiWjvngHein2NSiGRiy8NcoeJBPDY,1067
+artifax-0.5.dist-info/METADATA,sha256=fJpZRZJXNOrscSFW-KYK2a5N3IAeR80F7A_8amOZboU,8474
+artifax-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+artifax-0.5.dist-info/top_level.txt,sha256=soiTgXNxO4Ru2EWq4YYjF2neHF_U0T4k9T43BP26FlA,8
+artifax-0.5.dist-info/RECORD,,
