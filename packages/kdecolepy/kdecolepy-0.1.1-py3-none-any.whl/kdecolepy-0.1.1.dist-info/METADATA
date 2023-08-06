@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kdecolepy
+Version: 0.1.1
+Summary: Support non-officiel de l'API Kdecole (Mon Bureau Numérique, Skolengo, ...)
+Project-URL: homepage, https://github.com/maelgangloff/kdecole-py
+Project-URL: documentation, https://github.com/maelgangloff/kdecole-py
+Project-URL: repository, https://github.com/maelgangloff/kdecole-py
+Author-email: Maël Gangloff <contact@maelgangloff.fr>
+License-File: LICENSE
+Keywords: API,Kdecole,Kosmos,Mon Bureau Numérique,Skolengo
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# kdecole-py
+Transcription de la librairie NodeJS [kdecole-api](https://github.com/maelgangloff/kdecole-api) en Python.  
+Pour plus d'information, veuillez vous reporter au README de ce projet (https://github.com/maelgangloff/kdecole-api)
