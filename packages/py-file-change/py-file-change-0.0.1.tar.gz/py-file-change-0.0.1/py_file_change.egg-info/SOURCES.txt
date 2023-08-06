@@ -1,0 +1,9 @@
+README.md
+setup.py
+py-file-change/__about__.py
+py-file-change/__init__.py
+py-file-change/__main__.py
+py_file_change.egg-info/PKG-INFO
+py_file_change.egg-info/SOURCES.txt
+py_file_change.egg-info/dependency_links.txt
+py_file_change.egg-info/top_level.txt
