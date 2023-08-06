@@ -1,0 +1,6 @@
+sphinxcontrib/stan/__init__.py,sha256=-k-RRasf01n3gWrBpg2lGOxGNaV9rt2sqx3c7Lyqj1w,12562
+tests/test_sphinx_stan.py,sha256=qxphXPAjOXdwuyLv7vIkjph-nYdlEhQOsPTwTrg4rrM,1848
+sphinx_stan-0.1.1.dist-info/METADATA,sha256=SU5ajBH6KbhFl3aCV4UI5MQbjLehKmHwzSjkA_It_OI,307
+sphinx_stan-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sphinx_stan-0.1.1.dist-info/top_level.txt,sha256=takF8yTwXcZOz9PPIyDUWCnRMNf00TOUwPtnoaTBDvs,20
+sphinx_stan-0.1.1.dist-info/RECORD,,
