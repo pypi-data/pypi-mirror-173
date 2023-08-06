@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: hal9
+Version: 0.0.1
+Summary: Design Interactive Data Apps Without Web Dev
+License: MIT
+Author: Anchit Sadana
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fastapi (>=0.79.0,<0.80.0)
+Requires-Dist: uvicorn[standard] (>=0.18.3,<0.19.0)
+Description-Content-Type: text/markdown
+
+# bussin
+
+Design Interactive Data Apps Without Web Dev
+
+## Installation
+
+```bash
+$ pip install hal9
+```
+
+## Usage
+
+- TODO
+
+## Contributing
+
+Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
+
+## License
+
+`hal9` was created by Anchit Sadana, Kevin Kuo and Javier Luraschi. It is licensed under the terms of the MIT license.
+
+## Credits
+
+`hal9` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
