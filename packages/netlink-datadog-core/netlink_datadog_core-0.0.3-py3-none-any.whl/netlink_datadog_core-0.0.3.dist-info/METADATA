@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: netlink-datadog-core
+Version: 0.0.3
+Summary: Integration for Datadog (Core)
+Home-page: https://gitlab.com/netlink_python/netlink-datadog-core
+License: MIT
+Keywords: monitoring datadog
+Author: Bernhard Radermacher
+Author-email: bernhard.radermacher@netlink-consulting.com
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: datadog-api-client (>=2.5.0,<3.0.0)
+Requires-Dist: netlink-logging (>=0.1.9,<0.2.0)
+Project-URL: Repository, https://gitlab.com/netlink_python/netlink-datadog-core
+Description-Content-Type: text/markdown
+
+# netlink-datadog-core
+
+Core of Integration for Datadog
+
+Providing a wrapper of the [datadog-api-client](https://pypi.org/project/datadog-api-client/).
+
+# Utilities
+
+- validate_api_key
+
+# Classes
+
+## Metric
+
+### \_\_init\_\_
+
+  - `name` **str** - Name of metric
+  - `type` [MetricIntakeType](https://datadoghq.dev/datadog-api-client-ruby/DatadogAPIClient/V2/MetricIntakeType.html) 
+  - `host` optional - **str** - will be added as resource type host
+  - `env`  **str** - Tag
+  - `source` **str** - Tag
+  - `service` **str** - Tag
+  - `tags` **set** - custom tags
+
+### metric
+
+Returns a [MetricSeries](https://datadoghq.dev/datadog-api-client-ruby/DatadogAPIClient/V2/MetricSeries.html)
+  
+  - `timestamp`
+  - `value`
+  - `tags` **set** - additional custom tags
+
+## GaugeMetric(Metric)
+
+### \_\_init\_\_
+
+  - `name` **str** - Name of metric
+  - `host` optional - **str** - will be added as resource type host
+  - `env`  **str** - Tag
+  - `source` **str** - Tag
+  - `service` **str** - Tag
+  - `tags` **set** - custom tags
+
+### metric
+
+Returns a [MetricSeries](https://datadoghq.dev/datadog-api-client-ruby/DatadogAPIClient/V2/MetricSeries.html)
+  
+  - `timestamp`
+  - `value`
+  - `tags` **set** - additional custom tags
+
+## Worker(threading.Thread)
+
+Sends metrics to Datadog received in queue.
+
+### \_\_init\_\_
+
+  - `name_index` **int** used to create thread name
+  - `api_key` **str** Datadog api key
+  - `site` **str** Datadog site
+  - `queue` **queue.SimpleQueue**
+  - `shutdown_event` **threading.Event**
+  
