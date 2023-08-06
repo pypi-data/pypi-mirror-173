@@ -1,0 +1,10 @@
+TakeBlipMessageStructurer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TakeBlipMessageStructurer/regex_pattern.py,sha256=xcyweAA_4ch798sSQ-85IgdEvr0438QZrSC-qIUXIME,211
+TakeBlipMessageStructurer/tags_dict.py,sha256=DOUWwibVkFTH6YfP1BVhxu35Ibj5EO-3dVB9yOX201o,1006
+TakeBlipMessageStructurer/utils.py,sha256=yvhLGGCK6Jx2bwzUqbgFnwVjX7TErWXPBIdmLMuEIos,5058
+TakeBlipMessageStructurer/predict/__init__.py,sha256=s33M8GPGGz82A6qMTOxs5ZWWyoHPVxVc1F2mEkookqM,49
+TakeBlipMessageStructurer/predict/messagestructurer.py,sha256=oEkuHgC0GXy5p3GjFmSViAheFfub4apqyffJRWc2bVU,11685
+TakeBlipMessageStructurer-0.0.2b2.dist-info/METADATA,sha256=YPbXLb2KcFJzILoeLlpu6Jm25xfNtZ70UmiU1A0fXrk,7149
+TakeBlipMessageStructurer-0.0.2b2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+TakeBlipMessageStructurer-0.0.2b2.dist-info/top_level.txt,sha256=SMTf7daKOfBoWtxaTiwSJooNKR7SCJEwsF_9oesDR4g,26
+TakeBlipMessageStructurer-0.0.2b2.dist-info/RECORD,,
