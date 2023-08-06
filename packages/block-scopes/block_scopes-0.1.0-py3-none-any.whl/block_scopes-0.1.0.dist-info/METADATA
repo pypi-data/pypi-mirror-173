@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: block-scopes
+Version: 0.1.0
+Summary: Block scopes in Python? Whaaaaaat?!
+Project-URL: Documentation, https://github.com/unknown/block-scopes#readme
+Project-URL: Issues, https://github.com/unknown/block-scopes/issues
+Project-URL: Source, https://github.com/unknown/block-scopes
+Author-email: Joe Carpinelli <jdcarpinelli@gmail.com>
+License-File: LICENSE
+Keywords: cursed,hack,memory,scoping,variables
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: module-hygiene>=0.2
+Description-Content-Type: text/markdown
+
+# local-scopes
+
+[![PyPI - Version](https://img.shields.io/pypi/v/local-scopes.svg)](https://pypi.org/project/local-scopes)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/local-scopes.svg)](https://pypi.org/project/local-scopes)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install local-scopes
+```
+
+## License
+
+`local-scopes` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
