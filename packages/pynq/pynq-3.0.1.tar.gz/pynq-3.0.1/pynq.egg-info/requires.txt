@@ -1,0 +1,6 @@
+pynqutils>=0.0.1
+pynqmetadata>=0.0.1
+setuptools>=24.2.0
+cffi
+numpy
+nest_asyncio
