@@ -1,0 +1,15 @@
+btsdp/__init__.py,sha256=K8CrpU6w55rj0Z-9sxY8CCmJe_cUQgG556iKAxbBBGs,3708
+btsdp/client.py,sha256=tPRwyGO-NzGxS9ff48IhEjRExnKxrkSWyczV0IVoHS4,2075
+btsdp/fuzz.py,sha256=6UIQrXdeTtSS22wJ8Ptez2nofLLQJbjCmG132OyKJ8k,21047
+btsdp/sdp.py,sha256=PQdMMr3s4yIJpI9JlHrPp2GIWZeZHElLZ7Zz8Fdc65k,60843
+btsdp/server.py,sha256=XCh-KCaDMbHu7_xHEi1u2A6vpwi8UgVYAhkzw6EeZnc,2999
+btsdp/svc_attrs.py,sha256=eMiSeF47JGYsy2Ue4pXK9ncwySjqEM-JYNS2IFQox5s,48063
+btsdp/svc_cls.py,sha256=SKPVAVO3UNsvpWBX10abp7ZvnlE6mIOjQa8jpt-t2lY,8407
+btsdp/pytransform/__init__.py,sha256=OAwIt1kGBC0Y5zsNJlTrAwQwmJhMqierRUVI_ZOjqgg,13587
+btsdp/pytransform/platforms/linux/aarch64/_pytransform.so,sha256=XrbsgljroGpfqKobawXudexNCTrLHAyEuLttvMl4gAs,1087608
+btsdp/pytransform/platforms/linux/x86_64/_pytransform.so,sha256=QTGwl1_DiHlfGiVDm-pVvw0nzDlwOb1OimF8fK0VO0Q,1198080
+btsdp-0.0.6.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btsdp-0.0.6.dist-info/METADATA,sha256=Vwj7TT9CyDFKEKkusirXgoGJt1El4RiAHUC4mmeUY9w,747
+btsdp-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+btsdp-0.0.6.dist-info/top_level.txt,sha256=vhEMcCtncPE-H5OwdQKf6X4jfPEzyt_doPz2KveTpac,6
+btsdp-0.0.6.dist-info/RECORD,,
