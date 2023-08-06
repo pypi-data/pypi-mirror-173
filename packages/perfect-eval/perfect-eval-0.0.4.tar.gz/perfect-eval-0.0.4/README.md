@@ -1,0 +1,82 @@
+📦 perfect-eval
+=======================
+
+Safe eval module
+
+Installation
+-----
+
+```bash
+pip install -i https://mirrors.aliyun.com/pypi/simple/ --extra-index-url https://pypi.org/simple/ perfect-eval
+```
+
+Example
+-----
+
+```python
+from perfect_eval import safe_eval
+
+safe_eval("print('11111111')", {"print": print})
+# output: 11111111
+print(safe_eval("now.strftime('%m-%d')", {"now": datetime.now()}))
+# output: 10-28
+print(safe_eval("a + b", {"a": 123, "b": 456}))
+# output: 579
+```
+
+```python
+from perfect_eval import safe_eval, Tmpl
+
+template_str = Tmpl("My name is [name] and my age is [age]")
+print(safe_eval(template_str, {"name": "Xiaoming", "age": "17"}))
+# output: My name is Xiaoming and my age is 17
+template_str = Tmpl("[age] is Xiaoming's age")
+print(safe_eval(template_str, {"name": "Xiaoming", "age": "17"}))
+# output: 17 is Xiaoming's age
+template_str = Tmpl("Xiao Ming's age is [age]")
+print(safe_eval(template_str, {"name": "Xiaoming", "age": "17"}))
+# output: Xiao Ming's age is 17
+template_str = Tmpl("[str(a)] + [str(b)] = [str(a + b)]")
+# output: 12 + 13 = 25
+template_str = Tmpl("['Have a fever' if temp > 37.5 else 'be free']")
+print(safe_eval(template_str, {"temp": 36.6}))
+print(safe_eval(template_str, {"temp": 38}))
+# output:be free\nHave a fever 
+
+```
+
+To Do
+-----
+
+- Be the best version of you.
+
+More Resources
+--------------
+
+- [perfect-eval] on github.com
+- [Official Python Packaging User Guide](https://packaging.python.org)
+- [The Hitchhiker's Guide to Packaging]
+- [Cookiecutter template for a Python package]
+
+License
+-------
+
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any means.
+
+[version-handle]: https://github.com/holbos-deng/version-handle
+
+[PyPi]: https://docs.python.org/3/distutils/packageindex.html
+
+[Twine]: https://pypi.python.org/pypi/twine
+
+[image]: https://farm1.staticflickr.com/628/33173824932_58add34581_k_d.jpg
+
+[What is setup.py?]: https://stackoverflow.com/questions/1471994/what-is-setup-py
+
+[The Hitchhiker's Guide to Packaging]: https://the-hitchhikers-guide-to-packaging.readthedocs.io/en/latest/creation.html
+
+[Cookiecutter template for a Python package]: https://github.com/audreyr/cookiecutter-pypackage
