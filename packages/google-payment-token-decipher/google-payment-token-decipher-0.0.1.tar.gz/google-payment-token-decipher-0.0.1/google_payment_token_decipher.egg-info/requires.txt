@@ -1,0 +1,6 @@
+requests>=2.25.0
+cryptography>=37.0.0
+pycryptodome>=3.13.0
+
+[:python_version < "3.8"]
+importlib-metadata
