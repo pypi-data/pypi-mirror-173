@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: iman
+Version: 0.0.7
+Summary: Python package for daily Tasks
+Home-page: UNKNOWN
+Author: Iman Sarraf
+Author-email: imansarraf@gmail.com
+License: UNKNOWN
+Keywords: python,iman
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: six
+Requires-Dist: matplotlib
+
+from iman import Audio:
+1-Read(filename,sr)
+2-Resample(data , fs, sr)
+3-Read_Alaw(filename)
+4-ReadMp3(filename,sr,mono=True)
+5-Write(filename, data ,fs)
+6-frame(y)
+7-split(y)
+
+from iman import *:
+1-plt
+2-now() (get time)
+3-F (format floating point)
+4-D (format int number)
+5-Write_List(MyList,Filename)
+6-Write_Dic(MyDic,Filename)
+7-Read(Filename) (read txt file)
+8-Read_Lines(Filename) (read txt file line by line and return list)
+9-Write(_str,Filename)
+10-gf(pattern) (Get files in a directory)
+11-gfa(directory , ext="*.*") (Get Files in a Directory and SubDirectories)
+12-ReadE(Filename) (Read Excel files)
+13-PM(dir)(creat directory)
+14-PB(fname)(get basename)
+15-PN(fname) (get file name)
+16-PE(fname)(get ext)
+17-PD(fname)(get directory)
+18-PS(fname)(get size)
+19-PJ(segments) (Join Path)
+20-clear() (clear cmd)
+21-os
+22-np
+23-RI(start_int , end_int , count=1) (random int)
+24-RF(start_float , end_float , count=1) (random float)
+25-RS(Arr) (shuffle)
+
+from iman import info:
+1-get() info about cpu and gpu (need torch)
+
+
+from iman import metrics:
+1-EER(lab,score)
+2-cosine_distance(v1,v2)
+3-roc(lab,score)
+
+from iman import tsne:
+1-plot(fea , label)
+
+from iman import xvector:
+1-xvec,lda_xvec,gender = get(filename , model_path , model_name , model_speaker_num)
+
+
+

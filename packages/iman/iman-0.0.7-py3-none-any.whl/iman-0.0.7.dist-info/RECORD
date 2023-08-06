@@ -1,0 +1,10 @@
+iman/Audio.py,sha256=1LC7gKJhHp683MzSNlUc0mCxCpTh7MINeaSUiQ3Sspk,11046
+iman/__init__.py,sha256=PBF8-7GbWp2CGY6ZG5DknC2TS7Bod79kMi9VHTOykSw,3856
+iman/info.py,sha256=nObZt8JqcpcsMLT8w6pHuPe0QDOx65_3K5WChg1MEuM,843
+iman/metrics.py,sha256=LPA8aynnGFCp-u8eBKcWachulolZVdpQ2D8LbBGlznk,1504
+iman/tsne.py,sha256=tsKPRz5pl8_brqj1z1oLW0ZUJDWoKqsw_ZJroEttuHs,329
+iman/xvector.py,sha256=Clw2e9Lk42jUaWepWPSD7bruOZP0leBNr8WuAqw_eg4,7118
+iman-0.0.7.dist-info/METADATA,sha256=bySSAI7vxcOl5t2rWE-H8p_rhJy0dHtiHJWyTyqy9Pg,1714
+iman-0.0.7.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+iman-0.0.7.dist-info/top_level.txt,sha256=uu42R9eDQtXEStvNse_JxTYG_twSL7ZJ0HwUyFWypKE,5
+iman-0.0.7.dist-info/RECORD,,
