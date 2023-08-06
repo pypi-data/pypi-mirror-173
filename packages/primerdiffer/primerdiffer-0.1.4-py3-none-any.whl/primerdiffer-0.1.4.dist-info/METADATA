@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: primerdiffer
+Version: 0.1.4
+Summary: batch design of primers for genotyping two or more haplotypes in hybrids
+Home-page: https://github.com/Runsheng/primerdiffer
+Author: runsheng
+Author-email: runsheng.lee@gmail.com
+License: GPL-2
+Requires-Dist: primer3-py (>=0.6.1)
+Requires-Dist: biopython (>=1.78)
+

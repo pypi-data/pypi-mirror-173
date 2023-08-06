@@ -1,0 +1,15 @@
+bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bin/ispcr.py,sha256=nl3KhXDGGHNAuez812ovye_fHRJMSJja1F_9NhQk9UM,2097
+bin/primerdesign.py,sha256=0xL3yijD-QBO75TbvY7PaU6nxLdG3aHdSzLOfRgdV1k,3708
+primerdiffer/__init__.py,sha256=1IL0h4Jl1Ge-GHDfCzQtWoQzwn00Wn-yVD4dU2QqVDc,20
+primerdiffer/general_settings.py,sha256=X0_pyu-mGENA1TkDYUTjA5uvNFArrNTg85Hvy3HZLcE,573
+primerdiffer/logger.py,sha256=4woh2zQU42MuIBKcX1I2O-0b1zFwriHBVYIoFswiO3s,859
+primerdiffer/primer_check.py,sha256=JgCqOL0oFy9upr6vAJiEjYIGY8_w2P59PGq-ye2P1TY,6741
+primerdiffer/utils.py,sha256=FxkgfQWINAkwuEZPZ3mNe3SDrIlau682ECGHRZxiPbg,2891
+primerdiffer/walk_chr.py,sha256=Eb4JqNPYFNRjWVqy8ufNmQYTwtwAAm4ZkCjU62wK994,4148
+primerdiffer-0.1.4.data/scripts/ispcr.py,sha256=lPQiSVxTApeh3C2U_VK9ZAtj8s2rMfbErYuUbP2CKww,2084
+primerdiffer-0.1.4.data/scripts/primerdesign.py,sha256=JH1Top53feI11kgWcwSnzZkuxJu0GhzlYfVQICz3HRM,3695
+primerdiffer-0.1.4.dist-info/METADATA,sha256=POOX3P8CE361wbLwAYCcMm3yiPpEgaJvcnvk_QcUxOI,330
+primerdiffer-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+primerdiffer-0.1.4.dist-info/top_level.txt,sha256=rNjBeb3b22iU4j6Q9IS2bfcG3In99YbbyseRvTk4SHs,18
+primerdiffer-0.1.4.dist-info/RECORD,,
