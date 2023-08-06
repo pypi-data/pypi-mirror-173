@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: U-Cincy-quantum-tools
+Version: 0.1.4
+Summary: Provides functionaliy for UC_Quantum_Lab development tools
+Home-page: https://github.com/brodkemd/UCQ_tools
+Author: Marek Brodke, with support from the University of Cincinnati
+Author-email: brodkemd@mail.uc.edu
+License: MIT
+Keywords: development
+Requires-Python: >=3.7
+License-File: LICENSE
+
+Provides functionaliy for UC_Quantum_Lab development tools
