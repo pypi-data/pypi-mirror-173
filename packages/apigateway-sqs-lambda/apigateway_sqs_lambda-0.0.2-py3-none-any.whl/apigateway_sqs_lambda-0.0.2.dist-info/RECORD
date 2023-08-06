@@ -1,0 +1,9 @@
+apigateway_sqs_lambda/__init__.py,sha256=sP2E5b7IRl3smV-1dph1rTDYpC5--VnMJ8rVyku5wyY,10195
+apigateway_sqs_lambda/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+apigateway_sqs_lambda/_jsii/__init__.py,sha256=Seo9TG-friHjYytLY42LoA4Fi42rkAeZjBuh1Q0x8Ic,465
+apigateway_sqs_lambda/_jsii/apigateway-sqs-lambda@0.0.2.jsii.tgz,sha256=9-X0G0WmYlurhEgqFHU-blZoaK7xmdUZ_HAn9YUgrU4,21825
+apigateway_sqs_lambda-0.0.2.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+apigateway_sqs_lambda-0.0.2.dist-info/METADATA,sha256=3mhG7-_ftmqVumGcCYouHtkNSHUsQsXWd-q_WpYzHzk,1299
+apigateway_sqs_lambda-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+apigateway_sqs_lambda-0.0.2.dist-info/top_level.txt,sha256=PkTR4nGBXPw_60SKIbV_PwWAxlUqeQv-bVBKIJ7ZQU0,22
+apigateway_sqs_lambda-0.0.2.dist-info/RECORD,,
