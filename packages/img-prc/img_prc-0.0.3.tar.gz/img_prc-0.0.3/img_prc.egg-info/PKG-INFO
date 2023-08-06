@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: img-prc
+Version: 0.0.3
+Summary: Pacote feito para estudo 2
+Home-page: https://github.com/AdieversonPro
+Author: Adieverson Silva
+Author-email: adieverson.pro@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# img_prc
+
+Description. 
+The package img_prc is used to:
+prc:
+	- Histogram macthing 
+	- Structural similarity
+	- Resize Imame
+ut:
+	- Read image
+	- Save image
+	- Plot image
+	- Plot result
+	- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install img_prc
+
+```bash
+pip install img_prc
+```
+
+## Author
+Adieverson Silva
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
