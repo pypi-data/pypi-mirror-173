@@ -1,0 +1,147 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+    method: GET
+    uri: https://9f692df0338dcbc9848646c6.openapparel.org/health-check/
+  response:
+    body:
+      string: '{"caches": [{"api_throttling": {"ok": true}}, {"default": {"ok": true}}],
+        "gazetteercache": {"ok": true}, "databases": [{"default": {"ok": true}}]}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '147'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 21 Oct 2022 16:49:25 GMT
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - gunicorn
+      Vary:
+      - Cookie
+      Via:
+      - 1.1 a54cda8ccda3480314f451558e4dd062.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - _xq8q822WekqYpBAppiBPOjHcno4LgZqZY-wlB7V9-Q11SnBqs2q6A==
+      X-Amz-Cf-Pop:
+      - FRA60-P3
+      X-Cache:
+      - Miss from cloudfront
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1
+      accept:
+      - application/json
+      authorization:
+      - HIDDEN
+    method: GET
+    uri: https://9f692df0338dcbc9848646c6.openapparel.org/api/facilities/count/
+  response:
+    body:
+      string: '{"count":109834}'
+    headers:
+      Allow:
+      - GET, HEAD, OPTIONS
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '16'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 21 Oct 2022 16:49:25 GMT
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - gunicorn
+      Vary:
+      - Accept
+      Via:
+      - 1.1 0a71d283a25c1e3f082b4dbc9d844dfe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - LSie80rCvAhyx24wtHLDq5ZBTNFtLcfFq9ppAjKH8xuruo8OU7KJaQ==
+      X-Amz-Cf-Pop:
+      - FRA60-P3
+      X-Cache:
+      - Miss from cloudfront
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: name=A&address=C&country=BX
+    headers:
+      Accept-Encoding:
+      - gzip, deflate, br
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '27'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - python-requests/2.28.1
+      accept:
+      - application/json
+      authorization:
+      - HIDDEN
+    method: POST
+    uri: https://9f692df0338dcbc9848646c6.openapparel.org/api/facilities/??create=false&public=true&textonlyfallback=false
+  response:
+    body:
+      string: '{"country":["Could not find a country code for \"BX\"."]}'
+    headers:
+      Allow:
+      - GET, POST, HEAD, OPTIONS
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '57'
+      Content-Type:
+      - application/json
+      Date:
+      - Sun, 23 Oct 2022 18:53:40 GMT
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - gunicorn
+      Vary:
+      - Accept
+      Via:
+      - 1.1 8b889e35789d2b97f2ba8771acc9a008.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - PhuFhkhUG0-LcN0MBwyJyqjP1yMhjhtmuAnJAneo9hgES5MZhYSWSg==
+      X-Amz-Cf-Pop:
+      - FRA60-P3
+      X-Cache:
+      - Error from cloudfront
+      X-Content-Type-Options:
+      - nosniff
+    status:
+      code: 400
+      message: Bad Request
+version: 1
