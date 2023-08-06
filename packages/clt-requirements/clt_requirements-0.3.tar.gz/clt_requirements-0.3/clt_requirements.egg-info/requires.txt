@@ -1,0 +1,11 @@
+azure-cognitiveservices-speech==1.23.0
+boto3
+cryptography
+epitran==1.22
+google-cloud-texttospeech
+google-cloud-translate
+jieba
+pinyin_jyutping_sentence
+pydub
+pythainlp[ipa,thai2rom]
+requests
