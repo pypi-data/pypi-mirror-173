@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sfu-torchac
+Version: 0.0.1
+Summary: Fast arithmetic coding for PyTorch.
+Author: Anderson de Andrade
+Author-email: anderson_de_andrade@sfu.ca
+Requires-Python: ==3.10.6
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: extras
+Requires-Dist: torch (>=1)

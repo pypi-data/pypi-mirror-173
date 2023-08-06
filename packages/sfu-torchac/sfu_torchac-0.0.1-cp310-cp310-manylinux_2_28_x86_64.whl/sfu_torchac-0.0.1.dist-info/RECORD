@@ -1,0 +1,8 @@
+sfu_torchac/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sfu_torchac/backend/torchac.cpp,sha256=5C6-GQaTxJ1n9inX4bV9qgaijagxqyH5-Hh0XL9ONh4,20324
+sfu_torchac/torchac.py,sha256=LIq9mOoaCK3jTr4T6VgHLrEhtSEiqz-XBWNe_HmDxPA,3090
+torchac_backend_cpu.cpython-310-x86_64-linux-gnu.so,sha256=JgFA0_B8wgR4jTsRqbP7qrjWbt5GILmPW00hrdAXWRM,163616
+sfu_torchac-0.0.1.dist-info/LICENSE,sha256=QpIUVbISrz949r1HIABozYh2OrDVTUD0AIsYeTvyDZU,1076
+sfu_torchac-0.0.1.dist-info/WHEEL,sha256=u_QgA4S3RDHpqFPONFcFEHoF8J083MPw-w4PGkKGAPM,110
+sfu_torchac-0.0.1.dist-info/METADATA,sha256=VHlhYP8biLD4U7XInTNA6G1BEd1dpfvZ8qoik46gT-s,293
+sfu_torchac-0.0.1.dist-info/RECORD,,
