@@ -1,0 +1,4 @@
+include a_cv2_calculate_simlilarity/requirements.txt
+include a_cv2_calculate_simlilarity/thirdparty.json
+include a_cv2_calculate_simlilarity/README.MD
+include a_cv2_calculate_simlilarity/LICENSE

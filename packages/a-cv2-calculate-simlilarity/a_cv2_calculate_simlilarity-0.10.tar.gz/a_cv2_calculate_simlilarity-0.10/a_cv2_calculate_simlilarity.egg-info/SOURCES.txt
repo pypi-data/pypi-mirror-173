@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+a_cv2_calculate_simlilarity/LICENSE
+a_cv2_calculate_simlilarity/README.MD
+a_cv2_calculate_simlilarity/__init__.py
+a_cv2_calculate_simlilarity/requirements.txt
+a_cv2_calculate_simlilarity/thirdparty.json
+a_cv2_calculate_simlilarity.egg-info/PKG-INFO
+a_cv2_calculate_simlilarity.egg-info/SOURCES.txt
+a_cv2_calculate_simlilarity.egg-info/dependency_links.txt
+a_cv2_calculate_simlilarity.egg-info/requires.txt
+a_cv2_calculate_simlilarity.egg-info/top_level.txt
