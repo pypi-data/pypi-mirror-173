@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: forecasting-sandbox
+Version: 0.1.5
+Summary: Experimentations in Time Series forecasting
+Home-page: https://github.com/thierrymoudiki/forecasting_sandbox
+Author: T. Moudiki
+Author-email: thierry.moudiki@gmail.com
+License: BSD3 Clause License
+Keywords: forecasting
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: fuzzywuzzy (==0.18.0)
+Requires-Dist: numpy (==1.21.0)
+Requires-Dist: pandas
+Requires-Dist: patsy (==0.5.3)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-Levenshtein (==0.12.2)
+Requires-Dist: pytz (==2022.5)
+Requires-Dist: scipy (>=1.7.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: statsmodels (==0.13.2)
+Requires-Dist: tqdm (==4.60.0)
+
+Experimentations in Time Series forecasting
