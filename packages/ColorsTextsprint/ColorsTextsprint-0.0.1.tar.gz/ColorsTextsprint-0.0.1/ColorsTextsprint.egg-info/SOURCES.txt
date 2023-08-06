@@ -1,0 +1,9 @@
+README.md
+setup.py
+ColorsTextsprint.egg-info/PKG-INFO
+ColorsTextsprint.egg-info/SOURCES.txt
+ColorsTextsprint.egg-info/dependency_links.txt
+ColorsTextsprint.egg-info/requires.txt
+ColorsTextsprint.egg-info/top_level.txt
+libname/__init__.py
+libname/hello.py
