@@ -1,0 +1,3 @@
+[console_scripts]
+g2pkiwi=g2pkiwi.__main__:cli
+

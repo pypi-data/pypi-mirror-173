@@ -1,0 +1,17 @@
+g2pkiwi/__init__.py,sha256=fIJGDeCy8qSFmpNY25pyg_kBJFhjtYBdd0MNCFRUdYQ,97
+g2pkiwi/__main__.py,sha256=i_rOdfeddIhu70KUGf1CvG2sNn8GwNt4DRKGp1ROxQw,747
+g2pkiwi/__version__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+g2pkiwi/english.py,sha256=81GX8rq4rNgovKCyBRQQdlA5tEzT4P95kK9oDAHXVz0,7112
+g2pkiwi/g2pk.py,sha256=gsequG3aTDsHrhqgkeiCEzvHGVR32hz1-mIBDJ8IDb0,4317
+g2pkiwi/idioms.txt,sha256=Jr5KoTHEL0-9j2IasKsAaSmAn8BLVHh0Gdt-pOvmfos,2749
+g2pkiwi/numerals.py,sha256=aB9Y0-0QdXDitNi2gBNzzMDafCMnKfidAmb5bVZDhYE,5363
+g2pkiwi/regular.py,sha256=Idg1cZL2Ty8-BIie0Xdydqus2wMi9StHVFJr0gybLV0,2879
+g2pkiwi/rules.txt,sha256=G8RSNsv0tTs99xnKkxB22n6ipk8q_dX5mVkpb9CDrpk,15035
+g2pkiwi/special.py,sha256=kIHwRcbFNzRtqLwyzwTTBWNUelF8QmOeQyJoGB41NM0,5883
+g2pkiwi/table.csv,sha256=nDoJliltRxi8vHgWr-c9RWe3hiorAPvas5uxalT3EDE,5433
+g2pkiwi/utils.py,sha256=i6HCKcXpKnmV1v1uAlwF5DuGneyth1okoeJCBSIUTg4,7515
+g2pkiwi-0.1.0.dist-info/entry_points.txt,sha256=c2DNcn8YaflYC-gTunX28jWygCN9oMUKtjmMfyDtJ0U,48
+g2pkiwi-0.1.0.dist-info/WHEEL,sha256=TQSpXlWZjPl29LMjkpbkR7iGxKB2AMwzfSmPuPn1ZS8,87
+g2pkiwi-0.1.0.dist-info/METADATA,sha256=ahe-HVDbUyteTyiBTRaoGYuhoFf1GOnj4qMDcitjClY,10132
+g2pkiwi-0.1.0.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+g2pkiwi-0.1.0.dist-info/RECORD,,
