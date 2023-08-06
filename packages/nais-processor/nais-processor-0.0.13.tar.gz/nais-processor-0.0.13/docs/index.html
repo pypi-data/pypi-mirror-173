@@ -1,0 +1,2114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.10.0" />
+<title>nais_processor API documentation</title>
+<meta name="description" content="" />
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/sanitize.min.css" integrity="sha256-PK9q560IAAa6WVRRh76LtCaI8pjTJ2z11v0miyNNjrs=" crossorigin>
+<link rel="preload stylesheet" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/11.0.1/typography.min.css" integrity="sha256-7l/o7C8jubJiy74VsKTidCy1yBkRtiUGbVkYBylBqUg=" crossorigin>
+<link rel="stylesheet preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/github.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" integrity="sha256-Uv3H6lx7dJmRfRvH8TH6kJD1TSK1aFcwgx+mdg3epi8=" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => hljs.initHighlighting())</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>nais_processor</code></h1>
+</header>
+<section id="section-intro">
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">import numpy as np
+from matplotlib import colors
+import matplotlib.pyplot as plt
+from matplotlib.ticker import LogLocator
+from datetime import date, datetime, timedelta
+import matplotlib.dates as dts
+import pandas as pd
+import os
+import locale
+import warnings
+import yaml
+import re
+import sys
+from dateutil.parser import parse
+from tinydb import TinyDB, Query
+from tinydb.operations import add
+import time
+import json
+import aerosol_functions as af
+
+__pdoc__ = {
+    &#39;tubeloss&#39;: False,
+    &#39;average_mob&#39;: False,
+    &#39;average_dp&#39;: False,
+    &#39;find_diagnostic_names&#39;: False,
+    &#39;process_data&#39;: False,
+    &#39;correct_data&#39;: False,
+    &#39;data_cleaner&#39;: False,
+    &#39;corona_limit&#39;: False,
+    &#39;corona_ion_cleaner&#39;: False
+}
+
+# The final geometric mean diameters of diameter and mobility bins
+dp_ion = np.array([7.86360416e-10, 9.08232168e-10, 1.04902018e-09, 1.21167006e-09,
+1.39958930e-09, 1.61672083e-09, 1.86762862e-09, 2.15759741e-09,
+2.49274932e-09, 2.88018000e-09, 3.32811839e-09, 3.84611427e-09,
+4.44525917e-09, 5.13844742e-09, 5.94068566e-09, 6.86946146e-09,
+7.94518431e-09, 9.19171623e-09, 1.06370142e-08, 1.23139134e-08,
+1.42610904e-08, 1.65242568e-08, 1.91576555e-08, 2.22259544e-08,
+2.58066722e-08, 2.99933244e-08, 3.48995548e-08, 4.06646353e-08])*1e9
+
+dp_par = np.array([7.498942093324539870e-01,8.659643233600640144e-01,
+9.999999999999980016e-01,1.154781984689456031e+00,1.333521432163321974e+00,
+1.539926526059490097e+00,1.778279410038920094e+00,2.053525026457140079e+00,
+2.371373705661659947e+00,2.738419634264360081e+00,3.162277660168379967e+00,
+3.651741272548380213e+00,4.216965034285819591e+00,4.869675251658620141e+00,
+5.623413251903479626e+00,6.493816315762099833e+00,7.498942093324560076e+00,
+8.659643233600640144e+00,1.000000000000000000e+01,1.154781984689457985e+01,
+1.333521432163323972e+01,1.539926526059490008e+01,1.778279410038922137e+01,
+2.053525026457139901e+01,2.371373705661660125e+01,2.738419634264360170e+01,
+3.162277660168379967e+01,3.651741272548380124e+01,4.216965034285819769e+01])
+
+mob_ion = np.array([3.162277660168379937e-04,2.371373705661659990e-04,
+1.778279410038920258e-04,1.333521432163320159e-04,1.000000000000000048e-04,
+7.498942093324559917e-05,5.623413251903490022e-05,4.216965034285820205e-05,
+3.162277660168380208e-05,2.371373705661660125e-05,1.778279410038919852e-05,
+1.333521432163319990e-05,1.000000000000000082e-05,7.498942093324561442e-06,
+5.623413251903490361e-06,4.216965034285830030e-06,3.162277660168380038e-06,
+2.371373705661659871e-06,1.778279410038920148e-06,1.333521432163330027e-06,
+1.000000000000000167e-06,7.498942093324570124e-07,5.623413251903499890e-07,
+4.216965034285829924e-07,3.162277660168379721e-07,2.371373705661660136e-07,
+1.778279410038920042e-07,1.333521432163329868e-07])*1e4
+
+mob_ion_geomeans=np.array([2.73841963e-04, 2.05352503e-04, 1.53992653e-04, 1.15478198e-04,
+8.65964323e-05, 6.49381632e-05, 4.86967525e-05, 3.65174127e-05,
+2.73841963e-05, 2.05352503e-05, 1.53992653e-05, 1.15478198e-05,
+8.65964323e-06, 6.49381632e-06, 4.86967525e-06, 3.65174127e-06,
+2.73841963e-06, 2.05352503e-06, 1.53992653e-06, 1.15478198e-06,
+8.65964323e-07, 6.49381632e-07, 4.86967525e-07, 3.65174127e-07,
+2.73841963e-07, 2.05352503e-07, 1.53992653e-07])*1e4
+
+dp_par_geomeans=np.array([0.80584219,  0.93057204,  1.07460783,  1.24093776,  1.43301257,
+1.6548171 ,  1.91095297,  2.20673407,  2.54829675,  2.94272718,
+3.39820833,  3.92418976,  4.53158364,  5.23299115,  6.0429639 ,
+6.97830585,  8.05842188,  9.30572041, 10.74607828, 12.40937761,
+14.3301257 , 16.548171  , 19.10952975, 22.06734069, 25.48296748,
+29.42727176, 33.98208329, 39.24189758])
+
+dlogmob_ion=np.array([0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125,
+0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125,
+0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125,
+0.125])
+
+dlogdp_ion = np.array([0.06257524, 0.0625811 , 0.06259375, 0.06260838, 0.06262533,
+0.06264495, 0.06266769, 0.06269404, 0.06272461, 0.06276008,
+0.06280128, 0.06284916, 0.06290487, 0.06296974, 0.06304539,
+0.0631337 , 0.06323696, 0.06335788, 0.06349974, 0.0636665 ,
+0.06386292, 0.06409481, 0.06436924, 0.06469482, 0.06508209,
+0.06554394, 0.06609614, 0.06639699])
+
+dlogdp_par=np.array([0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625,
+0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625,
+0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625, 0.0625,
+0.0625, 0.0625, 0.0625, 0.0625, 0.0625])
+
+filename_formats = [
+[&#34;%Y-%m-%d.ions.nds&#34;,&#34;%Y-%m-%d.particles.nds&#34;,&#34;%Y-%m-%d.log&#34;],
+[&#34;%Y%m%d-block-ions.spectra&#34;,&#34;%Y%m%d-block-particles.spectra&#34;,&#34;%Y%m%d-block.records&#34;],
+[&#34;%Y%m%d-block-ions.spectra&#34;,&#34;%Y%m%d-block-particles.spectra&#34;,&#34;%Y%m%d-block.diagnostics&#34;]]
+
+possible_sampleflow_names = [
+&#34;pos_sampleflow.mean&#34;,
+&#34;neg_sampleflow.mean&#34;,
+&#34;pos_sampleflow&#34;,
+&#34;neg_sampleflow&#34;,
+&#34;sampleflow&#34;,
+&#34;Flowaer&#34;]
+
+possible_temperature_names = [
+&#34;temperature.mean&#34;,
+&#34;temperature&#34;,
+&#34;temp&#34;]
+
+possible_pressure_names = [
+&#34;baro.mean&#34;,
+&#34;baro&#34;]
+
+# Define standard conditions
+temp_ref = 273.15 # K, 0C
+pres_ref = 101325.0 # Pa, 1atm
+
+def make_config():
+    &#34;&#34;&#34;
+    Make a configuration file for processing NAIS data
+
+    Running `make_config()` asks information about the
+    measurement and the data, then writes the configuration
+    file to the specified location.
+
+    &#34;&#34;&#34;
+
+    # Collect data from the user
+    print()
+    print(&#34;Enter absolute path to configuration file.&#34;)
+    print(&#34;For example: /home/user/campaign.yml&#34;)
+    while True:
+        config_file = input(&#34;&gt; &#34;)
+        if len(config_file)&gt;0:
+            if not config_file.lower().endswith(&#34;.yml&#34;):
+                config_file = config_file + &#34;.yml&#34;
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Enter absolute path(s) to raw data folder(s). Separate multiple paths with comma.&#34;)
+    print(&#34;For example: /home/user/data/2021,/home/user/data/2022&#34;)
+    while True:
+        user_input = input(&#34;&gt; &#34;)
+        if len(user_input)&gt;0:
+            load_path=user_input.split(&#34;,&#34;)
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Enter absolute path to processed data folder.&#34;)
+    print(&#34;For example: /home/user/campaign&#34;)
+    while True:
+        save_path = input(&#34;&gt; &#34;)
+        if len(save_path)&gt;0:
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Enter start of measurement (YYYY-MM-DD)&#34;)
+    print(&#34;Leave empty if you want to start from the earliest date&#34;)
+    while True:
+        start_date = input(&#34;&gt; &#34;)
+        if len(start_date)==0:
+            break
+        try:
+            start_dt = pd.to_datetime(start_date)
+            break
+        except:
+            continue
+
+    print()
+    print(&#34;Enter end of measurement (YYYY-MM-DD)&#34;)
+    print(&#34;If empty processor assumes current day&#34;)
+    while True:
+        end_date = input(&#34;&gt; &#34;)
+        if len(end_date)==0:
+            break
+        try:
+            end_dt = pd.to_datetime(end_date)
+            break
+        except:
+            continue
+
+    print()
+    print(&#34;Enter absolute path to database file&#34;)
+    print(&#34;For example: /home/user/campaign.json&#34;)
+    while True:
+        database_file = input(&#34;&gt; &#34;)
+        if len(database_file)&gt;0:
+            if not database_file.lower().endswith(&#34;.json&#34;):
+                database_file = database_file + &#34;.json&#34;
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Reprocess on re-run (True/False)&#34;)
+    while True:
+        allow_reprocessing = input(&#34;&gt; &#34;)
+        if ((allow_reprocessing==&#39;True&#39;) or (allow_reprocessing==&#39;False&#39;)):
+            if (allow_reprocessing==&#39;True&#39;):
+                allow_reprocessing=True
+            else:
+                allow_reprocessing=False
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Enter measurement location&#34;)
+    print(&#34;For example: Helsinki, Kumpula&#34;)
+    location = input(&#34;&gt; &#34;)
+
+    ############## CLEANINIG
+    print()
+    print(&#34;Apply data cleaning procedures (True/False)&#34;)
+    print(&#34;Attempt to remove corona ions and electrometer noise from data&#34;)
+    while True:
+        apply_cleaning = input(&#34;&gt; &#34;)
+        if ((apply_cleaning==&#39;True&#39;) or (apply_cleaning==&#39;False&#39;)):
+            if (apply_cleaning==&#39;True&#39;):
+                apply_cleaning=True
+            else:
+                apply_cleaning=False
+                remove_corona_ions=False
+                remove_noisy_electrometers=False
+                reclean=False
+            break
+        else:
+            continue
+
+    if apply_cleaning:
+        print()
+        print(&#34;Remove corona charger ions from particle data (True/False)&#34;)
+        while True:
+            remove_corona_ions = input(&#34;&gt; &#34;)
+            if ((remove_corona_ions==&#39;True&#39;) or (remove_corona_ions==&#39;False&#39;)):
+                if remove_corona_ions==&#39;True&#39;:
+                    remove_corona_ions=True
+                else:
+                    remove_corona_ions=False
+                break
+            else:
+                continue
+
+        print()
+        print(&#34;Remove noisy electrometer data (True/False)&#34;)
+        while True:
+            remove_noisy_electrometers = input(&#34;&gt; &#34;)
+            if ((remove_noisy_electrometers==&#39;True&#39;) or (remove_noisy_electrometers==&#39;False&#39;)):
+                if remove_noisy_electrometers==&#39;True&#39;:
+                    remove_noisy_electrometers=True
+                else:
+                    remove_noisy_electrometers=False
+                break
+            else:
+                continue
+
+    ################### CORRECTIONS
+    print()
+    print(&#34;Apply corrections (True/False)&#34;)
+    print(&#34;Requires a NAIS with temperature and pressure sensors.&#34;)
+    while True:
+        apply_corrections = input(&#34;&gt; &#34;)
+        if ((apply_corrections==&#39;True&#39;) or (apply_corrections==&#39;False&#39;)):
+            if apply_corrections==&#39;True&#39;:
+                apply_corrections=True
+            else:
+                apply_corrections=False
+                sealevel_correction=False
+                recorrect=False
+                inlet_length = 0.0
+            break
+        else:
+            continue
+
+    if apply_corrections:
+        print()
+        print(&#34;Length of the inlet in meters&#34;)
+        while True:
+            inlet_length = input(&#34;&gt; &#34;)
+            try:
+                inlet_length = float(inlet_length)
+                break
+            except:
+                continue
+
+        print()
+        print(&#34;Correct concentrations to sealevel conditions (True/False)&#34;)
+        while True:
+            sealevel_correction = input(&#34;&gt; &#34;)
+            if sealevel_correction==&#39;True&#39;:
+                sealevel_correction=True
+                break
+            elif sealevel_correction==&#39;False&#39;:
+                sealevel_correction=False
+                break
+            else:
+                continue
+
+    print()
+    print(&#34;Configuration saved to: %s&#34;%config_file)
+    print()
+
+    # Make a dictionary out of the user input
+    config_info = {
+        &#34;data_folder&#34;: load_path,
+        &#34;processed_folder&#34;: save_path,
+        &#34;start_date&#34;: start_date,
+        &#34;end_date&#34;: end_date,
+        &#34;database_file&#34;: database_file,
+        &#34;location&#34;: location,
+        &#34;inlet_length&#34;: inlet_length,
+        &#34;apply_corrections&#34;:apply_corrections,
+        &#34;sealevel_correction&#34;: sealevel_correction,
+        &#34;remove_corona_ions&#34;: remove_corona_ions,
+        &#34;remove_noisy_electrometers&#34;: remove_noisy_electrometers,
+        &#34;allow_reprocess&#34;: allow_reprocessing,
+        &#34;apply_cleaning&#34;: apply_cleaning
+    }
+
+    # Save the config file
+    with open(config_file,&#34;w&#34;) as cf:
+        yaml.dump(config_info,cf)
+
+
+# Inlet losses
+################################################################################
+def tubeloss(dpp,pflow,plength,temp,press):
+    &#34;&#34;&#34; Laminar diffusion losses in circular straight conduit &#34;&#34;&#34;
+    DPP,TEMP = np.meshgrid(dpp,temp)
+    DPP,PRESS = np.meshgrid(dpp,press)
+    DPP,PFLOW = np.meshgrid(dpp,pflow)
+    rmuu = np.pi*af.particle_diffusivity(DPP,TEMP,PRESS)*plength/PFLOW
+    pene = np.nan*np.ones(rmuu.shape)
+    cond1=rmuu&lt;0.02
+    cond2=rmuu&gt;=0.02
+    pene[cond1] = 1. - 2.56*rmuu[cond1]**(2./3.) + 1.2*rmuu[cond1]+0.177*rmuu[cond1]**(4./3.)
+    pene[cond2] = 0.819*np.exp(-3.657*rmuu[cond2]) + 0.097*np.exp(-22.3*rmuu[cond2]) + 0.032*np.exp(-57.0*rmuu[cond2])
+    return pene
+
+# Read raw data file into a dataframe
+################################################################################
+def read_file(fn):
+    &#34;&#34;&#34;
+    Read NAIS raw data file into a pandas DataFrame
+
+    Parameters
+    ----------
+
+    fn : str
+        Raw data filename
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Contents of the file in dataframe
+
+    &#34;&#34;&#34;
+
+    with open(fn,&#39;r&#39;) as f:
+
+        header_found = False
+        data_matrix=[]
+        lines = f.read().splitlines()
+        
+        for line in lines:
+
+             # Skip empty and comments
+             if (len(line)==0):
+                 continue
+
+             if (line[0]==&#39;#&#39;):
+                 continue
+
+             # Test if it is a header
+             elif (header_found==False):
+                 if &#34;opmode&#34; in line:
+                     delimiter = re.search(&#39;(.)opmode&#39;,line).group(1)
+                     header = line.split(delimiter)
+                     number_of_columns = len(header)
+                     header_found = True
+                     continue
+                 else:
+                     continue 
+             else:
+                 data_line = line.split(delimiter)
+                 
+                 if ((len(data_line)==number_of_columns) &amp; (&#34;opmode&#34; not in data_line)):
+                     data_matrix.append(data_line)
+                 continue
+
+    if len(data_matrix)==0:
+        return None
+
+    else:
+        # Convert anything that can be converted to float and the rest is coerced to NaNs
+        df = pd.DataFrame(columns = header, data = data_matrix)
+        df.iloc[:,3:] = df.iloc[:,3:].apply(pd.to_numeric, errors=&#39;coerce&#39;).astype(float)
+
+        # Establish begin_time (first column) as index
+        df = df.set_index(df.columns[0])
+        df.index = pd.to_datetime(df.index)
+        
+        return df
+
+# Average data into the standard size bins
+################################################################################
+def average_mob(y,h):
+    data = pd.DataFrame([])
+    
+    for i in range(0,len(mob_ion_geomeans)):
+        if i==0:
+            y_block = y.iloc[:,h&gt;mob_ion_geomeans[i]]
+        else:
+            y_block = y.iloc[:,((h&gt;mob_ion_geomeans[i]) &amp; (h&lt;=mob_ion_geomeans[i-1]))]
+
+        data[i] = y_block.median(axis=1)
+
+    y_block = y.iloc[:,h&lt;=mob_ion_geomeans[i]]
+    data[i+1] = y_block.mean(axis=1)
+
+    return data
+
+def average_dp(y,h):
+    data = pd.DataFrame([])
+
+    for i in range(0,len(dp_par_geomeans)):
+        if i==0:
+            y_block = y.iloc[:,h&lt;dp_par_geomeans[i]]
+        else:
+            y_block = y.iloc[:,((h&lt;dp_par_geomeans[i]) &amp; (h&gt;=dp_par_geomeans[i-1]))]
+
+        data[i] = y_block.median(axis=1)
+
+    y_block = y.iloc[:,h&gt;=dp_par_geomeans[i]]
+    data[i+1] = y_block.mean(axis=1)
+
+    return data
+
+# Find diagnostic names
+################################################################################
+def find_diagnostic_names(diag_params):
+
+    sampleflow_name=None
+    sampleflow_names=None
+    temperature_name=None
+    pressure_name=None
+
+    for temp_name in possible_temperature_names:
+         if temp_name in diag_params:
+             temperature_name = temp_name
+             break
+
+    for pres_name in possible_pressure_names:
+        if pres_name in diag_params:
+            pressure_name = pres_name
+            break
+
+    sf_name = []
+    for flow_name in possible_sampleflow_names:
+        if flow_name in diag_params:
+            sf_name.append(flow_name)
+
+    if len(sf_name)==2:
+        sampleflow_names = sf_name
+    if len(sf_name)==1:
+        sampleflow_name = sf_name
+
+    return temperature_name, pressure_name, sampleflow_names, sampleflow_name
+
+# Process the data (convert to dndlogdp &amp; corrections)
+################################################################################
+def process_data(
+    df,
+    mode):
+
+    if (df is None):
+        return None, None
+
+    elif not df.index.to_series().is_monotonic_increasing:
+        return None, None
+
+    else:
+        df_columns = df.columns
+        df_inverter_reso = int((len(df_columns)-2)/4)
+
+        neg_df = df.iloc[:,2:2+df_inverter_reso]
+        pos_df = df.iloc[:,2+2*df_inverter_reso:2+3*df_inverter_reso]
+
+        if mode==&#34;ions&#34;:
+            mob_ion_inv = np.array([float(re.findall(r&#34;[-+]?\d*\.\d+|\d+&#34;,y)[0])
+                                    for y in df_columns[2:2+df_inverter_reso]])
+
+            neg_df = average_mob(neg_df,mob_ion_inv)
+            pos_df = average_mob(pos_df,mob_ion_inv)
+
+            # Convert to number size distributions
+            neg_df = neg_df * dlogmob_ion / dlogdp_ion
+            pos_df = pos_df * dlogmob_ion / dlogdp_ion
+
+        if mode==&#34;particles&#34;:
+            dp_par_inv = 2.0*np.array([float(re.findall(r&#34;[-+]?\d*\.\d+|\d+&#34;,y)[0])
+                                       for y in df_columns[2:2+df_inverter_reso]])
+        
+            neg_df = average_dp(neg_df,dp_par_inv)
+            pos_df = average_dp(pos_df,dp_par_inv)
+
+        # Construct the headers
+        if mode==&#34;ions&#34;:
+            df_header = dp_ion*1e-9
+        if mode==&#34;particles&#34;:
+            df_header = dp_par*1e-9
+
+        negdf = pd.DataFrame(columns=df_header, index=df.index, data=neg_df.values)
+        posdf = pd.DataFrame(columns=df_header, index=df.index, data=pos_df.values)
+
+        negdf.index.name = &#34;Time&#34;
+        posdf.index.name= &#34;Time&#34;
+
+        if negdf.isna().all().all():
+            negdf = None
+        if posdf.isna().all().all():
+            posdf = None
+
+        return negdf, posdf
+
+def correct_data(
+    df,
+    rec,
+    mode,
+    do_sealevel_corr,
+    pipe_length):
+
+    if ((rec is None) or (df is None)):
+        return None
+
+    else:        
+        # Extract the records that match the mode
+        if mode==&#34;ions&#34;:
+            df_rec = rec[rec.opmode==&#39;ions&#39;]
+        if mode==&#34;particles&#34;:
+            df_rec = rec[rec.opmode==&#39;particles&#39;]
+
+        if not df_rec.index.to_series().is_monotonic_increasing:
+            return None
+        
+        df_rec = df_rec.reindex(df.index,method=&#34;nearest&#34;)
+
+        # Check that the relevant diagnostic data is found
+        t_name,p_name,sf_names,sf_name = find_diagnostic_names(list(df_rec))
+        if ((t_name is not None) &amp; 
+            (p_name is not None) &amp;
+            ((sf_names is not None) | 
+             (sf_name is not None))):
+            pass
+        else:
+            return None
+    
+        # Temperature
+        t_df = 273.15 + df_rec[t_name].astype(float).to_frame()
+
+        # Pressure
+        p_df = 100.0 * df_rec[p_name].astype(float).to_frame()
+    
+        # Sampleflow
+        if sf_names is not None:
+            flow_df = df_rec[sf_names].sum(axis=1,min_count=2).astype(float).to_frame()
+        if sf_name is not None:
+            flow_df = df_rec[sf_name].astype(float).to_frame()
+    
+        # Test if the sampleflow is in cm3/s (old models) or 
+        # l/min and possibly convert to l/min
+        if (np.nanmedian(flow_df)&gt;300):
+            flow_df = (flow_df/1000.0) * 60.0
+        else:
+            pass
+    
+        # If all parameters are NaN
+        # e.g. sensor is broken
+        if (flow_df.isna().all().all() |
+            p_df.isna().all().all() |
+            t_df.isna().all().all()):
+            return None
+    
+        # Sanity check the values
+        t_df = t_df.where(((t_df&gt;=223.)|(t_df&lt;=353.)),np.nan)
+        p_df = p_df.where(((p_df&gt;=37000.)|(p_df&lt;=121000.)),np.nan)
+        flow_df = flow_df.where(((flow_df&gt;=48.)|(flow_df&lt;=60.)),np.nan)
+    
+        # Correct the number concentrations to standard conditions (optional)
+        if (do_sealevel_corr):
+            stp_corr_df = (pres_ref*t_df.values)/(temp_ref*p_df.values)
+            df = stp_corr_df * df
+       
+        # Diffusion loss correction
+        if mode==&#34;ions&#34;:
+            throughput = tubeloss(dp_ion*1e-9,flow_df.values*1.667e-5,pipe_length,t_df.values,p_df.values)
+        if mode==&#34;particles&#34;:
+            throughput = tubeloss(dp_par*1e-9,flow_df.values*1.667e-5,pipe_length,t_df.values,p_df.values)
+        
+        df = df / throughput
+    
+        # Robert Wagner&#39;s calibration (only ions)
+        if mode==&#34;ions&#34;:
+            roberts_corr = 0.713*dp_ion**0.120
+            df = df / roberts_corr
+    
+        return df
+
+# Data clean-up
+################################################################################
+def data_cleaner(df):
+    &#34;&#34;&#34; Returns a cleaned data array and portion of data removed &#34;&#34;&#34;
+
+    if df is None:
+        return None
+
+    # Rolling time window
+    reso_in_seconds = (df.index[1]-df.index[0]).seconds
+    small_window = int((10.*60.)/(reso_in_seconds))
+    large_window = int((24.*60.*60.)/(reso_in_seconds))
+
+    # Calculate standard deviation in 10 min segments
+    df2=df.rolling(small_window, min_periods=int((small_window+1.)/2.), center=True).std()
+
+    # In a bigger window (24 hours) calculate the 75th quantile of the standard deviations
+    # (semi)continous noise causes higher values compared to normal and rare sudden changes in conc
+    df3=df2.rolling(large_window, min_periods=int((large_window+1.)/2.), center=True).quantile(0.75)
+
+    # a Good threshold for significant noise seems to be 5 times the median background
+    threshold = 5*np.nanmedian(df3)
+
+    df4 = df.where(df3 &lt; threshold, np.nan)
+
+    return df4
+
+def corona_limit(df):
+    &#34;&#34;&#34; Find corona ion upper limit using maximum concentration difference &#34;&#34;&#34;
+
+    # Only consider likely limit range
+    lower = 1.5e-9
+    upper = 5.0e-9
+    c = (lower &lt;= df.columns.values) &amp; (upper &gt;= df.columns.values)
+    df2 = df.loc[:, c]
+
+    # Find maximum difference between size bin medians
+    return df2.columns.values[df2.median().diff().abs().argmax()]
+
+def corona_ion_cleaner(df):
+    &#34;&#34;&#34; Return a cleaned data array and ratio of data removed &#34;&#34;&#34;
+
+    if df is None:
+        return None
+
+    corona_lim = corona_limit(df)
+    df2 = df.copy()
+
+    # Set values below corona ion limit to NaNs
+    df2.iloc[:,df2.columns.values&lt;=corona_lim]=np.nan
+
+    return df2
+
+def check_config(f):
+    &#34;&#34;&#34;
+    Check that config file is ok
+
+    Parameters
+    ----------
+
+    f : `str`
+        full path to the configuration file
+
+    Returns
+    -------
+
+    boolean
+        `True` if file is OK
+        `False` if file is not OK
+
+    &#34;&#34;&#34;
+
+    if not os.path.isfile(f):
+        print(&#34;Config not found&#34;)
+        return False
+
+    print(f)
+
+    with open(f,&#39;r&#39;) as stream:
+        try:
+            config = yaml.safe_load(stream)
+            load_path = config[&#39;data_folder&#39;]
+            save_path = config[&#39;processed_folder&#39;]
+            start_date = config[&#39;start_date&#39;]
+            database = config[&#39;database_file&#39;]
+            location = config[&#39;location&#39;]
+            end_date = config[&#39;end_date&#39;]
+            allow_reprocess = config[&#34;allow_reprocess&#34;]
+            pipelength = config[&#39;inlet_length&#39;]
+            sealevel_correction = config[&#39;sealevel_correction&#39;]
+            apply_corrections = config[&#39;apply_corrections&#39;]
+            apply_cleaning=config[&#34;apply_cleaning&#34;]
+            remove_noisy_electrometers = config[&#34;remove_noisy_electrometers&#34;]
+            remove_corona_ions = config[&#34;remove_corona_ions&#34;]
+        except:
+            print(&#34;Config badly formatted&#34;)
+            return False
+
+    try:
+      db = TinyDB(database)
+      check = Query()
+    except:
+        print(&#34;Could not init DB&#34;)
+        return False
+
+    if start_date==&#39;&#39;:
+        pass
+    elif isinstance(start_date,date):
+        pass
+    else:
+        print(&#34;Bad start_date&#34;)
+        return False
+
+    if end_date==&#39;&#39;:
+        pass
+    elif isinstance(end_date,date):
+        pass
+    else:
+        print(&#34;Bad end_date&#34;)
+        return False
+
+    if os.path.exists(save_path)==False:
+        print(&#34;Bad save path&#34;)
+        return False
+
+    for x in load_path:
+        if os.path.exists(x)==False:
+            print(&#34;Bad load path&#34;)
+            return False
+
+    if (allow_reprocess==True) or (allow_reprocess==False):
+        pass
+    else:
+        print(&#34;Bad allow_reprocess&#34;)
+        return False
+
+    if (remove_corona_ions==True) or (remove_corona_ions==False):
+        pass
+    else:
+        print(&#34;Bad remove_corona_ions&#34;)
+        return False
+
+    if (remove_noisy_electrometers==True) or (remove_noisy_electrometers==False):
+        pass
+    else:
+        print(&#34;Bad remove_noisy_electrometers&#34;)
+        return False
+
+    if (sealevel_correction==True) or (sealevel_correction==False):
+        pass
+    else:
+        print(&#34;Bad sealevel_correction&#34;)
+        return False
+
+    if (apply_cleaning==True) or (apply_cleaning==False):
+        pass
+    else:
+        print(&#34;Bad apply_cleaning&#34;)
+        return False
+
+    if (apply_corrections==True) or (apply_corrections==False):
+        pass
+    else:
+        print(&#34;Bad apply_corrections&#34;)
+        return False
+
+    try:
+        float(pipelength)
+    except:
+        print(&#34;Bad inlet_length&#34;)
+        return False
+
+    return True
+
+
+def nais_processor(config_file):
+    &#34;&#34;&#34; Function that is called to processes data from the NAIS
+
+    Parameters
+    ----------
+
+    config_file : str
+        full path to the configuration file
+
+    &#34;&#34;&#34;
+
+    ################# READING CONFIG
+    if not check_config(config_file):
+        return 
+
+    # Today
+    today_dt = date.today()
+
+    with open(config_file,&#39;r&#39;) as stream:
+        config = yaml.safe_load(stream)
+        load_path = config[&#39;data_folder&#39;]
+        save_path = config[&#39;processed_folder&#39;]
+        start_date = config[&#39;start_date&#39;]
+        database = config[&#39;database_file&#39;]
+        location = config[&#39;location&#39;]
+        end_date = config[&#39;end_date&#39;]
+        allow_reprocess = config[&#34;allow_reprocess&#34;]
+        pipelength = config[&#39;inlet_length&#39;]
+        sealevel_correction = config[&#39;sealevel_correction&#39;]
+        apply_corrections = config[&#39;apply_corrections&#39;]
+        apply_cleaning=config[&#34;apply_cleaning&#34;]
+        remove_noisy_electrometers = config[&#34;remove_noisy_electrometers&#34;]
+        remove_corona_ions = config[&#34;remove_corona_ions&#34;]
+
+
+    ##################### UPDATING DATABASE
+    if start_date==&#39;&#39;:
+        start_date = date(2000,1,1)
+    if end_date==&#39;&#39;:
+        end_date = today_dt
+
+    db = TinyDB(database)
+    check = Query()
+
+    start_dt=pd.to_datetime(start_date)
+    end_dt=pd.to_datetime(end_date)
+
+    start_date_str = start_dt.strftime(&#34;%Y%m%d&#34;)
+    end_date_str = end_dt.strftime(&#34;%Y%m%d&#34;)
+
+    # list existing dates
+    list_of_existing_dates = [x[&#34;timestamp&#34;] for x in db.search(check.diagnostics.exists())]
+
+    if len(list_of_existing_dates)==0:
+        print(&#34;building database...&#34;)
+        list_of_datetimes = pd.date_range(start=start_date_str, end=end_date_str)
+    else:
+        last_existing_date = sorted(list_of_existing_dates)[-1]
+        list_of_datetimes = pd.date_range(start=last_existing_date, end=end_date_str)
+    
+    # Add unprocessed datafiles to the database
+    for x in list_of_datetimes:
+        if (x.strftime(&#34;%Y%m%d&#34;) in list_of_existing_dates):
+            continue
+        else:
+            files_found=False
+            for z in load_path:
+                for y in filename_formats:
+
+                    ion_fn = os.path.join(z,x.strftime(y[0]))
+                    particle_fn = os.path.join(z,x.strftime(y[1]))
+                    diagnostic_fn = os.path.join(z,x.strftime(y[2]))
+
+                    if ( (os.path.exists(ion_fn) | # ions
+                         os.path.exists(particle_fn)) &amp; # particles
+                         os.path.exists(diagnostic_fn) # diagnostics
+                       ):
+
+                        dtstr = x.strftime(&#34;%Y%m%d&#34;)
+
+                        db.insert(
+                            {&#34;timestamp&#34;:dtstr,
+                            &#34;diagnostics&#34;:diagnostic_fn}
+                            )
+
+                        if os.path.exists(ion_fn):
+                            db.update(
+                                {&#34;ions&#34;:ion_fn},
+                                check.timestamp==dtstr)
+
+                        if os.path.exists(particle_fn):
+                            db.update(
+                                {&#34;particles&#34;:particle_fn},
+                                check.timestamp==dtstr)
+
+                        files_found=True
+                        break
+
+                if files_found:
+                    break
+
+    # From the database find the last day with processed data
+    processed_days = db.search(
+        check.processed_neg_ion_file.exists() |
+        check.processed_pos_ion_file.exists() |
+        check.processed_neg_particle_file.exists() |
+        check.processed_pos_particle_file.exists())
+
+    if len(processed_days)!=0:
+        last_day=np.max([datetime.strptime(x[&#34;timestamp&#34;],&#34;%Y%m%d&#34;) for x in processed_days]).strftime(&#34;%Y%m%d&#34;)
+    else:
+        last_day=None
+
+    ############## PROCESSING
+    # reprocess data in db
+    if allow_reprocess:
+        iterator1 = iter(db.search(
+         (check.diagnostics.exists() &amp;
+          (check.ions.exists() |
+          check.particles.exists()) &amp;
+          (check.timestamp&gt;=start_date_str) &amp;
+          (check.timestamp&lt;=end_date_str))))
+    else:
+        iterator1 = iter(db.search(
+            ((check.timestamp==last_day) &amp;
+             (check.timestamp&gt;=start_date_str) &amp;
+             (check.timestamp&lt;=end_date_str)) |
+            (check.diagnostics.exists() &amp;
+             (check.ions.exists() |
+             check.particles.exists()) &amp;
+             ~check.processed_neg_ion_file.exists() &amp;
+             ~check.processed_pos_ion_file.exists() &amp;
+             ~check.processed_neg_particle_file.exists() &amp;
+             ~check.processed_pos_particle_file.exists() &amp;
+             (check.timestamp&gt;=start_date_str) &amp;
+             (check.timestamp&lt;=end_date_str))))
+
+    for x in iterator1:
+
+        print(&#34;processing %s (%s)&#34; % (x[&#34;timestamp&#34;],location))
+
+        ions_exist=bool(db.search(
+            check.ions.exists() &amp;
+            (check.timestamp==x[&#34;timestamp&#34;])))
+
+        particles_exist=bool(db.search(
+            check.particles.exists() &amp;
+            (check.timestamp==x[&#34;timestamp&#34;])))
+
+        records = read_file(x[&#34;diagnostics&#34;])
+
+        # ions
+        if ions_exist:
+
+            ions = read_file(x[&#34;ions&#34;])
+
+            negion_datamatrix,posion_datamatrix = process_data(ions,&#34;ions&#34;)
+
+            if apply_corrections:
+                negion_datamatrix = correct_data(
+                       negion_datamatrix,
+                       records,
+                       &#34;ions&#34;,
+                       sealevel_correction,
+                       pipelength)
+    
+                posion_datamatrix = correct_data(
+                       posion_datamatrix,
+                       records,
+                       &#34;ions&#34;,
+                       sealevel_correction,
+                       pipelength)
+
+            if apply_cleaning:
+                if remove_noisy_electrometers:
+                    negion_datamatrix = data_cleaner(negion_datamatrix)
+                    posion_datamatrix = data_cleaner(posion_datamatrix)
+
+            if (negion_datamatrix is not None):
+                my_save_path_neg=os.path.join(save_path,&#34;NAISn&#34;+x[&#34;timestamp&#34;]+&#34;nds.sum&#34;)
+                negion_datamatrix.to_csv(my_save_path_neg)
+                db.update({&#34;processed_neg_ion_file&#34;: my_save_path_neg},
+                    check.timestamp==x[&#34;timestamp&#34;])
+
+            if (posion_datamatrix is not None):
+                my_save_path_pos=os.path.join(save_path,&#34;NAISp&#34;+x[&#34;timestamp&#34;]+&#34;nds.sum&#34;)
+                posion_datamatrix.to_csv(my_save_path_pos)
+                db.update({&#34;processed_pos_ion_file&#34;: my_save_path_pos},
+                    check.timestamp==x[&#34;timestamp&#34;])
+
+        # particles
+        if particles_exist:
+
+            # Process particles
+            particles = read_file(x[&#34;particles&#34;])
+
+            negpar_datamatrix,pospar_datamatrix = process_data(particles,&#34;particles&#34;)
+
+            if apply_corrections:
+                negpar_datamatrix = correct_data(
+                       negpar_datamatrix,
+                       records,
+                       &#34;particles&#34;,
+                       sealevel_correction,
+                       pipelength)
+    
+                pospar_datamatrix = correct_data(
+                       pospar_datamatrix,
+                       records,
+                       &#34;particles&#34;,
+                       sealevel_correction,
+                       pipelength)
+
+            if apply_cleaning:
+                if remove_corona_ions:
+                    negpar_datamatrix = corona_ion_cleaner(negpar_datamatrix)
+                    pospar_datamatrix = corona_ion_cleaner(pospar_datamatrix)
+    
+                if remove_noisy_electrometers:
+                    negpar_datamatrix = data_cleaner(negpar_datamatrix)
+                    negpar_datamatrix = data_cleaner(pospar_datamatrix)
+ 
+            if (pospar_datamatrix is not None):
+                my_save_path_neg=os.path.join(save_path,&#34;NAISn&#34;+x[&#34;timestamp&#34;]+&#34;np.sum&#34;)
+                negpar_datamatrix.to_csv(my_save_path_neg)
+                db.update({&#34;processed_neg_particle_file&#34;: my_save_path_neg},
+                    check.timestamp==x[&#34;timestamp&#34;])
+
+            if (negpar_datamatrix is not None):
+                my_save_path_pos=os.path.join(save_path,&#34;NAISp&#34;+x[&#34;timestamp&#34;]+&#34;np.sum&#34;)
+                pospar_datamatrix.to_csv(my_save_path_pos)
+                db.update({&#34;processed_pos_particle_file&#34;: my_save_path_pos},
+                    check.timestamp==x[&#34;timestamp&#34;])
+
+    print(&#34;Done!&#34;)
+
+
+def combine_databases(database_list, combined_database):
+    &#34;&#34;&#34;Combine JSON databases
+
+    If the measurement setup changes one may have to use multiple configuration files
+    which results in multiple databases. With this function you can combine the databases
+    into a single database after processing.
+
+    Parameters
+    ----------
+
+    database_list : `str`
+        List of full paths to databases that should be combined
+
+        First database should have the earliest data, second database
+        the second earliest and so on
+
+    combined_database : `str`
+        full path to combined database
+    
+    &#34;&#34;&#34;
+
+    DB = {}
+    i = 0
+
+    for database in database_list:
+
+        fid=open(database)
+
+        database_json=json.load(fid)
+
+        for key in database_json[&#34;_default&#34;]:
+            DB[i] = database_json[&#34;_default&#34;][key]
+            i=i+1
+
+    with open(combined_database, &#34;w&#34;) as f:
+        json.dump({&#34;_default&#34;:DB},f)
+
+def combine_spectra(
+    database_file,
+    begin_time,
+    end_time,
+    spectrum_type=&#34;negion&#34;,
+    reso=60):
+    &#34;&#34;&#34;
+    Combine (cleaned) processed particle or ion data from some time range
+
+    Parameters
+    ----------
+
+    database_file : `str`
+        full path to database_file
+
+    begin_time : `str`
+        time aware iso formatted time string
+
+        For example `&#34;2013-01-02 15:00:00+02:00&#34;`
+
+    end_time : `str`
+        time aware iso formatted time string
+
+        For example `&#34;2013-01-03 17:00:00+02:00&#34;`
+
+    spectrum_type : `str`
+        negative ions `negion` (default)
+
+        positive ions `posion`
+
+        negative particles `negpar`
+
+        positive particles `pospar`
+
+    reso : `int`
+        desired resolution given in minutes
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Combined aerosol number size distribution in the given 
+        time interval
+
+    &#34;&#34;&#34;
+
+    db = TinyDB(database_file)
+    check = Query()
+
+    begin_dt=pd.to_datetime(begin_time)
+    end_dt=pd.to_datetime(end_time)
+
+    begin_date=begin_dt.strftime(&#34;%Y%m%d&#34;)
+    end_date=end_dt.strftime(&#34;%Y%m%d&#34;)
+
+    if spectrum_type==&#34;negpar&#34;:
+        iterator = iter(db.search(
+            (check.processed_neg_particle_file.exists()) &amp;
+            (check.timestamp&gt;=begin_date) &amp;
+            (check.timestamp&lt;=end_date)))
+        db_entry = &#34;processed_neg_particle_file&#34;
+    elif spectrum_type==&#34;pospar&#34;:
+        iterator = iter(db.search(
+            (check.processed_pos_particle_file.exists()) &amp;
+            (check.timestamp&gt;=begin_date) &amp;
+            (check.timestamp&lt;=end_date)))
+        db_entry = &#34;processed_pos_particle_file&#34;
+    elif spectrum_type==&#34;negion&#34;:
+        iterator = iter(db.search(
+            (check.processed_neg_ion_file.exists()) &amp;
+            (check.timestamp&gt;=begin_date) &amp;
+            (check.timestamp&lt;=end_date)))
+        db_entry = &#34;processed_neg_ion_file&#34;
+    elif spectrum_type==&#34;posion&#34;:
+        iterator = iter(db.search(
+            (check.processed_pos_ion_file.exists()) &amp;
+            (check.timestamp&gt;=begin_date) &amp;
+            (check.timestamp&lt;=end_date)))
+        db_entry = &#34;processed_pos_ion_file&#34;
+    else:
+        print(&#34;ERROR: %s is not valid &#39;spectrum_type&#39;&#34; % spectrum_type)
+        return
+
+    filenames = [x[db_entry] for x in iterator]
+
+    df = af.stack_data(filenames,begin_time,end_time,reso)
+
+    return df</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="nais_processor.check_config"><code class="name flex">
+<span>def <span class="ident">check_config</span></span>(<span>f)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Check that config file is ok</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>f</code></strong> :&ensp;<code>str</code></dt>
+<dd>full path to the configuration file</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>boolean</code></dt>
+<dd><code>True</code> if file is OK
+<code>False</code> if file is not OK</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def check_config(f):
+    &#34;&#34;&#34;
+    Check that config file is ok
+
+    Parameters
+    ----------
+
+    f : `str`
+        full path to the configuration file
+
+    Returns
+    -------
+
+    boolean
+        `True` if file is OK
+        `False` if file is not OK
+
+    &#34;&#34;&#34;
+
+    if not os.path.isfile(f):
+        print(&#34;Config not found&#34;)
+        return False
+
+    print(f)
+
+    with open(f,&#39;r&#39;) as stream:
+        try:
+            config = yaml.safe_load(stream)
+            load_path = config[&#39;data_folder&#39;]
+            save_path = config[&#39;processed_folder&#39;]
+            start_date = config[&#39;start_date&#39;]
+            database = config[&#39;database_file&#39;]
+            location = config[&#39;location&#39;]
+            end_date = config[&#39;end_date&#39;]
+            allow_reprocess = config[&#34;allow_reprocess&#34;]
+            pipelength = config[&#39;inlet_length&#39;]
+            sealevel_correction = config[&#39;sealevel_correction&#39;]
+            apply_corrections = config[&#39;apply_corrections&#39;]
+            apply_cleaning=config[&#34;apply_cleaning&#34;]
+            remove_noisy_electrometers = config[&#34;remove_noisy_electrometers&#34;]
+            remove_corona_ions = config[&#34;remove_corona_ions&#34;]
+        except:
+            print(&#34;Config badly formatted&#34;)
+            return False
+
+    try:
+      db = TinyDB(database)
+      check = Query()
+    except:
+        print(&#34;Could not init DB&#34;)
+        return False
+
+    if start_date==&#39;&#39;:
+        pass
+    elif isinstance(start_date,date):
+        pass
+    else:
+        print(&#34;Bad start_date&#34;)
+        return False
+
+    if end_date==&#39;&#39;:
+        pass
+    elif isinstance(end_date,date):
+        pass
+    else:
+        print(&#34;Bad end_date&#34;)
+        return False
+
+    if os.path.exists(save_path)==False:
+        print(&#34;Bad save path&#34;)
+        return False
+
+    for x in load_path:
+        if os.path.exists(x)==False:
+            print(&#34;Bad load path&#34;)
+            return False
+
+    if (allow_reprocess==True) or (allow_reprocess==False):
+        pass
+    else:
+        print(&#34;Bad allow_reprocess&#34;)
+        return False
+
+    if (remove_corona_ions==True) or (remove_corona_ions==False):
+        pass
+    else:
+        print(&#34;Bad remove_corona_ions&#34;)
+        return False
+
+    if (remove_noisy_electrometers==True) or (remove_noisy_electrometers==False):
+        pass
+    else:
+        print(&#34;Bad remove_noisy_electrometers&#34;)
+        return False
+
+    if (sealevel_correction==True) or (sealevel_correction==False):
+        pass
+    else:
+        print(&#34;Bad sealevel_correction&#34;)
+        return False
+
+    if (apply_cleaning==True) or (apply_cleaning==False):
+        pass
+    else:
+        print(&#34;Bad apply_cleaning&#34;)
+        return False
+
+    if (apply_corrections==True) or (apply_corrections==False):
+        pass
+    else:
+        print(&#34;Bad apply_corrections&#34;)
+        return False
+
+    try:
+        float(pipelength)
+    except:
+        print(&#34;Bad inlet_length&#34;)
+        return False
+
+    return True</code></pre>
+</details>
+</dd>
+<dt id="nais_processor.combine_databases"><code class="name flex">
+<span>def <span class="ident">combine_databases</span></span>(<span>database_list, combined_database)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Combine JSON databases</p>
+<p>If the measurement setup changes one may have to use multiple configuration files
+which results in multiple databases. With this function you can combine the databases
+into a single database after processing.</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>database_list</code></strong> :&ensp;<code>str</code></dt>
+<dd>
+<p>List of full paths to databases that should be combined</p>
+<p>First database should have the earliest data, second database
+the second earliest and so on</p>
+</dd>
+<dt><strong><code>combined_database</code></strong> :&ensp;<code>str</code></dt>
+<dd>full path to combined database</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def combine_databases(database_list, combined_database):
+    &#34;&#34;&#34;Combine JSON databases
+
+    If the measurement setup changes one may have to use multiple configuration files
+    which results in multiple databases. With this function you can combine the databases
+    into a single database after processing.
+
+    Parameters
+    ----------
+
+    database_list : `str`
+        List of full paths to databases that should be combined
+
+        First database should have the earliest data, second database
+        the second earliest and so on
+
+    combined_database : `str`
+        full path to combined database
+    
+    &#34;&#34;&#34;
+
+    DB = {}
+    i = 0
+
+    for database in database_list:
+
+        fid=open(database)
+
+        database_json=json.load(fid)
+
+        for key in database_json[&#34;_default&#34;]:
+            DB[i] = database_json[&#34;_default&#34;][key]
+            i=i+1
+
+    with open(combined_database, &#34;w&#34;) as f:
+        json.dump({&#34;_default&#34;:DB},f)</code></pre>
+</details>
+</dd>
+<dt id="nais_processor.combine_spectra"><code class="name flex">
+<span>def <span class="ident">combine_spectra</span></span>(<span>database_file, begin_time, end_time, spectrum_type='negion', reso=60)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Combine (cleaned) processed particle or ion data from some time range</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>database_file</code></strong> :&ensp;<code>str</code></dt>
+<dd>full path to database_file</dd>
+<dt><strong><code>begin_time</code></strong> :&ensp;<code>str</code></dt>
+<dd>
+<p>time aware iso formatted time string</p>
+<p>For example <code>"2013-01-02 15:00:00+02:00"</code></p>
+</dd>
+<dt><strong><code>end_time</code></strong> :&ensp;<code>str</code></dt>
+<dd>
+<p>time aware iso formatted time string</p>
+<p>For example <code>"2013-01-03 17:00:00+02:00"</code></p>
+</dd>
+<dt><strong><code>spectrum_type</code></strong> :&ensp;<code>str</code></dt>
+<dd>
+<p>negative ions <code>negion</code> (default)</p>
+<p>positive ions <code>posion</code></p>
+<p>negative particles <code>negpar</code></p>
+<p>positive particles <code>pospar</code></p>
+</dd>
+<dt><strong><code>reso</code></strong> :&ensp;<code>int</code></dt>
+<dd>desired resolution given in minutes</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.DataFrame</code></dt>
+<dd>Combined aerosol number size distribution in the given
+time interval</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def combine_spectra(
+    database_file,
+    begin_time,
+    end_time,
+    spectrum_type=&#34;negion&#34;,
+    reso=60):
+    &#34;&#34;&#34;
+    Combine (cleaned) processed particle or ion data from some time range
+
+    Parameters
+    ----------
+
+    database_file : `str`
+        full path to database_file
+
+    begin_time : `str`
+        time aware iso formatted time string
+
+        For example `&#34;2013-01-02 15:00:00+02:00&#34;`
+
+    end_time : `str`
+        time aware iso formatted time string
+
+        For example `&#34;2013-01-03 17:00:00+02:00&#34;`
+
+    spectrum_type : `str`
+        negative ions `negion` (default)
+
+        positive ions `posion`
+
+        negative particles `negpar`
+
+        positive particles `pospar`
+
+    reso : `int`
+        desired resolution given in minutes
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Combined aerosol number size distribution in the given 
+        time interval
+
+    &#34;&#34;&#34;
+
+    db = TinyDB(database_file)
+    check = Query()
+
+    begin_dt=pd.to_datetime(begin_time)
+    end_dt=pd.to_datetime(end_time)
+
+    begin_date=begin_dt.strftime(&#34;%Y%m%d&#34;)
+    end_date=end_dt.strftime(&#34;%Y%m%d&#34;)
+
+    if spectrum_type==&#34;negpar&#34;:
+        iterator = iter(db.search(
+            (check.processed_neg_particle_file.exists()) &amp;
+            (check.timestamp&gt;=begin_date) &amp;
+            (check.timestamp&lt;=end_date)))
+        db_entry = &#34;processed_neg_particle_file&#34;
+    elif spectrum_type==&#34;pospar&#34;:
+        iterator = iter(db.search(
+            (check.processed_pos_particle_file.exists()) &amp;
+            (check.timestamp&gt;=begin_date) &amp;
+            (check.timestamp&lt;=end_date)))
+        db_entry = &#34;processed_pos_particle_file&#34;
+    elif spectrum_type==&#34;negion&#34;:
+        iterator = iter(db.search(
+            (check.processed_neg_ion_file.exists()) &amp;
+            (check.timestamp&gt;=begin_date) &amp;
+            (check.timestamp&lt;=end_date)))
+        db_entry = &#34;processed_neg_ion_file&#34;
+    elif spectrum_type==&#34;posion&#34;:
+        iterator = iter(db.search(
+            (check.processed_pos_ion_file.exists()) &amp;
+            (check.timestamp&gt;=begin_date) &amp;
+            (check.timestamp&lt;=end_date)))
+        db_entry = &#34;processed_pos_ion_file&#34;
+    else:
+        print(&#34;ERROR: %s is not valid &#39;spectrum_type&#39;&#34; % spectrum_type)
+        return
+
+    filenames = [x[db_entry] for x in iterator]
+
+    df = af.stack_data(filenames,begin_time,end_time,reso)
+
+    return df</code></pre>
+</details>
+</dd>
+<dt id="nais_processor.make_config"><code class="name flex">
+<span>def <span class="ident">make_config</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Make a configuration file for processing NAIS data</p>
+<p>Running <code><a title="nais_processor.make_config" href="#nais_processor.make_config">make_config()</a></code> asks information about the
+measurement and the data, then writes the configuration
+file to the specified location.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def make_config():
+    &#34;&#34;&#34;
+    Make a configuration file for processing NAIS data
+
+    Running `make_config()` asks information about the
+    measurement and the data, then writes the configuration
+    file to the specified location.
+
+    &#34;&#34;&#34;
+
+    # Collect data from the user
+    print()
+    print(&#34;Enter absolute path to configuration file.&#34;)
+    print(&#34;For example: /home/user/campaign.yml&#34;)
+    while True:
+        config_file = input(&#34;&gt; &#34;)
+        if len(config_file)&gt;0:
+            if not config_file.lower().endswith(&#34;.yml&#34;):
+                config_file = config_file + &#34;.yml&#34;
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Enter absolute path(s) to raw data folder(s). Separate multiple paths with comma.&#34;)
+    print(&#34;For example: /home/user/data/2021,/home/user/data/2022&#34;)
+    while True:
+        user_input = input(&#34;&gt; &#34;)
+        if len(user_input)&gt;0:
+            load_path=user_input.split(&#34;,&#34;)
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Enter absolute path to processed data folder.&#34;)
+    print(&#34;For example: /home/user/campaign&#34;)
+    while True:
+        save_path = input(&#34;&gt; &#34;)
+        if len(save_path)&gt;0:
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Enter start of measurement (YYYY-MM-DD)&#34;)
+    print(&#34;Leave empty if you want to start from the earliest date&#34;)
+    while True:
+        start_date = input(&#34;&gt; &#34;)
+        if len(start_date)==0:
+            break
+        try:
+            start_dt = pd.to_datetime(start_date)
+            break
+        except:
+            continue
+
+    print()
+    print(&#34;Enter end of measurement (YYYY-MM-DD)&#34;)
+    print(&#34;If empty processor assumes current day&#34;)
+    while True:
+        end_date = input(&#34;&gt; &#34;)
+        if len(end_date)==0:
+            break
+        try:
+            end_dt = pd.to_datetime(end_date)
+            break
+        except:
+            continue
+
+    print()
+    print(&#34;Enter absolute path to database file&#34;)
+    print(&#34;For example: /home/user/campaign.json&#34;)
+    while True:
+        database_file = input(&#34;&gt; &#34;)
+        if len(database_file)&gt;0:
+            if not database_file.lower().endswith(&#34;.json&#34;):
+                database_file = database_file + &#34;.json&#34;
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Reprocess on re-run (True/False)&#34;)
+    while True:
+        allow_reprocessing = input(&#34;&gt; &#34;)
+        if ((allow_reprocessing==&#39;True&#39;) or (allow_reprocessing==&#39;False&#39;)):
+            if (allow_reprocessing==&#39;True&#39;):
+                allow_reprocessing=True
+            else:
+                allow_reprocessing=False
+            break
+        else:
+            continue
+
+    print()
+    print(&#34;Enter measurement location&#34;)
+    print(&#34;For example: Helsinki, Kumpula&#34;)
+    location = input(&#34;&gt; &#34;)
+
+    ############## CLEANINIG
+    print()
+    print(&#34;Apply data cleaning procedures (True/False)&#34;)
+    print(&#34;Attempt to remove corona ions and electrometer noise from data&#34;)
+    while True:
+        apply_cleaning = input(&#34;&gt; &#34;)
+        if ((apply_cleaning==&#39;True&#39;) or (apply_cleaning==&#39;False&#39;)):
+            if (apply_cleaning==&#39;True&#39;):
+                apply_cleaning=True
+            else:
+                apply_cleaning=False
+                remove_corona_ions=False
+                remove_noisy_electrometers=False
+                reclean=False
+            break
+        else:
+            continue
+
+    if apply_cleaning:
+        print()
+        print(&#34;Remove corona charger ions from particle data (True/False)&#34;)
+        while True:
+            remove_corona_ions = input(&#34;&gt; &#34;)
+            if ((remove_corona_ions==&#39;True&#39;) or (remove_corona_ions==&#39;False&#39;)):
+                if remove_corona_ions==&#39;True&#39;:
+                    remove_corona_ions=True
+                else:
+                    remove_corona_ions=False
+                break
+            else:
+                continue
+
+        print()
+        print(&#34;Remove noisy electrometer data (True/False)&#34;)
+        while True:
+            remove_noisy_electrometers = input(&#34;&gt; &#34;)
+            if ((remove_noisy_electrometers==&#39;True&#39;) or (remove_noisy_electrometers==&#39;False&#39;)):
+                if remove_noisy_electrometers==&#39;True&#39;:
+                    remove_noisy_electrometers=True
+                else:
+                    remove_noisy_electrometers=False
+                break
+            else:
+                continue
+
+    ################### CORRECTIONS
+    print()
+    print(&#34;Apply corrections (True/False)&#34;)
+    print(&#34;Requires a NAIS with temperature and pressure sensors.&#34;)
+    while True:
+        apply_corrections = input(&#34;&gt; &#34;)
+        if ((apply_corrections==&#39;True&#39;) or (apply_corrections==&#39;False&#39;)):
+            if apply_corrections==&#39;True&#39;:
+                apply_corrections=True
+            else:
+                apply_corrections=False
+                sealevel_correction=False
+                recorrect=False
+                inlet_length = 0.0
+            break
+        else:
+            continue
+
+    if apply_corrections:
+        print()
+        print(&#34;Length of the inlet in meters&#34;)
+        while True:
+            inlet_length = input(&#34;&gt; &#34;)
+            try:
+                inlet_length = float(inlet_length)
+                break
+            except:
+                continue
+
+        print()
+        print(&#34;Correct concentrations to sealevel conditions (True/False)&#34;)
+        while True:
+            sealevel_correction = input(&#34;&gt; &#34;)
+            if sealevel_correction==&#39;True&#39;:
+                sealevel_correction=True
+                break
+            elif sealevel_correction==&#39;False&#39;:
+                sealevel_correction=False
+                break
+            else:
+                continue
+
+    print()
+    print(&#34;Configuration saved to: %s&#34;%config_file)
+    print()
+
+    # Make a dictionary out of the user input
+    config_info = {
+        &#34;data_folder&#34;: load_path,
+        &#34;processed_folder&#34;: save_path,
+        &#34;start_date&#34;: start_date,
+        &#34;end_date&#34;: end_date,
+        &#34;database_file&#34;: database_file,
+        &#34;location&#34;: location,
+        &#34;inlet_length&#34;: inlet_length,
+        &#34;apply_corrections&#34;:apply_corrections,
+        &#34;sealevel_correction&#34;: sealevel_correction,
+        &#34;remove_corona_ions&#34;: remove_corona_ions,
+        &#34;remove_noisy_electrometers&#34;: remove_noisy_electrometers,
+        &#34;allow_reprocess&#34;: allow_reprocessing,
+        &#34;apply_cleaning&#34;: apply_cleaning
+    }
+
+    # Save the config file
+    with open(config_file,&#34;w&#34;) as cf:
+        yaml.dump(config_info,cf)</code></pre>
+</details>
+</dd>
+<dt id="nais_processor.nais_processor"><code class="name flex">
+<span>def <span class="ident">nais_processor</span></span>(<span>config_file)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Function that is called to processes data from the NAIS</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>config_file</code></strong> :&ensp;<code>str</code></dt>
+<dd>full path to the configuration file</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def nais_processor(config_file):
+    &#34;&#34;&#34; Function that is called to processes data from the NAIS
+
+    Parameters
+    ----------
+
+    config_file : str
+        full path to the configuration file
+
+    &#34;&#34;&#34;
+
+    ################# READING CONFIG
+    if not check_config(config_file):
+        return 
+
+    # Today
+    today_dt = date.today()
+
+    with open(config_file,&#39;r&#39;) as stream:
+        config = yaml.safe_load(stream)
+        load_path = config[&#39;data_folder&#39;]
+        save_path = config[&#39;processed_folder&#39;]
+        start_date = config[&#39;start_date&#39;]
+        database = config[&#39;database_file&#39;]
+        location = config[&#39;location&#39;]
+        end_date = config[&#39;end_date&#39;]
+        allow_reprocess = config[&#34;allow_reprocess&#34;]
+        pipelength = config[&#39;inlet_length&#39;]
+        sealevel_correction = config[&#39;sealevel_correction&#39;]
+        apply_corrections = config[&#39;apply_corrections&#39;]
+        apply_cleaning=config[&#34;apply_cleaning&#34;]
+        remove_noisy_electrometers = config[&#34;remove_noisy_electrometers&#34;]
+        remove_corona_ions = config[&#34;remove_corona_ions&#34;]
+
+
+    ##################### UPDATING DATABASE
+    if start_date==&#39;&#39;:
+        start_date = date(2000,1,1)
+    if end_date==&#39;&#39;:
+        end_date = today_dt
+
+    db = TinyDB(database)
+    check = Query()
+
+    start_dt=pd.to_datetime(start_date)
+    end_dt=pd.to_datetime(end_date)
+
+    start_date_str = start_dt.strftime(&#34;%Y%m%d&#34;)
+    end_date_str = end_dt.strftime(&#34;%Y%m%d&#34;)
+
+    # list existing dates
+    list_of_existing_dates = [x[&#34;timestamp&#34;] for x in db.search(check.diagnostics.exists())]
+
+    if len(list_of_existing_dates)==0:
+        print(&#34;building database...&#34;)
+        list_of_datetimes = pd.date_range(start=start_date_str, end=end_date_str)
+    else:
+        last_existing_date = sorted(list_of_existing_dates)[-1]
+        list_of_datetimes = pd.date_range(start=last_existing_date, end=end_date_str)
+    
+    # Add unprocessed datafiles to the database
+    for x in list_of_datetimes:
+        if (x.strftime(&#34;%Y%m%d&#34;) in list_of_existing_dates):
+            continue
+        else:
+            files_found=False
+            for z in load_path:
+                for y in filename_formats:
+
+                    ion_fn = os.path.join(z,x.strftime(y[0]))
+                    particle_fn = os.path.join(z,x.strftime(y[1]))
+                    diagnostic_fn = os.path.join(z,x.strftime(y[2]))
+
+                    if ( (os.path.exists(ion_fn) | # ions
+                         os.path.exists(particle_fn)) &amp; # particles
+                         os.path.exists(diagnostic_fn) # diagnostics
+                       ):
+
+                        dtstr = x.strftime(&#34;%Y%m%d&#34;)
+
+                        db.insert(
+                            {&#34;timestamp&#34;:dtstr,
+                            &#34;diagnostics&#34;:diagnostic_fn}
+                            )
+
+                        if os.path.exists(ion_fn):
+                            db.update(
+                                {&#34;ions&#34;:ion_fn},
+                                check.timestamp==dtstr)
+
+                        if os.path.exists(particle_fn):
+                            db.update(
+                                {&#34;particles&#34;:particle_fn},
+                                check.timestamp==dtstr)
+
+                        files_found=True
+                        break
+
+                if files_found:
+                    break
+
+    # From the database find the last day with processed data
+    processed_days = db.search(
+        check.processed_neg_ion_file.exists() |
+        check.processed_pos_ion_file.exists() |
+        check.processed_neg_particle_file.exists() |
+        check.processed_pos_particle_file.exists())
+
+    if len(processed_days)!=0:
+        last_day=np.max([datetime.strptime(x[&#34;timestamp&#34;],&#34;%Y%m%d&#34;) for x in processed_days]).strftime(&#34;%Y%m%d&#34;)
+    else:
+        last_day=None
+
+    ############## PROCESSING
+    # reprocess data in db
+    if allow_reprocess:
+        iterator1 = iter(db.search(
+         (check.diagnostics.exists() &amp;
+          (check.ions.exists() |
+          check.particles.exists()) &amp;
+          (check.timestamp&gt;=start_date_str) &amp;
+          (check.timestamp&lt;=end_date_str))))
+    else:
+        iterator1 = iter(db.search(
+            ((check.timestamp==last_day) &amp;
+             (check.timestamp&gt;=start_date_str) &amp;
+             (check.timestamp&lt;=end_date_str)) |
+            (check.diagnostics.exists() &amp;
+             (check.ions.exists() |
+             check.particles.exists()) &amp;
+             ~check.processed_neg_ion_file.exists() &amp;
+             ~check.processed_pos_ion_file.exists() &amp;
+             ~check.processed_neg_particle_file.exists() &amp;
+             ~check.processed_pos_particle_file.exists() &amp;
+             (check.timestamp&gt;=start_date_str) &amp;
+             (check.timestamp&lt;=end_date_str))))
+
+    for x in iterator1:
+
+        print(&#34;processing %s (%s)&#34; % (x[&#34;timestamp&#34;],location))
+
+        ions_exist=bool(db.search(
+            check.ions.exists() &amp;
+            (check.timestamp==x[&#34;timestamp&#34;])))
+
+        particles_exist=bool(db.search(
+            check.particles.exists() &amp;
+            (check.timestamp==x[&#34;timestamp&#34;])))
+
+        records = read_file(x[&#34;diagnostics&#34;])
+
+        # ions
+        if ions_exist:
+
+            ions = read_file(x[&#34;ions&#34;])
+
+            negion_datamatrix,posion_datamatrix = process_data(ions,&#34;ions&#34;)
+
+            if apply_corrections:
+                negion_datamatrix = correct_data(
+                       negion_datamatrix,
+                       records,
+                       &#34;ions&#34;,
+                       sealevel_correction,
+                       pipelength)
+    
+                posion_datamatrix = correct_data(
+                       posion_datamatrix,
+                       records,
+                       &#34;ions&#34;,
+                       sealevel_correction,
+                       pipelength)
+
+            if apply_cleaning:
+                if remove_noisy_electrometers:
+                    negion_datamatrix = data_cleaner(negion_datamatrix)
+                    posion_datamatrix = data_cleaner(posion_datamatrix)
+
+            if (negion_datamatrix is not None):
+                my_save_path_neg=os.path.join(save_path,&#34;NAISn&#34;+x[&#34;timestamp&#34;]+&#34;nds.sum&#34;)
+                negion_datamatrix.to_csv(my_save_path_neg)
+                db.update({&#34;processed_neg_ion_file&#34;: my_save_path_neg},
+                    check.timestamp==x[&#34;timestamp&#34;])
+
+            if (posion_datamatrix is not None):
+                my_save_path_pos=os.path.join(save_path,&#34;NAISp&#34;+x[&#34;timestamp&#34;]+&#34;nds.sum&#34;)
+                posion_datamatrix.to_csv(my_save_path_pos)
+                db.update({&#34;processed_pos_ion_file&#34;: my_save_path_pos},
+                    check.timestamp==x[&#34;timestamp&#34;])
+
+        # particles
+        if particles_exist:
+
+            # Process particles
+            particles = read_file(x[&#34;particles&#34;])
+
+            negpar_datamatrix,pospar_datamatrix = process_data(particles,&#34;particles&#34;)
+
+            if apply_corrections:
+                negpar_datamatrix = correct_data(
+                       negpar_datamatrix,
+                       records,
+                       &#34;particles&#34;,
+                       sealevel_correction,
+                       pipelength)
+    
+                pospar_datamatrix = correct_data(
+                       pospar_datamatrix,
+                       records,
+                       &#34;particles&#34;,
+                       sealevel_correction,
+                       pipelength)
+
+            if apply_cleaning:
+                if remove_corona_ions:
+                    negpar_datamatrix = corona_ion_cleaner(negpar_datamatrix)
+                    pospar_datamatrix = corona_ion_cleaner(pospar_datamatrix)
+    
+                if remove_noisy_electrometers:
+                    negpar_datamatrix = data_cleaner(negpar_datamatrix)
+                    negpar_datamatrix = data_cleaner(pospar_datamatrix)
+ 
+            if (pospar_datamatrix is not None):
+                my_save_path_neg=os.path.join(save_path,&#34;NAISn&#34;+x[&#34;timestamp&#34;]+&#34;np.sum&#34;)
+                negpar_datamatrix.to_csv(my_save_path_neg)
+                db.update({&#34;processed_neg_particle_file&#34;: my_save_path_neg},
+                    check.timestamp==x[&#34;timestamp&#34;])
+
+            if (negpar_datamatrix is not None):
+                my_save_path_pos=os.path.join(save_path,&#34;NAISp&#34;+x[&#34;timestamp&#34;]+&#34;np.sum&#34;)
+                pospar_datamatrix.to_csv(my_save_path_pos)
+                db.update({&#34;processed_pos_particle_file&#34;: my_save_path_pos},
+                    check.timestamp==x[&#34;timestamp&#34;])
+
+    print(&#34;Done!&#34;)</code></pre>
+</details>
+</dd>
+<dt id="nais_processor.read_file"><code class="name flex">
+<span>def <span class="ident">read_file</span></span>(<span>fn)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Read NAIS raw data file into a pandas DataFrame</p>
+<h2 id="parameters">Parameters</h2>
+<dl>
+<dt><strong><code>fn</code></strong> :&ensp;<code>str</code></dt>
+<dd>Raw data filename</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>pandas.DataFrame</code></dt>
+<dd>Contents of the file in dataframe</dd>
+</dl></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def read_file(fn):
+    &#34;&#34;&#34;
+    Read NAIS raw data file into a pandas DataFrame
+
+    Parameters
+    ----------
+
+    fn : str
+        Raw data filename
+
+    Returns
+    -------
+
+    pandas.DataFrame
+        Contents of the file in dataframe
+
+    &#34;&#34;&#34;
+
+    with open(fn,&#39;r&#39;) as f:
+
+        header_found = False
+        data_matrix=[]
+        lines = f.read().splitlines()
+        
+        for line in lines:
+
+             # Skip empty and comments
+             if (len(line)==0):
+                 continue
+
+             if (line[0]==&#39;#&#39;):
+                 continue
+
+             # Test if it is a header
+             elif (header_found==False):
+                 if &#34;opmode&#34; in line:
+                     delimiter = re.search(&#39;(.)opmode&#39;,line).group(1)
+                     header = line.split(delimiter)
+                     number_of_columns = len(header)
+                     header_found = True
+                     continue
+                 else:
+                     continue 
+             else:
+                 data_line = line.split(delimiter)
+                 
+                 if ((len(data_line)==number_of_columns) &amp; (&#34;opmode&#34; not in data_line)):
+                     data_matrix.append(data_line)
+                 continue
+
+    if len(data_matrix)==0:
+        return None
+
+    else:
+        # Convert anything that can be converted to float and the rest is coerced to NaNs
+        df = pd.DataFrame(columns = header, data = data_matrix)
+        df.iloc[:,3:] = df.iloc[:,3:].apply(pd.to_numeric, errors=&#39;coerce&#39;).astype(float)
+
+        # Establish begin_time (first column) as index
+        df = df.set_index(df.columns[0])
+        df.index = pd.to_datetime(df.index)
+        
+        return df</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="nais_processor.check_config" href="#nais_processor.check_config">check_config</a></code></li>
+<li><code><a title="nais_processor.combine_databases" href="#nais_processor.combine_databases">combine_databases</a></code></li>
+<li><code><a title="nais_processor.combine_spectra" href="#nais_processor.combine_spectra">combine_spectra</a></code></li>
+<li><code><a title="nais_processor.make_config" href="#nais_processor.make_config">make_config</a></code></li>
+<li><code><a title="nais_processor.nais_processor" href="#nais_processor.nais_processor">nais_processor</a></code></li>
+<li><code><a title="nais_processor.read_file" href="#nais_processor.read_file">read_file</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.10.0</a>.</p>
+</footer>
+</body>
+</html>
