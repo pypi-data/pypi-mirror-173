@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+wrapit>=0.3.0
+pytest
+
+[:python_version<"3.0"]
+mock
+
+[:python_version>="3.0"]
+doit==0.30.0
