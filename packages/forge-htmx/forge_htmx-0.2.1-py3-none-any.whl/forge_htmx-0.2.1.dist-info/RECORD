@@ -1,0 +1,11 @@
+forgehtmx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forgehtmx/static/htmx/forgehtmx.js,sha256=9-HT21fBDES2it0Heezpr47y3UKfbF6qmJHcBGqzWBo,1988
+forgehtmx/static/htmx/htmx.min.js,sha256=kU4F4nQ2Ly4Wb8Woz2Jy4gQtm55QZHZ4xkxXnctfpEE,39433
+forgehtmx/templates/htmx/js.html,sha256=YWwU9Q1YFp6o5Oo-RxBAsFxuGu61ZSQCaYu2RfEPx-Q,188
+forgehtmx/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+forgehtmx/templatetags/htmx.py,sha256=RoD6UOxuxFuE8WlsppokX5bZRD_S-3jHfIWhvkxhDQU,1663
+forgehtmx/views.py,sha256=Qdmj3twjuVOuDMAfxuzvIdHhZBDEXr7TnElzXO8hoGs,4003
+forge_htmx-0.2.1.dist-info/LICENSE,sha256=iGG9PEzy4ns8VW3ZU_W-oTv6-Gzir5-3VxFd8iVEZe0,1066
+forge_htmx-0.2.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+forge_htmx-0.2.1.dist-info/METADATA,sha256=NtYJHYIVGw-1L_MTWDhK3L8N4H61c3luHdUjQTzjkZo,12241
+forge_htmx-0.2.1.dist-info/RECORD,,
