@@ -1,0 +1,9 @@
+perfect_eval/__init__.py,sha256=Mfdntuo7-YteNkBNEQtg0T9O8NkeDOaSBV3cBvQu3mk,210
+perfect_eval/__version__.py,sha256=8B2rMAcPhq1c8DyiMQginalYwVSKVB7cg9IJnrSLoLM,219
+perfect_eval/eval.py,sha256=KKiMBZ1mb88mjKJzzX4pPhtxZ9zNF_ljNAR3BvTkJJ8,14593
+perfect_eval/template.py,sha256=AWh5Yqzaq31qeOKtuFQLSAY9uAeIa4sovGNmGg7xolc,700
+perfect_eval-0.0.1.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+perfect_eval-0.0.1.dist-info/METADATA,sha256=1r8gh80A_gR412dl6b41cCerm6jO8rKwQFqWYzYqZ1A,2951
+perfect_eval-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+perfect_eval-0.0.1.dist-info/top_level.txt,sha256=Iup8dvZkPeCHlcoRkGf-ph8R1SzLQ3--JO85VwqbHTM,13
+perfect_eval-0.0.1.dist-info/RECORD,,
