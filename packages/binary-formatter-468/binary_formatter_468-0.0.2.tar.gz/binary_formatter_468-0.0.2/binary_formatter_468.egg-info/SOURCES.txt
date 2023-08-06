@@ -1,0 +1,8 @@
+setup.py
+binary_formatter_468/__init__.py
+binary_formatter_468/binary_formatter_468.py
+binary_formatter_468.egg-info/PKG-INFO
+binary_formatter_468.egg-info/SOURCES.txt
+binary_formatter_468.egg-info/dependency_links.txt
+binary_formatter_468.egg-info/not-zip-safe
+binary_formatter_468.egg-info/top_level.txt
