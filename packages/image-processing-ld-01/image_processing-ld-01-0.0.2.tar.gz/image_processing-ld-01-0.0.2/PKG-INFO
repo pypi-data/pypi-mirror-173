@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: image_processing-ld-01
+Version: 0.0.2
+Summary: Package for image processing using Skimage
+Home-page: https://github.com/lucasdionis10/dio-python-image-processing
+Author: Lucas Dionisio
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# package_name
+
+Description. 
+The package image_processing is used to:
+	Processing:
+		- Histogram matching
+		- Structurall similarity
+		- Resize image
+	Utills:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram	
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install -i https://test.pypi.org/simple/ image-processing-ld
+```
+
+
+## Author
+Lucas Dionisio
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
