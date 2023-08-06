@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: IPYNBrender
+Version: 0.0.3
+Summary: A small python package that renders videos
+Home-page: https://github.com/EagleVector/IPYNBRENDER
+Author: EagleVector
+Author-email: kumarsubhambili3@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/EagleVector/IPYNBRENDER/issues
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Provides-Extra: testing
+License-File: LICENSE
+
+# IPYNB RENDERER python package
+
+project board - https://github.com/users/EagleVector/projects/1
