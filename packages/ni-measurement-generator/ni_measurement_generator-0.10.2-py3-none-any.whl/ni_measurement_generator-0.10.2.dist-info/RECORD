@@ -1,0 +1,10 @@
+ni_measurement_generator/__main__.py,sha256=A9sfS7QQIMNHdjnyaPJUnCajVkYvNThzP6erzqJ9060,144
+ni_measurement_generator/template.py,sha256=sog3AeBfWiETLz_MSmdNPyP1spVODNAXqeq7MqVg-us,4622
+ni_measurement_generator/templates/measurement.measproj.mako,sha256=jr3vNN49WM-c-L2WNfPWEf3Eq5Rbvaisb1hmt9snFWo,1682
+ni_measurement_generator/templates/measurement.measui.mako,sha256=IUJTJMGRMfbhonSgFCW7LfxrYfH0XHpaJTeMHPZukBo,5127
+ni_measurement_generator/templates/measurement.py.mako,sha256=NYSgdn4CZAA_GnV0n-SUznIndoMJ2c7udLRfEl3_Ww8,1580
+ni_measurement_generator/templates/measurement.serviceconfig.mako,sha256=-oDQbj-kCFjAm7_-PfL4zOJ_Z0U97uJg7pg31CZ-BjU,318
+ni_measurement_generator-0.10.2.dist-info/entry_points.txt,sha256=tFC7IuHk5riCYWoXH-3TqcpuxI2CtTOtogxmTCoP_to,97
+ni_measurement_generator-0.10.2.dist-info/WHEEL,sha256=DRf8A_Psd1SF2kVqTQOOFU1Xzl3-A2qljAxBMTOusUs,83
+ni_measurement_generator-0.10.2.dist-info/METADATA,sha256=NhYgXdy2mcARkFmrdXCNYuO_hs75OyVFXT7RPHCxIr0,469
+ni_measurement_generator-0.10.2.dist-info/RECORD,,
