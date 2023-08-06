@@ -1,0 +1,16 @@
+pyqupa/__init__.py,sha256=H89asu9ABKXyjCQe2kwJ0lGkCEYMY4hMVhR463pO6S0,830
+pyqupa/__main__.py,sha256=aaj50HWAE17biepoc8dP_7oaQeSW8pB_-2ucdkR6Oo0,583
+pyqupa/app.py,sha256=EpxkCkjgQH6m64iGfjIrFiHcKAkh-C46vjNwQ8TUs9s,11051
+pyqupa/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqupa/assets/screenshots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyqupa/assets/screenshots/search_by_distance.png,sha256=s9qp9SwEE9xBecpQmzP5wgIdVbqao191GQ65coPoLVA,451512
+pyqupa/assets/screenshots/search_by_name.png,sha256=QO5ICPScXZUCmsPiMmVmFuD9-X3SORkAynmFLZkqT6w,2934167
+pyqupa/assets/screenshots/search_by_region.png,sha256=r7jLCCQQKPbvy2QSWXYP5qyTi9OOYz69EMkHuDry88M,516158
+pyqupa/db/pass_names.json,sha256=gSdd4PhI9r-_QpKlE7zcVrBbRdSJG1MM4vGxMReDS44,263966
+pyqupa/db/passes.json,sha256=7MbPIX4BkHNvvvmAsupqorFbA5AZUvb64do9zW839J8,5277267
+pyqupa/passes.py,sha256=_2C8ZRrfbFQl4slUWpTT51uvAuVId4_Pwtj_vrbgPRk,21861
+pyqupa/quaeldich.py,sha256=lNcX2_5gb8F8u_iwkDLa7ZrY5__3-4lTNOckUG_s59I,15084
+pyqupa/tools.py,sha256=ZRs3hPYbttAIBbDV49-5DVXRPqbB_smpaUxVTR6-k-E,2236
+pyqupa-0.1.1.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pyqupa-0.1.1.dist-info/METADATA,sha256=Y6whhxfks1Gg115Qaxy-B1WnLkvqIhxuW3UnJR5tqks,7183
+pyqupa-0.1.1.dist-info/RECORD,,
