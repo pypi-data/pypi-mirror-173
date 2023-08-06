@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+HUNT7X/HUNTING7X.py
+HUNT7X/__init__.py
+HUNTING7X.egg-info/PKG-INFO
+HUNTING7X.egg-info/SOURCES.txt
+HUNTING7X.egg-info/dependency_links.txt
+HUNTING7X.egg-info/requires.txt
+HUNTING7X.egg-info/top_level.txt
