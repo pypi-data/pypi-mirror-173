@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: papai-public
+Version: 0.1.1
+Summary: Public papAI minio writer/reader
+Author: Datategy
+Requires-Dist: pyarrow (==9.0.0)
+Requires-Dist: minio (==7.1.9)
+Requires-Dist: loguru (==0.5.3)
+Requires-Dist: azure-storage-blob (==12.14.0)
+Requires-Dist: boto3 (==1.24.96)
+Requires-Dist: google-cloud-storage
+Requires-Dist: numpy-1.23.4
+
