@@ -1,0 +1,8 @@
+query_anon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+query_anon/cli.py,sha256=UOr_d0uPinZzFInQVIGcpqwvFeoDMahqMbVDlTe1ySE,1181
+query_anon/log_reader.py,sha256=O55Y-3jE-pgP0OLblTk03kRlhhnXktcWkxEPdkdp94c,4192
+query_anon/parser.py,sha256=Iuyk1cCts8akS_2ZZyN9XUXIDaFMxS72T7AUeS-lKiQ,5871
+query_anon-0.1.0.dist-info/entry_points.txt,sha256=U2kVjlW4ipqohcxR27gFojIoEQkwMgLPZOfYRMXvgmw,49
+query_anon-0.1.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+query_anon-0.1.0.dist-info/METADATA,sha256=oFBc6yotR_56l13nFQVJHnRtzxNpYWkKoW_JCEobhWE,429
+query_anon-0.1.0.dist-info/RECORD,,

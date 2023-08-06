@@ -1,0 +1,3 @@
+[console_scripts]
+query-anon=query_anon.cli:cli
+
