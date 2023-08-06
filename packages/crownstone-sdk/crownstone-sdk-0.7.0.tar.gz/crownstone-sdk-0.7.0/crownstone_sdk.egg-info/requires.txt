@@ -1,0 +1,3 @@
+crownstone-ble~=2.5
+crownstone-uart~=2.6
+bleak==0.10
