@@ -1,0 +1,16 @@
+btgatt/__init__.py,sha256=Bm1HWHjEKGLM6X97ZYH2dwPHYI0AnRVOcEMtUOG2j54,4256
+btgatt/characteristic.py,sha256=BnxBj6wJrm7PVGxYgtg1kE6_SLv_E7BKkA-FNGMDrRs,37751
+btgatt/client.py,sha256=f4OMx9SHkx5tFk3hQ6lklwJSMKl9q6skY6ugZPWBoI0,38107
+btgatt/client_exceptions.py,sha256=gTUPNHC2hmrfctC9wnAHZJ3C_D8qzEWEvt8DmOExKGQ,5699
+btgatt/gap.py,sha256=6PKuZraLIqVyx4v9kAm9H-mYNhcv9ueADZkUxmOZ94k,1463
+btgatt/gatt.py,sha256=oYoLVs--4GfNvYsnP2j7teW600AxlYzpbFZ8Obj9Mtw,173963
+btgatt/service.py,sha256=EdHbBEjelfNO-hi9_VUh1TwLSEw8BsXVObAVMY47UEQ,12667
+btgatt/uuids.py,sha256=if3_45dNMv2rcm3mK6N6XcKfRgLmvjls_p3H4vyW4ak,67763
+btgatt/pytransform/__init__.py,sha256=OAwIt1kGBC0Y5zsNJlTrAwQwmJhMqierRUVI_ZOjqgg,13587
+btgatt/pytransform/platforms/linux/aarch64/_pytransform.so,sha256=XrbsgljroGpfqKobawXudexNCTrLHAyEuLttvMl4gAs,1087608
+btgatt/pytransform/platforms/linux/x86_64/_pytransform.so,sha256=QTGwl1_DiHlfGiVDm-pVvw0nzDlwOb1OimF8fK0VO0Q,1198080
+btgatt-0.0.19.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+btgatt-0.0.19.dist-info/METADATA,sha256=qYGer2-5GXEMv92ppElh4iSI0O7d5nWNcz-vkev8Bn4,754
+btgatt-0.0.19.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+btgatt-0.0.19.dist-info/top_level.txt,sha256=HYeBebn3LA6D4J7QNROCdvAqHIiaxWAwbJazkfsZbuI,7
+btgatt-0.0.19.dist-info/RECORD,,
