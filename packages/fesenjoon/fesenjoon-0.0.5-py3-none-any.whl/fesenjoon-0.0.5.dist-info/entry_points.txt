@@ -1,0 +1,2 @@
+[console_scripts]
+fesenjoon = fesenjoon.cli:main

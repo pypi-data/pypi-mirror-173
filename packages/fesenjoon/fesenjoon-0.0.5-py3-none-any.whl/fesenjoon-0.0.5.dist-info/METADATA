@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: fesenjoon
+Version: 0.0.5
+Summary: A simple multiprocessing google drive api
+Author-email: Mohsen Hariri <mhariri68@gmail.com>
+License: GPL-3.0 License
+Keywords: google drive,google cloud,backup
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: google-api-python-client (==2.64.0)
+Requires-Dist: google-auth-oauthlib (==0.5.3)
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: black (>=18.3) ; extra == 'dev'
+
+fesenjoon
+===========
+
+Documentation_ -- GitHub_ 
+
+
+A simple package
+
+.. code-block:: python
+
+    import fesenjoon
+
+    drive = fesenjoon.Drive()
+    # NOTE: URI params must be strings not integers
+
+    gist_uri = 'https://api.github.com/gists{/gist_id}'
+    t = URITemplate(gist_uri)
+    print(t.expand(gist_id='123456'))
+    # => https://api.github.com/users/sigmavirus24/gists/123456
+
+    # or
+    print(expand(gist_uri, gist_id='123456'))
+
+    # also
+    t.expand({'gist_id': '123456'})
+    print(expand(gist_uri, {'gist_id': '123456'}))
+
+Where it might be useful to have a class
+
+.. code-block:: python
+
+    from fesenjoon import Drive
+    drive = Drive()
+
+
+When the module containing this class is loaded, ``GitHubUser.url`` is
+evaluated and so the template is created once. It's often hard to notice in
+Python, but object creation can consume a great deal of time and so can the
+``re`` module which uritemplate relies on. Constructing the object once should
+reduce the amount of time your code takes to run.
+
+Installing
+----------
+
+::
+
+    pip install fesenjoon
+
+License
+-------
+
+GPL license_
+
+
+.. _Documentation: https://fesenjoon.readthedocs.io/
+.. _GitHub: https://github.com/mohsenhariri/fesenjoon
+.. _license: https://github.com/mohsenhariri/fesenjoon/blob/main/LICENSE
