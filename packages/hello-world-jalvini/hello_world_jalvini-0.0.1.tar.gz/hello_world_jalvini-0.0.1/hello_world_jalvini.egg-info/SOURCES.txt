@@ -1,0 +1,5 @@
+setup.py
+hello_world_jalvini.egg-info/PKG-INFO
+hello_world_jalvini.egg-info/SOURCES.txt
+hello_world_jalvini.egg-info/dependency_links.txt
+hello_world_jalvini.egg-info/top_level.txt
