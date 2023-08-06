@@ -1,0 +1,4 @@
+paho-mqtt>=1.6
+requests
+mmh3
+simplejson
