@@ -1,0 +1,3 @@
+[console_scripts]
+cjwt=cjwt.__main__:main
+
