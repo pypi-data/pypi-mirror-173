@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+shieldcloudapi.egg-info/PKG-INFO
+shieldcloudapi.egg-info/SOURCES.txt
+shieldcloudapi.egg-info/dependency_links.txt
+shieldcloudapi.egg-info/top_level.txt
+shieldpython/__init__.py
+shieldpython/shieldcloudapi.py
