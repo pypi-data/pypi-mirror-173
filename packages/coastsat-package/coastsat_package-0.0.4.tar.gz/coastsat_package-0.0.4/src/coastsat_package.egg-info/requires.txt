@@ -1,0 +1,7 @@
+scikit-image
+earthengine-api>=0.1.304
+matplotlib
+astropy
+pyqt5
+scipy
+numpy<1.23.0
