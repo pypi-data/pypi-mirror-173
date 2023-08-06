@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/source_primetric.egg-info/PKG-INFO
+src/source_primetric.egg-info/SOURCES.txt
+src/source_primetric.egg-info/dependency_links.txt
+src/source_primetric.egg-info/top_level.txt
