@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: mmda
+Version: 0.1.1
+Summary: mmda
+Home-page: https://www.github.com/allenai/mmda
+Requires-Python: >= 3.7
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: pdf2image
+Requires-Dist: pdfplumber (>0.7.1)
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: pydantic
+Requires-Dist: ncls
+Requires-Dist: necessary
+Provides-Extra: bibentry_detection_predictor
+Requires-Dist: layoutparser ; extra == 'bibentry_detection_predictor'
+Requires-Dist: torch (==1.8.0+cu111) ; extra == 'bibentry_detection_predictor'
+Requires-Dist: torchvision (==0.9.0+cu111) ; extra == 'bibentry_detection_predictor'
+Provides-Extra: bibentry_predictor
+Requires-Dist: transformers ; extra == 'bibentry_predictor'
+Requires-Dist: unidecode ; extra == 'bibentry_predictor'
+Requires-Dist: torch ; extra == 'bibentry_predictor'
+Requires-Dist: optimum[onnxruntime] ; extra == 'bibentry_predictor'
+Provides-Extra: bibentry_predictor_gpu
+Requires-Dist: transformers ; extra == 'bibentry_predictor_gpu'
+Requires-Dist: unidecode ; extra == 'bibentry_predictor_gpu'
+Requires-Dist: torch ; extra == 'bibentry_predictor_gpu'
+Requires-Dist: optimum[onnxruntime-gpu] ; extra == 'bibentry_predictor_gpu'
+Provides-Extra: citation_links
+Requires-Dist: numpy ; extra == 'citation_links'
+Requires-Dist: thefuzz[speedup] ; extra == 'citation_links'
+Requires-Dist: sklearn ; extra == 'citation_links'
+Requires-Dist: xgboost ; extra == 'citation_links'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: figure_table_predictors
+Requires-Dist: scipy ; extra == 'figure_table_predictors'
+Provides-Extra: hf_predictors
+Requires-Dist: torch ; extra == 'hf_predictors'
+Requires-Dist: transformers ; extra == 'hf_predictors'
+Requires-Dist: smashed (==0.1.10) ; extra == 'hf_predictors'
+Provides-Extra: lp_predictors
+Requires-Dist: layoutparser ; extra == 'lp_predictors'
+Requires-Dist: torch ; extra == 'lp_predictors'
+Requires-Dist: torchvision ; extra == 'lp_predictors'
+Requires-Dist: effdet ; extra == 'lp_predictors'
+Provides-Extra: mention_predictor
+Requires-Dist: transformers[torch] ; extra == 'mention_predictor'
+Requires-Dist: optimum[onnxruntime] ; extra == 'mention_predictor'
+Provides-Extra: mention_predictor_gpu
+Requires-Dist: transformers[torch] ; extra == 'mention_predictor_gpu'
+Requires-Dist: optimum[onnxruntime-gpu] ; extra == 'mention_predictor_gpu'
+Provides-Extra: pysbd_predictors
+Requires-Dist: pysbd ; extra == 'pysbd_predictors'
+Provides-Extra: spacy_predictors
+Requires-Dist: spacy ; extra == 'spacy_predictors'
+Provides-Extra: vila_predictors
+Requires-Dist: vila (<0.6,>=0.5) ; extra == 'vila_predictors'
+Requires-Dist: transformers ; extra == 'vila_predictors'
+
