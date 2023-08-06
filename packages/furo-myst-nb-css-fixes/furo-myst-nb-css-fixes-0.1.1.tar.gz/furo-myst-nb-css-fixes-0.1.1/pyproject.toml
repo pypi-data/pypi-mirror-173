@@ -1,0 +1,77 @@
+[project]
+name = "furo-myst-nb-css-fixes"
+version = "0.1.1"
+description = "A tiny wrapper around a few lines of CSS to better support the MyST-NB Jupyter notebook outputs with the Furo Sphinx theme."
+authors = [
+    { name = "Kai Norman Clasen", email = "k.clasen@protonmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "sphinx>=4.5",
+]
+
+[project.license]
+text = "MIT license"
+
+[project.urls]
+homepage = "https://github.com/kai-tub/furo-myst-nb-css-fixes/"
+repository = "https://github.com/kai-tub/furo-myst-nb-css-fixes/"
+documentation = "https://kai-tub.github.io/furo-myst-nb-css-fixes"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.build]
+includes = [
+    "LICENSE",
+    "src",
+]
+
+[tool.pdm.dev-dependencies]
+docs = [
+    "myst-nb>=0.16",
+    "Sphinx>=4.5",
+    "sphinx-autobuild",
+    "sphinx-external-toc",
+    "linkify-it-py",
+    "furo",
+    "common-nb-preprocessors>=1",
+    "pandas>=1.5.1",
+]
+test = [
+    "pytest",
+    "pre-commit",
+    "jupyter",
+    "notebook",
+    "furo>=2022.9.29",
+]
+lint = [
+    "black[jupyter]",
+    "isort",
+    "nbstripout",
+]
+
+[tool.pdm.scripts]
+check-pre-commit = "pre-commit run --all-files"
+tests = "pytest tests/"
+
+[tool.pdm.scripts.lint]
+composite = [
+    "check-pre-commit",
+]
+help = "Will check if all files are formatted with black & isort"
+
+[tool.pdm.scripts.build-docs]
+cmd = "sphinx-build docs docs/_build/"
+help = "Build Sphinx documentation"
+
+[tool.pdm.scripts.serve-sphinx-docs]
+cmd = "sphinx-autobuild docs docs/_build --open-browser"
+help = "Serve the Sphinx documentation with sphinx-autobuild"
+
+[tool.isort]
+profile = "black"
