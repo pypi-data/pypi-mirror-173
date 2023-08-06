@@ -1,0 +1,11 @@
+CHANGELOG.txt
+Licence.txt
+MANIFEST.in
+README.txt
+setup.py
+reduce_df/__init__.py
+reduce_df.egg-info/PKG-INFO
+reduce_df.egg-info/SOURCES.txt
+reduce_df.egg-info/dependency_links.txt
+reduce_df.egg-info/requires.txt
+reduce_df.egg-info/top_level.txt
