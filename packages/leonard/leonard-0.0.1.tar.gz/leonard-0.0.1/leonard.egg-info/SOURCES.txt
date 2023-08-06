@@ -1,0 +1,17 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+leonard/__init__.py
+leonard/__main__.py
+leonard/_version.py
+leonard/app.py
+leonard.egg-info/PKG-INFO
+leonard.egg-info/SOURCES.txt
+leonard.egg-info/dependency_links.txt
+leonard.egg-info/entry_points.txt
+leonard.egg-info/requires.txt
+leonard.egg-info/top_level.txt
