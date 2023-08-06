@@ -1,0 +1,8 @@
+fastbencode/__init__.py,sha256=DSr9RsnYm5O34eOG6qAnGAyh7o2ITYc1nmiC43O-YJw,2372
+fastbencode/_bencode_py.py,sha256=-_a7My_yYGqjqYXj33kkl1znCKXVTCyXUAgG8cJMW94,4368
+fastbencode/_bencode_pyx.cpython-310-darwin.so,sha256=-PHX6hDlbO8hc-2Ea--12XxYwNXk8xY94XTCWAtYShI,129632
+fastbencode-0.1.dist-info/COPYING,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+fastbencode-0.1.dist-info/METADATA,sha256=1binocwod4MdNXTUIwvtTOJZriVna-Jbh3dqMdl1nqo,1212
+fastbencode-0.1.dist-info/WHEEL,sha256=wHXPjcF1PbvralrZAZffaBRfMW8u_7d-L-q3slIS7Go,111
+fastbencode-0.1.dist-info/top_level.txt,sha256=j1DV-XllVHsQOCrAkTDwTWLJmLk4cpMIkZyaZfoLPj4,12
+fastbencode-0.1.dist-info/RECORD,,
