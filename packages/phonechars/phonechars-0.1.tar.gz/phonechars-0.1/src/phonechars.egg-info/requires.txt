@@ -1,0 +1,13 @@
+lingpy
+lingrex
+unidecode
+
+[dev]
+black
+flake8
+twine
+wheel
+build
+
+[test]
+pytest
