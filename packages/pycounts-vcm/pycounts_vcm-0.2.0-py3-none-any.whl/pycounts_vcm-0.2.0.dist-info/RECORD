@@ -1,0 +1,9 @@
+pycounts_vcm/__init__.py,sha256=D6cOrs0tCgb9Paao3eDquYxbhozyROiYB0B95TEew4o,116
+pycounts_vcm/data/flatland.txt,sha256=ELR5Z7sWSaE9qpZssPQlLUBNNT2b0DMX0zGqJMb37S8,219001
+pycounts_vcm/datasets.py,sha256=h4hAZ1ESdklUlH36SSup9Fm7IAD0eWmrpJdmtR7Qcms,407
+pycounts_vcm/plotting.py,sha256=Ng_-kzXsGYK1NWAedC0GuY2lODhCYdRHHRgIb9jCS00,999
+pycounts_vcm/pycounts_vcm.py,sha256=TmX02xCxbSsmn4E6WfiHXMm1B-uF8Ws71r8F6IT8EnA,1135
+pycounts_vcm-0.2.0.dist-info/LICENSE,sha256=PjWxHd5GdjoYK0LcbJ8ICbp1yW063OyqKDWC7oDemU8,1095
+pycounts_vcm-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pycounts_vcm-0.2.0.dist-info/METADATA,sha256=AoMUiEu9AeiROmas_zGixcPF0H9LgLM57gm5V6oDNyE,1149
+pycounts_vcm-0.2.0.dist-info/RECORD,,
