@@ -1,0 +1,4 @@
+[console_scripts]
+QimenDunjiaBiji = QimenDunjiaBiji.__main__:main
+qimen-dunjia-biji = QimenDunjiaBiji.__main__:main
+
