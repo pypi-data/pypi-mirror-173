@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_pingguo_pytest_plugin.py
+setup.py
+pytest_pingguo_pytest_plugin.egg-info/PKG-INFO
+pytest_pingguo_pytest_plugin.egg-info/SOURCES.txt
+pytest_pingguo_pytest_plugin.egg-info/dependency_links.txt
+pytest_pingguo_pytest_plugin.egg-info/entry_points.txt
+pytest_pingguo_pytest_plugin.egg-info/requires.txt
+pytest_pingguo_pytest_plugin.egg-info/top_level.txt

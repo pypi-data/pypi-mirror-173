@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: pytest-pingguo-pytest-plugin
+Version: 0.1.0
+Summary: pingguo test
+Home-page: https://github.com/wessonlan/pytest-pingguo-pytest-plugin
+Author: wessonlan
+Author-email: wessonsang@163.com
+Maintainer: wessonlan
+Maintainer-email: wessonsang@163.com
+License: Mozilla Public License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Requires-Python: >=3.5
