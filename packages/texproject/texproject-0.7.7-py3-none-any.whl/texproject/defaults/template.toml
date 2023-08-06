@@ -1,0 +1,12 @@
+doctype = 'article'
+class_options = []
+
+bibstyle = 'plain'
+
+constants = []
+
+citations = []
+macros = []
+styles = []
+
+[geometry]
