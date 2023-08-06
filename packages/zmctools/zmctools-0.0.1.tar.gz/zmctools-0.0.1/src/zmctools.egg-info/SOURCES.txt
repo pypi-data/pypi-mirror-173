@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/mctools/__init__.py
+src/mctools/test.py
+src/zmctools.egg-info/PKG-INFO
+src/zmctools.egg-info/SOURCES.txt
+src/zmctools.egg-info/dependency_links.txt
+src/zmctools.egg-info/requires.txt
+src/zmctools.egg-info/top_level.txt

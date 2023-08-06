@@ -1,0 +1,8 @@
+[project]
+name = "zmctools"
+version = "0.0.1"
+dependencies = [
+  "requests==2.27.1",
+  "pandas"
+]
+
