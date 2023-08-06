@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: stb-core
+Version: 0.2
+Summary: Stb-Core is collection of core packages used at Strivebit Technologies.
+Home-page: https://strivebit.in/
+Author: Kartik Choudhary
+Author-email: kartik@strivebit.in
+License: BSD-3-Clause  # Example license
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+Welcome to Stb-core
+==============================
+
+stb-core have all common utils,exceptions,imports and management commands.
+
+
+Source code
+    
+Documentation
+    coming soon
+
+
+Quick start
+
+
+
+
