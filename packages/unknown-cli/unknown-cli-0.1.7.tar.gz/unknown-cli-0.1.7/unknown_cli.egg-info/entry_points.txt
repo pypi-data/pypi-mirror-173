@@ -1,0 +1,3 @@
+[console_scripts]
+unknown = unknowncli.__main__:app
+
