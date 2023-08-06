@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: MCI-Crime-Location-Prediction-Model
+Version: 0.0.38
+Summary: MCI regression model containing train and testing data
+Home-page: https://github.com/mohbenaicha/mci-production-package
+Author: MohamedBenaicha
+Author-email: mohamed.benaicha@hotmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Requires-Python: >=3.9.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy (>=1.20.3)
+Requires-Dist: pandas (>=1.3.4)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: scikit-learn (>=0.24.2)
+Requires-Dist: strictyaml (>=1.6.1)
+Requires-Dist: setuptools (>=20.6.8)
+Requires-Dist: ruamel.yaml (==0.16.12)
+Requires-Dist: joblib (>=1.1.0)
+
+MCI regression model containing train and testing data
+
