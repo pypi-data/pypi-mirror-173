@@ -1,0 +1,23 @@
+name: xbatcher-docs
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.8
+  - dask
+  - docrep
+  - ipython
+  - matplotlib
+  - nbsphinx
+  - numpy
+  - numpydoc
+  - pangeo-sphinx-book-theme
+  - pytest
+  - sphinx
+  - sphinx-autosummary-accessors
+  - sphinx-copybutton
+  - xarray
+  - pip
+  - pip:
+      # relative to this file. Needs to be editable to be accepted.
+      - -e ../..
