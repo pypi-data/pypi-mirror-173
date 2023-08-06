@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+libsff.egg-info/PKG-INFO
+libsff.egg-info/SOURCES.txt
+libsff.egg-info/dependency_links.txt
+libsff.egg-info/requires.txt
+libsff.egg-info/top_level.txt
