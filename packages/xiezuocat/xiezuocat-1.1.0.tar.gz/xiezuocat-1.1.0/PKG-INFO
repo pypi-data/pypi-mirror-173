@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: xiezuocat
+Version: 1.1.0
+Summary: 写作猫API及签名算法封装
+Home-page: UNKNOWN
+Author: ll
+Author-email: 1247648024@qq.com
+License: apache 3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: requests
+Requires: json
+Requires: time
+Requires: base64
