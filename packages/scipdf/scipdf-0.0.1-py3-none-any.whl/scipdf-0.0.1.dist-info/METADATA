@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: scipdf
+Version: 0.0.1
+Summary: multimodal document analysis
+Author-email: Allen Institute for Artificial Intelligence <contact@allenai.org>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/allenai/mmda
+Project-URL: Repository, https://github.com/allenai/mmda
+Project-URL: Bug Tracker, https://github.com/allenai/mmda/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: mmda (>=0.1.1)
+Provides-Extra: dev
+Requires-Dist: black (>=22.6.0) ; extra == 'dev'
+Requires-Dist: isort (>=5.10.1) ; extra == 'dev'
+Requires-Dist: mypy (>=0.971) ; extra == 'dev'
+Requires-Dist: pytest (>=5.2) ; extra == 'dev'
+Requires-Dist: ipython (>=8.4.0) ; extra == 'dev'
+Requires-Dist: autopep8 (>=1.7.0) ; extra == 'dev'
+Requires-Dist: flake8 (>=5.0) ; extra == 'dev'
+Requires-Dist: ipdb (>=0.13.0) ; extra == 'dev'
+Requires-Dist: flake8-pyi (>=22.8.1) ; extra == 'dev'
+Requires-Dist: Flake8-pyproject (>=1.1.0) ; extra == 'dev'
+
