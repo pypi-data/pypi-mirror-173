@@ -1,0 +1,17 @@
+README.md
+setup.py
+opensesame/__init__.py
+opensesame/__main__.py
+opensesame/clipboard.py
+opensesame/error.py
+opensesame/helpers.py
+opensesame/letters.py
+opensesame/list.txt
+opensesame/main_click.py
+opensesame/password.py
+opensesame/words.py
+pyopensesame.egg-info/PKG-INFO
+pyopensesame.egg-info/SOURCES.txt
+pyopensesame.egg-info/dependency_links.txt
+pyopensesame.egg-info/entry_points.txt
+pyopensesame.egg-info/top_level.txt
