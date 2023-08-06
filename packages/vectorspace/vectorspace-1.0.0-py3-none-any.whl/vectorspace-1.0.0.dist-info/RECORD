@@ -1,0 +1,15 @@
+vectorspace/__init__.py,sha256=LoO_3t9iZpml3T-bUDZXZ6u_zfOf4ubcFTJWEVeGVK8,76
+vectorspace/conceptnet.py,sha256=0vmRQouWwcIjXrJWzMvFJBy5lwK74VsYItWAnrMwQWA,2306
+vectorspace/embedding.py,sha256=m7g9G9uHL1sMJIqHvDxbcJEbBZ5Usad2uQLb4f0DBgs,13458
+vectorspace/fasttext.py,sha256=zWymHayBHFZgVjhcfSFHKIrQuG7NPIIiF0ruqAKnEbg,13505
+vectorspace/lmdb.py,sha256=6StYw4cgF7ipM7y8D-XxlH0tUhtxR4siBgDMOGlnn4s,4208
+vectorspace/mapping.py,sha256=DbWdWdA9dpRfe77yodsfoTO1bZjMO2HPsoSy6GCMWDI,2509
+vectorspace/math.py,sha256=_T7qeF0RxPacX1f1nFxRILMGA7_zqGG6zJAHXYajFuA,6066
+vectorspace/plot.py,sha256=S1b-hQnQdQyvVOtNfvhQkH9C4ug5ENi1o7ViHA0eOAA,1686
+vectorspace/utils.py,sha256=TUZ8Y-Y0oAGTrusiaP1i43JaIGhY1Gmn5EHU-z76Omg,467
+vectorspace-1.0.0.dist-info/LICENSE,sha256=mgC19_43hIqIbbwFuitfeLka6szr2_zjtiFqy6LbMVk,1064
+vectorspace-1.0.0.dist-info/METADATA,sha256=9X1cahqmGhsx1dfBuzfES96Wmst6x1XyBT0y0jvWEZk,1324
+vectorspace-1.0.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+vectorspace-1.0.0.dist-info/top_level.txt,sha256=wvWSW8pHlTc3OcZ2Fjip4M4ahELfwEb_WuhQEgI08Bo,12
+vectorspace-1.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+vectorspace-1.0.0.dist-info/RECORD,,
