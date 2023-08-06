@@ -1,0 +1,3 @@
+[console_scripts]
+safe-cli = canto_safe_cli.main:main
+safe-creator = canto_safe_cli.safe_creator:main
