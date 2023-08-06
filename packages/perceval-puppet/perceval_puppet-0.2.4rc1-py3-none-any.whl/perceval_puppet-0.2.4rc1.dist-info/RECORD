@@ -1,0 +1,7 @@
+perceval/backends/puppet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perceval/backends/puppet/_version.py,sha256=ubfWVMBNGsJv3DRlItjqeRD28_gIoFmk55LHxis3i3g,91
+perceval/backends/puppet/puppetforge.py,sha256=MFmOQW1MoNuzAQATeubHFPG4i7Ma_lgVe3adOZw5vVY,10849
+perceval_puppet-0.2.4rc1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+perceval_puppet-0.2.4rc1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+perceval_puppet-0.2.4rc1.dist-info/METADATA,sha256=Kw3l5QxoR2wHR-WyoJmYSdN2-0Mnd4r2zqWGY8yquvs,3965
+perceval_puppet-0.2.4rc1.dist-info/RECORD,,
