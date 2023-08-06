@@ -1,0 +1,10 @@
+pacote-analise-dio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pacote-analise-dio/manipulation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pacote-analise-dio/manipulation/data-clean.py,sha256=ERQy1v9TSRbpE5rP-pSf8aVGEAJd785tUGeI0qFB9_E,258
+pacote-analise-dio/manipulation/data-info.py,sha256=LaHWNFhKFyNaqQoba2_txFy5EmV3tbFkF3mxXds7800,686
+pacote-analise-dio/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pacote-analise-dio/utils/plot.py,sha256=h6e2Jv4_-D9nyekXH64vbhFfv45vh4-BE3gu5iupePA,939
+pacote_analise_dio-0.0.1.dist-info/METADATA,sha256=Cv6LdlcIFJDRSBcN0IOK0dSzVFNVpHIIxgCsYqlg-Zg,2191
+pacote_analise_dio-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pacote_analise_dio-0.0.1.dist-info/top_level.txt,sha256=1TscxrMUx4zNonwj6D2ihnj-1I48a16lefP0ILwWHHg,19
+pacote_analise_dio-0.0.1.dist-info/RECORD,,
