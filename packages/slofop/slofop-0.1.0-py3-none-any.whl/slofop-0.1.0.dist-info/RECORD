@@ -1,0 +1,7 @@
+slofop/__init__.py,sha256=xEVZ0o01HL4ANwmXVNiLIn7AdwamNp5SdZm-oOklBsw,99
+slofop/filesystem_handlers.py,sha256=hWxZ5JLdbQX30BlL66p-9P-zN0DuwHeoIYnMUulnyiw,1844
+slofop/slofop.py,sha256=XfWYdSHMb696n6N41yt22LHZu5j-_VOt_jpqLMIk1Wc,6950
+slofop/util.py,sha256=iwcrBizLrk0X5ajf6C_9jJ4a5nL81-8xOOHnKMDUrnQ,2212
+slofop-0.1.0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+slofop-0.1.0.dist-info/METADATA,sha256=f2VJXz0GFClUvXDcFRAe5GyB_kaC0TZkYjU6vT901Oc,242
+slofop-0.1.0.dist-info/RECORD,,
