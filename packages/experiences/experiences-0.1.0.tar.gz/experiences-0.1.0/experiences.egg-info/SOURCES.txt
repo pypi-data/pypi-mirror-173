@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+experiences.egg-info/PKG-INFO
+experiences.egg-info/SOURCES.txt
+experiences.egg-info/dependency_links.txt
+experiences.egg-info/requires.txt
+experiences.egg-info/top_level.txt
