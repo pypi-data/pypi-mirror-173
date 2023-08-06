@@ -1,0 +1,7 @@
+pyproject.toml
+src/scipdf/__init__.py
+src/scipdf.egg-info/PKG-INFO
+src/scipdf.egg-info/SOURCES.txt
+src/scipdf.egg-info/dependency_links.txt
+src/scipdf.egg-info/requires.txt
+src/scipdf.egg-info/top_level.txt

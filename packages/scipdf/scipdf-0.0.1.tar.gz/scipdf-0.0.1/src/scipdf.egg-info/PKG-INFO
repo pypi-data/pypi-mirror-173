@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: scipdf
+Version: 0.0.1
+Summary: multimodal document analysis
+Author-email: Allen Institute for Artificial Intelligence <contact@allenai.org>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/allenai/mmda
+Project-URL: Repository, https://github.com/allenai/mmda
+Project-URL: Bug Tracker, https://github.com/allenai/mmda/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
