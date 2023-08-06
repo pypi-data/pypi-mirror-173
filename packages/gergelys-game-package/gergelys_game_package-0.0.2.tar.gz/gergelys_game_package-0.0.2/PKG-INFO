@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gergelys_game_package
+Version: 0.0.2
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Gergely Hornyak <gergely2125@gmail.com>
+License-File: LICENCE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
