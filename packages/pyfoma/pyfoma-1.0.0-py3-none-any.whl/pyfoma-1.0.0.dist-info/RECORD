@@ -1,0 +1,12 @@
+pyfoma/__init__.py,sha256=vr2Ic5KApARR18K8P9oColeRHWNvxT6EigJhOxhviQU,2869
+pyfoma/algorithms.py,sha256=_eldMtshQshNJmHMd_L8s9ADtxsDr3HVlrfnhMsn9V0,34910
+pyfoma/fst.py,sha256=RPauqqCw2LpQXR4xEuypu0phFek3PnSELt0hb4VlVZ8,21819
+pyfoma/paradigm.py,sha256=YSH0pIbzMYgjyJEjJF-0THDY6XQSNEGxiSMrtcZYLNA,1794
+pyfoma/private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyfoma/private/partition_refinement.py,sha256=IcRVoRJqiSeUPV_PaXSfWQ05_T4-ZCtcK8WYy38KSls,1586
+pyfoma/private/regexparse.py,sha256=OQlglFbxosBUbnSITC4bUokx5EKe8634BELWr_7FPBM,15465
+pyfoma-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyfoma-1.0.0.dist-info/METADATA,sha256=9KhIIg2dUG3WINrQVQqWw6ntjAkVRjECkw63VqPoI2w,5206
+pyfoma-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyfoma-1.0.0.dist-info/top_level.txt,sha256=DPGnctVIDNjnbGXMRHRWLdmu4nlqMAjlnSpDEUw069Y,7
+pyfoma-1.0.0.dist-info/RECORD,,
