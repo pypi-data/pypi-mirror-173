@@ -1,0 +1,9 @@
+numpy
+click
+
+[hdf5]
+matplotlib
+h5py
+
+[softioc]
+softioc>=4.1.0
