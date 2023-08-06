@@ -1,0 +1,12 @@
+
+[docs]
+sphinx
+sphinx_rtd_theme
+setuptools_rust
+
+[testing]
+black==22.3
+isort>=5.5.4
+flake8>=3.8.3
+pytest
+numpy
