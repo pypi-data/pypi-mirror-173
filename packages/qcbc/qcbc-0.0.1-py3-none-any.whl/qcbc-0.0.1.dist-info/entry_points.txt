@@ -1,0 +1,2 @@
+[console_scripts]
+qcbc = qcbc:main.main
