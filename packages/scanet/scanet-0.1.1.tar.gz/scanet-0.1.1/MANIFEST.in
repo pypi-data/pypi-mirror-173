@@ -1,0 +1,2 @@
+include src/scanet/*.R
+#include src/databases/*.txt
