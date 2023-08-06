@@ -1,0 +1,13 @@
+osdk/__init__.py,sha256=6FJBD8lkK0wMej92CFGaqReH0fFJouhWJs4siegyX_Y,5671
+osdk/__main__.py,sha256=XnpTzfJc0T-j9tHtdkA8ovTr1c139ffTewcJGhxYDaM,49
+osdk/build.py,sha256=wmbQ8iJIRbZxOBvaixFgUijigj5y3fN7-ebbi5X6sPo,4629
+osdk/manifests.py,sha256=H7MwwuO1qcXC3XR99elIx-5IEa-zrXpc1xapX51ubME,5651
+osdk/ninja.py,sha256=XedSRn3IR3BuRsHcuItUHH0kQanpLqFu54Aq_pSu4jk,7740
+osdk/targets.py,sha256=wFRtkAB2g5HIrTgzXlN29HTB2FxiGohZyfy0nPOUZu4,4245
+osdk/utils.py,sha256=PhzIDVW1H4GYbCg5AfkxoVXoym7corGYvnpr4JeXNCM,6946
+osdk-0.3.2.dist-info/LICENSE,sha256=aNBgfUOkJjngu16OZlVoLoiNg5H2mlsJm1HbUo_tY10,1062
+osdk-0.3.2.dist-info/METADATA,sha256=lfa5gRScsueTks0ygUAKYs6BUkb_K18jUD2jMoG2cl4,280
+osdk-0.3.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+osdk-0.3.2.dist-info/entry_points.txt,sha256=t7Yw1IIrdgRpD-1qOz0kfTVnj6VnrwCPn5pHMvsXwcg,35
+osdk-0.3.2.dist-info/top_level.txt,sha256=VlLaItoTPwe2qo7YSyNu5hWuwNVRyJnfON75BluvqU4,5
+osdk-0.3.2.dist-info/RECORD,,
