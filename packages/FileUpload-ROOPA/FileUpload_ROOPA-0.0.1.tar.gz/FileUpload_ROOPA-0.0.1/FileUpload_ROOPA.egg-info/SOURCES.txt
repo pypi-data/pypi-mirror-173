@@ -1,0 +1,5 @@
+setup.py
+FileUpload_ROOPA.egg-info/PKG-INFO
+FileUpload_ROOPA.egg-info/SOURCES.txt
+FileUpload_ROOPA.egg-info/dependency_links.txt
+FileUpload_ROOPA.egg-info/top_level.txt
