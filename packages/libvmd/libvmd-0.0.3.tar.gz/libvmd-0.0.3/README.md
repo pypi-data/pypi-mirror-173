@@ -1,0 +1,83 @@
+# LIBVMD: Python library for variational mode decomposition for both 1D and 2D
+
+This package's functions are translations of MATLAB source codes by Dragomiretskiy and Zosso (2013; 2015)
+
+Related source codes and articles are as below
+
+vmd: [MATLAB code](https://www.mathworks.com/matlabcentral/fileexchange/44765-variational-mode-decomposition), [Article](https://link.springer.com/chapter/10.1007/978-3-319-14612-6_15)
+
+vmd2: [MATLAB code](https://www.mathworks.com/matlabcentral/fileexchange/45918-two-dimensional-variational-mode-decomposition), [Article](https://link.springer.com/chapter/10.1007/978-3-319-14612-6_15)
+
+## Installation
+
+```
+pip install libvmd
+```
+or
+```
+git clone https://github.com/hyoddubi1/libvmd.git
+python setup.py install
+```
+
+## Example codes
+
+1-dimensional VMD
+
+```python
+from libvmd.vmd import vmd
+from matplotlib import pyplot as plt
+```
+
+2-dimensional VMD
+
+```python
+import numpy as np
+from libvmd.vmd import vmd2
+from matplotlib import pyplot as plt
+
+xs = np.arange(0,200)
+X,Y = np.meshgrid(xs,xs)
+
+pi = np.pi
+sa = np.sin((1/16 *pi *X  + 1/16 * pi * Y )  * np.exp((-X)/200) ) 
+sb = 0.5 * np.sin(1/8 * pi * X - 1/8 * pi * Y);
+sc = X / 10 + 1
+sc = sc * 0.1 +2
+
+signal = sa+ sb + sc
+
+fig, ax = plt.subplots(1,4,figsize=(15,6))
+ax[3].imshow(signal)
+ax[3].set_title("Ground truth")
+
+ax[0].imshow(sa)
+ax[1].imshow(sb)
+ax[2].imshow(sc)
+
+ax[0].set_title("signal 1")
+ax[1].set_title("signal 2")
+ax[2].set_title("signal 3")
+
+alpha = 1000
+tau = 0
+K = 3
+DC = True
+init = 0
+tol = 10**-7
+N= 3000
+mirror_extension = False
+
+u, u_hat, omega = vmd2(signal, K, alpha, tau, DC, init, tol,mirror_extension = mirror_extension)
+
+fig, ax = plt.subplots(2,4,figsize=(15,6))
+ax[0,3].imshow(image1)
+ax[0,3].set_title("Ground truth")
+
+ax[0,0].imshow(sa)
+ax[0,1].imshow(sb)
+ax[0,2].imshow(sc)
+
+ax[0,0].set_title("signal 1")
+ax[0,1].set_title("signal 2")
+ax[0,2].set_title("signal 3")
+```
