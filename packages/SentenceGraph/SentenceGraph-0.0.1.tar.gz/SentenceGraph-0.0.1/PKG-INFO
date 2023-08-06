@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SentenceGraph
+Version: 0.0.1
+Summary: Easily create semantic graphs from text using SentenceTransformers
+Home-page: https://github.com/Hevia/SentenceGraph
+Author: Hevia
+Author-email: anthony@hevia.dev
+License: Apache Software License 2.0
+Description: This file will be overwritten by `index.ipynb`
+        
+Keywords: nbdev jupyter notebook python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
