@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xton
+Version: 0.0.1
+Summary: TON SMC deployer Interface
+Home-page: https://github.com/psylopunk/ton-smc-deployer
+Author: Maxim Gurov
+Author-email: psylopunk@protonmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apple Public Source License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE

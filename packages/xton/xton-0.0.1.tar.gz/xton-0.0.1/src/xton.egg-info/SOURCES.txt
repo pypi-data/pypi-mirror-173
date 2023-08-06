@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/xton/common.py
+src/xton/core.py
+src/xton/main.py
+src/xton/stdlib.func
+src/xton.egg-info/PKG-INFO
+src/xton.egg-info/SOURCES.txt
+src/xton.egg-info/dependency_links.txt
+src/xton.egg-info/entry_points.txt
+src/xton.egg-info/requires.txt
+src/xton.egg-info/top_level.txt
