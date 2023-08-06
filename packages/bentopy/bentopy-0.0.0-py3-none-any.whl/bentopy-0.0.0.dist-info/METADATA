@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bentopy
+Version: 0.0.0
+Summary: Packs stuff in boxes
+Author-email: Jan Stevens <j.a.stevens@rug.nl>
+Project-URL: Homepage, https://github.com/marrink-lab/bentopy
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bentopy
+Packs stuff in boxes
