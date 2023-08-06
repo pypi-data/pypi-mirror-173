@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/waveresponse/__init__.py
+src/waveresponse/_core.py
+src/waveresponse/_standardized1d.py
+src/waveresponse/_transform.py
+src/waveresponse.egg-info/PKG-INFO
+src/waveresponse.egg-info/SOURCES.txt
+src/waveresponse.egg-info/dependency_links.txt
+src/waveresponse.egg-info/requires.txt
+src/waveresponse.egg-info/top_level.txt
