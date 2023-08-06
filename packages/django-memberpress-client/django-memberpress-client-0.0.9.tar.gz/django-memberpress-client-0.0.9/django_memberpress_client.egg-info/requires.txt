@@ -1,0 +1,7 @@
+Django>=3.2
+
+[local]
+pre-commit
+black
+flake8
+ipython
