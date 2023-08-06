@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+autoClicker/__init__.py
+easy_gaming.egg-info/PKG-INFO
+easy_gaming.egg-info/SOURCES.txt
+easy_gaming.egg-info/dependency_links.txt
+easy_gaming.egg-info/requires.txt
+easy_gaming.egg-info/top_level.txt

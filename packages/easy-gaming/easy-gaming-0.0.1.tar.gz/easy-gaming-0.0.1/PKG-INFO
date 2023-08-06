@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: easy-gaming
+Version: 0.0.1
+Summary: An auto-clicker library
+Home-page: 
+Author: Luke Cheney
+Author-email: thestarfinder8@gmail.com
+License: MIT
+Keywords: auto-clicker
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+This library will have a few fungtions to help automate gaming
+
+Change log
+==========
+
+0.0.1 (28/10/2022)
+------------------
+- First Release
