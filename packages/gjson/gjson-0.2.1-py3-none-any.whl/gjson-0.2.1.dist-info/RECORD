@@ -1,0 +1,11 @@
+gjson/__init__.py,sha256=AOvVS_n3D8UXTtmq-WDAY4wgF_BYcwpw0Dji8o2Kr38,8213
+gjson/_cli.py,sha256=8LQaZCuW8hp7drYFdSDNsHbRWZ8vnoHxBPk14zzFNwk,4541
+gjson/_gjson.py,sha256=mAdOGXH3EizBVevKyzrOVBojAei89aBXpPEVvxhPY5Y,39050
+gjson/_protocols.py,sha256=zewh_kHMBsNVrUykokYcKH_KpHhl6j0ARlmkoTtHsEc,1797
+gjson/exceptions.py,sha256=eACcbZuTp5WCkg47ow8-FwVoLyZK3tRKByUbz59jb4o,1200
+gjson-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gjson-0.2.1.dist-info/METADATA,sha256=ILjPZCfWAL1rugRCOEZXjA0ZaotMnurzBJYNTr_LePQ,17740
+gjson-0.2.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+gjson-0.2.1.dist-info/entry_points.txt,sha256=xSol3NLtNp70uRsLTtAKtrP3jmBqXOqeiTR3CdDgTJI,41
+gjson-0.2.1.dist-info/top_level.txt,sha256=ijxnFZI8ep_2bmHjRjVgPaQoJPjMn3O0ITHDqhmnHZ8,6
+gjson-0.2.1.dist-info/RECORD,,
