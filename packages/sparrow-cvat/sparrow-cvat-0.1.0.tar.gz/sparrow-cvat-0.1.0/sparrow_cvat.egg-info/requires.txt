@@ -1,0 +1,16 @@
+av
+fire
+natsort
+opencv-python
+pillow
+requests
+tqdm
+
+[dev]
+black
+isort
+pydocstyle
+pylint
+pytest
+pytest-cov
+jupyter
