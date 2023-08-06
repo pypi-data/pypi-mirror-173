@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.cfg
+setup.py
+version_wizard/__init__.py
+version_wizard.egg-info/PKG-INFO
+version_wizard.egg-info/SOURCES.txt
+version_wizard.egg-info/dependency_links.txt
+version_wizard.egg-info/requires.txt
+version_wizard.egg-info/top_level.txt
