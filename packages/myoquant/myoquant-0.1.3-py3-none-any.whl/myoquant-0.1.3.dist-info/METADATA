@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: myoquant
+Version: 0.1.3
+Summary: Command line interface (CLI) for MyoQuant, my histology image quantification tool.
+Home-page: https://lbgi.fr/MyoQuant/
+License: AGPL-3.0-or-later
+Keywords: histology,quantification,biology,deep-learning
+Author: Corentin Meyer
+Author-email: corentin.meyer@etu.unistra.fr
+Maintainer: Corentin Meyer
+Maintainer-email: corentin.meyer@etu.unistra.fr
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cellpose (>=2.1.0,<3.0.0)
+Requires-Dist: csbdeep (>=0.7.2,<0.8.0)
+Requires-Dist: imageio (>=2.21.1,<3.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: rich
+Requires-Dist: scikit-image (>=0.19.3,<0.20.0)
+Requires-Dist: stardist (>=0.8.3,<0.9.0)
+Requires-Dist: tensorflow (>=2.9.1,<3.0.0)
+Requires-Dist: typer (>=0.6.1,<0.7.0)
+Project-URL: Repository, https://github.com/lambda-science/MyoQuant
+Description-Content-Type: text/markdown
+
+# MyoQuant
+
+MyoQuant command line tool to quantifying pathological feature in histology images.  
+It is built using CellPose, Stardist and custom models and image analysis techniques to automatically analyze myopathy histology images. An online demo with a web interface is availiable at [https://lbgi.fr/MyoQuant/](https://lbgi.fr/MyoQuant/).
+
+### **Warning:** This tool is still in alpha stage and might not work perfectly... yet.
+
+## How to install
+
+### Installing from PyPi
+
+Using pip, you can simply install MyoQuant in a python environnement with a simple: `pip install myoquant`
+
+### Installing from source
+
+1. Clone this repository using `git clone https://github.com/lambda-science/MyoQuant.git`
+2. Create a virtual environnement by using `python -m venv .venv`
+3. Activate the venv by using `source .venv/bin/activate`
+4. Install MyoQuant by using `pip install -e .`
+
+You are ready to go !
+
+## How to Use
+
+To use the command-line tool, first activate your venv `source .venv/bin/activate`  
+Then you can perform SDH or HE analysis. You can use the command `myoquant --help` to list available commands.
+
+- **For SDH Image Analysis** the command is:  
+  `myoquant sdh_analysis IMAGE_PATH`  
+  Don't forget to run `myoquant sdh_analysis --help` for information about options.
+- **For HE Image Analysis** the command is:  
+  `myoquant he_analysis IMAGE_PATH`  
+   Don't forget to run `myoquant he_analysis --help` for information about options.
+
+_If you're running into an issue such as `myoquant: command not found` please check if you activated your virtual environment with the package installed. And also you can try to run it with the full command: `python -m myoquant sdh_analysis --help`_
+
+## Examples
+
+For HE Staining analysis, you can download this sample image: [HERE](https://www.lbgi.fr/~meyer/SDH_models/sample_he.jpg)  
+For SDH Staining analysis, you can download this sample image: [HERE](https://www.lbgi.fr/~meyer/SDH_models/sample_sdh.jpg)
+
+1. Example of successful SDH analysis with: `myoquant sdh_analysis sample_sdh.jpg`
+
+![image](https://user-images.githubusercontent.com/20109584/198278737-24d69f61-058e-4a41-a463-68900a0dcbb6.png)
+
+2. Example of successful HE analysis with: `myoquant he_analysis sample_he.jpg`
+
+![image](https://user-images.githubusercontent.com/20109584/198280366-1cb424f5-50af-45f9-99d1-34e191fb2e20.png)
+
+## Who and how
+
+- Creator and Maintainer: [Corentin Meyer, 3rd year PhD Student in the CSTB Team, ICube — CNRS — Unistra](https://lambda-science.github.io/)
+- The source code for this application is available [HERE](https://github.com/lambda-science/MyoQuant)
+
+## Advanced informations
+
+For the SDH Analysis our custom model will be downloaded and placed inside the myoquant package directory. You can also download it manually here: [https://lbgi.fr/~meyer/SDH_models/model.h5](https://lbgi.fr/~meyer/SDH_models/model.h5) and then you can place it in the directory of your choice and provide the path to the model file using:  
+`myoquant sdh_analysis IMAGE_PATH --model_path /path/to/model.h5`
+
