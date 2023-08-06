@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: object-symbols-parser
+Version: 0.1.0
+Summary: Object symbol table wrangler. Useful for finding static memory and code size usage in embedded systems.
+Home-page: https://github.com/snhobbs/object_symbols_parser
+Author: Simon Hobbs
+Author-email: simon.hobbs@electrooptical.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: cxxfilt
+Requires-Dist: click
+
+# object_symbols_parser
+Command line tool that reads object file symbol table, generate a sorted spreadsheet with the entries. Intended for embedded development where memory and code space needs to be optimized.
+
+## Usage
+### Object File
+This is particularly useful if you cannot compile a binary due to the code space being exceeded.
+```{bash}
+object_symbols_parser.py -f src/FileSystem.o -f src/cpp_config.o -f src/main.o -o /tmp/out.xlsx
+```
+
+### ELF/AXF File
+```{bash}
+object_symbols_parser.py -f project.axf -o /tmp/out.xlsx
+```
+
+## Output
+Generates a Pandas dataframe and saves it to a spreadsheet. By default the results are sorted as you're most likely looking for the largest entry in the symbols table.
+
+![image](https://user-images.githubusercontent.com/20601769/194420394-d0aa33bb-4d2e-4a5e-919e-f1de119a62b0.png)
+
+## Requirements
++ click
++ pandas
++ GNU Bintools
+
+
