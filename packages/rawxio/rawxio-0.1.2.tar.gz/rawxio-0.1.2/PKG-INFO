@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rawxio
+Version: 0.1.2
+Summary: Import/Export rawx
+Home-page: https://github.com/statnett/rawxio.git
+Author: Statnett Datascience
+Author-email: Datascience.Drift@Statnett.no
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pandas
+Project-URL: Repository, https://github.com/statnett/rawxio.git
