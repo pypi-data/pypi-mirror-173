@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: elrond
+Version: 0.0.1
+Summary: durin cli client
+Home-page: 
+Author: Chris Varga
+Author-email: 
+Keywords: elrond durin cli client
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+
