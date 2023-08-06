@@ -1,0 +1,36 @@
+
+# dpkg
+
+dpkg is a package that collects functions frequently used in recommendation algorithms.
+
+## install
+
+## apk
+
+Computes the average precision at k. This function computes the average prescision at k between two lists of items.
+
+Parameters
+----------
+* actual : list
+> A list of elements that are to be predicted (order doesn't matter)
+* predicted : list
+> A list of predicted elements (order does matter)
+* k : int, optional
+> The maximum number of predicted elements
+
+Returns
+-------
+* score : double The average precision at k over the input lists
+
+## mapk
+
+Mean Average Precision (mAP) is commonly used to analyze the performance of object detection and segmentation systems. 
+
+Parameters
+----------
+* apk_list : list
+> A list of apk scores
+
+Returns
+----------
+* score : Mean average precision score of input apk lists

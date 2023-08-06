@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+dpkg/__init__.py
+dpkg/apk.py
+dpkg/mapk.py
+dpkg.egg-info/PKG-INFO
+dpkg.egg-info/SOURCES.txt
+dpkg.egg-info/dependency_links.txt
+dpkg.egg-info/top_level.txt
