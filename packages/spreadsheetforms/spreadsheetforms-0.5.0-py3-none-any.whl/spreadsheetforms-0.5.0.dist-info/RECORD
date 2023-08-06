@@ -1,0 +1,9 @@
+spreadsheetforms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spreadsheetforms/api.py,sha256=nz2qIGcJtbOVzS6D2HZ_ziHd0Dvz6rkkilvJWQjO8tw,10862
+spreadsheetforms/exceptions.py,sha256=EUL_ZC7LWUKejefyDGwVb08zh9Q4hJuvkdu6eTKA3A4,53
+spreadsheetforms/util.py,sha256=9rIffcJbQT61egA-35iqqTR--RPYm7pb8hzKfiQuLk8,1068
+spreadsheetforms-0.5.0.dist-info/LICENSE,sha256=5ycg07wItsd4BqX-IaTrKwNQpADRN6TKN5uJOakokgI,1075
+spreadsheetforms-0.5.0.dist-info/METADATA,sha256=yXP9I5RdMwI39PdMDb0PdD0QBb5SaagFlZhroCWyRRA,591
+spreadsheetforms-0.5.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+spreadsheetforms-0.5.0.dist-info/top_level.txt,sha256=Ao8IUx0oWbYxWAOHalo2w24hknpfK6dhova8HFyWJjk,17
+spreadsheetforms-0.5.0.dist-info/RECORD,,

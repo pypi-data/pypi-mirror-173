@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: spreadsheetforms
+Version: 0.5.0
+Summary: Tools for forms in spreadsheets; creating, extracting submitted data and filling with data
+Home-page: https://github.com/OpenDataServices/spreadsheet-forms
+Author: Open Data Services
+Author-email: code@opendataservices.coop
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: openpyxl (>=3.0)
+Requires-Dist: jsonpointer
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+
+UNKNOWN
+
+
