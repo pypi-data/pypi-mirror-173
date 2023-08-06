@@ -1,0 +1,5 @@
+voxcov-0.2.7.dist-info/METADATA,sha256=dRSTYuYHWitFMPFgyXYkSGyu-4pNdVhPuJmZVhrNzzQ,1930
+voxcov-0.2.7.dist-info/WHEEL,sha256=zu6S3IlREJwLIczgWGZF5tkkm6zcn9fESfirdcN3wAQ,96
+voxcov/__init__.py,sha256=ghmnjuTIc6thfjk5rLKOykzlO256vdJXEMmG-T0I2qk,107
+voxcov/voxcov.cp310-win_amd64.pyd,sha256=FGCJzIr1HdQcmrFn-q3XOvTZhw2cZhmKkGncvtB6bIc,456704
+voxcov-0.2.7.dist-info/RECORD,,
