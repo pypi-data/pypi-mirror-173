@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: GaiaClusterFit
+Version: 0.0.5
+Summary: Matching gaia clustered stars to known clusters
+Author: Levi van Es
+Author-email: <levi2234@hotmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.23.3)
+Requires-Dist: more-itertools (>=9.0.0)
+Requires-Dist: hdbscan (==0.8.28)
+Requires-Dist: astropy (>=5.1.1)
+Requires-Dist: scipy (>=1.9.2)
+Requires-Dist: joblib (==1.1.0)
+Requires-Dist: sklearn (>=0.0)
+
+
+# GaiaClusterFit
+
+A python GAIA cluster fit package to fit known clusters to GAIA data
+
