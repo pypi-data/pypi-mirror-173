@@ -1,0 +1,3 @@
+[console_scripts]
+stc2gii_hack=stc2gii_hack.run_hack:main
+
