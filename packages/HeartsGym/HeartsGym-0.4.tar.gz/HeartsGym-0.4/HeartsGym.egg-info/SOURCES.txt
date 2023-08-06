@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+HeartsGym/Hearts.py
+HeartsGym/__init__.py
+HeartsGym.egg-info/PKG-INFO
+HeartsGym.egg-info/SOURCES.txt
+HeartsGym.egg-info/dependency_links.txt
+HeartsGym.egg-info/requires.txt
+HeartsGym.egg-info/top_level.txt
