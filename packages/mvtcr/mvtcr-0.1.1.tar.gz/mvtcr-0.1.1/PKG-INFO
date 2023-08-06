@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mvtcr
+Version: 0.1.1
+Provides-Extra: paper
+Provides-Extra: full
+License-File: LICENSE
