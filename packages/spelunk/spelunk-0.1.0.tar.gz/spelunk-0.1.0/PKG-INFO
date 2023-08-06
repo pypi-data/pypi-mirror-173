@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: spelunk
+Version: 0.1.0
+Summary: Package with helpful object recursion utils
+License: MIT
+Author: Spencer Tomarken
+Author-email: stomarken@gmail.com
+Requires-Python: >=3.9,<3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
