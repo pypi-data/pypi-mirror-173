@@ -1,0 +1,16 @@
+{
+  "signdata": {
+    "keys": {
+      "key": "08f09a3f31b5fba1ef2d823cff85f286:a22284079d7bc523a033f8b76455df91ff541f2cdd37eeac56ea57274fbac6d3f611042d7c55043ffcf82d858e9d813b",
+      "mac": "2c845b3da46c87532a8da01cfc359e9e8d9d02710348b8b22b0b4e98db0c940c"
+    },
+    "description": "signdata"
+  },
+  "paaswddata": {
+    "keys": {
+      "key": "2206b7ee6092d6bf8d95320b4d4e11f3:04d89a106e5f20f3c48391113b2241e37e0d69f16890c02cad21b5464d93ca8ce885830c99335a675bf2eae4219990df",
+      "mac": "78fa1a5e887ca8575d755e0e21281374f17ae5a376e8e36a4b1545ad14b4dec5"
+    },
+    "description": "paaswddata"
+  }
+}

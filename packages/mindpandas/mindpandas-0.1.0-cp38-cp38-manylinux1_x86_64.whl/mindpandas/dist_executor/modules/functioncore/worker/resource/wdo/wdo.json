@@ -1,0 +1,30 @@
+{
+  "yaml-key": {
+    "description": "yaml-key",
+    "keys": {
+      "key": "9906fd71d326d5ac30c501a8:4d3b7f0135c1edda018ad652638a50db2b9b9b94c8c7b925dcddbbba2b4a98ecfaebb34e0c21fa98f41cc1784f6f17569ecc4d98f2e0f4495ef9ceab0d7a29e1f064fbe5f83b5885b1f905521ef4296f",
+      "mac": "95fa9428e05e8bda9a156bc472a9c393426115c54470cac2af284e6ff760451b"
+    }
+  },
+  "config-key": {
+    "description": "config-key",
+    "keys": {
+      "key": "33f3cbd55bf8a691edd8b1e1:3b60f3f315e490670df2bee1d71f84b40c8c5bec2a1ef78bd6d123f4822e14639f03710769875622b12b4e444910535abf6ad5adcab56dcc20565c5f5978b5ed0801ea62c5b66aa06ce9d5a1b50361ba",
+      "mac": "20c1001e811213b6e6ea12e376d67d836e8d0592a29a4fccc31b998c15fec942"
+    }
+  },
+  "secretEncryptKey": {
+    "keys": {
+      "key": "c6e821d4febb15796d98a84b:7b54c02202f71ec7c56ccfbc73e13c9b217a6b161c8a3b8727bed682859c5c13058f9a24e7b0b09d4b1138d09e48f0f4de9d106df8798233ef6e3783eff9e7557f3ea1679e72f075dc35dc98be5427ba",
+      "mac": "254629a23c8648365e4d3e4ab918605a21c0e782121b50c3a752a8f97dbaba4c"
+    },
+    "description": "secretEncryptKey"
+  },
+  "workerProxyKey": {
+    "keys": {
+      "key": "ec98210f55be3e798f4fd156:a1248da6278fde1d143bbf59270d14e9ed2ac33a9d09ed8ca901a105bfdf5e1d53fcaf62ca1691a15cc6f9d965dbdac29dcb1210318820d70da8c86077ebe7aa96893be3653496282b7f3d4ac0195807",
+      "mac": "cd8a4eba214d8eb80b4cdc11c79ac557782de386ffeb1e7668d60d4c5cec5ce6"
+    },
+    "description": "workerProxyKey"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cliConfig":{
+    "adminService.host":"http://serverlessnative.huawei.com:31172",
+    "accessName":"functionconsole",
+    "accessKey" :"2b1b0ff25fc65e64d7f22501:869872e75e132177b4c119b6175685174524e2ec5f935880c62a602ed6d851aec721d324fc095a4037750046590c04826fe13c79ed3df03879218aef0fc2278f4fc19620577f475c6b4a0230cd33c5f9",
+    "userId":"ic4062b8333240acb996cb3cacf99b36",
+    "tenantId": "i1fe539427b24702acc11fbb4e134e17",
+    "caPath": "",
+    "zipFileSizeMaxMB": 300,
+    "unzipFileSizeMaxMB": 600,
+    "mutualTLSConfig":{
+      "tlsEnable": false,
+      "rootCAFile": "",
+      "moduleCertFile": "",
+      "moduleKeyFile": "",
+      "serverName": ""
+    },
+    "securityEnable": true
+  },
+  "cliLimit":{
+    "eventSize": 3670016
+  }
+}

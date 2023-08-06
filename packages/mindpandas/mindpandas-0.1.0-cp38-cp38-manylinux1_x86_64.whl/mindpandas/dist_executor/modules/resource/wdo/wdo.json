@@ -1,0 +1,23 @@
+{
+    "configEncryptKey": {
+        "keys": {
+            "key": "73a18a97597b59f2b63dc48e:e5b2ef99554aec20a4c7eb0bb49c19ffd371ddb34c2bdc6eb98b73c0044bf8d7d06819c48c6f95c0877cf4ccc204f932eeb72be7b893fe63640e69a4cf2329fc541f900f3b89329aa667a2af5a9e0888",
+            "mac": "c160d1724dbacf8de769b530b51f23f8c5b9170312d4fac7302edce03b92e1ee"
+        },
+        "description": "config encrypt key"
+    },
+    "config-key":{
+        "keys":{
+            "key":"cdd050e1f1fb52ed6b4238a8:3da742dd19a693f727402829af821da099356b1d7b7cd87eb984fbe60eb74d1e52e23092d299b5eea1f85ef1186048db9fd00d0751901eacd6628a6dede75e7f33177eeb0cf937fc4de9c1b439530b1c",
+            "mac":"8af8a9c1b13edfd32f483286781785a1f367364eaa5465d5f97855639403958d"
+        },
+        "description":"config-key"
+    },
+    "dataEncryptKey": {
+        "keys": {
+            "key": "82817fa66a2aece66108474a:a9d9f622bfccf235301c885dd29f3d40b2c781263e0b742dc94937e52a19100a3cc6c28bd2ccd4c1c41d163e731a85086503b42883f470eb9d774cb0dc0c9a16a61440c41518a2f3addbfb09bd9f749d",
+            "mac": "c305b86d6097214d17cf633824ec4883e5d26572826ff04ff1a2dc5a9db8320d"
+        },
+        "description": "data encrypt key"
+    }
+}

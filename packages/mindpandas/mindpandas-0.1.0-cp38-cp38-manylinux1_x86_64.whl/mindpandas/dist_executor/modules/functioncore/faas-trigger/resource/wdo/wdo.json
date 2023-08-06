@@ -1,0 +1,16 @@
+{
+  "config-key": {
+    "keys": {
+      "key": "3f2b2c9bd39a7f43d19be3bf:a4c3333e106ddb62f2c4dbf992186e03ef69a3a47f9379ce7aad40e6665a81754903619e0dfaed36132703955f545d8f1a79fa0d3ef198ab8663a880d83a2621a7787b898a951a09a33469a514f3cc61",
+      "mac": "24b8a400b978f712ba6a7805fae67d99725c7df2a77707d0b7e3decd862fb3bc"
+    },
+    "description": "config-key"
+  },
+  "secretEncryptKey": {
+    "keys": {
+      "key": "308ce84f09de2cbd6e71bae8:fbbef4977a8bff8a2bb74a18e669e75d99bfbee5a1433528644984357f5f1863ffbac6eb8516bc7d9cfad0d0f4608e3e6cc669a9f6b67c73eb4110709db7123c8a0fd68b11bdbadae0f1b5e9b78bfa61",
+      "mac": "34ca987dfb1c085b4f06098b399dcc07cdfb95eb490f7f1deb74cbb089315fbd"
+    },
+    "description": "secretEncryptKey"
+  }
+}

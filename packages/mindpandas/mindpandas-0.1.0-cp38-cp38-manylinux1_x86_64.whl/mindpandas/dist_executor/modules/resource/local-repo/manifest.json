@@ -1,0 +1,110 @@
+{
+	"faas": {
+		"service": {
+			"python3.8": [
+				{
+					"directory": "faas/service/python3.8/huawei-faas-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				}
+			],
+			"java1.8": [
+				{
+					"directory": "faas/service/java1.8/huawei-faas-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				}
+			]
+		},
+		"function": {
+			"python3.8": [
+				{
+					"directory": "faas/function/python3.8/huawei-faas-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				}
+			],
+			"java1.8": [
+				{
+					"directory": "faas/function/java1.8/huawei-faas-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				}
+			]
+		}
+	},
+	"yrlib": {
+		"service": {
+			"python3.8": [
+				{
+					"directory": "yrlib/service/python3.8/huawei-yrlib-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				},
+				{
+					"directory": "yrlib/service/python3.8/huawei-yrlib-hello",
+					"description": "Hello World Example",
+					"templateName": "hello-world"
+				},
+				{
+					"directory": "yrlib/service/python3.8/huawei-yrlib-class",
+					"description": "Class Example",
+					"templateName": "class"
+				}
+			],
+			"cpp11": [
+				{
+					"directory": "yrlib/service/cpp11/huawei-yrlib-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				},
+				{
+					"directory": "yrlib/service/cpp11/huawei-yrlib-hello",
+					"description": "Hello World Example",
+					"templateName": "hello-world"
+				},
+				{
+					"directory": "yrlib/service/cpp11/huawei-yrlib-class",
+					"description": "Class Example",
+					"templateName": "class"
+				}
+			]
+		},
+		"function": {
+			"python3.8": [
+				{
+					"directory": "yrlib/function/python3.8/huawei-yrlib-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				}
+			],
+			"cpp11": [
+				{
+					"directory": "yrlib/function/cpp11/huawei-yrlib-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				}
+			]
+		}
+	},
+	"posix-runtime-custom": {
+		"service": {
+			"posix-custom-runtime": [
+				{
+					"directory": "posix-runtime-custom/service/huawei-posix-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				}
+			]
+		},
+		"function": {
+			"posix-custom-runtime": [
+				{
+					"directory": "posix-runtime-custom/function/huawei-posix-empty",
+					"description": "Empty Example",
+					"templateName": "empty"
+				}
+			]
+		}
+	}
+}

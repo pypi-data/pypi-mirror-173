@@ -1,0 +1,70 @@
+{
+  "runtime": {
+    "timeout": 86400,
+    "loadtimeout": 30,
+    "rpcPort": 31530,
+    "connectType": "unix",
+      "runtimeLogDir": "/home/snuser/log"
+  },
+  "deployment": {
+    "storageType": "s3",
+    "codePackage": {
+      "unzipFileSizeMaxMB": 1000,
+      "zipFileSizeMaxMB": 500,
+      "fileCountsMax": 30000,
+      "dirDepthMax": 20
+    },
+    "s3Config": {
+      "useSSL" : false,
+      "endpoint": "{{S3_ADDR}}",
+      "trustedCA" : false
+    },
+    "httpsConfig": {
+       "httpsEnable": false,
+       "tlsProtocol": "TLSv1.2",
+       "tlsCiphers": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+    },
+    "localAuth": {
+       "localAuthEnable": false,
+       "duration": 5
+    }
+  },
+  "etcd": {
+      "servers": ["{{ETCD_ADDR}}"],
+      "user": "{{ETCD_USER}}",
+      "password": "{{ETCD_PASSWORD}}",
+      "sslEnable": false,
+      "leaseTTL": 8,
+      "renewTTL": 4,
+      "limitRate": 500,
+      "limitBurst": 500,
+      "limitTimeout": 5
+  },
+  "storage":{
+      "addr": "{{REDIS_ADDR}}",
+      "password": "{{REDIS_PASSWORD}}"
+   },
+  "server": {
+    "httpsConfig": {
+      "httpsEnable": false,
+      "tlsProtocol": "TLSv1.2",
+      "tlsCiphers": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384"
+    },
+    "readTimeout": 33,
+    "writeTimeout": 33,
+    "port": {{WORKER_HTTP_PORT}},
+    "maxHeaderBytes": 1048576,
+    "ioReadTimeout": 100000
+  },
+  "invokeServer": {
+    "protocol": "tcp",
+    "port": {{WORKER_TCP_PORT}}
+  },
+  "functionNameSeparator": "-",
+  "functionCapability": 2,
+  "backgroundProcessLimit": {
+    "enable": false,
+    "idleTime": 3,
+    "retryTimes": 3
+  }
+}
