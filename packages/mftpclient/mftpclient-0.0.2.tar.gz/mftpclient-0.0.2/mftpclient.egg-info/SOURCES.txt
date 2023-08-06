@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mftpclient/__init__.py
+mftpclient/_compat.py
+mftpclient/client.py
+mftpclient/mptcp_support.py
+mftpclient.egg-info/PKG-INFO
+mftpclient.egg-info/SOURCES.txt
+mftpclient.egg-info/dependency_links.txt
+mftpclient.egg-info/top_level.txt
+mftpclient/test/__init__.py
+mftpclient/test/test_client.py
+mftpclient/test/test_server.py
