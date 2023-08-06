@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flake8-plus
+Version: 0.1.1
+Summary: Flake8 plugin adding PEP8-compliant vertical whitespacing rules
+Home-page: https://github.com/sorenlind/flake8-plus
+Author: Soren Kristiansen
+Author-email: sorenlind@mac.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Provides-Extra: dev
+Provides-Extra: test
+
+# Flake8-plus
