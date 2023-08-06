@@ -1,0 +1,10 @@
+huspacy/__init__.py,sha256=-smY1n-1eqJ7sFUt5dvs_Lo1ol35WtHuNXTaGP1S6nc,3635
+huspacy/components/__init__.py,sha256=Zx2ZdxxVSCMt2lS06o0jqJTSWE-OW7iMwQAcnLCa7F8,132
+huspacy/components/edit_tree_lemmatizer.py,sha256=HZ89Zr5tCZK251nmJgr-cE8PQiHyV4FC6T76BNfyHc8,14787
+huspacy/components/hun_sentencizer.py,sha256=LR6eHQ1TkZvtzPsYx6opgm0Aln_v9AE6dBE798MXjNA,1784
+huspacy/components/lemma_postprocessing.py,sha256=TJQDfaBToSyby3eMr7HKe_aXDV_mWB12rOOtmMAKlqc,4514
+huspacy/components/lookup_lemmatizer.py,sha256=XlV8keGQMsJYcEqivHuLtrH8LbQKMoaXZYDiqPeuTS0,4686
+huspacy/utils.py,sha256=xKc0XKlsI87ULJrSPDMERR6KwYF0J-9bJd-B0tnAyEo,2117
+huspacy_nightly-0.5.1.dev119.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+huspacy_nightly-0.5.1.dev119.dist-info/METADATA,sha256=9doUKFUA5B-3dcMAcfNOFumkiLwRqcRHPJMZau0b6FU,11364
+huspacy_nightly-0.5.1.dev119.dist-info/RECORD,,
