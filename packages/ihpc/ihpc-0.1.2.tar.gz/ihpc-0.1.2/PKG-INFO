@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ihpc
+Version: 0.1.2
+Summary: Python Interface for Scheduling HPC Jobs
+Home-page: https://github.com/iydon/hpc
+License: GPL-3.0-only
+Keywords: HPC
+Author: Iydon Liang
+Author-email: liangiydon@gmail.com
+Requires-Python: >=3.7
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Provides-Extra: full
+Provides-Extra: type
+Requires-Dist: paramiko (>=2.11.0,<3.0.0)
+Requires-Dist: typing-extensions (>=4.3.0,<5.0.0); extra == "type" or extra == "full"
+Project-URL: Bug Tracker, https://github.com/iydon/hpc/issues
+Project-URL: Documentation, https://ihpc.readthedocs.io
+Project-URL: Repository, https://github.com/iydon/hpc
+Description-Content-Type: text/markdown
+
+<!-- Template from https://github.com/othneildrew/Best-README-Template -->
+<div id="top"></div>
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/iydon/hpc">
+    🔵⬜⬜⬜🟦<br />
+    🟦🟦⬜🟦🟦<br />
+    🟦⬜🟦⬜🟦<br />
+    🟦🟦⬜🟦🟦<br />
+    🟦⬜⬜⬜🟦<br />
+  </a>
+
+  <h3 align="center">iHPC</h3>
+
+  <p align="center">
+    Python Interface for Scheduling HPC Jobs
+    <br />
+    <a href="https://ihpc.readthedocs.io"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/iydon/hpc">View Demo</a>
+    ·
+    <a href="https://github.com/iydon/hpc/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/iydon/hpc/issues">Request Feature</a>
+  </p>
+</div>
+
