@@ -1,0 +1,48 @@
+## Retarus Python SDK
+The offical Python SDK provided by Retarus to contact our messaging services.
+
+## Installation
+Install from PyPi using pip, a package manager for Python. Minimum python version 3.8.
+
+```bash
+pip install retarus
+```
+
+Or you can download the [source code for the Retarus python SDK](https://github.com/retarus/retarus-python) and then build it with following command:
+```bash
+git clone https://github.com/retarus/retarus-python
+cd retarus-python
+python setup.py install
+```
+
+## Usage
+The Python SDK implements different services that are offered by Retarus. First, you need to configure the SDK with your details.
+```python
+from retarus.base.configuration import Configuration
+
+Configuration.set_auth(your_user_id, your_password)
+Configuration.set_region(your_region)
+# if its required for your service (eg. fax)
+Configuration.customer_number = "my_customer_number"
+```
+Each service implements a client, so simply call "retarus.your_service" and create a client that provides your functionality.
+
+```python
+from retarus.fax.client import FaxClient
+
+sdk = FaxClient()
+```
+
+## Region
+The SDK also offers a simply way to select a region where your jobs should be processed. By default, the SDK will use the Europe region.
+
+To configure your region:
+```python
+from retarus.base.configuration import Configuration
+from retarus.base.region import Region
+# if its required for your service (eg. fax)
+Configuration.set_region(Region.Europe)
+```
+
+## Examples
+Each service provides a small variety of example to get a better understanding off how to use their functionality. The examples can be found in the examples directory sorted by each service.
