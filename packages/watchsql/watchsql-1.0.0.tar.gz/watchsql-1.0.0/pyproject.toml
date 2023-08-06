@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watchsql"
+version = "1.0.0"
+description = "Comand-line utility to monitor the response of a SQL query"
+readme = "README.md"
+authors = [{ name = "jakobst1n" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = [
+    "cusser==0.1.1",
+    "mysqlclient==2.0.2",
+    "numpy==1.23.1",
+    "ochre==0.1.1",
+    "plotille==4.0.2",
+    "six==1.16.0",
+    "stransi==0.1.0"
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/jakobst1n/watchsql"
+
+[project.scripts]
+watchsql = "watchsql.__main__:main"
+
+[tool.bumpver]
+current_version = "1.0.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"'
+]
+"src/watchsql/__init__.py" = [ "{version}" ]
+

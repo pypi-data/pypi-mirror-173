@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/watchsql/__init__.py
+src/watchsql/__main__.py
+src/watchsql/watchsql-basic.py
+src/watchsql/watchsql_adv.py
+src/watchsql.egg-info/PKG-INFO
+src/watchsql.egg-info/SOURCES.txt
+src/watchsql.egg-info/dependency_links.txt
+src/watchsql.egg-info/entry_points.txt
+src/watchsql.egg-info/requires.txt
+src/watchsql.egg-info/top_level.txt

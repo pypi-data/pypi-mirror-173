@@ -1,0 +1,14 @@
+cusser==0.1.1
+mysqlclient==2.0.2
+numpy==1.23.1
+ochre==0.1.1
+plotille==4.0.2
+six==1.16.0
+stransi==0.1.0
+
+[dev]
+black
+bumpver
+isort
+pip-tools
+pytest
