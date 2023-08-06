@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "sfu-torchac"
+version = "0.0.1"
+description = "Fast arithmetic coding for PyTorch."
+authors = ["Anderson de Andrade <anderson_de_andrade@sfu.ca>"]
+exclude = ["tests/*"]
+build = "build.py"
+
+[[tool.poetry.source]]
+name = "private"
+url = "https://pypi.org/simple"
+secondary = true
+
+[tool.poetry.dependencies]
+python = "3.10.6"
+torch = ">= 1"
+
+[tool.poetry.extras]
+extras = []
+
+[tool.poetry.dev-dependencies]
+defopt = "*"
+flake8 = "*"
+mypy = "*"
+pytest = "*"
+
+[build-system]
+requires = [
+    "poetry-core>=1.0.0",
+    "setuptools",
+    "torch",
+]
+build-backend = "poetry.core.masonry.api"
