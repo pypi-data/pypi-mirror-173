@@ -1,0 +1,11 @@
+kiddeelab/__init__.py,sha256=KYi-u33gH757lg91idc3DkuCMLBJZWB10xGtKSYgpv4,47
+kiddeelab/gamepad.py,sha256=zARsFahmccVHulz63qAX5Dz3ZXUTkHMRAoZWZIyUgxc,3663
+kiddeelab/kiddeejoystick.py,sha256=0vkSwBa7m1jdsbgcz2QuztAoHIWkG8X2r1PyB32GqUE,2690
+kiddeelab/kiddeemata.py,sha256=eM2naR9JqTUC2r_opL1hBkqgdvDbVPkT4ebe6gxeD04,125580
+kiddeelab/pin_data.py,sha256=QtZyclqXSUzhvDXivII1tmg88A5X1_ySR9PBimRMsgQ,2612
+kiddeelab/private_constants.py,sha256=Y3a-782vhev3YvaVYUZn9rm4JtrxiWmLYaKQX-XhoVo,7601
+kiddeelab-0.0.1.dev1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+kiddeelab-0.0.1.dev1.dist-info/METADATA,sha256=w_MGH3lxAGnDdIR9Yfd4Chk7f-TI05H3kywFQ9M0_Qw,1349
+kiddeelab-0.0.1.dev1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kiddeelab-0.0.1.dev1.dist-info/top_level.txt,sha256=-38pECUfTNH8GxP3MSOTg-XwhryE4Uq8Pm818U8_Jyw,10
+kiddeelab-0.0.1.dev1.dist-info/RECORD,,
