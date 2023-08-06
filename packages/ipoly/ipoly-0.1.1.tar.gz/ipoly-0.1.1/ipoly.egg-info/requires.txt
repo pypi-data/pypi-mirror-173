@@ -1,0 +1,10 @@
+pyarrow
+xlrd
+pandas
+scipy
+typeguard
+seaborn
+pylatex
+opencv-python
+imageio
+openpyxl

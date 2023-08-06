@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+ipoly/LaTeX.py
+ipoly/__init__.py
+ipoly/email.py
+ipoly/file_management.py
+ipoly/logger.py
+ipoly/tracebackHandler.py
+ipoly.egg-info/PKG-INFO
+ipoly.egg-info/SOURCES.txt
+ipoly.egg-info/dependency_links.txt
+ipoly.egg-info/requires.txt
+ipoly.egg-info/top_level.txt
