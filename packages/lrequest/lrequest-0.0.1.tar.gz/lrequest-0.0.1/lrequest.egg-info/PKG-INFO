@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lrequest
+Version: 0.0.1
+Summary: Test model for upload pip to PyPi
+Home-page: https://github.com/web-trump/ahttp.git
+Author: Gar1and
+Author-email: garland_zhao@qq.com
+License: MIT
+Platform: python 3.8+
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+
