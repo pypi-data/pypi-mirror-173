@@ -1,0 +1,8 @@
+google-api-python-client==2.64.0
+google-auth-oauthlib==0.5.3
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+black>=18.3
