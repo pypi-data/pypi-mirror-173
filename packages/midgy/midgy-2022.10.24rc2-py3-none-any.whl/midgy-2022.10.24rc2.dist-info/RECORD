@@ -1,0 +1,12 @@
+midgy/__init__.py,sha256=Fy0Z1JKPqrb9BZtgAmPq3aowwsLanZqLS4epduH2ouE,76
+midgy/__main__.py,sha256=-ge_rjA-9Xo5WMiV7Z4MBEcEy84e14TUu75cfbwK47I,760
+midgy/_version.py,sha256=Rp8JRti_oio09s-muTXaOUQRTF49D-TLBGhfewawPg0,189
+midgy/front_matter.py,sha256=oMOkRB8hu7Sz7HTXpsXAkW-ycljJGmnnmbYSbHv9Ehs,4120
+midgy/loader.py,sha256=6ypZIUiJ4-zdas8Q259P420bRIeDWhapqIaq-COn9VA,931
+midgy/python.py,sha256=AUtJGvEmwMLcDR1TzyOr2lSJukgQ41CLUL03Way_QLU,5443
+midgy/render.py,sha256=eWPZcsyYCrOW8XUqebCUdQc4wcOVpKtYUcI7IDWKYis,13415
+midgy-2022.10.24rc2.dist-info/METADATA,sha256=Sk5W2C_zPR1IcsaL7Vpl_JX6V6Hvo3CPVn24ZTl56qA,4005
+midgy-2022.10.24rc2.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+midgy-2022.10.24rc2.dist-info/entry_points.txt,sha256=P7JA-ZUlwfWtu5BkPvZ3fK3laUW7p9HpH3xIfo-k38g,46
+midgy-2022.10.24rc2.dist-info/licenses/LICENSE,sha256=ilKfaara4f7e71ZWP783OpQG__KC30BMS8q22xvIX00,1517
+midgy-2022.10.24rc2.dist-info/RECORD,,

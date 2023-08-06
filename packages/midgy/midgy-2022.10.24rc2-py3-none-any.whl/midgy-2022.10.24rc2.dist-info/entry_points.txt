@@ -1,0 +1,2 @@
+[console_scripts]
+midgy = midgy.__main__:main
