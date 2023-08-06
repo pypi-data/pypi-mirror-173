@@ -1,0 +1,5 @@
+aws_ssooidc/__init__.py,sha256=3GHKnbiRbRa9SgYKi-RWRmEcgcTZ-YhL56Y1BWAnxro,6672
+aws_ssooidc/__main__.py,sha256=UYcERJphrZgkl_JeioPRxf7I8NZtOFy2MfSP1vbGZlQ,141
+aws_ssooidc-2022.10.1.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aws_ssooidc-2022.10.1.4.dist-info/METADATA,sha256=0oyXGCMSduzo0NCFV6DnnNT5v0rsvr23c022FFxKDgs,1983
+aws_ssooidc-2022.10.1.4.dist-info/RECORD,,
