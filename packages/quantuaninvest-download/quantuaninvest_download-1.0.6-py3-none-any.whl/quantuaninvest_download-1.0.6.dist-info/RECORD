@@ -1,0 +1,7 @@
+tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tool/download.py,sha256=ZjVJgEeUCdkWRlyBqnVDKRBQtAdtBeaLlwRY_D1XLlY,2045
+tool/get_data.py,sha256=BbaSOE_2lh0-7l064lxss3QKAGzjCsKbgEmUYqT5BiM,1368
+quantuaninvest_download-1.0.6.dist-info/METADATA,sha256=mJtGvunc400VQ_qYg_0JsKMQx62MwLU9NotdqGqxZys,242
+quantuaninvest_download-1.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+quantuaninvest_download-1.0.6.dist-info/top_level.txt,sha256=Z5SN2a_Wr-UEOwAp1ap88PiygkuvFvTwl9QNgw7baG0,5
+quantuaninvest_download-1.0.6.dist-info/RECORD,,
