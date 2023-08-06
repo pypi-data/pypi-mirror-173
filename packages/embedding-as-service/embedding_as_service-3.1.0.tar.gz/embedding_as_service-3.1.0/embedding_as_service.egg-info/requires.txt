@@ -1,0 +1,11 @@
+tqdm==4.32.2
+requests==2.21.0
+smart_open==6.2.0
+tensorflow==2.7.2
+setuptools>=41.0.0
+bert-tensorflow
+tensorflow_hub
+sentencepiece
+keras
+numpy
+zmq==0.0.0
