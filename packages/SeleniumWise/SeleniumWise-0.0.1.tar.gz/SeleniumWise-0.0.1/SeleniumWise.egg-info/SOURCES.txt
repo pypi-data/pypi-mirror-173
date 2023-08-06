@@ -1,0 +1,11 @@
+README.md
+setup.py
+SeleniumWise/__init__.py
+SeleniumWise/element_interactions.py
+SeleniumWise/navigation.py
+SeleniumWise/network_tracker.py
+SeleniumWise.egg-info/PKG-INFO
+SeleniumWise.egg-info/SOURCES.txt
+SeleniumWise.egg-info/dependency_links.txt
+SeleniumWise.egg-info/requires.txt
+SeleniumWise.egg-info/top_level.txt
