@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: dpkg
+Version: 0.1.2
+Summary: UNKNOWN
+Author: SangMinLee
+Author-email: smlee@d-if.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+### dpkg
+
+
+* dpkg is a package that collects functions frequently used in recommendation algorithms.
+
+#### apk : 
+
+
+Computes the average precision at k. This function computes the average prescision at k between two lists of items.
+
+Parameters
+----------
+* actual : list
+> A list of elements that are to be predicted (order doesn't matter)
+* predicted : list
+> A list of predicted elements (order does matter)
+* k : int, optional
+> The maximum number of predicted elements
+
+Returns
+-------
+* score : double The average precision at k over the input lists
+
+
