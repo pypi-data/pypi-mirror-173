@@ -1,0 +1,2 @@
+demoproject
+django_toosimple_q
