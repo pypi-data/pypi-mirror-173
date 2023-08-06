@@ -1,0 +1,14 @@
+peristole/__init__.py,sha256=blu0CSUFhvSwjyBvcbqgWOzGJ340NIwpOPh4YJvNb7g,239
+peristole/amp.py,sha256=HgGaMOe5QQUB7KBKsBmHySFlwgC-RU8OQLAWkPcoy9c,1980
+peristole/ca1.py,sha256=-Fr8045fvHcpfyv2C0YykokA30WCVg8P3MmsAiJ9q60,4225
+peristole/geom_td.py,sha256=NPIxHem16Y9I_-yXNLTb5q6fhsUM9gAOMiVUuhu47YU,6085
+peristole/grav_td.py,sha256=NPIxHem16Y9I_-yXNLTb5q6fhsUM9gAOMiVUuhu47YU,6085
+peristole/lat_td.py,sha256=SNJwvpN0xtaxmZL1v-1rz8vNjzEMhAl_vyKEMZeFgFo,3141
+peristole/pulsar_class.py,sha256=b5tu9yHNvs1NXmY7rC_cNqco6GGpxsVmg_2Y4mV2s_o,3993
+peristole/rot_td.py,sha256=Ao46arks6dcWjCyfst8Wg-inFL1beF2GBEkitzJeFkI,2877
+peristole/test_cl.py,sha256=gJpbO8ztW3UmmmfyKgl_32-2u_7vCJbfrnMoijiLpWg,3276
+peristole-1.0.7.dist-info/LICENSE,sha256=P30nDnDdOb_WRUsg4pjDfCLs-M6T7kTsNm5XSR1XbZo,1071
+peristole-1.0.7.dist-info/METADATA,sha256=2K6f_-8jF5wWXdlpSl84oD6lfxt2egNisjgY0a3XLAE,142
+peristole-1.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+peristole-1.0.7.dist-info/top_level.txt,sha256=h7r7y16FyaNW6PYAJrHUK1vt3VhPrvym69IQo7fmWGQ,10
+peristole-1.0.7.dist-info/RECORD,,
