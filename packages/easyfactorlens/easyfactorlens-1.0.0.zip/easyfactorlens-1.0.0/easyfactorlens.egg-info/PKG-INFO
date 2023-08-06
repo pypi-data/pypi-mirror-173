@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: easyfactorlens
+Version: 1.0.0
+Summary: Easyfactorlens是一个使用Ricequant数据，用Alphalens进行因子IC检验的封装工具。
+Author: Zhang zeying, Cheng yichi, Wang weizhu
+Author-email: vergilwong@foxmail.com
+License: MIT
+License-File: LICENSE.txt
+
+老王、老程、老张三人本来只想躺平，但奈何这是一个内卷的星球，因此，既然躺不平，那就卷死所有人。
+This lib can make IC test by data download from Ricequant.
