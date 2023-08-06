@@ -1,0 +1,8 @@
+coastsat-package>=0.0.6
+area
+requests
+doodleverse-utils<=0.0.3
+tqdm
+leafmap
+shapely
+geojson
