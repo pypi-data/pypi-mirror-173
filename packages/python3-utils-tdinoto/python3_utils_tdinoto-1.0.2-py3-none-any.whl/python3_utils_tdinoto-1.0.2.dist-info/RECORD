@@ -1,0 +1,11 @@
+utils_tdinoto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_tdinoto/numeric.py,sha256=xt3SGknJ98lbMBCZKaxFmRzkflTWV5GxnrZChVVCnIk,1475
+utils_tdinoto/utils_lists.py,sha256=qYMnbSilV6DfNKN8j2vsABPo4Chb2_ARLOQCUamAKnw,11479
+utils_tdinoto/utils_nifti_dicom.py,sha256=7zh-dlq1bSxa1gJhgSvOs9vwMi70j03tNhI-YvUwsac,7640
+utils_tdinoto/utils_numpy.py,sha256=TWw6ggfkmLt9NyMsapqpjouxcNqy4qdAORusnTLlOZk,4165
+utils_tdinoto/utils_strings.py,sha256=7SGu76deSqStHAg2ALD9IwckzLZyrvGlp5GX3urtVs4,2947
+python3_utils_tdinoto-1.0.2.dist-info/LICENSE,sha256=3KfruSCUwwkdhpz-mxrz3YGyGaZg2puBkGTOY5hwQi8,1067
+python3_utils_tdinoto-1.0.2.dist-info/METADATA,sha256=k49LDp_eQ1IC8ynpFWTDcuxuBWQjscdu5di0_bm8pIo,2617
+python3_utils_tdinoto-1.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+python3_utils_tdinoto-1.0.2.dist-info/top_level.txt,sha256=fwkuaNrcInw-Urx9nEf3-4ZVDdte_L_iGxcB8ugkIWA,14
+python3_utils_tdinoto-1.0.2.dist-info/RECORD,,
