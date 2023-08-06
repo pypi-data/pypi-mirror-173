@@ -1,0 +1,40 @@
+import uuid
+from typing import Tuple, Union
+import io
+from time import sleep
+
+from google.cloud.exceptions import NotFound
+
+from prefect import context
+from prefect.core import Task
+from prefect.utilities.gcp import get_storage_client
+from prefect.utilities.tasks import defaults_from_attrs
+
+from google.cloud import storage
+from prefect.engine.signals import FAIL
+
+from typing import *
+
+
+class CSBaseTask(Task):
+    def __init__(
+            self,
+            driver: Optional[str] = None,
+            key: Optional[str] = None,
+            secret: Optional[str] = None,
+            region: Optional[str] = None,
+            **driver_kwargs
+    ):
+
+
+class CSContainerCreate(Task):
+    pass
+
+class CSBlobUpload(Task):
+    pass
+
+class CSBlobDownload(Task):
+    pass
+
+class CSBlobList(Task):
+
