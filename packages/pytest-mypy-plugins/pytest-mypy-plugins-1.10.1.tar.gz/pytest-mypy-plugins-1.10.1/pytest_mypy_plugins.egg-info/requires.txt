@@ -1,0 +1,6 @@
+pytest>=6.0.0
+mypy>=0.970
+decorator
+pyyaml
+chevron
+regex
