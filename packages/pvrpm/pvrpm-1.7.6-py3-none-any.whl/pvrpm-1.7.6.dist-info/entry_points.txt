@@ -1,0 +1,2 @@
+[console_scripts]
+pvrpm = pvrpm.__main__:main
