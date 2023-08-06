@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: simples-calculadora
+Version: 0.0.1
+Summary: Pacote de uma simples calculadora
+Home-page: https://github.com/DiegoReis265/Repositorio-BootCamp-Geracao-Tech-Unimed-BH--Ciencia-de-Dados.git
+Author: Diego Reis
+Author-email: d.felipe66@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Simples_Calculadora
+
+Description. 
+The package simples_calculadora is used to:
+	- def soma
+	- def subtracao
+        - def multiplicacao
+        - def divisao
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install simples_calculadora
+
+```bash
+pip install simples_calculadora
+```
+
+## Author
+Diego_Reis
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
