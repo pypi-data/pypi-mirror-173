@@ -1,0 +1,8 @@
+checkjpy2hkd/__init__.py,sha256=OuT0B5h5Zp_ApTtbIUfk06v3LFH2uqdItpi2-x3ZLFs,308
+checkjpy2hkd/__main__.py,sha256=1ssxT7se9IPcUiCVQ2wgkyN3anNV9ldkYG5_YLlC064,371
+checkjpy2hkd/checker.py,sha256=hkRSJmNFlXY0OJ8B1CNqHfSEvXFcbLh6Xx2fsxEbYRg,130
+checkjpy2hkd/config.toml,sha256=q-0SeB8hN2lu8VLg4fRZJP6o1FgsKYvfZe0HxCZNxdg,108
+checkjpy2hkd-0.1.1.dist-info/entry_points.txt,sha256=ogslgAvoVrZIxWxwsQ7BbCUo9nzyNsEvyz5zH47qoz0,59
+checkjpy2hkd-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+checkjpy2hkd-0.1.1.dist-info/METADATA,sha256=A_7FrdEwgyLOHgN_nQi-p450E560cT7oLEtMnVDNP_8,1363
+checkjpy2hkd-0.1.1.dist-info/RECORD,,
