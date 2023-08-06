@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv
+.mypy_cache/
+
+dist/
+*.egg-info/
+
+.tox/
+
+.python-version
