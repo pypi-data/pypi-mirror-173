@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: ezcode
+Version: 0.0.101
+Summary: Easy Algorithm & Data Structure
+Home-page: https://github.com/zheng-gao/ez_code
+Author: Zheng Gao
+Author-email: mail.zheng.gao@gmail.com
+Project-URL: Bug Tracker, https://github.com/zheng-gao/ez_code/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Installation
+
+```bash
+pip3 install --upgrade ezcode
+```
+
+# PyPi Releases
+
+https://pypi.org/project/ezcode/#history
+
+
+# Development Workflow
+```bash
+git clone https://github.com/zheng-gao/ez_code.git && cd ez_code
+./ez.sh -d/--development
+```
+
+# Release Workflow
+
+```bash
+git clone https://github.com/zheng-gao/ez_code.git && cd ez_code
+./ez.sh -r/--release
+```
+
+# Unit Test
+### Run all the tests
+```bash
+./ez.sh -o/--operations test
+```
+### Run a single test
+```bash
+./ez.sh -o/--operations test -a/--arguments test_array.py::test_binary_search
+```
+
+# Contents
+* [Array](docs/array.md)
+* [Grid](docs/grid.md)
+* [Hash](docs/hash.md)
+* [Heap](docs/heap.md)
+* [Knapsack](docs/knapsack.md)
+* [List](docs/list.md)
+* [Tree](docs/tree.md)
+* [Graph](docs/graph.md)
+* [Math](docs/math.md)
+
+
