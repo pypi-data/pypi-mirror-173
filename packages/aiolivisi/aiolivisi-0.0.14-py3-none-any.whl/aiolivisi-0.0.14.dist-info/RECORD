@@ -1,0 +1,11 @@
+aiolivisi/__init__.py,sha256=1X7LYq2gicAC4oyVJxUfqB2pfr3ekcKxvEmc8g_jnWg,222
+aiolivisi/aiolivisi.py,sha256=cZVMv3xey6-fviQGmshstP7SsHkPBXOCL8E6oLtAQRM,6738
+aiolivisi/const.py,sha256=01fFB3X0pNb0DExxk7RCmCT23CprXmYM20OgznPYgNY,504
+aiolivisi/errors.py,sha256=AtWfec-Du34toBH1WIuMXwNaKlknmMYJJNSQnGCZf1Y,461
+aiolivisi/livisi_event.py,sha256=prOao-SSSnPb5f-HT-k4-oib3YTkQfarA3SVNCdjn7M,376
+aiolivisi/websocket.py,sha256=aKjtyVmkPVu-AzDZ03KdLMO-p9x9AgY7IxsDlbduXN8,2422
+aiolivisi-0.0.14.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+aiolivisi-0.0.14.dist-info/METADATA,sha256=KqjoWja3e_z-FjWjm8Ggq5K5XHeHI_hXie6suqabJXk,733
+aiolivisi-0.0.14.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiolivisi-0.0.14.dist-info/top_level.txt,sha256=cyf_yVjlCtCAXxHxfDhtQ239JUFS1DGANpaalWsS7Ho,10
+aiolivisi-0.0.14.dist-info/RECORD,,
