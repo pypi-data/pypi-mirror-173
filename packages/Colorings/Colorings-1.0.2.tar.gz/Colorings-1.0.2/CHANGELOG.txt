@@ -1,0 +1,18 @@
+ChangeLog
+__________________
+
+0.0.1(26/10/2022)
+=================
+ - First Release
+
+1.0.1(26/10/2022)
+=================
+ - Name correction
+ - adding new info in readme
+ - changing version counting
+
+1.0.2(26/10/2022)
+=================
+ - Error Handling update
+
+
