@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=HXHSlOrAxC6-rj_12zusVGE9fYPXPE3GkIGbtMcYEWU,196
+drfcommon/__init__.py,sha256=a4dG5VZEw7R3zmJrCwZzn45fK7iCT_fYUvM6MxoV-7A,24
+drfcommon/choices.py,sha256=X8Cr5W_ea0uFxx73raC_OnnkPFUBmUQRdMaA-n_yhGw,355
+drfcommon/exceptions.py,sha256=kbq-p4TMNi2yCYwZuQfc1SmcxTh7En4OgYSNHUkW2fY,4091
+drfcommon/pagination.py,sha256=1em4KN1UgBM1KGGOKcDktNbyKZXwjyw2pMZeUw_3z68,3333
+drfcommon/readme.md,sha256=2GLAXt94OnLXKQP3iUc6PfPS4EmdDPH1z47tCrCNkdY,38
+drfcommon/response.py,sha256=FuZkL6RrN2gCBGIn2v1EUPHYOMAtFoFNK2j0XmhSQa4,975
+drfcommon/view_base.py,sha256=Jns6glZN220sUkINU48xjj8vvQzHkdcLV0Sg9A-YWIg,4738
+drfcommon-0.1.8.4.dist-info/LICENSE,sha256=qFAVNNFQdlLi9rqeTtdbmvvZAAvKEz19_YwJn9CFB28,1082
+drfcommon-0.1.8.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+drfcommon-0.1.8.4.dist-info/METADATA,sha256=m16IHMpfDYbpI4JL-H1JuUvbwjia77gwjEoDZwAUSYI,869
+drfcommon-0.1.8.4.dist-info/RECORD,,
