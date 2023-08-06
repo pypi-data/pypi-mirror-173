@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: streamlit-custom-toggle
+Version: 0.0.1
+Summary: A Streamlit custom component to load heart-shaped Toggle Switch
+Home-page: https://github.com/ShruAgarwal/streamlit-custom-toggle
+Author: Shruti Agarwal
+Author-email: shruagarwal01@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
