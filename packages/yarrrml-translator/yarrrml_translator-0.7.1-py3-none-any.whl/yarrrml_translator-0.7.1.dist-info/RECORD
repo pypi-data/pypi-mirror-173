@@ -1,0 +1,12 @@
+yarrrml_translator/__init__.py,sha256=rV8ndnvT2hj7xCRl7rVYTLJTCi7YJ-UU9kTtDdU6RK8,2483
+yarrrml_translator/__main__.py,sha256=3g5xkZjyZGCmZRR5XDZBL6jzew0eE-5-2NNJKNtkc-A,1475
+yarrrml_translator/constants.py,sha256=PPC4E9wADiBWG8GOdOQ7e14LUR6xTwT6BwjIk8Hazp8,3712
+yarrrml_translator/mapping.py,sha256=XbUTA_2-4uPeORmZv7gVV9mm9GZ_QYW15HQXhfxV5ig,2103
+yarrrml_translator/predicateobject.py,sha256=f5MvAu6YH4f66fqRYNuAtP0_kFtirqZJ9xhtS9D45dQ,9276
+yarrrml_translator/source.py,sha256=tE6NtKBq9A2d6m1GtEx2jhl4LHsyObOV8tHvAiAuRhw,10264
+yarrrml_translator/subject.py,sha256=yv2mAYJ_pU-mDQux9ozAKtIbNRMfKMIodYXB1W9l6Pw,1948
+yarrrml_translator/termmap.py,sha256=LYy7mJi_h_PY97Dsodnd0nBaWgbgfxOc6Xn_f5Lx_24,1638
+yarrrml_translator-0.7.1.dist-info/METADATA,sha256=-IWznX2BTs5iuUrJMznF_GSZu6em4kFRBy5r0FRLON4,2736
+yarrrml_translator-0.7.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yarrrml_translator-0.7.1.dist-info/top_level.txt,sha256=bkCRo7-r-C4Gwzrz4KgqZbmJULCIQkH2oHUrNkj6fM0,19
+yarrrml_translator-0.7.1.dist-info/RECORD,,
