@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: square-skill-helpers
+Version: 0.0.10
+Summary: UNKNOWN
+Home-page: https://github.com/UKP-SQuARE/square-skill-helpers
+Author: UKP
+Author-email: baumgaertner@ukp.informatik.tu-darmstadt.de
+License: MIT
+Download-URL: https://github.com/UKP-SQuARE/square-skill-helpers/archive/refs/tags/v0.0.10.tar.gz
+Platform: UNKNOWN
+Requires-Dist: requests (==2.26.0)
+Requires-Dist: numpy (==1.21.3)
+Requires-Dist: square-auth (>=0.0.3)
+Requires-Dist: aiohttp (>=3.8.1)
+
+UNKNOWN
+
+
