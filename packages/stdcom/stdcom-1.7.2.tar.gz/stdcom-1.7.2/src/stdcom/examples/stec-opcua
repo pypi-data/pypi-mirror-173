@@ -1,0 +1,7 @@
+[General]
+Endpoint=000.000.000.000
+EndpointPort=4840
+MultiverseHostname=192.168.199.15
+MultiversePort=4897
+OurAllows=@Variant(\0\0\0\b\0\0\0\0)
+URL=http://examples.freeopcua.github.io

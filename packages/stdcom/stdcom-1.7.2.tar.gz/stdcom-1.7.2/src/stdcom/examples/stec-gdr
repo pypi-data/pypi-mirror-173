@@ -1,0 +1,8 @@
+[General]
+MultiverseHostname=127.0.0.1
+MultiversePort=4897
+PostgresDbase=vremsoft
+PostgresHostname=localhost
+PostgresPasswd=vrem2010!
+PostgresPort=5432
+PostgresUser=vremsoft
