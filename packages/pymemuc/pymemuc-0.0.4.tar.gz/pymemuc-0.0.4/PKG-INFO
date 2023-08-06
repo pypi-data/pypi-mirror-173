@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pymemuc
+Version: 0.0.4
+Summary: A Memuc.exe wrapper for Python
+Home-page: https://github.com/marmig0404/pymemuc
+License: MIT
+Keywords: memu,memuc,wrapper,api
+Author: Martin Miglio
+Author-email: code@martinmiglio.dev
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Documentation, https://github.com/marmig0404/pymemuc/blob/master/docs/pymemuc.md
+Project-URL: Repository, https://github.com/marmig0404/pymemuc
+Description-Content-Type: text/markdown
+
+# pymemuc
+
+A wrapper for [memuc](https://www.memuplay.com/blog/memucommand-reference-manual.html) in python.
+
+See [pymemuc.md](docs/pymemuc.md) for package documentation.
+
+See [memuc_documentation.md](docs/memuc_documentation.md) for a list of all commands.
+
