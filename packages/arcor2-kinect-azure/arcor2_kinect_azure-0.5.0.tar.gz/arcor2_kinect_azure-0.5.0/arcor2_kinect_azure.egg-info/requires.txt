@@ -1,0 +1,5 @@
+Flask~=2.2.2
+Pillow~=9.2.0
+arcor2~=0.25.0
+numpy~=1.23.4
+pyk4a~=1.4.0
