@@ -1,0 +1,13 @@
+ISPProgrammer-1.1.0.data/scripts/isp_programmer,sha256=nbSTigyLkBEMkf5K4Kl_mADz4e7-XekKxSwa6_PvHA8,4250
+isp_programmer/IODevices.py,sha256=MpRIo8VdMxZYTIy4vaosJyR4_a4mTqQQ-xhnzMrgezE,1561
+isp_programmer/ISPConnection.py,sha256=Ki9RFo6ukjgegwRuMaXJw4yCcKNtbIcTJ_DAuFKpvos,16956
+isp_programmer/__init__.py,sha256=vxr0EwfPJa6vv13ys-wDQlirJa2YruxbS9dsUNBGyJQ,308
+isp_programmer/nxp.py,sha256=Z1q7-2mdE056WOnfUv8NmDiu5207YA0w26Kdb1BPTAg,10910
+isp_programmer/parts_definitions.py,sha256=Ujs-svQzGWWbMv1eCfrlNK2DCOGBgBW4glmjqkkZ9y8,2843
+isp_programmer/tools.py,sha256=vaur7mdVsbCJ6fAji-JpIKKHQpqfq6YCeFA8Ovv2qNQ,1535
+ISPProgrammer-1.1.0.dist-info/LICENSE,sha256=aSIybgD6mO3cKPXsPp3M5ZHNBxtgheD5AruyxssADBU,1068
+ISPProgrammer-1.1.0.dist-info/METADATA,sha256=N2f91DM9r5bsxJGwad04xjEVrxujuVa7TUM6kkRMgKA,2460
+ISPProgrammer-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ISPProgrammer-1.1.0.dist-info/top_level.txt,sha256=CEIIdNtSStOUn-kCTNgvRlHeSE6WAIKTwukjv6nEUok,15
+ISPProgrammer-1.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ISPProgrammer-1.1.0.dist-info/RECORD,,
