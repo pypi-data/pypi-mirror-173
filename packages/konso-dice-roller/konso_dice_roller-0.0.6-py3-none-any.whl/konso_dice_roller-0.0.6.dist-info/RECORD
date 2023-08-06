@@ -1,0 +1,11 @@
+konso_dice_roller/__init__.py,sha256=LF66nbfiJzJaOfVMOfAllSPPCUuw1gMCVfaG8Q60Gnc,104
+konso_dice_roller/format.py,sha256=bOHVFziB9ISrNUoInZ2hrVWhQj_hon9t3LXKMhADpY0,2905
+konso_dice_roller/interface.py,sha256=YdgPpCqRjdxQAogX29H2HG6Y1xGfDe75jMljdCIcuGo,1483
+konso_dice_roller/math.py,sha256=OC4TzA35OM_NtcRAMSkZ3DsE6_HAMjFvPMkeg5t-zkA,419
+konso_dice_roller/parse.py,sha256=yNkub7RX4L3bv85m0-pQ_oj_RcaYP88LbyrqUZs4zhs,3434
+konso_dice_roller/roll.py,sha256=QbT43cozbELesHVBfwmnSXhmVIxaj0vT-EBgF4-ohE0,2679
+konso_dice_roller-0.0.6.dist-info/LICENSE,sha256=VHTaAWRmFp9wcUbXA0lf0Z3qhqqJxAJFFze4OcjjY_0,1061
+konso_dice_roller-0.0.6.dist-info/METADATA,sha256=ibkxSugLEDO-suNVoZu1ScYOmEBHvAeMe_tiEPcQDo0,1906
+konso_dice_roller-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+konso_dice_roller-0.0.6.dist-info/top_level.txt,sha256=ppIphIFoYFxt-bHpOrpxlkzcY2Ood0smbyy7AYY87i4,18
+konso_dice_roller-0.0.6.dist-info/RECORD,,
