@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: featstore-nightly
+Version: 0.0.1
+Summary: A feature store SDK
+Project-URL: Homepage, https://github.com/featstore/featstore
+Project-URL: Bug Tracker, https://github.com/featstore/featstore/issues
+Author-email: FeatStore Authors <admin@featstore.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
