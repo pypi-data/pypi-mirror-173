@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+financial_fraud/__init__.py
+financial_fraud.egg-info/PKG-INFO
+financial_fraud.egg-info/SOURCES.txt
+financial_fraud.egg-info/dependency_links.txt
+financial_fraud.egg-info/requires.txt
+financial_fraud.egg-info/top_level.txt

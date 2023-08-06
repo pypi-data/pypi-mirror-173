@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: financial_fraud
+Version: 0.0.5
+Summary: Financial fraud detection and monitoring scenarios
+Home-page: UNKNOWN
+Author: Mohga Emam
+Author-email: mohgasolimane@gmail.com
+License: MIT
+Description: Including the most crucial financial fraud detection scenarios insipred from FATF 40 Recommendations
+Keywords: Financial Fraud,Financial Fraud Detection,Financial Fraud Monitoring,Anti Money Laundering,Anti Terrorist Financing,AML/CTF
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
