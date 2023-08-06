@@ -1,0 +1,34 @@
+python-dateutil
+jsonschema
+
+[:python_version < "3.7"]
+dataclasses
+
+[:python_version < "3.8"]
+typing_extensions
+
+[apispec]
+apispec
+
+[fast-dateparsing]
+ciso8601
+
+[fast-uuid]
+fastuuid
+
+[fast-validation]
+fastjsonschema
+
+[test]
+apispec_webframeworks
+apispec[yaml]
+black==22.8.0
+flake8
+flask
+isort
+mypy
+pytest-ordering
+pytest
+tox-gh-actions
+tox
+types-python-dateutil
