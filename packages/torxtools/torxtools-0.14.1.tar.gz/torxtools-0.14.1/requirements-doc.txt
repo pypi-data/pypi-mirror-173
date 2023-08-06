@@ -1,0 +1,6 @@
+setuptools
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-htmlhelp
+sphinxcontrib-napoleon
+torxtools
