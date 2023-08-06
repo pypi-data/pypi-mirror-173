@@ -1,0 +1,14 @@
+README.md
+setup.py
+imagem_processamento/__init__.py
+imagem_processamento.egg-info/PKG-INFO
+imagem_processamento.egg-info/SOURCES.txt
+imagem_processamento.egg-info/dependency_links.txt
+imagem_processamento.egg-info/requires.txt
+imagem_processamento.egg-info/top_level.txt
+imagem_processamento/processing/__init__.py
+imagem_processamento/processing/combination.py
+imagem_processamento/processing/transformation.py
+imagem_processamento/utils/__init__.py
+imagem_processamento/utils/io.py
+imagem_processamento/utils/plot.py
