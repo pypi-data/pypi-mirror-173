@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "dictdatabase"
+version = "2.0.0"
+repository = "https://github.com/mkrd/DictDataBase"
+description = "Easy-to-use database using dicts"
+authors = ["Marcel Kröker <kroeker.marcel@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers=[
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Intended Audience :: Developers",
+	"Programming Language :: Python",
+	"Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Brotli = "^1.0.9"
+orjson = "^3.8.0"
+
+[tool.poetry.group.dev.dependencies]
+snakeviz = "^2.1.1"
+pycodestyle = "^2.9.1"
+super-py = "^0.4.2"
+pyinstrument = "^4.3.0"
+pytest-cov = "^4.0.0"
+path-dict = "^3.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
