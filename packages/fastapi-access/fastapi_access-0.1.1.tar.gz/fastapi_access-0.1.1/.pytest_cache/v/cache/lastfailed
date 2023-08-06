@@ -1,0 +1,3 @@
+{
+  "tests/test_rule.py::test_lte_rule_fail": true
+}
