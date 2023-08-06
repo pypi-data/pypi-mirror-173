@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyrsc/__init__.py
+pyrsc.egg-info/PKG-INFO
+pyrsc.egg-info/SOURCES.txt
+pyrsc.egg-info/dependency_links.txt
+pyrsc.egg-info/top_level.txt
+pyrsc/src/util.py
