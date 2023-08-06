@@ -1,0 +1,5 @@
+numpy>=1.15
+munch>=2.0.0
+
+[test]
+pytest
