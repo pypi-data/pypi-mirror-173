@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: HeartsGym
+Version: 0.41
+Summary: AI Gym for the card game Hearts
+Home-page: https://github.com/some45bucks/HeartsGym
+Download-URL: https://github.com/some45bucks/HeartsGym/archive/refs/tags/V_041.tar.gz
+Author: Jacob Haight
+Author-email: jacobrhaight@gmail.com
+License: MIT
+Keywords: Hearts,AI,Gym,CardGame
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
