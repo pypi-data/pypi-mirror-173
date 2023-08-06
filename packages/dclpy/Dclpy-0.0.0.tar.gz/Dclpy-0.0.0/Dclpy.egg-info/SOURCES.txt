@@ -1,0 +1,8 @@
+README.md
+setup.py
+Dclpy.egg-info/PKG-INFO
+Dclpy.egg-info/SOURCES.txt
+Dclpy.egg-info/dependency_links.txt
+Dclpy.egg-info/top_level.txt
+dclpy/dclpy.c
+dclpy/dclpy_wrapper.c
