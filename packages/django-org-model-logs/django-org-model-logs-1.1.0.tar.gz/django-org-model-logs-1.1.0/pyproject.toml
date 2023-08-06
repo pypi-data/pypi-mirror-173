@@ -1,0 +1,14 @@
+[build-system]
+requires = ['setuptools>=40.8.0', 'wheel']
+build-backend = 'setuptools.build_meta:__legacy__'
+
+[tool.poetry]
+name = "django-org-model-logs"
+version = "1.1.0"
+description = "A Django app to log actions and communications about models."
+authors = ["DBCA OIM <asi@dbca.wa.gov.au>"]
+license = "Apache-2.0"
+
+packages = [
+    { include = "org_model_logs" }
+]
