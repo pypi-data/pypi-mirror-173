@@ -1,0 +1,16 @@
+
+[tool.poetry]
+name = "nlptranslatetk"
+version = "1.0.0"
+description = "translates texts"
+authors = ["wayfaring-stranger <zw6p226m@duck.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
