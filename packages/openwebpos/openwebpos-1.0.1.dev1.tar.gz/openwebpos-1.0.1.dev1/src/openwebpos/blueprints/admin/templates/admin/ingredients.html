@@ -1,0 +1,82 @@
+{% extends 'layouts/grid.html' %}
+
+
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">Ingredients</span>
+                    {% if ingredients %}
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Unit</th>
+                                <th>Active</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for ingredient in ingredients %}
+                                <tr>
+                                    <td>{{ ingredient.name }}</td>
+                                    <td>{{ ingredient.price }}</td>
+                                    <td>{{ ingredient.unit }}</td>
+                                    <td>
+                                        <a href="{{ url_for('admin.toggle_ingredient', ingredient_id=ingredient.id) }}">
+                                            <i class="material-icons {{ 'green-text' if ingredient.active else 'red-text' }}">
+                                                {{ 'check' if ingredient.active else 'close' }}
+                                            </i>
+                                        </a>
+                                    </td>
+                                <td>edit/delete</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p class="center-align">No Ingredients Available</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fixed-action-btn">
+        <a href="#addIngredientModal" class="btn-floating btn-large yellow accent-4 modal-trigger">
+            <i class="large material-icons black-text">add</i>
+        </a>
+    </div>
+
+    <div id="addIngredientModal" class="modal rounded">
+        <div class="modal-content">
+            <h4 class="center-align">ADD {{ title }}</h4>
+            <form action="" method="POST">
+                {{ form.hidden_tag() }}
+                <div class="row">
+                    <div class="col s12 m6 input-field">
+                        {{ form.name.label() }}
+                        {{ form.name(class="validate") }}
+                    </div>
+                    <div class="col s6 m3 input-field">
+                        {{ form.unit.label() }}
+                        {{ form.unit(class="validate") }}
+                    </div>
+                    <div class="col s6 m3 input-field">
+                        {{ form.price.label() }}
+                        {{ form.price(class="validate") }}
+                    </div>
+                </div>
+                <div class="center-align">
+                    {{ form.submit(class="btn yellow accent-4 black-text") }}
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'layouts/base.html' %}
+
+{% from 'macros/user_interface.html' import clickableCard %}
+
+{% block main %}
+
+    <div class="grid-container">
+        <div class="order-section">
+            {% include 'pos/_order_section.html' %}
+        </div>
+        <div class="menu-section">
+            <div class="menu-view">
+                <div class="row my0">
+                    {% for menu_type in menu_types %}
+                        <div class="col s12 m4">
+                            <div class="card rounded">
+                                <a href="{{ url_for('pos.order_menu_type', order_id=order.id, menu_type_id=menu_type.id) }}">
+                                    <div class="card-content">
+                                        <span class="card-title center-align black-text">{{ menu_type.name }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

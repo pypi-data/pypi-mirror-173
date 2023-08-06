@@ -1,0 +1,66 @@
+<div class="order-view grey">
+    <table class="highlight">
+        <thead>
+        <tr>
+            <th class="right-align">QT</th>
+            <th class="center-align">Item</th>
+            {#            <th class="right-align">Price</th>#}
+            <th class="right-align">Edit</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for order_item in order_items %}
+            <tr>
+                <td class="right-align">{{ order_item.quantity }}</td>
+                <td class="left-align flow-text pl1">{{ order_item.menu_item.menu_category.name }}
+                    - {{ order_item.menu_item.name }}</td>
+                <td class="center-align">
+                    <a href=""
+                       class="btn-small modal-trigger blue accent-4">
+                        <i class="tiny material-icons">edit</i>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="order-settings grey darken-2">
+    <div class="row mb0">
+        <div class="col s12 m4 center-align">
+            <a href="" class="btn blue-grey darken-2"><i class="material-icons">contacts</i></a>
+        </div>
+        <div class="col s12 m4 center-align">
+            <a href="" class="btn blue-grey darken-2"><i class="material-icons">discount</i></a>
+        </div>
+        <div class="col s12 m4 center-align">
+            <a href="" class="btn blue-grey darken-2"><i class="material-icons">new_label</i></a>
+        </div>
+    </div>
+</div>
+<div class="order-info blue-grey lighten-2">
+    <ul class="my0">
+        <li>
+            <pre class="my0">Sub-Total: <span class="right">{{ order.order_subtotal() }}</span></pre>
+        </li>
+        <li>
+            <pre class="my0">Discount: <span class="right">00.00</span></pre>
+        </li>
+        <li>
+            <pre class="my0">Tax(8.25%):
+                <span class="right">{{ '%0.2f' | format(order.order_tax_total()|float) }}</span>
+            </pre>
+        </li>
+        <li>
+            <pre class="my0">Total: <span
+                    class="right">{{ '%0.2f' | format(order.order_total()|float) }}</span></pre>
+        </li>
+    </ul>
+</div>
+<div class="order-payout center blue-grey lighten-2">
+    <a href="{{ url_for('pos.invoice_order', order_id=order.id) }}"
+       class="btn green waves-effect waves-light rounded modal-trigger">
+        {{ '%0.2f' | format(order.order_total()|float) }}
+    </a>
+</div>
