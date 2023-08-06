@@ -1,0 +1,18 @@
+[project]
+name = "Nevia_ArashRezaei"
+version = "0.1"
+authors = [
+  { name="Arash Rezaei Nevisi", email="arashrezaei96@gmail.com" },
+]
+description = "Forward Modeling of Wave Propagation"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ArashRezaei/Nevia"
+"Bug Tracker" = "https://github.com/ArashRezaei/Nevia/issues"
