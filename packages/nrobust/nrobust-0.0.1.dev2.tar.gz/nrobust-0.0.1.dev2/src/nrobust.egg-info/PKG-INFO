@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nrobust
+Version: 0.0.1.dev2
+Summary: Multiversal estimation for robust inference.
+Home-page: https://github.com/centre-for-care/nrobust
+Author: Charles Rahal, Daniel Valdenegro
+Author-email: charles.rahal@sociology.ox.ac.uk, daniel.valdenegro@sociology.ox.ac.uk
+License: GPLv3
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+License-File: LICENSE
+
+Multiversal estimation for robust inference.

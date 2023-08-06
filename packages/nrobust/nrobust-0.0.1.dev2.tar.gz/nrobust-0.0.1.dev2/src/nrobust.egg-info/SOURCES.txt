@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/nrobust/__init__.py
+src/nrobust/figures.py
+src/nrobust/models.py
+src/nrobust/prototypes.py
+src/nrobust/replication_data_prep.py
+src/nrobust/utils.py
+src/nrobust.egg-info/PKG-INFO
+src/nrobust.egg-info/SOURCES.txt
+src/nrobust.egg-info/dependency_links.txt
+src/nrobust.egg-info/not-zip-safe
+src/nrobust.egg-info/requires.txt
+src/nrobust.egg-info/top_level.txt
