@@ -1,0 +1,2 @@
+[nbdev]
+dcl_stats_n_plots = dcl_stats_n_plots._modidx:d
