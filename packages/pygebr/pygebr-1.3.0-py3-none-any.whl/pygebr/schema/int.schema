@@ -1,0 +1,66 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/int.schema",
+  "title": "Integer parameter",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "integer"
+    },
+    "keyword": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema"
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    },
+    "required": {
+      "type": "boolean",
+      "description": "informs whether the parameter is required or not"
+    },
+    "multiple": {
+      "type": "boolean",
+      "description": "informs whether the parameter can be informed more than once"
+    },
+    "default": {
+      "oneOf": [
+        {
+          "type": "integer",
+          "description": "Default int value"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      ]
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "literal": {
+                "type": "integer",
+                "description": "Integer value"
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "keyword",
+    "description",
+    "required",
+    "multiple"
+  ],
+  "additionalProperties": false
+}

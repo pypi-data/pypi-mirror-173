@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/flow.schema",
+  "title": "Flow",
+  "description": "A sequence of programs working on a data",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "Short title for the flow",
+      "type": "string"
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    },
+    "tags": {
+      "type": "array",
+      "description": "Array of tags for the flow",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authors": {
+      "description": "People or institutions to credit for the flow",
+      "type": "array",
+      "items": {
+        "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/person.schema"
+      }
+    },
+    "filename": {
+      "description": "last file from which the flow was read or to which it was saved",
+      "type": "string"
+    },
+    "io": {
+      "description": "list of files to connect to standard input and outputs",
+      "type": "object",
+      "properties": {
+        "stdin": {
+          "type": "string",
+          "description": "file to feed the standard input"
+        },
+        "stdout": {
+          "type": "array",
+          "description": "file to be written by the standard output",
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "enum": [
+                "w",
+                "a"
+              ]
+            }
+          ],
+          "items": false
+        },
+        "stderr": {
+          "type": "array",
+          "description": "file to be written by the standard error",
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "enum": [
+                "w",
+                "a"
+              ]
+            }
+          ],
+          "items": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "programs": {
+      "description": "List of programs",
+      "type": "array",
+      "items": {
+        "description": "A program with its status in the flow",
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "program": {
+            "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/program.schema"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "additionalProperties": false
+}

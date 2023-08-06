@@ -1,0 +1,11 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+  "description": "Expression that evaluates to parameter type",
+  "type": "object",
+  "properties": {
+    "expression": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

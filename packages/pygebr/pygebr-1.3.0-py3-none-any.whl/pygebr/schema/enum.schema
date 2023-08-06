@@ -1,0 +1,66 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/enum.schema",
+  "title": "Enum parameter",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "enum"
+    },
+    "keyword": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema"
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    },
+    "required": {
+      "type": "boolean",
+      "description": "informs whether the parameter is required or not"
+    },
+    "multiple": {
+      "type": "boolean",
+      "description": "informs whether the parameter can be informed more than once"
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "description": "Array of possible values"
+    },
+    "default": {
+      "type": "string",
+      "description": "Default options"
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "literal": {
+            "type": "string",
+            "description": "Option value"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "type",
+    "keyword",
+    "description",
+    "required",
+    "multiple",
+    "options"
+  ],
+  "additionalProperties": false
+}

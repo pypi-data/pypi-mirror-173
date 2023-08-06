@@ -1,0 +1,78 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/strings.schema",
+  "title": "Array of strings parameter",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "strings"
+    },
+    "keyword": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema"
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    },
+    "required": {
+      "type": "boolean",
+      "description": "informs whether the parameter is required or not"
+    },
+    "multiple": {
+      "type": "boolean",
+      "description": "informs whether the parameter can be informed more than once"
+    },
+    "separator": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/separator.schema"
+    },
+    "placeholder": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/placeholder.schema"
+    },
+    "regexp": {
+      "type": "string",
+      "format": "regexp",
+      "description": "regular expression to validate the string"
+    },
+    "default": {
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Default strings value"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "literal": {
+                "type": "string",
+                "description": "Array of string"
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "keyword",
+    "description",
+    "required",
+    "multiple",
+    "separator"
+  ],
+  "additionalProperties": false
+}

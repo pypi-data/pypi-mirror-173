@@ -1,0 +1,79 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/program.schema",
+  "title": "Program",
+  "description": "A command-line oriented program",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "Short title for program",
+      "type": "string"
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    },
+    "url": {
+      "description": "A URL related to the program",
+      "type": "string",
+      "format": "uri"
+    },
+    "authors": {
+      "description": "People or institutions to credit for the program",
+      "type": "array",
+      "items": {
+        "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/person.schema"
+      }
+    },
+    "executable": {
+      "description": "Basename for executable file",
+      "type": "string"
+    },
+    "io": {
+      "description": "IO behaviour for the program, concerning standard input/ouput",
+      "type": "object",
+      "properties": {
+        "stdin": {
+          "type": "boolean"
+        },
+        "stdout": {
+          "type": "boolean"
+        },
+        "stderr": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "stdin",
+        "stdout",
+        "stderr"
+      ],
+      "additionalProperties": false
+    },
+    "parallel": {
+      "description": "Parallel capabilities",
+      "type": "array",
+      "items": {
+        "enum": [
+          "none",
+          "mpi",
+          "openmp",
+          "gpu"
+        ]
+      }
+    },
+    "parameters": {
+      "description": "List of parameters",
+      "type": "array",
+      "items": {
+        "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/parameter.schema"
+      }
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "authors",
+    "executable",
+    "io"
+  ],
+  "additionalProperties": false
+}

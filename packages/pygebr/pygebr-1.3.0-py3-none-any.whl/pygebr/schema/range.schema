@@ -1,0 +1,85 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/range.schema",
+  "title": "Range parameter",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "range"
+    },
+    "keyword": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema"
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    },
+    "required": {
+      "type": "boolean",
+      "description": "informs whether the parameter is required or not"
+    },
+    "multiple": {
+      "type": "boolean",
+      "description": "informs whether the parameter can be informed more than once"
+    },
+    "default": {
+      "oneOf": [
+        {
+          "type": "number",
+          "description": "Default value"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        }
+      ]
+    },
+    "min": {
+      "type": "number",
+      "description": "minimal acceptable value (inclusive)"
+    },
+    "max": {
+      "type": "number",
+      "description": "maximal acceptable value (inclusive)"
+    },
+    "inc": {
+      "type": "number",
+      "description": "reasonable increment in value (for use in GUI)"
+    },
+    "digits": {
+      "type": "integer",
+      "description": "reasonable amount of decimal digits to show in GUI"
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "literal": {
+                "type": "number",
+                "description": "Number with a range"
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "keyword",
+    "description",
+    "required",
+    "multiple",
+    "min",
+    "max",
+    "default"
+  ],
+  "additionalProperties": false
+}

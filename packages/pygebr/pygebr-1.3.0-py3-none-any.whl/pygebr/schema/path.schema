@@ -1,0 +1,69 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/path.schema",
+  "title": "Path parameter",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "path"
+    },
+    "keyword": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema"
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    },
+    "required": {
+      "type": "boolean",
+      "description": "informs whether the parameter is required or not"
+    },
+    "multiple": {
+      "type": "boolean",
+      "description": "informs whether the parameter can be informed more than once"
+    },
+    "placeholder": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/placeholder.schema"
+    },
+    "default": {
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Default path"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "literal": {
+                "type": "string",
+                "description": "Relative or absolute path"
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "keyword",
+    "description",
+    "required",
+    "multiple"
+  ],
+  "additionalProperties": false
+}

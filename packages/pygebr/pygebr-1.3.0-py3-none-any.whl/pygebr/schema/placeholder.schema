@@ -1,0 +1,5 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/placeholder.schema",
+  "type": "string",
+  "description": "placeholder to be used in widget's entry"
+}
