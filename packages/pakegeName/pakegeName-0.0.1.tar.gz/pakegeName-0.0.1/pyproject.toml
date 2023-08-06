@@ -1,0 +1,8 @@
+[project]
+name = "pakegeName"
+version = "0.0.1"
+dependencies = [
+  "requests",
+  "pandas"
+]
+
