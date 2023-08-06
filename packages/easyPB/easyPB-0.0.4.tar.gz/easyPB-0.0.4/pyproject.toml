@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0","requests","tqdm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easyPB"
+version = "0.0.4"
+authors = [
+  { name="newrain", email="newrain_wang@163.com" },
+]
+description = "一个配置了进度条的文件拷贝，下载工具"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://gitee.com/newrain001/easy-pb"
+"Bug Tracker" = "https://gitee.com/newrain001/easy-pb/issues"

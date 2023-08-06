@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/easyPB/__init__.py
+src/easyPB/easypb.py
+src/easyPB.egg-info/PKG-INFO
+src/easyPB.egg-info/SOURCES.txt
+src/easyPB.egg-info/dependency_links.txt
+src/easyPB.egg-info/requires.txt
+src/easyPB.egg-info/top_level.txt
