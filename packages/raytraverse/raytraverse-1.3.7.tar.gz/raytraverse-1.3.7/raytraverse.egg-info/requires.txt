@@ -1,0 +1,9 @@
+craytraverse>=0.1.5
+clasp
+numpy
+scipy
+matplotlib
+tqdm
+skyfield
+shapely
+sklearn
