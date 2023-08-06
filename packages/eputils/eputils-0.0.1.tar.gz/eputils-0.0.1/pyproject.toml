@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eputils"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pika"
+]
+version = "0.0.1"
+
+[tool.setuptools.packages]
+find = {where = ["src"], include = ["*"]}
