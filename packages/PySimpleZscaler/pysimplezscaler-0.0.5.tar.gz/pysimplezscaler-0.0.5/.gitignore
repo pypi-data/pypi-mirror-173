@@ -1,0 +1,6 @@
+.idea/
+/shelf/
+/workspace.xml
+dist/
+
+*.xml
