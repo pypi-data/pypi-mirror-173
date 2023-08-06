@@ -1,0 +1,4 @@
+include a_pandas_ex_split_on_common_string/requirements.txt
+include a_pandas_ex_split_on_common_string/thirdparty.json
+include a_pandas_ex_split_on_common_string/README.MD
+include a_pandas_ex_split_on_common_string/LICENSE
