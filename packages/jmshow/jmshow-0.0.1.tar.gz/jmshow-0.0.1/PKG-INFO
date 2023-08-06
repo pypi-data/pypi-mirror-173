@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jmshow
+Version: 0.0.1
+Summary: Debugger simples
+Home-page: UNKNOWN
+Author: Jorge Martins
+Author-email: jorgemartins72@gmail.com
+License: MIT License
+Keywords: panda video
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+JMSHOW
+======
+
+Uma lib simples pra ajudar a debugar meu código python
+
+

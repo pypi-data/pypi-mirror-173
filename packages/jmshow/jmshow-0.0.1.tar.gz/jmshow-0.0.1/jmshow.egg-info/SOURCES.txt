@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+jmshow/__init__.py
+jmshow/show.py
+jmshow.egg-info/PKG-INFO
+jmshow.egg-info/SOURCES.txt
+jmshow.egg-info/dependency_links.txt
+jmshow.egg-info/requires.txt
+jmshow.egg-info/top_level.txt
