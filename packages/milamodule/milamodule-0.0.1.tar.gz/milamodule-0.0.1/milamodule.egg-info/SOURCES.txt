@@ -1,0 +1,9 @@
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+MILACALCULATOR/__init__.py
+milamodule.egg-info/PKG-INFO
+milamodule.egg-info/SOURCES.txt
+milamodule.egg-info/dependency_links.txt
+milamodule.egg-info/top_level.txt
