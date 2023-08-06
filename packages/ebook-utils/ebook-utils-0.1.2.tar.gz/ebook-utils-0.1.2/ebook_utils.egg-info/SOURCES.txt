@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ebook_utils/__init__.py
+ebook_utils/_version.py
+ebook_utils/book.py
+ebook_utils/main.py
+ebook_utils/utils.py
+ebook_utils.egg-info/PKG-INFO
+ebook_utils.egg-info/SOURCES.txt
+ebook_utils.egg-info/dependency_links.txt
+ebook_utils.egg-info/entry_points.txt
+ebook_utils.egg-info/requires.txt
+ebook_utils.egg-info/top_level.txt

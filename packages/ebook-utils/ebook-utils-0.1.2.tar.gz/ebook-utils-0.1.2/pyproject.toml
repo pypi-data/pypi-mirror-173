@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ebook-utils"
+version = "0.1.2"
+authors = [{ name = "Michele Lapolla", email = "mikee.lapo@gmail.com" }]
+description = "Simple ebook utility program"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = ["ebooklib >=0.17.1", "beautifulsoup4 >=4.11.1"]
+license = { file = "LICENCE" }
+
+[tool.setuptools.dynamic]
+readme = { file = ["README.md"] }
+
+[project.urls]
+"Homepage" = "https://gitlab.com/mikelplhts/ebook-utils"
+"Bug Tracker" = "https://gitlab.com/mikelplhts/ebook-utils/issues"
+
+[project.scripts]
+ebook-utils = "ebook_utils.main:main"
