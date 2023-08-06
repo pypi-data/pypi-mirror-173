@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: oplusclient
+Version: 1.8.3
+Home-page: https://github.com/openergy/oplusclient
+Author: Openergy team
+Author-email: contact@openergy.fr
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: French
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Topic :: Scientific/Engineering :: Physics
+License-File: LICENSE.txt
+
+# Oplusclient
+
+![GitHub](https://img.shields.io/github/license/openergy/oplusclient?color=brightgreen)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/oplusclient)
+![PyPI](https://img.shields.io/pypi/v/oplusclient)
+
+Oplusclient is a Python package providing a client for working with Openergy's Oplus platform.
+
+## Documentation
+
+The official documentation is hosted on readthedocs.io : https://oplusclient.readthedocs.io
+
+## License
+
+[Mozilla Public License Version 2.0](./LICENSE.txt)
