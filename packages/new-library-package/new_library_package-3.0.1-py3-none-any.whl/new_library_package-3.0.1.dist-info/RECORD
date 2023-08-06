@@ -1,0 +1,7 @@
+new_library_package/__init__.py,sha256=Zc5_45kNeBkKHC9Q6fNj7eB0r1Xm5SIi3bRYtRrZh44,35
+new_library_package/dummy_file.py,sha256=Xk_IWZNDZHN7YOYHeiVf09014If17i04SilQNkkK8QA,63
+new_library_package-3.0.1.dist-info/LICENSE,sha256=pu9FFXGnWIxg81Z4vMETBdMhJsXfIz6PkG2P2n6WBLU,1063
+new_library_package-3.0.1.dist-info/METADATA,sha256=9jiO0Ib5ekbPxC7FGVX2o0fdjKyYD_YBTIb0MKW8r1Q,609
+new_library_package-3.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+new_library_package-3.0.1.dist-info/top_level.txt,sha256=PLrj_UD00BmvnuMRMgr0S75km2DcHYEg6jZRUijGG58,20
+new_library_package-3.0.1.dist-info/RECORD,,
