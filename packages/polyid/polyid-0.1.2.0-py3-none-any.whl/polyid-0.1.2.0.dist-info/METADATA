@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: polyid
+Version: 0.1.2.0
+Summary: Methods to train message passing neural network models on polymer structures.
+Home-page: https://github.com/NREL/polyid
+Author: Kevin Shebek, Nolan Wilson
+Author-email: nolan.wilson@nrel.gov
+Project-URL: Source, https://github.com/NREL/polyid
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+Requires-Dist: pandas
+Requires-Dist: rdkit
+Requires-Dist: tqdm
+Requires-Dist: nfp
+Requires-Dist: shortuuid
+Requires-Dist: scikit-learn
+Requires-Dist: tensorflow (>=2)
+Requires-Dist: m2p
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NREL/polyID/master/images/polyID-logo_color-full.svg" alt="PolyID Logo" width="400"/>
+</p>
+
+PolyID<sup>TM</sup> provides a framework for building, training, and predicting polymer properities using graph neural networks. The codes leverages [nfp](https://pypi.org/project/nfp/), for building tensorflow-based message-passing neural networ, and [m2p](https://pypi.org/project/m2p/), for building polymer structures.  To understand and use the pipeline, the following examples have been provided:
+
+1. [Building polymer structures](https://github.nrel.gov/InversePolymerDesign/polyID/blob/master/examples/example_generate_polymer_structures.ipynb): `examples/example_generate_polymer_structures.ipynb`
+2. [Checking domain of validity](https://github.nrel.gov/InversePolymerDesign/polyID/blob/master/examples/example_determine_domain-of-validity.ipynb): `examples/example_determine_domain-of-validity.ipynb`
+3. [Training a graph neural network](https://github.nrel.gov/InversePolymerDesign/polyID/blob/master/examples/example_generate_and_train_models.ipynb): `examples/example_generate_and_train_models.ipynb`
+4. [Predicting with the trained model](https://github.nrel.gov/InversePolymerDesign/polyID/blob/master/examples/example_predict_with_trained_models.ipynb): `examples/example_predict_with_trained_models.ipynb` 
+
+Details for the methods are forthcoming in an upcoming manuscript.
