@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pymyplot
+Version: 0.1.1
+Summary: Correction of usefull plotting setup for matplotlib
+Author: Kyoungseoun Chung
+Author-email: kchung@student.ethz.ch
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: matplotlib (>=3.6.0,<4.0.0)
