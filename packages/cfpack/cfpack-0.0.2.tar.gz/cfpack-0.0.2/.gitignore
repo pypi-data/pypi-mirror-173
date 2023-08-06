@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+*_save
+.vscode
+.DS_Store
+matplotlib/fontlist-v*.json
+matplotlib/tex.cache/
