@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: DataStats
+Version: 0.2
+Summary: This library consists of obtaining data from an open database "statsbombpy".
+Home-page: https://github.com/pauloo1010/Paulo-Inigo-Progra
+Author: Iñigo Ugarte & Paulo Cagigal
+Author-email: inigo.ugarte@alumni.mondragon.edu
+License: MIT
+Download-URL: https://github.com/pauloo1010/Paulo-Inigo-Progra/archive/refs/tags/v_02.tar.gz
+Description: UNKNOWN
+Keywords: Dataset,Easy-working,Open
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
