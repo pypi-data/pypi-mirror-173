@@ -1,0 +1,14 @@
+pandas_nlp/__init__.py,sha256=VDw8CVYHv6znZxaBtwrpZKDpcITdL4VfEXPMOeajn2E,129
+pandas_nlp/cache.py,sha256=hNpfEYZh5lUyANd4HzHUzL53n1qk6qObIb53IFL-Q90,571
+pandas_nlp/model_manager.py,sha256=ANWIp7F0cervfiT3sU7-c_T0lV2b6DRjuIzYcnUY5R4,1027
+pandas_nlp/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pandas_nlp/models/fasttext_language_model.py,sha256=PC6moNR7x09ncUjoGllgFD6DWl5l5wHn0tZZeOmRG94,999
+pandas_nlp/models/language_model.py,sha256=i9HIAoeaXgLBlFDCkoTIDtI4lKXMhTyctVqa0sqmkgA,354
+pandas_nlp/models/sentence_model.py,sha256=ndi6M5RIT6zSzI3K5jokAJS9DkubKvCEcOYWtEv2MxI,336
+pandas_nlp/models/spacy_model.py,sha256=3d-qnUaXZDRUyWY_27vxMMA5ukICUjY5AlQPiWVSJEk,935
+pandas_nlp/models/vector_model.py,sha256=aIMHOfCdYwuVry9C--CiTsVfFVCI1dqztQVfLlc4aqk,949
+pandas_nlp/series_accessor.py,sha256=8sQI0tMV40zoRai1Jx0r4pdX13YiVG-5-DGsUk9uzWw,2319
+pandas_nlp-0.6.0.dist-info/LICENSE,sha256=M0nVs9bactT9pSL3-XRNgcke_mVVd1i-4KXySzTqo3M,1081
+pandas_nlp-0.6.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+pandas_nlp-0.6.0.dist-info/METADATA,sha256=CSQDO68faWX21THN4Y-cOPH9XzsWO1F29zK64KZT9lw,3700
+pandas_nlp-0.6.0.dist-info/RECORD,,
