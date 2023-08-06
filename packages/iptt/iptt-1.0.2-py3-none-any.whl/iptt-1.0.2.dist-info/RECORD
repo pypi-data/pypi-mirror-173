@@ -1,0 +1,15 @@
+iphttpd_apps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iphttpd_apps/helloworld.py,sha256=bhu3vkgzslME1Yyr0grFRFrAYG-wND8DyyEu3JI90HQ,497
+iptt/__init__.py,sha256=fixnWWBse0c93RAAEhjyCxH03Hz5yUYF_V-fw4BbLSc,189
+iptt/cli.py,sha256=nH-Tk3qkA5W9oFtNCXa5h5j1wg4i2_gdAnd48XY1xEA,1358
+iptt/entrypoints.py,sha256=NLj_F8NRugcRXLK_jr3nhWblZTqjWp6nrGd0JxqG2zI,1938
+iptt/iphttp/__init__.py,sha256=sYwY3usPCrl1hf9lE3ygO74f7uDYRZqVeENj3nSS0Rk,162
+iptt/iphttp/client.py,sha256=iU9PO1ay14WJmA35TFKjwarHtqBtnBhIAbO_97dIp6I,2589
+iptt/iphttp/interface.py,sha256=EsiWZDcmrmft-F8-JMUCcllXKiJE_12A1uXLaUyCgX0,1448
+iptt/iphttp/request.py,sha256=FlVob_TocpYx6yErBP0m-ZYWFID0bf6UaDsGfWW5ueE,5893
+iptt/iphttp/server.py,sha256=m-jwKUghf-IcPIFOKVJhObJ-M_7y5tjng4s-EQsLv6Q,2938
+iptt-1.0.2.dist-info/METADATA,sha256=8f5u1iupGfk59O0X5WMLzaff9N8pTfbRM2FzkrJRMsY,3514
+iptt-1.0.2.dist-info/WHEEL,sha256=Ni9JGQXk2T4q02tFVwTZ-iAb8m9R1cjnSLMaE4VH1rg,92
+iptt-1.0.2.dist-info/entry_points.txt,sha256=RWzsoNUL6bDTvBHv2yVH7vkDzv9VmRrBfK2wptIiO0E,94
+iptt-1.0.2.dist-info/top_level.txt,sha256=Be3uRhgz4QGYatO0-I__gE7v5LppgXgjUt5iq_D148Y,18
+iptt-1.0.2.dist-info/RECORD,,
