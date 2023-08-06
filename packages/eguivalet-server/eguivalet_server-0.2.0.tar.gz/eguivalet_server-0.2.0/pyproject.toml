@@ -1,0 +1,178 @@
+[build-system]
+requires = ['poetry-core>=1.0.0', 'wheel',]
+build-backend = 'poetry.core.masonry.api'
+
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+omit = [
+    '.tox/*',
+    'tests/*',
+    '**/main.py',  # No point in including code that cannot be tested anyway
+    '**/openapi_extension.py',
+]
+
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = ''  # https://www.flake8rules.com/
+max-complexity = 15  # Info: https://en.wikipedia.org/wiki/Cyclomatic_complexity
+per-file-ignores = """\
+# F401: Ignore "unused" imports
+# F403: Ignore star imports
+# F405: Ignore names from star imports
+# E131: Ignore unaligned continuation lines from method chains
+# E712: Ignore SQLAlchemy boolean comparisons
+__init__.py:F401,F403,F405
+crud.py:E131,E712\
+"""
+
+
+[tool.mypy]
+plugins = ['sqlmypy',]
+
+
+[tool.poetry]
+name = 'eguivalet_server'
+version = '0.2.0'
+description = "A server implementation for the EguiValet messaging service."
+
+authors = ["Lari Liuhamo <lari.liuhamo+pypi@gmail.com>",]
+maintainers = [
+    "Juha Järvinen <juha.3.jarvinen@tuni.fi>",
+    "Lari Liuhamo <lari.liuhamo+pypi@gmail.com>",
+]
+
+include = ['CHANGELOG.md', 'LICENSE', 'logging.conf']
+license = 'MIT'
+readme = 'README.md'
+
+homepage = 'https://pypi.org/project/5G00EV25-3001_server/'
+repository = 'https://github.com/Diapolo10/5G00EV25-3001_server'
+documentation = 'https://github.com/Diapolo10/5G00EV25-3001_server/tree/main/docs'
+
+keywords = [
+    'api',
+    'communication',
+    'network',
+    'networking',
+    'python3',
+    'restful',
+]
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Environment :: Web Environment',
+    'Framework :: FastAPI',
+    'Intended Audience :: Developers',
+    'Intended Audience :: Education',
+    'Intended Audience :: Information Technology',
+    'License :: OSI Approved :: MIT License',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Programming Language :: SQL',
+    'Topic :: Communications :: Chat',
+    'Topic :: Security',
+    'Typing :: Typed',
+]
+
+
+[tool.poetry.dependencies]
+python = '^3.8'
+fastapi = {version='^0.85.1', extras=['all',]}
+uvicorn = '^0.18.3'
+SQLAlchemy = '^1.4.42'
+SQLAlchemy-Utils = '^0.38.2'
+python-multipart = '^0.0.5'
+requests = '^2.28.1'
+tomli = '^2.0.1'
+
+
+[tool.poetry.dev-dependencies]
+coverage = {version = '^6.2', extras = ['toml',]}
+flake8 = '^4.0.1'
+mypy = '^0.982'
+pylint = '^2.15.4'
+pyproject-flake8 = '^4.0.1'
+pytest = '^7.0.1'
+pytest-cov = '^4.0.0'
+sqlalchemy-stubs = '^0.4.0'
+tox = '^3.25.1'
+tox-gh-actions = '^2.9.1'
+types-sqlalchemy-utils = '^1.0.1'
+
+
+[tool.poetry.urls]
+"Source code" = 'https://github.com/Diapolo10/5G00EV25-3001_server'
+"Tracker" = 'https://github.com/Diapolo10/5G00EV25-3001_server/issues'
+"Changelog" = 'https://github.com/Diapolo10/5G00EV25-3001_server/blob/main/CHANGELOG.md'
+
+
+[tool.pylint.'MASTER']
+extension-pkg-whitelist = [
+    'pydantic',
+]
+
+
+[tool.pylint.'FORMAT']
+good-names = [
+    'db',
+]
+
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 120
+disable = [
+    # https://vald-phoenix.github.io/pylint-errors/
+    'R0903',  # Too few public methods
+]
+
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = """
+--doctest-modules \
+--cov=./ \
+--cov-append \
+--cov-report html:tests/reports/coverage-html \
+--cov-report xml:tests/reports/coverage.xml \
+--ignore=docs/
+"""
+testpaths = [
+    'tests',
+]
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py38, py39, py310
+isolated_build = True
+
+[gh-actions]
+python =
+    3.8: py38
+    3.9: py39
+    3.10: py310
+
+[gh-actions:env]
+PLATFORM =
+    ubuntu-latest: linux
+    macos-latest: macos
+    windows-latest: windows
+
+[testenv]
+passenv = GITHUB_*
+deps =
+    coverage
+    coveralls[toml]
+    pytest
+    pytest-cov
+    wheel
+commands =
+    coverage run -m pytest
+"""
