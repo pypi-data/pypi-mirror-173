@@ -1,0 +1,3 @@
+[console_scripts]
+metrics-render=metrics_render.app:main
+
