@@ -1,0 +1,16 @@
+sagemaker>=2.110.0
+
+[test]
+black
+coverage
+flake8
+mock
+pydocstyle
+pytest
+pytest-cov
+sagemaker-pytorch-training
+sagemaker-pytorch-inference
+torch-model-archiver
+tox
+wheel
+pydevd-pycharm~=213.6777.50
