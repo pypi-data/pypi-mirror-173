@@ -1,0 +1,15 @@
+sparrow_cvat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparrow_cvat/__main__.py,sha256=wkAKBDEc_Z2pQF2OKsiVrJxkNawrAoY5krPg8bamNK8,352
+sparrow_cvat/api.py,sha256=nitFkOPHZEmh-oieP7xqYdaUODddym6D7CqR_L61SKw,812
+sparrow_cvat/auth.py,sha256=5Ia0tgtScACihB6zhYV8Bb4M0FviT06PFJV_rdmvPPM,907
+sparrow_cvat/cloud_storage.py,sha256=wH2DytbfU-hEa5eD4J9qiDgLh3TYMMWh6-W4EIhbvJw,67
+sparrow_cvat/tasks.py,sha256=yCOJiJaRXx50p5xqSqkkOsy9ITMycqp1gUEvE3fl-fo,515
+sparrow_cvat/dataset_manifest/__init__.py,sha256=C8uveZsl70yey0nkPkO2MddakclsJDMXxkhOBIptYBM,113
+sparrow_cvat/dataset_manifest/core.py,sha256=U-DkVnPhLglNVqTu8fYnxAv3gRpcsmoBtcz1nrqGhpE,28019
+sparrow_cvat/dataset_manifest/create.py,sha256=_4a1aBzhApW3mN6i3xixRRf0fi4wxAUN5j_QGFdwvOs,3719
+sparrow_cvat/dataset_manifest/utils.py,sha256=R4xLScLT78e_GJCSpPuWuZjeIKOufjahny_i7DBulvk,8275
+sparrow_cvat-0.1.0.dist-info/METADATA,sha256=7lgaLAKs7P5KvfAYV56jpsmntMTfFn80_oG9Zp_CYVM,569
+sparrow_cvat-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sparrow_cvat-0.1.0.dist-info/entry_points.txt,sha256=VSjZuXASRKKydim7QMQIKBpcCOrOfXZUwb_6eOqWjUw,60
+sparrow_cvat-0.1.0.dist-info/top_level.txt,sha256=5TrVFTj2avx7NtEUaOfg6rfgcvtPZU89ctRaQ-mu1GI,13
+sparrow_cvat-0.1.0.dist-info/RECORD,,
