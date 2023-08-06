@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: PettingZoo
+Version: 1.22.1
+Summary: Gymnasium for multi-agent reinforcement learning
+Home-page: https://pettingzoo.farama.org/
+Author: Farama Foundation
+Author-email: contact@farama.org
+Keywords: Reinforcement Learning,game,RL,AI,gymnasium
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7, <3.11
+Description-Content-Type: text/markdown
+Provides-Extra: atari
+Provides-Extra: classic
+Provides-Extra: butterfly
+Provides-Extra: mpe
+Provides-Extra: sisl
+Provides-Extra: other
+Provides-Extra: tests
+Provides-Extra: all
+License-File: LICENSE.txt
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/Farama-Foundation/PettingZoo/master/pettingzoo-text.png" width="500px"/>
+</p>
+
+PettingZoo is a Python library for conducting research in multi-agent reinforcement learning, akin to a multi-agent version of [Gymnasium](https://github.com/Farama-Foundation/Gymnasium).
+
+The documentation website is at [pettingzoo.farama.org](https://pettingzoo.farama.org) and we have a public discord server (which we also use to coordinate development work) that you can join here: [https://discord.gg/jfERDCSw](https://discord.gg/nhvKkYa6qX)
+
+## Environments
+
+PettingZoo includes the following families of environments:
+
+* [Atari](https://pettingzoo.farama.org/environments/atari/): Multi-player Atari 2600 games (cooperative, competitive and mixed sum)
+* [Butterfly](https://pettingzoo.farama.org/environments/butterfly): Cooperative graphical games developed by us, requiring a high degree of coordination
+* [Classic](https://pettingzoo.farama.org/environments/classic): Classical games including card games, board games, etc.
+* [MPE](https://pettingzoo.farama.org/environments/mpe): A set of simple nongraphical communication tasks, originally from https://github.com/openai/multiagent-particle-envs
+* [SISL](https://pettingzoo.farama.org/environments/sisl): 3 cooperative environments, originally from https://github.com/sisl/MADRL
+
