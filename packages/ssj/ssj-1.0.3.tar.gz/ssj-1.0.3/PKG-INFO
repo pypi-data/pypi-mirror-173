@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ssj
+Version: 1.0.3
+Summary: Servidor ou gestor de dados em JSON.
+Home-page: UNKNOWN
+Author: Jonathan N. Nagel
+Author-email: jinnascimento81@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: ssj
+Platform: UNKNOWN
+Requires: dropbox
+Requires: tinydb
+Requires: nested_dict
+Requires: cryptography
