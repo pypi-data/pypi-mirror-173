@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/helloworld/__init__.py
+src/helloworld/test.py
+src/i_am_helloworld.egg-info/PKG-INFO
+src/i_am_helloworld.egg-info/SOURCES.txt
+src/i_am_helloworld.egg-info/dependency_links.txt
+src/i_am_helloworld.egg-info/top_level.txt
