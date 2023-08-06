@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+msensortool.egg-info/PKG-INFO
+msensortool.egg-info/SOURCES.txt
+msensortool.egg-info/dependency_links.txt
+msensortool.egg-info/top_level.txt
