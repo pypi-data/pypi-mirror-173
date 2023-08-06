@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "microscopemetrics"
+version = "0.1.0"
+description = "A package providing analysis routines to measure the performance of micrsocopes used in biomedical research"
+authors = ["Julio Mateos Langerak <julio.matoes-langerak@igh.cnrs.fr>"]
+maintainers = [
+    "Julio Mateos Langerak <julio.matoes-langerak@igh.cnrs.fr>"
+]
+license = "GPL-3.0-only"
+readme = "README.md"
+homepage = "https://github.com/MontpellierRessourcesImagerie/microscope-metrics"
+repository = "https://github.com/MontpellierRessourcesImagerie/microscope-metrics"
+documentation = "https://github.com/MontpellierRessourcesImagerie/microscope-metrics/tree/master/docs"
+keywords = ["microscopy", "metrology"]
+
+[tool.pytest.ini_options]
+addopts = "--cov"
+testpaths = [
+    "tests"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8 <3.11"
+scikit-image = "^0.19.3"
+scipy = "^1.5.4"
+pandas = "^1.1.5"
+pydantic = "^1.7.3"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^6.2.0"
+pytest-cov = "^4.0.0"
+tox = "^3.26.0"
+
+[tool.poetry.group.dev.dependencies]
+blacked = "^0.1.0-alpha.4"
+poetry = "^1.2.2"
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
