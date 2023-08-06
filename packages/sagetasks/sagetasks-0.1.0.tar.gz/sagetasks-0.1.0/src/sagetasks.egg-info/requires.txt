@@ -1,0 +1,17 @@
+prefect>=2.0
+synapseclient
+sevenbridges-python
+pandas
+
+[dev]
+pre-commit
+tox
+sphinx-rtd-theme
+black
+isort
+
+[testing]
+setuptools
+pytest
+pytest-cov
+pytest-mock
