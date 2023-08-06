@@ -1,0 +1,15 @@
+django_ses_plus/__init__.py,sha256=_N-v6ghcU3NZByE85pXGfvqpkmieJwoADMYg1ujAKeY,62
+django_ses_plus/admin.py,sha256=ExqXPcVFBA28L3nubhzZcdxmnnQdYEtiaxwk-JqdHl0,946
+django_ses_plus/apps.py,sha256=u-aez9Au297ZW7Kd1wJjWjjOhCZza-PB_0AVvR2Ql0k,140
+django_ses_plus/backends.py,sha256=9fk1nWPvEUFardTtv-uUX7ZxcOua1SdjlXpQoA-xoyY,79
+django_ses_plus/models.py,sha256=lHcwr8sHA37fcs5eTmisDpi6-Q1z3pHklczUv0PVJIE,1979
+django_ses_plus/settings.py,sha256=qfALHU3jX-4lyPt3yZn3JWSSPrTYezSOo4OVME3UfiU,405
+django_ses_plus/tasks.py,sha256=BUpHC1p1siVU0ekpzQAxJHvwf5EgwraC6OlAnJqBUuU,1357
+django_ses_plus/utils.py,sha256=7McJkAEOgc7imBWmGKo6pzf48rsBJMJ2Qz0gKTAGcFc,198
+django_ses_plus/migrations/0001_initial.py,sha256=3p7dPtfx788QbOyvL-4HmyAGxKX3cWSzj-OJUibHYW4,1337
+django_ses_plus/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ses_plus-1.0.0.dist-info/LICENSE,sha256=qK0xscP0DcpahBGTUbj6jdyGjt13-tio6_bY8tFvpK4,11324
+django_ses_plus-1.0.0.dist-info/METADATA,sha256=XMWSuqr3FwIesiSgaNkWLL4SjWCfQvrHj_pqq7YTIsA,2750
+django_ses_plus-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_ses_plus-1.0.0.dist-info/top_level.txt,sha256=BluUhGsR6-SePo8AkSBOYb3LWyrN9LXhucUbHTEbIv8,16
+django_ses_plus-1.0.0.dist-info/RECORD,,
