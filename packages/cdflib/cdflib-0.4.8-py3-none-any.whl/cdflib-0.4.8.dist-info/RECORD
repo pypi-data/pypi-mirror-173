@@ -1,0 +1,16 @@
+benchmarks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+benchmarks/benchmarks.py,sha256=oJBt-2RpJa5fc_MnsGP17SBiXIRLePcPMpjUtC0p4KI,706
+cdflib/CDFLeapSeconds.txt,sha256=teXCXfCh65q6cBp_S75sLBHYrFLFjM801FaRdLrCZ8A,2118
+cdflib/__init__.py,sha256=PeQu-A9xWXPU2jx6nF3ZADIiU9B74egLzLrsAxCIgJw,600
+cdflib/_version.py,sha256=OvGzXhwPx1BjADk4GTh_av1WVEgCqMCw47VJY95f6Q8,176
+cdflib/cdf_to_xarray.py,sha256=k2mMKRWGguj7Q4pmymrzXlInq3THKMO36oYyThdsbiA,37417
+cdflib/cdfread.py,sha256=CofidMS75qWn4OmNz7Zh6iHrmJ_lhsY87LOPGMOGcBc,107965
+cdflib/cdfwrite.py,sha256=U4MfQQ1Vj1T_f70-u3hcx_Q7AtyqguVmPFMv37UXWsc,106197
+cdflib/epochs.py,sha256=Hx_b0aZnDsf7W0BjnYvTDIooQdIt1PmERwPwUoJ9GKg,72047
+cdflib/epochs_astropy.py,sha256=63G75SL-eSzqCHa129-dAuzYwWoJ6anyZcAIz4TW7Gw,10581
+cdflib/xarray_to_cdf.py,sha256=wcLaLTUh-GppZfp5KNmhrvtzLXIaXJl7RbCfT6cx4jc,31219
+cdflib-0.4.8.dist-info/LICENSE,sha256=1SK37h25LCtG9iM7-OBtHJw8Y1mokv-zQMpKJoBW62w,1066
+cdflib-0.4.8.dist-info/METADATA,sha256=rZPa_66CNPLHeIy9bq_vgmp7aeSM0c-2ASQSk3aKW9Y,2594
+cdflib-0.4.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdflib-0.4.8.dist-info/top_level.txt,sha256=qSiszBzgqHHkNlbOLxX00iBcyy2X1xqSirJ3sTt1cqk,18
+cdflib-0.4.8.dist-info/RECORD,,
