@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+DARKIN7X/DARKIN7X.py
+DARKIN7X/__init__.py
+DARKIN7X.egg-info/PKG-INFO
+DARKIN7X.egg-info/SOURCES.txt
+DARKIN7X.egg-info/dependency_links.txt
+DARKIN7X.egg-info/requires.txt
+DARKIN7X.egg-info/top_level.txt
