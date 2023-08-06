@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/delpytools/__init__.py
+src/delpytools/main.py
+src/delpytools.egg-info/PKG-INFO
+src/delpytools.egg-info/SOURCES.txt
+src/delpytools.egg-info/dependency_links.txt
+src/delpytools.egg-info/top_level.txt
