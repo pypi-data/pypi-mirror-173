@@ -1,0 +1,15 @@
+vofotensors/__init__.py,sha256=j5YPrws-b6nYAIBKHeOgiFp6t2NomADWesLvzUdrUwo,164
+vofotensors/abc.py,sha256=03Q9PlgtlBGhJJPWwgXHJNHxg0Sx9VyOGjX06nYVch4,384
+vofotensors/basic_tensors.py,sha256=YzjH5R9oqEiDMkxdH8dS7YusqOe95mIvsuhG25vXI9c,325
+vofotensors/deviators_2.py,sha256=-c0Wmw9DOSDzEl2wPLI79iWCz1d0ZeJeG11DCb-xuPE,2919
+vofotensors/deviators_4.py,sha256=uZwSnAiHefq7joYl1hi_nCIRNHGDsc41K7yG6CuZBH8,4547
+vofotensors/fabric_tensors.py,sha256=2SdMdqySoFJtRRKQXlO170WV5E9l_IDY8qcYd5PqiVI,2411
+vofotensors/notation.py,sha256=pqwl5z6XVd5lbh_KV9WIfSdj36o1DyUREkZxK_Zyr9k,597
+vofotensors/numbers.py,sha256=EnvhY-bCY7nrb8O6prhwjzM0qgsdV7EbRsToHhTDlX0,165
+vofotensors/substitutions.py,sha256=j_MxxGC_TefId3MYu_ZbqYhzPETo9Q_8cS8Gc517_Ic,900
+vofotensors/utils.py,sha256=hLUDCxWUsVKt1pZn4t-D4vghp2gHRsftDIEDPtaygdM,1542
+vofotensors-1.0.5.dist-info/LICENSE,sha256=6tTMtbWCtUbQziKWG7qUYpzKyBuIq0Hb8FVAnwC8J6s,1072
+vofotensors-1.0.5.dist-info/METADATA,sha256=01LaAu8D4Fyc-x139tgs52aiN1ZtGSr_eLBjreva3YA,4400
+vofotensors-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+vofotensors-1.0.5.dist-info/top_level.txt,sha256=zeGzg2WaSo_n-mWoGhjtmltZf3LkoXNbhtdpqWKfN5Y,12
+vofotensors-1.0.5.dist-info/RECORD,,
