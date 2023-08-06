@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+pyimg_process/Methods.py
+pyimg_process/__init__.py
+pyimg_process.egg-info/PKG-INFO
+pyimg_process.egg-info/SOURCES.txt
+pyimg_process.egg-info/dependency_links.txt
+pyimg_process.egg-info/requires.txt
+pyimg_process.egg-info/top_level.txt

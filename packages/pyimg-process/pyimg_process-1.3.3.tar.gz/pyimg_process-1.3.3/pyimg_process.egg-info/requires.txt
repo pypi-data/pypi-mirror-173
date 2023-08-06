@@ -1,0 +1,4 @@
+pypandoc
+numpy
+matplotlib
+opencv-python
