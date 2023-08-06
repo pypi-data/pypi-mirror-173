@@ -1,0 +1,37 @@
+# sphinx build folder
+_build
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+
+# hatch
+dist
+
+# OS generated files
+.DS_Store?
+
+# Editor backup files
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mypy
+.mypy_cache/
+
+# ANTLR4
+.antlr

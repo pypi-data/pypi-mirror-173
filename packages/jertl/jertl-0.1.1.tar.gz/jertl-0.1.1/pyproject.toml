@@ -1,0 +1,70 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jertl"
+description = 'A minimum viable package for processing structured data'
+readme = "README.md"
+requires-python = ">=3.6"
+license = "Apache-2.0"
+keywords = ["JSON", "development", "structured data", "pattern matching"]
+authors = [
+  { name = "Ray Pelletier", email = "68929475+RaymondPelletier@users.noreply.github.com" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Interpreters",
+  "Topic :: Other/Nonlisted Topic",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Programming Language :: Other",
+  # Pick your license as you wish
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    'antlr4-python3-runtime == 4.11.1',
+    'dataclasses == 0.8; python_version == "3.6"'
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://jertl.readthedocs.io/en/latest/"
+Issues = "https://github.com/RaymondPelletier/jertl/issues"
+Source = "https://github.com/RaymondPelletier/jertl"
+
+[tool.hatch.version]
+path = "jertl/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "pytest"
+]
+[tool.hatch.envs.default.scripts]
+cov = "pytest {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["36", "37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "jertl/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
