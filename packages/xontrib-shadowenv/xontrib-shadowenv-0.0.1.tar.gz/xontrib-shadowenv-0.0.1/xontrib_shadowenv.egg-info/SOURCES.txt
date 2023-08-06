@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+xontrib/shadowenv.xsh
+xontrib_shadowenv.egg-info/PKG-INFO
+xontrib_shadowenv.egg-info/SOURCES.txt
+xontrib_shadowenv.egg-info/dependency_links.txt
+xontrib_shadowenv.egg-info/requires.txt
+xontrib_shadowenv.egg-info/top_level.txt
