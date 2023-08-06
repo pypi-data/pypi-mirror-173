@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: img_processing
+Version: 0.0.4
+Summary: Project created by Felipe and supported by https://github.com/tiemi for her students in DIO.
+Home-page: https://github.com/felipefporto
+Author: Felipe Ferreira Porto
+Author-email: felipe.porto@fatec.sp.gov.br
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# img_processing
+
+Description. 
+The package img_processing is used to:
+	- Processing:
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+		- Utils:
+		- Read Image
+		- Save Image
+		- Plot Image
+		- Plot Result
+		- Plot Histogram
+		-
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install img_processing
+
+```bash
+pip install img_processing
+```
+
+## Author
+Felipe F. Porto
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
