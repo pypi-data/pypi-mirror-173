@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-purchase-workflow
+Version: 16.0.20221027.0
+Summary: Meta package for oca-purchase-workflow Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-purchase-discount (<16.1dev,>=16.0dev)
+
+UNKNOWN
+
