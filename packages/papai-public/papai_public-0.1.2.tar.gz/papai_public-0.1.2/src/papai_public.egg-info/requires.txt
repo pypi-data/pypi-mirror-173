@@ -1,0 +1,7 @@
+pyarrow==9.0.0
+minio==7.1.9
+loguru==0.5.3
+azure-storage-blob==12.14.0
+boto3==1.24.96
+google-cloud-storage
+numpy==1.23.4
