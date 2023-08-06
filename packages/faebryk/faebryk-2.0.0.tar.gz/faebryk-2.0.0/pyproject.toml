@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faebryk"
+version = "2.0.0"
+authors = [
+    { name="ioannis_iteng", email="ioannis@iteng.nl" },
+]
+description = "Open-source software-defined EDA"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+	"networkx",
+	"numpy",
+	"matplotlib",
+	"sexpdata",
+    "black",
+    "click",
+    "typing-extensions",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/faebryk/faebryk "
+"Bug Tracker" = "https://github.com/faebryk/faebryk/issues "
+
+[tool.isort]
+profile = "black"
+
+[tool.autoflake]
+remove-all-unused-imports = true
+ignore-init-module-imports = true
+expand-star-imports = true
+# leaves rhs for stateless functions too, which is not really clear
+# could add remove-rhs-for-unused-variables, but that might break a lot of stuff
+# so for now we keep this false
+remove-unused-variables = false
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
