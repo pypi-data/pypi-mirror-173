@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mdw
+Version: 1.1.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0
+Requires-Dist: h5py
+Requires-Dist: multipledispatch
+Requires-Dist: zmq
+Requires-Dist: ruamel.yaml
+Requires-Dist: kafka-python
+Requires-Dist: hdf5-zcl
+
+UNKNOWN
+
