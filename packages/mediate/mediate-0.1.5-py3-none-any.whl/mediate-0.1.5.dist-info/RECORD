@@ -1,0 +1,10 @@
+mediate/__init__.py,sha256=rudbmDa-BmZfs04uPqbVBFPZ8LTB4qG5pg13ZGkkCco,35
+mediate/middleware.py,sha256=feYW7l-XJe8a0hgcmeZrXF_96fIKNxufmWoEkpgeq2E,1606
+mediate/partial.py,sha256=BGGZHvt5Q8kJdLgQJZ-G9qTAdkCCP3m-6ZIkFEp8B58,411
+mediate/protocols.py,sha256=Eh_7-jU0RbDnDMSQvR3H8UChF3yqgwo5XA1DsKYD_NA,237
+mediate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mediate/typing.py,sha256=qDKD6-Wj--Ab0w4-FGqlmVO9ULliDVsLllKbatWUrLQ,109
+mediate-0.1.5.dist-info/LICENSE,sha256=GnW03-0adM_f-nbemR0-poxBk-zJQWQB3t8yAMMFMhY,1067
+mediate-0.1.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+mediate-0.1.5.dist-info/METADATA,sha256=5DG31QldbvHjGJt2BiYyqPyGuVyXv2n2cjOTh8Zjjgw,1286
+mediate-0.1.5.dist-info/RECORD,,
