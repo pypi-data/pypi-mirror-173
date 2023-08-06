@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gillespie.egg-info/PKG-INFO
+gillespie.egg-info/SOURCES.txt
+gillespie.egg-info/dependency_links.txt
+gillespie.egg-info/top_level.txt
+src/__init__.py
+src/_gillespie.py
