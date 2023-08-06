@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-mahjong-utils
+Version: 0.1.5
+Summary: 
+Home-page: https://github.com/ssttkkl/nonebot-plugin-mahjong-utils
+License: MIT
+Author: ssttkkl
+Author-email: huang.wen.long@hotmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: mahjong-utils (>=0.1.0a4,<0.2.0)
+Requires-Dist: nonebot2 (>=2.0.0rc1,<3.0.0)
+Project-URL: Repository, https://github.com/ssttkkl/nonebot-plugin-mahjong-utils
+Description-Content-Type: text/plain
+
+nonebot-plugin-mahjong-utils
+========
