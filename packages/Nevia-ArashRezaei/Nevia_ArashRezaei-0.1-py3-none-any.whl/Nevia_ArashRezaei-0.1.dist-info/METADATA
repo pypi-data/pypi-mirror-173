@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: Nevia-ArashRezaei
+Version: 0.1
+Summary: Forward Modeling of Wave Propagation
+Home-page: https://github.com/ArashRezaei/Nevia
+Author: Arash Rezaei Nevisi
+Author-email: Arash Rezaei Nevisi <arashrezaei96@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/ArashRezaei/Nevia
+Project-URL: Bug Tracker, https://github.com/ArashRezaei/Nevia/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: screeninfo
+
+# Nevia
+An open source framework for Forward Modeling of Wave Propagation
+
+Nevia is an easy to use, robust and accurate Python (For Matlab distrubution visit here) package, that mainly developed by Arash Rezaei Nevisi.
+We hope to become the most widely used modeling package in the geophysical world.
+
+We strongly invite the contributors to extend our unsolved problems mentioned below:
+- Forward modeling using the Spectral or Finite element method.
+- Forward modeling for 3D models.
+- Include variable grid distance (Especially the sub-gridding method) to our Finite-Difference engine.
+- Include Topography in our Finite-Difference engine.
+- Improve PML absorbing layer in our Finite-Difference engine.
+- Elastodynamics (First-order) equations.
+- Any other suggestions.
+
+For further discussion for developers contact us via Email : arashrezaei96@gmail.com
+
+### Please cite us
+
+
