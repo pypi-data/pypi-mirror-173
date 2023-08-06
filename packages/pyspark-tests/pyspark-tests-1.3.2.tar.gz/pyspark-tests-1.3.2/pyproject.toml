@@ -1,0 +1,10 @@
+[project]
+name = "pyspark-tests"
+version = "1.3.2"
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
