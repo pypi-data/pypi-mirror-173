@@ -1,0 +1,7 @@
+README.md
+setup.py
+u_remote/__init__.py
+u_remote.egg-info/PKG-INFO
+u_remote.egg-info/SOURCES.txt
+u_remote.egg-info/dependency_links.txt
+u_remote.egg-info/top_level.txt
