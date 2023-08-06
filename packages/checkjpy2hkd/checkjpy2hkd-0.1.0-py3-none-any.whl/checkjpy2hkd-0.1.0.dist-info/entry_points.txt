@@ -1,0 +1,3 @@
+[console_scripts]
+checkjpy2hkd=checkjpy2hkd.__main__:main
+
