@@ -1,0 +1,8 @@
+dataverk_airflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataverk_airflow/init_containers.py,sha256=mY-x1CcPJgDHWJUCVhc0cj0KI4n3AVNXYsEr_Qii0Zc,768
+dataverk_airflow/knada_operators.py,sha256=ZpZD2uOLAZvFSBge5URt5rqxEiBNfTAOE2jTOdhNvXI,9653
+dataverk_airflow/notifications.py,sha256=dF0bZpofZF6ozkAOnfhICHlV34TDWaRL9i8sgO_Nax4,1227
+dataverk_airflow-0.4.4.dist-info/METADATA,sha256=O9ztvbQ4q-HTOzOTrj1b6QjUkpHd-anv1bSwxTolqaU,480
+dataverk_airflow-0.4.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dataverk_airflow-0.4.4.dist-info/top_level.txt,sha256=Lb9G8hKYMBSBRX7jDxS1KxTxg4Llr83Y37P9JyeWD08,17
+dataverk_airflow-0.4.4.dist-info/RECORD,,
