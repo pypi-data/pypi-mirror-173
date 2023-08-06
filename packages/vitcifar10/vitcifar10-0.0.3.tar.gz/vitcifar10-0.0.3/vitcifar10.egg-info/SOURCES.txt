@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/inference.py
+src/randomaug.py
+src/test.py
+src/train.py
+src/vitcifar10.py
+vitcifar10.egg-info/PKG-INFO
+vitcifar10.egg-info/SOURCES.txt
+vitcifar10.egg-info/dependency_links.txt
+vitcifar10.egg-info/requires.txt
+vitcifar10.egg-info/top_level.txt
