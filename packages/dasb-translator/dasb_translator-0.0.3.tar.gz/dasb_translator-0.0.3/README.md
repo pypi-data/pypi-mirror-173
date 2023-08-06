@@ -1,0 +1,39 @@
+# Dasb_Translator
+
+A CLI translation tool by reading the clipboard using deepl translator.
+
+
+
+# 大帅比翻译助手
+
+一个通过读取剪切板，并将翻译内容呈现于命令行的翻译助手，翻译引擎为deepl，在读论文文献时很有帮助。
+
+![](screenshot.png)
+
+# 项目契机
+
+自己是科研狗又习惯使用 Linux 作为个人机，但 Linux 系统上的论文翻译助手使用起来都不太方便，先后用了好几个，没有用到满意的。
+
+偶然间看到了这个项目： [CBDict](https://github.com/olixu/CBDict) ，这个项目在我的 i3 桌面下非常好用，但是因为只能翻译单词、翻译引擎经常出现翻译错误、翻译引擎的 API 时常出现不能响应的 bug 等诸多问题，我决定在这个项目的基础上着手自己编写一个以 Deepl 作为翻译引擎的翻译助手。
+
+本项目的代码非常短，和 CBDict 一样，都是写出来方便自己读论文的小玩具。欢迎各位提 issue 或者 pull requests，但我会不会维护就不一定了。
+
+# 安装
+
+Step 1 安装依赖
+
+```shell
+sudo apt install xclip
+```
+
+Step 2 安装大帅比翻译助手
+
+```shell
+sudo pip install dasb_translator
+```
+
+Step 3 启动大帅比翻译助手
+
+```shell
+dasb_translator
+```
