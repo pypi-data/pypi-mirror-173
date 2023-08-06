@@ -1,0 +1,15 @@
+bibliograph/ParsedShorthand.py,sha256=ELjrnsdgTO5oZfCmKf2yND4d4Lk2xZY27IFLLw8kU_k,32911
+bibliograph/Shorthand.py,sha256=ym9ql_ixyEBfKEQtKY4O7FtIPQrGushZwDFC496zHV0,94177
+bibliograph/TextNet.py,sha256=Q-pYC4hngFbd3X6kddnIlOmCXo5FMgDTfFzsFWIqZGc,96336
+bibliograph/__init__.py,sha256=cGThJ7ut4YJXbvY0f1F3aWx29BHOTSN1AmHvwGoE_HY,587
+bibliograph/alias_generators.py,sha256=1NA5dLQpzIIK2ZJx-bSWdhEUC7fzUXxna9S5n-653c0,10528
+bibliograph/core.py,sha256=H9BiHbpFMLsRlzzVfywN2gYeKk7gA0WRWcvZqDAD_8I,55261
+bibliograph/entry_parsing.py,sha256=OdNGDM8BEZmEGN7mJdt8y5tu3a9qPAwEuyW4Pi1Oko0,20541
+bibliograph/syntax_parsing.py,sha256=Q08QfOzxAplqnE6TowbEWZMeUK3lOZ5OnF-hN_vJNhM,18468
+bibliograph/tests.py,sha256=_158AWS-StrCtW4COeFqBxHUD40Xnp3_Onh-Us_Idrw,48402
+bibliograph/util.py,sha256=3OvkVXNzLOw79T2j5qeEvc_5NcwLI-FzYt4fre7-RW8,28982
+bibliograph-0.1.0.dist-info/LICENSE,sha256=9FK2lWgNu0f3oIJjJnimR7IS8GiCWJUeynz8VVcygaA,1089
+bibliograph-0.1.0.dist-info/METADATA,sha256=Y4sHoqhv0wegC12I_HIJCGadXNSW8PuoSXS_lCIj3_M,8881
+bibliograph-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bibliograph-0.1.0.dist-info/top_level.txt,sha256=T2sEf1fR2jsbw41thifW8od36yG4paYzmqbAJ1Xv50k,12
+bibliograph-0.1.0.dist-info/RECORD,,
