@@ -1,0 +1,8 @@
+README.md
+setup.py
+Vigilant.egg-info/PKG-INFO
+Vigilant.egg-info/SOURCES.txt
+Vigilant.egg-info/dependency_links.txt
+Vigilant.egg-info/top_level.txt
+vigilant/__init__.py
+vigilant/main.py
