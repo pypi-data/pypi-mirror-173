@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+nie/__init__.py
+nie/aliases.py
+nie/client.py
+nie/loggers.py
+pynie.egg-info/PKG-INFO
+pynie.egg-info/SOURCES.txt
+pynie.egg-info/dependency_links.txt
+pynie.egg-info/entry_points.txt
+pynie.egg-info/top_level.txt
