@@ -1,0 +1,7 @@
+perceval/backends/opnfv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perceval/backends/opnfv/_version.py,sha256=6xk-4AN_QSnSsrk47ZteKaPgPRhlVGGd6CMY1JblpSc,91
+perceval/backends/opnfv/functest.py,sha256=9t8CRdTXLnfTl0qk4EYSR_LRlCBHqT9_5EWiUw4oijQ,7996
+perceval_opnfv-0.2.4rc2.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+perceval_opnfv-0.2.4rc2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+perceval_opnfv-0.2.4rc2.dist-info/METADATA,sha256=vSy7My7aJlKjmSfKz5CVdiQa0rVpqFoWhzhC2WtGmv0,4008
+perceval_opnfv-0.2.4rc2.dist-info/RECORD,,
