@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+install-requirements.txt
+setup.py
+heptapod_import_roundup/VERSION
+heptapod_import_roundup/__init__.py
+heptapod_import_roundup/importer.py
+heptapod_import_roundup/main.py
+heptapod_import_roundup.egg-info/PKG-INFO
+heptapod_import_roundup.egg-info/SOURCES.txt
+heptapod_import_roundup.egg-info/dependency_links.txt
+heptapod_import_roundup.egg-info/entry_points.txt
+heptapod_import_roundup.egg-info/requires.txt
+heptapod_import_roundup.egg-info/top_level.txt
