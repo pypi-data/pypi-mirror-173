@@ -1,0 +1,12 @@
+LICENCE
+README.md
+pyproject.toml
+src/procore_notification_service_client/__init__.py
+src/procore_notification_service_client/message_property.py
+src/procore_notification_service_client/notification_mode.py
+src/procore_notification_service_client/notification_service_request.py
+src/procore_notification_service_client/notification_service_sender.py
+src/procore_notification_service_client.egg-info/PKG-INFO
+src/procore_notification_service_client.egg-info/SOURCES.txt
+src/procore_notification_service_client.egg-info/dependency_links.txt
+src/procore_notification_service_client.egg-info/top_level.txt
