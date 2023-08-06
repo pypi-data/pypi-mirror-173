@@ -1,0 +1,68 @@
+{% extends 'layouts/grid.html' %}
+
+
+{% block content %}
+
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align">Ingredients for {{ menu_item.menu_category.name }} - {{ menu_item.name }}</span>
+                    {% if menu_item_ingredients %}
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for menu_item_ingredient in menu_item_ingredients %}
+                                <tr>
+                                    <td>{{ menu_item_ingredient.ingredient.name }}</td>
+                                    <td>{{ menu_item_ingredient.quantity }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p class="center-align">No Ingredients for this item</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="fixed-action-btn">
+        <a href="#addMenuItemIngredientModal" class="btn-floating btn-large yellow modal-trigger">
+            <i class="large material-icons black-text">add</i>
+        </a>
+    </div>
+
+
+
+    <div id="addMenuItemIngredientModal" class="modal rounded">
+        <div class="modal-content">
+            <h4 class="center-align">Add Ingredient to {{ menu_item.menu_category.name }} {{ menu_item.name }}</h4>
+            <form action="" method="POST">
+                {{ form.hidden_tag() }}
+                <div class="row mb0">
+                    <div class="col s12 m6 input-field">
+                        {{ form.ingredient_id.label(class="active") }}
+                        {{ form.ingredient_id(class="browser-default") }}
+                    </div>
+                    <div class="col s12 m6 input-field">
+                        {{ form.quantity.label() }}
+                        {{ form.quantity() }}
+                    </div>
+                </div>
+                <div class="center-align">
+                    {{ form.submit(class="btn yellow black-text") }}
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

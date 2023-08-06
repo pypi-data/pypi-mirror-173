@@ -1,0 +1,118 @@
+{% extends 'layouts/grid.html' %}
+
+{% from 'macros/user_interface.html' import floatingButtonModal %}
+
+
+{% block content %}
+
+    <div class="row">
+        <div class="col s12 m10 offset-m1">
+            <div class="card rounded">
+                <div class="card-content">
+                    <span class="card-title center-align black-text">{{ title }}</span>
+                    {% if menu_items %}
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>ShortName</th>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Active</th>
+                                <th>Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for menu_item in menu_items %}
+                                <tr>
+                                    <td>{{ menu_item.short_name }}</td>
+                                    <td>{{ menu_item.name }}</td>
+                                    <td>{{ menu_item.description }}</td>
+                                    <td>{{ menu_item.price }}</td>
+                                    <td>
+                                        <a href="{{ url_for('admin.toggle_menu_item', menu_item_id=menu_item.id) }}"
+                                           class="btn-floating btn-small white">
+                                            <i class="material-icons {{ 'green-text' if menu_item.active else 'red-text' }}">
+                                                {{ 'check' if menu_item.active else 'close' }}
+                                            </i>
+                                        </a>
+                                    </td>
+                                    <td class="center-align">
+                                        <a href="{{ url_for('admin.edit_menu_item', menu_item_id=menu_item.id) }}"
+                                           class="btn-floating btn-small waves-effect waves-light blue">
+                                            <i class="material-icons">edit</i>
+                                        </a>
+                                        <a href="{{ url_for('admin.menu_item_ingredients', menu_item_id=menu_item.id) }}"
+                                           class="btn-floating btn-small waves-effect waves-light yellow">
+                                            <i class="material-icons black-text">read_more</i>
+                                        </a>
+                                        <a href="#deleteMenuItem{{ menu_item.id }}"
+                                           class="btn-floating btn-small waves-effect waves-light red modal-trigger">
+                                            <i class="material-icons">delete</i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <div id="deleteMenuItem{{ menu_item.id }}" class="modal rounded red">
+                                    <div class="modal-content">
+                                        <h4 class="center-align white-text">Delete {{ menu_item.name }}?</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-close waves-effect waves-light btn-flat left">
+                                            Cancel
+                                        </a>
+                                        <a href="{{ url_for('admin.delete_menu_item', menu_item_id=menu_item.id) }}"
+                                           class="waves-effect waves-green btn-flat">Agree</a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    {% else %}
+                        <p class="center-align">No menu items found.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="addMenuItemModal" class="modal rounded">
+        <div class="modal-content">
+            <h4 class="center-align">Add Menu Item</h4>
+            <form action="" method="POST">
+                {{ form.hidden_tag() }}
+                <div class="row">
+                    <div class="col s12 input-field">
+                        {{ form.menu_category_id.label }}
+                        {{ form.menu_category_id(class="browser-default") }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m4 input-field">
+                        {{ form.short_name.label }}
+                        {{ form.short_name(class="validate") }}
+                    </div>
+                    <div class="col s12 m6 input-field">
+                        {{ form.name.label }}
+                        {{ form.name(class="validate") }}
+                    </div>
+                    <div class="col s12 m2 input-field">
+                        {{ form.price.label }}
+                        {{ form.price(class="validate") }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 input-field">
+                        {{ form.description.label }}
+                        {{ form.description(class="validate") }}
+                    </div>
+                </div>
+                <div class="center-align">
+                    {{ form.submit(class="btn rounded yellow black-text waves-effect waves-light hoverable") }}
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {{ floatingButtonModal('addMenuItemModal', 'add', 'yellow accent-4', 'black-text') }}
+
+{% endblock %}
