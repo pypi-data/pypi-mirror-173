@@ -1,0 +1,17 @@
+pytorch_template/__init__.py,sha256=2vPUDIbfqiauYIZQGSYWHuZjW6hgz2rjXPuRpaU3XGc,91
+pytorch_template/datasets/__init__.py,sha256=WpOrRHRdvdryNLg6_2mf_oSMp0bN8BjM2mjttTayshc,35
+pytorch_template/datasets/mnist.py,sha256=6fJRF5uT6GtlnniqPcigojJcU1fTqd0PgW1GHDJ0gbg,634
+pytorch_template/metrics/__init__.py,sha256=SIyvz6NfF2Jpd8hgzHnvmaaOcHb_a3Sb3NrAa8jRxko,60
+pytorch_template/metrics/accuracy.py,sha256=F0npJ-eU1HIVvll-gWhtzW8YtrfOTlB5dnx_yK9Yp6E,779
+pytorch_template/metrics/average.py,sha256=lOaRTvXB_C8orjiCmQQxJnXHZTpDvd6odOUFN7zcRrQ,448
+pytorch_template/models/__init__.py,sha256=C8c_okYGU7VwCF0JRtG5pLKqLT-TATfbHutdK_adkp0,25
+pytorch_template/models/lenet.py,sha256=AwvyswuxbN8OZFvebrkR93ojpCxl2zj_chMCelY-j0c,997
+pytorch_template/optim.py,sha256=-V_uq3v0x8fDAk9EbBrXgscud3RD16RZS--HBOxBpCA,112
+pytorch_template/trainers/__init__.py,sha256=_4l9zJWk14Y6p02mCnsszZmFJg_ujHZDVHxqWcYAO_g,29
+pytorch_template/trainers/trainer.py,sha256=nY4tLcq6NIiKxc4guRXH2mZKqb8Hcn1Fa2Z2NOebzpo,3804
+pytorch_template/utils/__init__.py,sha256=LKWkqOl3tBYgBtXDORnie6ElHz4b7ir9zP1R6YApH5Q,227
+pytorch_template/utils/conf.py,sha256=mwon0drmK1bkdS4pt1lQCmbOQ6-1pCoBPQiFGG_TBY8,1961
+pytorch_template/utils/utils.py,sha256=vsU9g2WBcsp4pv7i11jDFu_0z1DSffU1zV5FxSTE7Po,666
+pytorch_template-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pytorch_template-0.1.0.dist-info/METADATA,sha256=anwg7zs7tp3JUSAZYAK_eDFFk0AgqIetVxFsKSXufKc,653
+pytorch_template-0.1.0.dist-info/RECORD,,
