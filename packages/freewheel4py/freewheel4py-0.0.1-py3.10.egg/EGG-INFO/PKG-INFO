@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: freewheel4py
+Version: 0.0.1
+Summary: make working with the freewheel publisher api easy.
+Home-page: https://github.com/dmars12345/freewheel4py
+Author: Dylan Marsella
+Author-email: dylanmarsella1@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+peep the module
+
+

@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/freewheel4py.egg-info/PKG-INFO
+src/freewheel4py.egg-info/SOURCES.txt
+src/freewheel4py.egg-info/dependency_links.txt
+src/freewheel4py.egg-info/requires.txt
+src/freewheel4py.egg-info/top_level.txt
