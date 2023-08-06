@@ -1,0 +1,3 @@
+bthci>=0.0.35
+pyshark>=0.5.3
+xpycommon>=0.0.14
