@@ -1,0 +1,18 @@
+[build-system]
+requires = [
+  "setuptools",
+  "poetry-core>=1.0.0",
+  "gurobipy>=9.5.0",
+  "Cython>=0.29.21",
+]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "gurobipy_helper"
+version = "0.0.1a10"
+description = "A library adding some functionality to the Gurobi library."
+authors = ["Nico Strasdat <nstrasdat@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+build = "build_lib.py"
+repository = "https://github.com/wotzlaff/gurobipy_helper"
