@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: asgi-background
+Version: 0.2.1
+Summary: Background tasks for any ASGI web framework
+Home-page: https://github.com/adriangb/asgi-background
+License: MIT
+Keywords: web-framework,http,asgi
+Author: Adrian Garcia Badaracco
+Author-email: adrian@adriangb.com
+Requires-Python: >=3.7,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: anyio (>=3.6.1)
+Requires-Dist: asgi-lifespan-middleware (>=0.1.3)
+Requires-Dist: typing-extensions (>=4.2.0); python_version < "3.10"
+Project-URL: Documentation, https://github.com/adriangb/asgi-background
+Project-URL: Repository, https://github.com/adriangb/asgi-background
+Description-Content-Type: text/markdown
+
+# asgi-background
+
+Background tasks for any ASGI framework.
+
+## Example (Starlette)
+
+```python
+from asgi_background import BackgroundTaskMiddleware, BackgroundTasks
+from starlette.applications import Starlette
+from starlette.middleware import Middleware
+from starlette.requests import Request
+from starlette.responses import Response
+from starlette.routing import Route
+
+
+async def task(num: int) -> None:
+    await anyio.sleep(1)
+    print(num)
+
+
+async def endpoint(request: Request) -> Response:
+    tasks = BackgroundTasks(request.scope)
+    await tasks.add_task(task, 1)
+    return Response()
+
+
+app = Starlette(
+    routes=[Route("/", endpoint)],
+    middleware=[Middleware(BackgroundTaskMiddleware)]
+)
+```
+
+## Execution
+
+Unlike Starlette, we do not execute background tasks within the ASGI request/response cycle.
+Instead we schedule them in a `TaskGroup` that is bound to the application's lifespan.
+The only guarantee we make is that background tasks will not block (in the async sense, not the GIL sense) sending the response and that we will (try) to wait for them to finish when the application shuts down.
+Just like with Starlette's background tasks, you should only use these for short lived tasks, they are not a durable queuing mechanisms like Redis, Celery, etc.
+For context, the default application shutdown grace period in Kubernetes is 30 seconds, so 30 seconds is probably about as long as you should allow your tasks to run.
+
