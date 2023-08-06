@@ -1,0 +1,8 @@
+codeowners_backstage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeowners_backstage/__main__.py,sha256=eoHiTm9CWxknZJgVFkX3HyPXjv3hi7iw5EWzQExGYSk,1665
+codeowners_backstage/backstage_user_groups.py,sha256=bmOQ6ZBEDH4DrBnPhYIMjSLzuxeFyjLlQM6ur6AqetU,1646
+codeowners_backstage/codeowners_file.py,sha256=0obJYzhbD7MFkBBglL_43UzH_CVVW-jyfIkIIWB3XQo,359
+codeowners_backstage-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+codeowners_backstage-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+codeowners_backstage-0.1.1.dist-info/METADATA,sha256=p31MHA0qFVXIhvRd2dC_923yFVuMlXvb68wxeJrSbQk,985
+codeowners_backstage-0.1.1.dist-info/RECORD,,
