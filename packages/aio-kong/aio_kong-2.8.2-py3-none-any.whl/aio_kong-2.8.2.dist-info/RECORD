@@ -1,0 +1,16 @@
+kong/__init__.py,sha256=4UoFz2mV5aFdPBUnWdjxVEbi6aqdEfsK6wFHPsScnh8,54
+kong/auths.py,sha256=d-l-3fLDvUErXcW1y04noffHXuZ-t2-6uaefc2ayHqw,2051
+kong/certificates.py,sha256=J-NjzyXcrFlh_HX8qLhAL0cVfjriEc_osFM-M1gGlSE,270
+kong/cli.py,sha256=z1vRAAKexuB24Vmg2tsFA0vl5flH9CcI9SxWmoxl-eQ,1811
+kong/client.py,sha256=isi2-4r81bY58jbrKln--Wy1cdo6YD91H1urHgn8RzI,3755
+kong/components.py,sha256=fylJ2rSp1X_j4JipNUdXdOSLyHSmjpCwtcyuEfTaSB0,4487
+kong/consumers.py,sha256=y4vXHyGfeih3KJARMAMdUU2c6rQm4x3fIuS7CImKgNo,2562
+kong/plugins.py,sha256=8_yuwd9ly0RvlQj33bcPVfT8jyHOcsL1x4GSbCeXyNQ,2415
+kong/routes.py,sha256=yKuqTZ9Dh6ZVztdMbwfLHBlH99IJ7TpxxmWT08KAfEM,1361
+kong/services.py,sha256=__OITv4qB9oqW-PXayu-5vgciG6kbRJ03kY2QVR82VQ,2432
+kong/snis.py,sha256=IUBCV9eqJiSDlD6N64h-VKZItAPWJc9Xr0M4aOIl9lQ,690
+kong/utils.py,sha256=5o2zlmkJzHEHhacSGCiQ26-zdXNkKI9Y2j4vxprR7zw,910
+aio_kong-2.8.2.dist-info/LICENSE,sha256=EoHxNd1ly7t_8uzEQiWVO2jSiheGTvKXCOIs9Yw2PEw,1461
+aio_kong-2.8.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aio_kong-2.8.2.dist-info/METADATA,sha256=sn68b_ZYCWTUm4dDfk2vYxjOzGb9T2yUoNZu-SqvoE0,3786
+aio_kong-2.8.2.dist-info/RECORD,,
