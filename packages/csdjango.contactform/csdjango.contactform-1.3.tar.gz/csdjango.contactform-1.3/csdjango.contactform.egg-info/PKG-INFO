@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: csdjango.contactform
+Version: 1.3
+Summary: i18n ready contact form
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+# Introduction
+
+Strongly based on the James Bennett / ubernostrum's contact_form
+
+1.3 (2022-10-28)
+----------------
+
+- README format changed [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
+- typing error [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
+- README in markdown format [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
+- python3 django 4.1 adaptation [Urtzi Odriozola <uodriozola@codesyntax.com>]
+
+
+
+1.2 (2019-07-23)
+----------------
+
