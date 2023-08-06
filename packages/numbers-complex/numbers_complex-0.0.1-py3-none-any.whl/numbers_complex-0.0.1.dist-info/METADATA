@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: numbers-complex
+Version: 0.0.1
+Summary: Simple Calculator
+Home-page: UNKNOWN
+Author: Anubhav Tyagi
+Author-email: anubhav1tyagi@gmail.com
+License: UNKNOWN
+Keywords: python,video,stream,video stream,camera stream,sockets
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+A Simple Calculator for testing packages lifecycle
+
+
