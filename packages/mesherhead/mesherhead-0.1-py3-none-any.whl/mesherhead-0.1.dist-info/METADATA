@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: mesherhead
+Version: 0.1
+Summary: mesher is get network ip adress
+Author: zilan
+Author-email: 1453376081@qq.com
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
