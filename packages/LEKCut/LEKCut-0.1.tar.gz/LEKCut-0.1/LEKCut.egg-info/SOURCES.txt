@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+LEKCut.egg-info/PKG-INFO
+LEKCut.egg-info/SOURCES.txt
+LEKCut.egg-info/dependency_links.txt
+LEKCut.egg-info/not-zip-safe
+LEKCut.egg-info/requires.txt
+LEKCut.egg-info/top_level.txt
+lekcut/__init__.py
+lekcut/deepcut.py
+lekcut/model/__init__.py
+lekcut/model/deepcut.onnx
