@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: netlink-sap-monitor
+Version: 0.0.3
+Summary: SAP Monitoring
+Home-page: https://gitlab.com/netlink_python/netlink-sap-monitor
+License: MIT
+Keywords: sap monitoring
+Author: Bernhard Radermacher
+Author-email: bernhard.radermacher@netlink-consulting.com
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Requires-Dist: netlink-core
+Requires-Dist: netlink-logging
+Project-URL: Repository, https://gitlab.com/netlink_python/netlink-sap-monitor
+Description-Content-Type: text/markdown
+
+# netlink-sap-monitor
+
+## checks:
+
+- transactional_rfc_calls
+- updater_queue
