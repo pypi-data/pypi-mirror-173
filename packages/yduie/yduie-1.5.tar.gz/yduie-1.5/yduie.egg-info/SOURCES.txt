@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirement.txt
+setup.py
+yduie/__init__.py
+yduie/uie_predict.py
+yduie.egg-info/PKG-INFO
+yduie.egg-info/SOURCES.txt
+yduie.egg-info/dependency_links.txt
+yduie.egg-info/requires.txt
+yduie.egg-info/top_level.txt
+yduie/utils/__init__.py
+yduie/utils/downloader.py
