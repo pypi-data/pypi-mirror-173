@@ -1,0 +1,10 @@
+macrostrat/database/__init__.py,sha256=qI2fiX4bMQD0KEIYI5HXikZ2kJZxMFsu9iDStabah4c,5782
+macrostrat/database/mapper/__init__.py,sha256=4-fQzIQ8VuXomzqB4MHxl4lfbYdIZSpp1m5bghCdSnU,4665
+macrostrat/database/mapper/base.py,sha256=6KEIeEfgf0o4dQLgoGycnZuiAo8ffF9NXDaNUAk2OW4,686
+macrostrat/database/mapper/cache.py,sha256=3CQzO4lgUU8W8dPVkaHtZ7WeY73LeA7ojdn39C8TGSY,2272
+macrostrat/database/mapper/utils.py,sha256=73TGBYSvNuo6SEAt2nblZKzfW9dIwi7JlU8SwzOj4xQ,3070
+macrostrat/database/postgresql.py,sha256=Q9hd-v2ZspDtT9P22rC6hxyxD4Y87U7SzOsmGYnUgI4,1630
+macrostrat/database/utils.py,sha256=yVu8nHL2E3dWextpSRKAmGn46x6MRN1V_YNZJdjlziQ,8063
+macrostrat_database-2.0.0.dev1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+macrostrat_database-2.0.0.dev1.dist-info/METADATA,sha256=oniFZYdaoGavFyM7GS7KVmPvUYiMU8R4P42psxUDjY4,900
+macrostrat_database-2.0.0.dev1.dist-info/RECORD,,
