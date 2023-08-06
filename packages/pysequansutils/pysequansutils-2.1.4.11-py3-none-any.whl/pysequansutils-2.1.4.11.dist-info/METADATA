@@ -1,0 +1,257 @@
+Metadata-Version: 2.1
+Name: pysequansutils
+Version: 2.1.4.11
+Summary: Tools for the Sequans Monarch 2 platform.
+Home-page: https://iot.microchip.com/avr-iot-cellular-mini
+Author: Microchip Technology
+Author-email: support@microchip.com
+License: Sequans Proprietary / MIT
+Keywords: Microchip,Cellular,Modem,AVR-IoT,Sequans
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: pyedbglib (>=2.22.*)
+Requires-Dist: pykitcommander (>=2.7*)
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+# pysequansutils
+pysequansutils provides tools for the Sequans Monarch 2 platform which is used on Microchip cellular IoT development boards.
+
+![PyPI - Format](https://img.shields.io/pypi/format/pysequansutils)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pysequansutils)
+![PyPI - License](https://img.shields.io/pypi/l/pysequansutils)
+
+## Usage
+pysequansutils can be used as a command-line interface or a library
+
+pysequansutils comes bundled with a dup file for a full upgrade of the Sequans Monarch 2 platform.  This dup file can be found in the fw folder of the package.
+
+## Command-line interface
+pysequansutils is a multi-layered command-line interface meaning that there are several commands each
+with its own actions and options.
+
+Getting help:
+```bash
+pysequans --help
+```
+Getting help for specific command (in this example the `upgrade` command):
+```bash
+pysequans upgrade --help
+```
+The amount of logging is controlled by the -v/--verbose option:
+```bash
+pysequans -v info
+```
+Possible log levels are `debug`, `info`, `warning`, `error`, `critical`.  Default is `info`.
+
+Print version info and exit:
+```bash
+pysequans -V
+```
+Print release info and exit:
+```bash
+pysequans -R
+```
+### Commands for upgrading the firmware of a Sequans Monarch2 platform
+Do a full upgrade of Sequans Monarch 2 platform using the bundled firmware.  This will only upgrade the firmware if the bundled firmware is newer than the current firmware of the Monarch2 platform.
+```bash
+pysequans upgrade full
+```
+Do a forced full upgrade/downgrade of Sequans Monarch 2 platform, disregarding the version check
+```bash
+pysequans upgrade full --force
+```
+Do a full upgrade with a specified firmware file.
+Note that this command will not do any version checking of the provided firmware vs the current active firmware,
+i.e. the provided firmware will always be programmed in the Sequans Monarch 2 platform.
+```bash
+pysequans upgrade full -fw myfirmware.dup
+```
+Read out current firmware version of Sequans Monarch 2 platform and print together with the bundled firmware version
+```bash
+pysequans upgrade report
+```
+### Commands for managing storage of certificates and private keys in Sequans Monarch2 platform
+There are 20 non-volatile memory (NVM) storage slots available, numbered 0-19, each slot can hold a single private key and a certificate (bundle). Some of these slots are reserved for Sequans internal use, this utility will not allow to modify (write or erase) these, but they can be read. It is not required to erase a slot prior to writing, new content will replace previous content.
+
+For certificates, multiple files may be written to a slot, and will be concatenated to a bundle and written to the NVM slot. This can be done either by specifying multiple `-f file` options, or `-f folder` referring to a folder containing only certificate files, or a combination of the two. For private keys, only a single file is allowed. All input files must be in PEM format.
+
+Be advised that NVM slots 18 and 19 are used by the IoT provisioning tool (`iotprovision`) to store device and Root CA certificates for cloud provider, respectively. It is therefore recommended to avoid using these slots for other purposes (Mosquitto, HTTPS, etc) because these slots will be overwritten whenever the provisioning tool is used.
+
+Upload a single certificate file to NVM slot 16
+```bash
+pysequans nvm write 16 --certificate -f mycert.pem
+```
+Upload all certificate files in a folder and write as a bundle to NVM slot 17
+```bash
+pysequans nvm write 17 --certificate -f my_certs_folder
+```
+Upload 3 individual certificate files and write as a bundle to NVM slot 17
+```bash
+pysequans nvm write 17 --certificate -f cert1.pem -f cert2.pem -f cert3.pem
+```
+Upload private key file to NVM slot 16
+```bash
+pysequans nvm write 16 --private-key -f private_key.pem
+```
+Erase private key in slot 17. Note that this command will fail if the private key slot is already empty.
+```bash
+pysequans nvm erase 17 --private-key
+```
+Read certificate in slot 18. Note that this command will fail if the certificate slot is empty. The readout format presented by Sequans Monarch2 platform is for informational purposes only, it is not suitable for downloading certificates or private keys from the NVM.
+```bash
+pysequans nvm read 18 --certificate
+
+```
+## Sequans Monarch2 platform security profiles
+Security profiles define security-related attributes used by secure protocols like HTTPS or MQTT with TLS enabled. When setting up or using these protocols, security profile is referred to by a numeric security profile ID (`spId`). There are 6 security profiles numbered 1-6. Unsecured connections like plain HTTP don't need a security profile.
+
+Security profile 1 is set up by the provisioning tool (`iotprovison`) for cloud providers, and it is not recommended using it for other purposes. In Microchip-provided cellular demo firmwares, security profile 1 is used for AWS or Azure IoT cloud connection,  profile 2 is used for general secured MQTT, and security profile 3 is used for HTTPS. If you plan to use the kit for anything else than cloud provider provisioned for with `iotprovision`, you need to set up a security profile as described below.
+
+Security profile setup is typically the next step after storing certificate(s) and private key (if any) using the pysequans NVM commands described in the previous section.
+
+### Connect to kit using a terminal program
+Pysequans has no built-in features to manage security profiles yet, so this must be done by means of using an external terminal program to connect to the kit and enter raw modem commands. Any terminal program capable of connecting to a serial port can be used.
+
+If you don't have a favorite terminal program already installed, use `pyserial-miniterm` which is provided as a dependency when `pysequansutils` is installed. Set baud rate to 115200 for the provisioning firmware, and enable local echo (aka half duplex) to see what you are typing.
+
+You need to have the Microchip provisioning firmware programmed into your kit, if you have used the `pysequans` command already with your kit, this will be the case.
+
+To connect to the kit using pyserial-miniterm, use the following command:
+```bash
+pyserial-miniterm <port> 115200 --echo
+```
+The name of the serial port can be determined with our `pykitinfo` utility, or using `pyserial-ports`.
+When connected, you will be talking to our provisioning firmware, you need to activate bridge mode in order to talk to the modem:
+```bash
+MC+BRIDGEMODE
+```
+which should respond with `OK`. You are now ready to type in modem commands. Modem commands are not case sensitive, but are shown in upper case here. To check that you are talking to the modem, try the `ATI` command, it shows information about modem and firmware version:
+```
+ATI
+
+SEQUANS Communications
+GM02S
+UE8.0.5.11
+
+OK
+```
+In order to get somewhat more informative error messages than just `ERROR` from the modem, in interactive sessions it is recommended to set error verbosity level to maximum before proceeding, using command `AT+CMEE`:
+```
+AT+CMEE=2
+
+OK
+
+```
+### Setting up security profile using AT+SQNSPCFG modem command
+
+THe modem command to manage security profiles is `AT+SQNSPCFG`. You can use `AT+SQNSPCFG=?` to get a usage summary:
+```
+AT+SQNSPCFG=?
+
++SQNSPCFG: (1-6),(0-3,255),("0x1301;0x1302;0x1303<...>"),(0x00-0xFF),(0-19),(0-19),(0-19),,,(0,1),(0,1),(0-UINT_MAX)
+
+```
+The parameters are described below. Parameters are separated with `","`, unused parameters can be skipped with double comma (`",,"`)
+```bash
+AT+SQNSPCFG=<spId>       # Security profile ID (1-6)
+[,<version>,             # SSL/TLS protocol <version> to use (0-3 => TLS v.1.0 - 1.3), 255 to reset (clear) the security profile
+[<cipherSpecs>,          # List of cipher suites (<cipherSpecs>) to be used for SSL/TLS connection security settings negotiation
+[<certValidLevel>,       # Server certificate validation level <certValidLevel>: 0=None, bit 0=1: Check against root CA certificates, bit 2=1: verify server URL against certificate common name
+[<caCertificateID>,      # NVM slot containing Root CA certificate(s) for server validation
+[<clientCertificateID>,  # NVM slot containing certificate to be used for client authentication
+[<clientPrivateKeyID>,   # NVM slot containing client private key
+[<psk>,                  # Pre-shared key <psk> used for connection
+[<pskIdentity>,          # Pre-shared key identity <pskIdentity> used for connection
+[<storageId>,            # <storageId> used to identify whether the private key is stored in NVM or HCE (Hardware Crypto Engine)
+[<resume>,               # Attempt to resume the previous security session if possible.
+[<lifetime>]]]]]]]]]     # TLS session maximum lifetime
+```
+The parameters most commonly used are: `spId`, `version` (=2 or 3), `certValidLevel` (=1), `caCertificateID`, `clientCertificateID`, `storageId`. If NVM private key is used (`storageId` == 0), `clientPrivateKeyID` also needs to be set.
+
+Content of security profiles may be viewed by using `AT+SQNSPCFG` command without parameters:
+```
+AT+SQNSPCFG
+
++SQNSPCFG: 1,2,"0xC02B",1,19,18,0,"","",1,0,0
++SQNSPCFG: 2,2,"",0,,,,"","",0,0,0
++SQNSPCFG: 3,2,"",1,5,,,"","",0,0,0
+```
+
+### Examples
+Set up security profile 2 to use TLS 1.2, root CA certificates in slot 17, device certificate in slot 16, certificate generated from ECC public key (typical setup for Mosquitto test):
+```
+AT+SQNSPCFG=2,2,"",1,17,16,,"","",1
+
++SQNSPCFG: 2,2,"",1,17,16,,"","",1,0,0
+
+OK
+```
+Set up security profile 3 to use TLS 1.2, root CA certificates in slot 15 (typical setup for HTTPS):
+```
+AT+SQNSPCFG=3,2,"",1,15,,,"",""
+
++SQNSPCFG: 3,2,"",1,15,,,"","",0,0,0
+
+OK
+```
+
+## Library
+pysequansutils is a collection of utilities and it can be used as a library by accessing the individual modules.
+
+### Logging
+This package uses the Python logging module for publishing log messages to library users.
+A basic configuration can be used (see example below), but for best results a more thorough configuration is
+recommended in order to control the verbosity of output from dependencies in the stack which also use logging.
+See logging.yaml which is included in the package (although only used for CLI).
+```python
+# pysequansutils uses the Python logging module
+import logging
+logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.WARNING)
+```
+
+### Do a full upgrade with bundled firmware
+The `upgrade` module contains functions to do full firmware upgrades. For example:
+```python
+from pysequansutils.upgrade import full_upgrade
+upgraded, active_version = full_upgrade()
+if upgraded:
+    print(f"Successfully upgraded firmware to version '{active_version}'")
+else:
+    print(f"Upgrade skipped. Current version is '{active_version}'")
+```
+### Write certificate data to a NVM slot
+The `nvmstorage` module contains functions to access NVM storage slots. Note that most argument validation is done in the CLI, in particular protection of the reserved slots, so unless the Sequans Monarch2 platform enforces this protection, which it does not at the time of writing, the user of this API must do so using the list AVAILABLE_NVM_SLOTS defined in the module.
+```python
+import pysequansutils.nvmstorage as nvm
+from pysequansutils.pysequans_errors import PysequansError
+...
+if slot in nvm.AVAILABLE_NVM_SLOTS:
+    try:
+        nvm.write_slot(atdriver, slot, nvm.NVM_CERTIFICATE, data)
+    except PysequansError as e:
+        ...
+else:
+    raise ValueError(f'Illegal NVM slot: {slot}')
+```
+
+
+## Notes for Linux® systems
+This package uses pyedbglib and other libraries for USB transport and some udev rules are required.
+For details see the pyedbglib package: https://pypi.org/project/pyedbglib
+
