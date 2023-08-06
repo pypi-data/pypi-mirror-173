@@ -1,0 +1,8 @@
+streamtracer-2.0.0a1.dist-info/METADATA,sha256=BYZOAvjg40M62rS_JFQHH6YLaCQ8d9EGcelCmikMH_c,1866
+streamtracer-2.0.0a1.dist-info/WHEEL,sha256=Nf2OUyucWEr-3tTWeEaZA56CukOUHNoQL9VW11gwiE0,105
+streamtracer-2.0.0a1.dist-info/license_files/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+streamtracer/tests/test_streamline.py,sha256=hdze_jsdHRioH3wlA88w9sPFOWQT4tKH1n8QGctNuRo,9542
+streamtracer/__init__.py,sha256=FpkMJ5R8kFJHnekkSdZtPB6_zY0KZ-Nb6WtlvCLHC8U,26
+streamtracer/streamline.py,sha256=tHLScAJrzrpNxqzqChuVDn0stRYgqI4Pbg6OaNx_8FU,9890
+streamtracer/_streamtracer_rust.cpython-310-darwin.so,sha256=tLyUXR1fHWwPEWGn3MVZ_1sMiaapseRntFru0iegGM8,688722
+streamtracer-2.0.0a1.dist-info/RECORD,,
