@@ -1,0 +1,10 @@
+torch
+scikit-learn
+numpy
+wandb
+
+[local]
+pytest
+black
+setuptools
+sphinx
