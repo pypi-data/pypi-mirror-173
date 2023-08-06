@@ -1,0 +1,2 @@
+[console_scripts]
+mvil_interpolation = pymvil.mvil_interpolation
