@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pdc-logger
+Version: 1.0.7
+Summary: standarized python logger pdc
+Author: vaziria
+Author-email: manorder123@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: google-cloud-logging (>=3.2.5,<4.0.0)
+Requires-Dist: nisa-di (>=0.3.0,<0.4.0)
+Requires-Dist: pydantic (>=1.10.2,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Pdc_logger
+gcloud centralized logging for pdc
+
+
+
+# Setup credential google
+
+set GOOGLE_APPLICATION_CREDENTIALS=credentials.json
+
+
+
+# Cara Pakai
+
+Tanya Programmer PDC sama Bawa gorengan
