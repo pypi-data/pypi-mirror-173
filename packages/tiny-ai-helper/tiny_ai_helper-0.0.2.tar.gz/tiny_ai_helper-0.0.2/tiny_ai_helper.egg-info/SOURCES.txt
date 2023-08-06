@@ -1,0 +1,6 @@
+README.md
+setup.py
+tiny_ai_helper.egg-info/PKG-INFO
+tiny_ai_helper.egg-info/SOURCES.txt
+tiny_ai_helper.egg-info/dependency_links.txt
+tiny_ai_helper.egg-info/top_level.txt
