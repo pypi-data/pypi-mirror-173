@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+speccaf/__init__.py
+speccaf/solver.py
+speccaf/spherical.py
+speccaf.egg-info/PKG-INFO
+speccaf.egg-info/SOURCES.txt
+speccaf.egg-info/dependency_links.txt
+speccaf.egg-info/requires.txt
+speccaf.egg-info/top_level.txt
+speccaf/data/MatricesL12.npz
+speccaf/data/MatricesL20.npz
+speccaf/data/MatricesL4.npz
+speccaf/data/MatricesL6.npz
+speccaf/data/MatricesL8.npz
