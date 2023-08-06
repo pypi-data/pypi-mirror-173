@@ -1,0 +1,10 @@
+wingman/__init__.py,sha256=JhDk_XP2cqW_6mFcPuOhlPR6bysOgjJI8XUcOGcwWf0,164
+wingman/neural_blocks.py,sha256=F7FuYF29Z6ekxZjuy3YmPY7oGLSbUDKeeva5v2G_LcI,9912
+wingman/replay_buffer.py,sha256=vzac-4Tuh-N_pCynKWsJ9KesQ5k6zy4x5YNkNaSOswE,2802
+wingman/utensils.py,sha256=8IyPQhxeEXWQbWE7cVC5GDmyvKQLGCsMDUZvRcyD9vA,729
+wingman/wingman.py,sha256=Q_lRE1vGjGadZRE5hTaSqn8DLPBBGJMzYl3nCvVITjc,13535
+jj_wingman-0.1.4.dist-info/LICENSE.txt,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+jj_wingman-0.1.4.dist-info/METADATA,sha256=2tLotVoxjlXEvD7kLeeTFwAzxXigYypWpb0vHCthq8c,14402
+jj_wingman-0.1.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+jj_wingman-0.1.4.dist-info/top_level.txt,sha256=7YrEFN-JtpR9nO40sT8NnppsmBLVFrLH9lDkQC1mwWo,8
+jj_wingman-0.1.4.dist-info/RECORD,,
