@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: packagebmi
+Version: 0.0.1
+Summary: Package for individual Body Mass Index.
+Home-page: https://github.com/glaucomori/packagebmi
+Author: Glauco Issamu Pereira Mori
+Author-email: glauco.mori@outlook.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# packagebmi
+
+Description. 
+
+The package packagebmi is used to:
+- Calculate individual body mass index.
+- Find out what basic category the person is.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install packagebmi
+
+```bash
+pip install packagebmi
+```
+
+## Usage
+
+```python
+from packagebmi import filebmi
+filebmi.bmi(weight, height)
+filebmi.bmi_category(weight, height)
+```
+
+## Important
+
+The function 'filebmi.bmi(weight, height)' returns bmi result
+The function 'filebmi.bmi_category(weight, height)' returns bmi category
+
+## Author
+Glauco Mori
+
+## License
+[MIT](LICENSE.txt)
