@@ -1,0 +1,6 @@
+[
+  "tests/test_app.py::test_main",
+  "tests/test_app.py::test_main_error",
+  "tests/test_app.py::test_run_parser[param0-expected_result0]",
+  "tests/test_app.py::test_run_parser[param1-expected_result1]"
+]
