@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ShamirEncoder
+Version: 1.0.0
+Summary: Shamir's Secret Sharing Encoder
+Home-page: UNKNOWN
+Author: PunGrumpy
+License: UNKNOWN
+Keywords: python,shamir,education,encoder
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Shamir's Secret Sharing Encoder for educational purposes.
+
+
