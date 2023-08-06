@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: new-library-package
+Version: 1.0.0
+Summary: Demo for release package
+Home-page: https://github.com/Hi-dlwlrma/demo-package
+Author-email: dungntn@gmail.com
+License: UNKNOWN
+Description: This is a demo for release a package
+        
+        Link: https://dev.to/arnu515/create-a-pypi-pip-package-test-it-and-publish-it-using-github-actions-part-2-1o83
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

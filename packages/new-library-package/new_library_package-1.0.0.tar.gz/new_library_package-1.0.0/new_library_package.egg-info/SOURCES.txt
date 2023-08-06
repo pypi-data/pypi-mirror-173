@@ -1,0 +1,8 @@
+README.md
+setup.py
+new_library_package/__init__.py
+new_library_package/dummy_file.py
+new_library_package.egg-info/PKG-INFO
+new_library_package.egg-info/SOURCES.txt
+new_library_package.egg-info/dependency_links.txt
+new_library_package.egg-info/top_level.txt
