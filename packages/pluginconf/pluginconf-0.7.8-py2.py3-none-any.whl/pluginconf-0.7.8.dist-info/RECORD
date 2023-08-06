@@ -1,0 +1,11 @@
+pluginconf/__init__.py,sha256=ON6_2ri-AwhiXbpEw-1VinEZZoP90Ijj3EuQt_pqevg,18852
+pluginconf/depends.py,sha256=qE-TCIeth61s5MwNWUFUEn1ZQkxeXlI-XX9N9HNf4Dk,7993
+pluginconf/flit.py,sha256=ah1GlJe-uuFkpYldW7gjCwgOMup4kNKm5nPjXS6Rduw,4956
+pluginconf/gui.py,sha256=BWhEooH5NDMswFnRhBu_87DBzinyTTMOWy9X0bhn77U,7081
+pluginconf/setup.py,sha256=Y3T8-aoYFTz0ALYlT3ViChDxpVYMXTz3bgSwapJbEZw,22054
+pluginconf-0.7.8.dist-info/LICENSE,sha256=jLDORK4xRpgF3x6lFCS1XTlHalMtb9MclZc-B_GsaK0,8064
+pluginconf-0.7.8.dist-info/METADATA,sha256=I_g-aXH7C37K1wawtwtGBSohEtpHyr7ydUZxpGe-WGk,8535
+pluginconf-0.7.8.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pluginconf-0.7.8.dist-info/entry_points.txt,sha256=uDACyHdBAC3bByHiFd3-Hk8nGRil4aNOnwYrIneD-Zg,49
+pluginconf-0.7.8.dist-info/top_level.txt,sha256=k_JhhH5opCXY6qnpy8fbphMNnW2BMoOoI92g9TKkAOQ,11
+pluginconf-0.7.8.dist-info/RECORD,,
