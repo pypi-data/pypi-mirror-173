@@ -1,0 +1,1 @@
+This library will have a few fungtions to help automate gaming
