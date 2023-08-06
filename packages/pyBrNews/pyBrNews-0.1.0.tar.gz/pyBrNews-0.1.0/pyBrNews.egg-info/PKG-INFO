@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: pyBrNews
+Version: 0.1.0
+Summary: A Brazilian News Website Data Acquisition Library for Python
+Home-page: https://www.github.com/NepZR/pyBrNews/
+Author: Lucas Darlindo Freitas Rodrigues
+Author-email: lucas.darlindo@gmail.com
+License: GNU GPLv3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Framework :: IPython
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Database
+Classifier: Topic :: Education
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Text Processing :: Markup :: XML
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# A Brazilian News Website Data Acquisition Library for Python
+> pyBrNews Project, made with :heart: by Lucas Rodrigues (<a href="https://github.com/NepZR/" target="_blank">@NepZR</a>).
+<h4 style="text-align: justify;">
+  The pyBrNews project is a Python 3 library in development for tasks of data acquisition in Brazilian News Websites, capable for extracting news and comments from this platforms and with it's core utilizing the <a href="https://requests.readthedocs.io/projects/requests-html/en/latest/">requests-HTML</a> library.
+</h4>
+
+---
+
+<h3 style="text-align: justify;">
+  :newspaper: Websites and capture groups supported
+</h3>
+
+<table>
+    <tr>
+      <td><b>Website name</b></td>
+      <td><b>News</b></td>
+      <td><b>Comments</b></td>
+      <td><b>URL</b></td>
+    </tr>
+    <tr>
+      <td>Portal G1</td>
+      <td>:white_check_mark: Working</td>
+      <td>:keyboard: In progress</td>
+      <td><a href="https://g1.globo.com/">Link</a></td>
+    </tr>
+    <tr>
+      <td>Folha de São Paulo</td>
+      <td>:white_check_mark: Working</td>
+      <td>:white_check_mark: Working</td>
+      <td><a href="https://www.folha.uol.com.br/">Link</a></td>
+    </tr>
+    <tr>
+      <td>Exame</td>
+      <td>:white_check_mark: Working</td>
+      <td>:x: Not supported</td>
+      <td><a href="https://exame.com/">Link</a></td>
+    </tr>
+    <tr>
+      <td>Metrópoles</td>
+      <td>:keyboard: In progress</td>
+      <td>:keyboard: In progress</td>
+      <td><a href="https://www.metropoles.com/">Link</a></td>
+    </tr>
+</table>
+
+> **Database**: using MongoDB (<a href="https://www.mongodb.com/docs/drivers/pymongo/">pyMongo</a>), supported since October 28th, 2022.<br><a href="https://github.com/NepZR/pyBrNews/blob/main/config/database.py"><b>Internal Module</b></a>: `pyBrNews.config.database.PyBrNewsDB`
+---
+
+<h3 style="text-align: justify;">
+  :keyboard: Available methods
+</h3>
+
+> Soon :tm:
+  
+---
+
+<h3 style="text-align: justify;">
+  :man_technologist: Project Developer
+</h3>
+
+<table style="display: flex; align-itens: center; justify-content: center;">
+  <tr>
+    <td align="center"><a href="https://github.com/NepZR"><img style="width: 150px; height: 150;" src="https://avatars.githubusercontent.com/u/37887926" width="100px;" alt=""/><br /><sub><b>Lucas Darlindo Freitas Rodrigues</b></sub></a><br /><sub><b>Data Engineer | Backend Python Dev.</sub></a><br /><a href="https://www.linkedin.com/in/lucasdfr"><sub><b>LinkedIn (lucasdfr)</b></sub></a></td>
+  </tr>
+<table>
