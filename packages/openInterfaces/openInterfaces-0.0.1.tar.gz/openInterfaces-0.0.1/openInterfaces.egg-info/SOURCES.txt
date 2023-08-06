@@ -1,0 +1,6 @@
+pyproject.toml
+openInterfaces.egg-info/PKG-INFO
+openInterfaces.egg-info/SOURCES.txt
+openInterfaces.egg-info/dependency_links.txt
+openInterfaces.egg-info/requires.txt
+openInterfaces.egg-info/top_level.txt

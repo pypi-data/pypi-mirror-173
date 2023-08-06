@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: openInterfaces
+Version: 0.0.1
+Summary: openInterfaces prototype demonstrator
+Author-email: René Fritze <rene.fritze@wwu.de>
+Provides-Extra: ci
