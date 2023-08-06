@@ -1,0 +1,9 @@
+telepathy/const.py,sha256=od1JMfmf2UEyi50LFdNHmD7PvBYBtezgAIEfYqwCyWE,5353
+telepathy/telepathy.py,sha256=PM5EpGq4Zyq9BRQTwWTnSiWRxL50WKNeNLxM4fp53ZQ,91205
+telepathy/utils.py,sha256=fIJMnyCZETMbIYC4ftrlWq8Q0khLFs5HpMhof546G-g,12199
+telepathy-2.3.2.dist-info/LICENSE.txt,sha256=UhbbBg0l30WYZYvt_ZvfXqbpI8ogHTJ6ldxnbcptn8c,1070
+telepathy-2.3.2.dist-info/METADATA,sha256=X6iUb5I8GraALXdMpJy3dySIfWzISskCr2vESPsujb4,11865
+telepathy-2.3.2.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+telepathy-2.3.2.dist-info/entry_points.txt,sha256=2_IsDOjTGZ2K53lv4YrIaHgLcPDTEfTgFnhgh8qowis,54
+telepathy-2.3.2.dist-info/top_level.txt,sha256=22UHURF0SdZYogGYofmrsmb4EUz34709zuWN2hl7epM,10
+telepathy-2.3.2.dist-info/RECORD,,
