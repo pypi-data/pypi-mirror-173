@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: delpytools
+Version: 0.2
+Summary: Implementation of scripts to automate a data science project
+Home-page: https://github.com/AMDelo/delpytools
+Author: Alex Malainic
+Author-email: amalainic@deloittece.com
+License: MIT
+Keywords: delpytools
+License-File: LICENSE
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: optbinning
+
