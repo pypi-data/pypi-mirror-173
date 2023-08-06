@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: easyVisualize
+Version: 0.0.1
+Summary: prepared for basic EDA operations
+Home-page: https://github.com/TolgaTANRISEVER/EDA_functions
+Author: Tolga TANRISEVER
+Author-email: tanrisevertolga@gmail.com
+License: MIT
+Keywords: EDA
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: license.txt
+
+please check it my githup page https://github.com/TolgaTANRISEVER/EDA_functions
+
+
