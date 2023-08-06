@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/shtrie/__init__.py
+src/shtrie.egg-info/PKG-INFO
+src/shtrie.egg-info/SOURCES.txt
+src/shtrie.egg-info/dependency_links.txt
+src/shtrie.egg-info/top_level.txt
