@@ -1,0 +1,13 @@
+phonechars/__init__.py,sha256=JN6Umu0pQNqCH6c70C1UY3_wpU60uywtaqusC9eEa0Q,566
+phonechars/__main__.py,sha256=K10CWcOIFiGzE7Uc7L-p4Zaxu0L9ogUn2DWMIlDO_nw,5485
+phonechars/common.py,sha256=0Z4-7iNsbeRjP2nl7nPlsLhY3f0W47yeMosiuWyat3Y,6116
+phonechars/copar.py,sha256=bvQN70KSF3G3B4LVO8li9vsjzL2Bs0KxkNG4JEwBcNk,4722
+phonechars/ipa.py,sha256=ctyKp6rF4hH8_G_y7K7R4K3kAFDl29Nni-fcc763yC4,5838
+phonechars/nexus.py,sha256=vdSguW4bRSV8BWxFN5JHqWcoHXakJlULZ7FV8kAQhP0,3567
+phonechars-0.1.dist-info/AUTHORS.md,sha256=VYiibmBomWNUjTTyX2COXGlEETdwfp_aORSQc356VIg,89
+phonechars-0.1.dist-info/LICENSE,sha256=vzmQ8O_GVNOuGChSS1ChYzy24IUY7lG3JbHs0hgPBb8,1071
+phonechars-0.1.dist-info/METADATA,sha256=iPtGzjDmVb1ViIHMGB1T0JUiJIl_ya1DIPqsoZfU9Is,3519
+phonechars-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+phonechars-0.1.dist-info/entry_points.txt,sha256=limsU_-BjFw7uvQiWQQFH2Zk5r2rwX8t5WUH5LzfCgI,56
+phonechars-0.1.dist-info/top_level.txt,sha256=On4BYCGqC_3jaloNQKAJW-lBQOFQH3JmrUbZPvT-M2c,11
+phonechars-0.1.dist-info/RECORD,,

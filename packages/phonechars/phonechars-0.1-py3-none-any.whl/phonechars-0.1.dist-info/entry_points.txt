@@ -1,0 +1,2 @@
+[console_scripts]
+phonechars = phonechars.__main__:main
