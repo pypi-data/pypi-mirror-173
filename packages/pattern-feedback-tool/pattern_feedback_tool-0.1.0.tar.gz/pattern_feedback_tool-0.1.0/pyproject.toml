@@ -1,0 +1,108 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.calcipy]
+ignore_patterns = [
+  "test-data/sample_code/*.py",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.1.0"
+version_files = ["pyproject.toml", "pattern_feedback_tool/__init__.py"]
+
+[tool.isort]
+balanced_wrapping = true
+default_section = "THIRDPARTY"
+force_grid_wrap = 0
+include_trailing_comma = true
+known_first_party = "pattern_feedback_tool"
+length_sort = false
+line_length = 120
+multi_line_output = 5
+
+[tool.calcipy.test]
+pythons = ["3.10"]
+
+[tool.poetry]
+name = "pattern_feedback_tool"
+version = "0.1.0"
+description = "Design Pattern Feedback Tool"
+license = "MIT"
+authors = ["Kyle King <dev.act.kyle@gmail.com>"]
+maintainers = []
+repository = "https://github.com/DesignPatternsAdventure/pattern_feedback_tool"
+documentation = "https://github.com/DesignPatternsAdventure/pattern_feedback_tool/docs"
+readme = "docs/README.md"
+include = ["LICENSE.md"]
+keywords = []
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+] # https://pypi.org/classifiers/
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/DesignPatternsAdventure/pattern_feedback_tool/issues"
+"Changelog" = "https://github.com/DesignPatternsAdventure/pattern_feedback_tool/blob/main/docs/docs/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.5"
+beartype = ">=0.11.0"
+better-exceptions = ">=0.3.3"
+calcipy = ">=0.20.1"
+code2flow = ">=2.5.0"
+doit = ">=0.34.2"
+pycg = ">=0.0.6"
+pydantic = ">=1.8.1"
+pyparsing = ">=3.0.9"
+radon = ">=5.1.0"
+rich = ">=12.6.0"
+tomlkit = ">=0.11.5"
+
+flake8 = ">=5.0.4"
+flake8-bandit = ">=3.0.0"
+flake8-black = ">=0.3.3"
+flake8-blind-except = ">=0.2.1"
+flake8-breakpoint = ">=1.1.0"
+flake8-broken-line = ">=0.4.0"
+flake8-bugbear = ">=22.4.25"
+flake8-builtins = ">=1.5.3"
+flake8-comprehensions = ">=3.10.0"
+flake8-debugger = ">=4.1.2"
+flake8-eradicate = ">=1.2.1"
+flake8-expression-complexity = ">=0.0.11"
+flake8-functions = ">=0.0.7"
+flake8-isort = ">=4.1.1"
+flake8-pep3101 = ">=1.3.0"
+flake8-print = ">=5.0.0"
+flake8-printf-formatting = ">=1.1.2"
+flake8-return = ">=1.1.3"
+flake8-simplify = ">=0.19.0"
+flake8-SQL = ">=0.4.1"
+flake8-string-format = ">=0.3.0"
+flake8-super = ">=0.1.3"
+flake8-tuple = ">=0.4.1"
+flake8-typing-imports = ">=1.13.0"
+flake8-use-pathlib = ">=0.3.0"
+isort = ">=5.10.1"
+mypy = ">=0.981"
+pylint = ">=2.13.9"
+tryceratops = ">=1.1.0"
+unimport = ">=0.11.3"
+vulture = ">=2.4"
+
+# # Naming warnings are defered to pylint
+# pep8-naming = ">=0.11.1"
+# flake8-variables-names = ">=0.0.5"
+
+pytest = ">=7.1.2"
+pytest-watcher = ">=0.2.3"
+
+[tool.poetry.group.dev.dependencies]
+beautifulsoup4 = ">=4.11.1"
+calcipy = { version = "*", extras = ["dev", "lint", "test"] }
+pytest-cache-assert = ">=3.0.5"
