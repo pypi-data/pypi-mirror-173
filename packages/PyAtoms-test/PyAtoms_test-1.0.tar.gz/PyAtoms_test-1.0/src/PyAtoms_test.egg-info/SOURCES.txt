@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+src/PyAtoms_test.egg-info/PKG-INFO
+src/PyAtoms_test.egg-info/SOURCES.txt
+src/PyAtoms_test.egg-info/dependency_links.txt
+src/PyAtoms_test.egg-info/requires.txt
+src/PyAtoms_test.egg-info/top_level.txt
