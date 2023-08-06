@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "vuln-runner"
+version = "0.1.2"
+description = "A Docker runner for docker-based vulnerable environments."
+authors = ["SecSI <dev@secsi.io>"]
+readme = "README.md"
+packages = [{include = "docker_vuln_runner"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyyaml = "^6.0"
+typer = "^0.6.1"
+python-on-whales = "^0.53.0"
+gitpython = "^3.1.29"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+twine = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+vuln-runner = 'docker_vuln_runner.main:app'
