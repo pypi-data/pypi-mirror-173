@@ -1,0 +1,6 @@
+sphinx
+
+[tests]
+flake8
+pytest
+twine
