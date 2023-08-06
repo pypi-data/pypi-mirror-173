@@ -1,0 +1,10 @@
+safetensors/__init__.py,sha256=-w3--i5aG_OgH3p47OUGH8ouuP8K4xCvD_SqmBLKx5g,103
+safetensors/flax.py,sha256=frAu06K-MFoXWIPSzs0L6J_qyeMpxmj8ESIn4OVct1w,1145
+safetensors/numpy.py,sha256=Jd8rfEHE4sPXuZUIcSKYeoX24kKTM7tiJQzzol3LRq0,1752
+safetensors/safetensors_rust.cp39-win_amd64.pyd,sha256=JJgL1Ezb3v6sFVfapKZus2Slr_uL6HTD9Ov9F8rSd-w,529408
+safetensors/tensorflow.py,sha256=yoj41THEuYWbYidSSGUjMP3dcCXPCcH-fQE3-y-qVDk,1106
+safetensors/torch.py,sha256=t3CmR0Ly_MEdX60kCqjnz6pu5n6lLDtGPib4itphmjs,3499
+safetensors-0.2.1.dev0.dist-info/METADATA,sha256=-JmwTXoSlPy9sv51hryVCDQSr4RQcj0XLK-pzIha6RM,2177
+safetensors-0.2.1.dev0.dist-info/WHEEL,sha256=fVcVlLzi8CGi_Ul8vjMdn8gER25dn5GBg9E6k9z41-Y,100
+safetensors-0.2.1.dev0.dist-info/top_level.txt,sha256=aeGq-bvSQiWej-UZBQOQs1V-KEP0Oa7_7MyN0iD5g8I,12
+safetensors-0.2.1.dev0.dist-info/RECORD,,
