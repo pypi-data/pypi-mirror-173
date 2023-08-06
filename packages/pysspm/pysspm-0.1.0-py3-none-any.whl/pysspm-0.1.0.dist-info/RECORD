@@ -1,0 +1,15 @@
+pysspm/__init__.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
+pysspm/cli.py,sha256=6HUDz3bRfj6Gy3Coe6Fa8GqiSCei4gQKoAUUrSZu_e4,791
+pysspm/cli_config.py,sha256=2yEHU1ShTGYcRYlE9feLZYd76Be_AhdVIoeZ7EwXOtA,2087
+pysspm/cli_project.py,sha256=9YJQy-rUmd3Ca2IXiDs2Rp7ZLIoQgzzLsk973dSjreI,14749
+pysspm/cli_stats.py,sha256=331yVz-XQraMHXTEfFRJpJLu80sw8_BNGc-cwKyQ_dc,1362
+pysspm/config.py,sha256=QzhIrprH6UyOJpz28wnYkY3BYrx45AwY2FSVo4O5nkE,6027
+pysspm/docs/index.md,sha256=rgBRo9nP7m7GQHwY9o3_S9y-PJs4nC8Mn25N3mQXMPo,19
+pysspm/metadata.py,sha256=2R8xiXyTEdpoEnJ5okMHV8PjNox9d9dcFmSuBMFrfNw,6247
+pysspm/project.py,sha256=AoI1P-sjY1ymC9saypEnBz-SkD3or65lOG1rWbqT1S4,20915
+pysspm/stats.py,sha256=sIgulFl-9Cs_lLdn4HHaHo470ti6BXb0ysxUuyta1JQ,297
+pysspm/util.py,sha256=1ROZPE_YcOi_KqKWdpoG0iu8nFz9gwu0IZUhNRVI-mQ,317
+pysspm-0.1.0.dist-info/entry_points.txt,sha256=jzvGxHxPKvGtMfQpiwIvM32Fk4bWE5rQJfULlDjB6iI,40
+pysspm-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pysspm-0.1.0.dist-info/METADATA,sha256=1ajNkm8k11NhzvYixEwL9qCtZ7_xf-RTd-0Cm_4ucEQ,575
+pysspm-0.1.0.dist-info/RECORD,,
