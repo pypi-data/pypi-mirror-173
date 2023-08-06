@@ -1,0 +1,17 @@
+[package]
+name = "trustfall"
+version = "0.1.3"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "trustfall"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+async-graphql-parser = "2.11.3"
+async-graphql-value = "2.11.3"
+lazy_static = "1.4.0"
+pyo3 = { version = "0.17.2", features = ["extension-module"] }
+trustfall_core = { version = "0.0.6", path = "local_dependencies/trustfall_core" }
