@@ -1,0 +1,7 @@
+flake8_testcode/__init__.py,sha256=YtmSk-qCzAV6UWo4BU_R_GLzPp4uTCzSGfhN8oD73ds,75
+flake8_testcode/flake8_missing_assertion.py,sha256=xK6LvF-XdAsk2-QAfRaBgWy8bpk7vXCrupG-pNCgR4o,1851
+flake8_testcode-0.1.1.dist-info/entry_points.txt,sha256=gG1XtLRf2eDnKG-lhSrkXpJ_bYjQzzdw41iMQTJthaY,47
+flake8_testcode-0.1.1.dist-info/LICENSE,sha256=EUvGx3eCnZY-yBnvhyS4r01MJc3rYRp0J8pOrM1Ilz4,1098
+flake8_testcode-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+flake8_testcode-0.1.1.dist-info/METADATA,sha256=W3Tt_NjoLOOJe6jtiw1Vk1iviOxO7_apbYJzFZ1l8wk,1717
+flake8_testcode-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: flake8-testcode
+Version: 0.1.1
+Summary: Plugin to catch bad style specific to testcode.
+Home-page: https://github.com/Ewald91/flake8-testcode
+License: MIT
+Keywords: flake8,testcode,lint
+Author: Ewald Verhoeven
+Requires-Python: >=3.8,<4.0
+Classifier: Framework :: Flake8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: flake8 (>=3.8.4,<6)
+Project-URL: Repository, https://github.com/Ewald91/flake8-testcode
+Description-Content-Type: text/markdown
+
+![testing](https://github.com/ewald91/flake8-testcode/actions/workflows/build.yml/badge.svg)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![Active](http://img.shields.io/badge/Status-Active-green.svg)](https://tterb.github.io) 
+<!-- [![PyPi Version](https://img.shields.io/pypi/v/yt2mp3.svg)](https://pypi.python.org/pypi/yt2mp3/) -->
+<!-- [![Coveralls](https://img.shields.io/coveralls/jekyll/jekyll.svg?style=flat)]() -->
+
+## flake8 codes
+
+| Code   | Description                          |
+|--------|--------------------------------------|
+| TMA001 | Missing assertion in test definition |
+
+
+## Poetry
+
+enter virtual environment  (first time) 
+`poetry shell`
+
+re-enter virtual environment:
+`& ((poetry env info --path) + "\Scripts\activate.ps1")`
