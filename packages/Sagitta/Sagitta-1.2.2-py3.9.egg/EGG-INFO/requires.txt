@@ -1,0 +1,5 @@
+numpy
+torch
+astropy
+astroquery
+galpy
