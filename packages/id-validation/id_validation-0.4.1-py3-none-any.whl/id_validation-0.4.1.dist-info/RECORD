@@ -1,0 +1,10 @@
+id_validation/__init__.py,sha256=OKnNHuIsc_SmosiSJR-qEBBUoFEyUbRqaHz2BOtt7gI,819
+id_validation/validate.py,sha256=aJe0BXPsUebDVdl4z9VNQzVYCtUzTh_gyYPqLhmz5GQ,401
+id_validation/validate_botswana.py,sha256=fp4nBOkm1zFsZAvk5Qv5eFDS3zkXxRSS509hDs5GynE,1716
+id_validation/validate_southafrica.py,sha256=aF8EG053qcktJ7hPJlA6LaRDYOx-QybJE0JL5VeWMOw,8349
+id_validation/validate_zimbabwe.py,sha256=f2qd-BOsS0mzBRMCvMbzirCkQ2AtV0aoH3V2hvC-TOQ,4692
+id_validation-0.4.1.dist-info/LICENSE,sha256=O0_AvevAMfiHSeJHK6eewto3bsKWxV8frJZGxD-sLOQ,1047
+id_validation-0.4.1.dist-info/METADATA,sha256=04cFA_dArSjOHc7PLxdRxGk4tDvxf82lQi9dK6ttIGM,3948
+id_validation-0.4.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+id_validation-0.4.1.dist-info/top_level.txt,sha256=G5bL7Bk5dkeS9q3eoyzviGp_b5K28d0toWS95tqLxms,14
+id_validation-0.4.1.dist-info/RECORD,,
