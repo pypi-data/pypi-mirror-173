@@ -1,0 +1,15 @@
+multiselectfield/__init__.py,sha256=YhzWaV3qo676EhtgUXuwWZBggKuLuls_8G2ytQqHBmY,217
+multiselectfield/apps.py,sha256=qcW5RvrLleieNOz4swZ1QA5SCvX7zDHwY4QcoNr9y30,146
+multiselectfield/utils.py,sha256=G6qekOj3g4oSE4h3mQm04-pafJs-IdcPCBsUUxw8SCM,1607
+multiselectfield/validators.py,sha256=E4xwHf56W_WtQ3nE_6WUPUl_DDLrMKjBB9ZKSSvbQfM,1310
+multiselectfield/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiselectfield/db/fields.py,sha256=yQGWiPbRqffRoOQ441UHo32L0BvFhxxFtbKay1Lfe4M,7613
+multiselectfield/forms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+multiselectfield/forms/fields.py,sha256=4soW1pXWZ7LdfNo71qwIfxMwHM44TS3v_Xw1M-tRzoQ,1856
+multiselectfield/locale/es/LC_MESSAGES/django.mo,sha256=xqKsXhCPHi0YJI_s5ug4syKyoDGdQ_TEwuZzRZoiWNM,564
+multiselectfield/locale/es/LC_MESSAGES/django.po,sha256=5uPlVcG897BqGXxBk-pPleMWUAypNVsZsf8s6JlERVk,770
+fork_django_multiselectfield-0.1.0.dist-info/COPYING.LGPLv3,sha256=WBshugkCJIQ4hLVF6xPlOot8udVLcqHonCLO157gays,7633
+fork_django_multiselectfield-0.1.0.dist-info/METADATA,sha256=6UdEYKwhHa_wtsZt_E1XvAZtaxFx9ykCfF47Eh_KWL8,9199
+fork_django_multiselectfield-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fork_django_multiselectfield-0.1.0.dist-info/top_level.txt,sha256=Y5vMmoRWcEEnorayclFbrq60Hy-7-EM5TAhBEw-rlec,17
+fork_django_multiselectfield-0.1.0.dist-info/RECORD,,
