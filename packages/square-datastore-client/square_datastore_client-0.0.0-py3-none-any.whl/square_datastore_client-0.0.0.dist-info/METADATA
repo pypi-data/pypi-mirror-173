@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: square-datastore-client
+Version: 0.0.0
+Home-page: https://github.com/UKP-SQuARE/square-datastore-client
+Download-URL: https://github.com/UKP-SQuARE/square-datastore-client/archive/refs/tags/v0.0.0.tar.gz
+Author: UKP
+Author-email: baumgaertner@ukp.informatik.tu-darmstadt.de
+License: MIT
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: square-auth (>=0.0.11)
+
