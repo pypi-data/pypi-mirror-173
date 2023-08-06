@@ -1,0 +1,5 @@
+cmake_example.cp310-win_amd64.pyd,sha256=F1gzASujniBRAgZ8L77IeNK3vNPWzoqPuTTWJM1Rz8Y,245760
+json_cpp2-0.0.101.dist-info/METADATA,sha256=3Wz2ZGJUSTSsckAnduOJvylYfIaxQzZgsH14gfvmTTI,242
+json_cpp2-0.0.101.dist-info/WHEEL,sha256=W26pYN7HLsBT1jrDSL9udgf_mdNKJmYmL23sIP-FcgM,102
+json_cpp2-0.0.101.dist-info/top_level.txt,sha256=9vNEg6WpekqGaK-yub4Zs57G9ELdsZ_B28l1m4iwwNU,14
+json_cpp2-0.0.101.dist-info/RECORD,,
