@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+wscrape/__init__.py
+wscrape.egg-info/PKG-INFO
+wscrape.egg-info/SOURCES.txt
+wscrape.egg-info/dependency_links.txt
+wscrape.egg-info/top_level.txt
