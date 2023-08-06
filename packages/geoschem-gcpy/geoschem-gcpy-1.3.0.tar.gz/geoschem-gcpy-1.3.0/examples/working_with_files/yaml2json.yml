@@ -1,0 +1,97 @@
+description:
+  name: GEOS-Chem Classic timers output
+  author: The International GEOS-Chem Community
+  version: 13.4.0-rc.0
+  reference: https://geos-chem.readthedocs.io
+geos-chem-classic-timers:
+  geos-chem:
+    d_hms: 00-03:37:08.187
+    seconds: 13028.188
+  initialization:
+    d_hms: 00-00:00:48.031
+    seconds: 48.031
+  hemco:
+    d_hms: 00-00:34:28.812
+    seconds: 2068.812
+  chemistry:
+    d_hms: 00-01:21:18.937
+    seconds: 4878.938
+    gas-phase:
+      d_hms: 00-00:34:03.437
+      seconds: 2043.438
+      fullchem-loop:
+        d_hms: 00-00:32:38.156
+        seconds: 1958.156
+      initialize-kpp::
+        d_hms: 00-00:00:09.810
+        seconds: 9.811
+      compute-photo-rates:
+        d_hms: 00-00:00:32.910
+        seconds: 32.911
+      kpp-solver:
+        d_hms: 00-00:31:36.533
+        seconds: 1896.533
+      compute-reaction-rates:
+        d_hms:  00-00:04:42.382
+        seconds: 282.383
+      integrate-1:
+        d_hms: 00-00:26:12.170
+        seconds: 1572.171
+      integrate-2:
+        d_hms: -999.0
+        seconds: -999.0
+    prod-loss-diagnostics:
+      d_hms: 00-00:00:01.626
+      seconds: 1.627
+    oh-reactivity-diagnostics:
+      seconds: -999.0
+    photolysis:
+      d_hms: 00-00:06:15.562
+      seconds: 375.562
+    aerosol-chemistry:
+      d_hms: 00-00:39:41.781
+      seconds: 2381.781
+    linear-strat-chemistry:
+      d_hms: 00-00:00:14.093
+      seconds: 14.094
+  transport:
+    d_hms: 00-00:19:08.718
+    seconds: 1148.719
+  convection:
+    d_hms: 00-00:20:47.968
+    seconds: 1247.969
+  boundary-layer-mixing:
+    d_hms: 00-00:22:42.468
+    seconds: 1362.469
+  dry-deposition:
+    d_hms: 00-00:01:00.375
+    seconds: 60.375
+  wet-deposition:
+    d_hms: 00-00:07:27.031
+    seconds: 447.031
+  diagnostics:
+    d_hms: 00-00:27:03.937
+    seconds: 1623.938
+    hemco-diagnostics:
+      d_hms: 00-00:00:01.375
+      seconds: 1.375
+    history-diagnostics:
+      d_hms: 00-00:27:02.562
+      seconds: 1622.562
+    obspack_diagnostics:
+      d_hms: -999.0
+      seconds: -999.0
+  unit-conversions:
+    d_hms: 00-00:07:56.750
+    seconds: 476.750
+  input:
+    d_hms: 00-00:02:22.187
+    seconds: 142.188
+  output:
+    d_hms: 00-00:27:03.031
+    seconds: 1623.031
+  finalization:
+    d_hms: 00-00:00:12.625
+    seconds: 12.625
+
+
