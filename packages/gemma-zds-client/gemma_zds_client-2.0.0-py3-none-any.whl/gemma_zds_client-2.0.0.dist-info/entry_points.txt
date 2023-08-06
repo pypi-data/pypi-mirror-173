@@ -1,0 +1,2 @@
+[console_scripts]
+generate-jwt = zds_client.generate_jwt:main
