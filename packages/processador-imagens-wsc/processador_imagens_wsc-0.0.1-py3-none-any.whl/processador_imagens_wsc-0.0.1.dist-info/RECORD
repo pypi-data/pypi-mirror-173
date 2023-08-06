@@ -1,0 +1,11 @@
+processador_imagens_wsc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processador_imagens_wsc/processador/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processador_imagens_wsc/processador/combinacao.py,sha256=x6uyiKjnH5vQHMD7h3AaMFJFoVRgMPJS5zkyazGtiak,1685
+processador_imagens_wsc/processador/transformacao.py,sha256=OFv8DZzB0x1KGi8u8jN3YrWtPcPqjdAbp2MrfTiudMU,386
+processador_imagens_wsc/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+processador_imagens_wsc/util/io.py,sha256=xIpmm5E7FWSUA0SIJMDaOKZr-3ple2kDfsuqwdmg7uQ,208
+processador_imagens_wsc/util/plot.py,sha256=KKcvcniGJUjTZSXmyhvv87TasFEhjvqtmLltkGatopM,1008
+processador_imagens_wsc-0.0.1.dist-info/METADATA,sha256=-TqIVgZXY4KG_vdUl7PBAmiERl92Q75qgCHZubTVU7Q,1148
+processador_imagens_wsc-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+processador_imagens_wsc-0.0.1.dist-info/top_level.txt,sha256=TdIHAk7OwSJ9PIEX_v270BadLeBNUrwhPHtIcWyWqzM,24
+processador_imagens_wsc-0.0.1.dist-info/RECORD,,
