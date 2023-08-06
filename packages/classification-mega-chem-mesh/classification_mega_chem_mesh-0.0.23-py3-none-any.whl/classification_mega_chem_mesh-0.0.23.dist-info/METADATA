@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: classification-mega-chem-mesh
+Version: 0.0.23
+Summary: A Compound classification engine
+Home-page: https://gitee.com/chenmesh/chem-mesh-notebook
+Author: Jinrui.Duan & Weimin.Cai
+Author-email: caiweimin@megarobo.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy (==1.21.3)
+Requires-Dist: rdkit-pypi (==2021.9.2)
+
+This is a private tool for compound classification
+

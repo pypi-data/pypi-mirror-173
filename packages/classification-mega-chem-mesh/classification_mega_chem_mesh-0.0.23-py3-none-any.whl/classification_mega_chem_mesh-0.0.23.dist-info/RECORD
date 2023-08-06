@@ -1,0 +1,10 @@
+classification/__init__.py,sha256=CmkU3nchYdURkasBlj2MS4yuZVHg6RjYCOzzsV19Ln0,23
+classification/models.py,sha256=aF0_9fGO4ORZHpQYlEF-QBV-FQsfQcsAXJFshSXKn5M,7348
+classification/result.py,sha256=v87FuK3RcfFbmu4xHCPejx62yMEeC1MJEE5dp7XoG1w,423
+classification/rules.py,sha256=AnOAfmA_8HU4Epvtxs_DkLfC5iTg7jLWQqHswc6LHLQ,34755
+classification/utils.py,sha256=KhkGjP4OXRHf5gm0JpIspYUszbLLz2qIJuyBu5Go0MY,30953
+classification_mega_chem_mesh-0.0.23.dist-info/LICENSE,sha256=4XxiB8v30PqrPAN1JRy4veIVxnwJZwXYQyLPT_n_lgw,1088
+classification_mega_chem_mesh-0.0.23.dist-info/METADATA,sha256=B2rVTAgx66mBTn55oWbvXIMQYdKtTqwfic3XXVQSjm8,634
+classification_mega_chem_mesh-0.0.23.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+classification_mega_chem_mesh-0.0.23.dist-info/top_level.txt,sha256=xfnFPNnKQ_WqBdtIQLW5mXvEaSKprFVp6tZGNFMH8KI,15
+classification_mega_chem_mesh-0.0.23.dist-info/RECORD,,
