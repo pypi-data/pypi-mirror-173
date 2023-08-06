@@ -1,0 +1,7 @@
+LICENCE.txt
+README.md
+setup.py
+krocket.egg-info/PKG-INFO
+krocket.egg-info/SOURCES.txt
+krocket.egg-info/dependency_links.txt
+krocket.egg-info/top_level.txt

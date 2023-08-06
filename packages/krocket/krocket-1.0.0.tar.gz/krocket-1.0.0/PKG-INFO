@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: krocket
+Version: 1.0.0
+Summary: An awesome package that is beeing used for space hacking !!!
+Home-page: http://pypi.python.org/pypi/krocket/
+Author: karim
+Author-email: k.zaghlaoui@esi-sba.dz
+License: LICENSE.txt
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
+# package_name
+
+`krocket` is a Python library for space programming hackers who frequently hear about in the news 
+when they `hack` into nasa systems.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install `krocket`.
+
+```bash
+pip install krocket
+```
+
+## Usage
+
+```python
+import krocket
+
+# returns 'words'
+package_name.module_name('word')
+
+# returns 'geese'
+package_name.module_name('goose')
+
+# returns 'phenomenon'
+package_name.module_name('phenomena')
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
