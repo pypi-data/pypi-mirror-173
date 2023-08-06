@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+quspin_qite.egg-info/PKG-INFO
+quspin_qite.egg-info/SOURCES.txt
+quspin_qite.egg-info/dependency_links.txt
+quspin_qite.egg-info/requires.txt
+quspin_qite.egg-info/top_level.txt
