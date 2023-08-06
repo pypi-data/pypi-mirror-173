@@ -1,0 +1,11 @@
+cython
+numpy
+
+[tests]
+spikeinterface>=0.95
+requests
+tqdm
+gprof2dot
+flameprof
+line_profiler
+py-spy
