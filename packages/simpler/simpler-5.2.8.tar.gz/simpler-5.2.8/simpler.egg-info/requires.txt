@@ -1,0 +1,6 @@
+requests>=2.13.0
+pandas
+pyyaml
+rarfile
+py7zr
+sphinx_autodoc_typehints
