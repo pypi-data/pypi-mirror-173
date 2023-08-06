@@ -1,0 +1,8 @@
+paramiko
+scp
+regex
+ipywidgets
+ipython
+tqdm
+ipyfilechooser
+openpyxl

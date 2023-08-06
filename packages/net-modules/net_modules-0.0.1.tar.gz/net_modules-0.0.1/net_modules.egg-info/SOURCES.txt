@@ -1,0 +1,8 @@
+setup.py
+libname/__init__.py
+libname/functions.py
+net_modules.egg-info/PKG-INFO
+net_modules.egg-info/SOURCES.txt
+net_modules.egg-info/dependency_links.txt
+net_modules.egg-info/requires.txt
+net_modules.egg-info/top_level.txt
