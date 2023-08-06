@@ -1,0 +1,13 @@
+speccaf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+speccaf/solver.py,sha256=uQWW-kC6loJLfbjQ6uw1M_IGOqN3dgicFKRVuXIzC88,3572
+speccaf/spherical.py,sha256=t43u2OyJ4XQTO_3GlJlXRkeZ_2VpMVvR7H7sZNmIiOg,95875
+speccaf/data/MatricesL12.npz,sha256=joQVRPi2wG2opVyKIh5i-v0VtwtFB_5Wdb9hozRr-sk,7607800
+speccaf/data/MatricesL20.npz,sha256=b2x98WEw365YeeAqJFUTe_x0E65kQxRlBmPcTogomnw,46384120
+speccaf/data/MatricesL4.npz,sha256=a57KOkkUjuPwLGoSqD71wyVPWUUhDN5Sy7750KDHvBA,258040
+speccaf/data/MatricesL6.npz,sha256=ltpUHyT892nPFOGqfdYPJy6th3a5fSBwF0WrZg6ZCI0,812440
+speccaf/data/MatricesL8.npz,sha256=ibi5H2CVJ_yA9fZ0PjJJW368uMkg9tEoHGV_ewsQoDI,1981432
+speccaf-1.4.4.dist-info/LICENSE,sha256=hfCJ80eF6fJ_xnewpBjZBCQK27V9wbSwjDCBiW7bGMg,1071
+speccaf-1.4.4.dist-info/METADATA,sha256=TAaXijq_jHngJZ-CVIVf_AG4jRIhRZ4HFUAowc9jw1o,1947
+speccaf-1.4.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+speccaf-1.4.4.dist-info/top_level.txt,sha256=EBrlfNb0iHERiI43Z2s6pleqLxvuucU5o32Udicc4rY,8
+speccaf-1.4.4.dist-info/RECORD,,
