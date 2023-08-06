@@ -1,0 +1,19 @@
+include *.txt
+include *.md
+recursive-include ./regression_model/*
+
+include regression_model/data/link/*
+include regression_model/save_model/*
+include regression_model/train_val_test/*
+include regression_model/version.txt
+include regression_model/config.yml
+
+include ./requirements/requirements.txt
+exclude *.log
+exclude *.cfg
+
+exclude regression_model/data/link/inference_out/*
+exclude regression_model/plots/*
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
