@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: shaded
+Version: 0.1.2
+Summary: Tools for linear dimension reduction
+Home-page: https://github.com/otosense/shaded
+Author: OtoSense
+License: apache-2.0
+Description: 
+        # shaded
+        Tools for linear dimension reduction
+        
+        
+        To install:	```pip install shaded```
+        
+Platform: any
+Description-Content-Type: text/markdown
