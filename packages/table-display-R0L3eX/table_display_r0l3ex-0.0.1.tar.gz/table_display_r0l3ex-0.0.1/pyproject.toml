@@ -1,0 +1,21 @@
+[project]
+name = "table_display_R0L3eX"
+version = "0.0.1"
+authors = [
+  { name="Maracine Razvan", email="rconstantin429@gmail.com" },
+]
+description = "A small package that allows displaying colorful tables."
+readme = "README.md"
+requires-python = ">=3.10.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/R0L3eX9/python-table-display"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

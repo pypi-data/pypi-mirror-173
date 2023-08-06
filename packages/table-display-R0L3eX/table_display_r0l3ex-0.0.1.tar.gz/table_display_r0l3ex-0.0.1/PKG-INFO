@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: table_display_R0L3eX
+Version: 0.0.1
+Summary: A small package that allows displaying colorful tables.
+Project-URL: Homepage, https://github.com/R0L3eX9/python-table-display
+Author-email: Maracine Razvan <rconstantin429@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.7
+Description-Content-Type: text/markdown
+
+# Table Display
+Lightweight package that allows you to display beautiful tables.
