@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gurobipy-helper
+Version: 0.0.1a9
+Summary: A library adding some functionality to the Gurobi library.
+Author-email: Nico Strasdat <nstrasdat@gmail.com>
+License: MIT
+Project-URL: Source, https://github.com/wotzlaff/gurobipy_helper
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# gurobipy_helper
+
+A library which adds what I need.
