@@ -1,0 +1,3 @@
+[console_scripts]
+tap-sharepointsites=tap_sharepointsites.tap:Tapsharepointsites.cli
+

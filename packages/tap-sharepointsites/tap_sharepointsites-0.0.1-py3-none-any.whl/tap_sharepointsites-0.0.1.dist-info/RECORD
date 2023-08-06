@@ -1,0 +1,13 @@
+tap_sharepointsites/__init__.py,sha256=kebcrDRTzQGB161i_-evhtoyyOD6tLf9_25441kd5K4,28
+tap_sharepointsites/client.py,sha256=AayubHl9Y4p7Io24s9egCLWxNnmJ_fXjqQbAE5TevUc,3029
+tap_sharepointsites/streams.py,sha256=6r4CNeOqtEnHMsM_K_6xObUyrQrACmO00PJA_kVVm5w,1003
+tap_sharepointsites/tap.py,sha256=3H6IJIh-hqUiev2YTxGJx-DdDtZz716n4jOBu5iXKqs,1401
+tap_sharepointsites/tests/__init__.py,sha256=-XKAeTm1IHk1WtQ3QXyi7nlTIKsACRAav-6pebgEqo4,42
+tap_sharepointsites/tests/configuration/__init__.py,sha256=L6cYqMXoDhs-8cIlkKCRo26wC16B3Sei3rv0X6fgjq0,44
+tap_sharepointsites/tests/configuration/test_catalog.py,sha256=DAJNjmUABAVtRHLfOFhGNcvGOIfi9DUcLSc5ID2hdpk,5214
+tap_sharepointsites/tests/configuration/test_responses.py,sha256=vTEQUAafWzp0xhbn87dAUH5spkpvDpPJiLX4pz3NcbQ,5799
+tap_sharepointsites/tests/test_core.py,sha256=zWTYKJt8D5cgdmCjrB7JIEmhdCjwN0RX6DaqHDhrQYM,4547
+tap_sharepointsites-0.0.1.dist-info/entry_points.txt,sha256=YhhWQAYGcXPs5fRGn-Rg1BZe5wVkV7GHMeJyZCNJv-w,86
+tap_sharepointsites-0.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+tap_sharepointsites-0.0.1.dist-info/METADATA,sha256=H2hqClANWngrEskqtGP_PDpHxCjs6IWflyQayT6oLnE,652
+tap_sharepointsites-0.0.1.dist-info/RECORD,,
