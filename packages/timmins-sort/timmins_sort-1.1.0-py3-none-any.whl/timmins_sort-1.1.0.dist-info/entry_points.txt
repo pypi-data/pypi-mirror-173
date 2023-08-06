@@ -1,0 +1,3 @@
+[console_scripts]
+timmins-sorter = timmins_sort.command_line:main
+timmins_sorter = timmins_sort.command_line:main
