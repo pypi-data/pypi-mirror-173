@@ -1,0 +1,12 @@
+# dev
+.vscode/
+.venv/
+__pycache__/
+dist/
+
+# other
+old*
+general_tmp.py
+record_tmp.py
+test*
+
