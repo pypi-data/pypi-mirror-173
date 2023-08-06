@@ -1,0 +1,14 @@
+qcbc/__init__.py,sha256=enKgnBlkb3unMf7-FToZg8CLsxAsxcJkEJ3TxRjlMEU,23
+qcbc/main.py,sha256=xqTbAaMYaWqlcAWmEx48FuA6slrLcBnsLSRsq0fSONI,2503
+qcbc/qcbc_ambiguous.py,sha256=ikyQ1ZeUjcQuWBpLJFNbJgb1gEjgQBJI-W2YmdXQ3SE,2519
+qcbc/qcbc_content.py,sha256=O1FAXptTYd-iK_o9sinSZmnZfXxN_wGynCuFwToxtBI,3311
+qcbc/qcbc_homopolymer.py,sha256=T-JUdhd50kGfnVcNBtcKqjYpo50YZHAyy74O2AQO3FU,1643
+qcbc/qcbc_pdist.py,sha256=S3aqn8bwjmey3wkaVqMXNdZ8N0hK4GkwIxSc6qbiD7I,2777
+qcbc/qcbc_volume.py,sha256=LFJH-3OtjR1AvsN5TXLtn8Nh_yLKnaAdPngCOxZP-rs,1029
+qcbc/utils.py,sha256=Ym9lhNO4HAZVIWzUiDp841iAewXd_xmvI5KphEq21Nw,1968
+qcbc-0.0.0.dist-info/LICENSE,sha256=2RxceSFuJADzk1ku3xRByEkZkfZEXUMFPJ1bGX0h9yU,1072
+qcbc-0.0.0.dist-info/METADATA,sha256=ZU65yrwNnV2RTw1dnYPH4Y2fv-fFw4A_IMzAgrkpCiM,6809
+qcbc-0.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qcbc-0.0.0.dist-info/entry_points.txt,sha256=MVp77J6Z4N--mm3davWA5ojYmW40EVzwqSHsxqSMP1M,40
+qcbc-0.0.0.dist-info/top_level.txt,sha256=yHHP3LaHkkG1UJxINw7srzf5XuKwQKorh-sL3BxpRw8,5
+qcbc-0.0.0.dist-info/RECORD,,
