@@ -1,0 +1,12 @@
+beancount
+fava
+
+[dev]
+black
+flake8
+hatch
+mypy
+pre-commit
+pytest
+pytest-cov
+tox

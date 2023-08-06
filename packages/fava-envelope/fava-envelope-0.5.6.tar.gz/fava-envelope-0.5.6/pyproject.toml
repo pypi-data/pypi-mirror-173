@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fava-envelope"
+version = "0.5.6"
+description = ""
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = ["fava", "budget", "envelope"]
+authors = [
+  {email = "me@brianryall.xyz"},
+  {name = "Brian Ryall"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+]
+
+dependencies = [
+  "beancount",
+  "fava",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "hatch",
+  "mypy",
+  "pre-commit",
+  "pytest",
+  "pytest-cov",
+  "tox",
+]
+
+[project.urls]
+homepage = "https://github.com/polarmutex/fava-envelope"
+documentation = "https://github.com/polarmutex/fava-envelope"
+repository = "https://github.com/polarmutex/fava-envelope"
+changelog = "https://github.com/polarmutex/fava-envelope/master/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 79
