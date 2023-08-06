@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: process_image
+Version: 0.0.3
+Summary: Image Processing Package using skimage
+Home-page: https://github.com/thiagodruvis/Descomplicando_a_criacao_de_pacotes_de_processamento_de_imagens_em_Python
+Author: Thiago
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# image_processing
+
+Description.
+The package process-image is used to:
+    Processing:
+        - Histogram matching
+        - Strutural similarity
+        - Resize image
+    Utils:
+        - Read image
+        - save image
+        - Plot image
+        - Plot result
+        - Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+
+```bash
+pip install process-image 
+```
+
+## Author
+
+Thiago Drummond Rabello
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
