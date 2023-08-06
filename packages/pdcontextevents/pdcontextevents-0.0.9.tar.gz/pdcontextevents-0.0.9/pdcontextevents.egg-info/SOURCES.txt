@@ -1,0 +1,9 @@
+README.md
+license.txt
+setup.py
+pdcontextevents/__init__.py
+pdcontextevents/allevents.py
+pdcontextevents.egg-info/PKG-INFO
+pdcontextevents.egg-info/SOURCES.txt
+pdcontextevents.egg-info/dependency_links.txt
+pdcontextevents.egg-info/top_level.txt
