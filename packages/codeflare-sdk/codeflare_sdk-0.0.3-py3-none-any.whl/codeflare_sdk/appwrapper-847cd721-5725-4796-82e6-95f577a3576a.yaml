@@ -1,0 +1,129 @@
+apiVersion: mcad.ibm.com/v1beta1
+kind: AppWrapper
+metadata:
+  name: appwrapper-847cd721-5725-4796-82e6-95f577a3576a
+  namespace: default
+spec:
+  priority: 9
+  resources:
+    GenericItems:
+    - custompodresources:
+      - limits:
+          cpu: 1
+          memory: 2G
+          nvidia.com/gpu: 0
+        replicas: 1
+        requests:
+          cpu: 1
+          memory: 2G
+          nvidia.com/gpu: 0
+      - limits:
+          cpu: 1
+          memory: 2G
+          nvidia.com/gpu: 0
+        replicas: 2
+        requests:
+          cpu: 1
+          memory: 2G
+          nvidia.com/gpu: 0
+      generictemplate:
+        apiVersion: ray.io/v1alpha1
+        kind: RayCluster
+        metadata:
+          labels:
+            appwrapper.mcad.ibm.com: appwrapper-847cd721-5725-4796-82e6-95f577a3576a
+            controller-tools.k8s.io: '1.0'
+          name: cluster-847cd721-5725-4796-82e6-95f577a3576a
+        spec:
+          autoscalerOptions:
+            idleTimeoutSeconds: 60
+            imagePullPolicy: Always
+            resources:
+              limits:
+                cpu: 500m
+                memory: 512Mi
+              requests:
+                cpu: 500m
+                memory: 512Mi
+            upscalingMode: Default
+          enableInTreeAutoscaling: false
+          headGroupSpec:
+            rayStartParams:
+              block: 'true'
+              dashboard-host: 0.0.0.0
+              num-gpus: 0
+            serviceType: ClusterIP
+            template:
+              spec:
+                containers:
+                - image: rayproject/ray:latest
+                  imagePullPolicy: Always
+                  lifecycle:
+                    preStop:
+                      exec:
+                        command:
+                        - /bin/sh
+                        - -c
+                        - ray stop
+                  name: ray-head
+                  ports:
+                  - containerPort: 6379
+                    name: gcs
+                  - containerPort: 8265
+                    name: dashboard
+                  - containerPort: 10001
+                    name: client
+                  resources:
+                    limits:
+                      cpu: 1
+                      memory: 2G
+                      nvidia.com/gpu: 0
+                    requests:
+                      cpu: 1
+                      memory: 2G
+                      nvidia.com/gpu: 0
+          rayVersion: 1.12.0
+          workerGroupSpecs:
+          - groupName: small-group
+            maxReplicas: 2
+            minReplicas: 2
+            rayStartParams:
+              block: 'true'
+              num-gpus: 0
+            replicas: 2
+            template:
+              metadata:
+                annotations:
+                  key: value
+                labels:
+                  key: value
+              spec:
+                containers:
+                - image: rayproject/ray:latest
+                  lifecycle:
+                    preStop:
+                      exec:
+                        command:
+                        - /bin/sh
+                        - -c
+                        - ray stop
+                  name: machine-learning
+                  resources:
+                    limits:
+                      cpu: 1
+                      memory: 2G
+                      nvidia.com/gpu: 0
+                    requests:
+                      cpu: 1
+                      memory: 2G
+                      nvidia.com/gpu: 0
+                initContainers:
+                - command:
+                  - sh
+                  - -c
+                  - until nslookup $RAY_IP.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local;
+                    do echo waiting for myservice; sleep 2; done
+                  image: busybox:1.28
+                  name: init-myservice
+      replicas: 1
+    Items: []
