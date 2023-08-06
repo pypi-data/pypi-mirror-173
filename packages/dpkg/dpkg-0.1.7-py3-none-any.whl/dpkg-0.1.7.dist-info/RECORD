@@ -1,0 +1,6 @@
+dpkg/__init__.py,sha256=_KtDEzLW3QbGFS5N2r0vyLosQo5g0J3A0uxg1LL6w1M,85
+dpkg/apk.py,sha256=XJ4SB8HowT7Dahl1vCCnO7UVqSCaA6sZfffhprSte2c,5820
+dpkg-0.1.7.dist-info/METADATA,sha256=uH4LfGUZK9mCDC9eAleCnCcJhzaGFVEauNFstBGc8x4,909
+dpkg-0.1.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+dpkg-0.1.7.dist-info/top_level.txt,sha256=2GDy7Eou7x8lR5zqhOIj3EOhipVbKuqY-RTa-qK6i94,5
+dpkg-0.1.7.dist-info/RECORD,,
