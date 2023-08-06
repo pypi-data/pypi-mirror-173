@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ElisaChatbot/__init__.py
+ElisaChatbot/chatbot.py
+ElisaChatbot.egg-info/PKG-INFO
+ElisaChatbot.egg-info/SOURCES.txt
+ElisaChatbot.egg-info/dependency_links.txt
+ElisaChatbot.egg-info/requires.txt
+ElisaChatbot.egg-info/top_level.txt
+test/test_chatbot.py
