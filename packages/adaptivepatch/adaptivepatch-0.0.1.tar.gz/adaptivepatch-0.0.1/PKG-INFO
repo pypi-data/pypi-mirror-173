@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: adaptivepatch
+Version: 0.0.1
+Summary: A library that can split the image into different patches with the optimal step in order to avoid pixel loss.
+Home-page: https://github.com/LucaPavirani/adaptivepatch.py
+License: MIT
+Keywords: patch,split,augmentation,image,overlap
+Author: Luca Pavirani
+Author-email: luca481998@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Multimedia :: Graphics :: Editors
+Requires-Dist: numpy (>=1,<2)
+Project-URL: Repository, https://github.com/LucaPavirani/adaptivepatch.py
+Description-Content-Type: text/markdown
+
+# adaptivepatch
+adaptivepatch can split the image in different patches with automatic detection of the best step in order to do not lose pixels. The overlap between patches depends on the patch size. 
+
+## Example
+![pic](example.png)
+
+## Installation
+```Python
+pip install adaptivepatch
+```
+## How to use it
+`adaptivepatch(image, patch_size, step=None, verbose)`
+
+## Licence
+MIT Licence
+
+
