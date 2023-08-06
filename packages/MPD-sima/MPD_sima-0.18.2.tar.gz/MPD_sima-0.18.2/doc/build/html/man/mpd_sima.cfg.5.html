@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mpd_sima.cfg &#8212; MPD_sima  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MPD Client" href="../dev/mpdclient.html" />
+    <link rel="prev" title="mpd-sima" href="mpd-sima.1.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../dev/mpdclient.html" title="MPD Client"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mpd-sima.1.html" title="mpd-sima"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">MPD_sima  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mpd_sima.cfg</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="mpd-sima-cfg">
+<h1>mpd_sima.cfg<a class="headerlink" href="#mpd-sima-cfg" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This manual page documents briefly <code class="docutils literal notranslate"><span class="pre">mpd-sima</span></code> configuration options available
+in user configuration file (see <a class="reference external" href="#files">FILES</a>).</p>
+</div>
+<div class="section" id="examples">
+<h2>EXAMPLES<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="file-tags-queue-mode-offline-mode">
+<h3>File tags queue mode (offline mode).<a class="headerlink" href="#file-tags-queue-mode-offline-mode" title="Permalink to this headline">¶</a></h3>
+<p>Here is an example of autoqueue using file tags only.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">MPD</span><span class="p">]</span>
+<span class="c1"># Uses defaults for MPD connection</span>
+<span class="c1">#host = localhost</span>
+<span class="c1">#port = 6600</span>
+<span class="c1">#password = s3cr3t</span>
+
+<span class="p">[</span><span class="n">sima</span><span class="p">]</span> <span class="c1"># Setup internal plugins</span>
+<span class="c1"># Tags plugin falls back to Random if nothing is found then Crop the queue</span>
+<span class="n">internal</span> <span class="o">=</span> <span class="n">Tags</span><span class="p">,</span> <span class="n">Random</span><span class="p">,</span> <span class="n">Crop</span>
+<span class="n">history_duration</span> <span class="o">=</span> <span class="mi">48</span>  <span class="c1"># 48h / 24 = 2 days</span>
+<span class="n">queue_length</span> <span class="o">=</span> <span class="mi">2</span>       <span class="c1"># triggers autoqueue when 2 tracks remains to play</span>
+
+<span class="p">[</span><span class="n">tags</span><span class="p">]</span>
+<span class="c1"># Look for files with tagged with genre &quot;electronica&quot; OR &quot;IDM&quot; OR &quot;glitch&quot;</span>
+<span class="n">genre</span> <span class="o">=</span> <span class="n">electronica</span><span class="p">,</span> <span class="n">IDM</span><span class="p">,</span> <span class="n">glitch</span>
+
+<span class="p">[</span><span class="n">crop</span><span class="p">]</span>
+<span class="c1"># keep 30 played tracks in playlist</span>
+<span class="n">consume</span> <span class="o">=</span> <span class="mi">30</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="album-queue-mode-using-last-fm-recommendations-online-mode">
+<h3>Album queue mode using last.fm recommendations (online mode).<a class="headerlink" href="#album-queue-mode-using-last-fm-recommendations-online-mode" title="Permalink to this headline">¶</a></h3>
+<p>Here is an example of album queue configuration using online
+recommendations system.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">sima</span><span class="p">]</span>
+<span class="n">history_duration</span> <span class="o">=</span> <span class="mi">96</span>  <span class="c1"># 4 days in hours, get a larger history for album mode</span>
+<span class="n">queue_length</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="p">[</span><span class="n">crop</span><span class="p">]</span>
+<span class="n">consume</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="p">[</span><span class="n">lastfm</span><span class="p">]</span>
+<span class="n">queue_mode</span> <span class="o">=</span> <span class="n">album</span>
+<span class="n">album_to_add</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="configuration-file">
+<span id="options"></span><h2>Configuration file<a class="headerlink" href="#configuration-file" title="Permalink to this headline">¶</a></h2>
+<p>The configuration file consists of sections, led by a <code class="docutils literal notranslate"><span class="pre">[section]</span></code>
+header and followed by <code class="docutils literal notranslate"><span class="pre">name: value</span></code> entries, with continuations in
+the style of <span class="target" id="index-0"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc822.html"><strong>RFC 822</strong></a> (see section 3.1.1, “LONG HEADER FIELDS”);
+<code class="docutils literal notranslate"><span class="pre">name=value</span></code> is also accepted. Lines beginning with <code class="docutils literal notranslate"><span class="pre">'#'</span></code> or <code class="docutils literal notranslate"><span class="pre">';'</span></code>
+are ignored and may be used to provide comments (<em>Nota Bene:</em> inline
+comment are possible using <code class="docutils literal notranslate"><span class="pre">'#'</span></code>).</p>
+<p>The default values are used in the options lists below.</p>
+<div class="section" id="mpd-section">
+<span id="mpd"></span><h3>MPD section<a class="headerlink" href="#mpd-section" title="Permalink to this headline">¶</a></h3>
+<p>This section is meant to configure MPD access, MPD host address / port
+and password if necessary.</p>
+<p><strong>[MPD]</strong></p>
+<dl class="simple">
+<dt><strong>host=localhost</strong></dt><dd><p>Set MPD host. Use IP or FQDN.</p>
+</dd>
+<dt><strong>port=6600</strong></dt><dd><p>Set host port to access MPD to.</p>
+</dd>
+<dt><strong>password=s3cr3t</strong></dt><dd><p>Set MPD password to use. Do not use this option if you don't have
+enabled password protected access on your MPD server.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="log-section">
+<span id="log"></span><h3>log section<a class="headerlink" href="#log-section" title="Permalink to this headline">¶</a></h3>
+<p>Configure logging.</p>
+<p><strong>[log]</strong></p>
+<dl class="simple">
+<dt><strong>logfile=</strong></dt><dd><p>File to log to, usually in dæmon mode.Default (empty or unset) is to
+log to stdin/stdout.</p>
+</dd>
+<dt><strong>verbosity=info</strong></dt><dd><p>Logging verbosity among debug, info, warning, error.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="process-daemonization">
+<span id="daemon"></span><h3>Process daemonization<a class="headerlink" href="#process-daemonization" title="Permalink to this headline">¶</a></h3>
+<p>Configure process daemon.</p>
+<p><strong>[daemon]</strong></p>
+<dl class="simple">
+<dt><strong>daemon=false</strong></dt><dd><p>Whether to daemonize process or not.</p>
+</dd>
+<dt><strong>pidfile=</strong></dt><dd><p>Where to store process ID.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="sima-section">
+<span id="sima"></span><h3>sima section<a class="headerlink" href="#sima-section" title="Permalink to this headline">¶</a></h3>
+<p>Core mpd-sima configuration.</p>
+<p><strong>[sima]</strong></p>
+<dl>
+<dt><strong>internal=Lastfm, Random, Crop</strong></dt><dd><p>mpd-sima's plugin management for internal source plugin and contrib (ie. external plugins).</p>
+<p>Plugins list is a comma separated string list.</p>
+<p>Optional plugin's configuration lays in its own section.
+For instance a &quot;AwesomePlugin&quot; declared here gets its configuration from the corresponding section &quot;[awesomeplugin]&quot;.</p>
+<p>The default list of plugins to load at startup: Lastfm,Random,Crop.</p>
+<p>Crop is an utility plugin, it does not queue any tracks (cf. below).</p>
+<p>Random will queue a track at random if other plugins did not return any tracks.</p>
+<p>You can add, combine here as many plugins you want.</p>
+<p>The priority may be used to order them.</p>
+</dd>
+<dt><strong>history_duration=8</strong></dt><dd><p>How far to look back in history to avoid to play twice the same track/title (duration in hours).</p>
+<p>The history_duration is also used to give priority to not recently played artists. Artist/tracks not in the scope of history have higther priority.</p>
+</dd>
+<dt><strong>queue_length=2</strong></dt><dd><p>Threshold value triggering queue process.</p>
+</dd>
+<dt><strong>musicbrainzid=true</strong></dt><dd><p>Use MusicBrainzIdentifier to search music (mainly for artists). Default is True, switch to False if you don't have MusicBrainzIdentifier set for at least 80% of you music library.</p>
+<p>Consider using these metadata as it enhances a lot artist/album/tracks identification. Use Picard to tag your file: <a class="reference external" href="https://picard.musicbrainz.org/">https://picard.musicbrainz.org/</a>.</p>
+</dd>
+<dt><strong>repeat_disable_queue=true</strong></dt><dd><p>Prevent disabling queuing in repeat play mode.</p>
+</dd>
+<dt><strong>single_disable_queue=true</strong></dt><dd><p>Prevent disabling queuing in single play mod</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="crop-section">
+<span id="crop"></span><h3>Crop section<a class="headerlink" href="#crop-section" title="Permalink to this headline">¶</a></h3>
+<p>crop plugin's configuration:</p>
+<p><strong>[crop]</strong></p>
+<dl class="simple">
+<dt><strong>consume=10</strong></dt><dd><p>How many played tracks to keep in the queue. Allows you to maintain a
+fixed length queue. Set to some negative integer to keep all played
+tracks.</p>
+</dd>
+<dt><strong>priority=10</strong></dt><dd><p>Plugin priority</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="random-section">
+<span id="random"></span><h3>Random section<a class="headerlink" href="#random-section" title="Permalink to this headline">¶</a></h3>
+<p>When no similar tracks are found, falling back to random queuing.</p>
+<p>Random plugin's configuration:</p>
+<p><strong>[random]</strong></p>
+<dl>
+<dt><strong>track_to_add=1</strong></dt><dd><p>How many track(s) to add.</p>
+</dd>
+<dt><strong>flavour=sensible</strong></dt><dd><p>Different mode, aka random flavour, are available: <strong>pure</strong>, <strong>sensible</strong>,</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>pure</strong>: pure random choice, even among recently played track.</p></li>
+<li><p><strong>sensible</strong>: use play history to filter chosen tracks.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt><strong>priority=50</strong></dt><dd><p>Plugin priority</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="lastfm-section">
+<span id="lastfm"></span><h3>LastFm section<a class="headerlink" href="#lastfm-section" title="Permalink to this headline">¶</a></h3>
+<p>LastFM plugin's configuration.</p>
+<p><strong>[lastfm]</strong></p>
+<p><strong>queue_mode=track</strong></p>
+<blockquote>
+<div><p>Queue mode to use among track, top and album (see <a class="reference external" href="#queue_mode">QUEUE MODE section</a> for info about queue modes).</p>
+</div></blockquote>
+<p><strong>max_art=20</strong></p>
+<blockquote>
+<div><p>Maximum number of similar artist to retrieve from local media
+library. When set to something superior to zero, it tries to get as
+much similar artists from media library.</p>
+</div></blockquote>
+<dl class="simple">
+<dt><strong>depth=1</strong></dt><dd><p>How many artists to base on similar artists search. The first is the
+last played artist and so on back in the history. Highter depth
+generates wider suggestions, it might help to reduce looping over
+same artists.</p>
+</dd>
+<dt><strong>single_album=false</strong></dt><dd><p>Prevent from queueing a track from the same album (it often happens
+with OST). Only relevant in &quot;track&quot; queue mode.</p>
+</dd>
+<dt><strong>track_to_add=1</strong></dt><dd><p>How many track(s) to add. Only relevant in <code class="docutils literal notranslate"><span class="pre">top</span></code> and <code class="docutils literal notranslate"><span class="pre">track</span></code>
+queue modes. This is actually an upper limit, min(<code class="docutils literal notranslate"><span class="pre">max_art</span></code>,
+<code class="docutils literal notranslate"><span class="pre">track_to_add</span></code>) will be used.</p>
+</dd>
+<dt><strong>album_to_add=1</strong></dt><dd><p>How many album(s) to add. Only relevant in <code class="docutils literal notranslate"><span class="pre">album</span></code> queue modes.</p>
+</dd>
+<dt><strong>track_to_add_from_album=0</strong></dt><dd><p>How many track(s) to add from each selected albums. Only relevant in
+<code class="docutils literal notranslate"><span class="pre">album</span></code> queue modes. When set to 0 or lower the whole album is
+queued.</p>
+</dd>
+<dt><strong>cache=True</strong></dt><dd><p>Whether or not to use on-disk persistent http cache.When set to
+&quot;true&quot;, sima will use a persistent cache for its http client. The
+cache is written along with the dbfile in:
+<code class="docutils literal notranslate"><span class="pre">$XDG_DATA_HOME/mpd_sima/http/WEB_SERVICE</span></code>. If set to &quot;false&quot;,
+caching is still done but in memory.</p>
+</dd>
+<dt><strong>priority=100</strong></dt><dd><p>Plugin priority</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="genre-section">
+<span id="genre"></span><h3>Genre section<a class="headerlink" href="#genre-section" title="Permalink to this headline">¶</a></h3>
+<p>Genre plugin's configuration.</p>
+<p>This plugin permits offline autoqueuing based on files genre tag only.</p>
+<p>It will try to queue tracks with similar genres (track's genre being read from
+tags).</p>
+<p><strong>[genre]</strong></p>
+<dl class="simple">
+<dt><strong>queue_mode=track</strong></dt><dd><p>Queue mode to use among track, album (see
+<a class="reference external" href="#queue_mode">QUEUE MODE section</a> for more info).</p>
+</dd>
+<dt><strong>single_album=false</strong></dt><dd><p>Prevent from queueing a track from the same album (it often happens with
+OST). Only relevant in &quot;track&quot; queue mode.</p>
+</dd>
+<dt><strong>priority=80</strong></dt><dd><p>Plugin priority</p>
+</dd>
+<dt><strong>track_to_add=1</strong></dt><dd><p>How many track(s) to add.</p>
+</dd>
+<dt><strong>album_to_add=1</strong></dt><dd><p>How many album(s) to add. Only relevant in <code class="docutils literal notranslate"><span class="pre">album</span></code> queue mode.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="tags-section">
+<span id="tags"></span><h3>Tags section<a class="headerlink" href="#tags-section" title="Permalink to this headline">¶</a></h3>
+<p>Tags plugin's configuration. There is no default configuration for this
+plugin, it does not work out of the box.</p>
+<p>This plugin permits offline autoqueuing based on files tags only.
+Supported tags are <code class="docutils literal notranslate"><span class="pre">'comment'</span></code>, <code class="docutils literal notranslate"><span class="pre">'date'</span></code>, <code class="docutils literal notranslate"><span class="pre">'genre'</span></code>, <code class="docutils literal notranslate"><span class="pre">'label'</span></code>
+and <code class="docutils literal notranslate"><span class="pre">'originaldate'</span></code>.</p>
+<p>In addition to supported tags above you can use an MPD filter. Please
+refer to MPD protocol documentation for more.</p>
+<p>All tag entries in this section are ANDed as a single MPD filter to look
+for titles in the library. Moreover, for each tags, comma separated
+values are also ORed. For instance setting &quot;<code class="docutils literal notranslate"><span class="pre">genre=rock</span></code>&quot; and
+&quot;<code class="docutils literal notranslate"><span class="pre">date=1982,1983,1984,1985,1986,1987,1988,1989</span></code>&quot; will end up looking
+for track tagged with genre <code class="docutils literal notranslate"><span class="pre">rock</span></code> and date within 1982 through 1989.
+Using an MPD filter to replace <code class="docutils literal notranslate"><span class="pre">date</span></code> you can achieve the same with
+the following setting: &quot;<code class="docutils literal notranslate"><span class="pre">genre=rock</span></code>&quot; and
+&quot;<code class="docutils literal notranslate"><span class="pre">filter=(date</span> <span class="pre">=~</span> <span class="pre">'198[2-9]+')</span></code>&quot; (provided your MPD server was
+compiled with libpcre).</p>
+<p><strong>[tags]</strong></p>
+<dl class="simple">
+<dt><strong>queue_mode=track</strong></dt><dd><p>Queue mode to use among track, album (see <a class="reference external" href="#queue_mode">QUEUE MODES section</a> for info).</p>
+</dd>
+<dt><strong>single_album=false</strong></dt><dd><p>Prevent from queueing a track from the same album (it often happens with
+OST). Only relevant in &quot;track&quot; queue mode.</p>
+</dd>
+<dt><strong>filter=</strong></dt><dd><p>You can use here any valid MPD filter as defined in MPD protocol
+documentation.</p>
+</dd>
+</dl>
+<p><strong>comment=</strong></p>
+<p><strong>date=</strong></p>
+<p><strong>genre=</strong></p>
+<p><strong>label=</strong></p>
+<p><strong>originaldate=</strong></p>
+<dl class="simple">
+<dt><strong>priority=80</strong></dt><dd><p>Plugin priority</p>
+</dd>
+<dt><strong>track_to_add=1</strong></dt><dd><p>How many track(s) to add.</p>
+</dd>
+<dt><strong>album_to_add=1</strong></dt><dd><p>How many album(s) to add. Only relevant in <code class="docutils literal notranslate"><span class="pre">album</span></code> queue mode.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="queue-modes">
+<span id="queue-mode"></span><h2>QUEUE MODES<a class="headerlink" href="#queue-modes" title="Permalink to this headline">¶</a></h2>
+<p>Different queue modes are available with some plugins (check for
+<code class="docutils literal notranslate"><span class="pre">queue_mode</span></code> presence in plugin config).</p>
+<p>mpd-sima tries preferably to chose among unplayed artists or at least
+not recently played artist.</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">track</span></code></dt><dd><p>Queue a similar track chosen at random from a similar artist.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">top</span></code></dt><dd><p>Queue a track from a similar artist, chosen among &quot;top tracks&quot;
+according to last.fm data mining.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">album</span></code></dt><dd><p>Queue a whole album chosen at random from a similar artist.</p>
+<p><em>Nota Bene:</em> Due to the track point of view of database build upon
+tracks tags an album lookup for a specific artist will return albums
+as soon as this artist appears in a single track of the album. For
+instance looking for album from &quot;The Velvet Underground&quot; will fetch
+&quot;Last Days&quot; and &quot;Juno&quot; OSTs because the band appears on the
+soundtrack of these two movies. A solution is for you to set
+AlbumArtists tag to something different than the actual artist of the
+track. For compilations, OSTs etc. a strong convention is to use
+&quot;Various Artists&quot; for this tag.</p>
+<p>mpd-sima is currently looking for AlbumArtists tags and avoid album
+where this tag is set with &quot;Various Artists&quot;. If a single track
+within an album is found with AlbumArtists:&quot;Various Artists&quot; the
+complete album is skipped and won't be queued.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="files">
+<h2>FILES<a class="headerlink" href="#files" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt><code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_CONFIG_HOME</span></em><span class="pre">}/mpd_sima/mpd_sima.cfg</span></code></dt><dd><p>Configuration file.</p>
+</dd>
+<dt><code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_DATA_HOME</span></em><span class="pre">}/mpd_sima/sima.db</span></code></dt><dd><p>SQLite internal DB file. Stores play history and blocklists.</p>
+</dd>
+<dt><code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_DATA_HOME</span></em><span class="pre">}/mpd_sima/WEB_SERVICE/</span></code></dt><dd><p>HTTP cache.</p>
+</dd>
+</dl>
+<p>Usually <span class="target" id="index-3"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XDG_DATA_HOME</span></code> is set to <code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{HOME</span></em><span class="pre">}/.local/share</span></code> and
+<span class="target" id="index-4"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XDG_CONFIG_HOME</span></code> to <code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{HOME</span></em><span class="pre">}/.config</span></code> (for regular users).
+You may override them using command line option <code class="docutils literal notranslate"><span class="pre">--var-dir</span></code> and <code class="docutils literal notranslate"><span class="pre">--config</span></code>
+(cf. <a class="reference internal" href="mpd-sima.1.html"><span class="doc">mpd-sima</span></a>)</p>
+</div>
+<div class="section" id="see-also">
+<h2>SEE ALSO<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p><span class="target" id="index-5"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">mpc(1)</span></code>, <span class="target" id="index-6"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">mpd(1)</span></code></p>
+</div>
+<div class="section" id="feedback-bugs">
+<h2>FEEDBACK/BUGS<a class="headerlink" href="#feedback-bugs" title="Permalink to this headline">¶</a></h2>
+<p>The maintainer would be more than happy to ear from you, don't hesitate to send feedback, <a class="reference external" href="https://kaliko.me/contact/">https://kaliko.me/contact/</a></p>
+<p>XMPP users are welcome to join the dedicated chat room at <a class="reference external" href="mailto:kaliko&#46;me&#37;&#52;&#48;conf&#46;azylum&#46;org">kaliko<span>&#46;</span>me<span>&#64;</span>conf<span>&#46;</span>azylum<span>&#46;</span>org</a></p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">mpd_sima.cfg</a><ul>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
+<li><a class="reference internal" href="#examples">EXAMPLES</a><ul>
+<li><a class="reference internal" href="#file-tags-queue-mode-offline-mode">File tags queue mode (offline mode).</a></li>
+<li><a class="reference internal" href="#album-queue-mode-using-last-fm-recommendations-online-mode">Album queue mode using last.fm recommendations (online mode).</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configuration-file">Configuration file</a><ul>
+<li><a class="reference internal" href="#mpd-section">MPD section</a></li>
+<li><a class="reference internal" href="#log-section">log section</a></li>
+<li><a class="reference internal" href="#process-daemonization">Process daemonization</a></li>
+<li><a class="reference internal" href="#sima-section">sima section</a></li>
+<li><a class="reference internal" href="#crop-section">Crop section</a></li>
+<li><a class="reference internal" href="#random-section">Random section</a></li>
+<li><a class="reference internal" href="#lastfm-section">LastFm section</a></li>
+<li><a class="reference internal" href="#genre-section">Genre section</a></li>
+<li><a class="reference internal" href="#tags-section">Tags section</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#queue-modes">QUEUE MODES</a></li>
+<li><a class="reference internal" href="#files">FILES</a></li>
+<li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
+<li><a class="reference internal" href="#feedback-bugs">FEEDBACK/BUGS</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="mpd-sima.1.html"
+                        title="previous chapter">mpd-sima</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../dev/mpdclient.html"
+                        title="next chapter">MPD Client</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/man/mpd_sima.cfg.5.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../dev/mpdclient.html" title="MPD Client"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mpd-sima.1.html" title="mpd-sima"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">MPD_sima  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mpd_sima.cfg</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2022, kaliko.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

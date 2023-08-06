@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configuration examples &#8212; MPD_sima  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Music library metadata convention" href="10_metadata.html" />
+    <link rel="prev" title="Installation" href="00_install.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="10_metadata.html" title="Music library metadata convention"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="00_install.html" title="Installation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">MPD_sima  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Configuration examples</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="configuration-examples">
+<span id="id1"></span><h1>Configuration examples<a class="headerlink" href="#configuration-examples" title="Permalink to this headline">¶</a></h1>
+<p>Configuration location is <code class="docutils literal notranslate"><span class="pre">${XDG_CONFIG_HOME}/mpd_sima/mpd_sima.cfg</span></code> usually <code class="docutils literal notranslate"><span class="pre">${XDG_CONFIG_HOME}</span></code>  is in <code class="docutils literal notranslate"><span class="pre">${HOME}/.config/</span></code>.</p>
+<div class="section" id="default-configuration">
+<h2>Default configuration<a class="headerlink" href="#default-configuration" title="Permalink to this headline">¶</a></h2>
+<p>MPD_sima runs without explicit configuration as long as your MPD server is easy
+to discover (<code class="docutils literal notranslate"><span class="pre">localhost:6600</span></code> or exposed via environment variables <code class="docutils literal notranslate"><span class="pre">MPD_HOST</span></code>/<code class="docutils literal notranslate"><span class="pre">MPD_PORT</span></code>).</p>
+<p>The default configuration is to run in <em>track mode</em> with suggestions from
+last.fm. In addition to <cite>Lastfm</cite> plugin set in <strong>[sima]</strong> section (within <em>internal</em>
+option) there is a <cite>Crop</cite> plugin (keeps 10 tracks behind the currently playing
+track) and a <cite>Random</cite> plugin (acting as a fallback if <cite>Lastfm</cite> did not find any
+track to queue).</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[MPD]</span>
+<span class="c1"># Change MPD server here</span>
+<span class="c1">#host = mpdserver.example.org</span>
+<span class="c1">#port = 6600</span>
+
+<span class="k">[sima]</span>
+<span class="na">internal</span> <span class="o">=</span> <span class="s">Crop, Lastfm, Random</span>
+<span class="na">history_duration</span> <span class="o">=</span> <span class="s">8</span>
+<span class="na">queue_length</span> <span class="o">=</span> <span class="s">2</span>
+
+<span class="k">[crop]</span>
+<span class="na">consume</span> <span class="o">=</span> <span class="s">10</span>
+
+<span class="k">[lastfm]</span>
+<span class="na">queue_mode</span> <span class="o">=</span> <span class="s">track</span>
+<span class="na">single_album</span> <span class="o">=</span> <span class="s">False</span>
+<span class="na">track_to_add</span> <span class="o">=</span> <span class="s">1</span>
+</pre></div>
+</div>
+<div class="section" id="album-mode">
+<h3>Album mode<a class="headerlink" href="#album-mode" title="Permalink to this headline">¶</a></h3>
+<p>One of the first request added to MPD_sima was album mode. It allows to queue whole album instead of single tracks.</p>
+<p>Here the configuration keeps the queue plugin <em>Lastfm</em> but configures it to queue albums (<code class="docutils literal notranslate"><span class="pre">queue_mode</span> <span class="pre">=</span> <span class="pre">album</span></code>) and ask for 2 albums to be add.</p>
+<p>The configuration of MPD_sima in <code class="docutils literal notranslate"><span class="pre">sima</span></code> section is also modified for <code class="docutils literal notranslate"><span class="pre">queue_length</span></code>. The value of 10 is to trigger album queueing when there are 10 tracks or less in the queue.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[sima]</span>
+<span class="na">internal</span> <span class="o">=</span> <span class="s">Crop, Lastfm, Random</span>
+<span class="na">history_duration</span> <span class="o">=</span> <span class="s">24</span>
+<span class="na">queue_length</span> <span class="o">=</span> <span class="s">10</span>
+
+<span class="k">[crop]</span>
+<span class="na">consume</span> <span class="o">=</span> <span class="s">10</span>
+
+<span class="k">[lastfm]</span>
+<span class="na">queue_mode</span> <span class="o">=</span> <span class="s">album</span>
+<span class="na">album_to_add</span> <span class="o">=</span> <span class="s">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="offline-auto-queuing">
+<h2>Offline auto-queuing<a class="headerlink" href="#offline-auto-queuing" title="Permalink to this headline">¶</a></h2>
+<p>In addition to LastFm there are other <em>plugins</em> you can mix together or use alone to have a specific queue mode.</p>
+<div class="section" id="genre-auto-queuing">
+<h3>Genre auto-queuing<a class="headerlink" href="#genre-auto-queuing" title="Permalink to this headline">¶</a></h3>
+<p>With this mode MPD_sima is trying to queue tracks with genre tag similar to previously played tracks.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[sima]</span>
+<span class="na">internal</span> <span class="o">=</span> <span class="s">Crop, Genre, Random</span>
+<span class="na">history_duration</span> <span class="o">=</span> <span class="s">8</span>
+
+<span class="k">[genre]</span>
+<span class="na">queue_mode</span> <span class="o">=</span> <span class="s">track</span>
+<span class="na">track_to_add</span> <span class="o">=</span> <span class="s">1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="random-queuing">
+<h3>Random queuing<a class="headerlink" href="#random-queuing" title="Permalink to this headline">¶</a></h3>
+<p>This mode allows random queuing with different flavour <strong>pure</strong> (total
+randomness) or <strong>sensible</strong> (use play history to filter chosen tracks).
+The <strong>sensible</strong> flavour will then tend to play track not in recently played.</p>
+<p>The history duration is important for this plugin when running in <strong>sensible</strong> flavour since you might exhaust possible tracks to queue if the <strong>history_duration</strong> is larger than the total play time you have in your music library.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[sima]</span>
+<span class="na">internal</span> <span class="o">=</span> <span class="s">Crop, Random</span>
+<span class="na">history_duration</span> <span class="o">=</span> <span class="s">168</span>
+
+<span class="k">[random]</span>
+<span class="na">flavour</span> <span class="o">=</span> <span class="s">sensible</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tag-queuing">
+<h3>Tag queuing<a class="headerlink" href="#tag-queuing" title="Permalink to this headline">¶</a></h3>
+<p>This is the most complex and versatile offline mode. “Tags” plugin allows to queue track based on actual tags value.</p>
+<p>Here is an example to have MPD_sima to queue only electronic music tagged with genres <strong>electronica</strong> or <strong>IDM</strong> or <strong>glitch</strong>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[sima]</span>
+<span class="na">internal</span> <span class="o">=</span> <span class="s">Crop, Tags</span>
+
+<span class="k">[tags]</span>
+<span class="c1"># Look for files with tagged with genre &quot;electronica&quot; OR &quot;IDM&quot; OR &quot;glitch&quot;</span>
+<span class="na">genre</span> <span class="o">=</span> <span class="s">electronica, IDM, glitch</span>
+</pre></div>
+</div>
+<p>There are other supported tags, mainly <strong>date</strong>, <strong>originaldate</strong> or
+<strong>comment</strong> (cf manual for the exact list). You can use more than one, entries
+in tags sections are ANDed within a single MPD filter to look for titles.</p>
+<p>For instance setting “genre=rock” and
+“date=1982,1983,1984,1985,1986,1987,1988,1989” will end up looking for track
+tagged with genre rock and date within 1982 through 1989:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[sima]</span>
+<span class="na">internal</span> <span class="o">=</span> <span class="s">Crop, Tags</span>
+
+<span class="k">[tags]</span>
+<span class="na">genre</span> <span class="o">=</span> <span class="s">rock</span>
+<span class="na">date</span> <span class="o">=</span> <span class="s">1982,1983,1984,1985,1986,1987,1988,1989</span>
+</pre></div>
+</div>
+<p>In case you want to make complex search in MPD library you can provide an <a class="reference external" href="https://mpd.readthedocs.io/en/latest/protocol.html#filter-syntax">MPD
+filter</a>. This is a powerful feature, it comes at the cost of a different syntax, some might find it more readable some wont :D</p>
+<p>For instance in the previous example you can simply replace <strong>date</strong> with the
+current filter “<cite>(date =~ ‘198[2-9]+’)</cite>”:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[sima]</span>
+<span class="na">internal</span> <span class="o">=</span> <span class="s">Crop, Tags</span>
+
+<span class="k">[tags]</span>
+<span class="na">genre</span> <span class="o">=</span> <span class="s">rock</span>
+<span class="na">filter</span> <span class="o">=</span> <span class="s">(date =~ &#39;198[2-9]+&#39;)</span>
+</pre></div>
+</div>
+<p>And even go further and merge genre in the filter using “<cite>(genre == ‘rock’) AND
+(date =~ ‘198[2-9]+’)</cite>”.</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[sima]</span>
+<span class="na">internal</span> <span class="o">=</span> <span class="s">Crop, Tags</span>
+
+<span class="k">[tags]</span>
+<span class="na">filter</span> <span class="o">=</span> <span class="s">(genre == &#39;rock&#39; ) AND (date =~ &#39;198[2-9]+&#39;)</span>
+</pre></div>
+</div>
+<p>Since the setup for the filter can be tricky and it can be useful to validate
+the syntax and have a look at what kind of artists the filter would return.</p>
+<p>You can call MPD_sima to controls the configuration file. For instance with a config in <cite>sima.cfg</cite> run:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./mpd-sima --log-level info --config sima.cfg config-test
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Configuration examples</a><ul>
+<li><a class="reference internal" href="#default-configuration">Default configuration</a><ul>
+<li><a class="reference internal" href="#album-mode">Album mode</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#offline-auto-queuing">Offline auto-queuing</a><ul>
+<li><a class="reference internal" href="#genre-auto-queuing">Genre auto-queuing</a></li>
+<li><a class="reference internal" href="#random-queuing">Random queuing</a></li>
+<li><a class="reference internal" href="#tag-queuing">Tag queuing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="00_install.html"
+                        title="previous chapter">Installation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="10_metadata.html"
+                        title="next chapter">Music library metadata convention</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/user/01_configurations.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="10_metadata.html" title="Music library metadata convention"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="00_install.html" title="Installation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">MPD_sima  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Configuration examples</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2022, kaliko.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

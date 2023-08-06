@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sima.mpdclient &#8212; MPD_sima  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">MPD_sima  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sima.mpdclient</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for sima.mpdclient</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1"># Copyright (c) 2009-2021 kaliko &lt;kaliko@azylum.org&gt;</span>
+<span class="c1">#</span>
+<span class="c1">#  This file is part of sima</span>
+<span class="c1">#</span>
+<span class="c1">#  sima is free software: you can redistribute it and/or modify</span>
+<span class="c1">#  it under the terms of the GNU General Public License as published by</span>
+<span class="c1">#  the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1">#  (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1">#  sima is distributed in the hope that it will be useful,</span>
+<span class="c1">#  but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1">#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1">#  GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1">#  You should have received a copy of the GNU General Public License</span>
+<span class="c1">#  along with sima.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+
+<span class="c1"># standard library import</span>
+<span class="kn">from</span> <span class="nn">difflib</span> <span class="kn">import</span> <span class="n">get_close_matches</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+<span class="kn">from</span> <span class="nn">logging</span> <span class="kn">import</span> <span class="n">getLogger</span>
+<span class="kn">from</span> <span class="nn">select</span> <span class="kn">import</span> <span class="n">select</span>
+
+<span class="c1"># external module</span>
+<span class="kn">from</span> <span class="nn">musicpd</span> <span class="kn">import</span> <span class="n">MPDClient</span><span class="p">,</span> <span class="n">MPDError</span> <span class="k">as</span> <span class="n">PlayerError</span>
+
+
+<span class="c1"># local import</span>
+<span class="kn">from</span> <span class="nn">.lib.meta</span> <span class="kn">import</span> <span class="n">Meta</span><span class="p">,</span> <span class="n">Artist</span><span class="p">,</span> <span class="n">Album</span>
+<span class="kn">from</span> <span class="nn">.lib.track</span> <span class="kn">import</span> <span class="n">Track</span>
+<span class="kn">from</span> <span class="nn">.lib.simastr</span> <span class="kn">import</span> <span class="n">SimaStr</span>
+<span class="kn">from</span> <span class="nn">.utils.leven</span> <span class="kn">import</span> <span class="n">levenshtein_ratio</span>
+
+
+<span class="c1"># Some decorators</span>
+<span class="k">def</span> <span class="nf">bl_artist</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">cls</span><span class="o">.</span><span class="n">database</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">art</span> <span class="ow">in</span> <span class="n">result</span><span class="o">.</span><span class="n">names</span><span class="p">:</span>
+            <span class="n">artist</span> <span class="o">=</span> <span class="n">Artist</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">art</span><span class="p">,</span> <span class="n">mbid</span><span class="o">=</span><span class="n">result</span><span class="o">.</span><span class="n">mbid</span><span class="p">)</span>
+            <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">get_bl_artist</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+                <span class="bp">cls</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Artist in blocklist: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+
+
+<span class="k">def</span> <span class="nf">set_artist_mbid</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">cls</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">Meta</span><span class="o">.</span><span class="n">use_mbid</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">result</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">result</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+                <span class="n">mbid</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_find_musicbrainz_artistid</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+                <span class="n">artist</span> <span class="o">=</span> <span class="n">Artist</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">result</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">mbid</span><span class="o">=</span><span class="n">mbid</span><span class="p">)</span>
+                <span class="n">artist</span><span class="o">.</span><span class="n">add_alias</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">artist</span>
+        <span class="k">return</span> <span class="n">result</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+
+
+<span class="k">def</span> <span class="nf">tracks_wrapper</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Convert plain track mapping as returned by MPDClient into :py:obj:`sima.lib.track.Track`</span>
+<span class="sd">    objects. This decorator accepts single track or list of tracks as input.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">Track</span><span class="p">(</span><span class="o">**</span><span class="n">ret</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">Track</span><span class="p">(</span><span class="o">**</span><span class="n">t</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">ret</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+<span class="c1"># / decorators</span>
+
+
+<div class="viewcode-block" id="MPD"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD">[docs]</a><span class="k">class</span> <span class="nc">MPD</span><span class="p">(</span><span class="n">MPDClient</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Player instance inheriting from MPDClient (python-musicpd).</span>
+
+<span class="sd">    Some methods are overridden to format objects as :py:obj:`sima.lib.track.Track` for</span>
+<span class="sd">    instance, other are calling parent class directly through super().</span>
+<span class="sd">    cf. MPD.__getattr__</span>
+
+<span class="sd">    .. note::</span>
+
+<span class="sd">        * find methods are looking for exact match of the object provided</span>
+<span class="sd">          attributes in MPD music library</span>
+<span class="sd">        * search methods are looking for exact match + fuzzy match.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">needed_cmds</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">,</span> <span class="s1">&#39;stats&#39;</span><span class="p">,</span> <span class="s1">&#39;add&#39;</span><span class="p">,</span> <span class="s1">&#39;find&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;search&#39;</span><span class="p">,</span> <span class="s1">&#39;currentsong&#39;</span><span class="p">,</span> <span class="s1">&#39;ping&#39;</span><span class="p">]</span>
+    <span class="n">needed_tags</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Artist&#39;</span><span class="p">,</span> <span class="s1">&#39;Album&#39;</span><span class="p">,</span> <span class="s1">&#39;AlbumArtist&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;Track&#39;</span><span class="p">}</span>
+    <span class="n">needed_mbid_tags</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;MUSICBRAINZ_ARTISTID&#39;</span><span class="p">,</span> <span class="s1">&#39;MUSICBRAINZ_ALBUMID&#39;</span><span class="p">,</span>
+                        <span class="s1">&#39;MUSICBRAINZ_ALBUMARTISTID&#39;</span><span class="p">,</span> <span class="s1">&#39;MUSICBRAINZ_TRACKID&#39;</span><span class="p">}</span>
+    <span class="n">MPD_supported_tags</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Artist&#39;</span><span class="p">,</span> <span class="s1">&#39;ArtistSort&#39;</span><span class="p">,</span> <span class="s1">&#39;Album&#39;</span><span class="p">,</span> <span class="s1">&#39;AlbumSort&#39;</span><span class="p">,</span> <span class="s1">&#39;AlbumArtist&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;AlbumArtistSort&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;Track&#39;</span><span class="p">,</span> <span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="s1">&#39;Genre&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="s1">&#39;OriginalDate&#39;</span><span class="p">,</span> <span class="s1">&#39;Composer&#39;</span><span class="p">,</span> <span class="s1">&#39;Performer&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;Conductor&#39;</span><span class="p">,</span> <span class="s1">&#39;Work&#39;</span><span class="p">,</span> <span class="s1">&#39;Grouping&#39;</span><span class="p">,</span> <span class="s1">&#39;Disc&#39;</span><span class="p">,</span> <span class="s1">&#39;Label&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;MUSICBRAINZ_ARTISTID&#39;</span><span class="p">,</span> <span class="s1">&#39;MUSICBRAINZ_ALBUMID&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;MUSICBRAINZ_ALBUMARTISTID&#39;</span><span class="p">,</span> <span class="s1">&#39;MUSICBRAINZ_TRACKID&#39;</span><span class="p">,</span>
+                          <span class="s1">&#39;MUSICBRAINZ_RELEASETRACKID&#39;</span><span class="p">,</span> <span class="s1">&#39;MUSICBRAINZ_WORKID&#39;</span><span class="p">}</span>
+    <span class="n">database</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">socket_timeout</span> <span class="o">=</span> <span class="mi">10</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span> <span class="o">=</span> <span class="n">getLogger</span><span class="p">(</span><span class="s1">&#39;sima&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">config</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="c1"># ######### Overriding MPDClient ###########</span>
+    <span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Wrapper around MPDClient calls for abstract overriding&quot;&quot;&quot;</span>
+        <span class="n">track_wrapped</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;currentsong&#39;</span><span class="p">,</span> <span class="s1">&#39;find&#39;</span><span class="p">,</span> <span class="s1">&#39;playlistinfo&#39;</span><span class="p">,</span> <span class="p">}</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">track_wrapped</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">tracks_wrapper</span><span class="p">(</span><span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="n">cmd</span><span class="p">))</span>
+            <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="n">cmd</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>  <span class="c1"># socket errors</span>
+            <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
+
+<div class="viewcode-block" id="MPD.disconnect"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD.disconnect">[docs]</a>    <span class="k">def</span> <span class="nf">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overriding explicitly MPDClient.disconnect()&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sock</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="MPD.connect"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD.connect">[docs]</a>    <span class="k">def</span> <span class="nf">connect</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overriding explicitly MPDClient.connect()&quot;&quot;&quot;</span>
+        <span class="n">mpd_config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;MPD&#39;</span><span class="p">]</span>
+        <span class="c1"># host, port, password</span>
+        <span class="n">host</span> <span class="o">=</span> <span class="n">mpd_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;host&#39;</span><span class="p">)</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="n">mpd_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;port&#39;</span><span class="p">)</span>
+        <span class="n">password</span> <span class="o">=</span> <span class="n">mpd_config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span> <span class="n">fallback</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+        <span class="c1"># Catch socket errors</span>
+        <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Could not connect to &quot;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">port</span><span class="si">}</span><span class="s1">&quot;: </span><span class="si">{</span><span class="n">err</span><span class="o">.</span><span class="n">strerror</span><span class="si">}</span><span class="s1">&#39;</span>
+                             <span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
+        <span class="c1"># Catch all other possible errors</span>
+        <span class="c1"># ConnectionError and ProtocolError are always fatal.  Others may not</span>
+        <span class="c1"># be, but we don&#39;t know how to handle them here, so treat them as if</span>
+        <span class="c1"># they are instead of ignoring them.</span>
+        <span class="k">except</span> <span class="n">MPDError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Could not connect to &quot;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s1">:</span><span class="si">{</span><span class="n">port</span><span class="si">}</span><span class="s1">&quot;: </span><span class="si">{</span><span class="n">err</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
+        <span class="k">if</span> <span class="n">password</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Could not connect to &#39;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2">&#39;: </span><span class="si">{</span><span class="n">err</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
+        <span class="c1"># Controls we have sufficient rights</span>
+        <span class="n">available_cmd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">commands</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">cmd</span> <span class="ow">in</span> <span class="n">MPD</span><span class="o">.</span><span class="n">needed_cmds</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">cmd</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">available_cmd</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
+                <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Could connect to &quot;</span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s1">&quot;, but command &quot;</span><span class="si">{</span><span class="n">cmd</span><span class="si">}</span><span class="s1">&quot; not available&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tagtypes_clear</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">MPD</span><span class="o">.</span><span class="n">needed_tags</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tagtypes_enable</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="n">ltt</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tagtypes</span><span class="p">()))</span>
+        <span class="n">needed_tags</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">,</span> <span class="n">MPD</span><span class="o">.</span><span class="n">needed_tags</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">needed_tags</span> <span class="o">&amp;</span> <span class="n">ltt</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">MPD</span><span class="o">.</span><span class="n">needed_tags</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;MPD exposes: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">ltt</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;Tags needed: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">needed_tags</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="s1">&#39;Missing mandatory metadata!&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">MPD</span><span class="o">.</span><span class="n">needed_mbid_tags</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tagtypes_enable</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+        <span class="c1"># Controls use of MusicBrainzIdentifier</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">getboolean</span><span class="p">(</span><span class="s1">&#39;sima&#39;</span><span class="p">,</span> <span class="s1">&#39;musicbrainzid&#39;</span><span class="p">):</span>
+            <span class="n">ltt</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tagtypes</span><span class="p">())</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">MPD</span><span class="o">.</span><span class="n">needed_mbid_tags</span> <span class="o">&amp;</span> <span class="n">ltt</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">MPD</span><span class="o">.</span><span class="n">needed_mbid_tags</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;Use of MusicBrainzIdentifier is set but MPD &#39;</span>
+                                 <span class="s1">&#39;is not providing related metadata&#39;</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">ltt</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;Disabling MusicBrainzIdentifier&#39;</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span> <span class="o">=</span> <span class="n">Meta</span><span class="o">.</span><span class="n">use_mbid</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Available metadata: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">ltt</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span> <span class="o">=</span> <span class="n">Meta</span><span class="o">.</span><span class="n">use_mbid</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;Use of MusicBrainzIdentifier disabled!&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Consider using MusicBrainzIdentifier for your music library&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span> <span class="o">=</span> <span class="n">Meta</span><span class="o">.</span><span class="n">use_mbid</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_reset_cache</span><span class="p">()</span></div>
+    <span class="c1"># ######### / Overriding MPDClient #########</span>
+
+    <span class="k">def</span> <span class="nf">_reset_cache</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Both flushes and instantiates _cache</span>
+
+<span class="sd">        * artists: all artists</span>
+<span class="sd">        * nombid_artists: artists with no mbid (set only when self.use_mbid is True)</span>
+<span class="sd">        * artist_tracks: caching last artist tracks, used in search_track</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Player: Flushing cache!&#39;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Player: Initialising cache!&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;artists&#39;</span><span class="p">:</span> <span class="nb">frozenset</span><span class="p">(),</span>
+                       <span class="s1">&#39;nombid_artists&#39;</span><span class="p">:</span> <span class="nb">frozenset</span><span class="p">(),</span>
+                       <span class="s1">&#39;artist_tracks&#39;</span><span class="p">:</span> <span class="p">{}}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="s1">&#39;artists&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">frozenset</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="s1">&#39;artist&#39;</span><span class="p">)))</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span><span class="p">:</span>
+            <span class="n">artists</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="s2">&quot;(MUSICBRAINZ_ARTISTID == &#39;&#39;)&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="s1">&#39;nombid_artists&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">frozenset</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">artists</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">_skipped_track</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">previous</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">==</span> <span class="s1">&#39;stop&#39;</span>
+                <span class="ow">or</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">previous</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">)</span>
+                <span class="ow">or</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">)):</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">current</span><span class="o">.</span><span class="n">id</span> <span class="o">!=</span> <span class="n">previous</span><span class="o">.</span><span class="n">id</span>  <span class="c1"># pylint: disable=no-member</span>
+
+<div class="viewcode-block" id="MPD.monitor"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD.monitor">[docs]</a>    <span class="k">def</span> <span class="nf">monitor</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Monitor player for change</span>
+<span class="sd">        Returns a list a events among:</span>
+
+<span class="sd">            * database  player media library has changed</span>
+<span class="sd">            * playlist  playlist modified</span>
+<span class="sd">            * options   player options changed: repeat mode, etc…</span>
+<span class="sd">            * player    player state changed: paused, stopped, skip track…</span>
+<span class="sd">            * skipped   current track skipped</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">curr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">current</span>
+        <span class="n">select_timeout</span> <span class="o">=</span> <span class="mi">5</span>
+        <span class="k">try</span><span class="p">:</span>  <span class="c1"># noidle cmd does not go through __getattr__, need to catch OSError then</span>
+            <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">send_idle</span><span class="p">(</span><span class="s1">&#39;database&#39;</span><span class="p">,</span> <span class="s1">&#39;playlist&#39;</span><span class="p">,</span> <span class="s1">&#39;player&#39;</span><span class="p">,</span> <span class="s1">&#39;options&#39;</span><span class="p">)</span>
+                <span class="n">_read</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">select</span><span class="p">([</span><span class="bp">self</span><span class="p">],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="n">select_timeout</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">_read</span><span class="p">:</span>  <span class="c1"># tries to read response</span>
+                    <span class="n">ret</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fetch_idle</span><span class="p">()</span>
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_skipped_track</span><span class="p">(</span><span class="n">curr</span><span class="p">):</span>
+                        <span class="n">ret</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;skipped&#39;</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="s1">&#39;database&#39;</span> <span class="ow">in</span> <span class="n">ret</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_reset_cache</span><span class="p">()</span>
+                    <span class="k">return</span> <span class="n">ret</span>
+                <span class="c1">#  Nothing to read, canceling idle</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">noidle</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span></div>
+
+<div class="viewcode-block" id="MPD.clean"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD.clean">[docs]</a>    <span class="k">def</span> <span class="nf">clean</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Clean blocking event (idle) and pending commands</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="s1">&#39;idle&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pending</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">noidle</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pending</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">&#39;pending commands: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pending</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="MPD.add"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD.add">[docs]</a>    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">payload</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Overriding MPD&#39;s add method to accept Track objects</span>
+
+<span class="sd">        :param Track,list payload: Either a single track or a list of it</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">payload</span><span class="p">,</span> <span class="n">Track</span><span class="p">):</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__getattr__</span><span class="p">(</span><span class="s1">&#39;add&#39;</span><span class="p">)(</span><span class="n">payload</span><span class="o">.</span><span class="n">file</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">payload</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">command_list_ok_begin</span><span class="p">()</span>
+            <span class="nb">map</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">,</span> <span class="n">payload</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">command_list_end</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s1">&#39;Cannot add </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">payload</span><span class="p">)</span></div>
+
+    <span class="c1"># ######### Properties #####################</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">current</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">currentsong</span><span class="p">()</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">playlist</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Override deprecated MPD playlist command</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">playlistinfo</span><span class="p">()</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">playmode</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">plm</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;repeat&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;single&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+               <span class="s1">&#39;random&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s1">&#39;consume&#39;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="p">}</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">plm</span><span class="p">:</span>
+                <span class="n">plm</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">key</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">))})</span>
+        <span class="k">return</span> <span class="n">plm</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">queue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">plst</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">playlist</span>
+        <span class="n">curr_position</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">current</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span>
+        <span class="n">plst</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">trk</span> <span class="k">for</span> <span class="n">trk</span> <span class="ow">in</span> <span class="n">plst</span> <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">trk</span><span class="o">.</span><span class="n">pos</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">curr_position</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">state</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns (play|stop|pause)&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;state&#39;</span><span class="p">))</span>
+    <span class="c1"># ######### / Properties ###################</span>
+
+<span class="c1"># #### find_tracks ####</span>
+<div class="viewcode-block" id="MPD.find_tracks"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD.find_tracks">[docs]</a>    <span class="k">def</span> <span class="nf">find_tracks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">what</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Find tracks for a specific artist or album</span>
+<span class="sd">            &gt;&gt;&gt; player.find_tracks(Artist(&#39;Nirvana&#39;))</span>
+<span class="sd">            &gt;&gt;&gt; player.find_tracks(Album(&#39;In Utero&#39;, artist=Artist(&#39;Nirvana&#39;))</span>
+
+<span class="sd">        :param Artist,Album what: Artist or Album to fetch track from</span>
+<span class="sd">        :return: A list of track objects</span>
+<span class="sd">        :rtype: list(Track)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">what</span><span class="p">,</span> <span class="n">Artist</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_art</span><span class="p">(</span><span class="n">what</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">what</span><span class="p">,</span> <span class="n">Album</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_alb</span><span class="p">(</span><span class="n">what</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">what</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_tracks</span><span class="p">(</span><span class="n">Artist</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">what</span><span class="p">))</span>
+        <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="s1">&#39;Bad input argument&#39;</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">_find_art</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">):</span>
+        <span class="n">tracks</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="c1"># artist blocklist</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">get_bl_artist</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Artist in blocklist: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+            <span class="n">tracks</span> <span class="o">|=</span> <span class="nb">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;musicbrainz_artistid&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">artist</span><span class="o">.</span><span class="n">names</span><span class="p">:</span>
+            <span class="n">tracks</span> <span class="o">|=</span> <span class="nb">set</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+        <span class="c1"># album blocklist</span>
+        <span class="n">albums</span> <span class="o">=</span> <span class="p">{</span><span class="n">Album</span><span class="p">(</span><span class="n">trk</span><span class="o">.</span><span class="n">Album</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">mbid</span><span class="o">=</span><span class="n">trk</span><span class="o">.</span><span class="n">musicbrainz_albumid</span><span class="p">)</span>
+                  <span class="k">for</span> <span class="n">trk</span> <span class="ow">in</span> <span class="n">tracks</span><span class="p">}</span>
+        <span class="n">bl_albums</span> <span class="o">=</span> <span class="p">{</span><span class="n">Album</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;album&#39;</span><span class="p">),</span> <span class="n">mbid</span><span class="o">=</span><span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;musicbrainz_album&#39;</span><span class="p">))</span>
+                     <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">view_bl</span><span class="p">()</span> <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;album&#39;</span><span class="p">)}</span>
+        <span class="k">if</span> <span class="n">albums</span> <span class="o">&amp;</span> <span class="n">bl_albums</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Albums in blocklist for </span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">albums</span> <span class="o">&amp;</span> <span class="n">bl_albums</span><span class="p">)</span>
+            <span class="n">tracks</span> <span class="o">=</span> <span class="p">{</span><span class="n">trk</span> <span class="k">for</span> <span class="n">trk</span> <span class="ow">in</span> <span class="n">tracks</span> <span class="k">if</span> <span class="n">trk</span><span class="o">.</span><span class="n">Album</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">bl_albums</span><span class="p">}</span>
+        <span class="c1"># track blocklist</span>
+        <span class="n">bl_tracks</span> <span class="o">=</span> <span class="p">{</span><span class="n">Track</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">t</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">),</span> <span class="n">file</span><span class="o">=</span><span class="n">t</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="p">))</span>
+                     <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">view_bl</span><span class="p">()</span> <span class="k">if</span> <span class="n">t</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)}</span>
+        <span class="k">if</span> <span class="n">tracks</span> <span class="o">&amp;</span> <span class="n">bl_tracks</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Tracks in blocklist for </span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+                          <span class="n">artist</span><span class="p">,</span> <span class="n">tracks</span> <span class="o">&amp;</span> <span class="n">bl_tracks</span><span class="p">)</span>
+            <span class="n">tracks</span> <span class="o">=</span> <span class="p">{</span><span class="n">trk</span> <span class="k">for</span> <span class="n">trk</span> <span class="ow">in</span> <span class="n">tracks</span> <span class="k">if</span> <span class="n">trk</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">bl_tracks</span><span class="p">}</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">tracks</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_find_alb</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">album</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="s1">&#39;artist&#39;</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">PlayerError</span><span class="p">(</span><span class="s1">&#39;Album object have no artist attribute&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">get_bl_album</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Album in blocklist: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">album</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="n">albums</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="n">album</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+            <span class="n">filt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;(MUSICBRAINZ_ALBUMID == &#39;</span><span class="si">{</span><span class="n">album</span><span class="o">.</span><span class="n">mbid</span><span class="si">}</span><span class="s2">&#39;)&quot;</span>
+            <span class="n">albums</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">filt</span><span class="p">)</span>
+        <span class="c1"># Now look for album with no MusicBrainzIdentifier</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">albums</span> <span class="ow">and</span> <span class="n">album</span><span class="o">.</span><span class="n">Artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>  <span class="c1"># Use album artist MBID if possible</span>
+            <span class="n">filt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;((MUSICBRAINZ_ALBUMARTISTID == &#39;</span><span class="si">{</span><span class="n">album</span><span class="o">.</span><span class="n">Artist</span><span class="o">.</span><span class="n">mbid</span><span class="si">}</span><span class="s2">&#39;) AND (album == &#39;</span><span class="si">{</span><span class="n">album</span><span class="o">.</span><span class="n">name_sz</span><span class="si">}</span><span class="s2">&#39;))&quot;</span>
+            <span class="n">albums</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">filt</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">albums</span><span class="p">:</span>  <span class="c1"># Falls back to (album)?artist/album name</span>
+            <span class="k">for</span> <span class="n">artist</span> <span class="ow">in</span> <span class="n">album</span><span class="o">.</span><span class="n">Artist</span><span class="o">.</span><span class="n">names_sz</span><span class="p">:</span>
+                <span class="n">filt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;((albumartist == &#39;</span><span class="si">{</span><span class="n">artist</span><span class="si">}</span><span class="s2">&#39;) AND (album == &#39;</span><span class="si">{</span><span class="n">album</span><span class="o">.</span><span class="n">name_sz</span><span class="si">}</span><span class="s2">&#39;))&quot;</span>
+                <span class="n">albums</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">filt</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">albums</span>
+<span class="c1"># #### / find_tracks ##</span>
+
+<span class="c1"># #### Search Methods #####</span>
+    <span class="k">def</span> <span class="nf">_find_musicbrainz_artistid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Find MusicBrainzArtistID when possible.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="n">mbids</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">artist</span><span class="o">.</span><span class="n">names_sz</span><span class="p">:</span>
+            <span class="n">filt</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;((artist == &quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&quot;) AND (MUSICBRAINZ_ARTISTID != &quot;&quot;))&#39;</span>
+            <span class="n">mbids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="s1">&#39;MUSICBRAINZ_ARTISTID&#39;</span><span class="p">,</span> <span class="n">filt</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">mbids</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">mbids</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">mbids</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Got multiple MBID for artist: </span><span class="si">%r</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span> <span class="o">!=</span> <span class="n">mbids</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;MBID discrepancy, </span><span class="si">%s</span><span class="s1"> found with </span><span class="si">%s</span><span class="s1"> (instead of </span><span class="si">%s</span><span class="s1">)&#39;</span><span class="p">,</span>
+                         <span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">mbids</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">mbids</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="nd">@bl_artist</span>
+    <span class="nd">@set_artist_mbid</span>
+    <span class="k">def</span> <span class="nf">search_artist</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Search artists based on a fuzzy search in the media library</span>
+<span class="sd">            &gt;&gt;&gt; art = Artist(name=&#39;the beatles&#39;, mbid=&lt;UUID4&gt;) # mbid optional</span>
+<span class="sd">            &gt;&gt;&gt; bea = player.search_artist(art)</span>
+<span class="sd">            &gt;&gt;&gt; print(bea.names)</span>
+<span class="sd">            &gt;&gt;&gt; [&#39;The Beatles&#39;, &#39;Beatles&#39;, &#39;the beatles&#39;]</span>
+
+<span class="sd">        :param Artist artist: Artist to look for in MPD music library</span>
+<span class="sd">        :return: Artist object</span>
+<span class="sd">        :rtype: Artist</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+            <span class="c1"># look for exact search w/ musicbrainz_artistid</span>
+            <span class="n">library</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;(MUSICBRAINZ_ARTISTID == &#39;</span><span class="si">{</span><span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="si">}</span><span class="s2">&#39;)&quot;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">library</span><span class="p">:</span>
+                <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;Found mbid &quot;</span><span class="si">%r</span><span class="s1">&quot; in library&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+                <span class="c1"># library could fetch several artist name for a single MUSICBRAINZ_ARTISTID</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">library</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;I got &quot;</span><span class="si">%s</span><span class="s1">&quot; searching for </span><span class="si">%r</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">library</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+                    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">library</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">SimaStr</span><span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="o">==</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">name</span> <span class="o">!=</span> <span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;add alias for </span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+                            <span class="n">artist</span><span class="o">.</span><span class="n">add_alias</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">library</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">library</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!=</span> <span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                    <span class="n">new_alias</span> <span class="o">=</span> <span class="n">artist</span><span class="o">.</span><span class="n">name</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Update artist name </span><span class="si">%s</span><span class="s1">-&gt;</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">library</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Also add alias for </span><span class="si">%s</span><span class="s1">: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">new_alias</span><span class="p">)</span>
+                    <span class="n">artist</span> <span class="o">=</span> <span class="n">Artist</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">library</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">mbid</span><span class="o">=</span><span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">)</span>
+                    <span class="n">artist</span><span class="o">.</span><span class="n">add_alias</span><span class="p">(</span><span class="n">new_alias</span><span class="p">)</span>
+            <span class="c1"># Fetches remaining artists for potential match</span>
+            <span class="n">artists</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="s1">&#39;nombid_artists&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>  <span class="c1"># not using MusicBrainzIDs</span>
+            <span class="n">artists</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="s1">&#39;artists&#39;</span><span class="p">]</span>
+        <span class="n">match</span> <span class="o">=</span> <span class="n">get_close_matches</span><span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">artists</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">0.73</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">match</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">match</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;found close match for &quot;</span><span class="si">%s</span><span class="s1">&quot;: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+                           <span class="n">artist</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">match</span><span class="p">))</span>
+        <span class="c1"># First lowercased comparison</span>
+        <span class="k">for</span> <span class="n">close_art</span> <span class="ow">in</span> <span class="n">match</span><span class="p">:</span>
+            <span class="c1"># Regular lowered string comparison</span>
+            <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">close_art</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+                <span class="n">artist</span><span class="o">.</span><span class="n">add_alias</span><span class="p">(</span><span class="n">close_art</span><span class="p">)</span>
+                <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">name</span> <span class="o">!=</span> <span class="n">close_art</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot; matches &quot;</span><span class="si">%s</span><span class="s1">&quot;.&#39;</span><span class="p">,</span> <span class="n">close_art</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+        <span class="c1"># Does not perform fuzzy matching on short and single word strings</span>
+        <span class="c1"># Only lowercased comparison</span>
+        <span class="k">if</span> <span class="s1">&#39; &#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">artist</span><span class="o">.</span><span class="n">name</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="s1">&#39;no fuzzy matching for </span><span class="si">%r</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">found</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">artist</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="c1"># Now perform fuzzy search</span>
+        <span class="k">for</span> <span class="n">fuzz</span> <span class="ow">in</span> <span class="n">match</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">fuzz</span> <span class="ow">in</span> <span class="n">artist</span><span class="o">.</span><span class="n">names</span><span class="p">:</span>  <span class="c1"># Already found in lower cased comparison</span>
+                <span class="k">continue</span>
+            <span class="c1"># SimaStr string __eq__ (not regular string comparison here)</span>
+            <span class="k">if</span> <span class="n">SimaStr</span><span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="o">==</span> <span class="n">fuzz</span><span class="p">:</span>
+                <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="n">artist</span><span class="o">.</span><span class="n">add_alias</span><span class="p">(</span><span class="n">fuzz</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot; quite probably matches &quot;</span><span class="si">%s</span><span class="s1">&quot; (SimaStr)&#39;</span><span class="p">,</span>
+                               <span class="n">fuzz</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">found</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">aliases</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Found aliases: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">names</span><span class="p">))</span>
+            <span class="k">return</span> <span class="n">artist</span>
+        <span class="k">return</span> <span class="kc">None</span>
+
+<div class="viewcode-block" id="MPD.search_track"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD.search_track">[docs]</a>    <span class="k">def</span> <span class="nf">search_track</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Fuzzy search of title by an artist</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">cache</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;artist_tracks&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">artist</span><span class="p">)</span>
+        <span class="c1"># Retrieve all tracks from artist</span>
+        <span class="n">all_tracks</span> <span class="o">=</span> <span class="n">cache</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_tracks</span><span class="p">(</span><span class="n">artist</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">cache</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="p">[</span><span class="s1">&#39;artist_tracks&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># clean up</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_cache</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;artist_tracks&#39;</span><span class="p">)[</span><span class="n">artist</span><span class="p">]</span> <span class="o">=</span> <span class="n">all_tracks</span>
+        <span class="c1"># Get all titles (filter missing titles set to &#39;None&#39;)</span>
+        <span class="n">all_artist_titles</span> <span class="o">=</span> <span class="nb">frozenset</span><span class="p">([</span><span class="n">tr</span><span class="o">.</span><span class="n">title</span> <span class="k">for</span> <span class="n">tr</span> <span class="ow">in</span> <span class="n">all_tracks</span>
+                                       <span class="k">if</span> <span class="n">tr</span><span class="o">.</span><span class="n">title</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">])</span>
+        <span class="n">match</span> <span class="o">=</span> <span class="n">get_close_matches</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">all_artist_titles</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">0.78</span><span class="p">)</span>
+        <span class="n">tracks</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">match</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">mtitle</span> <span class="ow">in</span> <span class="n">match</span><span class="p">:</span>
+            <span class="n">leven</span> <span class="o">=</span> <span class="n">levenshtein_ratio</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">mtitle</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">leven</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">tracks</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">all_tracks</span> <span class="k">if</span> <span class="n">t</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="n">mtitle</span><span class="p">])</span>
+            <span class="k">elif</span> <span class="n">leven</span> <span class="o">&gt;=</span> <span class="mf">0.77</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;title: &quot;</span><span class="si">%s</span><span class="s1">&quot; should match &quot;</span><span class="si">%s</span><span class="s1">&quot; (lr=</span><span class="si">%1.3f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                               <span class="n">mtitle</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">leven</span><span class="p">)</span>
+                <span class="n">tracks</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">all_tracks</span> <span class="k">if</span> <span class="n">t</span><span class="o">.</span><span class="n">title</span> <span class="o">==</span> <span class="n">mtitle</span><span class="p">])</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;title: &quot;</span><span class="si">%s</span><span class="s1">&quot; does not match &quot;</span><span class="si">%s</span><span class="s1">&quot; (lr=</span><span class="si">%1.3f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                               <span class="n">mtitle</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">leven</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">tracks</span></div>
+
+<div class="viewcode-block" id="MPD.search_albums"><a class="viewcode-back" href="../../dev/mpdclient.html#sima.mpdclient.MPD.search_albums">[docs]</a>    <span class="k">def</span> <span class="nf">search_albums</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Find potential albums for &quot;artist&quot;</span>
+
+<span class="sd">        * Fetch all albums for &quot;AlbumArtist&quot; == artist</span>
+<span class="sd">          → falls back to &quot;Artist&quot; == artist when no &quot;AlbumArtist&quot; tag is set</span>
+<span class="sd">        * Tries to filter some mutli-artists album</span>
+<span class="sd">          For instance an album by Artist_A may have a track by Artist_B. Then</span>
+<span class="sd">          looking for albums for Artist_B wrongly returns this album.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># First, look for all potential albums</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Searching album for &quot;</span><span class="si">%r</span><span class="s1">&quot;&#39;</span><span class="p">,</span> <span class="n">artist</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">aliases</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Searching album for </span><span class="si">%s</span><span class="s1"> aliases: &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span><span class="p">,</span>
+                           <span class="n">artist</span><span class="p">,</span> <span class="n">artist</span><span class="o">.</span><span class="n">aliases</span><span class="p">)</span>
+        <span class="n">albums</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span> <span class="ow">and</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+            <span class="n">mpd_filter</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;((musicbrainz_albumartistid == &#39;</span><span class="si">{</span><span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="si">}</span><span class="s2">&#39;) AND ( album != &#39;&#39;))&quot;</span>
+            <span class="n">raw_album_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="s1">&#39;musicbrainz_albumid&#39;</span><span class="p">,</span> <span class="n">mpd_filter</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">albumid</span> <span class="ow">in</span> <span class="n">raw_album_id</span><span class="p">:</span>
+                <span class="n">mpd_filter</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;((musicbrainz_albumid == &#39;</span><span class="si">{</span><span class="n">albumid</span><span class="si">}</span><span class="s2">&#39;) AND ( album != &#39;&#39;))&quot;</span>
+                <span class="n">album_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="s1">&#39;album&#39;</span><span class="p">,</span> <span class="n">mpd_filter</span><span class="p">)</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">album_name</span><span class="p">:</span>  <span class="c1"># something odd here</span>
+                    <span class="k">continue</span>
+                <span class="n">albums</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Album</span><span class="p">(</span><span class="n">album_name</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">artist</span><span class="o">=</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+                                 <span class="n">Artist</span><span class="o">=</span><span class="n">artist</span><span class="p">,</span> <span class="n">mbid</span><span class="o">=</span><span class="n">albumid</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">name_sz</span> <span class="ow">in</span> <span class="n">artist</span><span class="o">.</span><span class="n">names_sz</span><span class="p">:</span>
+            <span class="n">mpd_filter</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;((albumartist == &#39;</span><span class="si">{</span><span class="n">name_sz</span><span class="si">}</span><span class="s2">&#39;) AND ( album != &#39;&#39;))&quot;</span>
+            <span class="n">raw_albums</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="s1">&#39;album&#39;</span><span class="p">,</span> <span class="n">mpd_filter</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">alb</span> <span class="ow">in</span> <span class="n">raw_albums</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">alb</span> <span class="ow">in</span> <span class="p">[</span><span class="n">a</span><span class="o">.</span><span class="n">name</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">albums</span><span class="p">]:</span>
+                    <span class="k">continue</span>
+                <span class="n">mbid</span> <span class="o">=</span> <span class="kc">None</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span><span class="p">:</span>
+                    <span class="n">_</span> <span class="o">=</span> <span class="n">Album</span><span class="p">(</span><span class="n">alb</span><span class="p">)</span>
+                    <span class="n">mpd_filter</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;((albumartist == &#39;</span><span class="si">{</span><span class="n">artist</span><span class="o">.</span><span class="n">name_sz</span><span class="si">}</span><span class="s2">&#39;) AND ( album == &#39;</span><span class="si">{</span><span class="n">_</span><span class="o">.</span><span class="n">name_sz</span><span class="si">}</span><span class="s2">&#39;))&quot;</span>
+                    <span class="n">mbids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="s1">&#39;MUSICBRAINZ_ALBUMID&#39;</span><span class="p">,</span> <span class="n">mpd_filter</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">mbids</span><span class="p">:</span>
+                        <span class="n">mbid</span> <span class="o">=</span> <span class="n">mbids</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">albums</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Album</span><span class="p">(</span><span class="n">alb</span><span class="p">,</span> <span class="n">artist</span><span class="o">=</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+                                 <span class="n">Artist</span><span class="o">=</span><span class="n">artist</span><span class="p">,</span> <span class="n">mbid</span><span class="o">=</span><span class="n">mbid</span><span class="p">))</span>
+        <span class="n">candidates</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">album</span> <span class="ow">in</span> <span class="n">albums</span><span class="p">:</span>
+            <span class="n">album_trks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_tracks</span><span class="p">(</span><span class="n">album</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">album_trks</span><span class="p">:</span>  <span class="c1"># find_track result can be empty, blocklist applied</span>
+                <span class="k">continue</span>
+            <span class="n">album_artists</span> <span class="o">=</span> <span class="p">{</span><span class="n">tr</span><span class="o">.</span><span class="n">albumartist</span> <span class="k">for</span> <span class="n">tr</span> <span class="ow">in</span> <span class="n">album_trks</span> <span class="k">if</span> <span class="n">tr</span><span class="o">.</span><span class="n">albumartist</span><span class="p">}</span>
+            <span class="k">if</span> <span class="n">album</span><span class="o">.</span><span class="n">Artist</span><span class="o">.</span><span class="n">names</span> <span class="o">&amp;</span> <span class="n">album_artists</span><span class="p">:</span>
+                <span class="n">candidates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">album</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_mbid</span> <span class="ow">and</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span> <span class="o">==</span> <span class="n">album_trks</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">musicbrainz_albumartistid</span><span class="p">:</span>
+                    <span class="n">candidates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">album</span><span class="p">)</span>
+                    <span class="k">continue</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Discarding &quot;</span><span class="si">%s</span><span class="s1">&quot;, &quot;</span><span class="si">%r</span><span class="s1">&quot; not set as musicbrainz_albumartistid&#39;</span><span class="p">,</span>
+                               <span class="n">album</span><span class="p">,</span> <span class="n">album</span><span class="o">.</span><span class="n">Artist</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="s1">&#39;Various Artists&#39;</span> <span class="ow">in</span> <span class="n">album_artists</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Discarding </span><span class="si">%s</span><span class="s1"> (&quot;Various Artists&quot; set)&#39;</span><span class="p">,</span> <span class="n">album</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">album_artists</span> <span class="ow">and</span> <span class="n">album</span><span class="o">.</span><span class="n">Artist</span><span class="o">.</span><span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">album_artists</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Discarding &quot;</span><span class="si">%s</span><span class="s1">&quot;, &quot;</span><span class="si">%s</span><span class="s1">&quot; not set as albumartist&#39;</span><span class="p">,</span> <span class="n">album</span><span class="p">,</span> <span class="n">album</span><span class="o">.</span><span class="n">Artist</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="c1"># Attempt to detect false positive (especially when no</span>
+            <span class="c1"># AlbumArtist/MBIDs tag ar set)</span>
+            <span class="c1"># Avoid selecting albums where artist is credited for a single</span>
+            <span class="c1"># track of the album</span>
+            <span class="n">album_trks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;(album == &#39;</span><span class="si">{</span><span class="n">album</span><span class="o">.</span><span class="n">name_sz</span><span class="si">}</span><span class="s2">&#39;)&quot;</span><span class="p">)</span>
+            <span class="n">arts</span> <span class="o">=</span> <span class="p">[</span><span class="n">trk</span><span class="o">.</span><span class="n">artist</span> <span class="k">for</span> <span class="n">trk</span> <span class="ow">in</span> <span class="n">album_trks</span><span class="p">]</span>  <span class="c1"># Artists in the album</span>
+            <span class="c1"># count artist occurences</span>
+            <span class="n">ratio</span> <span class="o">=</span> <span class="n">arts</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">album</span><span class="o">.</span><span class="n">Artist</span><span class="o">.</span><span class="n">name</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">arts</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">ratio</span> <span class="o">&gt;=</span> <span class="mf">0.8</span><span class="p">:</span>
+                <span class="n">candidates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">album</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">log</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;&quot;</span><span class="si">%s</span><span class="s1">&quot; probably not an album of &quot;</span><span class="si">%s</span><span class="s1">&quot; (ratio=</span><span class="si">%.2f</span><span class="s1">)&#39;</span><span class="p">,</span>
+                               <span class="n">album</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">ratio</span><span class="p">)</span>
+            <span class="k">continue</span>
+        <span class="k">return</span> <span class="n">candidates</span></div></div>
+<span class="c1"># #### / Search Methods ###</span>
+
+<span class="c1"># VIM MODLINE</span>
+<span class="c1"># vim: ai ts=4 sw=4 sts=4 expandtab</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">MPD_sima  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sima.mpdclient</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2022, kaliko.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

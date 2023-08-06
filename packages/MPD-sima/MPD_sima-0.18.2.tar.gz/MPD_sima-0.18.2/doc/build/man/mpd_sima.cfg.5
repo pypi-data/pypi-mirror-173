@@ -1,0 +1,440 @@
+.\" Man page generated from reStructuredText.
+.
+.TH "MPD_SIMA.CFG" "5" "Feb 08, 2022" "" "MPD_sima"
+.SH NAME
+mpd_sima.cfg \- mpd-sima configuration.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH DESCRIPTION
+.sp
+This manual page documents briefly \fBmpd\-sima\fP configuration options available
+in user configuration file (see \fI\%FILES\fP).
+.SH EXAMPLES
+.SS File tags queue mode (offline mode).
+.sp
+Here is an example of autoqueue using file tags only.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+[MPD]
+# Uses defaults for MPD connection
+#host = localhost
+#port = 6600
+#password = s3cr3t
+
+[sima] # Setup internal plugins
+# Tags plugin falls back to Random if nothing is found then Crop the queue
+internal = Tags, Random, Crop
+history_duration = 48  # 48h / 24 = 2 days
+queue_length = 2       # triggers autoqueue when 2 tracks remains to play
+
+[tags]
+# Look for files with tagged with genre "electronica" OR "IDM" OR "glitch"
+genre = electronica, IDM, glitch
+
+[crop]
+# keep 30 played tracks in playlist
+consume = 30
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Album queue mode using last.fm recommendations (online mode).
+.sp
+Here is an example of album queue configuration using online
+recommendations system.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+[sima]
+history_duration = 96  # 4 days in hours, get a larger history for album mode
+queue_length = 5
+
+[crop]
+consume = 20
+
+[lastfm]
+queue_mode = album
+album_to_add = 1
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SH CONFIGURATION FILE
+.sp
+The configuration file consists of sections, led by a \fB[section]\fP
+header and followed by \fBname:\ value\fP entries, with continuations in
+the style of \fI\%RFC 822\fP (see section 3.1.1, “LONG HEADER FIELDS”);
+\fBname=value\fP is also accepted. Lines beginning with \fB\(aq#\(aq\fP or \fB\(aq;\(aq\fP
+are ignored and may be used to provide comments (\fINota Bene:\fP inline
+comment are possible using \fB\(aq#\(aq\fP).
+.sp
+The default values are used in the options lists below.
+.SS MPD section
+.sp
+This section is meant to configure MPD access, MPD host address / port
+and password if necessary.
+.sp
+\fB[MPD]\fP
+.INDENT 0.0
+.TP
+\fBhost=localhost\fP
+Set MPD host. Use IP or FQDN.
+.TP
+\fBport=6600\fP
+Set host port to access MPD to.
+.TP
+\fBpassword=s3cr3t\fP
+Set MPD password to use. Do not use this option if you don\(aqt have
+enabled password protected access on your MPD server.
+.UNINDENT
+.SS log section
+.sp
+Configure logging.
+.sp
+\fB[log]\fP
+.INDENT 0.0
+.TP
+\fBlogfile=\fP
+File to log to, usually in dæmon mode.Default (empty or unset) is to
+log to stdin/stdout.
+.TP
+\fBverbosity=info\fP
+Logging verbosity among debug, info, warning, error.
+.UNINDENT
+.SS Process daemonization
+.sp
+Configure process daemon.
+.sp
+\fB[daemon]\fP
+.INDENT 0.0
+.TP
+\fBdaemon=false\fP
+Whether to daemonize process or not.
+.TP
+\fBpidfile=\fP
+Where to store process ID.
+.UNINDENT
+.SS sima section
+.sp
+Core mpd\-sima configuration.
+.sp
+\fB[sima]\fP
+.INDENT 0.0
+.TP
+\fBinternal=Lastfm, Random, Crop\fP
+mpd\-sima\(aqs plugin management for internal source plugin and contrib (ie. external plugins).
+.sp
+Plugins list is a comma separated string list.
+.sp
+Optional plugin\(aqs configuration lays in its own section.
+For instance a "AwesomePlugin" declared here gets its configuration from the corresponding section "[awesomeplugin]".
+.sp
+The default list of plugins to load at startup: Lastfm,Random,Crop.
+.sp
+Crop is an utility plugin, it does not queue any tracks (cf. below).
+.sp
+Random will queue a track at random if other plugins did not return any tracks.
+.sp
+You can add, combine here as many plugins you want.
+.sp
+The priority may be used to order them.
+.TP
+\fBhistory_duration=8\fP
+How far to look back in history to avoid to play twice the same track/title (duration in hours).
+.sp
+The history_duration is also used to give priority to not recently played artists. Artist/tracks not in the scope of history have higther priority.
+.TP
+\fBqueue_length=2\fP
+Threshold value triggering queue process.
+.TP
+\fBmusicbrainzid=true\fP
+Use MusicBrainzIdentifier to search music (mainly for artists). Default is True, switch to False if you don\(aqt have MusicBrainzIdentifier set for at least 80% of you music library.
+.sp
+Consider using these metadata as it enhances a lot artist/album/tracks identification. Use Picard to tag your file: \fI\%https://picard.musicbrainz.org/\fP\&.
+.TP
+\fBrepeat_disable_queue=true\fP
+Prevent disabling queuing in repeat play mode.
+.TP
+\fBsingle_disable_queue=true\fP
+Prevent disabling queuing in single play mod
+.UNINDENT
+.SS Crop section
+.sp
+crop plugin\(aqs configuration:
+.sp
+\fB[crop]\fP
+.INDENT 0.0
+.TP
+\fBconsume=10\fP
+How many played tracks to keep in the queue. Allows you to maintain a
+fixed length queue. Set to some negative integer to keep all played
+tracks.
+.TP
+\fBpriority=10\fP
+Plugin priority
+.UNINDENT
+.SS Random section
+.sp
+When no similar tracks are found, falling back to random queuing.
+.sp
+Random plugin\(aqs configuration:
+.sp
+\fB[random]\fP
+.INDENT 0.0
+.TP
+\fBtrack_to_add=1\fP
+How many track(s) to add.
+.TP
+\fBflavour=sensible\fP
+Different mode, aka random flavour, are available: \fBpure\fP, \fBsensible\fP,
+.INDENT 7.0
+.INDENT 3.5
+.INDENT 0.0
+.IP \(bu 2
+\fBpure\fP: pure random choice, even among recently played track.
+.IP \(bu 2
+\fBsensible\fP: use play history to filter chosen tracks.
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.TP
+\fBpriority=50\fP
+Plugin priority
+.UNINDENT
+.SS LastFm section
+.sp
+LastFM plugin\(aqs configuration.
+.sp
+\fB[lastfm]\fP
+.sp
+\fBqueue_mode=track\fP
+.INDENT 0.0
+.INDENT 3.5
+Queue mode to use among track, top and album (see \fI\%QUEUE MODE section\fP for info about queue modes).
+.UNINDENT
+.UNINDENT
+.sp
+\fBmax_art=20\fP
+.INDENT 0.0
+.INDENT 3.5
+Maximum number of similar artist to retrieve from local media
+library. When set to something superior to zero, it tries to get as
+much similar artists from media library.
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+\fBdepth=1\fP
+How many artists to base on similar artists search. The first is the
+last played artist and so on back in the history. Highter depth
+generates wider suggestions, it might help to reduce looping over
+same artists.
+.TP
+\fBsingle_album=false\fP
+Prevent from queueing a track from the same album (it often happens
+with OST). Only relevant in "track" queue mode.
+.TP
+\fBtrack_to_add=1\fP
+How many track(s) to add. Only relevant in \fBtop\fP and \fBtrack\fP
+queue modes. This is actually an upper limit, min(\fBmax_art\fP,
+\fBtrack_to_add\fP) will be used.
+.TP
+\fBalbum_to_add=1\fP
+How many album(s) to add. Only relevant in \fBalbum\fP queue modes.
+.TP
+\fBtrack_to_add_from_album=0\fP
+How many track(s) to add from each selected albums. Only relevant in
+\fBalbum\fP queue modes. When set to 0 or lower the whole album is
+queued.
+.TP
+\fBcache=True\fP
+Whether or not to use on\-disk persistent http cache.When set to
+"true", sima will use a persistent cache for its http client. The
+cache is written along with the dbfile in:
+\fB$XDG_DATA_HOME/mpd_sima/http/WEB_SERVICE\fP\&. If set to "false",
+caching is still done but in memory.
+.TP
+\fBpriority=100\fP
+Plugin priority
+.UNINDENT
+.SS Genre section
+.sp
+Genre plugin\(aqs configuration.
+.sp
+This plugin permits offline autoqueuing based on files genre tag only.
+.sp
+It will try to queue tracks with similar genres (track\(aqs genre being read from
+tags).
+.sp
+\fB[genre]\fP
+.INDENT 0.0
+.TP
+\fBqueue_mode=track\fP
+Queue mode to use among track, album (see
+\fI\%QUEUE MODE section\fP for more info).
+.TP
+\fBsingle_album=false\fP
+Prevent from queueing a track from the same album (it often happens with
+OST). Only relevant in "track" queue mode.
+.TP
+\fBpriority=80\fP
+Plugin priority
+.TP
+\fBtrack_to_add=1\fP
+How many track(s) to add.
+.TP
+\fBalbum_to_add=1\fP
+How many album(s) to add. Only relevant in \fBalbum\fP queue mode.
+.UNINDENT
+.SS Tags section
+.sp
+Tags plugin\(aqs configuration. There is no default configuration for this
+plugin, it does not work out of the box.
+.sp
+This plugin permits offline autoqueuing based on files tags only.
+Supported tags are \fB\(aqcomment\(aq\fP, \fB\(aqdate\(aq\fP, \fB\(aqgenre\(aq\fP, \fB\(aqlabel\(aq\fP
+and \fB\(aqoriginaldate\(aq\fP\&.
+.sp
+In addition to supported tags above you can use an MPD filter. Please
+refer to MPD protocol documentation for more.
+.sp
+All tag entries in this section are ANDed as a single MPD filter to look
+for titles in the library. Moreover, for each tags, comma separated
+values are also ORed. For instance setting "\fBgenre=rock\fP" and
+"\fBdate=1982,1983,1984,1985,1986,1987,1988,1989\fP" will end up looking
+for track tagged with genre \fBrock\fP and date within 1982 through 1989.
+Using an MPD filter to replace \fBdate\fP you can achieve the same with
+the following setting: "\fBgenre=rock\fP" and
+"\fBfilter=(date =~ \(aq198[2\-9]+\(aq)\fP" (provided your MPD server was
+compiled with libpcre).
+.sp
+\fB[tags]\fP
+.INDENT 0.0
+.TP
+\fBqueue_mode=track\fP
+Queue mode to use among track, album (see \fI\%QUEUE MODES section\fP for info).
+.TP
+\fBsingle_album=false\fP
+Prevent from queueing a track from the same album (it often happens with
+OST). Only relevant in "track" queue mode.
+.TP
+\fBfilter=\fP
+You can use here any valid MPD filter as defined in MPD protocol
+documentation.
+.UNINDENT
+.sp
+\fBcomment=\fP
+.sp
+\fBdate=\fP
+.sp
+\fBgenre=\fP
+.sp
+\fBlabel=\fP
+.sp
+\fBoriginaldate=\fP
+.INDENT 0.0
+.TP
+\fBpriority=80\fP
+Plugin priority
+.TP
+\fBtrack_to_add=1\fP
+How many track(s) to add.
+.TP
+\fBalbum_to_add=1\fP
+How many album(s) to add. Only relevant in \fBalbum\fP queue mode.
+.UNINDENT
+.SH QUEUE MODES
+.sp
+Different queue modes are available with some plugins (check for
+\fBqueue_mode\fP presence in plugin config).
+.sp
+mpd\-sima tries preferably to chose among unplayed artists or at least
+not recently played artist.
+.INDENT 0.0
+.TP
+.B \fBtrack\fP
+Queue a similar track chosen at random from a similar artist.
+.TP
+.B \fBtop\fP
+Queue a track from a similar artist, chosen among "top tracks"
+according to last.fm data mining.
+.TP
+.B \fBalbum\fP
+Queue a whole album chosen at random from a similar artist.
+.sp
+\fINota Bene:\fP Due to the track point of view of database build upon
+tracks tags an album lookup for a specific artist will return albums
+as soon as this artist appears in a single track of the album. For
+instance looking for album from "The Velvet Underground" will fetch
+"Last Days" and "Juno" OSTs because the band appears on the
+soundtrack of these two movies. A solution is for you to set
+AlbumArtists tag to something different than the actual artist of the
+track. For compilations, OSTs etc. a strong convention is to use
+"Various Artists" for this tag.
+.sp
+mpd\-sima is currently looking for AlbumArtists tags and avoid album
+where this tag is set with "Various Artists". If a single track
+within an album is found with AlbumArtists:"Various Artists" the
+complete album is skipped and won\(aqt be queued.
+.UNINDENT
+.SH FILES
+.INDENT 0.0
+.TP
+.B \fB$\fP\fI{XDG_CONFIG_HOME\fP\fB}/mpd_sima/mpd_sima.cfg\fP
+Configuration file.
+.TP
+.B \fB$\fP\fI{XDG_DATA_HOME\fP\fB}/mpd_sima/sima.db\fP
+SQLite internal DB file. Stores play history and blocklists.
+.TP
+.B \fB$\fP\fI{XDG_DATA_HOME\fP\fB}/mpd_sima/WEB_SERVICE/\fP
+HTTP cache.
+.UNINDENT
+.sp
+Usually \fBXDG_DATA_HOME\fP is set to \fB$\fP\fI{HOME\fP\fB}/.local/share\fP and
+\fBXDG_CONFIG_HOME\fP to \fB$\fP\fI{HOME\fP\fB}/.config\fP (for regular users).
+You may override them using command line option \fB\-\-var\-dir\fP and \fB\-\-config\fP
+(cf. \fBmpd\-sima(1)\fP)
+.SH SEE ALSO
+.sp
+\fBmpc(1)\fP, \fBmpd(1)\fP
+.SH FEEDBACK/BUGS
+.sp
+The maintainer would be more than happy to ear from you, don\(aqt hesitate to send feedback, \fI\%https://kaliko.me/contact/\fP
+.sp
+XMPP users are welcome to join the dedicated chat room at \fI\%kaliko.me@conf.azylum.org\fP
+.SH AUTHOR
+kaliko
+.SH COPYRIGHT
+2009-2022, kaliko
+.\" Generated by docutils manpage writer.
+.

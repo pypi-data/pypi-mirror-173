@@ -1,0 +1,247 @@
+.\" Man page generated from reStructuredText.
+.
+.TH "MPD-SIMA" "1" "Feb 08, 2022" "" "MPD_sima"
+.SH NAME
+mpd-sima \- mpd-sima will try to maintain some titles ahead in the queue following different policies.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH SYNOPSYS
+.sp
+\fBmpd\-sima [\-\-daemon] [\-\-config=conf_file] [\-\-var\-dir=var_directory] [\-\-pid=pid_file] [\-\-log=log_file] [\-\-log\-level=log_level] [\-\-host=mpd_host] [\-\-mpd_port=mpd_port]\fP
+.sp
+\fBmpd\-sima {{\-h | \-\-help} \-\-version}\fP
+.sp
+\fBmpd\-sima [\-\-config=conf_file] config\-test\fP
+.sp
+\fBmpd\-sima [\-\-var\-dir=var_directory] create\-db\fP
+.sp
+\fBmpd\-sima […] generate\-config\fP
+.sp
+\fBmpd\-sima [\-\-var\-dir=var_directory] purge\-history\fP
+.sp
+\fBmpd\-sima bl\-view\fP
+.sp
+\fBmpd\-sima bl\-add\-artist [artist]\fP
+.sp
+\fBmpd\-sima bl\-add\-album [album]\fP
+.sp
+\fBmpd\-sima bl\-add\-track [track]\fP
+.sp
+\fBmpd\-sima bl\-delete id\fP
+.SH DESCRIPTION
+.sp
+This manual page documents briefly the \fBmpd\-sima\fP commands.
+.sp
+At start up default configuration is first overridden by user configuration in
+mpd_sima.cfg (see \fI\%FILES\fP) and finally command lines options are honored. For
+instance you can override default MPD host (localhost) in your configuration
+file or with \fB\-S\ my_mpd_server.local\fP option. For default configuration see
+\fI\%CONFIGURATION\fP\&. See also environment variables special case for MPD host and
+port in \fI\%ENVIRONMENT\fP\&.
+.SH OPTIONS
+.sp
+The program follows the usual GNU command line syntax, with long options
+starting with two dashes (\(aq\-\(aq). A summary of options is included below.
+.INDENT 0.0
+.TP
+.B \fB\-h\fP; \fB\-\-help\fP
+Print help and exit.
+.TP
+.B \fB\-\-version\fP
+Print version and exit.
+.TP
+.B \fB\-\-daemon\fP
+Start as a daemon. Log redirected to \fB/dev/null\fP, usually setting
+\fB\-\-log\fP and \fB\-\-pid\fP options in daemon mode are a good idea to
+monitor/stop the process.
+.TP
+.B \fB\-p pid_file\fP; \fB\-\-pid=pid_file\fP
+Use the specific file pid_file to store pid to.
+.sp
+Default is not to store pid info.
+.TP
+.B \fB\-l log_file\fP; \fB\-\-log=log_file\fP
+Use the specific file log_file to log messages to.
+.sp
+Default is to log to stdout/stderr.
+.TP
+.B \fB\-v log_level\fP; \fB\-\-log\-level=log_level\fP
+Verbosity in [debug,info,warning,error].
+.sp
+Default is to log info messages.
+.TP
+.B \fB\-c conf_file\fP; \fB\-\-config=conf_file\fP
+Use the specific file conf_file to set up configuration instead of
+looking for the default user configuration file.
+.sp
+Default is to look for \fB$\fP\fI{XDG_CONFIG_HOME\fP\fB}/mpd_sima/mpd_sima.cfg\fP\&.
+CLI option overrides any equivalent mentioned in configuration file, ie.
+launching mpd\-sima with \fB\-\-port\fP CLI option will ignore port setting in
+configuration file.
+.sp
+For more details on configuration file see also \fI\%FILES\fP and \fI\%CONFIGURATION\fP sections.
+.TP
+.B \fB\-\-var\-dir=var_directory\fP
+Use the specific path var_directory to look for (or create) var files
+(ie. database) instead of looking at the default user data
+location.
+.sp
+Default is to look in \fB$\fP\fI{XDG_DATA_HOME\fP\fB}/mpd_sima/\fP\&. Concerning
+\fBXDG_DATA_HOME\fP see also \fI\%FILES section\fP\&.
+.TP
+.B \fB\-S mpd_host\fP; \fB\-\-host=mpd_host\fP
+Use the specific host mpd_host as MPD server.mpd_host can be an IP or
+a fully qualified domain name as long as your system can resolve it.
+This overrides MPD_HOST environment variable.
+Default is \fIlocalhost\fP\&.
+.sp
+See also \fI\%ENVIRONMENT section\fP\&.
+.TP
+.B \fB\-P mpd_port\fP; \fB\-\-port=mpd_port\fP
+Use the specific port number mpd_port on MPD server. This overrides
+MPD_PORT environment variable.Default is \fI6600\fP\&.
+.sp
+See also \fI\%ENVIRONMENT section\fP
+.UNINDENT
+.SH COMMAND ARGUMENTS
+.INDENT 0.0
+.TP
+.B \fBconfig\-test\fP
+Test configuration file and exit. Uses the configuration file
+specified with \fB\-\-config\fP or default location.
+Default is to use $XDG_CONFIG_HOME/mpd_sima/mpd_sima.cfg.
+.sp
+config\-test tests MPD connection and Tags plugin configuration.
+.TP
+.B \fBcreate\-db\fP
+Create the database and exit. Uses folder specified with
+\fB\-\-var\-dir\fP or default directory.
+.sp
+Default is to use \fB$\fP\fI{XDG_DATA_HOME\fP\fB}/mpd_sima/\fP (see \fI\%CONFIGURATION
+section\fP for more).
+.TP
+.B \fBgenerate\-config\fP
+Generate a sample configuration file according to the current CLI
+options and environment variables. The configuration is written on stdout.
+.TP
+.B \fBpurge\-history\fP
+Purge play history in the database and exit. Uses folder specified
+with \fB\-\-var\-dir\fP or default directory.
+.sp
+Default is to use \fB$\fP\fI{XDG_DATA_HOME\fP\fB}/mpd_sima/\fP (see \fI\%FILES section\fP for more).
+.TP
+.B \fBbl\-view\fP
+View blocklist, useful to get entry IDs to remove with delete
+command.
+.TP
+.B \fBbl\-add\-artist artist\fP
+Add artist to the blocklist. If artist is not provided, try to get
+the currently playing artist.
+.TP
+.B \fBbl\-add\-album album\fP
+Add album to the blocklist. If album is not provided, try to get the
+currently playing album.
+.TP
+.B \fBbl\-add\-track track\fP
+Add track to the blocklist. If track is not provided, try to get the
+currently playing track.
+.TP
+.B \fBbl\-delete id\fP
+Remove blocklist entry referenced by its id. Use bloclist view
+command to get the id.
+.UNINDENT
+.SH ENVIRONMENT
+.INDENT 0.0
+.TP
+.B \fBMPD_HOST\fP, \fBMPD_PORT\fP
+mpd\-sima will look for MPD_HOST and MPD_PORT to override built\-in
+configuration (set to "localhost:6600").
+.sp
+mpd\-sima expects MPD_HOST syntax as documented in mpc manual, cf.
+\fBmpc(1)\fP\&. To use a password, provide a value of the form \fBpassword@host\fP\&.
+.TP
+.B \fBHTTP_PROXY\fP, \fBHTTPS_PROXY\fP
+mpd\-sima honors HTTP_PROXY environment variables.
+.UNINDENT
+.SH CONFIGURATION
+.INDENT 0.0
+.TP
+.B \fBmpd_sima.cfg\fP
+\fBmpd_sima.cfg\fP is read if present. Otherwise built\-in defaults are
+used. An example should be provided in the tarball within \fBdoc/examples/\fP\&.
+On Debian system please look in \fB/usr/share/doc/mpd\-sima\fP\&.
+.UNINDENT
+.sp
+\fBDEFAULTS\fP
+.INDENT 0.0
+.INDENT 3.5
+Default is to look for MPD server at localhost:6600 (or
+\fBMPD_HOST\fP/\fBMPD_PORT\fP env. var. if set).
+.sp
+The default plugins will use Last.fm to find similar tracks to queue and
+fallback to random if nothing if found.
+.sp
+The get the defaults as detected by mpd\-sima on your system you can
+run mpd\-sima to print the config:
+.sp
+\fBmpd\-sima generate\-config\fP
+.UNINDENT
+.UNINDENT
+.sp
+For details about mpd_sima.cfg refer to the manual \fBmpd_sima.cfg(5)\fP
+.SH FILES
+.INDENT 0.0
+.TP
+.B \fB$\fP\fI{XDG_CONFIG_HOME\fP\fB}/mpd_sima/mpd_sima.cfg\fP
+Configuration file.
+.TP
+.B \fB$\fP\fI{XDG_DATA_HOME\fP\fB}/mpd_sima/sima.db\fP
+SQLite internal DB file. Stores play history and blocklists.
+.TP
+.B \fB$\fP\fI{XDG_DATA_HOME\fP\fB}/mpd_sima/WEB_SERVICE/\fP
+HTTP cache.
+.UNINDENT
+.sp
+Usually \fBXDG_DATA_HOME\fP is set to \fB$\fP\fI{HOME\fP\fB}/.local/share\fP and
+\fBXDG_CONFIG_HOME\fP to \fB$\fP\fI{HOME\fP\fB}/.config\fP (for regular users).
+You may override them using command line option \fB\-\-var\-dir\fP and \fB\-\-config\fP
+(cf. \fBmpd\-sima(1)\fP)
+.SH SEE ALSO
+.sp
+\fBmpc(1)\fP, \fBmpd(1)\fP
+.SH FEEDBACK/BUGS
+.sp
+The maintainer would be more than happy to ear from you, don\(aqt hesitate to send feedback, \fI\%https://kaliko.me/contact/\fP
+.sp
+XMPP users are welcome to join the dedicated chat room at \fI\%kaliko.me@conf.azylum.org\fP
+.SH AUTHOR
+kaliko
+.SH COPYRIGHT
+2009-2022, kaliko
+.\" Generated by docutils manpage writer.
+.

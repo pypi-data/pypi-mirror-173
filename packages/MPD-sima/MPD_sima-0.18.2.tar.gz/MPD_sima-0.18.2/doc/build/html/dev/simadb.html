@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database managment module &#8212; MPD_sima  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="HTTP Cache Objects" href="cache.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="cache.html" title="HTTP Cache Objects"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">MPD_sima  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Database managment module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sima.lib.simadb">
+<span id="database-managment-module"></span><h1>Database managment module<a class="headerlink" href="#module-sima.lib.simadb" title="Permalink to this headline">¶</a></h1>
+<p>SQlite database library</p>
+<dl class="py class">
+<dt id="sima.lib.simadb.SimaDB">
+<em class="property">class </em><code class="sig-prename descclassname">sima.lib.simadb.</code><code class="sig-name descname">SimaDB</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">db_path</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB" title="Permalink to this definition">¶</a></dt>
+<dd><p>SQLite management</p>
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.add_history">
+<code class="sig-name descname">add_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">track</span></em>, <em class="sig-param"><span class="n">date</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.add_history"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.add_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Record last play date of track (ie. not a real play history).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>track</strong> (<a class="reference internal" href="meta.html#sima.lib.track.Track" title="sima.lib.track.Track"><em>sima.lib.track.Track</em></a>) -- track to add to history</p></li>
+<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/datetime.html#datetime.datetime" title="(in Python v3.10)"><em>datetime.datetime</em></a>) -- UTC datetime object (use &quot;datetime.now(timezone.utc)&quot; is not set)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.create_db">
+<code class="sig-name descname">create_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.create_db"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.create_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up a database</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.delete_bl">
+<code class="sig-name descname">delete_bl</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">track</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">album</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">artist</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.delete_bl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.delete_bl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.drop_all">
+<code class="sig-name descname">drop_all</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.drop_all"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.drop_all" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.fetch_albums_history">
+<code class="sig-name descname">fetch_albums_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">needle</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">duration</span><span class="o">=</span><span class="default_value">720</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.fetch_albums_history"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.fetch_albums_history" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>needle</strong> (<a class="reference internal" href="meta.html#sima.lib.meta.Artist" title="sima.lib.meta.Artist"><em>sima.lib.meta.Artist</em></a>) -- When specified, returns albums history for this artist.</p></li>
+<li><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) -- How long ago to fetch history from (in hours)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.fetch_artists_history">
+<code class="sig-name descname">fetch_artists_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">needle</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">duration</span><span class="o">=</span><span class="default_value">720</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.fetch_artists_history"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.fetch_artists_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of Artist objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>needle</strong> (<a class="reference internal" href="meta.html#sima.lib.meta.Artist" title="sima.lib.meta.Artist"><em>sima.lib.meta.Artist</em></a><em> or </em><em>sima.lib.meta.MetaContainer</em>) -- When specified, returns history for these artists only</p></li>
+<li><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) -- How long ago to fetch history from (in hours)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.fetch_genres_history">
+<code class="sig-name descname">fetch_genres_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">duration</span><span class="o">=</span><span class="default_value">720</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">20</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.fetch_genres_history"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.fetch_genres_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns genre history</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) -- How long ago to fetch history from (in hours)</p></li>
+<li><p><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) -- number of genre to fetch</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.fetch_history">
+<code class="sig-name descname">fetch_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">artist</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">duration</span><span class="o">=</span><span class="default_value">720</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.fetch_history"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.fetch_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches tracks history, more recent first</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>artist</strong> (<a class="reference internal" href="meta.html#sima.lib.meta.Artist" title="sima.lib.meta.Artist"><em>sima.lib.meta.Artist</em></a>) -- limit history to this artist</p></li>
+<li><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) -- How long ago to fetch history from (in hours)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_album">
+<code class="sig-name descname">get_album</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">album</span></em>, <em class="sig-param"><span class="n">with_connection</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_album"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_album" title="Permalink to this definition">¶</a></dt>
+<dd><p>get album information from the database.
+if not in database insert new entry.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>album</strong> (<a class="reference internal" href="meta.html#sima.lib.meta.Album" title="sima.lib.meta.Album"><em>sima.lib.meta.Album</em></a>) -- album objet</p></li>
+<li><p><strong>with_connection</strong> (<a class="reference external" href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection" title="(in Python v3.10)"><em>sqlite3.Connection</em></a>) -- SQLite connection</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_albumartist">
+<code class="sig-name descname">get_albumartist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">artist</span></em>, <em class="sig-param"><span class="n">with_connection</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_albumartist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_albumartist" title="Permalink to this definition">¶</a></dt>
+<dd><p>get albumartist information from the database.
+if not in database insert new entry.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>artist</strong> (<a class="reference internal" href="meta.html#sima.lib.meta.Artist" title="sima.lib.meta.Artist"><em>sima.lib.meta.Artist</em></a>) -- artist</p></li>
+<li><p><strong>with_connection</strong> (<a class="reference external" href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection" title="(in Python v3.10)"><em>sqlite3.Connection</em></a>) -- SQLite connection</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_artist">
+<code class="sig-name descname">get_artist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">artist</span></em>, <em class="sig-param"><span class="n">with_connection</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_artist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_artist" title="Permalink to this definition">¶</a></dt>
+<dd><p>get artist information from the database.
+if not in database insert new entry.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>artist</strong> (<a class="reference internal" href="meta.html#sima.lib.meta.Artist" title="sima.lib.meta.Artist"><em>sima.lib.meta.Artist</em></a>) -- artist</p></li>
+<li><p><strong>with_connection</strong> (<a class="reference external" href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection" title="(in Python v3.10)"><em>sqlite3.Connection</em></a>) -- SQLite connection</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_bl_album">
+<code class="sig-name descname">get_bl_album</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">album</span></em>, <em class="sig-param"><span class="n">with_connection</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_bl_album"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_bl_album" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an album to blocklist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sima.lib.meta.Album</strong> -- Album object to add to blocklist</p></li>
+<li><p><strong>with_connection</strong> (<a class="reference external" href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection" title="(in Python v3.10)"><em>sqlite3.Connection</em></a>) -- sqlite3.Connection to reuse, else create a new one</p></li>
+<li><p><strong>add</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) -- Default is to add a new record, set to False to fetch associated record</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_bl_artist">
+<code class="sig-name descname">get_bl_artist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">artist</span></em>, <em class="sig-param"><span class="n">with_connection</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_bl_artist"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_bl_artist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an artist to blocklist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sima.lib.meta.Artist</strong> -- Artist object to add to blocklist</p></li>
+<li><p><strong>with_connection</strong> (<a class="reference external" href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection" title="(in Python v3.10)"><em>sqlite3.Connection</em></a>) -- sqlite3.Connection to reuse, else create a new one</p></li>
+<li><p><strong>add</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) -- Default is to add a new record, set to False to fetch associated record</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_bl_track">
+<code class="sig-name descname">get_bl_track</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">track</span></em>, <em class="sig-param"><span class="n">with_connection</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_bl_track"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_bl_track" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a track to blocklist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>track</strong> (<a class="reference internal" href="meta.html#sima.lib.track.Track" title="sima.lib.track.Track"><em>sima.lib.track.Track</em></a>) -- Track object to add to blocklist</p></li>
+<li><p><strong>with_connection</strong> (<a class="reference external" href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection" title="(in Python v3.10)"><em>sqlite3.Connection</em></a>) -- sqlite3.Connection to reuse, else create a new one</p></li>
+<li><p><strong>add</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) -- Default is to add a new record, set to False to fetch associated record</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_database_connection">
+<code class="sig-name descname">get_database_connection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_database_connection"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_database_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>get database reference</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_genre">
+<code class="sig-name descname">get_genre</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">genre</span></em>, <em class="sig-param"><span class="n">with_connection</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_genre"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_genre" title="Permalink to this definition">¶</a></dt>
+<dd><p>get genre from the database.
+if not in database insert new entry.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>genre</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) -- genre as a string</p></li>
+<li><p><strong>with_connection</strong> (<a class="reference external" href="https://docs.python.org/3/library/sqlite3.html#sqlite3.Connection" title="(in Python v3.10)"><em>sqlite3.Connection</em></a>) -- SQLite connection</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_info">
+<code class="sig-name descname">get_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_info"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.get_track">
+<code class="sig-name descname">get_track</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">track</span></em>, <em class="sig-param"><span class="n">with_connection</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">add</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.get_track"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.get_track" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a track id from Tracks table, add if not existing,</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>track</strong> (<a class="reference internal" href="meta.html#sima.lib.track.Track" title="sima.lib.track.Track"><em>sima.lib.track.Track</em></a>) -- track to use</p></li>
+<li><p><strong>add</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) -- add non existing track to database</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.purge_history">
+<code class="sig-name descname">purge_history</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">duration</span><span class="o">=</span><span class="default_value">720</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.purge_history"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.purge_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove old entries in history</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) -- Purge history record older than duration in hours</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="sima.lib.simadb.SimaDB.view_bl">
+<code class="sig-name descname">view_bl</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDB.view_bl"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDB.view_bl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="sima.lib.simadb.SimaDBError">
+<em class="property">exception </em><code class="sig-prename descclassname">sima.lib.simadb.</code><code class="sig-name descname">SimaDBError</code><a class="reference internal" href="../_modules/sima/lib/simadb.html#SimaDBError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sima.lib.simadb.SimaDBError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exceptions.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="sima.lib.simadb.__HIST_DURATION__">
+<code class="sig-prename descclassname">sima.lib.simadb.</code><code class="sig-name descname">__HIST_DURATION__</code><em class="property"> = 720</em><a class="headerlink" href="#sima.lib.simadb.__HIST_DURATION__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default history duration for both request and purge in hours</p>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="cache.html"
+                        title="previous chapter">HTTP Cache Objects</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/dev/simadb.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="cache.html" title="HTTP Cache Objects"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">MPD_sima  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Database managment module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2022, kaliko.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

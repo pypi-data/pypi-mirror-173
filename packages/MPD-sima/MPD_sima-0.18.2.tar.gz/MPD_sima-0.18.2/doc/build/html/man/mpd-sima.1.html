@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mpd-sima &#8212; MPD_sima  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="mpd_sima.cfg" href="mpd_sima.cfg.5.html" />
+    <link rel="prev" title="Music library metadata convention" href="../user/10_metadata.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mpd_sima.cfg.5.html" title="mpd_sima.cfg"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../user/10_metadata.html" title="Music library metadata convention"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">MPD_sima  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mpd-sima</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="mpd-sima">
+<h1>mpd-sima<a class="headerlink" href="#mpd-sima" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="synopsys">
+<h2>SYNOPSYS<a class="headerlink" href="#synopsys" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">[--daemon]</span> <span class="pre">[--config=conf_file]</span> <span class="pre">[--var-dir=var_directory]</span> <span class="pre">[--pid=pid_file]</span> <span class="pre">[--log=log_file]</span> <span class="pre">[--log-level=log_level]</span> <span class="pre">[--host=mpd_host]</span> <span class="pre">[--mpd_port=mpd_port]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">{{-h</span> <span class="pre">|</span> <span class="pre">--help}</span> <span class="pre">--version}</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">[--config=conf_file]</span> <span class="pre">config-test</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">[--var-dir=var_directory]</span> <span class="pre">create-db</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">[…]</span> <span class="pre">generate-config</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">[--var-dir=var_directory]</span> <span class="pre">purge-history</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">bl-view</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">bl-add-artist</span> <span class="pre">[artist]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">bl-add-album</span> <span class="pre">[album]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">bl-add-track</span> <span class="pre">[track]</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">bl-delete</span> <span class="pre">id</span></code></p>
+</div>
+<div class="section" id="description">
+<h2>DESCRIPTION<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This manual page documents briefly the <code class="docutils literal notranslate"><span class="pre">mpd-sima</span></code> commands.</p>
+<p>At start up default configuration is first overridden by user configuration in
+mpd_sima.cfg (see <a class="reference internal" href="#files">FILES</a>) and finally command lines options are honored. For
+instance you can override default MPD host (localhost) in your configuration
+file or with <code class="docutils literal notranslate"><span class="pre">-S my_mpd_server.local</span></code> option. For default configuration see
+<a class="reference internal" href="#configuration">CONFIGURATION</a>. See also environment variables special case for MPD host and
+port in <a class="reference internal" href="#environment">ENVIRONMENT</a>.</p>
+</div>
+<div class="section" id="options">
+<h2>OPTIONS<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h2>
+<p>The program follows the usual GNU command line syntax, with long options
+starting with two dashes ('-'). A summary of options is included below.</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">-h</span></code>; <code class="docutils literal notranslate"><span class="pre">--help</span></code></dt><dd><p>Print help and exit.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">--version</span></code></dt><dd><p>Print version and exit.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">--daemon</span></code></dt><dd><p>Start as a daemon. Log redirected to <code class="file docutils literal notranslate"><span class="pre">/dev/null</span></code>, usually setting
+<code class="docutils literal notranslate"><span class="pre">--log</span></code> and <code class="docutils literal notranslate"><span class="pre">--pid</span></code> options in daemon mode are a good idea to
+monitor/stop the process.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-p</span> <span class="pre">pid_file</span></code>; <code class="docutils literal notranslate"><span class="pre">--pid=pid_file</span></code></dt><dd><p>Use the specific file pid_file to store pid to.</p>
+<p>Default is not to store pid info.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-l</span> <span class="pre">log_file</span></code>; <code class="docutils literal notranslate"><span class="pre">--log=log_file</span></code></dt><dd><p>Use the specific file log_file to log messages to.</p>
+<p>Default is to log to stdout/stderr.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-v</span> <span class="pre">log_level</span></code>; <code class="docutils literal notranslate"><span class="pre">--log-level=log_level</span></code></dt><dd><p>Verbosity in [debug,info,warning,error].</p>
+<p>Default is to log info messages.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-c</span> <span class="pre">conf_file</span></code>; <code class="docutils literal notranslate"><span class="pre">--config=conf_file</span></code></dt><dd><p>Use the specific file conf_file to set up configuration instead of
+looking for the default user configuration file.</p>
+<p>Default is to look for <code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_CONFIG_HOME</span></em><span class="pre">}/mpd_sima/mpd_sima.cfg</span></code>.
+CLI option overrides any equivalent mentioned in configuration file, ie.
+launching mpd-sima with <code class="docutils literal notranslate"><span class="pre">--port</span></code> CLI option will ignore port setting in
+configuration file.</p>
+<p>For more details on configuration file see also <a class="reference external" href="#files">FILES</a> and <a class="reference external" href="#configuration">CONFIGURATION</a> sections.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">--var-dir=var_directory</span></code></dt><dd><p>Use the specific path var_directory to look for (or create) var files
+(ie. database) instead of looking at the default user data
+location.</p>
+<p>Default is to look in <code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_DATA_HOME</span></em><span class="pre">}/mpd_sima/</span></code>. Concerning
+<span class="target" id="index-0"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XDG_DATA_HOME</span></code> see also <a class="reference external" href="#files">FILES section</a>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-S</span> <span class="pre">mpd_host</span></code>; <code class="docutils literal notranslate"><span class="pre">--host=mpd_host</span></code></dt><dd><p>Use the specific host mpd_host as MPD server.mpd_host can be an IP or
+a fully qualified domain name as long as your system can resolve it.
+This overrides MPD_HOST environment variable.
+Default is <em>localhost</em>.</p>
+<p>See also <a class="reference external" href="#environment">ENVIRONMENT section</a>.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">-P</span> <span class="pre">mpd_port</span></code>; <code class="docutils literal notranslate"><span class="pre">--port=mpd_port</span></code></dt><dd><p>Use the specific port number mpd_port on MPD server. This overrides
+MPD_PORT environment variable.Default is <em>6600</em>.</p>
+<p>See also <a class="reference external" href="#environment">ENVIRONMENT section</a></p>
+</dd>
+</dl>
+</div>
+<div class="section" id="command-arguments">
+<h2>Command arguments<a class="headerlink" href="#command-arguments" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">config-test</span></code></dt><dd><p>Test configuration file and exit. Uses the configuration file
+specified with <code class="docutils literal notranslate"><span class="pre">--config</span></code> or default location.
+Default is to use $XDG_CONFIG_HOME/mpd_sima/mpd_sima.cfg.</p>
+<p>config-test tests MPD connection and Tags plugin configuration.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">create-db</span></code></dt><dd><p>Create the database and exit. Uses folder specified with
+<code class="docutils literal notranslate"><span class="pre">--var-dir</span></code> or default directory.</p>
+<p>Default is to use <code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_DATA_HOME</span></em><span class="pre">}/mpd_sima/</span></code> (see <a class="reference external" href="#configuration">CONFIGURATION
+section</a> for more).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">generate-config</span></code></dt><dd><p>Generate a sample configuration file according to the current CLI
+options and environment variables. The configuration is written on stdout.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">purge-history</span></code></dt><dd><p>Purge play history in the database and exit. Uses folder specified
+with <code class="docutils literal notranslate"><span class="pre">--var-dir</span></code> or default directory.</p>
+<p>Default is to use <code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_DATA_HOME</span></em><span class="pre">}/mpd_sima/</span></code> (see <a class="reference external" href="#files">FILES section</a> for more).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bl-view</span></code></dt><dd><p>View blocklist, useful to get entry IDs to remove with delete
+command.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bl-add-artist</span> <span class="pre">artist</span></code></dt><dd><p>Add artist to the blocklist. If artist is not provided, try to get
+the currently playing artist.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bl-add-album</span> <span class="pre">album</span></code></dt><dd><p>Add album to the blocklist. If album is not provided, try to get the
+currently playing album.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bl-add-track</span> <span class="pre">track</span></code></dt><dd><p>Add track to the blocklist. If track is not provided, try to get the
+currently playing track.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">bl-delete</span> <span class="pre">id</span></code></dt><dd><p>Remove blocklist entry referenced by its id. Use bloclist view
+command to get the id.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="environment">
+<h2>ENVIRONMENT<a class="headerlink" href="#environment" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt><span class="target" id="index-1"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">MPD_HOST</span></code>, <span class="target" id="index-2"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">MPD_PORT</span></code></dt><dd><p>mpd-sima will look for MPD_HOST and MPD_PORT to override built-in
+configuration (set to &quot;localhost:6600&quot;).</p>
+<p>mpd-sima expects MPD_HOST syntax as documented in mpc manual, cf.
+<em class="manpage">mpc(1)</em>. To use a password, provide a value of the form <strong>password&#64;host</strong>.</p>
+</dd>
+<dt><span class="target" id="index-3"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">HTTP_PROXY</span></code>, <span class="target" id="index-4"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">HTTPS_PROXY</span></code></dt><dd><p>mpd-sima honors HTTP_PROXY environment variables.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="configuration">
+<h2>CONFIGURATION<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt><code class="file docutils literal notranslate"><span class="pre">mpd_sima.cfg</span></code></dt><dd><p><code class="file docutils literal notranslate"><span class="pre">mpd_sima.cfg</span></code> is read if present. Otherwise built-in defaults are
+used. An example should be provided in the tarball within <code class="docutils literal notranslate"><span class="pre">doc/examples/</span></code>.
+On Debian system please look in <code class="file docutils literal notranslate"><span class="pre">/usr/share/doc/mpd-sima</span></code>.</p>
+</dd>
+</dl>
+<p><strong>DEFAULTS</strong></p>
+<blockquote>
+<div><p>Default is to look for MPD server at localhost:6600 (or
+<span class="target" id="index-5"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">MPD_HOST</span></code>/<span class="target" id="index-6"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">MPD_PORT</span></code> env. var. if set).</p>
+<p>The default plugins will use Last.fm to find similar tracks to queue and
+fallback to random if nothing if found.</p>
+<p>The get the defaults as detected by mpd-sima on your system you can
+run mpd-sima to print the config:</p>
+<p><code class="docutils literal notranslate"><span class="pre">mpd-sima</span> <span class="pre">generate-config</span></code></p>
+</div></blockquote>
+<p>For details about mpd_sima.cfg refer to the manual <a class="reference internal" href="mpd_sima.cfg.5.html"><span class="doc">mpd_sima.cfg</span></a></p>
+</div>
+<div class="section" id="files">
+<h2>FILES<a class="headerlink" href="#files" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt><code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_CONFIG_HOME</span></em><span class="pre">}/mpd_sima/mpd_sima.cfg</span></code></dt><dd><p>Configuration file.</p>
+</dd>
+<dt><code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_DATA_HOME</span></em><span class="pre">}/mpd_sima/sima.db</span></code></dt><dd><p>SQLite internal DB file. Stores play history and blocklists.</p>
+</dd>
+<dt><code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{XDG_DATA_HOME</span></em><span class="pre">}/mpd_sima/WEB_SERVICE/</span></code></dt><dd><p>HTTP cache.</p>
+</dd>
+</dl>
+<p>Usually <span class="target" id="index-9"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XDG_DATA_HOME</span></code> is set to <code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{HOME</span></em><span class="pre">}/.local/share</span></code> and
+<span class="target" id="index-10"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XDG_CONFIG_HOME</span></code> to <code class="file docutils literal notranslate"><span class="pre">$</span><em><span class="pre">{HOME</span></em><span class="pre">}/.config</span></code> (for regular users).
+You may override them using command line option <code class="docutils literal notranslate"><span class="pre">--var-dir</span></code> and <code class="docutils literal notranslate"><span class="pre">--config</span></code>
+(cf. <a class="reference internal" href="#"><span class="doc">mpd-sima</span></a>)</p>
+</div>
+<div class="section" id="see-also">
+<h2>SEE ALSO<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p><span class="target" id="index-11"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">mpc(1)</span></code>, <span class="target" id="index-12"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">mpd(1)</span></code></p>
+</div>
+<div class="section" id="feedback-bugs">
+<h2>FEEDBACK/BUGS<a class="headerlink" href="#feedback-bugs" title="Permalink to this headline">¶</a></h2>
+<p>The maintainer would be more than happy to ear from you, don't hesitate to send feedback, <a class="reference external" href="https://kaliko.me/contact/">https://kaliko.me/contact/</a></p>
+<p>XMPP users are welcome to join the dedicated chat room at <a class="reference external" href="mailto:kaliko&#46;me&#37;&#52;&#48;conf&#46;azylum&#46;org">kaliko<span>&#46;</span>me<span>&#64;</span>conf<span>&#46;</span>azylum<span>&#46;</span>org</a></p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">mpd-sima</a><ul>
+<li><a class="reference internal" href="#synopsys">SYNOPSYS</a></li>
+<li><a class="reference internal" href="#description">DESCRIPTION</a></li>
+<li><a class="reference internal" href="#options">OPTIONS</a></li>
+<li><a class="reference internal" href="#command-arguments">Command arguments</a></li>
+<li><a class="reference internal" href="#environment">ENVIRONMENT</a></li>
+<li><a class="reference internal" href="#configuration">CONFIGURATION</a></li>
+<li><a class="reference internal" href="#files">FILES</a></li>
+<li><a class="reference internal" href="#see-also">SEE ALSO</a></li>
+<li><a class="reference internal" href="#feedback-bugs">FEEDBACK/BUGS</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../user/10_metadata.html"
+                        title="previous chapter">Music library metadata convention</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="mpd_sima.cfg.5.html"
+                        title="next chapter">mpd_sima.cfg</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/man/mpd-sima.1.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mpd_sima.cfg.5.html" title="mpd_sima.cfg"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../user/10_metadata.html" title="Music library metadata convention"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">MPD_sima  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mpd-sima</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2022, kaliko.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

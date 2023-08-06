@@ -1,0 +1,822 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sima.lib.simadb &#8212; MPD_sima  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">MPD_sima  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sima.lib.simadb</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for sima.lib.simadb</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Copyright (c) 2009-2013, 2019-2021 kaliko &lt;kaliko@azylum.org&gt;</span>
+<span class="c1">#</span>
+<span class="c1">#  This file is part of sima</span>
+<span class="c1">#</span>
+<span class="c1">#  sima is free software: you can redistribute it and/or modify</span>
+<span class="c1">#  it under the terms of the GNU General Public License as published by</span>
+<span class="c1">#  the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1">#  (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1">#  sima is distributed in the hope that it will be useful,</span>
+<span class="c1">#  but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1">#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1">#  GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1">#  You should have received a copy of the GNU General Public License</span>
+<span class="c1">#  along with sima.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+<span class="c1">#</span>
+<span class="c1">#</span>
+<span class="sd">&quot;&quot;&quot;SQlite database library</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1">#: DB Version</span>
+<span class="n">__DB_VERSION__</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="c1">#: Default history duration for both request and purge in hours</span>
+<span class="n">__HIST_DURATION__</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="mi">30</span> <span class="o">*</span> <span class="mi">24</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">sqlite3</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">deque</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="p">(</span><span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timezone</span>
+
+
+<span class="kn">from</span> <span class="nn">sima.lib.meta</span> <span class="kn">import</span> <span class="n">Artist</span><span class="p">,</span> <span class="n">Album</span>
+<span class="kn">from</span> <span class="nn">sima.lib.track</span> <span class="kn">import</span> <span class="n">Track</span>
+<span class="kn">from</span> <span class="nn">sima.utils.utils</span> <span class="kn">import</span> <span class="n">MPDSimaException</span>
+
+
+<div class="viewcode-block" id="SimaDBError"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDBError">[docs]</a><span class="k">class</span> <span class="nc">SimaDBError</span><span class="p">(</span><span class="n">MPDSimaException</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Exceptions.</span>
+<span class="sd">    &quot;&quot;&quot;</span></div>
+
+
+<div class="viewcode-block" id="SimaDB"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB">[docs]</a><span class="k">class</span> <span class="nc">SimaDB</span><span class="p">:</span>
+    <span class="s2">&quot;SQLite management&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">db_path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_db_path</span> <span class="o">=</span> <span class="n">db_path</span>
+
+<div class="viewcode-block" id="SimaDB.get_database_connection"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_database_connection">[docs]</a>    <span class="k">def</span> <span class="nf">get_database_connection</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get database reference&quot;&quot;&quot;</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_db_path</span><span class="p">,</span> <span class="n">isolation_level</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">connection</span></div>
+
+<div class="viewcode-block" id="SimaDB.get_info"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_info">[docs]</a>    <span class="k">def</span> <span class="nf">get_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">info</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;SELECT * FROM db_info</span>
+<span class="s2">                    WHERE name = &quot;DB Version&quot; LIMIT 1;&quot;&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">info</span></div>
+
+<div class="viewcode-block" id="SimaDB.create_db"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.create_db">[docs]</a>    <span class="k">def</span> <span class="nf">create_db</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; Set up a database</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s1">&#39;CREATE TABLE IF NOT EXISTS db_info&#39;</span>
+            <span class="s1">&#39; (name CHAR(50), value CHAR(50))&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;INSERT INTO db_info (name, value) SELECT ?, ?</span>
+<span class="s1">                           WHERE NOT EXISTS</span>
+<span class="s1">                           ( SELECT 1 FROM db_info WHERE name = ? )&#39;&#39;&#39;</span><span class="p">,</span>
+                           <span class="p">(</span><span class="s1">&#39;DB Version&#39;</span><span class="p">,</span> <span class="n">__DB_VERSION__</span><span class="p">,</span> <span class="s1">&#39;DB Version&#39;</span><span class="p">))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>  <span class="c1"># ARTISTS</span>
+            <span class="s1">&#39;CREATE TABLE IF NOT EXISTS artists (id INTEGER PRIMARY KEY, &#39;</span>
+            <span class="s1">&#39;name VARCHAR(100), mbid CHAR(36))&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>  <span class="c1"># ALBUMS</span>
+            <span class="s1">&#39;CREATE TABLE IF NOT EXISTS albums (id INTEGER PRIMARY KEY, &#39;</span>
+            <span class="s1">&#39;name VARCHAR(100), mbid CHAR(36))&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>  <span class="c1"># ALBUMARTISTS</span>
+            <span class="s1">&#39;CREATE TABLE IF NOT EXISTS albumartists (id INTEGER PRIMARY KEY, &#39;</span>
+            <span class="s1">&#39;name VARCHAR(100), mbid CHAR(36))&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>  <span class="c1"># TRACKS</span>
+            <span class="s1">&#39;CREATE TABLE IF NOT EXISTS tracks (id INTEGER PRIMARY KEY, &#39;</span>
+            <span class="s1">&#39;title VARCHAR(100), artist INTEGER, &#39;</span>
+            <span class="s1">&#39;album INTEGER, albumartist INTEGER, &#39;</span>
+            <span class="s1">&#39;file VARCHAR(500), mbid CHAR(36), &#39;</span>
+            <span class="s1">&#39;FOREIGN KEY(artist)       REFERENCES artists(id), &#39;</span>
+            <span class="s1">&#39;FOREIGN KEY(album)        REFERENCES albums(id), &#39;</span>
+            <span class="s1">&#39;FOREIGN KEY(albumartist)  REFERENCES albumartists(id))&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>  <span class="c1"># HISTORY</span>
+            <span class="s1">&#39;CREATE TABLE IF NOT EXISTS history (id INTEGER PRIMARY KEY, &#39;</span>
+            <span class="s1">&#39;last_play TIMESTAMP, track INTEGER, &#39;</span>
+            <span class="s1">&#39;FOREIGN KEY(track) REFERENCES tracks(id))&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>  <span class="c1"># BLOCKLIST</span>
+            <span class="s1">&#39;CREATE TABLE IF NOT EXISTS blocklist (id INTEGER PRIMARY KEY, &#39;</span>
+            <span class="s1">&#39;artist INTEGER, album INTEGER, track INTEGER, &#39;</span>
+            <span class="s1">&#39;FOREIGN KEY(artist) REFERENCES artists(id), &#39;</span>
+            <span class="s1">&#39;FOREIGN KEY(album)  REFERENCES albums(id), &#39;</span>
+            <span class="s1">&#39;FOREIGN KEY(track)  REFERENCES tracks(id))&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>  <span class="c1"># Genres (Many-to-many)</span>
+            <span class="s1">&#39;CREATE TABLE IF NOT EXISTS genres &#39;</span>
+            <span class="s1">&#39;(id INTEGER PRIMARY KEY, name VARCHAR(100))&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>  <span class="c1"># Junction Genres Tracks</span>
+                <span class="sd">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS tracks_genres</span>
+<span class="sd">                ( track INTEGER, genre INTEGER,</span>
+<span class="sd">                FOREIGN KEY(track) REFERENCES tracks(id)</span>
+<span class="sd">                FOREIGN KEY(genre) REFERENCES genres(id))&quot;&quot;&quot;</span><span class="p">)</span>
+        <span class="c1"># Create cleanup triggers:</span>
+        <span class="c1"># DELETE history → Tracks / Tracks_genres tables</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">            CREATE TRIGGER IF NOT EXISTS del_history_cleanup_tracks</span>
+<span class="s1">            AFTER DELETE ON history</span>
+<span class="s1">            WHEN ((SELECT count(*) FROM history WHERE track=old.track) = 0 AND</span>
+<span class="s1">                  (SELECT count(*) FROM blocklist WHERE track=old.track) = 0)</span>
+<span class="s1">            BEGIN</span>
+<span class="s1">             DELETE FROM tracks WHERE id = old.track;</span>
+<span class="s1">             DELETE FROM tracks_genres WHERE track = old.track;</span>
+<span class="s1">            END;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># DELETE Tracks_Genres → Genres table</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">            CREATE TRIGGER IF NOT EXISTS del_tracks_genres_cleanup_genres</span>
+<span class="s1">            AFTER DELETE ON tracks_genres</span>
+<span class="s1">            WHEN ((SELECT count(*) FROM tracks_genres WHERE genre=old.genre) = 0)</span>
+<span class="s1">            BEGIN</span>
+<span class="s1">             DELETE FROM genres WHERE id = old.genre;</span>
+<span class="s1">            END;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># DELETE Tracks → Artists table</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">            CREATE TRIGGER IF NOT EXISTS del_tracks_cleanup_artists</span>
+<span class="s1">            AFTER DELETE ON tracks</span>
+<span class="s1">            WHEN ((SELECT count(*) FROM tracks WHERE artist=old.artist) = 0 AND</span>
+<span class="s1">                  (SELECT count(*) FROM blocklist WHERE artist=old.artist) = 0)</span>
+<span class="s1">            BEGIN</span>
+<span class="s1">             DELETE FROM artists WHERE id = old.artist;</span>
+<span class="s1">            END;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># DELETE Tracks → Albums table</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">            CREATE TRIGGER IF NOT EXISTS del_tracks_cleanup_albums</span>
+<span class="s1">            AFTER DELETE ON tracks</span>
+<span class="s1">            WHEN ((SELECT count(*) FROM tracks WHERE album=old.album) = 0 AND</span>
+<span class="s1">                  (SELECT count(*) FROM blocklist WHERE album=old.album) = 0)</span>
+<span class="s1">            BEGIN</span>
+<span class="s1">             DELETE FROM albums WHERE id = old.album;</span>
+<span class="s1">            END;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># DELETE Tracks → cleanup AlbumArtists table</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">            CREATE TRIGGER IF NOT EXISTS del_tracks_cleanup_albumartists</span>
+<span class="s1">            AFTER DELETE ON tracks</span>
+<span class="s1">            WHEN ((SELECT count(*) FROM tracks WHERE albumartist=old.albumartist) = 0)</span>
+<span class="s1">            BEGIN</span>
+<span class="s1">             DELETE FROM albumartists WHERE id = old.albumartist;</span>
+<span class="s1">            END;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># DELETE blocklist → Tracks table</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">            CREATE TRIGGER IF NOT EXISTS del_blocklist_cleanup_tracks</span>
+<span class="s1">            AFTER DELETE ON blocklist</span>
+<span class="s1">            WHEN ((SELECT count(*) FROM history WHERE track=old.track) = 0 AND</span>
+<span class="s1">                  (SELECT count(*) FROM blocklist WHERE track=old.track) = 0)</span>
+<span class="s1">            BEGIN</span>
+<span class="s1">             DELETE FROM tracks WHERE id = old.track;</span>
+<span class="s1">            END;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># DELETE blocklist → Artists table</span>
+        <span class="c1"># The &quot;SELECT count(*) FROM blocklist&quot; is useless,</span>
+        <span class="c1"># there can be only one blocklist.artist</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">            CREATE TRIGGER IF NOT EXISTS del_blocklist_cleanup_artists</span>
+<span class="s1">            AFTER DELETE ON blocklist</span>
+<span class="s1">            WHEN ((SELECT count(*) FROM tracks WHERE artist=old.artist) = 0 AND</span>
+<span class="s1">                  (SELECT count(*) FROM blocklist WHERE artist=old.artist) = 0)</span>
+<span class="s1">            BEGIN</span>
+<span class="s1">             DELETE FROM artists WHERE id = old.artist;</span>
+<span class="s1">            END;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
+        <span class="c1"># DELETE Tracks → Albums table</span>
+        <span class="c1"># The &quot;SELECT count(*) FROM blocklist&quot; is useless,</span>
+        <span class="c1"># there can be only one blocklist.album</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">            CREATE TRIGGER IF NOT EXISTS del_blocklist_cleanup_albums</span>
+<span class="s1">            AFTER DELETE ON blocklist</span>
+<span class="s1">            WHEN ((SELECT count(*) FROM tracks WHERE album=old.album) = 0 AND</span>
+<span class="s1">                  (SELECT count(*) FROM blocklist WHERE album=old.album) = 0)</span>
+<span class="s1">            BEGIN</span>
+<span class="s1">             DELETE FROM albums WHERE id = old.album;</span>
+<span class="s1">            END;</span>
+<span class="s1">            &#39;&#39;&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SimaDB.drop_all"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.drop_all">[docs]</a>    <span class="k">def</span> <span class="nf">drop_all</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+                <span class="s2">&quot;SELECT name FROM sqlite_master WHERE type=&#39;table&#39;&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchall</span><span class="p">():</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;DROP TABLE IF EXISTS </span><span class="si">{</span><span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">_remove_blocklist_id</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">blid</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Remove a blocklist id&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;DELETE FROM blocklist&#39;</span>
+                           <span class="s1">&#39; WHERE blocklist.id = ?&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">blid</span><span class="p">,))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">_get_album</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">album</span><span class="p">,</span> <span class="n">connection</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">album</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+                <span class="s2">&quot;SELECT id FROM albums WHERE mbid = ?&quot;</span><span class="p">,</span>
+                <span class="p">(</span><span class="n">album</span><span class="o">.</span><span class="n">mbid</span><span class="p">,))</span>
+        <span class="k">return</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM albums WHERE name = ? AND mbid IS NULL&quot;</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">album</span><span class="o">.</span><span class="n">name</span><span class="p">,))</span>
+
+<div class="viewcode-block" id="SimaDB.get_album"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_album">[docs]</a>    <span class="k">def</span> <span class="nf">get_album</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">album</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get album information from the database.</span>
+<span class="sd">        if not in database insert new entry.</span>
+
+<span class="sd">        :param sima.lib.meta.Album album: album objet</span>
+<span class="sd">        :param sqlite3.Connection with_connection: SQLite connection</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_album</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">add</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;INSERT INTO albums (name, mbid) VALUES (?, ?)&quot;</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">album</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">album</span><span class="o">.</span><span class="n">mbid</span><span class="p">))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_album</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+    <span class="k">def</span> <span class="nf">_get_albumartist</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">connection</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+                <span class="s2">&quot;SELECT id FROM albumartists WHERE mbid = ?&quot;</span><span class="p">,</span>
+                <span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">,))</span>
+        <span class="k">return</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM albumartists WHERE name = ? AND mbid IS NULL&quot;</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">,))</span>
+
+<div class="viewcode-block" id="SimaDB.get_albumartist"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_albumartist">[docs]</a>    <span class="k">def</span> <span class="nf">get_albumartist</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get albumartist information from the database.</span>
+<span class="sd">        if not in database insert new entry.</span>
+
+<span class="sd">        :param sima.lib.meta.Artist artist: artist</span>
+<span class="sd">        :param sqlite3.Connection with_connection: SQLite connection</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_albumartist</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">add</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;INSERT INTO albumartists (name, mbid) VALUES (?, ?)&quot;</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_albumartist</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">_get_artist</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">connection</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+                <span class="s2">&quot;SELECT id FROM artists WHERE mbid = ?&quot;</span><span class="p">,</span>
+                <span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">,))</span>
+        <span class="k">return</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM artists WHERE name = ? AND mbid IS NULL&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">,))</span>
+
+<div class="viewcode-block" id="SimaDB.get_artist"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_artist">[docs]</a>    <span class="k">def</span> <span class="nf">get_artist</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get artist information from the database.</span>
+<span class="sd">        if not in database insert new entry.</span>
+
+<span class="sd">        :param sima.lib.meta.Artist artist: artist</span>
+<span class="sd">        :param sqlite3.Connection with_connection: SQLite connection</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_artist</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">add</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;INSERT INTO artists (name, mbid) VALUES (?, ?)&quot;</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_artist</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SimaDB.get_genre"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_genre">[docs]</a>    <span class="k">def</span> <span class="nf">get_genre</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">genre</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;get genre from the database.</span>
+<span class="sd">        if not in database insert new entry.</span>
+
+<span class="sd">        :param str genre: genre as a string</span>
+<span class="sd">        :param sqlite3.Connection with_connection: SQLite connection</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM genres WHERE name = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">genre</span><span class="p">,))</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">add</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;INSERT INTO genres (name) VALUES (?)&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">genre</span><span class="p">,))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM genres WHERE name = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">genre</span><span class="p">,))</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="SimaDB.get_track"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_track">[docs]</a>    <span class="k">def</span> <span class="nf">get_track</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get a track id from Tracks table, add if not existing,</span>
+
+<span class="sd">        :param sima.lib.track.Track track: track to use</span>
+<span class="sd">        :param bool add: add non existing track to database&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">track</span><span class="o">.</span><span class="n">file</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">SimaDBError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Got a track with no file attribute: </span><span class="si">{</span><span class="n">track</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT * FROM tracks WHERE file = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">track</span><span class="o">.</span><span class="n">file</span><span class="p">,))</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">add</span><span class="p">:</span>  <span class="c1"># Not adding non existing track</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="c1"># Get an artist record or None</span>
+        <span class="k">if</span> <span class="n">track</span><span class="o">.</span><span class="n">artist</span><span class="p">:</span>
+            <span class="n">art</span> <span class="o">=</span> <span class="n">Artist</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">track</span><span class="o">.</span><span class="n">artist</span><span class="p">,</span> <span class="n">mbid</span><span class="o">=</span><span class="n">track</span><span class="o">.</span><span class="n">musicbrainz_artistid</span><span class="p">)</span>
+            <span class="n">art_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_artist</span><span class="p">(</span><span class="n">art</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">art_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="c1"># Get an albumartist record or None</span>
+        <span class="k">if</span> <span class="n">track</span><span class="o">.</span><span class="n">albumartist</span><span class="p">:</span>
+            <span class="n">albart</span> <span class="o">=</span> <span class="n">Artist</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">track</span><span class="o">.</span><span class="n">albumartist</span><span class="p">,</span>
+                            <span class="n">mbid</span><span class="o">=</span><span class="n">track</span><span class="o">.</span><span class="n">musicbrainz_albumartistid</span><span class="p">)</span>
+            <span class="n">albart_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_albumartist</span><span class="p">(</span><span class="n">albart</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">albart_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="c1"># Get an album record or None</span>
+        <span class="k">if</span> <span class="n">track</span><span class="o">.</span><span class="n">album</span><span class="p">:</span>
+            <span class="n">alb</span> <span class="o">=</span> <span class="n">Album</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">track</span><span class="o">.</span><span class="n">album</span><span class="p">,</span> <span class="n">mbid</span><span class="o">=</span><span class="n">track</span><span class="o">.</span><span class="n">musicbrainz_albumid</span><span class="p">)</span>
+            <span class="n">alb_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_album</span><span class="p">(</span><span class="n">alb</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">alb_id</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="sd">&quot;&quot;&quot;INSERT INTO tracks (artist, albumartist, album, title, mbid, file)</span>
+<span class="sd">                VALUES (?, ?, ?, ?, ?, ?)&quot;&quot;&quot;</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">art_id</span><span class="p">,</span> <span class="n">albart_id</span><span class="p">,</span> <span class="n">alb_id</span><span class="p">,</span> <span class="n">track</span><span class="o">.</span><span class="n">title</span><span class="p">,</span> <span class="n">track</span><span class="o">.</span><span class="n">musicbrainz_trackid</span><span class="p">,</span>
+                <span class="n">track</span><span class="o">.</span><span class="n">file</span><span class="p">))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="c1"># Add track id to junction tables</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_add_tracks_genres</span><span class="p">(</span><span class="n">track</span><span class="p">,</span> <span class="n">connection</span><span class="p">)</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM tracks WHERE file = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">track</span><span class="o">.</span><span class="n">file</span><span class="p">,))</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">row</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
+
+    <span class="k">def</span> <span class="nf">_add_tracks_genres</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">connection</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">track</span><span class="o">.</span><span class="n">genres</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM tracks WHERE file = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">track</span><span class="o">.</span><span class="n">file</span><span class="p">,))</span>
+        <span class="n">trk_id</span> <span class="o">=</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">genre</span> <span class="ow">in</span> <span class="n">track</span><span class="o">.</span><span class="n">genres</span><span class="p">:</span>
+            <span class="c1"># add genre</span>
+            <span class="n">gen_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_genre</span><span class="p">(</span><span class="n">genre</span><span class="p">)</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;INSERT INTO tracks_genres (track, genre)</span>
+<span class="s2">                    VALUES (?, ?)&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">trk_id</span><span class="p">,</span> <span class="n">gen_id</span><span class="p">))</span>
+
+<div class="viewcode-block" id="SimaDB.add_history"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.add_history">[docs]</a>    <span class="k">def</span> <span class="nf">add_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">date</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Record last play date of track (ie. not a real play history).</span>
+
+<span class="sd">        :param sima.lib.track.Track track: track to add to history</span>
+<span class="sd">        :param datetime.datetime date: UTC datetime object (use &quot;datetime.now(timezone.utc)&quot; is not set)&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">date</span><span class="p">:</span>
+            <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">track_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_track</span><span class="p">(</span><span class="n">track</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM history WHERE track = ? &quot;</span><span class="p">,</span>
+                                  <span class="p">(</span><span class="n">track_id</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchone</span><span class="p">():</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;INSERT INTO history (track) VALUES (?)&quot;</span><span class="p">,</span>
+                               <span class="p">(</span><span class="n">track_id</span><span class="p">,))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;UPDATE history SET last_play = ? &quot;</span>
+                           <span class="s2">&quot; WHERE track = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">track_id</span><span class="p">,))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SimaDB.purge_history"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.purge_history">[docs]</a>    <span class="k">def</span> <span class="nf">purge_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">__HIST_DURATION__</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Remove old entries in history</span>
+
+<span class="sd">        :param int duration: Purge history record older than duration in hours&quot;&quot;&quot;</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DELETE FROM history WHERE last_play&quot;</span>
+                           <span class="s2">&quot; &lt; datetime(&#39;now&#39;, &#39;-</span><span class="si">%i</span><span class="s2"> hours&#39;)&quot;</span> <span class="o">%</span> <span class="n">duration</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;VACUUM&#39;</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="SimaDB.fetch_albums_history"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.fetch_albums_history">[docs]</a>    <span class="k">def</span> <span class="nf">fetch_albums_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">needle</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">__HIST_DURATION__</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        :param sima.lib.meta.Artist needle: When specified, returns albums history for this artist.</span>
+<span class="sd">        :param int duration: How long ago to fetch history from (in hours)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">row_factory</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Row</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">                SELECT albums.name AS name,</span>
+<span class="s2">                       albums.mbid as mbid,</span>
+<span class="s2">                       artists.name as artist,</span>
+<span class="s2">                       artists.mbid as artist_mbib,</span>
+<span class="s2">                       albumartists.name as albumartist,</span>
+<span class="s2">                       albumartists.mbid as albumartist_mbib</span>
+<span class="s2">                FROM history</span>
+<span class="s2">                JOIN tracks ON history.track = tracks.id</span>
+<span class="s2">                LEFT OUTER JOIN albums ON tracks.album = albums.id</span>
+<span class="s2">                LEFT OUTER JOIN artists ON tracks.artist = artists.id</span>
+<span class="s2">                LEFT OUTER JOIN albumartists ON tracks.albumartist = albumartists.id</span>
+<span class="s2">                WHERE history.last_play &gt; ? AND albums.name NOT NULL AND artists.name NOT NULL</span>
+<span class="s2">                ORDER BY history.last_play DESC&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">),))</span>
+        <span class="n">hist</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="n">vals</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">needle</span><span class="p">:</span>  <span class="c1"># Here use artist instead of albumartist</span>
+                <span class="k">if</span> <span class="n">needle</span> <span class="o">!=</span> <span class="n">Artist</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">vals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;artist&#39;</span><span class="p">),</span>
+                                    <span class="n">mbid</span><span class="o">=</span><span class="n">vals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;artist_mbib&#39;</span><span class="p">)):</span>
+                    <span class="k">continue</span>
+            <span class="c1"># Use albumartist / MBIDs if possible to build album artist</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">vals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;albumartist&#39;</span><span class="p">):</span>
+                <span class="n">vals</span><span class="p">[</span><span class="s1">&#39;albumartist&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">vals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;artist&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">vals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;albumartist_mbib&#39;</span><span class="p">):</span>
+                <span class="n">vals</span><span class="p">[</span><span class="s1">&#39;albumartist_mbib&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">vals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;artist_mbib&#39;</span><span class="p">)</span>
+            <span class="n">artist</span> <span class="o">=</span> <span class="n">Artist</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">vals</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;albumartist&#39;</span><span class="p">),</span>
+                            <span class="n">mbid</span><span class="o">=</span><span class="n">vals</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;albumartist_mbib&#39;</span><span class="p">))</span>
+            <span class="n">album</span> <span class="o">=</span> <span class="n">Album</span><span class="p">(</span><span class="o">**</span><span class="n">vals</span><span class="p">,</span> <span class="n">Artist</span><span class="o">=</span><span class="n">artist</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">hist</span> <span class="ow">and</span> <span class="n">hist</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">album</span><span class="p">:</span>
+                <span class="c1"># remove consecutive dupes</span>
+                <span class="k">continue</span>
+            <span class="n">hist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">album</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">hist</span></div>
+
+<div class="viewcode-block" id="SimaDB.fetch_artists_history"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.fetch_artists_history">[docs]</a>    <span class="k">def</span> <span class="nf">fetch_artists_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">needle</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">__HIST_DURATION__</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns a list of Artist objects</span>
+
+<span class="sd">        :param sima.lib.meta.MetaContainer needle: When specified, returns history for these artists only</span>
+<span class="sd">        :param int duration: How long ago to fetch history from (in hours)</span>
+<span class="sd">        :type needle: sima.lib.meta.Artist or sima.lib.meta.MetaContainer</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">row_factory</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Row</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">                SELECT artists.name AS name,</span>
+<span class="s2">                       artists.mbid as mbid</span>
+<span class="s2">                FROM history</span>
+<span class="s2">                JOIN tracks ON history.track = tracks.id</span>
+<span class="s2">                LEFT OUTER JOIN artists ON tracks.artist = artists.id</span>
+<span class="s2">                WHERE history.last_play &gt; ? AND artists.name NOT NULL</span>
+<span class="s2">                ORDER BY history.last_play DESC&quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">),))</span>
+        <span class="n">last</span> <span class="o">=</span> <span class="n">deque</span><span class="p">(</span><span class="n">maxlen</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">hist</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="n">artist</span> <span class="o">=</span> <span class="n">Artist</span><span class="p">(</span><span class="o">**</span><span class="n">row</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">last</span> <span class="ow">and</span> <span class="n">last</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">artist</span><span class="p">:</span>  <span class="c1"># remove consecutive dupes</span>
+                <span class="k">continue</span>
+            <span class="n">last</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">artist</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">needle</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">needle</span><span class="p">,</span> <span class="p">(</span><span class="n">Artist</span><span class="p">,</span> <span class="nb">str</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">needle</span> <span class="o">==</span> <span class="n">artist</span><span class="p">:</span>
+                    <span class="n">hist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">artist</span><span class="p">)</span>  <span class="c1"># No need to go further</span>
+                    <span class="k">break</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">needle</span> <span class="ow">and</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">needle</span><span class="p">,</span> <span class="s1">&#39;__contains__&#39;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">artist</span> <span class="ow">in</span> <span class="n">needle</span><span class="p">:</span>
+                    <span class="n">hist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">artist</span><span class="p">)</span>  <span class="c1"># No need to go further</span>
+                <span class="k">continue</span>
+            <span class="n">hist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">artist</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">hist</span></div>
+
+<div class="viewcode-block" id="SimaDB.fetch_genres_history"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.fetch_genres_history">[docs]</a>    <span class="k">def</span> <span class="nf">fetch_genres_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">__HIST_DURATION__</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns genre history</span>
+
+<span class="sd">        :param int duration: How long ago to fetch history from (in hours)</span>
+<span class="sd">        :param int limit: number of genre to fetch</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">                SELECT genres.name, artists.name</span>
+<span class="s2">                FROM history</span>
+<span class="s2">                JOIN tracks ON history.track = tracks.id</span>
+<span class="s2">                LEFT OUTER JOIN tracks_genres ON tracks_genres.track = tracks.id</span>
+<span class="s2">                LEFT OUTER JOIN artists ON tracks.artist = artists.id</span>
+<span class="s2">                LEFT OUTER JOIN genres ON genres.id = tracks_genres.genre</span>
+<span class="s2">                WHERE history.last_play &gt; ? AND genres.name NOT NULL</span>
+<span class="s2">                ORDER BY history.last_play DESC</span>
+<span class="s2">                &quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">),))</span>
+        <span class="n">genres</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="n">genres</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">({</span><span class="n">g</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">genres</span><span class="p">})</span> <span class="o">&gt;=</span> <span class="n">limit</span><span class="p">:</span>
+                <span class="k">break</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">genres</span></div>
+
+<div class="viewcode-block" id="SimaDB.fetch_history"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.fetch_history">[docs]</a>    <span class="k">def</span> <span class="nf">fetch_history</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="n">__HIST_DURATION__</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Fetches tracks history, more recent first</span>
+
+<span class="sd">        :param sima.lib.meta.Artist artist: limit history to this artist</span>
+<span class="sd">        :param int duration: How long ago to fetch history from (in hours)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="n">duration</span><span class="p">)</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">row_factory</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Row</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">              SELECT tracks.title, tracks.file, artists.name AS artist,</span>
+<span class="s2">                     albumartists.name AS albumartist,</span>
+<span class="s2">                     artists.mbid as musicbrainz_artistid,</span>
+<span class="s2">                     albums.name AS album,</span>
+<span class="s2">                     albums.mbid AS musicbrainz_albumid,</span>
+<span class="s2">                     tracks.mbid as musicbrainz_trackid</span>
+<span class="s2">              FROM history</span>
+<span class="s2">              JOIN tracks ON history.track = tracks.id</span>
+<span class="s2">              LEFT OUTER JOIN artists ON tracks.artist = artists.id</span>
+<span class="s2">              LEFT OUTER JOIN albumartists ON tracks.albumartist = albumartists.id</span>
+<span class="s2">              LEFT OUTER JOIN albums ON tracks.album = albums.id</span>
+<span class="s2">              WHERE history.last_play &gt; ?</span>
+<span class="s2">              &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">artist</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">:</span>
+                <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="o">+</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">                        AND artists.mbid = ?</span>
+<span class="s2">                        ORDER BY history.last_play DESC&quot;&quot;&quot;</span><span class="p">,</span>
+                                          <span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">),</span> <span class="n">artist</span><span class="o">.</span><span class="n">mbid</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="o">+</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">                        AND artists.name = ?</span>
+<span class="s2">                        ORDER BY history.last_play DESC&quot;&quot;&quot;</span><span class="p">,</span>
+                                          <span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">),</span> <span class="n">artist</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="o">+</span><span class="s1">&#39;ORDER BY history.last_play DESC&#39;</span><span class="p">,</span>
+                                      <span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">isoformat</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">),))</span>
+        <span class="n">hist</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="p">:</span>
+            <span class="n">hist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Track</span><span class="p">(</span><span class="o">**</span><span class="n">row</span><span class="p">))</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">hist</span></div>
+
+<div class="viewcode-block" id="SimaDB.get_bl_track"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_bl_track">[docs]</a>    <span class="k">def</span> <span class="nf">get_bl_track</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">track</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add a track to blocklist</span>
+
+<span class="sd">        :param sima.lib.track.Track track: Track object to add to blocklist</span>
+<span class="sd">        :param sqlite3.Connection with_connection: sqlite3.Connection to reuse, else create a new one</span>
+<span class="sd">        :param bool add: Default is to add a new record, set to False to fetch associated record&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">track_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_track</span><span class="p">(</span><span class="n">track</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="n">add</span><span class="p">)</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM blocklist WHERE track = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">track_id</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchone</span><span class="p">():</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">add</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;INSERT INTO blocklist (track) VALUES (?)&#39;</span><span class="p">,</span>
+                               <span class="p">(</span><span class="n">track_id</span><span class="p">,))</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM blocklist WHERE track = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">track_id</span><span class="p">,))</span>
+        <span class="n">blt</span> <span class="o">=</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">blt</span></div>
+
+<div class="viewcode-block" id="SimaDB.get_bl_album"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_bl_album">[docs]</a>    <span class="k">def</span> <span class="nf">get_bl_album</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">album</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add an album to blocklist</span>
+
+<span class="sd">        :param sima.lib.meta.Album: Album object to add to blocklist</span>
+<span class="sd">        :param sqlite3.Connection with_connection: sqlite3.Connection to reuse, else create a new one</span>
+<span class="sd">        :param bool add: Default is to add a new record, set to False to fetch associated record&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">album_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_album</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="n">add</span><span class="p">)</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM blocklist WHERE album = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">album_id</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchone</span><span class="p">():</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">add</span><span class="p">:</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+                    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;INSERT INTO blocklist (album) VALUES (?)&#39;</span><span class="p">,</span>
+                               <span class="p">(</span><span class="n">album_id</span><span class="p">,))</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM blocklist WHERE album = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">album_id</span><span class="p">,))</span>
+        <span class="n">blitem</span> <span class="o">=</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">blitem</span></div>
+
+<div class="viewcode-block" id="SimaDB.get_bl_artist"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.get_bl_artist">[docs]</a>    <span class="k">def</span> <span class="nf">get_bl_artist</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">artist</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add an artist to blocklist</span>
+
+<span class="sd">        :param sima.lib.meta.Artist: Artist object to add to blocklist</span>
+<span class="sd">        :param sqlite3.Connection with_connection: sqlite3.Connection to reuse, else create a new one</span>
+<span class="sd">        :param bool add: Default is to add a new record, set to False to fetch associated record&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="n">with_connection</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">artist_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_artist</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="n">add</span><span class="p">)</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM blocklist WHERE artist = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">artist_id</span><span class="p">,))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchone</span><span class="p">():</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">add</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">&#39;INSERT INTO blocklist (artist) VALUES (?)&#39;</span><span class="p">,</span>
+                               <span class="p">(</span><span class="n">artist_id</span><span class="p">,))</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span>
+            <span class="s2">&quot;SELECT id FROM blocklist WHERE artist = ?&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">artist_id</span><span class="p">,))</span>
+        <span class="n">blitem</span> <span class="o">=</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchone</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">with_connection</span><span class="p">:</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">blitem</span></div>
+
+<div class="viewcode-block" id="SimaDB.view_bl"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.view_bl">[docs]</a>    <span class="k">def</span> <span class="nf">view_bl</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">row_factory</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">Row</span>
+        <span class="n">rows</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;SELECT artists.name AS artist,</span>
+<span class="s2">               artists.mbid AS musicbrainz_artist,</span>
+<span class="s2">               albums.name AS album,</span>
+<span class="s2">               albums.mbid AS musicbrainz_album,</span>
+<span class="s2">               tracks.title AS title,</span>
+<span class="s2">               tracks.mbid AS musicbrainz_title,</span>
+<span class="s2">               tracks.file AS file,</span>
+<span class="s2">               blocklist.id</span>
+<span class="s2">               FROM blocklist</span>
+<span class="s2">               LEFT OUTER JOIN artists ON blocklist.artist = artists.id</span>
+<span class="s2">               LEFT OUTER JOIN albums ON blocklist.album = albums.id</span>
+<span class="s2">               LEFT OUTER JOIN tracks ON blocklist.track = tracks.id&quot;&quot;&quot;</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">rows</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()]</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">res</span></div>
+
+<div class="viewcode-block" id="SimaDB.delete_bl"><a class="viewcode-back" href="../../../dev/simadb.html#sima.lib.simadb.SimaDB.delete_bl">[docs]</a>    <span class="k">def</span> <span class="nf">delete_bl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">track</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">album</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">artist</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">track</span> <span class="ow">or</span> <span class="n">album</span> <span class="ow">or</span> <span class="n">artist</span><span class="p">):</span>
+            <span class="k">return</span>
+        <span class="n">connection</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_database_connection</span><span class="p">()</span>
+        <span class="n">blid</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">track</span><span class="p">:</span>
+            <span class="n">blid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_bl_track</span><span class="p">(</span><span class="n">track</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">album</span><span class="p">:</span>
+            <span class="n">blid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_bl_album</span><span class="p">(</span><span class="n">album</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">artist</span><span class="p">:</span>
+            <span class="n">blid</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_bl_artist</span><span class="p">(</span><span class="n">artist</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">blid</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_remove_blocklist_id</span><span class="p">(</span><span class="n">blid</span><span class="p">,</span> <span class="n">with_connection</span><span class="o">=</span><span class="n">connection</span><span class="p">)</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div></div>
+
+
+<span class="c1"># VIM MODLINE</span>
+<span class="c1"># vim: ai ts=4 sw=4 sts=4 expandtab fileencoding=utf8</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">MPD_sima  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">sima.lib.simadb</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2009-2022, kaliko.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>
