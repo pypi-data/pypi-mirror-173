@@ -1,0 +1,9 @@
+README.md
+setup.py
+super_rockket/__init__.py
+super_rockket/super_rockket.py
+super_rockket.egg-info/PKG-INFO
+super_rockket.egg-info/SOURCES.txt
+super_rockket.egg-info/dependency_links.txt
+super_rockket.egg-info/requires.txt
+super_rockket.egg-info/top_level.txt
