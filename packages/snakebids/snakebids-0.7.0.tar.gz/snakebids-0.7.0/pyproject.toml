@@ -1,0 +1,77 @@
+[tool.poetry]
+name = "snakebids"
+version = "0.7.0"
+description = "BIDS integration into snakemake workflows"
+readme = "README.md"
+repository = "https://github.com/akhanf/snakebids"
+documentation = "https://snakebids.readthedocs.io/"
+authors = ["Ali Khan <alik@robarts.ca>"]
+license = "MIT"
+packages = [
+    { include = "snakebids" }
+]
+exclude = ["snakebids/tests/**"]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.11"
+pybids = "^0.15.0"
+snakemake = ">=5.28.0"
+PyYAML = "^6"
+cookiecutter = "^2.1.1"
+colorama = "^0.4.4"
+typing-extensions = ">=3.10.0"
+attrs = ">=21.2.0,<23"
+boutiques = "^0.5.25"
+more-itertools = "^8.12.0"
+cached-property = "^1.5.2"
+# snakebids doesn't directly depend on pandas, but its dependencies do.
+# python 3.7.0 is limited to pandas < 1.1.x, but this version is not pre-built
+# for py310, so force a higher version on py37.1 and above
+pandas = {version = ">=1.3", python = ">=3.7.1"}
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.1.0"
+pybids = "^0.15.2"
+pytest = "^7.0.0"
+pytest-mock = "^3.7.0"
+pylint = "^2.12.0"
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+poethepoet = "^0.16.2"
+pre-commit = "^2.17.0"
+mkinit = "^0.3.3"
+hypothesis = "^6.34.1"
+pytest-benchmark = "^3.4.1"
+pyfakefs = "^4.6.1"
+
+[tool.poetry.scripts]
+snakebids = "snakebids.admin:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+setup = "pre-commit install"
+quality = { shell = "isort snakebids && black snakebids && flake8 snakebids && pylint snakebids" }
+test = "pytest --doctest-modules --ignore=docs --ignore=snakebids/project_template --benchmark-disable"
+mkinit = "mkinit --recursive --nomods --black -i snakebids"
+benchmark = "pytest --benchmark-only --benchmark-autosave"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.pylint.master]
+ignore-patterns = "^[0-9][0-9]+_,^test_,^__init__,"
+ignore-paths = ["typings"]
+
+[tool.pylint.format]
+good-names = "i,j,k,ex,_,x,y,f,d"
+
+[tool.pylint.messages_control]
+disable = """
+    missing-function-docstring,
+    missing-module-docstring,
+    fixme
+"""
