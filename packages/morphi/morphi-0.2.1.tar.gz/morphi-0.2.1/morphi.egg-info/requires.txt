@@ -1,0 +1,14 @@
+Babel
+speaklater
+
+[develop]
+flake8
+pytest
+pytest-cov
+tox
+
+[tests]
+flake8
+pytest
+pytest-cov
+tox
