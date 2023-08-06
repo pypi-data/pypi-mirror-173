@@ -1,0 +1,14 @@
+/__pycache__
+/.vscode
+
+# Project specific stuff
+passwords.json
+
+venv/
+
+# Pyinstaller stuff
+/build
+/dist
+*.spec
+
+*egg-info/
