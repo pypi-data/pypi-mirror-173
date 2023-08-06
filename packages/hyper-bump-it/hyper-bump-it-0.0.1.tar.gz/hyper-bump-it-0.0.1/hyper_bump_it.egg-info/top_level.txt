@@ -1,0 +1,4 @@
+dist
+docker
+htmlcov
+hyper_bump_it

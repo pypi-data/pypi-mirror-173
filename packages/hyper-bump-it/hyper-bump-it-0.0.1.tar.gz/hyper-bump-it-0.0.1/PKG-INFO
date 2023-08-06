@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: hyper-bump-it
+Version: 0.0.1
+Summary: A version bumping tool
+Maintainer-email: Patrick Lannigan <p.lannigan@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/plannigan/hyper-bump-it
+Project-URL: changelog, https://github.com/plannigan/hyper-bump-it/blob/main/CHANGELOG.md
+Keywords: version,bump,command line
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <4.0,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Checked with mypy](https://img.shields.io/badge/mypy-checked-blue)][mypy-home]
+[![Code style: black](https://img.shields.io/badge/code%20style-black-black.svg)][black-home]
+
+# Hyper Bump It
+
+A version bumping tool.
+
+[mypy-home]: http://mypy-lang.org/
+[black-home]: https://github.com/psf/black

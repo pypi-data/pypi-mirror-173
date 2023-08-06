@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+hyper_bump_it/__init__.py
+hyper_bump_it/_error.py
+hyper_bump_it/_files.py
+hyper_bump_it/py.typed
+hyper_bump_it.egg-info/PKG-INFO
+hyper_bump_it.egg-info/SOURCES.txt
+hyper_bump_it.egg-info/dependency_links.txt
+hyper_bump_it.egg-info/requires.txt
+hyper_bump_it.egg-info/top_level.txt
+hyper_bump_it/_text_formatter/__init__.py
+hyper_bump_it/_text_formatter/keys.py
+hyper_bump_it/_text_formatter/text_formatter.py
