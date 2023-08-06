@@ -1,0 +1,7 @@
+setup.py
+ScaleConvert.egg-info/PKG-INFO
+ScaleConvert.egg-info/SOURCES.txt
+ScaleConvert.egg-info/dependency_links.txt
+ScaleConvert.egg-info/top_level.txt
+converter/__init__.py
+converter/scaleconverter.py
