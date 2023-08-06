@@ -1,0 +1,57 @@
+version: 2
+
+defaults: &defaults
+  enabled: false
+
+configs:
+  markdownlint:
+    <<: *defaults
+    lsp_feature: diagnostic
+    language_id: markdown
+    command: markdownlint --stdin
+    parsing:
+      formats:
+        - "stdin:{line:d}:{col:d} {msg}"
+        - "stdin:{line:d} {msg}"
+        - "stdin {msg}"
+      line_offset: -1
+      col_offset: -1
+
+  jqlint:
+    <<: *defaults
+    lsp_feature: diagnostic
+    language_id: json
+    command: "jq ."
+    parsing:
+      formats:
+        - "{msg} at line {line:d}, column {col:d}"
+
+  mypy:
+    <<: *defaults
+    lsp_feature: diagnostic
+    language_id: python
+    command: |
+      args=(
+        --no-color-output
+        --no-error-summary
+        # This means that Mypy _does_ check the entire codebase, but doesn't output errors
+        # outside the current file
+        --follow-imports=silent
+        {file}
+      )
+      mypy "${args[@]}"
+    piped: false
+    stdout: true
+    parsing:
+      formats:
+        - "{}:{line:d}: {severity}: {msg}"
+        - "{}: {severity}: {msg}"
+      line_offset: -1
+
+  fuzzy_buffer_tokens:
+    <<: *defaults
+    lsp_feature: completion
+    language_id: markdown
+    # TODO: Include this in main docs:
+    #   `{cursor_line}` and `{cursor_row}` should also be available
+    command: "tr -cs '[:alnum:]' '\n' | fzf --filter='{word}' | uniq"
