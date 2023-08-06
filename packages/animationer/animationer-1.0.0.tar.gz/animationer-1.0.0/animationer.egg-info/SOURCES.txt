@@ -1,0 +1,6 @@
+setup.py
+animationer/__init__.py
+animationer.egg-info/PKG-INFO
+animationer.egg-info/SOURCES.txt
+animationer.egg-info/dependency_links.txt
+animationer.egg-info/top_level.txt
