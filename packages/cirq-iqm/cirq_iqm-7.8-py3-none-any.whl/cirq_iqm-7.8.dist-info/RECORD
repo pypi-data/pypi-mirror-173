@@ -1,0 +1,17 @@
+cirq_iqm/__init__.py,sha256=ba1SB5j8cb2LxVUK8wcC1yeadNBT8dWGIq2vTxNUWnQ,1002
+cirq_iqm/extended_qasm_parser.py,sha256=b7-lPO_29OJBnSq8fW1cHVTo2rPBJSqE0cDvTIdqaD8,1917
+cirq_iqm/iqm_operation_mapping.py,sha256=jpiTmirwDvE_D8509g8G-Opm63Jia29tlUDcmyhEd1M,2838
+cirq_iqm/iqm_sampler.py,sha256=NjtYzIg2Ue1qu0NBrO3Tn83I9vWXwnBesSBP1QFpHmM,6049
+cirq_iqm/optimizers.py,sha256=3QjZ1YjRGemwcueVV1R9chpK0H3FqNQWlFxK6CtHYbs,8458
+cirq_iqm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cirq_iqm/devices/__init__.py,sha256=WF2GAshE-4X8CJFKdh_RFRDjLaF5oY3MHHbXo4xdQ38,787
+cirq_iqm/devices/adonis.py,sha256=OEyEKaVqUnK9dYxrUDG3Y1wkry_jcmC0uhpRkbhMo3M,1356
+cirq_iqm/devices/apollo.py,sha256=Cps0iP3RM5j1FDFY6lcoJJRRWBPC_fbL8NrDqJPH5ew,2080
+cirq_iqm/devices/iqm_device.py,sha256=WpmgqO3NB8YF81z9R-vm5bFeShUSQi0XB5SPRP807vI,11136
+cirq_iqm/devices/valkmusa.py,sha256=AoH_dK3uJJ0QLHXKhyb96IrVo-8OBuA6evbUDDK_7E0,4021
+cirq_iqm-7.8.dist-info/AUTHORS.rst,sha256=pv0blsRUsoX9P0jMqMTUfvtmquaQyaCCPr1KhVqdupo,359
+cirq_iqm-7.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cirq_iqm-7.8.dist-info/METADATA,sha256=uoLmGK4m0x5gBEedDZAf0bH85AlCCXzqrgohhEbaldQ,3401
+cirq_iqm-7.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cirq_iqm-7.8.dist-info/top_level.txt,sha256=nNco1e5EDkuRZHPl3xK3J-04TRZozLqn_vYFjMW2xnk,9
+cirq_iqm-7.8.dist-info/RECORD,,
