@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+delpytools/__init__.py
+delpytools/main.py
+delpytools/delpytools.egg-info/PKG-INFO
+delpytools/delpytools.egg-info/SOURCES.txt
+delpytools/delpytools.egg-info/dependency_links.txt
+delpytools/delpytools.egg-info/requires.txt
+delpytools/delpytools.egg-info/top_level.txt
