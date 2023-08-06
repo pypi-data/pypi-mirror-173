@@ -1,0 +1,11 @@
+README.md
+setup.py
+mahdijadaliha/__init__.py
+mahdijadaliha.egg-info/PKG-INFO
+mahdijadaliha.egg-info/SOURCES.txt
+mahdijadaliha.egg-info/dependency_links.txt
+mahdijadaliha.egg-info/not-zip-safe
+mahdijadaliha.egg-info/top_level.txt
+mahdijadaliha/data/sql_keywords.txt
+mahdijadaliha/data/sql_templates.sql
+mahdijadaliha/src/template.py
