@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: flake8-plus
+Version: 0.1.1
+Summary: Flake8 plugin adding PEP8-compliant vertical whitespacing rules
+Home-page: https://github.com/sorenlind/flake8-plus
+Author: Soren Kristiansen
+Author-email: sorenlind@mac.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: flake8
+Provides-Extra: dev
+Requires-Dist: astpretty ; extra == 'dev'
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-annotations ; extra == 'dev'
+Requires-Dist: flake8-pytest-style ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pycodestyle ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: rope ; extra == 'dev'
+Requires-Dist: pyenchant ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-mock ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+# Flake8-plus
