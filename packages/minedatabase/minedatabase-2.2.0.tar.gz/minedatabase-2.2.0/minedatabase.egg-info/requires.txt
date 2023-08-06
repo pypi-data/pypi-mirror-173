@@ -1,0 +1,11 @@
+keras
+python-libsbml
+lxml==4.9
+mordred==1.2
+pandas
+pymongo
+rdkit
+scikit-learn
+
+[test]
+pytest
