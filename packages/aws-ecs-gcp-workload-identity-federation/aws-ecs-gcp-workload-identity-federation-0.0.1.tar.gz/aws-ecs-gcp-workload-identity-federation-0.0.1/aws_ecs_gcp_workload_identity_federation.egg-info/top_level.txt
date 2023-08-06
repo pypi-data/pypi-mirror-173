@@ -1,0 +1,1 @@
+aws_ecs_gcp_workload_identity

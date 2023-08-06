@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+aws_ecs_gcp_workload_identity/__init__.py
+aws_ecs_gcp_workload_identity/aws_instance_credentials.py
+aws_ecs_gcp_workload_identity_federation.egg-info/PKG-INFO
+aws_ecs_gcp_workload_identity_federation.egg-info/SOURCES.txt
+aws_ecs_gcp_workload_identity_federation.egg-info/dependency_links.txt
+aws_ecs_gcp_workload_identity_federation.egg-info/requires.txt
+aws_ecs_gcp_workload_identity_federation.egg-info/top_level.txt
