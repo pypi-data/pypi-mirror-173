@@ -1,0 +1,16 @@
+gurobipy_helper/__init__.c,sha256=rKaVOy1PyL9DilDGpfg1KVfOZ5mLoHMwrJ2pRKy_Bp4,158623
+gurobipy_helper/__init__.py,sha256=kIrZquMnf0lWQF3IOuv-i-W-lmWXXtS_wsCY0fDts6I,152
+gurobipy_helper/_coeffs.py,sha256=yUFyy0_vWH4ASjzzalrVgKemsK6RbNrZ4Lq4ykBm94Q,299
+gurobipy_helper/_nonzeros.py,sha256=y_uuS9Krz6R_fGIcWxybtmdNYtIcyCBBjmksx3l3XzI,302
+gurobipy_helper/_translate.py,sha256=WI-rtRk0d-XQz72Hx3-JRCoiGbJU6ud8HIHFtseI6vs,1305
+c_gurobipy_helper.cp38-win_amd64.pyd,sha256=joXvBm07aTf6mZ-KXlsYwveeUsGvnsEmHesw_KADy2w,68608
+gurobipy_helper.cp38-win_amd64.pyd,sha256=iZaeA03wuA4jFTGYW_XRtuviZEkRycFoJ-Nto7LPdrM,28672
+gurobipy_helper/_coeffs.py,sha256=yUFyy0_vWH4ASjzzalrVgKemsK6RbNrZ4Lq4ykBm94Q,299
+gurobipy_helper/_nonzeros.py,sha256=y_uuS9Krz6R_fGIcWxybtmdNYtIcyCBBjmksx3l3XzI,302
+gurobipy_helper/_translate.py,sha256=WI-rtRk0d-XQz72Hx3-JRCoiGbJU6ud8HIHFtseI6vs,1305
+gurobipy_helper/__init__.c,sha256=rKaVOy1PyL9DilDGpfg1KVfOZ5mLoHMwrJ2pRKy_Bp4,158623
+gurobipy_helper/__init__.py,sha256=kIrZquMnf0lWQF3IOuv-i-W-lmWXXtS_wsCY0fDts6I,152
+gurobipy_helper-0.0.1a10.dist-info/LICENSE,sha256=bKfP3Y3iD1YPQ2xE7QMLuI1qALYqKS1ooLCSIt1AGMA,1086
+gurobipy_helper-0.0.1a10.dist-info/WHEEL,sha256=wAYcqGh1tGjC8jzcRqBPgOEKzfu-xh-lic5tOBSJT7U,96
+gurobipy_helper-0.0.1a10.dist-info/METADATA,sha256=VuO5kXjKzz-JtQss9cAayngKRZlKCXCpSWGyhFF-oSk,1016
+gurobipy_helper-0.0.1a10.dist-info/RECORD,,
