@@ -1,0 +1,7 @@
+netunicorn/executor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+netunicorn/executor/__main__.py,sha256=aFj3Mt04x7yra7GvvMAXqHtdnOB1CyY0XoT1LrDrmdA,70
+netunicorn/executor/executor.py,sha256=a4D1eAH1D-JKFBUp2aQdPC0SQVJ045LrwDcoMoVfZq0,8741
+netunicorn_executor-0.1.1.dist-info/METADATA,sha256=XcVht3vD-AcCudNf2BnVb91GmurjFWHXCraZf4yAb7U,336
+netunicorn_executor-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+netunicorn_executor-0.1.1.dist-info/top_level.txt,sha256=XSz-VoRN-G4RG8grlQLx9GLvtfwPux79woTFCALT3gI,11
+netunicorn_executor-0.1.1.dist-info/RECORD,,
