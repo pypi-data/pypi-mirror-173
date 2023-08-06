@@ -1,0 +1,8 @@
+sqlalchemy
+arelle-release
+pycountry
+pytz
+
+[db]
+psycopg2
+pymysql
