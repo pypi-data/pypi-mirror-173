@@ -1,0 +1,16 @@
+language_statistics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+language_statistics/colorbar.py,sha256=hKYVYJW4I6KP7JyyqARzQLa3HmAG-TpK1U7UnDxLrmg,4684
+language_statistics/language_bytes.py,sha256=sHlAJtoQ50oVbFFRMkMu24Bn1CVAWV7QG6RnOymQPrE,5604
+language_statistics/output.svg,sha256=hGY_f0_N2vQoQHiz939d75AqFCsg5FA43_UlccNHjAQ,43549
+language_statistics/statistics.py,sha256=IwnFezpKrktF_XIevWU1eyVNSzBQH-yr2cxnW6gdgDg,2629
+language_statistics/__pycache__/__init__.cpython-39.pyc,sha256=rECpFTcgKcyss65EQheNgCFekpOMGqdwG7IBoqKqoHg,186
+language_statistics/__pycache__/colorbar.cpython-39.pyc,sha256=IrvGOStCT9sx7HRsdtKITlHnNXzLmxmAAjGeKQohkh0,3159
+language_statistics/__pycache__/language_bytes.cpython-39.pyc,sha256=oE565CiMrOPt7_whBTk6xXNvxuqswIF5idtygiu-5tc,3448
+language_statistics/__pycache__/statistics.cpython-39.pyc,sha256=794JaDNtsdcwLtov_EQrHbkkNxeYbwjSYTMdxT2KVK4,2296
+language_statistics/data/languages.yml,sha256=t0cf7AxKkUiMGmZpejcqXlFhijhZWVTNCIbqXGigTHM,174336
+langstats-1.0.4.dist-info/LICENSE.md,sha256=w87pA6iuzTcpfn-vVn5f5R5PSXRnkuNkQN9KLCgok1g,1057
+langstats-1.0.4.dist-info/METADATA,sha256=pWPjL5K6JwKjQruZWao-BZhBpnt_rUqj6D2NzRsvyzk,6685
+langstats-1.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+langstats-1.0.4.dist-info/entry_points.txt,sha256=PQzYLMcjvx1xKm4XSS1pwzvDt_E58bEkV93SD0WfYsg,67
+langstats-1.0.4.dist-info/top_level.txt,sha256=yA6LWiXjl6f0fR2rNsr_n_2bXvnnbzj51nz_QtOPVeo,20
+langstats-1.0.4.dist-info/RECORD,,
