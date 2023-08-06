@@ -1,0 +1,8 @@
+django_tree/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tree/models.py,sha256=mezs-AFh1bPzEvHEPxoplNfhwnpkqrVQsnqSBHLqlFQ,5182
+django_tree/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_orderable_tree-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_orderable_tree-0.1.0.dist-info/METADATA,sha256=4NXUc6v0zQLB4UXaDppI6F1CGWPiogU_p7e7hTMCY2g,15203
+django_orderable_tree-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_orderable_tree-0.1.0.dist-info/top_level.txt,sha256=My3jOFTLbMrnwc_I2ojHnE2CA6Xz98zaUkeK1IAs1ko,12
+django_orderable_tree-0.1.0.dist-info/RECORD,,
