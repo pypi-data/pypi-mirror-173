@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dissect.thumbcache
+Version: 0.1.dev1
+Home-page: https://github.com/fox-it/dissect.thumbcache
+Author: Dissect Team
+Author-email: dissect@fox-it.com
+License: Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+License-File: COPYRIGHT
+
+# dissect.thumbcache
+
+This is a project to parse windows thumbcache.
