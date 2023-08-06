@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-filter-stubs
+Version: 0.1.2
+Summary: PEP-484 stubs for django-filter
+Home-page: https://github.com/DavisRayM/django-filter-stubs
+Author: Davis Raymond Muro
+Author-email: davisraymondmuro@outlook.com
+License: MIT
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# PEP-484 Stubs for django-filter ::: Beta
+
+[![Build Status](https://travis-ci.org/DavisRayM/django-filter-stubs.svg?branch=master)](https://travis-ci.org/DavisRayM/django-filter-stubs)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+
+This package contains type subs to provide more precise static types for Django Filters.
+
+## Installation
+
+```bash
+pip install django-filter-stubs
+```
