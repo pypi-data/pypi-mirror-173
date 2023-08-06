@@ -1,0 +1,3 @@
+[console_scripts]
+vuln-runner=docker_vuln_runner.main:app
+
