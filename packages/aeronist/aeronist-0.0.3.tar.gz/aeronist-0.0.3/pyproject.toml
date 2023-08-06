@@ -1,0 +1,16 @@
+[project]
+name = "aeronist"
+description = "Simple control mechanism for aerial vehicles"
+version = "0.0.3"
+authors = [
+	{ name = "Ertuğrul Soylu", email = "ertugrul.soylu2001@gmail.com" }
+]
+dependencies = [
+	"pymavlink"
+]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+"Homepage" = "https://github.com/ErtugrulSoylu/Aeronist"
