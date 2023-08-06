@@ -1,0 +1,9 @@
+xnat2jupyterhub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xnat2jupyterhub/auth.py,sha256=eYXiCYax8vJ-MyZtK49NnHD4Jo2ah2wrKmWvbMQXPVc,1008
+xnat2jupyterhub/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xnat2jupyterhub/hooks/swarmspawner.py,sha256=Sl_w2c_xZ_v-48wytgHxf_8je91xNImdbODvxbW_mNk,2931
+xnat2jupyterhub-0.2.1.dev0.dist-info/LICENSE,sha256=Si3SYlnkT_zJ0iopUFlHTBmwMcLPefcN-b6flBHsxPA,1867
+xnat2jupyterhub-0.2.1.dev0.dist-info/METADATA,sha256=wXC5PqtcbXMfg6UyM8eeqUYTPlcs6AyPq4-8QcK8FUI,10175
+xnat2jupyterhub-0.2.1.dev0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xnat2jupyterhub-0.2.1.dev0.dist-info/top_level.txt,sha256=io5rmBfWmHJydYAZGT1gv3VMl_qTBZ4iAVRbcpyjiRw,16
+xnat2jupyterhub-0.2.1.dev0.dist-info/RECORD,,
