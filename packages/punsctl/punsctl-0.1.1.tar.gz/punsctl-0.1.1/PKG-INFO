@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: punsctl
+Version: 0.1.1
+Summary: POSIX User's Namespace Control
+Home-page: https://github.com/alekbuza/punsctl
+License: ISC
+Keywords: posix,user,namespace
+Author: Aleksandar Buza
+Author-email: me@aleksandarbuza.com
+Requires-Python: >=3.8,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/alekbuza/punsctl
+Description-Content-Type: text/markdown
+
+### `The project is currently under development and is not ready for use in production.`
+
+# punsctl - POSIX User's Namespace Control
+
+[![codecov](https://codecov.io/github/alekbuza/punsctl/branch/main/graph/badge.svg?token=OMHOSME5ZB)](https://codecov.io/github/alekbuza/punsctl)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/punsctl)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/punsctl)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/punsctl)
+
+The `punsctl` utility manages multiple namespaces (user environments) for the current POSIX user.
+That means the user can have multiple "_profiles_" for the same or different tool configurations in the same user account
+(`~/.ssh`, `~/.gitconfig`, `~/.gnupg`, `~/.config`, `~/.config/nvim`, ...).
+The user can create, delete, activate and deactivate namespaces without additional permissions.
+
+## Installation
+
+```sh
+pip install punsctl
+```
+
+## Usage
+
+```txt
+punsctl <options>
+
+options:
+    -h                  Help menu
+    -r                  Root path                 (Default: ~/.ns)
+    -s                  Symlink path              (Default: ~/)
+    -l                  List namespaces
+    -n <namespace>      Create namespace
+    -d <namespace>      Delete namespace
+    -a <namespace>      Activate namespace
+    -x                  Deactivate namespaces
+```
+
+### List all namespaces
+```sh
+punsctl -l
+```
+
+### List all namespaces from the `non-default` root path
+```sh
+punsctl -p <root_path> -l
+```
+
+### Create new namespace
+```sh
+punsctl -n <namespace>
+```
+
+### Create a new namespace in the `non-default` root path
+```sh
+punsctl -p <root_path> -n <namespace>
+```
+
+### Delete namespace
+```sh
+punsctl -d <namespace>
+```
+
+### Delete namespace in `non-default` root path
+```sh
+punsctl -p <root_path> -d <namespace>
+```
+
+### Activate namespace
+```sh
+punsctl -a <namespace>
+```
+
+### Activate the namespace from the `non-default` root path
+```sh
+punsctl -p <root_path> -a <namespace>
+```
+
+### Activate the namespace from the `non-default` root path and change the symlink path
+
+```sh
+punsctl -p <root_path> -s <symlink_path> -a <namespace>
+```
+
+### Deactivate namespaces
+```sh
+punsctl -x
+```
+
+
