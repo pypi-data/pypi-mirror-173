@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: django-database-backup-to-git
+Version: 2.0
+Summary: Django specific database backup system
+Home-page: https://gitlab.com/eeriksp/django-database-backup-to-git
+Author: Eerik Sven Puudist
+Project-URL: Bug Tracker, https://gitlab.com/eeriksp/django-database-backup-to-git
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+
+# Django Database Backup to Git
+
+A Django app, which makes a database backup in JSON format, commits and pushes it to a dedicated Git repository.
+Intended to be run in deployment scripts and as a scheduled task.
+
+## Installation and Setup
+
+1. Install with pip:
+
+```
+pip install django-database-backup-to-git
+```
+
+1. Set up a Git repository outside of your application's main Git repository.
+1. Add `dbbackup_git` to your `INSTALLED_APPS`.
+1. In you settings file, specify the `DBBACKUP_GIT` setting
+
+```py
+DBBACKUP_GIT = {
+    'DATABASE_BACKUP_FILENAME': os.path.join(BASE_DIR, '..', '..', 'myapp-db-backup', 'db.json'),
+    'PUSH': True  # Determines whether the created backup is pushed to a remote repository, defaults to `True`
+}
+```
+
+1. Run `manage.py help`, check that `dbbackup_git` is listed as available command.
+
+## Usage
+
+Typing `manage.py dbbackup_git` will also display output. When running it from *cron*, use `manage.py dbbackup_git --silent`.
+
+## Running with *cron*
+
+Create the following script `dbbackup-git.sh`:
+
+```bash
+#!/bin/bash
+
+set -e
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $SCRIPT_DIR/../src
+
+source ../venv/bin/activate
+
+python manage.py dbbackup_git
+
+```
+
+Add it to hourly *cron*
+
+```bash
+sudo ln -s `pwd`/dbbackup-git.sh /etc/cron.hourly/dbbackup-git
+```
+
+Test it
+
+```bash
+run-parts --test /etc/cron.hourly
+```
+
+### *Cron* within a Docker container
+
+If your project is living inside a Docker container the "Using Cron Within Your Containers" section of [this article](https://www.cloudsavvyit.com/9033/how-to-use-cron-with-your-docker-containers/) might be useful for you.
