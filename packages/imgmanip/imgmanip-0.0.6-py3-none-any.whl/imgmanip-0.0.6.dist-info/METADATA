@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: imgmanip
+Version: 0.0.6
+Summary: Image manipulation tool written in python in which you can select a large number of photos and perform a lot of different operations on them.
+License: MIT
+Author: Mikołaj Badyl
+Author-email: contact@hawier.dev
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Pillow (>=9.2.0,<10.0.0)
+Requires-Dist: PySide6 (>=6.3.2,<7.0.0)
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: natsort (>=8.2.0,<9.0.0)
+Requires-Dist: numpy (>=1.23.3,<2.0.0)
+Requires-Dist: opencv-python (>=4.6.0.66,<5.0.0.0)
+Requires-Dist: pyexiv2 (>=2.8.0,<3.0.0)
+Requires-Dist: pyperclip (>=1.8.2,<2.0.0)
+Requires-Dist: pyqtdarktheme (>=1.1.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+Image manipulation tool in which you can select a large number of photos and
+perform a lot of different operations on them.
+---
+
+## Installation
+
+### Install from PyPI
+
+```shell
+pip install imgmanip
+```
+
+#### If you want the program to be displayed in the system applications menu. (Linux only)
+
+```shell
+sudo ln -s $(whereis imgmanip) /usr/bin/imgmanip
+curl https://raw.githubusercontent.com/hawier-dev/imgmanip/develop/imgmanip.desktop > ./imgmanip.desktop
+sudo mv ./imgmanip.desktop /usr/share/applications/imgmanip.desktop
+```
+
+The current list of operations
+
+- **Resize** - resizes the images to the given resolution or by a specified percentage.
+- **Compress** - compresses the image. The lower the 'quality',
+  the smaller the file size.
+- **Invert** - inverts the colors of the image.
+- **Flip** - flips the image in horizontal or vertical axis.
+- **Color detection** - marks where the given color appears in the image.
+  Additionally, it can save the **mask** in .png format.
+- **Convert** - converts the image to the other format.
+- **Convert color mode** - This task converts the image color mode to the selected one.

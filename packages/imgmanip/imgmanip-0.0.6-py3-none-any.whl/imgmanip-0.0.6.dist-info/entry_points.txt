@@ -1,0 +1,3 @@
+[console_scripts]
+imgmanip=imgmanip.main:main
+
