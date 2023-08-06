@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ShamirDecoder
+Version: 1.0.1
+Summary: Shamir's Secret Sharing Decoder
+Home-page: UNKNOWN
+Author: PunGrumpy
+License: UNKNOWN
+Description: Shamir's Secret Sharing Decoder for educational purposes.
+Keywords: python,shamir,education,decoder
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
