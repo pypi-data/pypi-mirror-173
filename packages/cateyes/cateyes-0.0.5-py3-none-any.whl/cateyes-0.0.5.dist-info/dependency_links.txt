@@ -1,0 +1,3 @@
+https://gitlab.com/nslr/nslr.git
+https://github.com/pupil-labs/nslr-hmm
+https://github.com/DiGyt/uneye.git
