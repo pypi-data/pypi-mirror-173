@@ -1,0 +1,13 @@
+nagao/__init__.py,sha256=VltCSBdwz0xZ_iqFhsEvj94oZFCtcmRZ743br4h4U28,25
+nagao/__main__.py,sha256=yvdI1-4umQgB9DhVCeFB7U0lv43wAm3fgpSsl3xZYio,2218
+nagao/nagao.py,sha256=rQE2vGcXoKGhIgD3--gINrP5nsA3AZsVXlC5XrfAVTc,20722
+nagao/utils.py,sha256=GObTYgW5JRoa49VfZH4MdpAZa33neDg91IPMsLmaC8U,152
+nagao/data/punct.txt,sha256=ezj9rpchF3pKcb75v1ZJiFeOLotn2QrIqjz7c4r5K84,604
+nagao/data/stopwords_en.txt,sha256=V7VFM4442HI_DqI8Sfdd7WT6P67lk10vI1kuWpTK87Q,3603
+nagao/data/stopwords_zh.txt,sha256=jGEvqfksw7Yd3wKcO8KSCh0rRl4bz7FGSRoOSk1nHrg,501
+nagao-0.1.1.data/scripts/nagao,sha256=1tFB9XCk_BI7eayfPaJe8LI12kIheK-fZOVhV6-iYTQ,97
+nagao-0.1.1.dist-info/LICENSE.txt,sha256=LgORJdhj2dyiV4gxw2sxTprAt8-UQZ8jsgG_dbySDUY,1062
+nagao-0.1.1.dist-info/METADATA,sha256=iy1w9lVrzSSrOBk8eW1tBNt_ZI5GCW9cbnaq5XeSL1o,3074
+nagao-0.1.1.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+nagao-0.1.1.dist-info/top_level.txt,sha256=FFm62rOAkU6Tdsc0lpDlbF3qSyEg9o0k8lkC90PXXsg,6
+nagao-0.1.1.dist-info/RECORD,,
