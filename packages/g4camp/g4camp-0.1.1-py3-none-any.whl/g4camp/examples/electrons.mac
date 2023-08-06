@@ -1,0 +1,29 @@
+/control/verbose 0
+/run/verbose 0
+/tracking/verbose 0
+
+#/run/numberOfThreads 8
+
+/process/optical/processActivation OpAbsorption False
+/process/optical/processActivation OpRayleigh False
+/process/optical/processActivation OpMieHG False
+/process/optical/processActivation Cerenkov True
+/process/optical/cerenkov/setStackPhotons True             # 'False' switches off photon production
+/process/optical/cerenkov/setTrackSecondariesFirst True    # 'True' breaks the logics of the program!
+/process/optical/printParameters
+
+/process/em/verbose 0
+
+/run/initialize
+
+/gps/particle e-
+/gps/energy 2 GeV
+/gps/position 0 0 0 m
+/gps/direction 0 0 1
+
+#/gps/ang/type iso
+#/gps/pos/type Volume
+#/gps/pos/shape Cylinder
+#/gps/pos/centre 0 0 360 m
+#/gps/pos/halfz 350 m
+#/gps/pos/radius 1000 m
