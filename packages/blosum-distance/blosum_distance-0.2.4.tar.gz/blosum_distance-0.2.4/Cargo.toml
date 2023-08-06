@@ -1,0 +1,20 @@
+[package]
+name = "blosum_distance"
+version = "0.2.4"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "blosum_distance"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.3", features = ["extension-module"] }
+bio = "*"
+hashbrown = {version = "0.12.3", features = ["rayon"]}
+rayon = "1.5.3"
+
+
+[profile.dev]
+opt-level = 3
+
