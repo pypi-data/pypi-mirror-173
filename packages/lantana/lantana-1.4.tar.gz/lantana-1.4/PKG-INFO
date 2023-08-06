@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lantana
+Version: 1.4
+Summary: The simple mkdocs theme.
+Home-page: https://lantana.wsoft.ws
+Author: WSOFT
+Author-email: info@wsoft.ws
+License: MIT
+Requires-Python: >=3.5
