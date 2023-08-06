@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/source-acceptance-test/__init__.py
+src/source_acceptance_test.egg-info/PKG-INFO
+src/source_acceptance_test.egg-info/SOURCES.txt
+src/source_acceptance_test.egg-info/dependency_links.txt
+src/source_acceptance_test.egg-info/top_level.txt
