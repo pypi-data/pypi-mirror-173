@@ -1,0 +1,2 @@
+[console_scripts]
+repo_utils = repo_utils:start_command_line
