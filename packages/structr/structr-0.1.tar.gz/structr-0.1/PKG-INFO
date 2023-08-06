@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: structr
+Version: 0.1
+Summary: Library to help create meaningful structures from yaml or json.
+Requires-Python: >=3.8
+License-File: LICENSE

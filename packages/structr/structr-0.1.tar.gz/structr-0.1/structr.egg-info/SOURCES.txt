@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+structr/__init__.py
+structr/structr.py
+structr.egg-info/PKG-INFO
+structr.egg-info/SOURCES.txt
+structr.egg-info/dependency_links.txt
+structr.egg-info/requires.txt
+structr.egg-info/top_level.txt
