@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webix"
+description = "Linux for the web"
+readme = "webix/README.rst"
+requires-python = ">=3.8"
+keywords = []
+classifiers = []
+dynamic = ["version"]
+
+
+[tool.setuptools]
+packages = ["webix"]
