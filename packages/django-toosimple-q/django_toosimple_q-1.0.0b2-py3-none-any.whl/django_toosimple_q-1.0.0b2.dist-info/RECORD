@@ -1,0 +1,14 @@
+django_toosimple_q/__init__.py,sha256=yNEqbiRbiyrW-iARHNAfEsBI7H05n4cQe5YMNQXmkgU,159
+django_toosimple_q/admin.py,sha256=P8xCxZDZ8RD3BY8PcsWh4-6QLEKjvjqqpTe6GJ5F5Hw,6483
+django_toosimple_q/apps.py,sha256=79ZV1r5soZVbz02AuoRl7aGlQ_SMjLDV8ktHzJut8P8,415
+django_toosimple_q/decorators.py,sha256=B4-Sg8q4VD1JemIMkbeqy1QM8toLlt3vKA1gOsNd8is,1665
+django_toosimple_q/logging.py,sha256=KuA7tpj9D474yfd4uSeJ4ZYjZAX6B_sW7pQ6Ur8U1Q8,899
+django_toosimple_q/models.py,sha256=NSFxQTPBjS6YH6uxl5jbuaeVTfwi7qaSZ_pSk2bD36s,6006
+django_toosimple_q/registry.py,sha256=wVJvxC2uvd3Gjg_xRTRDCY-HKrt154xtoN0j9DW1ado,370
+django_toosimple_q/schedule.py,sha256=COAgHvAAQJa6WTcVR4fmzW9egsDp-FNDyjzt4bbH8rk,3351
+django_toosimple_q/task.py,sha256=z8pDHYBVlx1I8R1jt8oNfMaMebt4OiBfM3_7FOvAn1g,5191
+django_toosimple_q-1.0.0b2.dist-info/LICENSE,sha256=1f3Goq1IqTAAOTONNoaiv5eup1FE1kkySkFjJNqyAoU,1058
+django_toosimple_q-1.0.0b2.dist-info/METADATA,sha256=MW0x_O6fzVgjYwU_Sy4yarwuTXNnEfXl-caujrSKW-g,12732
+django_toosimple_q-1.0.0b2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_toosimple_q-1.0.0b2.dist-info/top_level.txt,sha256=oCqsAvv9jpwnugGg75blmDe2JdmmI2_jhApv2QJqssI,19
+django_toosimple_q-1.0.0b2.dist-info/RECORD,,
