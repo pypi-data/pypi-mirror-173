@@ -1,0 +1,5 @@
+include TCN-csdntest/configs/lrw_resnet18_mstcn.json
+include TCN-csdntest/configs/lrw_snv1x_dsmstcn3x.json
+include TCN-csdntest/labels/5WordsSortedList.txt
+include TCN-csdntest/labels/500WordsSortedList.txt
+include TCN-csdntest/models/lrw_resnet18_mstcn.pth.tar

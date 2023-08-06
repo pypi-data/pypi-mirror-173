@@ -1,0 +1,15 @@
+from distutils.core import  setup
+from setuptools import setup, find_packages
+import setuptools
+
+
+packages = []# 唯一的包名，自己取名
+setup(name='RealtimeMouseDetect', # 打包后的文件名
+	  version='1.0',  # 版本号
+      description='A package to detect what you said without voice just by reading your lips in realtime',
+	  author='gyw',
+      include_package_data = True, # 包含项目中的静态资源
+      package_dir={'requests': 'requests'},
+      license="apache 3.0",
+      packages = find_packages(),
+      )

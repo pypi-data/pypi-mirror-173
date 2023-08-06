@@ -1,0 +1,7 @@
+LICENSE
+MANIFEST.in
+setup.py
+RealtimeMouseDetect.egg-info/PKG-INFO
+RealtimeMouseDetect.egg-info/SOURCES.txt
+RealtimeMouseDetect.egg-info/dependency_links.txt
+RealtimeMouseDetect.egg-info/top_level.txt
