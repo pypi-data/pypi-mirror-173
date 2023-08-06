@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hcaptcha-solver"
+version = "0.1.0"
+authors = [
+  { name="Terradon" },
+]
+description = "Selenium hCaptcha Solver"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"GitHub" = "https://github.com/xTerradon/hcaptcha-solver.git"
