@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+auto_download_undetected_chromedriver/LICENSE
+auto_download_undetected_chromedriver/README.MD
+auto_download_undetected_chromedriver/__init__.py
+auto_download_undetected_chromedriver/requirements.txt
+auto_download_undetected_chromedriver/thirdparty.json
+auto_download_undetected_chromedriver.egg-info/PKG-INFO
+auto_download_undetected_chromedriver.egg-info/SOURCES.txt
+auto_download_undetected_chromedriver.egg-info/dependency_links.txt
+auto_download_undetected_chromedriver.egg-info/requires.txt
+auto_download_undetected_chromedriver.egg-info/top_level.txt
