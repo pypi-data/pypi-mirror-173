@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: dpkg
+Version: 0.1.9
+Summary: UNKNOWN
+Author: SangMinLee
+Author-email: smlee@d-if.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+
+
+# dpkg
+
+dpkg is a package that collects functions frequently used in recommendation algorithms.
+
+## install
+
+## apk
+
+Computes the average precision at k. This function computes the average prescision at k between two lists of items.
+
+Parameters
+----------
+* actual : list
+> A list of elements that are to be predicted (order doesn't matter)
+* predicted : list
+> A list of predicted elements (order does matter)
+* k : int, optional
+> The maximum number of predicted elements
+
+Returns
+-------
+* score : double The average precision at k over the input lists
+
+## mapk
+
+Mean Average Precision (mAP) is commonly used to analyze the performance of object detection and segmentation systems. 
+
+Parameters
+----------
+* apk_list : list
+> A list of apk scores
+
+Returns
+----------
+* score : Mean average precision score of input apk lists
+
+
