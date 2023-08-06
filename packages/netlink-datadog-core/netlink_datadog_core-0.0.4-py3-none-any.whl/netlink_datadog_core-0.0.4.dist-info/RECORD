@@ -1,0 +1,11 @@
+netlink/datadog/core/__init__.py,sha256=h1MaCYkdqjgJ0YtdfKsWBCrQsFFAY8AdHVugOiWcav8,117
+netlink/datadog/core/load_configuration.py,sha256=WSDP68iAg4VfMtjnm98iPdS25bK5V3v0u7ZZpm1pguw,378
+netlink/datadog/core/metric.py,sha256=YOgRTZgUaoJTZxWmBv8r79i9BOCYKwOLh3uqgn7biu4,1906
+netlink/datadog/core/metric.pyi,sha256=U75kvlvu8FtN32ODTBLsT1sjfohZftcg8rXbK0rPSNE,914
+netlink/datadog/core/validate_api_key.py,sha256=-3ZTNy3_aFdnQ5KgQHsIksZ11iCxdrDzdeY0kPvbhqw,1071
+netlink/datadog/core/worker.py,sha256=CgSBkdeFO_OKQpDtvLQOV15uGVF6-fxLGMsG42DA_Nk,2276
+netlink/datadog/core/worker.pyi,sha256=dxHv7kCpmNSTuwSbQxGU4Ipe98RjZwd53UGltjDdiu0,506
+netlink_datadog_core-0.0.4.dist-info/entry_points.txt,sha256=_VXfbx6_TaucTS0eqNgrZM-TMFsyk_m4qkdlV31-LsI,95
+netlink_datadog_core-0.0.4.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+netlink_datadog_core-0.0.4.dist-info/METADATA,sha256=1KYXWiyM2K-B6D5Bxx-y4fZqVoC4QCzLjUQj5rSx-u8,2390
+netlink_datadog_core-0.0.4.dist-info/RECORD,,
