@@ -1,0 +1,3 @@
+[console_scripts]
+cj = clyjin.core.cli:main
+clyjin = clyjin.core.cli:main
