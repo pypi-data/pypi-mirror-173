@@ -1,0 +1,2 @@
+include BaseML/*
+include demo/kmeans_demo.py
