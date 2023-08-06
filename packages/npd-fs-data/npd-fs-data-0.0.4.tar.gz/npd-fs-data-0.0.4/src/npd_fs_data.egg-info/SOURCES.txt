@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/NpdFsData/__init__.py
+src/npd_fs_data.egg-info/PKG-INFO
+src/npd_fs_data.egg-info/SOURCES.txt
+src/npd_fs_data.egg-info/dependency_links.txt
+src/npd_fs_data.egg-info/requires.txt
+src/npd_fs_data.egg-info/top_level.txt
