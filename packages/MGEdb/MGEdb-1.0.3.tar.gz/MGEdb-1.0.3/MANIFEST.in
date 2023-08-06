@@ -1,0 +1,7 @@
+include mgedb/data/* mgedb/data/sequences.d/*
+exclude bitbucket-pipelines.yml *.sh requirements* Makefile .* tox.ini
+exclude mgedb/data/*.swp mgedb/data/*.bak mgedb/data/*.nin mgedb/data/*.nsq mgedb/data/*.nhr
+
+prune scripts
+prune *.egg-info
+prune tests*
