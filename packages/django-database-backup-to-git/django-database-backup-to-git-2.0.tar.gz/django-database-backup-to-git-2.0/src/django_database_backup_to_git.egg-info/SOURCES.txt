@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/dbbackup_git/__init__.py
+src/dbbackup_git/apps.py
+src/dbbackup_git/implementation.py
+src/dbbackup_git/utils.py
+src/dbbackup_git/management/__init__.py
+src/dbbackup_git/management/commands/__init__.py
+src/dbbackup_git/management/commands/dbbackup_git.py
+src/django_database_backup_to_git.egg-info/PKG-INFO
+src/django_database_backup_to_git.egg-info/SOURCES.txt
+src/django_database_backup_to_git.egg-info/dependency_links.txt
+src/django_database_backup_to_git.egg-info/requires.txt
+src/django_database_backup_to_git.egg-info/top_level.txt
