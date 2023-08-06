@@ -1,0 +1,15 @@
+ProdSteps:
+  - ID: 1
+    type: CtapipeProcessing
+    version: v0.17.0
+    ctapipe_site_config: prod5b_lapalma_alpha.yml
+    parentID:
+    dataset: Prod5b_LaPalma_AdvancedBaseline_NSB1x_gamma-diffuse_North_20deg_DL0
+    group_size: 5
+    input_limit: 2 # limit the nb of input data for local or wms submission
+
+Common:
+    MCCampaign: PROD5b
+    base_path: /vo.cta.in2p3.fr/user/a/arrabito
+    configuration_id: 8
+
