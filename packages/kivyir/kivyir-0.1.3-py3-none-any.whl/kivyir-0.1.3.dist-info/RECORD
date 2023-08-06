@@ -1,0 +1,11 @@
+kivyir/ConfigBase.py,sha256=T8YfnxbNQAHWp0MCkE2ChwoNOQyDKwLwnAw44cXmmWo,25787
+kivyir/IrLabel.py,sha256=AH_pDON4JAqicHw4WmxR0QTHoRN74bGRBAYHx8kRUzI,446
+kivyir/IrTextInput.py,sha256=f_prlFCsp_GEaQh3n2q79PWQh5gZQoZGH57999Tyb48,4010
+kivyir/__init__.py,sha256=QDNTwV-B39LRNhWQI6ng3Q3Yy45fAPvnLd9w9FK8-XM,258
+kivyir/font/Sahel-Bold.ttf,sha256=1xT6IkySvFHQ5HczfvaeiBjC7_j0HmaY3jVjnjhXrns,76372
+kivyir/font/Sahel.ttf,sha256=XeL-jNGZXxD7WlcLZuP_QBg_FryMaSUZth6MAoFnlnU,75308
+test/main.py,sha256=pGMkwoeVvv2K1Oy4h9KSrBQtpq53MDpWCOUok87kjGs,915
+kivyir-0.1.3.dist-info/METADATA,sha256=wccabJp_D99aV7kr4TFcWLAAu-WIwshbSKXhW2k17nY,3086
+kivyir-0.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kivyir-0.1.3.dist-info/top_level.txt,sha256=ZuPYV7SfroAQtTPkUYAlcF5U5WVXV_fxUPIvLS8a1Bk,12
+kivyir-0.1.3.dist-info/RECORD,,
