@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: auto-fe
+Version: 0.0.1
+Summary: A small python package
+Home-page: https://github.com/RAravindDS/auto_fe
+Author: RAravindDS
+Author-email: aravindan22052001@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/RAravindDS/auto_fe/issues
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Provides-Extra: testing
+License-File: LICENSE
+
+# Auto Feature Engineering Project 
+
+* This is the first version of this project and it contains the basic level auto feature engineering. 
+* This can impute both numerical and categorical features in just one line of code. !

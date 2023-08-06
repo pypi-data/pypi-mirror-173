@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/AutoFeatureEnginerring/__init__.py
+src/AutoFeatureEnginerring/auto_eng.py
+src/AutoFeatureEnginerring/logger.py
+src/auto_fe.egg-info/PKG-INFO
+src/auto_fe.egg-info/SOURCES.txt
+src/auto_fe.egg-info/dependency_links.txt
+src/auto_fe.egg-info/requires.txt
+src/auto_fe.egg-info/top_level.txt
