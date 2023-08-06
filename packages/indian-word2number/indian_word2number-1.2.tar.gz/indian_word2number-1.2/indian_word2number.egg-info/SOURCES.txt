@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+indian_word2number/__init__.py
+indian_word2number/indian_w2n.py
+indian_word2number.egg-info/PKG-INFO
+indian_word2number.egg-info/SOURCES.txt
+indian_word2number.egg-info/dependency_links.txt
+indian_word2number.egg-info/requires.txt
+indian_word2number.egg-info/top_level.txt
