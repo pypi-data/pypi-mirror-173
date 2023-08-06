@@ -1,0 +1,4 @@
+[console_scripts]
+flit-pluginconf=pluginconf.flit:main
+pluginconf.flit=pluginconf.flit:main
+

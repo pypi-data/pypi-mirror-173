@@ -1,0 +1,9 @@
+pluginconf/__init__.py,sha256=4p_YLLQDTvE3tSNiDHbMcLKosgUXgsQ-Q1z23cohb2g,19319
+pluginconf/depends.py,sha256=8-6X00_xlr6-c8fYJ2BB87IU3rgGRYKdQGuM9uCGclM,8000
+pluginconf/flit.py,sha256=AXFXaoLyfwIpKUbu97em0qiS7AAYpF14XBlDT4hnQIs,5727
+pluginconf/gui.py,sha256=6_vtrp1cRIeWG7JwUNuq0u3PzoiCt88AD_4eujhR6cA,8059
+pluginconf/setup.py,sha256=DJqVX3umpmCj0QYINjCmQfa7u1EWKaX_X604Vie8cT8,22476
+pluginconf-0.7.9.dist-info/entry_points.txt,sha256=FIajSVtxnf5--LuEsKhfKyLhfzpRwNzLFQn5MQ8W_y0,93
+pluginconf-0.7.9.dist-info/WHEEL,sha256=96_DCfscDnVj9fVNwi1rfifiRwfpxLjwXWglVksjj_E,99
+pluginconf-0.7.9.dist-info/METADATA,sha256=bfRLEx-6-mmj3D-RPg851ILvdgRVyHXMBynkZWOYqZ4,8516
+pluginconf-0.7.9.dist-info/RECORD,,
