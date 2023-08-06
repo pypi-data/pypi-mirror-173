@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+DataStats/DataProcess.py
+DataStats/__init__.py
+DataStats.egg-info/PKG-INFO
+DataStats.egg-info/SOURCES.txt
+DataStats.egg-info/dependency_links.txt
+DataStats.egg-info/requires.txt
+DataStats.egg-info/top_level.txt
