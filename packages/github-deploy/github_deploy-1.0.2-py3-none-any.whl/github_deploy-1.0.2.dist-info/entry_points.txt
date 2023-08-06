@@ -1,0 +1,3 @@
+[console_scripts]
+gh-deploy = github_deploy.main:main
+github-deploy = github_deploy.main:main
