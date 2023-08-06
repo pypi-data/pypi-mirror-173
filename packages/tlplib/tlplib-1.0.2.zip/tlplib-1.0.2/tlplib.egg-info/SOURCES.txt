@@ -1,0 +1,10 @@
+LICENCE.txt
+MANIFEST.in
+README.rst
+setup.py
+tlplib/__init__.py
+tlplib/tlplib.py
+tlplib.egg-info/PKG-INFO
+tlplib.egg-info/SOURCES.txt
+tlplib.egg-info/dependency_links.txt
+tlplib.egg-info/top_level.txt
