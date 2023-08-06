@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dasb_translator/__init__.py
+dasb_translator.egg-info/PKG-INFO
+dasb_translator.egg-info/SOURCES.txt
+dasb_translator.egg-info/dependency_links.txt
+dasb_translator.egg-info/entry_points.txt
+dasb_translator.egg-info/requires.txt
+dasb_translator.egg-info/top_level.txt

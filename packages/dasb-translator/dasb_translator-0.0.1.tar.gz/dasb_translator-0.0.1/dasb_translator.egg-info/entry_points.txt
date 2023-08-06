@@ -1,0 +1,2 @@
+[console_scripts]
+dasb_translator = dasb_translator:main
