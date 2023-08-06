@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vqc
+Version: 0.0.1
+Summary: Virtual Quantum Computing
+Author: Nathaniel Tornow
+Author-email: nathaniel.tornow@tum.de
+Requires-Python: >=3.9.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: networkx (>=2.8.7,<3.0.0)
+Requires-Dist: qiskit-aer
+Requires-Dist: qiskit-ibmq-provider (>=0.19.2,<0.20.0)
+Requires-Dist: qiskit-terra (>=0.22.0,<0.23.0)
