@@ -1,0 +1,9 @@
+social_interaction_cloud/__init__.py,sha256=e_yVOeQhl_AfdFvpU78dt_vqvqQDh7u4_u3hKGpht5k,210
+social_interaction_cloud/abstract_connector.py,sha256=NESujaplWNA_t_l1WjSYZYk6QPHLgPBxed0xAqPQgww,35893
+social_interaction_cloud/basic_connector.py,sha256=Zs060TZr6wDK4_JXwGN5B-QCGoQUy6olaO-XeYQd3dY,31588
+social_interaction_cloud/detection_result_pb2.py,sha256=wEf3uK4c9UuoFrOIxjnlUl4jx1wXGu812NYpSaJdxJ4,2591
+social_interaction_cloud/tracking_result_pb2.py,sha256=zNQrVT6rMbIyEiRkyVwisjqdENrN_3cYIwOJ-o_bb9Q,1673
+social_interaction_cloud-1.0.4.dist-info/METADATA,sha256=_ZnzReuGA8W5cc_fjfcQONmIL6TAMIxwFfYtzs8kXQ0,1018
+social_interaction_cloud-1.0.4.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+social_interaction_cloud-1.0.4.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+social_interaction_cloud-1.0.4.dist-info/RECORD,,
