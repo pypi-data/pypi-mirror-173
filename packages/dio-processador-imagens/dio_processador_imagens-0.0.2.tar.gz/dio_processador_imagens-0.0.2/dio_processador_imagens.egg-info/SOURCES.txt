@@ -1,0 +1,14 @@
+README.md
+setup.py
+dio_processador_imagens/__init__.py
+dio_processador_imagens.egg-info/PKG-INFO
+dio_processador_imagens.egg-info/SOURCES.txt
+dio_processador_imagens.egg-info/dependency_links.txt
+dio_processador_imagens.egg-info/requires.txt
+dio_processador_imagens.egg-info/top_level.txt
+dio_processador_imagens/processamento/__init__.py
+dio_processador_imagens/processamento/combinacao.py
+dio_processador_imagens/processamento/transformacao.py
+dio_processador_imagens/utils/__init__.py
+dio_processador_imagens/utils/io.py
+dio_processador_imagens/utils/plot.py
