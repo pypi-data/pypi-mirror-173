@@ -1,0 +1,7 @@
+mgoptimization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mgoptimization/hybrids_pv.py,sha256=xmHYV0fnUfry8kNDCt3ReaTrEoMWD8fKuHCDhLvgUEk,24588
+mgoptimization/pso_optimizer.py,sha256=xTq5mhYACQwBVOZu8YxVKJM-gXrmS_AOMpCazQ9zNcY,3750
+mgoptimization-0.4.dist-info/METADATA,sha256=UZ0UBQQh3p4gtJ4yReS-dlviubhqFM1P7bNIqxgSVw4,2050
+mgoptimization-0.4.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+mgoptimization-0.4.dist-info/licenses/LICENSE,sha256=aS-BlBqkQSLIlsz_kXqmtrt1_OsDEPPf6Jepoa5t1DE,1094
+mgoptimization-0.4.dist-info/RECORD,,
