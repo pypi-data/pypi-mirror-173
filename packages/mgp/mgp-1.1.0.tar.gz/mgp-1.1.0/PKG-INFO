@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mgp
+Version: 1.1.0
+Summary: Memgraph's module for developing MAGE modules. Used only for type hinting!
+License: Apache-2.0
+Author: katarinasupe
+Author-email: katarina.supe@memgraph.io
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+
+# mgp
+
+PyPi package used for type hinting when creating query modules. Repository of already available query modules is called [MAGE](https://github.com/memgraph/mage).
+
+## 🎬 Get started
+ 
+ To learn more, head over to the [docs for the query modules Python API](https://memgraph.com/docs/memgraph/reference-guide/query-modules/api/python-api). To get started with query modules, check out the [how-to guide](https://memgraph.com/docs/memgraph/how-to-guides/query-modules) on Memgraph docs. 
+
+ ## 🔢 Versioning
+
+ - mgp v1.1 is compatible with Memgraph >= 2.4.0
+
