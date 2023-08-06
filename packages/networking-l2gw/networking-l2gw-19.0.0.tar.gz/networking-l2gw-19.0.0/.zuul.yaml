@@ -1,0 +1,42 @@
+- project:
+    templates:
+      - check-requirements
+      - openstack-python3-zed-jobs-neutron
+      - build-openstack-docs-pti
+    check:
+      jobs:
+        - networking-l2gw-tempest-dummy
+        # Currently, we cannot specify that we want neutron
+        # checked out from master using tox-siblings for this
+        # job, so this always fails.
+        # TODO: make this voting again
+        - openstack-tox-lower-constraints:
+            voting: false
+        - openstack-tox-pep8:
+            required-projects:
+              - x/networking-l2gw
+        - openstack-tox-py38:
+            required-projects: &l2gw_required_projects
+        - openstack-tox-py39:
+            required-projects: *l2gw_required_projects
+        - openstack-tox-py310:
+            required-projects: *l2gw_required_projects
+    gate:
+      jobs:
+        - networking-l2gw-tempest-dummy
+        - openstack-tox-pep8:
+            required-projects:
+              - x/networking-l2gw
+        - openstack-tox-py38:
+            required-projects: *l2gw_required_projects
+        - openstack-tox-py39:
+            required-projects: *l2gw_required_projects
+        - openstack-tox-py310:
+            required-projects: *l2gw_required_projects
+    periodic-weekly:
+      jobs:
+        - openstack-tox-py39:
+            required-projects: *l2gw_required_projects
+        - openstack-tox-py39-with-oslo-master:
+            required-projects: *l2gw_required_projects
+        - networking-l2gw-tempest-dummy
