@@ -1,0 +1,12 @@
+pandandic/__init__.py,sha256=-_hneKYusXJHxBtQgaWx29wvNoY2U1i39_8ZO40nLcA,413
+pandandic/base_frame.py,sha256=lZIo_DB4WVx33k9LAjKuphpIGUNETW610pb_wkkst_Q,13000
+pandandic/column.py,sha256=AghLVdiEBZUZ3dnvhh68jm3Kyagf0JV0f9H0UDqhDpY,442
+pandandic/column_alias_not_yet_defined_exception.py,sha256=XlqrEhIKsavvZcBmXPhupuhPmkJs_PUlW2MfhFwySgw,288
+pandandic/column_group.py,sha256=FUVfEljUoIiZcHzKAZQInHImtsT2irzpdEjwfReAKgc,273
+pandandic/column_group_exception.py,sha256=525hHuQ-TUhQfOGsz2LS39Z7RXI8i2CA5aSVe-UiXLc,573
+pandandic/column_set.py,sha256=7ByUj4x8AWlxB_ZjpXxnhHw-hFWYXNqvYNo0Xa1LWyo,428
+pandandic/column_set_members_not_yet_defined_exception.py,sha256=eG6J3i2CkgtCaOvDV3b3F5oo9LCX9uQd6HH8obv0IFY,327
+pandandic/defined_later.py,sha256=W9U8j7DIlfT-xH1cdMa78bFcWsLbWbij90KJUkne-j4,303
+pandandic-0.2.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pandandic-0.2.0.dist-info/METADATA,sha256=KuieUpUiLhoYXu9lQvq6j_O0X2hx2RCiCTmT4W3z_nw,11262
+pandandic-0.2.0.dist-info/RECORD,,
