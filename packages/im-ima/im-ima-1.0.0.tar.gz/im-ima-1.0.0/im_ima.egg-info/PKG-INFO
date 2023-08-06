@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: im-ima
+Version: 1.0.0
+Summary: 关于Arduino主板的python库
+Home-page: UNKNOWN
+Author: iM智慧编程
+Author-email: 317393374@qq.com
+License: BSD License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE.txt
+
+# Example Package
+This is a simple example package. You can use
+
+[联系作者](https://mp.weixin.qq.com/s/9FQ-Tun5FbpBepBAsdY62w)
+
+to write your content.
+

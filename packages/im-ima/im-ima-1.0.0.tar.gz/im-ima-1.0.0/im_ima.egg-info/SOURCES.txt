@@ -1,0 +1,11 @@
+LICENSE.txt
+README.rst
+setup.py
+im-ima/__init__.py
+im-ima/private_constants.py
+im-ima/pysensor.py
+im-ima/telemetrix.py
+im_ima.egg-info/PKG-INFO
+im_ima.egg-info/SOURCES.txt
+im_ima.egg-info/dependency_links.txt
+im_ima.egg-info/top_level.txt
