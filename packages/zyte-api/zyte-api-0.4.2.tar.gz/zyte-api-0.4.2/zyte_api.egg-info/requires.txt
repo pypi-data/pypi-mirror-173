@@ -1,0 +1,7 @@
+requests
+tenacity
+aiohttp>=3.8.0
+tqdm
+attrs
+runstats
+brotli
