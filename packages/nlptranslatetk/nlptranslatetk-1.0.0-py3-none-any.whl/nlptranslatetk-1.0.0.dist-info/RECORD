@@ -1,0 +1,9 @@
+nlptranslatetk/__init__.py,sha256=i2wQn-z8gxRhCiaTQwDz6DGwSdwBqYRTZZFmlmz9nvo,2432
+nlptranslatetk/constants.py,sha256=9f7GE7H_n76GRaqXk50wZxtTNmorUOYKOIRakCrAJdQ,38971
+nlptranslatetk/convert_str.py,sha256=I7pMcCF8uUViNCScFzp3zUKOx7mvnW_QMQhKja18YHA,1483
+nlptranslatetk/language_id.py,sha256=dI1jNVrx9W3vJMRDDMgF8_Z_I_Dm3YaPb0TqmefsBcQ,1403
+nlptranslatetk/objects.py,sha256=aMPNlVVSX2LQQw4HCIiNzqyju_L3fN1xK7UKao2xvw4,1284
+nlptranslatetk/util.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlptranslatetk-1.0.0.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+nlptranslatetk-1.0.0.dist-info/METADATA,sha256=RVJ_Na2FijyrayKV1NjhWHMHSoMLhhthVaqDFc8MIgs,1209
+nlptranslatetk-1.0.0.dist-info/RECORD,,
