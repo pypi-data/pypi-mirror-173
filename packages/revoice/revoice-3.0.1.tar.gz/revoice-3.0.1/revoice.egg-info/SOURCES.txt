@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+revoice/__init__.py
+revoice/revoice.py
+revoice.egg-info/PKG-INFO
+revoice.egg-info/SOURCES.txt
+revoice.egg-info/dependency_links.txt
+revoice.egg-info/requires.txt
+revoice.egg-info/top_level.txt
