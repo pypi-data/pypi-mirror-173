@@ -1,0 +1,4 @@
+[console_scripts]
+LiuyaoXiangzhen = LiuyaoXiangzhen.__main__:main
+liuyao-xiangzhen = LiuyaoXiangzhen.__main__:main
+
