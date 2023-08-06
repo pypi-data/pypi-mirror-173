@@ -1,0 +1,7 @@
+fastcore
+pandas
+numpy
+fastai
+opencv-python
+
+[dev]
