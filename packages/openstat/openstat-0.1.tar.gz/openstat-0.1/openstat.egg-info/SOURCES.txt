@@ -1,0 +1,10 @@
+pyproject.toml
+openstat/__init__.py
+openstat/logic.py
+openstat/table.py
+openstat/tools.py
+openstat.egg-info/PKG-INFO
+openstat.egg-info/SOURCES.txt
+openstat.egg-info/dependency_links.txt
+openstat.egg-info/requires.txt
+openstat.egg-info/top_level.txt
