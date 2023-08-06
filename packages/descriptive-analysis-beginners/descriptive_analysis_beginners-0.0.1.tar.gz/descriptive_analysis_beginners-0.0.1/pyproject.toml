@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "descriptive_analysis_beginners"
+version = "0.0.1"
+authors = [
+  { name="Nagore y Ainhoa", email="nagore.bermeosolo@alumni.mondragon.edu" },
+]
+description = "A descriptive analysis package whith statistics and visualizations"
+readme = "README.md"
+requires-python = ">=3.7"
+install_requires = [
+    'pandas', 'warnings', 'itertools', 'numpy', 'math', 'seaborn', 'matplotlib'
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/nagorebermeosolo/descriptive_analysis_beginners"
+"Bug Tracker" = "https://github.com/nagorebermeosolo/descriptive_analysis_beginners/issues"
