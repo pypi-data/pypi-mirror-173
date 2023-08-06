@@ -1,0 +1,7 @@
+[console_scripts]
+ep2rad = frads.cli:epjson2rad_cmd
+gen = frads.cli:gen
+gencolorsky = frads.gencolorsky:main
+mrad = frads.cli:mrad
+rpxop = frads.cli:rpxop
+varays = frads.cli:varays
