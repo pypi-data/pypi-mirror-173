@@ -1,0 +1,133 @@
+Mapping SNMP OIDs to YANG XPaths
+================================
+
+Network telemetry is traditionally accessed by management tooling that
+consumes SNMP MIBs.  YANG models are definitions of network management
+APIs that can also be consumed by tooling to achieve the same telemetry
+goals.  Many network management systems based off of SNMP MIBS are
+currently in place.  In order to smoothly transition from a MIB based
+management system to a YANG model-based system requires knowledge of
+where the two intersect.  This has proven to be a tedious endeavor
+which involves manually mapping individual MIB OIDs to its YANG model
+equivalency.  This YANG Suite plugin will provide a layer between the
+MIB and YANG data that presents mapping to the user.
+
+Before Using the Plugin
+-----------------------
+
+1. Set up device to accept SNMP requests from the yangsuite-coverage plugin
+   (please refer to your device configuration manual for details). Two ways to allow
+   yangsuite to communicate with device/snmp-server:
+
+  1. Add a community string with "ro" option (read-only mode, most secure):
+
+    - yangsuite-coverage does not need write access unless your use case does.
+
+  2. Add a new user with password:
+
+    - Create a new SNMP user group with security level "v3".
+
+    - Create a new user:
+
+      1. Username must be the same as the device's ssh username.
+
+      2. Make sure SNMP's user authentication method is "MD5".
+
+    - Add user to the newly created SNMP user group with security level "v3".
+
+2. Set up device to accept incoming NETCONF requests from yangsuite-coverage plugin.
+
+  - Note: use default ports for NETCONF communication.
+
+
+Match OIDs to XPaths
+--------------------
+
+This functionality will acquire all the existing OIDs on the device, attempt to match OIDs to one XPath
+that exists in the selected YANG module. If an OID cannot be matched to an XPath, the YANG path field under
+the OID field will be blank. Match OIDs to XPaths is designed to save user time from manually doing the mapping
+work. To use the functionality:
+
+
+1. Please provide inputs for all the required fields:
+
+  - Choose device from the "Select a device" dropdown.
+
+  - Enter community string or SNMPv3 password (based on how selected device's snmp-server was set up)
+
+  - Choose a YANG set from "Select a YANG set" dropdown.
+
+  - Choose a YANG module from the selected YANG set using the "Select YANG module" dropdown.
+
+.. image:: images/match_oids_xpaths.png
+  :alt: Screenshot of filling form for matching OIDS to XPaths.
+
+2. Select "Match OIDs to XPaths" button, and wait for the list of OIDs and XPaths to populate below
+the form.
+
+Run OID
+-------
+
+This functionality is to query the device for the resource using the specified OI- If the OID has children,
+the children of the OID will be queried for values and all the values will be displayed in a dialog box.
+Steps outlined below will be needed to run OID and get results from device:
+
+- Enter an OID in the "Enter OID" field.
+
+- Select a device.
+
+- Enter community string or SNMPv3 password.
+
+- Click Run OID and wait for dialog box with results to come up.
+
+  - Important: please make sure OID is entered in correctly or value(s) will not be displayed.
+
+.. image:: images/run_oid.png
+  :alt: Screenshot of filling form for Run OID
+
+Import Mappings
+---------------
+
+This feature can be used to import existing mappings in a .csv file to help you quickly bring up
+mappings and start working again. To import mappings, follow the steps below:
+
+- Choose "Import Mappings" button.
+
+- Select the desired .csv file, click "Load" and wait for the mappings to populate.
+
+- Select the imported file from "Mapped file list".
+
+- Select "Show Mappings" to display the mappings from the imported file.
+
+Show Mappings
+-------------
+
+This functionality will quickly bring up mappings saved in a .csv file. To show mappings, follow
+the steps below:
+
+- Select a file from "Mapped file list".
+
+- Select the desired file, click "Show Mappings" and wait for the mappings to populate.
+ 
+Export Mappings
+---------------
+
+This functionality will allow you to get a copy of the mapped file saved in the
+YANG Suite data directory. Please follow the steps below:
+
+- Select a file from "Mapped file list".
+
+- Choose "Export Mappings" button.
+
+- A copy of the mapped .csv file following the format will be exported to your
+  browser's configured downloads directory.
+
+Results
+-------
+
+When the mapping process is done, the mappings (Readable OID and XPaths) will populate on the page. The populated
+mappings are based on the live device as well as the mappings from the plugin's local repository of mapppings. The
+OIDs that do not have a YANG XPath matched to them are not "mapped" by the results gathered from the device or from
+previous manual mapping work, therefore the OIDs need manual mapping.
+
+Note: mapped files are saved in <YANG Suite data directory>/users/<username>/mibyang_mappings.
