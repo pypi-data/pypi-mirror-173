@@ -1,0 +1,18 @@
+[package]
+name = "performica-prs"
+version = "1.2.4"
+edition = "2021"
+include = ["/src", "/pyproject.toml"]
+
+[lib]
+name = "prscalc"
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = "0.4.19"
+itertools = "0.10.1"
+pyo3-chrono = "0.3.0"
+
+[dependencies.pyo3]
+version = "0.15.2"
+features = ["extension-module"]
