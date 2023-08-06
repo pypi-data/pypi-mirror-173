@@ -1,0 +1,3 @@
+[console_scripts]
+startproject = django_routine.start:start
+
