@@ -1,0 +1,3 @@
+[console_scripts]
+pride_colors_plotly=pride_colors_plotly.__main__:app
+
