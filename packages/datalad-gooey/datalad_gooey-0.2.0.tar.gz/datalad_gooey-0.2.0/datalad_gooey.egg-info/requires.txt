@@ -1,0 +1,15 @@
+datalad>=0.17.6
+datalad_next>=0.6.2
+outdated
+pyqtdarktheme
+pyside6
+
+[:platform_system == "Darwin"]
+applescript
+
+[devel]
+coverage
+pytest
+pytest-cov
+pytest-qt
+pytest-xvfb

@@ -1,0 +1,13 @@
+[console_scripts]
+datalad-gooey-askpass = datalad_gooey.askpass:GooeyAskPass.__call__
+
+[datalad.extensions]
+gooey = datalad_gooey:command_suite
+
+[datalad.gooey.suites]
+gooey-complete = datalad_gooey.complete_api:gooey_suite
+gooey-simplified = datalad_gooey.simplified_api:gooey_suite
+
+[gui_scripts]
+datalad-gooey = datalad_gooey.app:main
+
