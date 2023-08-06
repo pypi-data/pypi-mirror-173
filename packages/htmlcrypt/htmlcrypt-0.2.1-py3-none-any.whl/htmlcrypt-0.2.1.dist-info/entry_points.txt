@@ -1,0 +1,2 @@
+[console_scripts]
+htmlcrypt = htmlcrypt.__main__:main
