@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+obiter/__init__.py
+obiter/_modidx.py
+obiter/canlii_api.py
+obiter.egg-info/PKG-INFO
+obiter.egg-info/SOURCES.txt
+obiter.egg-info/dependency_links.txt
+obiter.egg-info/entry_points.txt
+obiter.egg-info/not-zip-safe
+obiter.egg-info/requires.txt
+obiter.egg-info/top_level.txt
