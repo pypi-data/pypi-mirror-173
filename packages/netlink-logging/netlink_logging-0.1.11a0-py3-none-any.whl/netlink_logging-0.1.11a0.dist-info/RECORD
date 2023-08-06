@@ -1,0 +1,7 @@
+netlink/logging/__init__.py,sha256=4E-ZUvDOumfooCcVAaSlVlHgStn4MPssPfe6JmKB1KE,218
+netlink/logging/__init__.pyi,sha256=4gLFFy9lXeBvcCBkB8BRNTDT4cU8tCnzZXukVwDxywk,1528
+netlink/logging/_logging.py,sha256=WkdQyt39v4KD5Easyi3Sj-pKQp4hfc6fVDleO9_E-7Y,4468
+netlink_logging-0.1.11a0.dist-info/LICENSE.md,sha256=ezlJbqX_p4KPFL2VbEhrGG5CKyRC5ll-E-x9E7AX6PY,1083
+netlink_logging-0.1.11a0.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+netlink_logging-0.1.11a0.dist-info/METADATA,sha256=umVWB6Oeslqd7UCFgXi41-j4EhfxMfgD36oXssNR8NM,5318
+netlink_logging-0.1.11a0.dist-info/RECORD,,
