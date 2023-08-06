@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: new_library_package
+Version: 0.0.0
+Summary: Private Python library who provides incredible features.
+Home-page: UNKNOWN
+Author: An amazing developer
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
