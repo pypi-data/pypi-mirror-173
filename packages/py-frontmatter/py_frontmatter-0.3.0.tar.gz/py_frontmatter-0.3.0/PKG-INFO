@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: py-frontmatter
+Version: 0.3.0
+Summary: Manipulate YAML front matter.
+License: Apache-2.0
+Author: YEUNG King On
+Author-email: koyeung@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: jsonpath-ng (>=1.5.3,<2.0.0)
+Requires-Dist: ruamel.yaml (>=0.17.21,<0.18.0)
+Description-Content-Type: text/markdown
+
+# py-frontmatter
+To manipulate front matter in document file.
+
+## Installation
+
+```shell
+pip install py-frontmatter
+```
+
+## Usage
+
+Given text file:
+```markdown
+---
+title: Hacker's note
+tags: [a, b]
+---
+# header
+text
+```
+
+### Get or set whole section of front matter
+
+To retrieve front matter as JSON:
+```commandline
+% frontmatter get note.md | jq
+{
+  "title": "Hacker's note",
+  "tags": [
+    "a",
+    "b"
+  ]
+}
+```
+
+To replace the front matter:
+```commandline
+% echo '{"title": "My note", "tags": ["a", "b", "c"]}' | frontmatter set note.md 
+% cat note.md 
+---
+title: My note
+tags:
+- a
+- b
+- c
+---
+# header
+text
+```
+
+### Add or remove item from front matter
+
+```commandline
+% frontmatter add-item --jsonpath '$.tags' --item d note.md
+% cat note.md 
+---
+title: My note
+tags:
+- a
+- b
+- c
+- d
+---
+# header
+text
+%
+% frontmatter remove-item --jsonpath '$.tags' --item d note.md
+% cat note.md                                                 
+---
+title: My note
+tags:
+- a
+- b
+- c
+---
+# header
+text
+```
+
+### Specialize commands to add/remove tag
+
+```commandline
+% frontmatter add-tag --tag d note.md
+% cat note.md 
+---
+title: My note
+tags:
+- a
+- b
+- c
+- d
+---
+# header
+text
+% frontmatter remove-tag --tag d note.md
+% cat note.md                           
+---
+title: My note
+tags:
+- a
+- b
+- c
+---
+# header
+text
+```
+
