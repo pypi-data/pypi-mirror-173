@@ -1,0 +1,9 @@
+django>=3.2
+
+[dev]
+isort
+flake8
+pytest
+pytest-django
+pytest-cov
+psycopg2
