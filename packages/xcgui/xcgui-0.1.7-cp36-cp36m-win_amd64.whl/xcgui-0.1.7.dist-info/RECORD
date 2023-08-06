@@ -1,0 +1,9 @@
+xcgui/__init__.py,sha256=Jp-ilrOAtZS7IuubRLRBt83n0WkJMOHEHUk-U36tJsQ,85
+xcgui/_xcgui.cp36-win_amd64.pyd,sha256=Jvug95Qo_MwOItHuqwnA_mdmenH4TK9e0SpTkTHTIsM,4794368
+xcgui/_xcgui.pyi,sha256=wHZwLuXHRLw4U3kNMSmhpuVoJcoGKqHs7nVPBlJJxWg,389705
+xcgui/decorators.py,sha256=jjJAodNSsh3YxislO3LtYIT_DUtmB5jW1wbEUhHnHSQ,291
+xcgui-0.1.7.dist-info/LICENSE,sha256=PvUGKitzGxUririeVDR720EhHd-gOq8CUjHUxB2YouI,1087
+xcgui-0.1.7.dist-info/METADATA,sha256=D5UInCY1BcluOHRXR0vYf8QJkqJV65zstklcJRS3ZyA,723
+xcgui-0.1.7.dist-info/WHEEL,sha256=zukbZftcRdNfJ55Q_RYV9JZ3uVyqWKyq-wDJbmszs_U,101
+xcgui-0.1.7.dist-info/top_level.txt,sha256=jHCcbolypNLxL5qUxDfXW9RHxS4JVYVl5svlnQREBuk,6
+xcgui-0.1.7.dist-info/RECORD,,
