@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+add.py,sha256=WMLNLGfuFBPTFV9XIwzBKM-Uhi4wlYQkVQPiUyfCol0,126
+divide.py,sha256=Pa70g3DXali3UOj8azH9vTqFMMjqCk8DY-wdrMUPjlI,501
+hello_world.py,sha256=jMN3BYtTtCzxy1KcfS32W5A8eqhKL6_OBB-nQlvAHtk,428
+multiply.py,sha256=QbkolUmVXQEeg3dX9Gr5kBfSjrGbyduEOBLqUOA3jrg,137
+subtract.py,sha256=DiA0nP0i5bU22ICGw1SeeeIA8_hZEEl7PWvUiTh1iqs,200
+mathplug-0.0.1.dist-info/LICENSE.md,sha256=URkWvvPM_xBDpT5iQhZ_pLLv1fcfK0_ivmSaYqjone4,1070
+mathplug-0.0.1.dist-info/METADATA,sha256=EEKyMb_gVczX5DhfVPNqV_Z2ltAzS1EDBqSt1lYO7c8,3133
+mathplug-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mathplug-0.0.1.dist-info/top_level.txt,sha256=cczS9V-djv9j4olCXM4rTb9boUXyLMRAtl9Kjtx-wZs,50
+mathplug-0.0.1.dist-info/RECORD,,
