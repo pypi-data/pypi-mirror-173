@@ -1,0 +1,2 @@
+[console_scripts]
+ebook-utils = ebook_utils.main:main
