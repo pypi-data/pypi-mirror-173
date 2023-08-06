@@ -1,0 +1,7 @@
+[
+  "test/test_endpoints.py::test_available_models_for_tasks",
+  "test/test_endpoints.py::test_select_dataset",
+  "test/test_endpoints.py::test_state",
+  "test/test_endpoints.py::test_upload_dataset",
+  "test/test_endpoints.py::test_upload_dataset_int"
+]
