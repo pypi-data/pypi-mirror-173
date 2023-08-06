@@ -1,0 +1,190 @@
+[![Build][build-image]]()
+[![Status][status-image]][pypi-project-url]
+[![Stable Version][stable-ver-image]][pypi-project-url]
+[![Coverage][coverage-image]]()
+[![Python][python-ver-image]][pypi-project-url]
+[![License][bsd3-image]][bsd3-url]
+
+
+
+# THCRDT
+
+## Overview
+
+TangledHub library that handles Conflict-free Replicated Data types.
+
+## Licencing
+thcrdt is licensed under the BSD license. Check the [LICENSE](https://opensource.org/licenses/BSD-3-Clause) for details.
+
+---
+
+## Installation
+```bash
+pip install thcrdt
+```
+
+## Testing
+```bash
+docker-compose build thcrdt-test ; docker-compose run --rm thcrdt-test
+```
+
+## Building
+```bash
+docker-compose build thcrdt-builning ; docker-compose run --rm thcrdt-builning
+```
+
+## Publish
+```bash
+docker-compose build thcrdt-publish ; docker-compose run --rm thcrdt-publish
+```
+
+---
+
+## CRDT supported in this library
+
+### CRDT_Dict
+```python
+doc: dict = crdt.from_({'cards': [{'x': 0, 'y': 10, 'z': 20}]}).unwrap()
+```
+
+### CRDT_List
+```python
+doc: dict = crdt.from_({'cards': [[1, 2, 3]]}).unwrap()
+```
+
+### CRDT_Counter
+```python
+doc: dict = crdt.from_({'cards': [Counter(1)]}).unwrap()
+```
+
+#### increment(int)
+Increase counter value
+```python
+doc['cards'][0].increment(2)
+```
+
+#### decrement(int)
+Decrease counter value
+```python
+doc['cards'][0].decrement(1)
+```
+
+## API
+thcrdt api is using the **thresult** library, so all api functions are returning result wrapped in **Ok** or **Err** object.  
+Therefore, in order to reach into the result object, you should use **.unwrap()** as in examples.
+```python
+crdt = CRDT()
+```
+
+### crdt.from_(self, o: Any)
+Creates a new CRDT object and populates it with the contents of the passed object
+#### Example:
+Create document with initial state
+```python
+doc_s0: dict = crdt.from_({'cards': [{'x': 0}]}).unwrap()
+```
+
+
+### crdt.clone(self, Any)
+Creates a new copy of the CRDT instance
+#### Example:
+```python
+doc_clone = crdt.clone(doc_s0)
+```
+
+
+### crdt.change(self, doc: Any, fn: Callable)
+Modify an CRDT object, returning an updated copy
+#### Example:
+```python
+# CLIENT A
+# changes on client A
+def doc_ca(doc: dict):
+    doc['cards'][0]['x'] = 5
+    doc['cards'][0]['y'] = 10
+    doc['cards'][0]['z'] = 20
+    
+# The doc_a0 object is treated as immutable, you must never change it directly, create doc_a0 clone using crdt.clone().
+# In order to update doc_a0 you should use crdt.change() instead.
+doc_a1: dict = crdt.change(crdt.clone(doc_s0).unwrap(), doc_ca).unwrap()
+```
+
+
+### crdt.merge(self, a: Any, b: Any)
+#### Example:
+Merges the two CRDT instances
+```python
+# CLIENT B
+# Create initial document on client B
+doc_b0: dict = crdt.from_({'cards': [{}]}).unwrap()
+
+# Now merge this two documents
+doc_b1: dict = crdt.merge(doc_b0, doc_a1).unwrap()
+```
+```python
+# changes on client B
+def doc_cb(doc: dict):
+    doc['cards'][0]['x'] = -5
+    doc['cards'][0]['y'] = -10
+    doc['cards'][0]['z'] = -20
+```
+```python
+doc_b2: dict = crdt.change(crdt.clone(doc_s0).unwrap(), doc_cb).unwrap()
+```
+```python
+# Now merge the changes from client B back into client A. You can also
+# do the merge the other way round, and you'll get the same result.
+final_doc: dict = crdt.merge(doc_b2, doc_a1).unwrap()
+```
+
+
+### crdt.get_changes(self, root: Any, doc: Any)
+Returns a list of all the changes that were made in the document
+#### Example:
+```python
+# Create document with initial state
+doc1s: dict = crdt.from_({'cards': [{}]}).unwrap()
+```
+```python
+# CLIENT A
+# changes on client A
+def doc_ca(doc: dict):
+    doc['cards'][0]['x'] = 5
+    doc['cards'][0]['y'] = 10
+    doc['cards'][0]['z'] = 20
+```
+```python
+# In order to update doc1s you should use crdt.change().
+doc_a1: dict = crdt.change(crdt.clone(doc1s).unwrap(), doc_ca).unwrap()
+```
+```python
+# Get changes made on client A. These changes are encoded as byte arrays (Uint8Array)
+doc_a1_changes: list = crdt.get_changes(doc1s, doc_a1).unwrap()
+```
+
+
+### crdt.apply_changes
+Applies the list of changes to the given document, and returns a new document with those changes applied
+#### Example:
+```python
+# CLIENT B
+# Now apply changes on client B
+doc_b1, patch = crdt.apply_changes(doc1s, doc_a1_changes).unwrap()
+```
+
+
+<!-- Links -->
+
+<!-- Badges -->
+[bsd3-image]: https://img.shields.io/badge/License-BSD_3--Clause-blue.svg
+[bsd3-url]: https://opensource.org/licenses/BSD-3-Clause
+[build-image]: https://img.shields.io/badge/build-success-brightgreen
+[coverage-image]: https://img.shields.io/badge/Coverage-100%25-green
+
+[pypi-project-url]: https://pypi.org/project/thcrdt/
+[stable-ver-image]: https://img.shields.io/pypi/v/thcrdt?label=stable
+[python-ver-image]: https://img.shields.io/pypi/pyversions/thcrdt.svg?logo=python&logoColor=FBE072
+[status-image]: https://img.shields.io/pypi/status/thcrdt.svg
+
+
+
