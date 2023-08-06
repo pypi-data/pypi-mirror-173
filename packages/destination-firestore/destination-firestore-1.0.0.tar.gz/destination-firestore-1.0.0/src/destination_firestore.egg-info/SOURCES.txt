@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/destination_firestore.egg-info/PKG-INFO
+src/destination_firestore.egg-info/SOURCES.txt
+src/destination_firestore.egg-info/dependency_links.txt
+src/destination_firestore.egg-info/top_level.txt
