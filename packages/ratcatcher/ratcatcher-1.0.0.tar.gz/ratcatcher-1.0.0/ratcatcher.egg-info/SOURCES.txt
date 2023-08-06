@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ratcatcher/__init__.py
+ratcatcher/omniserver.py
+ratcatcher/ratcatcher.py
+ratcatcher.egg-info/PKG-INFO
+ratcatcher.egg-info/SOURCES.txt
+ratcatcher.egg-info/dependency_links.txt
+ratcatcher.egg-info/entry_points.txt
+ratcatcher.egg-info/not-zip-safe
+ratcatcher.egg-info/requires.txt
+ratcatcher.egg-info/top_level.txt

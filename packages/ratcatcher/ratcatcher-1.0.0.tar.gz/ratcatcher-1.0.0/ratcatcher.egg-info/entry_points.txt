@@ -1,0 +1,3 @@
+[console_scripts]
+omniserver = ratcatcher.omniserver:main
+ratcatcher = ratcatcher.ratcatcher:main
