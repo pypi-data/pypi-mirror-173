@@ -1,0 +1,2 @@
+[console_scripts]
+compileminify = compileminify.main:entrypoint
