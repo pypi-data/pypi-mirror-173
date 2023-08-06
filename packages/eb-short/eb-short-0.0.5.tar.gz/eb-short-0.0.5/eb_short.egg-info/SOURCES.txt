@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+eb_short.py
+setup.py
+eb_short.egg-info/PKG-INFO
+eb_short.egg-info/SOURCES.txt
+eb_short.egg-info/dependency_links.txt
+eb_short.egg-info/entry_points.txt
+eb_short.egg-info/requires.txt
+eb_short.egg-info/top_level.txt

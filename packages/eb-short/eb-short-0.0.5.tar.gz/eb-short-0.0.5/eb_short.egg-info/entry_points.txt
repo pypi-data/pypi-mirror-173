@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        eb-short=eb_short:main
+    
