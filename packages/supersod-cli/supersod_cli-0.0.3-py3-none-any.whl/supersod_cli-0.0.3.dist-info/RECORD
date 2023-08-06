@@ -1,0 +1,12 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/supersodcli.py,sha256=u_kjymR6NW-_hRE95Iq_t6FIS7sY_U1JYGXsoUmJtLk,911
+src/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/commands/authorize.py,sha256=FtuPdjSnzsx6eu2d_DHWeU2IjTapRKyz8XJVPs2Fnfg,1080
+src/commands/clear.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/commands/polling.py,sha256=pQeRKh2vexhgMw9wuoVoAV-f7Ic8kC3c3x3iiArk5hA,1146
+supersod_cli-0.0.3.dist-info/LICENSE,sha256=SeZEf3ArDjpsYKV8h2rT7VXMbzJwmsYq8hRC5EuR9v8,1051
+supersod_cli-0.0.3.dist-info/METADATA,sha256=iqIkkAmdv8Cy9HRt8GmhFb8wiXSoJyGARJXevGovx10,635
+supersod_cli-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+supersod_cli-0.0.3.dist-info/entry_points.txt,sha256=BM2UjgRJjAdYZ8_GP33ZHhrcQ2uUOhkiemo0uCun_s8,49
+supersod_cli-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+supersod_cli-0.0.3.dist-info/RECORD,,
