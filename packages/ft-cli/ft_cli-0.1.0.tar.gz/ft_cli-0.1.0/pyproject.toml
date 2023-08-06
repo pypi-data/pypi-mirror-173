@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ft-cli"
+version = "0.1.0"
+description = ""
+authors = ["wanqiang.liu <wanqiang.liu@freetech.com>"]
+readme = "README.md"
+packages = [{include = "ft_cli"}]
+
+[tool.poetry.scripts]
+ft-cli = "ft_cli.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
