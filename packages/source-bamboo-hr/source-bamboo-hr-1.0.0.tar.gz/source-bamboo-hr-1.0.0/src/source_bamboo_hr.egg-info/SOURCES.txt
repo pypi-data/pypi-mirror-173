@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/source_bamboo_hr.egg-info/PKG-INFO
+src/source_bamboo_hr.egg-info/SOURCES.txt
+src/source_bamboo_hr.egg-info/dependency_links.txt
+src/source_bamboo_hr.egg-info/top_level.txt
