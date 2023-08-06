@@ -1,0 +1,13 @@
+pgmigrate/__init__.py,sha256=vgjGvtJys9OW3KRuT1pzpfMNWhhXcLL4hv-IkDI8naw,300
+pgmigrate/action.py,sha256=wWPtCepCFi5itf8ElBld5KvM6_8Tx72cOhhKE4A71a0,2153
+pgmigrate/apps.py,sha256=fetqFigCMEeLQYjti1vAG-_mJZzPK691bi43X7sDnJA,188
+pgmigrate/config.py,sha256=hv2kcBM-JuOsTot1IO_tNkH9tGv5w1xvNqjmzLF76q4,1073
+pgmigrate/core.py,sha256=T_VuJZAr6F-t7hjzFiqmnD38h8lwhkmpFYDflDxGSLM,631
+pgmigrate/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgmigrate/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgmigrate/management/commands/pgmigrate.py,sha256=a9GaIkqbYAO8BSuw2qoQ5Q_EH0rrR6mYcRBZ2P9b1U4,1733
+pgmigrate/version.py,sha256=ilsaC7niuQP2Vyh-s-CML0nscUzQB2tBjRAhu5aRAJU,154
+django_pgmigrate-1.0.0.dist-info/LICENSE,sha256=bOsMPbrECIWYOAqsPawE7zdJ0aT9DbtpSCQQ8mRv0tA,1456
+django_pgmigrate-1.0.0.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+django_pgmigrate-1.0.0.dist-info/METADATA,sha256=XMPVN80Dp_FbfpLCveoXFIsZgNyWFWXcxwnykuopTRE,4284
+django_pgmigrate-1.0.0.dist-info/RECORD,,
