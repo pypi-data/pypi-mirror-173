@@ -1,0 +1,2 @@
+[nbdev]
+stats_n_plots = stats_n_plots._modidx:d
