@@ -1,0 +1,199 @@
+Metadata-Version: 2.1
+Name: mcai_worker_sdk_media
+Version: 2.0.0rc3
+Requires-Dist: json-strong-typing
+License-File: LICENSE
+Summary: MCAI SDK to develop Python worker
+Keywords: AMQP,micro-service,python
+Home-Page: https://gitlab.com/media-cloud-ai/sdks/py_mcai_worker_sdk
+Author: Valentin NOEL <valentin.noel@media-io.com>, Marc-Antoine Arnaud <maarnaud@media-io.com>, Thibaud Le Graverend <thibaud.legraverend@luminvent.com>
+Author-email: Valentin NOEL <valentin.noel@media-io.com>, Marc-Antoine Arnaud <maarnaud@media-io.com>, Thibaud Le Graverend <thibaud.legraverend@luminvent.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://gitlab.com/media-cloud-ai/sdks/py_mcai_worker_sdk
+
+# Python SDK for Media Cloud AI workers
+
+Based on [mcai_worker_sdk](https://gitlab.com/media-cloud-ai/sdks/rs_mcai_worker_sdk), this SDK uses the [PyO3 crate](https://github.com/PyO3/pyo3) to export a compiled module compatible with CPython ABI.
+
+## Build
+
+Before using the Python module you should build it as a CPython library. This will require a virtualenv (where the module will be installed) and [maturin](https://github.com/PyO3/maturin) to compile the module.
+
+```bash
+virtualenv venv # Create your environment
+source venv/bin/activate # Launch it
+```
+
+You can then either build the module in development mode (this will build and install the module in your virtualenv):
+
+```bash
+maturin develop --features extension-module # Build and install the module
+```
+
+Or build the wheel file and install it manually via `pip`:
+
+```bash
+maturin build --features extension-module # Build the wheel file to install the module
+pip install path/to/generated/wheel/file
+```
+
+You will now be able to import the module in your Python's scripts by doing:
+
+```python
+import mcai_worker_sdk as mcai
+```
+
+Check out [maturin's docs](https://www.maturin.rs/distribution.html#build-wheels) for more information on building the module!
+
+### Supported version
+
+We intempt to support as many distribution and architecture as we can, however if `pip` doesn't find any compatible version for your installation it will download the source and try to compile them directly.
+
+This operation supposes that you have at least __Rust 1.62__.
+
+We currently support the following version of Python implementations:
+- [x] CPython 3.7
+- [x] CPython 3.8
+- [x] CPython 3.9
+- [x] CPython 3.10
+- [x] CPython 3.11
+- [x] Pypy 3.8
+- [x] Pypy 3.9
+
+And the following core architectures:
+- [x] x86_64
+
+
+## Test
+
+To run tests you must have `json-strong-typing` installed:
+
+```bash
+pip install json-strong-typing
+```
+
+Then launch tests basically:
+
+```bash
+cargo test
+cargo test --features media
+```
+
+## Usage
+
+### 1. Create your pyproject.toml file
+
+To implement a worker, a `pyproject.toml` file must be created with metadata describing the worker.
+It must at least contain both `project` and `build-system` sections.
+
+Example: (minimal configuration)
+
+```toml
+[project]
+name = "my_python_worker"
+version = "1.2.3"
+description = "My Python worker"
+license = { text = "MIT" }
+
+[build-system]
+requires = []
+```
+
+### 2) Install the Python SDK
+
+Two versions of the SDK are currently available: `mcai_worker_sdk` and `mcai_worker_sdk_media`. This is due to Maturin not supporting Python's extra yet...
+You can install the module via `pip`:
+
+```bash
+pip install mcai_worker_sdk # Or mcai_worker_sdk_media if you're developping a media worker...
+```
+
+### 3) Develop your worker following the guidelines
+
+
+You can now write the code of your worker. The SDK tries to provide a straightforward structure for your code described above.
+
+For further details, please check out the provided examples: [worker.py](examples/worker.py) and [media_worker.py](examples/media_worker.py).
+
+#### Worker parameters
+
+Your worker will surely need parameters to handle the jobs you want him to process. These parameters must be described through a __Python class__ inheriting from `WorkerParameters`. Each parameter type must be explicitly set.
+
+Example:
+
+```python
+import typing
+import mcai_worker_sdk as mcai
+
+class MyWorkerParameters(mcai.WorkerParameters):
+    a_parameter: int
+    another_parameter: typing.Optional[str] = None
+```
+
+#### Worker
+
+The Python worker itself must be defined as a __Python class__ inheriting from `mcai.Worker` and implementing some methods:
+
+
+* `setup(self)`:
+    * Optional worker setup function. May be used to load models, do some checks...
+* `process(self, handle_callback, parameters, job_id) -> dict`  with `parameters` instance of the worker parameter class:
+    * Execute the worker process and return the job result.
+
+If the `media` feature is enabled, the following methods are required:
+
+* `init_process(self, stream_handler, format_context, parameters) -> list` with `parameters` instance of the worker parameter class:
+    * Initialize the media worker process and return a list of `GenericStreamDescriptor`s
+* `process_frames(self, job_id, stream_index, frames) -> dict`:
+    * Process some input audio/video frames and return the job result.
+* `process_ebu_ttml_live(self, job_id, stream_index, ttml_contents) -> dict`:
+    * Process some input EBU TTML frames and return the job result.
+* `ending_process(self)`:
+    * Optional worker ending process method. May be used to clear some objects...
+
+__NB:__ the `process(self, handle_callback, parameters, job_id) -> dict` function is not called when the `media` feature is
+enabled.
+
+
+
+### Running examples
+
+#### Build the Python module
+
+In your virtual environment:
+
+```bash
+maturin develop
+```
+
+#### Simple worker
+
+```bash
+RUST_LOG=debug \
+SOURCE_ORDERS="examples/message.json" \
+PYTHON_WORKER_FILENAME="worker.py" \
+SOURCE_PATH="README.md" \
+DESTINATION_PATH="README.md.out" \
+python worker.py
+```
+
+#### Media worker
+
+First set the media filename:
+
+```bash
+export SOURCE_PATH="/folder/filename.ext"
+```
+
+Then run the SDK with these parameters:
+
+```bash
+RUST_LOG=debug \
+SOURCE_ORDERS="examples/message.json" \
+PYTHON_WORKER_FILENAME="media_worker.py" \
+DESTINATION_PATH="results.json" \
+cargo run --features media
+```
+
