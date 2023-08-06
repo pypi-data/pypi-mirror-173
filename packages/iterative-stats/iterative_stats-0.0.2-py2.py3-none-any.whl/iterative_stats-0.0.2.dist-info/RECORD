@@ -1,0 +1,10 @@
+iterative_stats/abstract_iterative_statistics.py,sha256=SpU1jR0oCljUPCLUyEFTVbS4vhl0dBZlmohJ9_A_dbI,542
+iterative_stats/iterative_covariance.py,sha256=864TcVChNkyRjqbGCB2W3m6KlaUqIS3kk1fMp3VxARs,1378
+iterative_stats/iterative_extrema.py,sha256=NSPSnvJtvCi_ozIXYomFLVYibjSppU4l6UeEHYAftFI,617
+iterative_stats/iterative_mean.py,sha256=sT2ECf7fWXBydukPeg7Oo3G34XyCoXMq5PQ2yMx6lKE,384
+iterative_stats/iterative_variance.py,sha256=F7LLr7QCQX17dcBzIoybBpZGQs0dZpkkOxAOamMdIxU,1098
+iterative_stats/utils/logger.py,sha256=zEcJ-chnA2iVVY_NT2ulY_itPbejSjnwRxSYi8ekG6Y,84
+iterative_stats-0.0.2.dist-info/LICENSE,sha256=LiR2wMLJ1vDjVv0CBX8UYyHj1pUR3csnl-faLWJt6rc,1518
+iterative_stats-0.0.2.dist-info/WHEEL,sha256=PHFpK6NzI_ggIuT3K1jZnq8LfqGqgWVRkpq-d4ZLpGo,92
+iterative_stats-0.0.2.dist-info/METADATA,sha256=IkTW8npXBijY_j6VSsN8IGmuOf5WKFu89nHyKh5NmQU,3206
+iterative_stats-0.0.2.dist-info/RECORD,,
