@@ -1,0 +1,9 @@
+README.md
+setup.py
+libname/__init__.py
+libname/hello.py
+testnododi.egg-info/PKG-INFO
+testnododi.egg-info/SOURCES.txt
+testnododi.egg-info/dependency_links.txt
+testnododi.egg-info/requires.txt
+testnododi.egg-info/top_level.txt
