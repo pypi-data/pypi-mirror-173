@@ -1,0 +1,10 @@
+hollerith/__init__.py,sha256=X83Pup2WLTphDW9posKbPb6LNBmYdNhsz8F9UJQgP64,357
+hollerith/_version.py,sha256=7tIgUhLYDrCmlLlSPVRLqhpNyVq3nvcalTDtAA9jHwI,273
+hollerith/_writer.cpython-39-darwin.so,sha256=jnMQLMNhi-FJLVr6rzJtYgvFdcfc-qXtWT5uKSyjwnU,92432
+hollerith/field.py,sha256=OjKhSVDeWsAoBk8W9tEKik-AH4XhAqQjQdXlKFoYfKA,438
+hollerith/table.py,sha256=bESoQXcdp9RHz_6nt7fYBGZKd_UegNX9oRArrpEBfuU,1841
+hollerith-0.1.0.dist-info/LICENSE,sha256=fxAmHKPinZXp9QSyk4zPSvINdgjPygHq0MblPhdDAaU,1091
+hollerith-0.1.0.dist-info/METADATA,sha256=iOoqD2CSXEq3a8_oWZOUduEU6IE_4Fez7q4tCbFiz3I,2125
+hollerith-0.1.0.dist-info/WHEEL,sha256=pfjXB0CCNW4PSSqQc2t4Up6p3o0jxBnHy_2o38FQkyE,109
+hollerith-0.1.0.dist-info/top_level.txt,sha256=5fBz1HCImI8sTIIVwrXqQhfBOZC27KKfjfZgvaesbVo,10
+hollerith-0.1.0.dist-info/RECORD,,
