@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: MacToManufacturer
+Version: 0.1.0
+Summary: Library to find manufacturer of a device using macaddress.
+Home-page: https://github.com/n1snt/MacToManufacturer
+Author: Nishant Bhandari
+Author-email: getrooted0019@hotmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/n1snt/MacToManufacturer/issues
+Description: # MacToManufacturer
+        
+        #### A simple python library to find the manufacturer of a device by using macaddress.
+        
+        ### How to use:
+        <b>Example:</b>
+        ```
+        from MacToManufacturer import MacToMan
+        
+        macToManObj = MacToMan()
+        results = macToManObj.search("A8-93-4A-DA-6F-19")
+        print(results)
+        ```
+        You can also pass the macaddress seprated by ":"
+        ```
+        from MacToManufacturer import MacToMan
+        
+        macToManObj = MacToMan()
+        results = macToManObj.search("A8:93:4A:DA:6F:19")
+        print(results)
+        ```
+        
+        ### Installation:
+        ```
+        pip3 install MacToManufacturer
+        ```
+        ### How does this work?
+        This library contains csv file which contains the starting 3 octlets and the manufacturer.
+        MacToMan searches through this csv file and returns the manufacturer.
+        #### How the csv is generated?
+        Wireshark has a file which contains all the IEEE lists of mac addresses and manufacturers & more.
+        The file is names manuf.
+        There is a script named as generate_csv.py in script/, It downloads the latest manuf file and converts it to a csv file.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

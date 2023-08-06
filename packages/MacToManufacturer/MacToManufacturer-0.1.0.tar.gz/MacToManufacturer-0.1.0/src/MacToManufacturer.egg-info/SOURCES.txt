@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/MacToManufacturer/__init__.py
+src/MacToManufacturer/main.py
+src/MacToManufacturer.egg-info/PKG-INFO
+src/MacToManufacturer.egg-info/SOURCES.txt
+src/MacToManufacturer.egg-info/dependency_links.txt
+src/MacToManufacturer.egg-info/top_level.txt
+src/MacToManufacturer/data/manuf.csv
