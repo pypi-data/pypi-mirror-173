@@ -1,0 +1,2 @@
+[console_scripts]
+duples_searcher = searcher.main:main
