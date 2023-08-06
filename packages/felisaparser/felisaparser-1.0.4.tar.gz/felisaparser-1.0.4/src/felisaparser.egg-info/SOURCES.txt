@@ -1,0 +1,11 @@
+LICENSE.txt
+setup.cfg
+setup.py
+src/__init__.py
+src/felisaparser/__init__.py
+src/felisaparser/felisaparser.py
+src/felisaparser.egg-info/PKG-INFO
+src/felisaparser.egg-info/SOURCES.txt
+src/felisaparser.egg-info/dependency_links.txt
+src/felisaparser.egg-info/requires.txt
+src/felisaparser.egg-info/top_level.txt
