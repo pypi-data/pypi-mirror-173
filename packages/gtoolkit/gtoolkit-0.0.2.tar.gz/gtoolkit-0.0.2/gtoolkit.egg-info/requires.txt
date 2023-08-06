@@ -1,0 +1,8 @@
+redis
+pymongo
+kafka-python
+xlsxwriter
+openpyxl
+loguru
+parsel
+requests
