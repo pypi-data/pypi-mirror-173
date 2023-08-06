@@ -1,0 +1,1 @@
+print("Thanks for using Gergely Hornyak's module\nHave fun exploring it!")
