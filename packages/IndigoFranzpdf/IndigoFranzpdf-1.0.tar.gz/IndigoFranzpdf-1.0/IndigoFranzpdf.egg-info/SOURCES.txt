@@ -1,0 +1,10 @@
+License
+README.md
+setup.py
+IndigoFranzpdf/__init__.py
+IndigoFranzpdf/pdf2image.py
+IndigoFranzpdf/pdf2text.py
+IndigoFranzpdf.egg-info/PKG-INFO
+IndigoFranzpdf.egg-info/SOURCES.txt
+IndigoFranzpdf.egg-info/dependency_links.txt
+IndigoFranzpdf.egg-info/top_level.txt
