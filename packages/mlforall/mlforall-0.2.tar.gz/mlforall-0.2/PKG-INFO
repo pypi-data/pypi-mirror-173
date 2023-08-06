@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: mlforall
+Version: 0.2
+Summary: Library that easily allows to create machine learning progress for more unexperiencied programmers.
+Home-page: https://github.com/UnaiTorrecilla/MLForAll
+Author: Unai Torrecilla
+Author-email: unai.torrecilla@alumni.mondragon.edu
+License: MIT
+Download-URL: https://github.com/UnaiTorrecilla/MLForAll/archive/refs/tags/v_02.tar.gz
+Description: UNKNOWN
+Keywords: Machine learning,Easy to use
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
