@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: declara
+Version: 0.1
+Summary: Declara, a library for generating Boreas declaration forms
+Author-email: Tobias Sijtsma <tobias@leanslate.nl>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests >=2.6
+Requires-Dist: pypdf2 >=2.11
+Requires-Dist: reportlab >=3.6
+Project-URL: Home, https://leanslate.nl/
+
+# declara
+
+Programmatically fill out your Boreas declaration forms with Python.
+
+See `app.py` for example use.
