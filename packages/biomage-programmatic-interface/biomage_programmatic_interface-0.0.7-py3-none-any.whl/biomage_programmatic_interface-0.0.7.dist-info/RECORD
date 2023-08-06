@@ -1,0 +1,11 @@
+biomage_programmatic_interface/__init__.py,sha256=dRoFjEo9ijS7m_4DpDn2uX6xelZhuepoIAmN-ny6J2Y,64
+biomage_programmatic_interface/cognito.config.json,sha256=nSY0pZt7Jff3S72f2X4rfT3bFJ121mmSpLNpLBsLHMY,48
+biomage_programmatic_interface/connection.py,sha256=8DxODLyy2Ba93oCiMVetEHIK4juaHleE0yeuXEWtWSI,3651
+biomage_programmatic_interface/sample.py,sha256=VrZXChsdn3JnQCUocxeV0Q4w_tcoWtDaeKvb868-Bqk,1462
+biomage_programmatic_interface/sample_file.py,sha256=2yk1qmhChovJ2DneMUOAt0hoIoVMGMc2Q5zMRfjkXnA,2015
+biomage_programmatic_interface/utils.py,sha256=wcxKerrOs85wgnm7PLOt6gIg82Uk61h844JJW9V5NqU,207
+biomage_programmatic_interface-0.0.7.dist-info/LICENSE,sha256=nq_pZ80unUx778AStVNQ1No5xGy04i7RK4d6BSn2JLg,1074
+biomage_programmatic_interface-0.0.7.dist-info/METADATA,sha256=N8XaXJujdAz6V1vpofOjNLb9_j95UlFlHsMDuN2KWa4,1988
+biomage_programmatic_interface-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+biomage_programmatic_interface-0.0.7.dist-info/top_level.txt,sha256=cFGmWpkAIW333RD6BA6ParT6Z6xoFR-YDIey96v0f_Q,31
+biomage_programmatic_interface-0.0.7.dist-info/RECORD,,
