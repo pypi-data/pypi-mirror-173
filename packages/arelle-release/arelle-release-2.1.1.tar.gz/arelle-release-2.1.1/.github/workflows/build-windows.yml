@@ -1,0 +1,120 @@
+name: Build for Windows
+
+on:
+  workflow_dispatch:
+    inputs:
+      edgar_renderer_ref:
+        description: 'Arelle/EdgarRenderer branch, tag or SHA to checkout (blank for default)'
+        required: false
+        type: string
+      ixbrl_viewer_ref:
+        description: 'Workiva/ixbrl-viewer branch, tag or SHA to checkout (blank for default)'
+        required: false
+        type: string
+      node_version:
+        default: 16
+        description: 'Node.js version to use'
+        required: true
+        type: string
+      python_version:
+        default: '3.10'
+        description: 'Python version to use'
+        required: true
+        type: string
+      xule_ref:
+        description: 'xbrlus/xule branch, tag or SHA to checkout (blank for default)'
+        required: false
+        type: string
+
+jobs:
+  build-windows:
+    environment: release
+    runs-on: windows-2022
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout arelle
+      uses: actions/checkout@v3.1.0
+      with:
+        fetch-depth: 0
+    - name: Checkout EdgarRenderer
+      uses: actions/checkout@v3.1.0
+      with:
+        repository: Arelle/EdgarRenderer
+        path: arelle/plugin/EdgarRenderer
+        ref: ${{ inputs.edgar_renderer_ref }}
+    - shell: cmd
+      run: rmdir /s /q arelle\plugin\EdgarRenderer\.git
+    - name: Checkout xule
+      uses: actions/checkout@v3.1.0
+      with:
+        repository: xbrlus/xule
+        path: xule
+        ref: ${{ inputs.xule_ref }}
+    - name: Move plugins
+      run: |
+        mv xule\plugin\validate\* arelle\plugin\validate\
+        rmdir xule\plugin\validate
+        mv xule\plugin\* arelle\plugin\
+    - shell: cmd
+      run: rmdir /s /q xule
+    - name: Checkout ixbrl-viewer
+      uses: actions/checkout@v3.1.0
+      with:
+        repository: Workiva/ixbrl-viewer
+        path: ixbrl-viewer
+        ref: ${{ inputs.ixbrl_viewer_ref }}
+    - name: Set up Node JS
+      uses: actions/setup-node@v3.5.1
+      with:
+        node-version: ${{ inputs.node_version }}
+    - name: Build ixbrl-viewer
+      working-directory: ixbrl-viewer
+      run: |
+        npm install
+        npm run prod
+    - shell: cmd
+      run: move ixbrl-viewer\iXBRLViewerPlugin arelle\plugin\iXBRLViewerPlugin && rmdir /s /q ixbrl-viewer
+    - name: Set up Python ${{ inputs.python_version }}
+      uses: actions/setup-python@v4.3.0
+      with:
+        cache: 'pip' # caching pip dependencies
+        check-latest: true
+        python-version: ${{ inputs.python_version }}
+    - name: Install NSIS
+      run: choco install nsis
+    - name: Install requirements
+      run: |
+        pip install wheel
+        pip install -r requirements-build.txt
+    - name: Capture version before localization
+      run: echo ("SETUPTOOLS_SCM_PRETEND_VERSION=" + (python -W ignore distro.py --version)) >> $env:GITHUB_ENV
+    - name: Make directories
+      run: mkdir build,dist
+    - name: Rebuild messages.pot internationalization file
+      run: python pygettext.py -v -o arelle\locale\messages.pot arelle\*.pyw arelle\*.py
+    - name: Regenerate messages catalog (doc/messagesCatalog.xml)
+      run: python generateMessagesCatalog.py
+    - name: Build exe
+      run: python distro.py build_exe
+    - name: Copy Tktable2.11
+      run: xcopy libs\win64\Tktable2.11 build\exe.win-amd64-${{ inputs.python_version }}\lib\tcltk\tk8.6 /y
+    - name: Delete .git
+      shell: cmd
+      run: if exist "build\exe.win-amd64-${{ inputs.python_version }}\.git" rmdir /s /q build\exe.win-amd64-${{ inputs.python_version }}\.git
+    - name: Make installer
+      run: makensis installWin64.nsi
+    - name: Zip distribution
+      run: 7z a -tzip ..\..\dist\arelle-win-x64.zip *
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3.1.1
+      with:
+        name: windows distribution
+        path: dist
+    - name: Upload release artifact
+      uses: softprops/action-gh-release@v0.1.14
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        fail_on_unmatched_files: true
+        files: dist\*
