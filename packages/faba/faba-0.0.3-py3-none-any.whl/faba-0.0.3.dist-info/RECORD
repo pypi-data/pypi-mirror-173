@@ -1,0 +1,10 @@
+faba/__init__.py,sha256=rNRfPOMAPcj14Ma8d3ZiNdDdg7vleEfM4ixx-eyrD6w,61
+faba/_version.py,sha256=REVKpzwVuFn6P6Tz3YLc89LvGNG1k42JofRD6DBaJEA,100
+faba/command.py,sha256=xVtpnhk8KVPOe61dH50mGYvWgFp-rK0TKpcVJoKibL4,4072
+faba/exception.py,sha256=fuXnZlsxGpKSEGxEfEa8ZSJ2L9rRpBAaYPFqizkByvM,413
+faba/flag.py,sha256=GS5x1U0nO9WwIse5Zdt1vUrDczYs9LwGy7_TCtMd33k,9856
+faba-0.0.3.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+faba-0.0.3.dist-info/METADATA,sha256=nGR-89-la5e25EDpiq3i3IZtp3pXfMz9k5ecdQ7S_A0,40416
+faba-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+faba-0.0.3.dist-info/top_level.txt,sha256=d3x4Mz2wTAHqYJPiI4cZ1CkkH4woKxZZ9GBosRit5m8,5
+faba-0.0.3.dist-info/RECORD,,
