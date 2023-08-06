@@ -1,0 +1,3 @@
+[console_scripts]
+ft-cli=ft_cli.main:app
+
