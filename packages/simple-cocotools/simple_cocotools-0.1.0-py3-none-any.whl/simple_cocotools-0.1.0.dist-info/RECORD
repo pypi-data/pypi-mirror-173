@@ -1,0 +1,11 @@
+simple_cocotools/__init__.py,sha256=l2TcqCqFoYi0g02OkmDsl8h8N1wA1JHrGZSALEL4WUg,67
+simple_cocotools/detections.py,sha256=bonZeJtbmQwDwofg__CoV5d0-ImTlezdPL0pbZ8d6fs,1227
+simple_cocotools/evaluator.py,sha256=3a36og1-Fyclmc3qJBPno8c-9NoXqfNI8jIVGD354vg,6628
+simple_cocotools/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_cocotools/utils/coco.py,sha256=VI38O6HvaGmDD3QjzESG6XXad8BXsqlBS4WSCzv2Z7Y,5758
+simple_cocotools/utils/data.py,sha256=qllnGPrHo3Li0Ffe3u66cluDX32ctpKJrzrWfNBv9fg,147
+simple_cocotools-0.1.0.dist-info/LICENSE,sha256=hRXuyjlIpCesw-fD9ONCbyH2AZxw9AKL2IMx3EcCOEs,1067
+simple_cocotools-0.1.0.dist-info/METADATA,sha256=5zlUX6FTogkN-HtLP_9ru5onnMasft5s47vJI1tba24,6821
+simple_cocotools-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+simple_cocotools-0.1.0.dist-info/top_level.txt,sha256=CQhuz1a9FXSoDocG73jxBiwScJJAnn13Z9w5F-8bhYY,17
+simple_cocotools-0.1.0.dist-info/RECORD,,
