@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sidetrek-mlflow-plugin
+Version: 0.0.1
+Summary: Sidetrek plugin for MLflow
+Home-page: UNKNOWN
+Author: Nabil Ahmed
+Author-email: nabil@sidetrek.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: mlflow
+Requires-Dist: boto3
+
+UNKNOWN
+

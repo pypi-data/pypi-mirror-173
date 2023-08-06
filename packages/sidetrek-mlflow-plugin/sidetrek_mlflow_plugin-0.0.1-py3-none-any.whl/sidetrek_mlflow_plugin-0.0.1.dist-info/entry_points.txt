@@ -1,0 +1,3 @@
+[mlflow.request_header_provider]
+sidetrek-request-plugin=sidetrek_mlflow_plugin.sidetrek_request_header_provider:SideTrekRequestHeaderProvider
+
