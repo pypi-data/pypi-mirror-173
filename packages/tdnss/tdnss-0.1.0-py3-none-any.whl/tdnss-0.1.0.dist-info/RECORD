@@ -1,0 +1,9 @@
+tdnss/__init__.py,sha256=g2LyK_IFEwbh1UyxJ-1hpXK9F1KeBONGKXKSPLpcKi4,489
+tdnss/baseresponse.py,sha256=hh8lu3f-tdW71Mf3IbfbGjVv9boF_-QtDxVGf375SdE,1811
+tdnss/config.py,sha256=EcAV7_iz0sk5G9lPlhJKVadywFJvp42HUUFMeMSi-u4,5559
+tdnss/connection.py,sha256=d71w9Wv5C9PNGsgV7i0-e867vRuRyoYcyZhiWCPA9Ls,20257
+tdnss/customformatter.py,sha256=LoT7HpmTPu6-v_QER9eCZx1ELnCohgIOcNfGoMkDNVI,916
+tdnss-0.1.0.dist-info/METADATA,sha256=3slnFpLMoOdVv07kIqJnIG96MTif9TPcSMfR1Vi9QbE,2454
+tdnss-0.1.0.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+tdnss-0.1.0.dist-info/licenses/COPYING,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+tdnss-0.1.0.dist-info/RECORD,,
