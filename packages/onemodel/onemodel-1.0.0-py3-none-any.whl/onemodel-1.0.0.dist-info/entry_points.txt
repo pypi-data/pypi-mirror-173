@@ -1,0 +1,3 @@
+[console_scripts]
+onemodel=onemodel.__main__:main
+
