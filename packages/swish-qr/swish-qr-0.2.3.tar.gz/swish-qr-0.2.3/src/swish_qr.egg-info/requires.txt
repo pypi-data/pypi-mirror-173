@@ -1,0 +1,9 @@
+pillow
+numpy
+
+[dev]
+black
+flake8
+pytest
+invoke
+pytest-cov
