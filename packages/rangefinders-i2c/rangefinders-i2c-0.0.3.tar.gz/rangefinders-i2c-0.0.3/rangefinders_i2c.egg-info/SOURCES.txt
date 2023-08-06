@@ -1,0 +1,10 @@
+README.md
+setup.py
+rangefinders_i2c/ReadSensor.py
+rangefinders_i2c/SensorManagment.py
+rangefinders_i2c/__init__.py
+rangefinders_i2c.egg-info/PKG-INFO
+rangefinders_i2c.egg-info/SOURCES.txt
+rangefinders_i2c.egg-info/dependency_links.txt
+rangefinders_i2c.egg-info/requires.txt
+rangefinders_i2c.egg-info/top_level.txt
