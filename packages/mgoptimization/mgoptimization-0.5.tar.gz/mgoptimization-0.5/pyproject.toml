@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling", "numpy", "pandas", "numba", "jupyter", "matplotlib", "pyswarms", "requests"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mgoptimization"
+version = "0.5"
+authors = [
+  { name="Andreas Sahlberg", email="asahl@kth.se" },
+]
+description = "A tool to optimize the generation system of hybrid mini-grids"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+dependencies = ["hatchling", "numpy", "pandas", "numba", "jupyter", "matplotlib", "pyswarms", "requests"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AndreasSahlberg/hybrid-mini-grid-optimization"
+"Bug Tracker" = "https://github.com/AndreasSahlberg/hybrid-mini-grid-optimization/issues"
