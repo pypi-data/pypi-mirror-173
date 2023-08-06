@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: jupyterlab-day
+Version: 0.1.0
+Summary: Dark theme for JupyterLab
+Home-page: https://github.com/martinRenou/jupyterlab-day
+Author: Martin Renou
+Author-email: martin.renou@gmail.com
+License: BSD-3-Clause
+Keywords: Jupyter,JupyterLab,JupyterLab3
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Jupyter :: JupyterLab
+Classifier: Framework :: Jupyter :: JupyterLab :: 3
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions
+Classifier: Framework :: Jupyter :: JupyterLab :: Extensions :: Prebuilt
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# jupyterlab-day
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/martinRenou/jupyterlab-day/main?urlpath=lab)
+
+JupyterLab light theme inspired by the Github light theme
+
+See also [jupyterlab-night](https://github.com/martinRenou/jupyterlab-night).
+
+## Requirements
+
+* JupyterLab >= 3.0
+
+## Install (coming soon)
+
+<!-- To install the extension, execute:
+
+```bash
+conda install jupyterlab-day -c conda-forge
+```
+
+or
+
+```bash
+pip install jupyterlab-day
+``` -->
+
+![jupyterlab-day](jupyterlab-day.png)
