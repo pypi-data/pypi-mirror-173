@@ -1,0 +1,13 @@
+ropwr/__init__.py,sha256=1b2_JlRdtFQzlsSHVtBqOm2ufJOtk8KLbV-Og3OA09E,132
+ropwr/_version.py,sha256=e6aGg4sxTYiyshAbW98gDoekO-J6qYKpZNzhVZhaYUk,50
+ropwr/base.py,sha256=rhxS0ZIKp8uUaEFBXd23-MYprJMZmALLmZk6aBaNoPY,17564
+ropwr/cvx.py,sha256=nYVYn4kBrELRdPT6MRd_ctj-u5W_qFOwLglRDoIL0-A,1460
+ropwr/cvx_qp.py,sha256=2FS6j0InRFatbOjl0Zkep8mai3LvtR6gEQNw6WVMhu8,4072
+ropwr/cvx_socp.py,sha256=31G2W6yUyVQzVhQ93OjTrRp67YSWukGVIVe7CzwUWHE,5629
+ropwr/direct.py,sha256=Mn1AfxC9R02xnmKC2_hM3nrQGFmSDHhWoue5cT2LrnE,1934
+ropwr/matrices.py,sha256=0TJtNB1sA-kbTYKtCehjtbPfw3rWBvusx8snCk7ttoI,3712
+ropwr-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ropwr-0.4.0.dist-info/METADATA,sha256=VLj74XeIws8jacFZmUD4xHct5d0Rem7QmddCv1w7LMs,1199
+ropwr-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ropwr-0.4.0.dist-info/top_level.txt,sha256=ctZvFGcuFAVLbT07hh3lKTWkbbeZQ3_KTi_agEU3b_4,6
+ropwr-0.4.0.dist-info/RECORD,,
