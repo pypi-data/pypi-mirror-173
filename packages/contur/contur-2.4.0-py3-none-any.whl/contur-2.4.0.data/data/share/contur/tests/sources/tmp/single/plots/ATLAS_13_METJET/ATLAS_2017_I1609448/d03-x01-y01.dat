@@ -1,0 +1,75 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LeftMargin=1.5
+LogY=0
+Title=VBF phase space
+XLabel=$m_\mathrm{jj}$ [GeV]
+LegendAlign=l
+LegendXPos=0.05
+LegendYPos=0.3
+YLabel=$R^\mathrm{miss}$
+DrawOnly=/REF/ATLAS_2017_I1609448/d03-x01-y01 /THY/ATLAS_2017_I1609448/d03-x01-y01 /ATLAS_2017_I1609448/d03-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2017_I1609448/d03-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2017_I1609448/d03-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/REF/ATLAS_2017_I1609448/d03-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+02	4.000000e+02	7.860000e+00	5.162364e-01	5.162364e-01
+4.000000e+02	6.000000e+02	7.150000e+00	4.248529e-01	5.234501e-01
+6.000000e+02	1.000000e+03	6.930000e+00	4.579301e-01	5.946427e-01
+1.000000e+03	2.000000e+03	7.050000e+00	6.621933e-01	9.374433e-01
+2.000000e+03	4.000000e+03	7.460000e+00	1.442671e+00	2.820815e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2017_I1609448/d03-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0.07810250000000001, dn: 0.07810250000000001}}, 1: {"": {up: 0.1029563, dn: 0.1029563}}, 2: {"": {up: 0.117047, dn: 0.117047}}, 3: {"": {up: 0.1552417, dn: 0.1552417}}, 4: {"": {up: 0.4701064, dn: 0.4701064}}}
+IsRef=1
+LineColor=green
+Path=/THY/ATLAS_2017_I1609448/d03-x01-y01
+RemoveOptions=0
+Title=SM (Sherpa $\times$ NNLO)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+02	4.000000e+02	7.090000e+00	7.810250e-02	7.810250e-02
+4.000000e+02	6.000000e+02	7.090000e+00	1.029563e-01	1.029563e-01
+6.000000e+02	1.000000e+03	7.000000e+00	1.170470e-01	1.170470e-01
+1.000000e+03	2.000000e+03	7.060000e+00	1.552417e-01	1.552417e-01
+2.000000e+03	4.000000e+03	7.110000e+00	4.701064e-01	4.701064e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2017_I1609448/d03-x01-y01-SM
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0.07810260613803308, dn: 0.07810260613803308}}, 1: {"": {up: 0.1029563, dn: 0.1029563}}, 2: {"": {up: 0.1170472305359939, dn: 0.1170472305359939}}, 3: {"": {up: 0.1552458530367497, dn: 0.1552458530367497}}, 4: {"": {up: 0.4701587070135988, dn: 0.4701587070135988}}}
+LineColor=blue
+Path=/ATLAS_2017_I1609448/d03-x01-y01-SM
+Title=SM as BG: Bin 4,  0\% (  1\% expected)
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+02	4.000000e+02	7.094415e+00	7.810261e-02	7.810261e-02
+4.000000e+02	6.000000e+02	7.093289e+00	1.029563e-01	1.029563e-01
+6.000000e+02	1.000000e+03	6.998928e+00	1.170472e-01	1.170472e-01
+1.000000e+03	2.000000e+03	7.063178e+00	1.552459e-01	1.552459e-01
+2.000000e+03	4.000000e+03	7.125783e+00	4.701587e-01	4.701587e-01
+# END HISTO1D
+

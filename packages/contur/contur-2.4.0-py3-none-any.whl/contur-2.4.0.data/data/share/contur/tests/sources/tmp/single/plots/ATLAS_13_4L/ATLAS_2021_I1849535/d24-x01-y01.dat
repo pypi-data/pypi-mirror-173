@@ -1,0 +1,121 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LogY=1
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LeftMargin=1.5
+Title=$\cos\theta^*$ between first dilepton pair in the $ZZ$ mass region.
+XLabel=$\cos\theta^*$
+YLabel=$d\sigma/d\cos\theta^*$ (fb)
+DrawOnly=/REF/ATLAS_2021_I1849535/d24-x01-y01 /THY/ATLAS_2021_I1849535/d24-x01-y01 /ATLAS_2021_I1849535/d24-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2021_I1849535/d24-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2021_I1849535/d24-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {Background: {dn: -0.03928, up: 0.03928}, Data Driven: {dn: -0.09917, up: 0.09917}, Data stat.: {dn: -2.612, up: 2.612}, Electron Reco.: {dn: -0.01769, up: 0.01769}, Luminosity: {dn: -0.3272, up: 0.3272}, MC stat.: {dn: -0.2097, up: 0.2097}, Muon Reco.: {dn: -0.1062, up: 0.1062}, Pile-up: {dn: -0.1261, up: 0.1261}, Theory: {dn: -0.01783, up: 0.01783}}, 1: {Background: {dn: -0.03979, up: 0.03979}, Data Driven: {dn: -0.07577, up: 0.07577}, Data stat.: {dn: -2.992, up: 2.992}, Electron Reco.: {dn: -0.01917, up: 0.01917}, Luminosity: {dn: -0.3878, up: 0.3878}, MC stat.: {dn: -0.1971, up: 0.1971}, Muon Reco.: {dn: -0.0472, up: 0.0472}, Pile-up: {dn: -0.1752, up: 0.1752}, Theory: {dn: -0.01745, up: 0.01745}}, 2: {Background: {dn: -0.04371, up: 0.04371}, Data Driven: {dn: -0.01564, up: 0.01564}, Data stat.: {dn: -2.783, up: 2.783}, Electron Reco.: {dn: -0.02037, up: 0.02037}, Luminosity: {dn: -0.3765, up: 0.3765}, MC stat.: {dn: -0.211, up: 0.211}, Muon Reco.: {dn: -0.02363, up: 0.02363}, Pile-up: {dn: -0.1432, up: 0.1432}, Theory: {dn: -0.01714, up: 0.01714}}, 3: {Background: {dn: -0.05531, up: 0.05531}, Data Driven: {dn: -0.02962, up: 0.02962}, Data stat.: {dn: -3.264, up: 3.264}, Electron Reco.: {dn: -0.03802, up: 0.03802}, Luminosity: {dn: -0.4773, up: 0.4773}, MC stat.: {dn: -0.2576, up: 0.2576}, Muon Reco.: {dn: -0.02488, up: 0.02488}, Pile-up: {dn: -0.1641, up: 0.1641}, Theory: {dn: -0.01571, up: 0.01571}}, 4: {Background: {dn: -0.05231, up: 0.05231}, Data Driven: {dn: -0.04864, up: 0.04864}, Data stat.: {dn: -2.145, up: 2.145}, Electron Reco.: {dn: -0.03935, up: 0.03935}, Luminosity: {dn: -0.451, up: 0.451}, MC stat.: {dn: -0.1608, up: 0.1608}, Muon Reco.: {dn: -0.02061, up: 0.02061}, Pile-up: {dn: -0.1124, up: 0.1124}, Theory: {dn: -0.01707, up: 0.01707}}, 5: {Background: {dn: -0.02135, up: 0.02135}, Data Driven: {dn: -0.04087, up: 0.04087}, Data stat.: {dn: -2.06, up: 2.06}, Electron Reco.: {dn: -0.04525, up: 0.04525}, Luminosity: {dn: -0.4388, up: 0.4388}, MC stat.: {dn: -0.1688, up: 0.1688}, Muon Reco.: {dn: -0.01782, up: 0.01782}, Pile-up: {dn: -0.05337, up: 0.05337}, Theory: {dn: -0.01747, up: 0.01747}}, 6: {Background: {dn: -0.03086, up: 0.03086}, Data Driven: {dn: -0.01982, up: 0.01982}, Data stat.: {dn: -1.805, up: 1.805}, Electron Reco.: {dn: -0.03515, up: 0.03515}, Luminosity: {dn: -0.36, up: 0.36}, MC stat.: {dn: -0.1343, up: 0.1343}, Muon Reco.: {dn: -0.01302, up: 0.01302}, Pile-up: {dn: -0.1442, up: 0.1442}, Theory: {dn: -0.0159, up: 0.0159}}, 7: {Background: {dn: -0.04533, up: 0.04533}, Data Driven: {dn: -0.01955, up: 0.01955}, Data stat.: {dn: -1.798, up: 1.798}, Electron Reco.: {dn: -0.0339, up: 0.0339}, Luminosity: {dn: -0.3579, up: 0.3579}, MC stat.: {dn: -0.1276, up: 0.1276}, Muon Reco.: {dn: -0.01284, up: 0.01284}, Pile-up: {dn: -0.0945, up: 0.0945}, Theory: {dn: -0.01552, up: 0.01552}}, 8: {Background: {dn: -0.03038, up: 0.03038}, Data Driven: {dn: -0.02252, up: 0.02252}, Data stat.: {dn: -1.603, up: 1.603}, Electron Reco.: {dn: -0.03308, up: 0.03308}, Luminosity: {dn: -0.3956, up: 0.3956}, MC stat.: {dn: -0.1241, up: 0.1241}, Muon Reco.: {dn: -0.01423, up: 0.01423}, Pile-up: {dn: -0.08381, up: 0.08381}, Theory: {dn: -0.01559, up: 0.01559}}, 9: {Background: {dn: -0.01122, up: 0.01122}, Data Driven: {dn: -0.04016, up: 0.04016}, Data stat.: {dn: -1.732, up: 1.732}, Electron Reco.: {dn: -0.03732, up: 0.03732}, Luminosity: {dn: -0.4557, up: 0.4557}, MC stat.: {dn: -0.1341, up: 0.1341}, Muon Reco.: {dn: -0.01566, up: 0.01566}, Pile-up: {dn: -0.1166, up: 0.1166}, Theory: {dn: -0.01504, up: 0.01504}}, 10: {Background: {dn: -0.022, up: 0.022}, Data Driven: {dn: -0.04235, up: 0.04235}, Data stat.: {dn: -1.462, up: 1.462}, Electron Reco.: {dn: -0.03409, up: 0.03409}, Luminosity: {dn: -0.4415, up: 0.4415}, MC stat.: {dn: -0.1205, up: 0.1205}, Muon Reco.: {dn: -0.01542, up: 0.01542}, Pile-up: {dn: -0.1141, up: 0.1141}, Theory: {dn: -0.01476, up: 0.01476}}, 11: {Background: {dn: -0.07256, up: 0.07256}, Data Driven: {dn: -0.0465, up: 0.0465}, Data stat.: {dn: -1.631, up: 1.631}, Electron Reco.: {dn: -0.03142, up: 0.03142}, Luminosity: {dn: -0.4014, up: 0.4014}, MC stat.: {dn: -0.1341, up: 0.1341}, Muon Reco.: {dn: -0.01354, up: 0.01354}, Pile-up: {dn: -0.09836, up: 0.09836}, Theory: {dn: -0.01461, up: 0.01461}}, 12: {Background: {dn: -0.0483, up: 0.0483}, Data Driven: {dn: -0.03872, up: 0.03872}, Data stat.: {dn: -1.779, up: 1.779}, Electron Reco.: {dn: -0.04045, up: 0.04045}, Luminosity: {dn: -0.493, up: 0.493}, MC stat.: {dn: -0.1473, up: 0.1473}, Muon Reco.: {dn: -0.01572, up: 0.01572}, Pile-up: {dn: -0.1402, up: 0.1402}, Theory: {dn: -0.01554, up: 0.01554}}, 13: {Background: {dn: -0.2038, up: 0.2038}, Data Driven: {dn: -0.009128, up: 0.009128}, Data stat.: {dn: -1.972, up: 1.972}, Electron Reco.: {dn: -0.03838, up: 0.03838}, Luminosity: {dn: -0.3962, up: 0.3962}, MC stat.: {dn: -0.1663, up: 0.1663}, Muon Reco.: {dn: -0.01369, up: 0.01369}, Pile-up: {dn: -0.1101, up: 0.1101}, Theory: {dn: -0.01713, up: 0.01713}}, 14: {Background: {dn: -0.2232, up: 0.2232}, Data Driven: {dn: -0.002013, up: 0.002013}, Data stat.: {dn: -1.863, up: 1.863}, Electron Reco.: {dn: -0.03334, up: 0.03334}, Luminosity: {dn: -0.3566, up: 0.3566}, MC stat.: {dn: -0.1445, up: 0.1445}, Muon Reco.: {dn: -0.01364, up: 0.01364}, Pile-up: {dn: -0.06599, up: 0.06599}, Theory: {dn: -0.01567, up: 0.01567}}, 15: {Background: {dn: -0.08863, up: 0.08863}, Data Driven: {dn: -0.01821, up: 0.01821}, Data stat.: {dn: -2.033, up: 2.033}, Electron Reco.: {dn: -0.03669, up: 0.03669}, Luminosity: {dn: -0.4073, up: 0.4073}, MC stat.: {dn: -0.1714, up: 0.1714}, Muon Reco.: {dn: -0.01634, up: 0.01634}, Pile-up: {dn: -0.133, up: 0.133}, Theory: {dn: -0.01522, up: 0.01522}}, 16: {Background: {dn: -0.08359, up: 0.08359}, Data Driven: {dn: -0.03573, up: 0.03573}, Data stat.: {dn: -1.997, up: 1.997}, Electron Reco.: {dn: -0.03188, up: 0.03188}, Luminosity: {dn: -0.3803, up: 0.3803}, MC stat.: {dn: -0.1566, up: 0.1566}, Muon Reco.: {dn: -0.01726, up: 0.01726}, Pile-up: {dn: -0.1003, up: 0.1003}, Theory: {dn: -0.01755, up: 0.01755}}, 17: {Background: {dn: -0.08525, up: 0.08525}, Data Driven: {dn: -0.05013, up: 0.05013}, Data stat.: {dn: -3.132, up: 3.132}, Electron Reco.: {dn: -0.04018, up: 0.04018}, Luminosity: {dn: -0.4994, up: 0.4994}, MC stat.: {dn: -0.2909, up: 0.2909}, Muon Reco.: {dn: -0.02564, up: 0.02564}, Pile-up: {dn: -0.1927, up: 0.1927}, Theory: {dn: -0.01817, up: 0.01817}}, 18: {Background: {dn: -0.07241, up: 0.07241}, Data Driven: {dn: -0.06225, up: 0.06225}, Data stat.: {dn: -3.132, up: 3.132}, Electron Reco.: {dn: -0.02642, up: 0.02642}, Luminosity: {dn: -0.4276, up: 0.4276}, MC stat.: {dn: -0.2405, up: 0.2405}, Muon Reco.: {dn: -0.02832, up: 0.02832}, Pile-up: {dn: -0.2116, up: 0.2116}, Theory: {dn: -0.01643, up: 0.01643}}, 19: {Background: {dn: -0.005654, up: 0.005654}, Data Driven: {dn: -0.05242, up: 0.05242}, Data stat.: {dn: -2.696, up: 2.696}, Electron Reco.: {dn: -0.02125, up: 0.02125}, Luminosity: {dn: -0.3439, up: 0.3439}, MC stat.: {dn: -0.1912, up: 0.1912}, Muon Reco.: {dn: -0.03987, up: 0.03987}, Pile-up: {dn: -0.1444, up: 0.1444}, Theory: {dn: -0.02377, up: 0.02377}}, 20: {Background: {dn: -0.09488, up: 0.09488}, Data Driven: {dn: -0.06632, up: 0.06632}, Data stat.: {dn: -3.104, up: 3.104}, Electron Reco.: {dn: -0.02046, up: 0.02046}, Luminosity: {dn: -0.3835, up: 0.3835}, MC stat.: {dn: -0.2104, up: 0.2104}, Muon Reco.: {dn: -0.128, up: 0.128}, Pile-up: {dn: -0.1601, up: 0.1601}, Theory: {dn: -0.05414, up: 0.05414}}}
+IsRef=1
+Path=/REF/ATLAS_2021_I1849535/d24-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+-1.000000e+00	-9.500000e-01	1.978000e+01	2.648163e+00	2.648163e+00
+-9.500000e-01	-9.000000e-01	2.326600e+01	3.030218e+00	3.030218e+00
+-9.000000e-01	-8.500000e-01	2.259000e+01	2.820512e+00	2.820512e+00
+-8.500000e-01	-8.000000e-01	2.839500e+01	3.313766e+00	3.313766e+00
+-8.000000e-01	-7.000000e-01	2.688500e+01	2.202336e+00	2.202336e+00
+-7.000000e-01	-6.000000e-01	2.615100e+01	2.114777e+00	2.114777e+00
+-6.000000e-01	-5.000000e-01	2.157700e+01	1.851880e+00	1.851880e+00
+-5.000000e-01	-4.000000e-01	2.142500e+01	1.841223e+00	1.841223e+00
+-4.000000e-01	-2.500000e-01	2.359400e+01	1.658766e+00	1.658766e+00
+-2.500000e-01	-1.000000e-01	2.705700e+01	1.800741e+00	1.800741e+00
+-1.000000e-01	1.000000e-01	2.623600e+01	1.537466e+00	1.537466e+00
+1.000000e-01	2.500000e-01	2.377900e+01	1.690489e+00	1.690489e+00
+2.500000e-01	4.000000e-01	2.915100e+01	1.858817e+00	1.858817e+00
+4.000000e-01	5.000000e-01	2.371400e+01	2.032021e+00	2.032021e+00
+5.000000e-01	6.000000e-01	2.142800e+01	1.916907e+00	1.916907e+00
+6.000000e-01	7.000000e-01	2.437900e+01	2.087123e+00	2.087123e+00
+7.000000e-01	8.000000e-01	2.284300e+01	2.043797e+00	2.043797e+00
+8.000000e-01	8.500000e-01	2.976300e+01	3.192642e+00	3.192642e+00
+8.500000e-01	9.000000e-01	2.561700e+01	3.178957e+00	3.178957e+00
+9.000000e-01	9.500000e-01	2.079300e+01	2.729373e+00	2.729373e+00
+9.500000e-01	1.000000e+00	2.302900e+01	3.144030e+00	3.144030e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2021_I1849535/d24-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 1.309, dn: 1.309}, Uncertainty SM: {up: 1.309, dn: -1.309}}, 1: {"": {up: 1.364, dn: 1.364}, Uncertainty SM: {up: 1.364, dn: -1.364}}, 2: {"": {up: 1.436, dn: 1.436}, Uncertainty SM: {up: 1.436, dn: -1.436}}, 3: {"": {up: 1.559, dn: 1.559}, Uncertainty SM: {up: 1.559, dn: -1.559}}, 4: {"": {up: 1.565, dn: 1.565}, Uncertainty SM: {up: 1.565, dn: -1.565}}, 5: {"": {up: 1.611, dn: 1.611}, Uncertainty SM: {up: 1.611, dn: -1.611}}, 6: {"": {up: 1.451, dn: 1.451}, Uncertainty SM: {up: 1.451, dn: -1.451}}, 7: {"": {up: 1.487, dn: 1.487}, Uncertainty SM: {up: 1.487, dn: -1.487}}, 8: {"": {up: 1.432, dn: 1.432}, Uncertainty SM: {up: 1.432, dn: -1.432}}, 9: {"": {up: 1.423, dn: 1.423}, Uncertainty SM: {up: 1.423, dn: -1.423}}, 10: {"": {up: 1.376, dn: 1.376}, Uncertainty SM: {up: 1.376, dn: -1.376}}, 11: {"": {up: 1.423, dn: 1.423}, Uncertainty SM: {up: 1.423, dn: -1.423}}, 12: {"": {up: 1.429, dn: 1.429}, Uncertainty SM: {up: 1.429, dn: -1.429}}, 13: {"": {up: 1.5, dn: 1.5}, Uncertainty SM: {up: 1.5, dn: -1.5}}, 14: {"": {up: 1.574, dn: 1.574}, Uncertainty SM: {up: 1.574, dn: -1.574}}, 15: {"": {up: 1.608, dn: 1.608}, Uncertainty SM: {up: 1.608, dn: -1.608}}, 16: {"": {up: 1.592, dn: 1.592}, Uncertainty SM: {up: 1.592, dn: -1.592}}, 17: {"": {up: 1.662, dn: 1.662}, Uncertainty SM: {up: 1.662, dn: -1.662}}, 18: {"": {up: 1.587, dn: 1.587}, Uncertainty SM: {up: 1.587, dn: -1.587}}, 19: {"": {up: 1.454, dn: 1.454}, Uncertainty SM: {up: 1.454, dn: -1.454}}, 20: {"": {up: 1.345, dn: 1.345}, Uncertainty SM: {up: 1.345, dn: -1.345}}}
+IsRef=1
+LineColor=green
+Path=/THY/ATLAS_2021_I1849535/d24-x01-y01
+RemoveOptions=0
+Title=Sherpa+NLO EW
+# xlow	 xhigh	 val	 errminus	 errplus
+-1.000000e+00	-9.500000e-01	2.049500e+01	1.309000e+00	1.309000e+00
+-9.500000e-01	-9.000000e-01	2.299900e+01	1.364000e+00	1.364000e+00
+-9.000000e-01	-8.500000e-01	2.350500e+01	1.436000e+00	1.436000e+00
+-8.500000e-01	-8.000000e-01	2.319700e+01	1.559000e+00	1.559000e+00
+-8.000000e-01	-7.000000e-01	2.338400e+01	1.565000e+00	1.565000e+00
+-7.000000e-01	-6.000000e-01	2.305300e+01	1.611000e+00	1.611000e+00
+-6.000000e-01	-5.000000e-01	2.286600e+01	1.451000e+00	1.451000e+00
+-5.000000e-01	-4.000000e-01	2.257300e+01	1.487000e+00	1.487000e+00
+-4.000000e-01	-2.500000e-01	2.260400e+01	1.432000e+00	1.432000e+00
+-2.500000e-01	-1.000000e-01	2.235500e+01	1.423000e+00	1.423000e+00
+-1.000000e-01	1.000000e-01	2.238500e+01	1.376000e+00	1.376000e+00
+1.000000e-01	2.500000e-01	2.258200e+01	1.423000e+00	1.423000e+00
+2.500000e-01	4.000000e-01	2.310700e+01	1.429000e+00	1.429000e+00
+4.000000e-01	5.000000e-01	2.317700e+01	1.500000e+00	1.500000e+00
+5.000000e-01	6.000000e-01	2.382000e+01	1.574000e+00	1.574000e+00
+6.000000e-01	7.000000e-01	2.377400e+01	1.608000e+00	1.608000e+00
+7.000000e-01	8.000000e-01	2.422900e+01	1.592000e+00	1.592000e+00
+8.000000e-01	8.500000e-01	2.444700e+01	1.662000e+00	1.662000e+00
+8.500000e-01	9.000000e-01	2.432600e+01	1.587000e+00	1.587000e+00
+9.000000e-01	9.500000e-01	2.402200e+01	1.454000e+00	1.454000e+00
+9.500000e-01	1.000000e+00	2.131600e+01	1.345000e+00	1.345000e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2021_I1849535/d24-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2021_I1849535/d24-x01-y01-SM
+Title=SM as BG: No exclusion
+# xlow	 xhigh	 val	 errminus	 errplus
+-1.000000e+00	-9.500000e-01	2.049500e+01	1.309000e+00	1.309000e+00
+-9.500000e-01	-9.000000e-01	2.299900e+01	1.364000e+00	1.364000e+00
+-9.000000e-01	-8.500000e-01	2.350500e+01	1.436000e+00	1.436000e+00
+-8.500000e-01	-8.000000e-01	2.319700e+01	1.559000e+00	1.559000e+00
+-8.000000e-01	-7.000000e-01	2.338400e+01	1.565000e+00	1.565000e+00
+-7.000000e-01	-6.000000e-01	2.305300e+01	1.611000e+00	1.611000e+00
+-6.000000e-01	-5.000000e-01	2.286600e+01	1.451000e+00	1.451000e+00
+-5.000000e-01	-4.000000e-01	2.257300e+01	1.487000e+00	1.487000e+00
+-4.000000e-01	-2.500000e-01	2.260400e+01	1.432000e+00	1.432000e+00
+-2.500000e-01	-1.000000e-01	2.235500e+01	1.423000e+00	1.423000e+00
+-1.000000e-01	1.000000e-01	2.238500e+01	1.376000e+00	1.376000e+00
+1.000000e-01	2.500000e-01	2.258200e+01	1.423000e+00	1.423000e+00
+2.500000e-01	4.000000e-01	2.310700e+01	1.429000e+00	1.429000e+00
+4.000000e-01	5.000000e-01	2.317700e+01	1.500000e+00	1.500000e+00
+5.000000e-01	6.000000e-01	2.382000e+01	1.574000e+00	1.574000e+00
+6.000000e-01	7.000000e-01	2.377400e+01	1.608000e+00	1.608000e+00
+7.000000e-01	8.000000e-01	2.422900e+01	1.592000e+00	1.592000e+00
+8.000000e-01	8.500000e-01	2.444700e+01	1.662000e+00	1.662000e+00
+8.500000e-01	9.000000e-01	2.432600e+01	1.587000e+00	1.587000e+00
+9.000000e-01	9.500000e-01	2.402200e+01	1.454000e+00	1.454000e+00
+9.500000e-01	1.000000e+00	2.131600e+01	1.345000e+00	1.345000e+00
+# END HISTO1D
+

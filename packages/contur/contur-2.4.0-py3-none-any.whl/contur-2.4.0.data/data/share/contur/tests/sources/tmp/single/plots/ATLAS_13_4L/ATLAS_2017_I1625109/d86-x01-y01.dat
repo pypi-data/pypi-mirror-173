@@ -1,0 +1,50 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LogY=0
+LegendAlign=r
+RatioPlotYMax=3.0
+XLabel=$|\delta y(\mathrm{jet}_1,\mathrm{jet}_2)|$
+YLabel=d$\sigma$ / d$|\delta y|$ [fb / GeV]
+DrawOnly=/REF/ATLAS_2017_I1625109/d86-x01-y01 /ATLAS_2017_I1625109/d86-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2017_I1625109/d86-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2017_I1625109/d86-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.320532566716, up: 0.320532566716}, syst: {dn: -0.313838924607, up: 0.313838924607}}, 1: {stat: {dn: -0.245999717177, up: 0.245999717177}, syst: {dn: -0.184632654773, up: 0.184632654773}}, 2: {stat: {dn: -0.228008407896, up: 0.228008407896}, syst: {dn: -0.195907423477, up: 0.195907423477}}, 3: {stat: {dn: -0.0432354399743, up: 0.0432354399743}, syst: {dn: -0.0745753669239, up: 0.0745753669239}}}
+IsRef=1
+Path=/REF/ATLAS_2017_I1625109/d86-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	1.986701e+00	4.485934e-01	4.485934e-01
+1.000000e+00	2.000000e+00	1.029826e+00	3.075794e-01	3.075794e-01
+2.000000e+00	3.000000e+00	9.775366e-01	3.006120e-01	3.006120e-01
+3.000000e+00	9.000000e+00	2.407042e-01	8.620202e-02	8.620202e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2017_I1625109/d86-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2017_I1625109/d86-x01-y01
+Title=Data as BG: No exclusion
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	1.986701e+00	0.000000e+00	0.000000e+00
+1.000000e+00	2.000000e+00	1.029826e+00	0.000000e+00	0.000000e+00
+2.000000e+00	3.000000e+00	9.775366e-01	0.000000e+00	0.000000e+00
+3.000000e+00	9.000000e+00	2.407042e-01	0.000000e+00	0.000000e+00
+# END HISTO1D
+

@@ -1,0 +1,56 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LogX=1
+LogY=1
+LegendAlign=l
+LegendXPos=0.05
+LegendYPos=0.30
+Title=$e\mu$ channel
+XLabel=$m_{b_1 b_2}$ [GeV]
+YLabel=$\frac{1}{\sigma_{t\bar{t}b}} \frac{d \sigma_{t\bar{t}b}}{d m_{b_1 b_2}}$ [GeV$^{-1}$]
+DrawOnly=/REF/ATLAS_2018_I1705857/d27-x01-y01 /ATLAS_2018_I1705857/d27-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2018_I1705857/d27-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2018_I1705857/d27-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.00015288, up: 0.00015288}, sys: {dn: -0.00023113, up: 0.00023113}}, 1: {stat: {dn: -0.00019649, up: 0.00019649}, sys: {dn: -0.00033391, up: 0.00033391}}, 2: {stat: {dn: -0.00015112, up: 0.00015112}, sys: {dn: -0.00051465, up: 0.00051465}}, 3: {stat: {dn: -7.36e-05, up: 7.36e-05}, sys: {dn: -0.00017641, up: 0.00017641}}, 4: {stat: {dn: -5.16e-06, up: 5.16e-06}, sys: {dn: -1.169e-05, up: 1.169e-05}}}
+IsRef=1
+Path=/REF/ATLAS_2018_I1705857/d27-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+01	5.000000e+01	7.523600e-04	2.771162e-04	2.771162e-04
+5.000000e+01	1.000000e+02	2.673390e-03	3.874328e-04	3.874328e-04
+1.000000e+02	2.000000e+02	3.522620e-03	5.363785e-04	5.363785e-04
+2.000000e+02	4.000000e+02	1.849170e-03	1.911477e-04	1.911477e-04
+4.000000e+02	2.000000e+03	7.604000e-05	1.277817e-05	1.277817e-05
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2018_I1705857/d27-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2018_I1705857/d27-x01-y01
+Title=Data as BG: Bin 2,  0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+01	5.000000e+01	7.523600e-04	0.000000e+00	0.000000e+00
+5.000000e+01	1.000000e+02	2.673392e-03	1.771704e-09	1.771704e-09
+1.000000e+02	2.000000e+02	3.522620e-03	0.000000e+00	0.000000e+00
+2.000000e+02	4.000000e+02	1.849170e-03	0.000000e+00	0.000000e+00
+4.000000e+02	2.000000e+03	7.604000e-05	0.000000e+00	0.000000e+00
+# END HISTO1D
+

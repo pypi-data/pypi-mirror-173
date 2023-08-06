@@ -1,0 +1,50 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=CMS, sqrt(s) = 13 TeV, $W^{-}$ + $D^{*}(2010)^{-}$
+XLabel=$|\eta^{\mu}|$
+YLabel=$d\sigma(W^{-} + D^{*}(2010)^{+}) / d|\eta^{\mu}|$
+LogY=0
+DrawOnly=/REF/CMS_2019_I1705068/d06-x01-y01 /CMS_2019_I1705068/d06-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2019_I1705068/d06-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2019_I1705068/d06-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -3.07, up: 3.07}, sys: {dn: -5.46, up: 4.42}}, 1: {stat: {dn: -2.43, up: 2.43}, sys: {dn: -4.51, up: 3.67}}, 2: {stat: {dn: -2.54, up: 2.54}, sys: {dn: -3.77, up: 3.91}}, 3: {stat: {dn: -2.64, up: 2.64}, sys: {dn: -4.53, up: 4.29}}, 4: {stat: {dn: -2.19, up: 2.19}, sys: {dn: -2.85, up: 3.48}}}
+IsRef=1
+Path=/REF/CMS_2019_I1705068/d06-x01-y01
+PolyMarkers=*
+Title=CMS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	4.000000e-01	3.307000e+01	6.263905e+00	5.381570e+00
+4.000000e-01	8.000000e-01	3.126000e+01	5.122987e+00	4.401568e+00
+8.000000e-01	1.300000e+00	3.321000e+01	4.545822e+00	4.662585e+00
+1.300000e+00	1.800000e+00	3.144000e+01	5.243138e+00	5.037231e+00
+1.800000e+00	2.400000e+00	2.103000e+01	3.594245e+00	4.111751e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2019_I1705068/d06-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/CMS_2019_I1705068/d06-x01-y01
+Title=Data as BG: Bin 3,  0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	4.000000e-01	3.307297e+01	3.448224e-04	3.448224e-04
+4.000000e-01	8.000000e-01	3.126241e+01	3.104955e-04	3.104955e-04
+8.000000e-01	1.300000e+00	3.321221e+01	2.663754e-04	2.663754e-04
+1.300000e+00	1.800000e+00	3.144096e+01	1.756428e-04	1.756428e-04
+1.800000e+00	2.400000e+00	2.103051e+01	1.164837e-04	1.164837e-04
+# END HISTO1D
+

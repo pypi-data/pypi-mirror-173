@@ -1,0 +1,52 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=CMS, 13 TeV, Ungroomed jet mass $m_u$ ($260 < p_T < 350$ GeV)
+XLabel=$m_u$
+YLabel=$\frac{d^2\sigma}{dp_{T} dm_u}$
+LogY=0
+DrawOnly=/REF/CMS_2018_I1682495/d02-x01-y01 /CMS_2018_I1682495/d02-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2018_I1682495/d02-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2018_I1682495/d02-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat uncertainty: {dn: -0.038676, up: 0.038676}, syst uncertainty: {dn: -0.99649, up: 0.99649}}, 1: {stat uncertainty: {dn: -0.066797, up: 0.066797}, syst uncertainty: {dn: -1.7211, up: 1.7211}}, 2: {stat uncertainty: {dn: -0.037883, up: 0.037883}, syst uncertainty: {dn: -0.97606, up: 0.97606}}, 3: {stat uncertainty: {dn: -0.022904, up: 0.022904}, syst uncertainty: {dn: -0.18537, up: 0.18537}}, 4: {stat uncertainty: {dn: -0.0080803, up: 0.0080803}, syst uncertainty: {dn: -0.042898, up: 0.042898}}, 5: {stat uncertainty: {dn: -0.00090106, up: 0.00090106}, syst uncertainty: {dn: -0.0022996, up: 0.0022996}}}
+IsRef=1
+Path=/REF/CMS_2018_I1682495/d02-x01-y01
+PolyMarkers=*
+Title=CMS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+01	4.000000e+01	3.271300e+00	9.972403e-01	9.972403e-01
+4.000000e+01	6.000000e+01	5.649900e+00	1.722396e+00	1.722396e+00
+6.000000e+01	8.000000e+01	3.204200e+00	9.767949e-01	9.767949e-01
+8.000000e+01	1.000000e+02	1.568700e+00	1.867796e-01	1.867796e-01
+1.000000e+02	1.500000e+02	4.270800e-01	4.365237e-02	4.365237e-02
+1.500000e+02	2.000000e+02	8.339600e-03	2.469832e-03	2.469832e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2018_I1682495/d02-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/CMS_2018_I1682495/d02-x01-y01
+Title=Data as BG: Bin 5,  0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+2.000000e+01	4.000000e+01	3.271305e+00	2.160010e-07	2.160010e-07
+4.000000e+01	6.000000e+01	5.649907e+00	2.424802e-07	2.424802e-07
+6.000000e+01	8.000000e+01	3.204204e+00	1.794859e-07	1.794859e-07
+8.000000e+01	1.000000e+02	1.568703e+00	1.618170e-07	1.618170e-07
+1.000000e+02	1.500000e+02	4.270810e-01	6.015193e-08	6.015193e-08
+1.500000e+02	2.000000e+02	8.339653e-03	1.379980e-08	1.379980e-08
+# END HISTO1D
+

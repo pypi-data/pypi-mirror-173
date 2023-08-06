@@ -1,0 +1,66 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=CMS, 13 TeV, Groomed jet mass $m_g$ ($900 < p_T < 1000$ GeV)
+XLabel=$m_g$
+YLabel=$\frac{d^2\sigma}{dp_{T} dm_g}$
+LogY=0
+DrawOnly=/REF/CMS_2018_I1682495/d20-x01-y01 /CMS_2018_I1682495/d20-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2018_I1682495/d20-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2018_I1682495/d20-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat uncertainty: {dn: -2.7208e-05, up: 2.7208e-05}, syst uncertainty: {dn: -0.00028429, up: 0.00028429}}, 1: {stat uncertainty: {dn: -1.7319e-05, up: 1.7319e-05}, syst uncertainty: {dn: -8.8399e-05, up: 8.8399e-05}}, 2: {stat uncertainty: {dn: -1.3029e-05, up: 1.3029e-05}, syst uncertainty: {dn: -4.084e-05, up: 4.084e-05}}, 3: {stat uncertainty: {dn: -1.1133e-05, up: 1.1133e-05}, syst uncertainty: {dn: -3.0706e-05, up: 3.0706e-05}}, 4: {stat uncertainty: {dn: -1.0418e-05, up: 1.0418e-05}, syst uncertainty: {dn: -2.6143e-05, up: 2.6143e-05}}, 5: {stat uncertainty: {dn: -6.3095e-06, up: 6.3095e-06}, syst uncertainty: {dn: -1.8665e-05, up: 1.8665e-05}}, 6: {stat uncertainty: {dn: -5.4873e-06, up: 5.4873e-06}, syst uncertainty: {dn: -1.582e-05, up: 1.582e-05}}, 7: {stat uncertainty: {dn: -5.0316e-06, up: 5.0316e-06}, syst uncertainty: {dn: -1.5718e-05, up: 1.5718e-05}}, 8: {stat uncertainty: {dn: -4.1333e-06, up: 4.1333e-06}, syst uncertainty: {dn: -1.0316e-05, up: 1.0316e-05}}, 9: {stat uncertainty: {dn: -3.6174e-06, up: 3.6174e-06}, syst uncertainty: {dn: -7.0907e-06, up: 7.0907e-06}}, 10: {stat uncertainty: {dn: -2.5465e-06, up: 2.5465e-06}, syst uncertainty: {dn: -5.8679e-06, up: 5.8679e-06}}, 11: {stat uncertainty: {dn: -1.4605e-06, up: 1.4605e-06}, syst uncertainty: {dn: -3.5515e-06, up: 3.5515e-06}}, 12: {stat uncertainty: {dn: -2.8232e-07, up: 2.8232e-07}, syst uncertainty: {dn: -4.5475e-07, up: 4.5475e-07}}}
+IsRef=1
+Path=/REF/CMS_2018_I1682495/d20-x01-y01
+PolyMarkers=*
+Title=CMS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+01	2.000000e+01	2.365300e-03	2.855890e-04	2.855890e-04
+2.000000e+01	4.000000e+01	1.105700e-03	9.007958e-05	9.007958e-05
+4.000000e+01	6.000000e+01	6.443400e-04	4.286794e-05	4.286794e-05
+6.000000e+01	8.000000e+01	4.710600e-04	3.266194e-05	3.266194e-05
+8.000000e+01	1.000000e+02	3.900900e-04	2.814234e-05	2.814234e-05
+1.000000e+02	1.500000e+02	2.950400e-04	1.970259e-05	1.970259e-05
+1.500000e+02	2.000000e+02	2.261000e-04	1.674464e-05	1.674464e-05
+2.000000e+02	2.500000e+02	1.919200e-04	1.650371e-05	1.650371e-05
+2.500000e+02	3.000000e+02	1.363000e-04	1.111324e-05	1.111324e-05
+3.000000e+02	3.500000e+02	1.003000e-04	7.960126e-06	7.960126e-06
+3.500000e+02	4.000000e+02	5.275500e-05	6.396633e-06	6.396633e-06
+4.000000e+02	4.500000e+02	1.669300e-05	3.840080e-06	3.840080e-06
+4.500000e+02	5.000000e+02	1.088000e-06	5.352590e-07	5.352590e-07
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2018_I1682495/d20-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/CMS_2018_I1682495/d20-x01-y01
+Title=Data as BG: Bin 7,  6\%
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+01	2.000000e+01	2.368491e-03	2.261863e-07	2.261863e-07
+2.000000e+01	4.000000e+01	1.107351e-03	1.150650e-07	1.150650e-07
+4.000000e+01	6.000000e+01	6.455666e-04	9.916431e-08	9.916431e-08
+6.000000e+01	8.000000e+01	4.721583e-04	9.383611e-08	9.383611e-08
+8.000000e+01	1.000000e+02	3.912364e-04	9.586889e-08	9.586889e-08
+1.000000e+02	1.500000e+02	2.960822e-04	5.781112e-08	5.781112e-08
+1.500000e+02	2.000000e+02	2.274340e-04	6.540581e-08	6.540581e-08
+2.000000e+02	2.500000e+02	1.923208e-04	3.585293e-08	3.585293e-08
+2.500000e+02	3.000000e+02	1.366111e-04	3.158316e-08	3.158316e-08
+3.000000e+02	3.500000e+02	1.004635e-04	2.290101e-08	2.290101e-08
+3.500000e+02	4.000000e+02	5.285120e-05	1.756428e-08	1.756428e-08
+4.000000e+02	4.500000e+02	1.673469e-05	1.156222e-08	1.156222e-08
+4.500000e+02	5.000000e+02	1.100827e-06	6.413567e-09	6.413567e-09
+# END HISTO1D
+

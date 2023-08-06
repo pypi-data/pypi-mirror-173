@@ -1,0 +1,74 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendYPos=0.90
+LegendXPos=0.95
+LegendAlign=r
+LogY=1
+Title=
+RatioPlotYMax=3.0
+RatioPlotYMin=-3.0
+XLabel=Dilepton $|y^{e\mu}|\times m^{e\mu}$ 
+YLabel=$\mathrm{d}^2\sigma / \mathrm{d}|y^{e\mu}|\mathrm{d}m^{e\mu}$ [fb]
+DrawOnly=/REF/ATLAS_2019_I1759875/d19-x01-y04 /THY/ATLAS_2019_I1759875/d19-x01-y04 /ATLAS_2019_I1759875/d19-x01-y04-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1759875/d19-x01-y04
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1759875/d19-x01-y04
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.0530436, up: 0.0530436}, "sys,bkg": {dn: -0.0870168, up: 0.0870168}, "sys,jet": {dn: -0.0129642, up: 0.0129642}, "sys,leb": {dn: -0.114127, up: 0.114127}, "sys,lept": {dn: -0.0267334, up: 0.0267334}, "sys,ttmod": {dn: -0.0820789, up: 0.0820789}}, 1: {stat: {dn: -0.0475407, up: 0.0475407}, "sys,bkg": {dn: -0.0659111, up: 0.0659111}, "sys,jet": {dn: -0.0119871, up: 0.0119871}, "sys,leb": {dn: -0.0840727, up: 0.0840727}, "sys,lept": {dn: -0.0229384, up: 0.0229384}, "sys,ttmod": {dn: -0.0419914, up: 0.0419914}}, 2: {stat: {dn: -0.0340899, up: 0.0340899}, "sys,bkg": {dn: -0.0354655, up: 0.0354655}, "sys,jet": {dn: -0.00478399, up: 0.00478399}, "sys,leb": {dn: -0.0407353, up: 0.0407353}, "sys,lept": {dn: -0.0151018, up: 0.0151018}, "sys,ttmod": {dn: -0.0250267, up: 0.0250267}}, 3: {stat: {dn: -0.0178045, up: 0.0178045}, "sys,bkg": {dn: -0.0124027, up: 0.0124027}, "sys,jet": {dn: -0.00149276, up: 0.00149276}, "sys,leb": {dn: -0.01056, up: 0.01056}, "sys,lept": {dn: -0.00505713, up: 0.00505713}, "sys,ttmod": {dn: -0.0110988, up: 0.0110988}}, 4: {stat: {dn: -0.006518, up: 0.006518}, "sys,bkg": {dn: -0.00213448, up: 0.00213448}, "sys,jet": {dn: -0.000627737, up: 0.000627737}, "sys,leb": {dn: -0.00112138, up: 0.00112138}, "sys,lept": {dn: -0.000971823, up: 0.000971823}, "sys,ttmod": {dn: -0.00291015, up: 0.00291015}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1759875/d19-x01-y04
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	5.000000e-01	4.853663e+00	1.761539e-01	1.761539e-01
+5.000000e-01	1.000000e+00	3.561736e+00	1.269084e-01	1.269084e-01
+1.000000e+00	1.500000e+00	1.715693e+00	7.040294e-02	7.040294e-02
+1.500000e+00	2.000000e+00	4.339823e-01	2.708001e-02	2.708001e-02
+2.000000e+00	2.500000e+00	4.109230e-02	7.622683e-03	7.622683e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2019_I1759875/d19-x01-y04
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0.6006689, dn: 0.5739509}, pdf: {up: 0.04452651741616585, dn: -0.04452651741616585}, scale: {up: 0.5847639999999998, dn: -0.5572840000000001}, stat: {up: 0.1298906001217948, dn: 0.1298906001217948}}, 1: {"": {up: 0.4378261, dn: 0.4298917}, pdf: {up: 0.03242857005275853, dn: -0.03242857005275853}, scale: {up: 0.4216860000000002, dn: -0.4134419999999999}, stat: {up: 0.1132296780883881, dn: 0.1132296780883881}}, 2: {"": {up: 0.1995742, dn: 0.2075608}, pdf: {up: 0.02056890048779154, dn: -0.02056890048779154}, scale: {up: 0.1817576000000001, dn: -0.1904926}, stat: {up: 0.07981834375630704, dn: 0.07981834375630704}}, 3: {"": {up: 0.0623272, dn: 0.07035468}, pdf: {up: 0.007947344936972106, dn: -0.007947344936972106}, scale: {up: 0.04094520000000001, dn: -0.05236039999999997}, stat: {up: 0.04631424834756578, dn: 0.04631424834756578}}, 4: {"": {up: 0.01283507, dn: 0.01287743}, pdf: {up: 0.002597107050012231, dn: -0.002597107050012231}, scale: {up: 0.0038768, dn: -0.004014799999999999}, stat: {up: 0.01195678050312876, dn: 0.01195678050312876}}}
+LineColor=green
+Path=/THY/ATLAS_2019_I1759875/d19-x01-y04
+RemoveOptions=0
+Title=PowhegBoxZpWp
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	5.000000e-01	4.189266e+00	5.739509e-01	6.006689e-01
+5.000000e-01	1.000000e+00	3.205326e+00	4.298917e-01	4.378261e-01
+1.000000e+00	1.500000e+00	1.596253e+00	2.075608e-01	1.995742e-01
+1.500000e+00	2.000000e+00	5.293308e-01	7.035468e-02	6.232720e-02
+2.000000e+00	2.500000e+00	3.676106e-02	1.287743e-02	1.283507e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1759875/d19-x01-y04-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2019_I1759875/d19-x01-y04-SM
+Title=SM as BG: No exclusion; expected exclusion was   2\%
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	5.000000e-01	4.201772e+00	5.739521e-01	6.006700e-01
+5.000000e-01	1.000000e+00	3.212488e+00	4.298926e-01	4.378270e-01
+1.000000e+00	1.500000e+00	1.598177e+00	2.075613e-01	1.995747e-01
+1.500000e+00	2.000000e+00	5.297584e-01	7.035500e-02	6.232757e-02
+2.000000e+00	2.500000e+00	3.697485e-02	1.287832e-02	1.283596e-02
+# END HISTO1D
+

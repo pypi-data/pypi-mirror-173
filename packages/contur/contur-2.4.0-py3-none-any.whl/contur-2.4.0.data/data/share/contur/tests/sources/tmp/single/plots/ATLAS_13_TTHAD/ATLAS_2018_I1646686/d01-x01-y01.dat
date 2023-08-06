@@ -1,0 +1,63 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LogY=0
+LeftMargin=1.5
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+XLabel=
+YLabel=Cross section [pb]
+XCustomMajorTicks=0.0 $\sigma_\text{fiducial}$
+Title=Inclusive fiducial particle-level cross section
+LegendYPos=0.3
+DrawOnly=/REF/ATLAS_2018_I1646686/d01-x01-y01 /THY/ATLAS_2018_I1646686/d01-x01-y01 /ATLAS_2018_I1646686/d01-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2018_I1646686/d01-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2018_I1646686/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {statonly: {dn: -0.006854362500000001, up: 0.006854362500000001}, systonly: {dn: -0.07087702500000001, up: 0.07087702500000001}}}
+IsRef=1
+Path=/REF/ATLAS_2018_I1646686/d01-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	2.916750e-01	7.120769e-02	7.120769e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2018_I1646686/d01-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0.02629763, dn: 0.03724211}, pdf: {up: 0.005290436293990481, dn: -0.005290436293990481}, scale: {up: 0.02096310000000001, dn: -0.03368769999999999}, stat: {up: 0.01497081160124594, dn: 0.01497081160124594}}}
+LineColor=green
+Path=/THY/ATLAS_2018_I1646686/d01-x01-y01
+RemoveOptions=0
+Title=PowhegBoxZpWp
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	3.455803e-01	3.724211e-02	2.629763e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2018_I1646686/d01-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2018_I1646686/d01-x01-y01-SM
+Title=SM as BG: Bin 1, 28\% ( 19\% expected)
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	3.641957e-01	3.724612e-02	2.630330e-02
+# END HISTO1D
+

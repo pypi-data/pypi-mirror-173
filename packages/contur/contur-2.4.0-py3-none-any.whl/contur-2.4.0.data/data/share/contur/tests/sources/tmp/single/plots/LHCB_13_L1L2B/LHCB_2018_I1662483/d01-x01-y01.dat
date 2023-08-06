@@ -1,0 +1,57 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=Forward $t\bar{t}$ fiducial cross-section
+XLabel=$\sqrt{s}$ [GeV]
+YLabel=$\sigma_{t\bar{t}\to\mu ebX}$
+LogY=0
+RatioPlot=1
+DrawOnly=/REF/LHCB_2018_I1662483/d01-x01-y01 /THY/LHCB_2018_I1662483/d01-x01-y01 /LHCB_2018_I1662483/d01-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/LHCB_2018_I1662483/d01-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/LHCB_2018_I1662483/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {lumi: {dn: -5.0, up: 5.0}, stat: {dn: -19.0, up: 19.0}, sys: {dn: -16.0, up: 16.0}}}
+IsRef=1
+Path=/REF/LHCB_2018_I1662483/d01-x01-y01
+PolyMarkers=*
+Title=LHCB Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	1.260000e+02	2.533772e+01	2.533772e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/LHCB_2018_I1662483/d01-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 20, dn: 20}}}
+IsRef=1
+LineColor=green
+Path=/THY/LHCB_2018_I1662483/d01-x01-y01
+RemoveOptions=0
+Title=PowhegBoxZpWp
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	7.500000e+01	2.000000e+01	2.000000e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /LHCB_2018_I1662483/d01-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/LHCB_2018_I1662483/d01-x01-y01-SM
+Title=SM as BG: No exclusion; expected exclusion was   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+1.299950e+04	1.300050e+04	7.503207e+01	2.000001e+01	2.000001e+01
+# END HISTO1D
+

@@ -1,0 +1,67 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LogY=0
+LegendAlign=l
+XTwosidedTicks=1
+YTwosidedTicks=1
+LeftMargin=2.0
+YLabelSep=8.0
+Title=Soft drop $\beta = 0$, $z_\mathrm{cut}=0.1$, $p_\mathrm{T}^\mathrm{lead} > 600$ GeV
+XLabel=$\mathrm{log}_{10}[(m^\mathrm{soft\,drop} / p_\mathrm{T}^\mathrm{ungroomed})^2]$
+YLabel=$\dfrac{1}{\sigma_\mathrm{resum}} \; \dfrac{\mathrm{d}\sigma}{\mathrm{d} \mathrm{log}_{10}[(m^\mathrm{soft\,drop} / p_\mathrm{T}^\mathrm{ungroomed})^2]}$
+LegendXPos=0.4
+LegendYPos=0.3
+DrawOnly=/REF/ATLAS_2017_I1637587/d01-x01-y01 /ATLAS_2017_I1637587/d01-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2017_I1637587/d01-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2017_I1637587/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {Cluster Angular Resolution: {dn: -0.00315665, up: 0.00315665}, Cluster Energy Resolution: {dn: -0.00175656, up: 0.00175656}, Cluster Energy Scale: {dn: -0.0107837, up: 0.0107837}, Data Stat.: {dn: -0.000154971, up: 0.000154971}, MC Stat.: {dn: -0.00135075, up: 0.00135075}, Nonclosure: {dn: -6.95892e-05, up: 6.95892e-05}, Pileup Modeling: {dn: -0.000503684, up: 0.000503684}, QCD Modeling: {dn: -0.0481538, up: 0.0481538}}, 1: {Cluster Angular Resolution: {dn: -0.00223262, up: 0.00223262}, Cluster Energy Resolution: {dn: -0.0014822, up: 0.0014822}, Cluster Energy Scale: {dn: -0.00934314, up: 0.00934314}, Data Stat.: {dn: -0.000125674, up: 0.000125674}, MC Stat.: {dn: -0.00120598, up: 0.00120598}, Nonclosure: {dn: -0.000432477, up: 0.000432477}, Pileup Modeling: {dn: -0.000323213, up: 0.000323213}, QCD Modeling: {dn: -0.030901, up: 0.030901}}, 2: {Cluster Angular Resolution: {dn: -0.000699765, up: 0.000699765}, Cluster Energy Resolution: {dn: -0.00105092, up: 0.00105092}, Cluster Energy Scale: {dn: -0.00757629, up: 0.00757629}, Data Stat.: {dn: -9.00921e-05, up: 9.00921e-05}, MC Stat.: {dn: -0.000678779, up: 0.000678779}, Nonclosure: {dn: -0.000566232, up: 0.000566232}, Pileup Modeling: {dn: -5.12407e-05, up: 5.12407e-05}, QCD Modeling: {dn: -0.00979673, up: 0.00979673}}, 3: {Cluster Angular Resolution: {dn: -0.000496457, up: 0.000496457}, Cluster Energy Resolution: {dn: -0.000495149, up: 0.000495149}, Cluster Energy Scale: {dn: -0.00584365, up: 0.00584365}, Data Stat.: {dn: -8.03852e-05, up: 8.03852e-05}, MC Stat.: {dn: -0.000797767, up: 0.000797767}, Nonclosure: {dn: -0.000192145, up: 0.000192145}, Pileup Modeling: {dn: -8.48435e-05, up: 8.48435e-05}, QCD Modeling: {dn: -0.00127268, up: 0.00127268}}, 4: {Cluster Angular Resolution: {dn: -0.000963823, up: 0.000963823}, Cluster Energy Resolution: {dn: -0.000249222, up: 0.000249222}, Cluster Energy Scale: {dn: -0.00203092, up: 0.00203092}, Data Stat.: {dn: -9.86642e-05, up: 9.86642e-05}, MC Stat.: {dn: -0.000656667, up: 0.000656667}, Nonclosure: {dn: -0.000292649, up: 0.000292649}, Pileup Modeling: {dn: -0.000413055, up: 0.000413055}, QCD Modeling: {dn: -0.0042818, up: 0.0042818}}, 5: {Cluster Angular Resolution: {dn: -0.000461349, up: 0.000461349}, Cluster Energy Resolution: {dn: -0.000715256, up: 0.000715256}, Cluster Energy Scale: {dn: -0.00408988, up: 0.00408988}, Data Stat.: {dn: -0.000183849, up: 0.000183849}, MC Stat.: {dn: -0.000597636, up: 0.000597636}, Nonclosure: {dn: -0.000328183, up: 0.000328183}, Pileup Modeling: {dn: -0.000301772, up: 0.000301772}, QCD Modeling: {dn: -0.00149092, up: 0.00149092}}, 6: {Cluster Angular Resolution: {dn: -0.00181716, up: 0.00181716}, Cluster Energy Resolution: {dn: -0.000459923, up: 0.000459923}, Cluster Energy Scale: {dn: -0.0111526, up: 0.0111526}, Data Stat.: {dn: -0.000199437, up: 0.000199437}, MC Stat.: {dn: -0.000966881, up: 0.000966881}, Nonclosure: {dn: -6.26992e-05, up: 6.26992e-05}, Pileup Modeling: {dn: -0.000634589, up: 0.000634589}, QCD Modeling: {dn: -0.00359856, up: 0.00359856}}, 7: {Cluster Angular Resolution: {dn: -0.00361406, up: 0.00361406}, Cluster Energy Resolution: {dn: -0.000131897, up: 0.000131897}, Cluster Energy Scale: {dn: -0.0151421, up: 0.0151421}, Data Stat.: {dn: -0.000286216, up: 0.000286216}, MC Stat.: {dn: -0.000804682, up: 0.000804682}, Nonclosure: {dn: -1.34269e-05, up: 1.34269e-05}, Pileup Modeling: {dn: -0.000168482, up: 0.000168482}, QCD Modeling: {dn: -0.00644502, up: 0.00644502}}, 8: {Cluster Angular Resolution: {dn: -0.00423338, up: 0.00423338}, Cluster Energy Resolution: {dn: -0.00115697, up: 0.00115697}, Cluster Energy Scale: {dn: -0.0120161, up: 0.0120161}, Data Stat.: {dn: -0.000338722, up: 0.000338722}, MC Stat.: {dn: -0.000614326, up: 0.000614326}, Nonclosure: {dn: -5.30721e-06, up: 5.30721e-06}, Pileup Modeling: {dn: -0.00583944, up: 0.00583944}, QCD Modeling: {dn: -0.0015694, up: 0.0015694}}, 9: {Cluster Angular Resolution: {dn: -0.00121563, up: 0.00121563}, Cluster Energy Resolution: {dn: -0.00084245, up: 0.00084245}, Cluster Energy Scale: {dn: -0.00198783, up: 0.00198783}, Data Stat.: {dn: -0.000162689, up: 0.000162689}, MC Stat.: {dn: -0.00047181, up: 0.00047181}, Nonclosure: {dn: -5.52597e-07, up: 5.52597e-07}, Pileup Modeling: {dn: -0.00343508, up: 0.00343508}, QCD Modeling: {dn: -0.0014048, up: 0.0014048}}}
+IsRef=1
+Path=/REF/ATLAS_2017_I1637587/d01-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+-4.500000e+00	-4.100000e+00	2.496700e-01	4.949983e-02	4.949983e-02
+-4.100000e+00	-3.700000e+00	2.249090e-01	3.242082e-02	3.242082e-02
+-3.700000e+00	-3.300000e+00	1.907320e-01	1.248048e-02	1.248048e-02
+-3.300000e+00	-2.900000e+00	1.867600e-01	6.078373e-03	6.078373e-03
+-2.900000e+00	-2.500000e+00	2.059060e-01	4.913931e-03	4.913931e-03
+-2.500000e+00	-2.100000e+00	2.330250e-01	4.501570e-03	4.501570e-03
+-2.100000e+00	-1.700000e+00	2.616520e-01	1.192581e-02	1.192581e-02
+-1.700000e+00	-1.300000e+00	2.994180e-01	1.687182e-02	1.687182e-02
+-1.300000e+00	-9.000000e-01	3.176000e-01	1.416690e-02	1.416690e-02
+-9.000000e-01	-5.000000e-01	8.091020e-02	4.490129e-03	4.490129e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2017_I1637587/d01-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2017_I1637587/d01-x01-y01
+Title=Data as BG: Correlated  13\%
+# xlow	 xhigh	 val	 errminus	 errplus
+-4.500000e+00	-4.100000e+00	2.500255e-01	8.604991e-06	8.604991e-06
+-4.100000e+00	-3.700000e+00	2.251970e-01	7.745416e-06	7.745416e-06
+-3.700000e+00	-3.300000e+00	1.909846e-01	7.253774e-06	7.253774e-06
+-3.300000e+00	-2.900000e+00	1.870455e-01	7.711740e-06	7.711740e-06
+-2.900000e+00	-2.500000e+00	2.062634e-01	8.627646e-06	8.627646e-06
+-2.500000e+00	-2.100000e+00	2.335142e-01	1.009427e-05	1.009427e-05
+-2.100000e+00	-1.700000e+00	2.623724e-01	1.224923e-05	1.224923e-05
+-1.700000e+00	-1.300000e+00	2.999880e-01	1.089610e-05	1.089610e-05
+-1.300000e+00	-9.000000e-01	3.180715e-01	9.909958e-06	9.909958e-06
+-9.000000e-01	-5.000000e-01	8.100621e-02	4.471818e-06	4.471818e-06
+# END HISTO1D
+

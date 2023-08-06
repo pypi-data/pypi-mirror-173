@@ -1,0 +1,59 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LegendXPos=0.95
+Title=$pp \rightarrow e^{\pm}\mu^{\mp}\nu\nu$
+XLabel=veto-jet $p_\mathrm{T}$ [GeV]
+YLabel=$\sigma$ [fb]
+LogY=0
+LeftMargin=1.5
+RatioPlotYMax=3.0
+RatioPlotYMin=-3.0
+DrawOnly=/REF/ATLAS_2019_I1734263/d01-x01-y01 /ATLAS_2019_I1734263/d01-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1734263/d01-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1734263/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {BkgOther: {dn: -2.6, up: 2.6}, BkgWjets: {dn: -10.3, up: 10.3}, Bkgtopsinglet: {dn: -9.2, up: 9.2}, ElMuMETUnfTheoLumi: {dn: -9.2, up: 9.2}, FTag: {dn: -8.3, up: 8.3}, JetFlav: {dn: -8.8, up: 8.8}, JetPileup: {dn: -6.7, up: 6.7}, JetRes: {dn: -4.2, up: 4.2}, JetScaleOther: {dn: -7.5, up: 7.5}, Pileup: {dn: -6.5, up: 6.5}, StatsBkgMC: {dn: -3.6, up: 3.6}, stat: {dn: -4.8, up: 4.8}}, 1: {BkgOther: {dn: -3.1, up: 3.1}, BkgWjets: {dn: -11.8, up: 11.8}, Bkgtopsinglet: {dn: -9.8, up: 9.8}, ElMuMETUnfTheoLumi: {dn: -10.6, up: 10.6}, FTag: {dn: -13.0, up: 13.0}, JetFlav: {dn: -7.7, up: 7.7}, JetPileup: {dn: -5.7, up: 5.7}, JetRes: {dn: -0.5, up: 0.5}, JetScaleOther: {dn: -5.9, up: 5.9}, Pileup: {dn: -6.2, up: 6.2}, StatsBkgMC: {dn: -3.9, up: 3.9}, stat: {dn: -5.0, up: 5.0}}, 2: {BkgOther: {dn: -3.6, up: 3.6}, BkgWjets: {dn: -11.7, up: 11.7}, Bkgtopsinglet: {dn: -11.6, up: 11.6}, ElMuMETUnfTheoLumi: {dn: -11.4, up: 11.4}, FTag: {dn: -18.3, up: 18.3}, JetFlav: {dn: -7.5, up: 7.5}, JetPileup: {dn: -5.1, up: 5.1}, JetRes: {dn: -1.9, up: 1.9}, JetScaleOther: {dn: -5.3, up: 5.3}, Pileup: {dn: -5.9, up: 5.9}, StatsBkgMC: {dn: -4.1, up: 4.1}, stat: {dn: -5.3, up: 5.3}}, 3: {BkgOther: {dn: -4.5, up: 4.5}, BkgWjets: {dn: -11.6, up: 11.6}, Bkgtopsinglet: {dn: -13.4, up: 13.4}, ElMuMETUnfTheoLumi: {dn: -12.6, up: 12.6}, FTag: {dn: -24.3, up: 24.3}, JetFlav: {dn: -7.0, up: 7.0}, JetPileup: {dn: -5.0, up: 5.0}, JetRes: {dn: -4.1, up: 4.1}, JetScaleOther: {dn: -5.1, up: 5.1}, Pileup: {dn: -6.2, up: 6.2}, StatsBkgMC: {dn: -4.4, up: 4.4}, stat: {dn: -5.5, up: 5.5}}, 4: {BkgOther: {dn: -4.7, up: 4.7}, BkgWjets: {dn: -11.6, up: 11.6}, Bkgtopsinglet: {dn: -16.9, up: 16.9}, ElMuMETUnfTheoLumi: {dn: -13.1, up: 13.1}, FTag: {dn: -30.5, up: 30.5}, JetFlav: {dn: -6.9, up: 6.9}, JetPileup: {dn: -5.3, up: 5.3}, JetRes: {dn: -5.0, up: 5.0}, JetScaleOther: {dn: -5.1, up: 5.1}, Pileup: {dn: -6.0, up: 6.0}, StatsBkgMC: {dn: -4.6, up: 4.6}, stat: {dn: -5.7, up: 5.7}}, 5: {BkgOther: {dn: -4.9, up: 4.9}, BkgWjets: {dn: -11.6, up: 11.6}, Bkgtopsinglet: {dn: -19.0, up: 19.0}, ElMuMETUnfTheoLumi: {dn: -13.9, up: 13.9}, FTag: {dn: -36.9, up: 36.9}, JetFlav: {dn: -6.6, up: 6.6}, JetPileup: {dn: -5.8, up: 5.8}, JetRes: {dn: -6.8, up: 6.8}, JetScaleOther: {dn: -5.4, up: 5.4}, Pileup: {dn: -6.0, up: 6.0}, StatsBkgMC: {dn: -5.0, up: 5.0}, stat: {dn: -5.9, up: 5.9}}, 6: {BkgOther: {dn: -5.5, up: 5.5}, BkgWjets: {dn: -11.6, up: 11.6}, Bkgtopsinglet: {dn: -24.6, up: 24.6}, ElMuMETUnfTheoLumi: {dn: -14.2, up: 14.2}, FTag: {dn: -42.7, up: 42.7}, JetFlav: {dn: -7.0, up: 7.0}, JetPileup: {dn: -6.6, up: 6.6}, JetRes: {dn: -8.8, up: 8.8}, JetScaleOther: {dn: -5.9, up: 5.9}, Pileup: {dn: -6.3, up: 6.3}, StatsBkgMC: {dn: -5.2, up: 5.2}, stat: {dn: -6.1, up: 6.1}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1734263/d01-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+2.750000e+01	3.250000e+01	3.513000e+02	2.500980e+01	2.500980e+01
+3.250000e+01	3.750000e+01	3.791000e+02	2.705069e+01	2.705069e+01
+3.750000e+01	4.250000e+01	4.005000e+02	3.070717e+01	3.070717e+01
+4.250000e+01	4.750000e+01	4.219000e+02	3.589554e+01	3.589554e+01
+4.750000e+01	5.250000e+01	4.366000e+02	4.195807e+01	4.195807e+01
+5.250000e+01	5.750000e+01	4.516000e+02	4.819544e+01	4.819544e+01
+5.750000e+01	6.250000e+01	4.682000e+02	5.571041e+01	5.571041e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1734263/d01-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2019_I1734263/d01-x01-y01
+Title=Data as BG: Correlated   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+2.750000e+01	3.250000e+01	3.513000e+02	0.000000e+00	0.000000e+00
+3.250000e+01	3.750000e+01	3.791000e+02	0.000000e+00	0.000000e+00
+3.750000e+01	4.250000e+01	4.005000e+02	0.000000e+00	0.000000e+00
+4.250000e+01	4.750000e+01	4.219000e+02	0.000000e+00	0.000000e+00
+4.750000e+01	5.250000e+01	4.366160e+02	1.603392e-02	1.603392e-02
+5.250000e+01	5.750000e+01	4.516160e+02	1.603392e-02	1.603392e-02
+5.750000e+01	6.250000e+01	4.682160e+02	1.603392e-02	1.603392e-02
+# END HISTO1D
+

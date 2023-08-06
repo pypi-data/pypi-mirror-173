@@ -1,0 +1,56 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=dilepton channel: lepton $|\Delta \eta|$
+XLabel=$|\Delta \eta (\ell,\ell)|$
+YLabel=$1$/$\sigma$ d$\sigma$/d$| \Delta \eta (\ell, \ell)|$
+LogY=0
+DrawOnly=/REF/ATLAS_2018_I1707015/d09-x01-y01 /ATLAS_2018_I1707015:LMODE=DILEPTON/d09-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2018_I1707015/d09-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2018_I1707015/d09-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {Zgamma: {dn: -0.0046, up: 0.038}, exp: {dn: -0.026, up: 0.026}, others: {dn: -0.015, up: 0.014}, signal: {dn: -0.03, up: 0.03}, stat: {dn: -0.088, up: 0.088}}, 1: {Zgamma: {dn: -0.073, up: 0.065}, exp: {dn: -0.064, up: 0.063}, others: {dn: -0.0082, up: 0.0078}, signal: {dn: -0.029, up: 0.029}, stat: {dn: -0.12, up: 0.12}}, 2: {Zgamma: {dn: -0.025, up: 0.016}, exp: {dn: -0.02, up: 0.02}, others: {dn: -0.015, up: 0.016}, signal: {dn: -0.044, up: 0.044}, stat: {dn: -0.09, up: 0.09}}, 3: {Zgamma: {dn: -0.0075, up: 0.061}, exp: {dn: -0.021, up: 0.021}, others: {dn: -0.0091, up: 0.0087}, signal: {dn: -0.029, up: 0.029}, stat: {dn: -0.09, up: 0.09}}, 4: {Zgamma: {dn: -0.012, up: 0.019}, exp: {dn: -0.02, up: 0.02}, others: {dn: -0.0046, up: 0.0045}, signal: {dn: -0.024, up: 0.024}, stat: {dn: -0.079, up: 0.079}}, 5: {Zgamma: {dn: -0.018, up: 0.06}, exp: {dn: -0.025, up: 0.025}, others: {dn: -0.0069, up: 0.0067}, signal: {dn: -0.03, up: 0.03}, stat: {dn: -0.086, up: 0.086}}, 6: {Zgamma: {dn: -0.055, up: 0.011}, exp: {dn: -0.026, up: 0.025}, others: {dn: -0.004, up: 0.0038}, signal: {dn: -0.036, up: 0.036}, stat: {dn: -0.055, up: 0.055}}, 7: {Zgamma: {dn: -0.024, up: 0.027}, exp: {dn: -0.01, up: 0.011}, others: {dn: -0.0079, up: 0.0083}, signal: {dn: -0.016, up: 0.016}, stat: {dn: -0.032, up: 0.032}}}
+IsRef=1
+Path=/REF/ATLAS_2018_I1707015/d09-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.000000e-01	4.700000e-01	9.780675e-02	1.046900e-01
+2.000000e-01	4.000000e-01	3.460000e-01	1.572681e-01	1.532835e-01
+4.000000e-01	6.000000e-01	4.100000e-01	1.062356e-01	1.046327e-01
+6.000000e-01	8.000000e-01	5.170000e-01	9.757592e-02	1.147985e-01
+8.000000e-01	1.000000e+00	4.300000e-01	8.591950e-02	8.716794e-02
+1.000000e+00	1.200000e+00	5.300000e-01	9.639818e-02	1.120977e-01
+1.200000e+00	1.700000e+00	3.360000e-01	8.965489e-02	7.128422e-02
+1.700000e+00	2.500000e+00	3.640000e-01	4.492672e-02	4.689232e-02
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2018_I1707015:LMODE=DILEPTON/d09-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2018_I1707015:LMODE=DILEPTON/d09-x01-y01
+Title=Data as BG: Correlated   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.000000e-01	4.700000e-01	0.000000e+00	0.000000e+00
+2.000000e-01	4.000000e-01	3.460000e-01	0.000000e+00	0.000000e+00
+4.000000e-01	6.000000e-01	4.100000e-01	0.000000e+00	0.000000e+00
+6.000000e-01	8.000000e-01	5.170012e-01	1.161878e-06	1.161878e-06
+8.000000e-01	1.000000e+00	4.300012e-01	1.161878e-06	1.161878e-06
+1.000000e+00	1.200000e+00	5.300012e-01	1.161878e-06	1.161878e-06
+1.200000e+00	1.700000e+00	3.360005e-01	4.647513e-07	4.647513e-07
+1.700000e+00	2.500000e+00	3.640003e-01	2.904696e-07	2.904696e-07
+# END HISTO1D
+

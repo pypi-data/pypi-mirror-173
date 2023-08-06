@@ -1,0 +1,69 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=CMS, 13 TeV, jet mass in boosted top quark decays
+XLabel=$m_\mathrm{jet}$
+YLabel=$\frac{d\sigma}{dm_\mathrm{jet}} \frac{\mathrm{fb}}{\mathrm{GeV}}$
+LogY=0
+DrawOnly=/REF/CMS_2019_I1764472/d01-x01-y01 /THY/CMS_2019_I1764472/d01-x01-y01 /CMS_2019_I1764472/d01-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2019_I1764472/d01-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2019_I1764472/d01-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {exp: {dn: -0.2341, up: 0.2341}, model: {dn: -0.34872, up: 0.34872}, stat: {dn: -0.38284, up: 0.38284}}, 1: {exp: {dn: -0.4399, up: 0.4399}, model: {dn: -0.76933, up: 0.76933}, stat: {dn: -0.51598, up: 0.51598}}, 2: {exp: {dn: -2.0671, up: 2.0671}, model: {dn: -1.3102, up: 1.3102}, stat: {dn: -0.68284, up: 0.68284}}, 3: {exp: {dn: -2.4197, up: 2.4197}, model: {dn: -1.5461, up: 1.5461}, stat: {dn: -0.44994, up: 0.44994}}, 4: {exp: {dn: -0.23945, up: 0.23945}, model: {dn: -0.39344, up: 0.39344}, stat: {dn: -0.16975, up: 0.16975}}}
+IsRef=1
+Path=/REF/CMS_2019_I1764472/d01-x01-y01
+PolyMarkers=*
+Title=CMS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+1.120000e+02	1.320000e+02	1.057600e+00	5.683088e-01	5.683088e-01
+1.320000e+02	1.520000e+02	2.398200e+00	1.025483e+00	1.025483e+00
+1.520000e+02	1.720000e+02	1.301800e+01	2.540826e+00	2.540826e+00
+1.720000e+02	1.920000e+02	6.916800e+00	2.906513e+00	2.906513e+00
+1.920000e+02	2.320000e+02	1.474100e+00	4.908629e-01	4.908629e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/CMS_2019_I1764472/d01-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0.3179675, dn: 0.2932079}, pdf: {up: 0.02108906138478398, dn: -0.02108906138478398}, scale: {up: 0.2421995000000001, dn: -0.208634}, stat: {up: 0.2049340747655206, dn: 0.2049340747655206}}, 1: {"": {up: 0.4058097, dn: 0.4755159}, pdf: {up: 0.04275327626608415, dn: -0.04275327626608415}, scale: {up: 0.2358484999999999, dn: -0.3421379999999998}, stat: {up: 0.3274586233404154, dn: 0.3274586233404154}}, 2: {"": {up: 1.044986, dn: 1.427176}, pdf: {up: 0.197292064305759, dn: -0.197292064305759}, scale: {up: 0.8012550000000012, dn: -1.259699999999999}, stat: {up: 0.6411411701021859, dn: 0.6411411701021859}}, 3: {"": {up: 0.7272945, dn: 0.9623865}, pdf: {up: 0.1344179432772138, dn: -0.1344179432772138}, scale: {up: 0.4817700000000009, dn: -0.7933050000000001}, stat: {up: 0.5280026041602446, dn: 0.5280026041602446}}, 4: {"": {up: 0.4716789, dn: 0.3972094}, pdf: {up: 0.03308086284600174, dn: -0.03308086284600174}, scale: {up: 0.4355022499999999, dn: -0.3534920000000001}, stat: {up: 0.1781134119037643, dn: 0.1781134119037643}}}
+LineColor=green
+Path=/THY/CMS_2019_I1764472/d01-x01-y01
+RemoveOptions=0
+Title=PowhegBoxZpWp
+# xlow	 xhigh	 val	 errminus	 errplus
+1.120000e+02	1.320000e+02	1.354730e+00	2.932079e-01	3.179675e-01
+1.320000e+02	1.520000e+02	3.319546e+00	4.755159e-01	4.058097e-01
+1.520000e+02	1.720000e+02	1.293530e+01	1.427176e+00	1.044986e+00
+1.720000e+02	1.920000e+02	8.453135e+00	9.623865e-01	7.272945e-01
+1.920000e+02	2.320000e+02	2.102688e+00	3.972094e-01	4.716789e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2019_I1764472/d01-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/CMS_2019_I1764472/d01-x01-y01-SM
+Title=SM as BG: Bin 5, 10\% (  7\% expected)
+# xlow	 xhigh	 val	 errminus	 errplus
+1.120000e+02	1.320000e+02	1.362747e+00	2.932189e-01	3.179776e-01
+1.320000e+02	1.520000e+02	3.354019e+00	4.755450e-01	4.058438e-01
+1.520000e+02	1.720000e+02	1.306598e+01	1.427213e+00	1.045036e+00
+1.720000e+02	1.920000e+02	8.712884e+00	9.624947e-01	7.274376e-01
+1.920000e+02	2.320000e+02	2.148786e+00	3.972327e-01	4.716985e-01
+# END HISTO1D
+

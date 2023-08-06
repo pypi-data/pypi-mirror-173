@@ -1,0 +1,63 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LegendXPos=0.95
+LeftMargin=1.5
+Title=$pp \rightarrow e^{\pm}\mu^{\mp}\nu\nu j$, $b$-veto
+XLabel=
+YLabel=$\sigma_\mathrm{fid.}$
+LogY=0
+LogX=0
+DrawOnly=/REF/ATLAS_2021_I1852328/d01-x01-y02 /THY/ATLAS_2021_I1852328/d01-x01-y02 /ATLAS_2021_I1852328/d01-x01-y02-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2021_I1852328/d01-x01-y02
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2021_I1852328/d01-x01-y02
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {"corr,EGSCALEALL": {dn: 0.22623534, up: -0.22623534}, "corr,ELEFFIDCorrUncertaintyNP10": {dn: -0.0, up: 0.0}, "corr,ELEFFIDCorrUncertaintyNP11": {dn: 0.40219616, up: -0.40219616}, "corr,ELEFFIDCorrUncertaintyNP12": {dn: 0.27650986, up: -0.27650986}, "corr,ELEFFIDCorrUncertaintyNP13": {dn: -0.10054904, up: 0.10054904}, "corr,ELEFFIDCorrUncertaintyNP14": {dn: 0.2513726, up: -0.2513726}, "corr,ELEFFIDCorrUncertaintyNP15": {dn: -0.35192164000000004, up: 0.35192164000000004}, "corr,ELEFFIDCorrUncertaintyNP8": {dn: -0.17596082000000002, up: 0.17596082000000002}, "corr,ELEFFIDCorrUncertaintyNP9": {dn: 0.2513726, up: -0.2513726}, "corr,ELEFFIDSIMPLIFIEDUncorrUncertaintyNP17": {dn: 0.35192164000000004, up: -0.35192164000000004}, "corr,ELEFFIDSIMPLIFIEDUncorrUncertaintyNP8": {dn: 0.30164712, up: -0.30164712}, "corr,ELEFFRecoTOTAL1NPCORPLUSUNCOR": {dn: 0.22623534, up: -0.22623534}, "corr,FFAntiIDsub25": {dn: -6.686511160000001, up: 6.686511160000001}, "corr,FFEWSUBTR": {dn: -3.61976544, up: 3.61976544}, "corr,FFSigSub": {dn: -3.7203144800000003, up: 3.7203144800000003}, "corr,FTEFFEigenB0": {dn: 4.60011858, up: -4.60011858}, "corr,FTEFFEigenB1": {dn: 2.06125532, up: -2.06125532}, "corr,FTEFFEigenB2": {dn: -1.6841964200000001, up: 1.6841964200000001}, "corr,FTEFFEigenC0": {dn: 0.95521588, up: -0.95521588}, "corr,FTEFFEigenC1": {dn: 0.20109808, up: -0.20109808}, "corr,FTEFFEigenC2": {dn: -0.07541178, up: 0.07541178}, "corr,FTEFFEigenLight0": {dn: 2.21207888, up: -2.21207888}, "corr,FTEFFEigenLight1": {dn: -0.22623534, up: 0.22623534}, "corr,FTEFFEigenLight2": {dn: -0.05027452, up: 0.05027452}, "corr,FTEFFEigenLight3": {dn: 0.1256863, up: -0.1256863}, "corr,FTEFFextrapolation": {dn: 0.05027452, up: -0.05027452}, "corr,FTEFFextrapolationfromcharm": {dn: -0.1256863, up: 0.1256863}, "corr,Generator": {dn: -3.0918829800000003, up: 3.0918829800000003}, "corr,JETBJESResponse": {dn: -0.10054904, up: 0.10054904}, "corr,JETEffectiveNPDetector1": {dn: 0.22623534, up: -0.22623534}, "corr,JETEffectiveNPMixed1": {dn: 0.07541178, up: -0.07541178}, "corr,JETEffectiveNPMixed2": {dn: -0.30164712, up: 0.30164712}, "corr,JETEffectiveNPModelling1": {dn: 3.69517722, up: -3.69517722}, "corr,JETEffectiveNPModelling2": {dn: -0.22623534, up: 0.22623534}, "corr,JETEffectiveNPStatistical1": {dn: -0.02513726, up: 0.02513726}, "corr,JETEtaIntercalibrationModelling": {dn: 6.7367856800000006, up: -6.7367856800000006}, "corr,JETFlavorComposition": {dn: 2.91592216, up: -2.91592216}, "corr,JETFlavorResponse": {dn: -6.208903220000001, up: 6.208903220000001}, "corr,JETJERDataVsMCMC16": {dn: -0.77925506, up: 0.77925506}, "corr,JETJEREffectiveNP1": {dn: 6.00780514, up: -6.00780514}, "corr,JETJEREffectiveNP10": {dn: -0.07541178, up: 0.07541178}, "corr,JETJEREffectiveNP11": {dn: 0.37705890000000003, up: -0.37705890000000003}, "corr,JETJEREffectiveNP12restTerm": {dn: 0.32678438000000004, up: -0.32678438000000004}, "corr,JETJEREffectiveNP2": {dn: -0.6535687600000001, up: 0.6535687600000001}, "corr,JETJEREffectiveNP3": {dn: -1.08090218, up: 1.08090218}, "corr,JETJEREffectiveNP4": {dn: -0.80439232, up: 0.80439232}, "corr,JETJEREffectiveNP5": {dn: -0.52788246, up: 0.52788246}, "corr,JETJEREffectiveNP6": {dn: -0.35192164000000004, up: 0.35192164000000004}, "corr,JETJEREffectiveNP7": {dn: 0.37705890000000003, up: -0.37705890000000003}, "corr,JETJEREffectiveNP8": {dn: -0.02513726, up: 0.02513726}, "corr,JETJEREffectiveNP9": {dn: 0.17596082000000002, up: -0.17596082000000002}, "corr,JETJvtEfficiency": {dn: 0.7038432800000001, up: -0.7038432800000001}, "corr,JETPileupOffsetMu": {dn: 5.027452, up: -5.027452}, "corr,JETPileupOffsetNPV": {dn: 3.3683928400000003, up: -3.3683928400000003}, "corr,JETPileupPtTerm": {dn: 0.05027452, up: -0.05027452}, "corr,JETPileupRhoTopology": {dn: 8.01878594, up: -8.01878594}, "corr,METSoftTrkResoPara": {dn: 0.05027452, up: -0.05027452}, "corr,METSoftTrkResoPerp": {dn: -0.05027452, up: 0.05027452}, "corr,METSoftTrkScale": {dn: -0.10054904, up: 0.10054904}, "corr,MUONEFFISOSYS": {dn: 0.60329424, up: -0.60329424}, "corr,MUONEFFRECOSYS": {dn: 0.5027452, up: -0.5027452}, "corr,MUONID": {dn: 0.10054904, up: -0.10054904}, "corr,MUONSAGITTARESBIAS": {dn: -0.0, up: 0.0}, "corr,MUONSCALE": {dn: -0.40219616, up: 0.40219616}, "corr,PRWDATASF": {dn: 1.48309834, up: -1.48309834}, "corr,bcountr32": {dn: 2.7399613400000002, up: -2.7399613400000002}, "corr,elFFBTagged": {dn: 2.7148240800000005, up: -2.7148240800000005}, "corr,elFFSTAT2015201811": {dn: -0.0, up: 0.0}, "corr,elFFSTAT2015201812": {dn: -0.0, up: 0.0}, "corr,elFFSTAT2015201813": {dn: -0.0, up: 0.0}, "corr,elFFSTAT2015201821": {dn: 0.05027452, up: -0.05027452}, "corr,elFFSTAT2015201822": {dn: -0.0, up: 0.0}, "corr,elFFSTAT2015201823": {dn: 0.02513726, up: -0.02513726}, "corr,elFFSTAT2015201831": {dn: 0.07541178, up: -0.07541178}, "corr,elFFSTAT2015201832": {dn: 0.0, up: -0.0}, "corr,elFFSTAT2015201833": {dn: 0.10054904, up: -0.10054904}, "corr,elFFSTAT2015201841": {dn: 0.4273334200000001, up: -0.4273334200000001}, "corr,elFFSTAT2015201842": {dn: 0.0, up: -0.0}, "corr,elFFSTAT2015201843": {dn: 0.17596082000000002, up: -0.17596082000000002}, "corr,elFFSTAT201531": {dn: -0.0, up: 0.0}, "corr,elFFSTAT201532": {dn: -0.0, up: 0.0}, "corr,elFFSTAT201533": {dn: 0.0, up: -0.0}, "corr,elFFSTAT201541": {dn: 0.05027452, up: -0.05027452}, "corr,elFFSTAT201542": {dn: -0.0, up: 0.0}, "corr,elFFSTAT201543": {dn: 0.0, up: -0.0}, "corr,elFFSTAT2016201831": {dn: 0.0, up: -0.0}, "corr,elFFSTAT2016201832": {dn: 0.0, up: -0.0}, "corr,elFFSTAT2016201833": {dn: 0.02513726, up: -0.02513726}, "corr,elFFSTAT2016201841": {dn: 0.02513726, up: -0.02513726}, "corr,elFFSTAT2016201842": {dn: 0.0, up: -0.0}, "corr,elFFSTAT2016201843": {dn: 0.02513726, up: -0.02513726}, "corr,elFFnoMET": {dn: 0.9300786200000001, up: -0.9300786200000001}, "corr,fakesflat50": {dn: -0.0, up: 0.0}, "corr,lumi": {dn: 4.75094214, up: -4.75094214}, "corr,muFFBTagged": {dn: -1.45796108, up: 1.45796108}, "corr,muFFSTAT2015201811": {dn: -0.0, up: 0.0}, "corr,muFFSTAT2015201821": {dn: 0.05027452, up: -0.05027452}, "corr,muFFSTAT2015201831": {dn: 0.55301972, up: -0.55301972}, "corr,muFFSTAT201521": {dn: 0.0, up: -0.0}, "corr,muFFSTAT201531": {dn: 0.0, up: -0.0}, "corr,muFFSTAT201541": {dn: -0.0, up: 0.0}, "corr,muFFSTAT2016201831": {dn: 0.0, up: -0.0}, "corr,muFFSTAT2016201841": {dn: 0.0, up: -0.0}, "corr,muFFnoMET": {dn: 0.35192164000000004, up: -0.35192164000000004}, "corr,scale": {dn: -5.93239336, up: 5.93239336}, "corr,topamc": {dn: 5.30396186, up: -5.30396186}, "corr,topds": {dn: -3.82086352, up: 3.82086352}, "corr,topfsr": {dn: -2.96619668, up: 2.96619668}, "corr,tophw7": {dn: 8.01878594, up: -8.01878594}, "corr,toprad": {dn: 1.20658848, up: -1.20658848}, "corr,ttHxs": {dn: -0.0, up: 0.0}, "corr,ttWxs": {dn: -0.05027452, up: 0.05027452}, "corr,ttZxs": {dn: -0.02513726, up: 0.02513726}, "corr,ttbarxs": {dn: -0.0, up: 0.0}, "corr,vvaltmc": {dn: -3.3935301000000004, up: 3.3935301000000004}, "corr,vvvxs": {dn: -0.0, up: 0.0}, "corr,vvxs": {dn: 2.11152984, up: -2.11152984}, "corr,wtxs": {dn: -1.08090218, up: 1.08090218}, "corr,zjetsshvsmg": {dn: -4.2733342, up: 4.2733342}, "corr,zjetsxs": {dn: 0.7038432800000001, up: -0.7038432800000001}, "uncorr,bkg_stat": {dn: -2.96619668, up: 2.96619668}, "uncorr,stat": {dn: -2.8656476399999997, up: 2.8656476399999997}}}
+IsRef=1
+Path=/REF/ATLAS_2021_I1852328/d01-x01-y02
+PolyMarkers=*
+Title=ATLAS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	2.513726e+02	2.476381e+01	2.476381e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2021_I1852328/d01-x01-y02
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 20.67224, dn: 20.67224}, Scale+PDF: {up: 20.67223818, dn: -20.67223818}}}
+IsRef=1
+LineColor=green
+Path=/THY/ATLAS_2021_I1852328/d01-x01-y02
+RemoveOptions=0
+Title=MATRIX nNNLO x NLO EW
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	2.475371e+02	2.067224e+01	2.067224e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2021_I1852328/d01-x01-y02-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2021_I1852328/d01-x01-y02-SM
+Title=SM as BG: No exclusion; expected exclusion was   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	2.475531e+02	2.067225e+01	2.067225e+01
+# END HISTO1D
+

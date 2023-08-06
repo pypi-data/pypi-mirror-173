@@ -1,0 +1,54 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LogY=0
+LegendAlign=r
+XTwosidedTicks=1
+YTwosidedTicks=1
+LeftMargin=1.8
+Title=Dijet selection, soft-dropped
+XLabel=$D_2$
+YLabel=$\dfrac{1}{\sigma} \; \dfrac{\mathrm{d}\sigma}{\mathrm{d} D_2}$
+DrawOnly=/REF/ATLAS_2019_I1724098/d26-x01-y01 /ATLAS_2019_I1724098/d26-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1724098/d26-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1724098/d26-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {modelling: {dn: -0.0, up: 0.00876539904531}, stat: {dn: -5.76948291994e-05, up: 5.76984502486e-05}, sys: {dn: -0.00261443852889, up: 0.00510305789573}}, 1: {modelling: {dn: -0.0, up: 0.0247524676824}, stat: {dn: -0.000130119472192, up: 0.000130118138737}, sys: {dn: -0.0124080714233, up: 0.015458649548}}, 2: {modelling: {dn: -0.0, up: 0.00680809085724}, stat: {dn: -0.000116817084912, up: 0.000116817102708}, sys: {dn: -0.0296690544661, up: 0.0310194007048}}, 3: {modelling: {dn: -0.00337969134528, up: 0.0}, stat: {dn: -7.34305887755e-05, up: 7.34306469318e-05}, sys: {dn: -0.0259074965706, up: 0.0261280681118}}, 4: {modelling: {dn: -0.000240967771872, up: 0.0}, stat: {dn: -2.00032353871e-05, up: 2.00025980971e-05}, sys: {dn: -0.00549168607503, up: 0.00566104143585}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1724098/d26-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	7.600000e-01	7.312384e-02	2.615075e-03	1.014282e-02
+7.600000e-01	1.330000e+00	2.955918e-01	1.240875e-02	2.918341e-02
+1.330000e+00	1.900000e+00	3.498561e-01	2.966928e-02	3.175794e-02
+1.900000e+00	2.850000e+00	2.402028e-01	2.612711e-02	2.612817e-02
+2.850000e+00	9.500000e+00	5.238015e-02	5.497007e-03	5.661077e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1724098/d26-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2019_I1724098/d26-x01-y01
+Title=Data as BG: Bin 3,  0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	7.600000e-01	7.313340e-02	3.716396e-07	3.716396e-07
+7.600000e-01	1.330000e+00	2.956320e-01	8.802398e-07	8.802398e-07
+1.330000e+00	1.900000e+00	3.499011e-01	9.312236e-07	9.312236e-07
+1.900000e+00	2.850000e+00	2.402276e-01	5.351760e-07	5.351760e-07
+2.850000e+00	9.500000e+00	5.238735e-02	1.089879e-07	1.089879e-07
+# END HISTO1D
+

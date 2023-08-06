@@ -1,0 +1,81 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LogY=1
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LeftMargin=1.5
+XLabel=$m_{4\ell}$ [GeV]
+YLabel=$\mathrm{d} \sigma^\mathrm{fid}_{4\ell}/\mathrm{d}m_{4\ell}$ [fb / GeV]
+Title=$20 < p_\mathrm{T} < 50$ GeV
+DrawOnly=/REF/ATLAS_2019_I1720442/d03-x01-y01 /THY/ATLAS_2019_I1720442/d03-x01-y01 /ATLAS_2019_I1720442/d03-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1720442/d03-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1720442/d03-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.01336657, up: 0.01336657}, syst: {dn: -0.005192626, up: 0.005192626}}, 1: {stat: {dn: -0.006325896, up: 0.006325896}, syst: {dn: -0.001944254, up: 0.001944254}}, 2: {stat: {dn: -0.0116191, up: 0.0116191}, syst: {dn: -0.003755329, up: 0.003755329}}, 3: {stat: {dn: -0.01012763, up: 0.01012763}, syst: {dn: -0.00286496, up: 0.00286496}}, 4: {stat: {dn: -0.005180774, up: 0.005180774}, syst: {dn: -0.001360769, up: 0.001360769}}, 5: {stat: {dn: -0.002123078, up: 0.002123078}, syst: {dn: -0.0003778577, up: 0.0003778577}}, 6: {stat: {dn: -0.0002546469, up: 0.0002546469}, syst: {dn: -5.299358e-05, up: 5.299358e-05}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1720442/d03-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+7.500000e+01	1.100000e+02	9.700023e-02	1.433975e-02	1.433975e-02
+1.100000e+02	1.800000e+02	4.629534e-02	6.617937e-03	6.617937e-03
+1.800000e+02	2.200000e+02	1.106193e-01	1.221090e-02	1.221090e-02
+2.200000e+02	2.600000e+02	8.456313e-02	1.052506e-02	1.052506e-02
+2.600000e+02	3.300000e+02	3.977471e-02	5.356502e-03	5.356502e-03
+3.300000e+02	4.500000e+02	1.148854e-02	2.156441e-03	2.156441e-03
+4.500000e+02	1.200000e+03	1.082187e-03	2.601026e-04	2.601026e-04
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2019_I1720442/d03-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0.007853893000000001, dn: 0.007853893000000001}, total: {up: 0.007853893000000001, dn: -0.007853893000000001}}, 1: {"": {up: 0.002848154, dn: 0.002848154}, total: {up: 0.002848154, dn: -0.002848154}}, 2: {"": {up: 0.006505, dn: 0.006505}, total: {up: 0.006505, dn: -0.006505}}, 3: {"": {up: 0.004363065, dn: 0.004363065}, total: {up: 0.004363065, dn: -0.004363065}}, 4: {"": {up: 0.002085555, dn: 0.002085555}, total: {up: 0.002085555, dn: -0.002085555}}, 5: {"": {up: 0.0006468928, dn: 0.0006468928}, total: {up: 0.0006468928, dn: -0.0006468928}}, 6: {"": {up: 5.090378e-05, dn: 5.090378e-05}, total: {up: 5.090378e-05, dn: -5.090378e-05}}}
+IsRef=1
+LineColor=green
+Path=/THY/ATLAS_2019_I1720442/d03-x01-y01
+RemoveOptions=0
+Title=Sherpa+NLO EW
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+7.500000e+01	1.100000e+02	1.012143e-01	7.853893e-03	7.853893e-03
+1.100000e+02	1.800000e+02	3.899442e-02	2.848154e-03	2.848154e-03
+1.800000e+02	2.200000e+02	1.105746e-01	6.505000e-03	6.505000e-03
+2.200000e+02	2.600000e+02	7.883208e-02	4.363065e-03	4.363065e-03
+2.600000e+02	3.300000e+02	3.514119e-02	2.085555e-03	2.085555e-03
+3.300000e+02	4.500000e+02	1.095431e-02	6.468928e-04	6.468928e-04
+4.500000e+02	1.200000e+03	8.071783e-04	5.090378e-05	5.090378e-05
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1720442/d03-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2019_I1720442/d03-x01-y01-SM
+Title=SM as BG: No exclusion
+# xlow	 xhigh	 val	 errminus	 errplus
+7.500000e+01	1.100000e+02	1.012143e-01	7.853893e-03	7.853893e-03
+1.100000e+02	1.800000e+02	3.899442e-02	2.848154e-03	2.848154e-03
+1.800000e+02	2.200000e+02	1.105746e-01	6.505000e-03	6.505000e-03
+2.200000e+02	2.600000e+02	7.883208e-02	4.363065e-03	4.363065e-03
+2.600000e+02	3.300000e+02	3.514119e-02	2.085555e-03	2.085555e-03
+3.300000e+02	4.500000e+02	1.095431e-02	6.468928e-04	6.468928e-04
+4.500000e+02	1.200000e+03	8.071783e-04	5.090378e-05	5.090378e-05
+# END HISTO1D
+

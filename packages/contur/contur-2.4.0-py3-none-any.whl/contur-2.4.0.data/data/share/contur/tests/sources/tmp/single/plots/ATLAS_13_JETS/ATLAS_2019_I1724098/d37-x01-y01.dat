@@ -1,0 +1,57 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LogY=0
+LegendAlign=r
+XTwosidedTicks=1
+YTwosidedTicks=1
+LeftMargin=1.8
+Title=$W$ selection, trimmed
+XLabel=Nsubjets
+XMinorTickMarks=0
+YLabel=$\dfrac{1}{\sigma} \; \dfrac{\mathrm{d}\sigma}{\mathrm{d~Nsubjets}}$
+DrawOnly=/REF/ATLAS_2019_I1724098/d37-x01-y01 /ATLAS_2019_I1724098/d37-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1724098/d37-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1724098/d37-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {modelling: {dn: -1.2425805897e-07, up: 0.0}, stat: {dn: -0.000112928463311, up: 0.000114012915585}, sys: {dn: -0.000191248472867, up: 0.00109743738929}}, 1: {modelling: {dn: -3.79566405586e-05, up: 0.0}, stat: {dn: -0.00912080574645, up: 0.00915507531073}, sys: {dn: -0.0460299013319, up: 0.0361879797214}}, 2: {modelling: {dn: -0.0, up: 3.95817606508e-05}, stat: {dn: -0.0103048950219, up: 0.0102350040325}, sys: {dn: -0.0360890845861, up: 0.0385006550394}}, 3: {modelling: {dn: -0.0, up: 7.96978926199e-05}, stat: {dn: -0.00571525095758, up: 0.00570171017251}, sys: {dn: -0.0150856221202, up: 0.0168457317411}}, 4: {modelling: {dn: -0.0, up: 6.63025134538e-05}, stat: {dn: -0.00287006445305, up: 0.00296613729424}, sys: {dn: -0.0067917414203, up: 0.00736379148266}}, 5: {modelling: {dn: -0.0, up: 1.02366834992e-05}, stat: {dn: -0.000483373025029, up: 0.000508088150105}, sys: {dn: -0.00113148655184, up: 0.00123375637298}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1724098/d37-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e-01	1.500000e+00	1.486497e-03	2.221009e-04	1.103344e-03
+1.500000e+00	2.500000e+00	5.651318e-01	4.692486e-02	3.732808e-02
+2.500000e+00	3.500000e+00	3.209139e-01	3.753149e-02	3.983789e-02
+3.500000e+00	4.500000e+00	8.898890e-02	1.613196e-02	1.778467e-02
+4.500000e+00	5.500000e+00	2.056843e-02	7.373264e-03	7.939004e-03
+5.500000e+00	6.500000e+00	2.910520e-03	1.230411e-03	1.334321e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1724098/d37-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2019_I1724098/d37-x01-y01
+Title=Data as BG: Bin 1,  5\%
+# xlow	 xhigh	 val	 errminus	 errplus
+5.000000e-01	1.500000e+00	1.562629e-03	5.383366e-05	5.383366e-05
+1.500000e+00	2.500000e+00	5.652841e-01	7.613228e-05	7.613228e-05
+2.500000e+00	3.500000e+00	3.211042e-01	8.511847e-05	8.511847e-05
+3.500000e+00	4.500000e+00	8.898890e-02	0.000000e+00	0.000000e+00
+4.500000e+00	5.500000e+00	2.056843e-02	0.000000e+00	0.000000e+00
+5.500000e+00	6.500000e+00	2.910520e-03	0.000000e+00	0.000000e+00
+# END HISTO1D
+

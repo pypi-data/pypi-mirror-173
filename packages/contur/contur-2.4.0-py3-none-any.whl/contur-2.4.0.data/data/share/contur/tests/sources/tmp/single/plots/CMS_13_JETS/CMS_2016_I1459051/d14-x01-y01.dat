@@ -1,0 +1,53 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=CMS, $\sqrt{(}s)$ = 13 TeV, Inclusive AK4 jets, $3.2 < |y| < 4.7$
+XLabel=$p_{T}$ [GeV]
+YLabel=d$^2\sigma$/d$p_{T}$d$y$ [pb/GeV]
+FullRange=1
+LogY=1
+LogX=1
+LegendYPos=0.9
+RatioPlotYMax=3.0
+RatioPlotYMin=-3.0
+DrawOnly=/REF/CMS_2016_I1459051/d14-x01-y01 /CMS_2016_I1459051/d14-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2016_I1459051/d14-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2016_I1459051/d14-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -127.226, up: 127.226}, sys: {dn: -129.221, up: 129.221}}, 1: {stat: {dn: -39.9828, up: 39.9828}, sys: {dn: -66.3262, up: 66.3262}}, 2: {stat: {dn: -22.1989, up: 22.1989}, sys: {dn: -24.0922, up: 24.0922}}, 3: {stat: {dn: -11.1947, up: 11.1947}, sys: {dn: -8.46836, up: 8.46836}}, 4: {stat: {dn: -2.1873, up: 2.1873}, sys: {dn: -3.46637, up: 3.46637}}}
+IsRef=1
+Path=/REF/CMS_2016_I1459051/d14-x01-y01
+PolyMarkers=*
+Title=CMS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+1.140000e+02	1.330000e+02	2.547200e+02	1.813409e+02	1.813409e+02
+1.330000e+02	1.530000e+02	1.259140e+02	7.744539e+01	7.744539e+01
+1.530000e+02	1.740000e+02	4.402720e+01	3.276012e+01	3.276012e+01
+1.740000e+02	1.960000e+02	1.489170e+01	1.403690e+01	1.403690e+01
+1.960000e+02	2.200000e+02	5.859140e+00	4.098781e+00	4.098781e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2016_I1459051/d14-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/CMS_2016_I1459051/d14-x01-y01
+Title=Data as BG: Bin 5,  0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+1.140000e+02	1.330000e+02	2.547200e+02	2.578128e-06	2.578128e-06
+1.330000e+02	1.530000e+02	1.259140e+02	1.889616e-06	1.889616e-06
+1.530000e+02	1.740000e+02	4.402721e+01	1.870234e-06	1.870234e-06
+1.740000e+02	1.960000e+02	1.489171e+01	1.165091e-06	1.165091e-06
+1.960000e+02	2.200000e+02	5.859144e+00	8.907733e-07	8.907733e-07
+# END HISTO1D
+

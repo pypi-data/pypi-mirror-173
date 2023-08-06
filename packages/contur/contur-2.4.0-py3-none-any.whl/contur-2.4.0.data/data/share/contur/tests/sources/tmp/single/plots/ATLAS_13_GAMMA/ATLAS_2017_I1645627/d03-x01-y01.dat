@@ -1,0 +1,76 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LogY=1
+LogX=0
+LegendAlign=l
+Title=$E_\mathrm{T}^\gamma > 125$ GeV, $p_\mathrm{T}^\mathrm{jet-lead} > 100$ GeV
+XLabel=$\Delta\phi^{\gamma\mathrm{-jet}}$ [rad]
+YLabel=$\mathrm{d}\sigma / \mathrm{d} \Delta\phi^{\gamma\mathrm{-jet}}$ [pb/rad]
+LegendXPos=0.05
+DrawOnly=/REF/ATLAS_2017_I1645627/d03-x01-y01 /THY/ATLAS_2017_I1645627/d03-x01-y01 /ATLAS_2017_I1645627/d03-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2017_I1645627/d03-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2017_I1645627/d03-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.095901, up: 0.095901}, sysEtisoGap: {dn: 0, up: 0.007377}, sysEtisoMC: {dn: -0.036885, up: 0.036885}, sysEtisoUpperLimit: {dn: -0.029508, up: 0.029508}, sysJetES: {dn: -0.154917, up: 0.140163}, sysJetRES: {dn: -0.095901, up: 0.095901}, sysLeakage: {dn: -0.014754, up: 0.014754}, sysLumi: {dn: -0.154917, up: 0.154917}, sysMCStat: {dn: -0.081147, up: 0.081147}, sysPhotonES: {dn: -0.125409, up: 0.110655}, sysPhotonID: {dn: -0.095901, up: 0.103278}, sysPhotonInvertVar: {dn: -0.066393, up: 0.059016}, sysPhotonRES: {dn: -0.014754, up: 0.007377}, sysPileUp: {dn: -0.059016, up: 0.022131}, sysRbg: {dn: -0.081147, up: 0.07377}, sysTrigger: {dn: -0.07377, up: 0.07377}, sysUnfolding: {dn: -0.118032, up: 0.118032}}, 1: {stat: {dn: -0.15472, up: 0.15472}, sysEtisoGap: {dn: 0, up: 0.01934}, sysEtisoMC: {dn: -0.13538, up: 0.13538}, sysEtisoUpperLimit: {dn: -0.01934, up: 0.01934}, sysJetES: {dn: -0.44482, up: 0.42548}, sysJetRES: {dn: -0.11604, up: 0.11604}, sysLeakage: {dn: -0.13538, up: 0.13538}, sysLumi: {dn: -0.40614, up: 0.40614}, sysMCStat: {dn: -0.11604, up: 0.11604}, sysPhotonES: {dn: -0.30944, up: 0.2901}, sysPhotonID: {dn: -0.25142, up: 0.27076}, sysPhotonInvertVar: {dn: -0.15472, up: 0.13538}, sysPhotonRES: {dn: 0, up: 0.01934}, sysPileUp: {dn: -0.07736, up: 0.07736}, sysRbg: {dn: -0.21274, up: 0.21274}, sysTrigger: {dn: -0.1934, up: 0.1934}, sysUnfolding: {dn: -0.34812, up: 0.34812}}, 2: {stat: {dn: -0.26745, up: 0.26745}, sysEtisoGap: {dn: 0, up: 0}, sysEtisoMC: {dn: -0.32094, up: 0.32094}, sysEtisoUpperLimit: {dn: -0.10698, up: 0.10698}, sysJetES: {dn: -1.23027, up: 1.23027}, sysJetRES: {dn: -0.05349, up: 0.05349}, sysLeakage: {dn: -0.5349, up: 0.5349}, sysLumi: {dn: -1.12329, up: 1.12329}, sysMCStat: {dn: -0.16047, up: 0.16047}, sysPhotonES: {dn: -0.80235, up: 0.80235}, sysPhotonID: {dn: -0.69537, up: 0.69537}, sysPhotonInvertVar: {dn: -0.42792, up: 0.26745}, sysPhotonRES: {dn: 0, up: 0.05349}, sysPileUp: {dn: 0, up: 0.05349}, sysRbg: {dn: -0.64188, up: 0.58839}, sysTrigger: {dn: -0.5349, up: 0.5349}, sysUnfolding: {dn: -0.26745, up: 0.26745}}, 3: {stat: {dn: -0.4716, up: 0.4716}, sysEtisoGap: {dn: 0, up: 0.1572}, sysEtisoMC: {dn: -0.9432, up: 0.9432}, sysEtisoUpperLimit: {dn: -0.4716, up: 0.4716}, sysJetES: {dn: -3.144, up: 3.3012}, sysJetRES: {dn: 0, up: 0}, sysLeakage: {dn: -1.7292, up: 1.7292}, sysLumi: {dn: -3.3012, up: 3.3012}, sysMCStat: {dn: -0.3144, up: 0.3144}, sysPhotonES: {dn: -2.2008, up: 2.2008}, sysPhotonID: {dn: -2.0436, up: 2.0436}, sysPhotonInvertVar: {dn: -1.1004, up: 1.1004}, sysPhotonRES: {dn: 0, up: 0}, sysPileUp: {dn: -0.4716, up: 0.4716}, sysRbg: {dn: -2.358, up: 2.358}, sysTrigger: {dn: -1.572, up: 1.572}, sysUnfolding: {dn: -1.4148, up: 1.4148}}, 4: {stat: {dn: -0.7103, up: 0.7103}, sysEtisoGap: {dn: -0.7103, up: 0.7103}, sysEtisoMC: {dn: -4.2618, up: 4.2618}, sysEtisoUpperLimit: {dn: -2.1309, up: 2.1309}, sysJetES: {dn: -9.2339, up: 9.9442}, sysJetRES: {dn: -1.4206, up: 1.4206}, sysLeakage: {dn: -8.5236, up: 8.5236}, sysLumi: {dn: -14.9163, up: 14.9163}, sysMCStat: {dn: -0.7103, up: 0.7103}, sysPhotonES: {dn: -9.9442, up: 9.2339}, sysPhotonID: {dn: -9.2339, up: 9.2339}, sysPhotonInvertVar: {dn: -4.2618, up: 6.3927}, sysPhotonRES: {dn: -0.7103, up: 0}, sysPileUp: {dn: -2.1309, up: 2.1309}, sysRbg: {dn: -12.0751, up: 12.0751}, sysTrigger: {dn: -7.103, up: 7.103}, sysUnfolding: {dn: -5.6824, up: 5.6824}}}
+IsRef=1
+Path=/REF/ATLAS_2017_I1645627/d03-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+1.570800e+00	1.884960e+00	7.377000e+00	3.666302e-01	3.505434e-01
+1.884960e+00	2.199120e+00	1.934000e+01	9.183955e-01	9.056821e-01
+2.199120e+00	2.513280e+00	5.349000e+01	2.314331e+00	2.276941e+00
+2.513280e+00	2.827440e+00	1.572000e+02	6.759600e+00	6.835941e+00
+2.827440e+00	3.141600e+00	7.103000e+02	2.902686e+01	2.940676e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2017_I1645627/d03-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 1.89634246076, dn: 1.89634246076}}, 1: {"": {up: 2.976958774649999, dn: 2.976958774649999}}, 2: {"": {up: 6.809280653850001, dn: 6.809280653850001}}, 3: {"": {up: 21.31677051449999, dn: 21.31677051449999}}, 4: {"": {up: 35.15040808750002, dn: 35.15040808750002}}}
+IsRef=1
+LineColor=green
+Path=/THY/ATLAS_2017_I1645627/d03-x01-y01
+RemoveOptions=0
+Title=NNLO QCD arXiv:1904.01044
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+1.570800e+00	1.884960e+00	6.977538e+00	1.896342e+00	1.896342e+00
+1.884960e+00	2.199120e+00	1.809431e+01	2.976959e+00	2.976959e+00
+2.199120e+00	2.513280e+00	5.315842e+01	6.809281e+00	6.809281e+00
+2.513280e+00	2.827440e+00	1.714175e+02	2.131677e+01	2.131677e+01
+2.827440e+00	3.141600e+00	7.103647e+02	3.515041e+01	3.515041e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2017_I1645627/d03-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2017_I1645627/d03-x01-y01-SM
+Title=SM as BG: No exclusion; expected exclusion was   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+1.570800e+00	1.884960e+00	6.978201e+00	1.896342e+00	1.896342e+00
+1.884960e+00	2.199120e+00	1.809584e+01	2.976959e+00	2.976959e+00
+2.199120e+00	2.513280e+00	5.316021e+01	6.809281e+00	6.809281e+00
+2.513280e+00	2.827440e+00	1.714195e+02	2.131677e+01	2.131677e+01
+2.827440e+00	3.141600e+00	7.103675e+02	3.515041e+01	3.515041e+01
+# END HISTO1D
+

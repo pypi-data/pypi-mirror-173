@@ -1,0 +1,51 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=CMS, 13$\,$TeV, $\mathrm{t}+\bar{\mathrm{t}}$, $\mathrm{e}/\mu +\mathrm{jets}$
+XLabel=Particle-level lepton $|y|$
+YLabel=$\mathrm{d}\sigma_{\mathrm{t+}\bar{\mathrm{t}}}/\mathrm{d}|y| ~\mathrm{(pb)}$
+YMin=0.0
+YMax=3.7
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+LogY=0
+DrawOnly=/REF/CMS_2019_I1744604/d19-x01-y01 /CMS_2019_I1744604/d19-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2019_I1744604/d19-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2019_I1744604/d19-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {"$\\textrm{t}\\bar{\\textrm{t}}$ $p_{\\textrm{T}}$ reweighting": {dn: -0.0295, up: 0.0295}, "$\\textrm{t}\\bar{\\textrm{t}}$ parton shower": {dn: -0.08, up: 0.08}, "$\\textrm{t}\\bar{\\textrm{t}}$ renormalisation and factorisation scales": {dn: -0.0862, up: 0.0862}, "$\\textrm{t}\\bar{\\textrm{t}}$ underlying event tune": {dn: -0.05, up: 0.05}, "$\\textrm{t}\\bar{\\textrm{t}}$/tW normalisation": {dn: -0.0284, up: 0.0284}, $t$ channel parton shower: {dn: -0.235, up: 0.235}, $t$ channel renormalisation and factorisation scales: {dn: -0.0413, up: 0.0413}, Color reconnection: {dn: -0.0955, up: 0.0955}, Fragmentation model: {dn: -0.0241, up: 0.0241}, Jet energy scale and resolution: {dn: -0.0547, up: 0.0547}, Luminosity: {dn: -0.0771, up: 0.0771}, Multijet normalisation: {dn: -0.0302, up: 0.0302}, Multijet shape: {dn: -0.0266, up: 0.0266}, "Others (lepton efficiencies, pileup, unclustered energy)": {dn: -0.051, up: 0.051}, "PDF+$\\alpha_{S}$": {dn: -0.0526, up: 0.0526}, Profiled uncertainties only: {dn: -0.117, up: 0.117}, Statistical: {dn: -0.0722, up: 0.0722}, Top quark mass: {dn: -0.05, up: 0.05}, Total: {dn: -0.336, up: 0.336}, W+jets renormalisation and factorisation scales: {dn: -0.00543, up: 0.00543}, "W/Z/$\\gamma^{\\star}$+jets normalisation": {dn: -0.0529, up: 0.0529}, b tagging efficiencies and misidentification: {dn: -0.0391, up: 0.0391}}, 1: {"$\\textrm{t}\\bar{\\textrm{t}}$ $p_{\\textrm{T}}$ reweighting": {dn: -0.0287, up: 0.0287}, "$\\textrm{t}\\bar{\\textrm{t}}$ parton shower": {dn: -0.092, up: 0.092}, "$\\textrm{t}\\bar{\\textrm{t}}$ renormalisation and factorisation scales": {dn: -0.0703, up: 0.0703}, "$\\textrm{t}\\bar{\\textrm{t}}$ underlying event tune": {dn: -0.00721, up: 0.00721}, "$\\textrm{t}\\bar{\\textrm{t}}$/tW normalisation": {dn: -0.0283, up: 0.0283}, $t$ channel parton shower: {dn: -0.246, up: 0.246}, $t$ channel renormalisation and factorisation scales: {dn: -0.0436, up: 0.0436}, Color reconnection: {dn: -0.129, up: 0.129}, Fragmentation model: {dn: -0.0174, up: 0.0174}, Jet energy scale and resolution: {dn: -0.0569, up: 0.0569}, Luminosity: {dn: -0.0752, up: 0.0752}, Multijet normalisation: {dn: -0.0268, up: 0.0268}, Multijet shape: {dn: -0.0318, up: 0.0318}, "Others (lepton efficiencies, pileup, unclustered energy)": {dn: -0.0501, up: 0.0501}, "PDF+$\\alpha_{S}$": {dn: -0.0535, up: 0.0535}, Profiled uncertainties only: {dn: -0.118, up: 0.118}, Statistical: {dn: -0.0739, up: 0.0739}, Top quark mass: {dn: -0.00409, up: 0.00409}, Total: {dn: -0.345, up: 0.345}, W+jets renormalisation and factorisation scales: {dn: -0.0445, up: 0.0445}, "W/Z/$\\gamma^{\\star}$+jets normalisation": {dn: -0.0589, up: 0.0589}, b tagging efficiencies and misidentification: {dn: -0.0412, up: 0.0412}}, 2: {"$\\textrm{t}\\bar{\\textrm{t}}$ $p_{\\textrm{T}}$ reweighting": {dn: -0.0252, up: 0.0252}, "$\\textrm{t}\\bar{\\textrm{t}}$ parton shower": {dn: -0.0406, up: 0.0406}, "$\\textrm{t}\\bar{\\textrm{t}}$ renormalisation and factorisation scales": {dn: -0.045, up: 0.045}, "$\\textrm{t}\\bar{\\textrm{t}}$ underlying event tune": {dn: -0.00893, up: 0.00893}, "$\\textrm{t}\\bar{\\textrm{t}}$/tW normalisation": {dn: -0.0255, up: 0.0255}, $t$ channel parton shower: {dn: -0.201, up: 0.201}, $t$ channel renormalisation and factorisation scales: {dn: -0.0291, up: 0.0291}, Color reconnection: {dn: -0.0561, up: 0.0561}, Fragmentation model: {dn: -0.0123, up: 0.0123}, Jet energy scale and resolution: {dn: -0.0421, up: 0.0421}, Luminosity: {dn: -0.066, up: 0.066}, Multijet normalisation: {dn: -0.0247, up: 0.0247}, Multijet shape: {dn: -0.0183, up: 0.0183}, "Others (lepton efficiencies, pileup, unclustered energy)": {dn: -0.0311, up: 0.0311}, "PDF+$\\alpha_{S}$": {dn: -0.0458, up: 0.0458}, Profiled uncertainties only: {dn: -0.0902, up: 0.0902}, Statistical: {dn: -0.0599, up: 0.0599}, Top quark mass: {dn: -0.0443, up: 0.0443}, Total: {dn: -0.259, up: 0.259}, W+jets renormalisation and factorisation scales: {dn: -0.0175, up: 0.0175}, "W/Z/$\\gamma^{\\star}$+jets normalisation": {dn: -0.0456, up: 0.0456}, b tagging efficiencies and misidentification: {dn: -0.0329, up: 0.0329}}, 3: {"$\\textrm{t}\\bar{\\textrm{t}}$ $p_{\\textrm{T}}$ reweighting": {dn: -0.0168, up: 0.0168}, "$\\textrm{t}\\bar{\\textrm{t}}$ parton shower": {dn: -0.075, up: 0.075}, "$\\textrm{t}\\bar{\\textrm{t}}$ renormalisation and factorisation scales": {dn: -0.0187, up: 0.0187}, "$\\textrm{t}\\bar{\\textrm{t}}$ underlying event tune": {dn: -0.0172, up: 0.0172}, "$\\textrm{t}\\bar{\\textrm{t}}$/tW normalisation": {dn: -0.0191, up: 0.0191}, $t$ channel parton shower: {dn: -0.122, up: 0.122}, $t$ channel renormalisation and factorisation scales: {dn: -0.017, up: 0.017}, Color reconnection: {dn: -0.0646, up: 0.0646}, Fragmentation model: {dn: -0.00524, up: 0.00524}, Jet energy scale and resolution: {dn: -0.025, up: 0.025}, Luminosity: {dn: -0.0393, up: 0.0393}, Multijet normalisation: {dn: -0.015, up: 0.015}, Multijet shape: {dn: -0.0137, up: 0.0137}, "Others (lepton efficiencies, pileup, unclustered energy)": {dn: -0.0154, up: 0.0154}, "PDF+$\\alpha_{S}$": {dn: -0.0316, up: 0.0316}, Profiled uncertainties only: {dn: -0.0999, up: 0.0999}, Statistical: {dn: -0.0761, up: 0.0761}, Top quark mass: {dn: -0.0152, up: 0.0152}, Total: {dn: -0.198, up: 0.198}, W+jets renormalisation and factorisation scales: {dn: -0.0189, up: 0.0189}, "W/Z/$\\gamma^{\\star}$+jets normalisation": {dn: -0.0396, up: 0.0396}, b tagging efficiencies and misidentification: {dn: -0.0227, up: 0.0227}}, 4: {"$\\textrm{t}\\bar{\\textrm{t}}$ $p_{\\textrm{T}}$ reweighting": {dn: -0.0121, up: 0.0121}, "$\\textrm{t}\\bar{\\textrm{t}}$ parton shower": {dn: -0.0206, up: 0.0206}, "$\\textrm{t}\\bar{\\textrm{t}}$ renormalisation and factorisation scales": {dn: -0.0103, up: 0.0103}, "$\\textrm{t}\\bar{\\textrm{t}}$ underlying event tune": {dn: -0.0146, up: 0.0146}, "$\\textrm{t}\\bar{\\textrm{t}}$/tW normalisation": {dn: -0.0377, up: 0.0377}, $t$ channel parton shower: {dn: -0.103, up: 0.103}, $t$ channel renormalisation and factorisation scales: {dn: -0.0122, up: 0.0122}, Color reconnection: {dn: -0.071, up: 0.071}, Fragmentation model: {dn: -0.000605, up: 0.000605}, Jet energy scale and resolution: {dn: -0.0342, up: 0.0342}, Luminosity: {dn: -0.031, up: 0.031}, Multijet normalisation: {dn: -0.0229, up: 0.0229}, Multijet shape: {dn: -0.0137, up: 0.0137}, "Others (lepton efficiencies, pileup, unclustered energy)": {dn: -0.0179, up: 0.0179}, "PDF+$\\alpha_{S}$": {dn: -0.0234, up: 0.0234}, Profiled uncertainties only: {dn: -0.115, up: 0.115}, Statistical: {dn: -0.0865, up: 0.0865}, Top quark mass: {dn: -0.0189, up: 0.0189}, Total: {dn: -0.176, up: 0.176}, W+jets renormalisation and factorisation scales: {dn: -0.0163, up: 0.0163}, "W/Z/$\\gamma^{\\star}$+jets normalisation": {dn: -0.0403, up: 0.0403}, b tagging efficiencies and misidentification: {dn: -0.0206, up: 0.0206}}}
+IsRef=1
+Path=/REF/CMS_2019_I1744604/d19-x01-y01
+PolyMarkers=*
+Title=CMS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	4.000000e-01	3.100000e+00	4.890986e-01	4.890986e-01
+4.000000e-01	8.000000e-01	3.000000e+00	5.059759e-01	5.059759e-01
+8.000000e-01	1.500000e+00	2.600000e+00	3.794186e-01	3.794186e-01
+1.500000e+00	1.900000e+00	1.600000e+00	2.962364e-01	2.962364e-01
+1.900000e+00	2.400000e+00	1.200000e+00	2.759997e-01	2.759997e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2019_I1744604/d19-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/CMS_2019_I1744604/d19-x01-y01
+Title=Data as BG: No exclusion
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	4.000000e-01	3.100000e+00	0.000000e+00	0.000000e+00
+4.000000e-01	8.000000e-01	3.000000e+00	0.000000e+00	0.000000e+00
+8.000000e-01	1.500000e+00	2.600000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	1.900000e+00	1.600000e+00	0.000000e+00	0.000000e+00
+1.900000e+00	2.400000e+00	1.200000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+

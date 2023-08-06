@@ -1,0 +1,50 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LeftMargin=1.5
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+LogY=1
+Title=$eejj$
+XLabel=$\mathrm{Subleading}~p^{j}_{T}$ [GeV]
+YLabel=d$\sigma$/d$p^{j}_{T}$ [pb/GeV]
+DrawOnly=/REF/ATLAS_2019_I1718132/d08-x01-y01 /ATLAS_2019_I1718132:LMODE=ELEL/d08-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1718132/d08-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1718132/d08-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {"stat,Data_statistics": {dn: -3.9518e-05, up: 3.9518e-05}, "stat,MC_statistics": {dn: -6.5433e-05, up: 6.5433e-05}, "stat,MUON_EFF_STAT": {dn: -4.9614e-10, up: 4.9614e-10}, "stat,MUON_EFF_STAT_LOWPT": {dn: -4.9614e-10, up: 4.9614e-10}, "stat,MUON_EFF_TrigStatUncertainty": {dn: -4.9614e-10, up: 4.9614e-10}, "stat,MUON_ISO_STAT": {dn: -4.9614e-10, up: 4.9614e-10}, "stat,MUON_TTVA_STAT": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,DY_Mjj_RW_off": {dn: -6.9232e-05, up: 6.9232e-05}, "sys,DY_TH_AlphaS_uncertainty": {dn: -8.998e-05, up: 8.998e-05}, "sys,DY_TH_PDF_uncertainty": {dn: -0.00013991, up: 0.00013991}, "sys,DY_TH_Scale_uncertainty": {dn: -0.00019259, up: 0.00019259}, "sys,EG_RESOLUTION_ALL": {dn: -3.766e-05, up: 3.766e-05}, "sys,EG_SCALE_ALL": {dn: -5.8668e-06, up: 5.8668e-06}, "sys,EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -0.0001268, up: 0.0001268}, "sys,EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -5.8273e-05, up: 5.8273e-05}, "sys,EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -3.0364e-05, up: 3.0364e-05}, "sys,EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -2.4435e-05, up: 2.4435e-05}, "sys,JET_EtaIntercalibration_NonClosure": {dn: -5.0483e-05, up: 5.0483e-05}, "sys,JET_GroupedNP_1": {dn: -0.00023823, up: 0.00023823}, "sys,JET_GroupedNP_2": {dn: -0.00056034, up: 0.00056034}, "sys,JET_GroupedNP_3": {dn: -2.9344e-05, up: 2.9344e-05}, "sys,JET_JER_SINGLE_NP": {dn: -5.6534e-05, up: 5.6534e-05}, "sys,JET_JvtEfficiency": {dn: -0.0, up: 0.0}, "sys,JET_TILECORR_Uncertainty": {dn: -0.0, up: 0.0}, "sys,Luminosity": {dn: -0.00023134, up: 0.00023134}, "sys,MUON_EFF_SYS": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_EFF_SYS_LOWPT": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_EFF_TrigSystUncertainty": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_ID": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_ISO_SYS": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_MS": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_SAGITTA_RESBIAS": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_SAGITTA_RHO": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_SCALE": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,MUON_TTVA_SYS": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,PH_Iso_DDonoff": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,PRW_DATASF": {dn: -4.9614e-10, up: 4.9614e-10}, "sys,QCD_fakes": {dn: -4.7841e-05, up: 4.7841e-05}, "sys,ttbar_Colour_reconnection": {dn: -0.0, up: 0.0}, "sys,ttbar_TH_AlphaS_uncertainty": {dn: -1.0132e-10, up: 1.0132e-10}, "sys,ttbar_TH_PDF_uncertainty": {dn: -1.4565e-05, up: 1.4565e-05}, "sys,ttbar_TH_Scale_uncertainty": {dn: -0.00013324, up: 0.00013324}, "sys,ttbar_aMC_at_NLO": {dn: -0.0, up: 0.0}, "sys,ttbar_dilepton": {dn: -0.0, up: 0.0}, "sys,ttbar_radiation_down": {dn: -0.0, up: 0.0}, "sys,ttbar_radiation_up": {dn: -0.0, up: 0.0}}, 1: {"stat,Data_statistics": {dn: -4.5391e-06, up: 4.5391e-06}, "stat,MC_statistics": {dn: -6.6691e-07, up: 6.6691e-07}, "stat,MUON_EFF_STAT": {dn: -2.4622e-13, up: 2.4622e-13}, "stat,MUON_EFF_STAT_LOWPT": {dn: -2.4622e-13, up: 2.4622e-13}, "stat,MUON_EFF_TrigStatUncertainty": {dn: -2.4622e-13, up: 2.4622e-13}, "stat,MUON_ISO_STAT": {dn: -2.4622e-13, up: 2.4622e-13}, "stat,MUON_TTVA_STAT": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,DY_Mjj_RW_off": {dn: -3.1063e-06, up: 3.1063e-06}, "sys,DY_TH_AlphaS_uncertainty": {dn: -1.7851e-05, up: 1.7851e-05}, "sys,DY_TH_PDF_uncertainty": {dn: -4.6913e-06, up: 4.6913e-06}, "sys,DY_TH_Scale_uncertainty": {dn: -1.9464e-06, up: 1.9464e-06}, "sys,EG_RESOLUTION_ALL": {dn: -4.3271e-07, up: 4.3271e-07}, "sys,EG_SCALE_ALL": {dn: -8.2024e-08, up: 8.2024e-08}, "sys,EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -2.4963e-06, up: 2.4963e-06}, "sys,EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -1.7987e-06, up: 1.7987e-06}, "sys,EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -5.7219e-07, up: 5.7219e-07}, "sys,EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -4.3798e-07, up: 4.3798e-07}, "sys,JET_EtaIntercalibration_NonClosure": {dn: -1.1054e-06, up: 1.1054e-06}, "sys,JET_GroupedNP_1": {dn: -2.3107e-06, up: 2.3107e-06}, "sys,JET_GroupedNP_2": {dn: -3.9667e-06, up: 3.9667e-06}, "sys,JET_GroupedNP_3": {dn: -4.8972e-07, up: 4.8972e-07}, "sys,JET_JER_SINGLE_NP": {dn: -1.5452e-08, up: 1.5452e-08}, "sys,JET_JvtEfficiency": {dn: -5.421e-20, up: 5.421e-20}, "sys,JET_TILECORR_Uncertainty": {dn: -5.421e-20, up: 5.421e-20}, "sys,Luminosity": {dn: -3.7114e-06, up: 3.7114e-06}, "sys,MUON_EFF_SYS": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_EFF_SYS_LOWPT": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_EFF_TrigSystUncertainty": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_ID": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_ISO_SYS": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_MS": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_SAGITTA_RESBIAS": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_SAGITTA_RHO": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_SCALE": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,MUON_TTVA_SYS": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,PH_Iso_DDonoff": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,PRW_DATASF": {dn: -2.4622e-13, up: 2.4622e-13}, "sys,QCD_fakes": {dn: -1.2448e-06, up: 1.2448e-06}, "sys,ttbar_Colour_reconnection": {dn: -0.0, up: 0.0}, "sys,ttbar_TH_AlphaS_uncertainty": {dn: -8.1516e-13, up: 8.1516e-13}, "sys,ttbar_TH_PDF_uncertainty": {dn: -1.9913e-07, up: 1.9913e-07}, "sys,ttbar_TH_Scale_uncertainty": {dn: -1.071e-06, up: 1.071e-06}, "sys,ttbar_aMC_at_NLO": {dn: -0.0, up: 0.0}, "sys,ttbar_dilepton": {dn: -0.0, up: 0.0}, "sys,ttbar_radiation_down": {dn: -0.0, up: 0.0}, "sys,ttbar_radiation_up": {dn: -0.0, up: 0.0}}, 2: {"stat,Data_statistics": {dn: -2.1099e-07, up: 2.1099e-07}, "stat,MC_statistics": {dn: -2.1334e-08, up: 2.1334e-08}, "stat,MUON_EFF_STAT": {dn: -8.0827e-15, up: 8.0827e-15}, "stat,MUON_EFF_STAT_LOWPT": {dn: -8.0827e-15, up: 8.0827e-15}, "stat,MUON_EFF_TrigStatUncertainty": {dn: -8.0827e-15, up: 8.0827e-15}, "stat,MUON_ISO_STAT": {dn: -8.0827e-15, up: 8.0827e-15}, "stat,MUON_TTVA_STAT": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,DY_Mjj_RW_off": {dn: -9.9307e-08, up: 9.9307e-08}, "sys,DY_TH_AlphaS_uncertainty": {dn: -2.1901e-08, up: 2.1901e-08}, "sys,DY_TH_PDF_uncertainty": {dn: -1.0645e-08, up: 1.0645e-08}, "sys,DY_TH_Scale_uncertainty": {dn: -2.6329e-08, up: 2.6329e-08}, "sys,EG_RESOLUTION_ALL": {dn: -7.0128e-09, up: 7.0128e-09}, "sys,EG_SCALE_ALL": {dn: -6.3286e-10, up: 6.3286e-10}, "sys,EL_EFF_ID_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -3.0464e-08, up: 3.0464e-08}, "sys,EL_EFF_Iso_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -2.4965e-08, up: 2.4965e-08}, "sys,EL_EFF_Reco_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -6.7993e-09, up: 6.7993e-09}, "sys,EL_EFF_Trigger_TOTAL_1NPCOR_PLUS_UNCOR": {dn: -4.9844e-09, up: 4.9844e-09}, "sys,JET_EtaIntercalibration_NonClosure": {dn: -5.6421e-09, up: 5.6421e-09}, "sys,JET_GroupedNP_1": {dn: -3.5428e-08, up: 3.5428e-08}, "sys,JET_GroupedNP_2": {dn: -6.0887e-08, up: 6.0887e-08}, "sys,JET_GroupedNP_3": {dn: -1.0001e-08, up: 1.0001e-08}, "sys,JET_JER_SINGLE_NP": {dn: -2.1621e-08, up: 2.1621e-08}, "sys,JET_JvtEfficiency": {dn: -0.0, up: 0.0}, "sys,JET_TILECORR_Uncertainty": {dn: -0.0, up: 0.0}, "sys,Luminosity": {dn: -4.1901e-08, up: 4.1901e-08}, "sys,MUON_EFF_SYS": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_EFF_SYS_LOWPT": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_EFF_TrigSystUncertainty": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_ID": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_ISO_SYS": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_MS": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_SAGITTA_RESBIAS": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_SAGITTA_RHO": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_SCALE": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,MUON_TTVA_SYS": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,PH_Iso_DDonoff": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,PRW_DATASF": {dn: -8.0827e-15, up: 8.0827e-15}, "sys,QCD_fakes": {dn: -1.7132e-08, up: 1.7132e-08}, "sys,ttbar_Colour_reconnection": {dn: -0.0, up: 0.0}, "sys,ttbar_TH_AlphaS_uncertainty": {dn: -1.764e-15, up: 1.764e-15}, "sys,ttbar_TH_PDF_uncertainty": {dn: -6.4886e-10, up: 6.4886e-10}, "sys,ttbar_TH_Scale_uncertainty": {dn: -3.0342e-09, up: 3.0342e-09}, "sys,ttbar_aMC_at_NLO": {dn: -0.0, up: 0.0}, "sys,ttbar_dilepton": {dn: -0.0, up: 0.0}, "sys,ttbar_radiation_down": {dn: -0.0, up: 0.0}, "sys,ttbar_radiation_up": {dn: -0.0, up: 0.0}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1718132/d08-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	3.000000e+02	1.074700e-02	7.409158e-04	7.409158e-04
+3.000000e+02	6.000000e+02	1.724100e-04	2.060046e-05	2.060046e-05
+6.000000e+02	2.500000e+03	1.946500e-06	2.557586e-07	2.557586e-07
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1718132:LMODE=ELEL/d08-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2019_I1718132:LMODE=ELEL/d08-x01-y01
+Title=Data as BG: No exclusion
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	3.000000e+02	1.074700e-02	0.000000e+00	0.000000e+00
+3.000000e+02	6.000000e+02	1.724100e-04	0.000000e+00	0.000000e+00
+6.000000e+02	2.500000e+03	1.946500e-06	0.000000e+00	0.000000e+00
+# END HISTO1D
+

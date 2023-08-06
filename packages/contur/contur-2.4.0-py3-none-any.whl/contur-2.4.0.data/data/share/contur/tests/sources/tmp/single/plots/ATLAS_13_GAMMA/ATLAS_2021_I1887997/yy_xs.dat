@@ -1,0 +1,62 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LegendAlign=r
+LogY=0
+LegendYPos=0.4
+XMajorTickMarks=20
+XMinorTickMarks=0
+XTwosidedTicks=0
+YTwosidedTicks=0
+YLabel=$\sigma$ [pb]
+YMax=4.5e1
+DrawOnly=/REF/ATLAS_2021_I1887997/yy_xs /THY/ATLAS_2021_I1887997/yy_xs /ATLAS_2021_I1887997/yy_xs-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2021_I1887997/yy_xs
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2021_I1887997/yy_xs
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {'stat': {'dn': -0.075319, 'up': 0.075319}, 'syst': {'dn': -2.3541, 'up': 2.3541}}}
+IsRef=1
+Path=/REF/ATLAS_2021_I1887997/yy_xs
+PolyMarkers=*
+Title=ATLAS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	3.143800e+01	2.355305e+00	2.355305e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2021_I1887997/yy_xs
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 2.009989000000001, dn: 2.411104999999999}, alpha_s_unc: {up: 0.22118, dn: -0.3322}, scale_unc: {up: 2.4009, dn: -1.9823}, stat_unc: {up: 0.013628, dn: -0.013628}}}
+IsRef=1
+LineColor=green
+Path=/THY/ATLAS_2021_I1887997/yy_xs
+RemoveOptions=0
+Title=NNLOJet doi.org/10.17182/hepdata.104925
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	2.970500e+01	2.411105e+00	2.009989e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2021_I1887997/yy_xs-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2021_I1887997/yy_xs-SM
+Title=SM as BG: No exclusion; expected exclusion was   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	2.970526e+01	2.411105e+00	2.009989e+00
+# END HISTO1D
+

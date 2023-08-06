@@ -1,0 +1,66 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LegendXPos=0.95
+Title=$pp \rightarrow e^{\pm}\mu^{\mp}\nu\nu$
+XLabel=$\left|y_{\ell\ell}\right|$
+YLabel=$\mathrm{d}\sigma / \mathrm{d} \left|y_{\ell\ell}\right|$ [fb]
+LogY=0
+DrawOnly=/REF/ATLAS_2019_I1734263/d13-x01-y01 /ATLAS_2019_I1734263/d13-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1734263/d13-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1734263/d13-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {BkgOther: {dn: -1.8, up: 1.8}, BkgWjets: {dn: -8.5, up: 8.5}, Bkgtopsinglet: {dn: -9.9, up: 9.9}, ElMuMETUnfTheoLumi: {dn: -6.4, up: 6.4}, FTag: {dn: -9.8, up: 9.8}, JetFlav: {dn: -4.4, up: 4.4}, JetPileup: {dn: -3.5, up: 3.5}, JetRes: {dn: -0.2, up: 0.2}, JetScaleOther: {dn: -3.6, up: 3.6}, Pileup: {dn: -1.2, up: 1.2}, StatsBkgMC: {dn: -5.1, up: 5.1}, stat: {dn: -8.6, up: 8.6}}, 1: {BkgOther: {dn: -3.7, up: 3.7}, BkgWjets: {dn: -13.3, up: 13.3}, Bkgtopsinglet: {dn: -7.0, up: 7.0}, ElMuMETUnfTheoLumi: {dn: -10.3, up: 10.3}, FTag: {dn: -9.9, up: 9.9}, JetFlav: {dn: -3.9, up: 3.9}, JetPileup: {dn: -3.1, up: 3.1}, JetRes: {dn: -1.9, up: 1.9}, JetScaleOther: {dn: -3.2, up: 3.2}, Pileup: {dn: -3.4, up: 3.4}, StatsBkgMC: {dn: -5.5, up: 5.5}, stat: {dn: -8.0, up: 8.0}}, 2: {BkgOther: {dn: -1.8, up: 1.8}, BkgWjets: {dn: -4.5, up: 4.5}, Bkgtopsinglet: {dn: -7.5, up: 7.5}, ElMuMETUnfTheoLumi: {dn: -6.4, up: 6.4}, FTag: {dn: -9.1, up: 9.1}, JetFlav: {dn: -4.0, up: 4.0}, JetPileup: {dn: -3.5, up: 3.5}, JetRes: {dn: -0.3, up: 0.3}, JetScaleOther: {dn: -3.3, up: 3.3}, Pileup: {dn: -4.9, up: 4.9}, StatsBkgMC: {dn: -3.9, up: 3.9}, stat: {dn: -8.2, up: 8.2}}, 3: {BkgOther: {dn: -2.0, up: 2.0}, BkgWjets: {dn: -4.5, up: 4.5}, Bkgtopsinglet: {dn: -5.8, up: 5.8}, ElMuMETUnfTheoLumi: {dn: -8.1, up: 8.1}, FTag: {dn: -8.7, up: 8.7}, JetFlav: {dn: -4.2, up: 4.2}, JetPileup: {dn: -3.5, up: 3.5}, JetRes: {dn: -1.1, up: 1.1}, JetScaleOther: {dn: -3.4, up: 3.4}, Pileup: {dn: -4.8, up: 4.8}, StatsBkgMC: {dn: -3.9, up: 3.9}, stat: {dn: -8.1, up: 8.1}}, 4: {BkgOther: {dn: -3.3, up: 3.3}, BkgWjets: {dn: -4.6, up: 4.6}, Bkgtopsinglet: {dn: -5.5, up: 5.5}, ElMuMETUnfTheoLumi: {dn: -5.1, up: 5.1}, FTag: {dn: -7.0, up: 7.0}, JetFlav: {dn: -4.0, up: 4.0}, JetPileup: {dn: -2.7, up: 2.7}, JetRes: {dn: -0.1, up: 0.1}, JetScaleOther: {dn: -2.8, up: 2.8}, Pileup: {dn: -5.0, up: 5.0}, StatsBkgMC: {dn: -4.4, up: 4.4}, stat: {dn: -8.0, up: 8.0}}, 5: {BkgOther: {dn: -1.1, up: 1.1}, BkgWjets: {dn: -5.7, up: 5.7}, Bkgtopsinglet: {dn: -4.9, up: 4.9}, ElMuMETUnfTheoLumi: {dn: -5.0, up: 5.0}, FTag: {dn: -6.2, up: 6.2}, JetFlav: {dn: -3.5, up: 3.5}, JetPileup: {dn: -2.4, up: 2.4}, JetRes: {dn: -0.6, up: 0.6}, JetScaleOther: {dn: -2.9, up: 2.9}, Pileup: {dn: -2.6, up: 2.6}, StatsBkgMC: {dn: -5.2, up: 5.2}, stat: {dn: -7.5, up: 7.5}}, 6: {BkgOther: {dn: -3.6, up: 3.6}, BkgWjets: {dn: -4.8, up: 4.8}, Bkgtopsinglet: {dn: -4.2, up: 4.2}, ElMuMETUnfTheoLumi: {dn: -5.3, up: 5.3}, FTag: {dn: -4.7, up: 4.7}, JetFlav: {dn: -4.6, up: 4.6}, JetPileup: {dn: -3.4, up: 3.4}, JetRes: {dn: -1.8, up: 1.8}, JetScaleOther: {dn: -3.9, up: 3.9}, Pileup: {dn: -1.2, up: 1.2}, StatsBkgMC: {dn: -4.0, up: 4.0}, stat: {dn: -7.5, up: 7.5}}, 7: {BkgOther: {dn: -1.7, up: 1.7}, BkgWjets: {dn: -4.9, up: 4.9}, Bkgtopsinglet: {dn: -3.3, up: 3.3}, ElMuMETUnfTheoLumi: {dn: -3.7, up: 3.7}, FTag: {dn: -3.7, up: 3.7}, JetFlav: {dn: -3.1, up: 3.1}, JetPileup: {dn: -2.1, up: 2.1}, JetRes: {dn: -1.1, up: 1.1}, JetScaleOther: {dn: -2.3, up: 2.3}, Pileup: {dn: -3.0, up: 3.0}, StatsBkgMC: {dn: -3.5, up: 3.5}, stat: {dn: -6.7, up: 6.7}}, 8: {BkgOther: {dn: -3.4, up: 3.4}, BkgWjets: {dn: -3.0, up: 3.0}, Bkgtopsinglet: {dn: -7.4, up: 7.4}, ElMuMETUnfTheoLumi: {dn: -3.2, up: 3.2}, FTag: {dn: -2.4, up: 2.4}, JetFlav: {dn: -2.9, up: 2.9}, JetPileup: {dn: -1.8, up: 1.8}, JetRes: {dn: -0.6, up: 0.6}, JetScaleOther: {dn: -2.3, up: 2.3}, Pileup: {dn: -1.8, up: 1.8}, StatsBkgMC: {dn: -3.3, up: 3.3}, stat: {dn: -6.6, up: 6.6}}, 9: {BkgOther: {dn: -3.0, up: 3.0}, BkgWjets: {dn: -2.98, up: 2.98}, Bkgtopsinglet: {dn: -4.1, up: 4.1}, ElMuMETUnfTheoLumi: {dn: -2.38, up: 2.38}, FTag: {dn: -1.58, up: 1.58}, JetFlav: {dn: -1.87, up: 1.87}, JetPileup: {dn: -1.33, up: 1.33}, JetRes: {dn: -1.52, up: 1.52}, JetScaleOther: {dn: -1.53, up: 1.53}, Pileup: {dn: -1.54, up: 1.54}, StatsBkgMC: {dn: -3.07, up: 3.07}, stat: {dn: -5.77, up: 5.77}}, 10: {BkgOther: {dn: -3.01, up: 3.01}, BkgWjets: {dn: -1.28, up: 1.28}, Bkgtopsinglet: {dn: -1.24, up: 1.24}, ElMuMETUnfTheoLumi: {dn: -1.34, up: 1.34}, FTag: {dn: -0.65, up: 0.65}, JetFlav: {dn: -0.87, up: 0.87}, JetPileup: {dn: -0.61, up: 0.61}, JetRes: {dn: -0.19, up: 0.19}, JetScaleOther: {dn: -0.83, up: 0.83}, Pileup: {dn: -0.56, up: 0.56}, StatsBkgMC: {dn: -1.6, up: 1.6}, stat: {dn: -2.47, up: 2.47}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1734263/d13-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.000000e-01	2.443000e+02	2.136633e+01	2.136633e+01
+2.000000e-01	4.000000e-01	2.084000e+02	2.425201e+01	2.425201e+01
+4.000000e-01	6.000000e-01	2.201000e+02	1.868689e+01	1.868689e+01
+6.000000e-01	8.000000e-01	2.127000e+02	1.859328e+01	1.859328e+01
+8.000000e-01	1.000000e+00	2.031000e+02	1.663761e+01	1.663761e+01
+1.000000e+00	1.200000e+00	1.740000e+02	1.542660e+01	1.542660e+01
+1.200000e+00	1.400000e+00	1.769000e+02	1.512217e+01	1.512217e+01
+1.400000e+00	1.600000e+00	1.459000e+02	1.232193e+01	1.232193e+01
+1.600000e+00	1.800000e+00	1.188000e+02	1.289612e+01	1.289612e+01
+1.800000e+00	2.000000e+00	8.882000e+01	9.892305e+00	9.892305e+00
+2.000000e+00	2.500000e+00	3.525000e+01	5.028191e+00	5.028191e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1734263/d13-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2019_I1734263/d13-x01-y01
+Title=Data as BG: No exclusion
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.000000e-01	2.443000e+02	0.000000e+00	0.000000e+00
+2.000000e-01	4.000000e-01	2.084000e+02	0.000000e+00	0.000000e+00
+4.000000e-01	6.000000e-01	2.201000e+02	0.000000e+00	0.000000e+00
+6.000000e-01	8.000000e-01	2.127000e+02	0.000000e+00	0.000000e+00
+8.000000e-01	1.000000e+00	2.031000e+02	0.000000e+00	0.000000e+00
+1.000000e+00	1.200000e+00	1.740000e+02	0.000000e+00	0.000000e+00
+1.200000e+00	1.400000e+00	1.769000e+02	0.000000e+00	0.000000e+00
+1.400000e+00	1.600000e+00	1.459000e+02	0.000000e+00	0.000000e+00
+1.600000e+00	1.800000e+00	1.188000e+02	0.000000e+00	0.000000e+00
+1.800000e+00	2.000000e+00	8.882000e+01	0.000000e+00	0.000000e+00
+2.000000e+00	2.500000e+00	3.525000e+01	0.000000e+00	0.000000e+00
+# END HISTO1D
+

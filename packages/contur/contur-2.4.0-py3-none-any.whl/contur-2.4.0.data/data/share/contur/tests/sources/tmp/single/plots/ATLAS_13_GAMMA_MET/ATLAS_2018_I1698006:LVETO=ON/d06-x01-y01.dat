@@ -1,0 +1,52 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LogY=1
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LeftMargin=1.5
+Title=Differential cross-section in extended fiducial region
+XLabel=$N_{\mathrm{jets}}$
+YLabel=$d\sigma/dN_{\mathrm{jets}}$ (fb)
+XMinorTickMarks=0
+DrawOnly=/REF/ATLAS_2018_I1698006/d06-x01-y01 /ATLAS_2018_I1698006:LVETO=ON/d06-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2018_I1698006/d06-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2018_I1698006/d06-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -1.647, up: 1.647}, sys: {dn: -5.074, up: 5.074}}, 1: {stat: {dn: -1.357, up: 1.357}, sys: {dn: -2.419, up: 2.419}}, 2: {stat: {dn: -1.338, up: 1.338}, sys: {dn: -2.335, up: 2.335}}, 3: {stat: {dn: -0.2625, up: 0.2625}, sys: {dn: -0.3106, up: 0.3106}}}
+IsRef=1
+Path=/REF/ATLAS_2018_I1698006/d06-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	5.296000e+01	5.334612e+00	5.334612e+00
+5.000000e-01	1.500000e+00	1.772000e+01	2.773628e+00	2.773628e+00
+1.500000e+00	2.500000e+00	8.041000e+00	2.691184e+00	2.691184e+00
+2.500000e+00	9.500000e+00	1.439000e+00	4.066677e-01	4.066677e-01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2018_I1698006:LVETO=ON/d06-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2018_I1698006:LVETO=ON/d06-x01-y01
+Title=Data as BG: Bin 4,  8\%
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	5.296000e+01	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	1.772000e+01	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	8.137204e+00	3.927492e-02	3.927492e-02
+2.500000e+00	9.500000e+00	1.480230e+00	9.718022e-03	9.718022e-03
+# END HISTO1D
+

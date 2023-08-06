@@ -1,0 +1,88 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XLabel=$\Delta \phi(\ell \ell, y)$
+YLabel=d$\sigma/\mathrm{d}\Delta \phi(\ell \ell, y)$
+LogY=1
+DrawOnly=/REF/ATLAS_2019_I1764342/d06-x01-y01 /THY/ATLAS_2019_I1764342/d06-x01-y01 /ATLAS_2019_I1764342/d06-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1764342/d06-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1764342/d06-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {EgammaScale: {dn: -0.38115, up: 0.38115}, ElectronID: {dn: -0.00726, up: 0.00726}, ElectronReco: {dn: -0.06897, up: 0.06897}, Lumi: {dn: -0.6171, up: 0.6171}, MuonIso: {dn: -0.22143, up: 0.22143}, MuonReco: {dn: -0.13430999999999998, up: 0.13430999999999998}, PhotonID: {dn: -0.39204, up: 0.39204}, PhotonIso: {dn: -0.37026, up: 0.37026}, PileupBkg: {dn: -1.06359, up: 1.06359}, Stat: {dn: -1.13619, up: 1.13619}, TtgammaBkg: {dn: -0.7731899999999999, up: 0.7731899999999999}, Uncor: {dn: -0.71511, up: 0.71511}, Z+jets: {dn: -1.32858, up: 1.32858}}, 1: {EgammaScale: {dn: -0.21594, up: 0.21594}, ElectronID: {dn: -0.01062, up: 0.01062}, ElectronReco: {dn: -0.09204, up: 0.09204}, Lumi: {dn: -0.6018, up: 0.6018}, MuonIso: {dn: -0.21239999999999998, up: 0.21239999999999998}, MuonReco: {dn: -0.12744, up: 0.12744}, PhotonID: {dn: -0.38232, up: 0.38232}, PhotonIso: {dn: -0.354, up: 0.354}, PileupBkg: {dn: -0.9841199999999999, up: 0.9841199999999999}, Stat: {dn: -1.12572, up: 1.12572}, TtgammaBkg: {dn: -0.76464, up: 0.76464}, Uncor: {dn: -0.6902999999999999, up: 0.6902999999999999}, Z+jets: {dn: -1.2850199999999998, up: 1.2850199999999998}}, 2: {EgammaScale: {dn: -0.35763, up: 0.35763}, ElectronID: {dn: -0.011789999999999998, up: 0.011789999999999998}, ElectronReco: {dn: -0.09039, up: 0.09039}, Lumi: {dn: -0.6680999999999999, up: 0.6680999999999999}, MuonIso: {dn: -0.24365999999999996, up: 0.24365999999999996}, MuonReco: {dn: -0.14540999999999998, up: 0.14540999999999998}, PhotonID: {dn: -0.41658, up: 0.41658}, PhotonIso: {dn: -0.3851399999999999, up: 0.3851399999999999}, PileupBkg: {dn: -1.0335899999999998, up: 1.0335899999999998}, Stat: {dn: -1.22616, up: 1.22616}, TtgammaBkg: {dn: -0.87246, up: 0.87246}, Uncor: {dn: -0.7702799999999999, up: 0.7702799999999999}, Z+jets: {dn: -1.4187299999999998, up: 1.4187299999999998}}, 3: {EgammaScale: {dn: -0.27608000000000005, up: 0.27608000000000005}, ElectronID: {dn: -0.01218, up: 0.01218}, ElectronReco: {dn: -0.1015, up: 0.1015}, Lumi: {dn: -0.6902, up: 0.6902}, MuonIso: {dn: -0.25578, up: 0.25578}, MuonReco: {dn: -0.15022000000000002, up: 0.15022000000000002}, PhotonID: {dn: -0.43442000000000003, up: 0.43442000000000003}, PhotonIso: {dn: -0.40194, up: 0.40194}, PileupBkg: {dn: -1.0109400000000002, up: 1.0109400000000002}, Stat: {dn: -1.2586000000000002, up: 1.2586000000000002}, TtgammaBkg: {dn: -0.9622200000000001, up: 0.9622200000000001}, Uncor: {dn: -0.73892, up: 0.73892}, Z+jets: {dn: -1.5387400000000002, up: 1.5387400000000002}}, 4: {EgammaScale: {dn: -0.44631, up: 0.44631}, ElectronID: {dn: -0.01026, up: 0.01026}, ElectronReco: {dn: -0.12312, up: 0.12312}, Lumi: {dn: -0.8721, up: 0.8721}, MuonIso: {dn: -0.32319000000000003, up: 0.32319000000000003}, MuonReco: {dn: -0.18981, up: 0.18981}, PhotonID: {dn: -0.54378, up: 0.54378}, PhotonIso: {dn: -0.50274, up: 0.50274}, PileupBkg: {dn: -1.01574, up: 1.01574}, Stat: {dn: -1.34406, up: 1.34406}, TtgammaBkg: {dn: -1.0721699999999998, up: 1.0721699999999998}, Uncor: {dn: -0.88749, up: 0.88749}, Z+jets: {dn: -1.90323, up: 1.90323}}, 5: {EgammaScale: {dn: -0.49434, up: 0.49434}, ElectronID: {dn: -0.01926, up: 0.01926}, ElectronReco: {dn: -0.15408, up: 0.15408}, Lumi: {dn: -1.0914, up: 1.0914}, MuonIso: {dn: -0.3852, up: 0.3852}, MuonReco: {dn: -0.23112, up: 0.23112}, PhotonID: {dn: -0.68052, up: 0.68052}, PhotonIso: {dn: -0.62916, up: 0.62916}, PileupBkg: {dn: -1.07856, up: 1.07856}, Stat: {dn: -1.45734, up: 1.45734}, TtgammaBkg: {dn: -1.1556, up: 1.1556}, Uncor: {dn: -1.04004, up: 1.04004}, Z+jets: {dn: -2.35614, up: 2.35614}}, 6: {EgammaScale: {dn: -0.66368, up: 0.66368}, ElectronID: {dn: -0.029279999999999997, up: 0.029279999999999997}, ElectronReco: {dn: -0.26352000000000003, up: 0.26352000000000003}, Lumi: {dn: -1.6592, up: 1.6592}, MuonIso: {dn: -0.5758399999999999, up: 0.5758399999999999}, MuonReco: {dn: -0.35136, up: 0.35136}, PhotonID: {dn: -1.0248, up: 1.0248}, PhotonIso: {dn: -0.95648, up: 0.95648}, PileupBkg: {dn: -1.0540800000000001, up: 1.0540800000000001}, Stat: {dn: -1.7568, up: 1.7568}, TtgammaBkg: {dn: -1.33712, up: 1.33712}, Uncor: {dn: -1.22, up: 1.22}, Z+jets: {dn: -2.84992, up: 2.84992}}, 7: {EgammaScale: {dn: -1.3973, up: 1.3973}, ElectronID: {dn: -0.0471, up: 0.0471}, ElectronReco: {dn: -0.3925, up: 0.3925}, Lumi: {dn: -2.669, up: 2.669}, MuonIso: {dn: -0.9263, up: 0.9263}, MuonReco: {dn: -0.5652, up: 0.5652}, PhotonID: {dn: -1.6485, up: 1.6485}, PhotonIso: {dn: -1.5229, up: 1.5229}, PileupBkg: {dn: -1.0519, up: 1.0519}, Stat: {dn: -2.1666, up: 2.1666}, TtgammaBkg: {dn: -1.4758, up: 1.4758}, Uncor: {dn: -1.6956000000000002, up: 1.6956000000000002}, Z+jets: {dn: -4.5216, up: 4.5216}}, 8: {EgammaScale: {dn: -2.4016, up: 2.4016}, ElectronID: {dn: -0.0912, up: 0.0912}, ElectronReco: {dn: -0.7904, up: 0.7904}, Lumi: {dn: -5.168, up: 5.168}, MuonIso: {dn: -1.7631999999999999, up: 1.7631999999999999}, MuonReco: {dn: -1.0639999999999998, up: 1.0639999999999998}, PhotonID: {dn: -3.192, up: 3.192}, PhotonIso: {dn: -2.9488, up: 2.9488}, PileupBkg: {dn: -1.0944, up: 1.0944}, Stat: {dn: -2.9488, up: 2.9488}, TtgammaBkg: {dn: -1.5504, up: 1.5504}, Uncor: {dn: -2.9184, up: 2.9184}, Z+jets: {dn: -8.7552, up: 8.7552}}, 9: {EgammaScale: {dn: -4.0868, up: 4.0868}, ElectronID: {dn: -0.1803, up: 0.1803}, ElectronReco: {dn: -1.7429, up: 1.7429}, Lumi: {dn: -10.216999999999999, up: 10.216999999999999}, MuonIso: {dn: -3.3656, up: 3.3656}, MuonReco: {dn: -2.0434, up: 2.0434}, PhotonID: {dn: -6.1903, up: 6.1903}, PhotonIso: {dn: -5.709499999999999, up: 5.709499999999999}, PileupBkg: {dn: -1.0217, up: 1.0217}, Stat: {dn: -5.8297, up: 5.8297}, TtgammaBkg: {dn: -1.5626, up: 1.5626}, Uncor: {dn: -5.4691, up: 5.4691}, Z+jets: {dn: -15.5058, up: 15.5058}}, 10: {EgammaScale: {dn: -7.076, up: 7.076}, ElectronID: {dn: -0.348, up: 0.348}, ElectronReco: {dn: -3.364, up: 3.364}, Lumi: {dn: -19.72, up: 19.72}, MuonIso: {dn: -6.611999999999999, up: 6.611999999999999}, MuonReco: {dn: -4.06, up: 4.06}, PhotonID: {dn: -11.368, up: 11.368}, PhotonIso: {dn: -10.672, up: 10.672}, PileupBkg: {dn: -0.9279999999999999, up: 0.9279999999999999}, Stat: {dn: -7.772, up: 7.772}, TtgammaBkg: {dn: -1.392, up: 1.392}, Uncor: {dn: -6.728, up: 6.728}, Z+jets: {dn: -26.564, up: 26.564}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1764342/d06-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	3.630000e+01	2.487014e+00	2.487014e+00
+1.000000e-01	2.000000e-01	3.540000e+01	2.387136e+00	2.387136e+00
+2.000000e-01	3.000000e-01	3.930000e+01	2.631357e+00	2.631357e+00
+3.000000e-01	4.000000e-01	4.060000e+01	2.728915e+00	2.728915e+00
+4.000000e-01	5.000000e-01	5.130000e+01	3.172008e+00	3.172008e+00
+5.000000e-01	6.000000e-01	6.420000e+01	3.711604e+00	3.711604e+00
+6.000000e-01	7.000000e-01	9.760000e+01	4.612981e+00	4.612981e+00
+7.000000e-01	8.000000e-01	1.570000e+02	6.837039e+00	6.837039e+00
+8.000000e-01	9.000000e-01	3.040000e+02	1.239765e+01	1.239765e+01
+9.000000e-01	9.500000e-01	6.010000e+02	2.276822e+01	2.276822e+01
+9.500000e-01	1.000000e+00	1.160000e+03	3.959578e+01	3.959578e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2019_I1764342/d06-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0, dn: 0}}, 1: {"": {up: 0, dn: 0}}, 2: {"": {up: 0, dn: 0}}, 3: {"": {up: 0, dn: 0}}, 4: {"": {up: 0, dn: 0}}, 5: {"": {up: 0, dn: 0}}, 6: {"": {up: 0, dn: 0}}, 7: {"": {up: 0, dn: 0}}, 8: {"": {up: 0, dn: 0}}, 9: {"": {up: 0, dn: 0}}, 10: {"": {up: 0, dn: 0}}}
+IsRef=1
+LineColor=green
+Path=/THY/ATLAS_2019_I1764342/d06-x01-y01
+RemoveOptions=0
+Title=Sherpa NLO
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	3.270000e+01	0.000000e+00	0.000000e+00
+1.000000e-01	2.000000e-01	2.960000e+01	0.000000e+00	0.000000e+00
+2.000000e-01	3.000000e-01	3.570000e+01	0.000000e+00	0.000000e+00
+3.000000e-01	4.000000e-01	4.060000e+01	0.000000e+00	0.000000e+00
+4.000000e-01	5.000000e-01	4.580000e+01	0.000000e+00	0.000000e+00
+5.000000e-01	6.000000e-01	5.930000e+01	0.000000e+00	0.000000e+00
+6.000000e-01	7.000000e-01	8.190000e+01	0.000000e+00	0.000000e+00
+7.000000e-01	8.000000e-01	1.440000e+02	0.000000e+00	0.000000e+00
+8.000000e-01	9.000000e-01	2.800000e+02	0.000000e+00	0.000000e+00
+9.000000e-01	9.500000e-01	5.910000e+02	0.000000e+00	0.000000e+00
+9.500000e-01	1.000000e+00	1.180000e+03	0.000000e+00	0.000000e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1764342/d06-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2019_I1764342/d06-x01-y01-SM
+Title=SM as BG: No exclusion; expected exclusion was   3\%
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	3.270000e+01	0.000000e+00	0.000000e+00
+1.000000e-01	2.000000e-01	2.960000e+01	0.000000e+00	0.000000e+00
+2.000000e-01	3.000000e-01	3.570000e+01	0.000000e+00	0.000000e+00
+3.000000e-01	4.000000e-01	4.060000e+01	0.000000e+00	0.000000e+00
+4.000000e-01	5.000000e-01	4.590208e+01	7.217800e-02	7.217800e-02
+5.000000e-01	6.000000e-01	5.940208e+01	7.217800e-02	7.217800e-02
+6.000000e-01	7.000000e-01	8.190000e+01	0.000000e+00	0.000000e+00
+7.000000e-01	8.000000e-01	1.440510e+02	5.103755e-02	5.103755e-02
+8.000000e-01	9.000000e-01	2.800000e+02	0.000000e+00	0.000000e+00
+9.000000e-01	9.500000e-01	5.910000e+02	0.000000e+00	0.000000e+00
+9.500000e-01	1.000000e+00	1.180000e+03	0.000000e+00	0.000000e+00
+# END HISTO1D
+

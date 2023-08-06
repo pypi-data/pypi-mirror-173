@@ -1,0 +1,85 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LogY=0
+LogX=0
+LegendAlign=l
+Title=$m^{\gamma\mathrm{-jet}} > 450$ GeV, $|\eta^\gamma + y^\mathrm{jet}| < 2.37$
+XLabel=$|\mathrm{cos}\theta^\ast|$
+YLabel=$\mathrm{d}\sigma / \mathrm{d} |\mathrm{cos}\theta^\ast|$ [pb]
+LegendXPos=0.05
+DrawOnly=/REF/ATLAS_2017_I1645627/d05-x01-y01 /THY/ATLAS_2017_I1645627/d05-x01-y01 /ATLAS_2017_I1645627/d05-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2017_I1645627/d05-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2017_I1645627/d05-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.33616, up: 0.33616}, sysEtisoGap: {dn: 0, up: 0}, sysEtisoMC: {dn: -0.18336, up: 0.18336}, sysEtisoUpperLimit: {dn: -0.06112, up: 0.06112}, sysJetES: {dn: -0.6112, up: 0.6112}, sysJetRES: {dn: -0.06112, up: 0.06112}, sysLeakage: {dn: -0.12224, up: 0.12224}, sysLumi: {dn: -0.64176, up: 0.64176}, sysMCStat: {dn: -0.06112, up: 0.06112}, sysPhotonES: {dn: -0.3056, up: 0.3056}, sysPhotonID: {dn: -0.33616, up: 0.33616}, sysPhotonInvertVar: {dn: 0, up: 0.21392}, sysPhotonRES: {dn: 0, up: 0}, sysPileUp: {dn: -0.03056, up: 0.03056}, sysRbg: {dn: -0.12224, up: 0.12224}, sysTrigger: {dn: -0.3056, up: 0.3056}, sysUnfolding: {dn: -0.12224, up: 0.12224}}, 1: {stat: {dn: -0.34771, up: 0.34771}, sysEtisoGap: {dn: 0, up: 0}, sysEtisoMC: {dn: -0.22127, up: 0.22127}, sysEtisoUpperLimit: {dn: -0.09483, up: 0.09483}, sysJetES: {dn: -0.60059, up: 0.6322}, sysJetRES: {dn: 0, up: 0}, sysLeakage: {dn: -0.09483, up: 0.09483}, sysLumi: {dn: -0.66381, up: 0.66381}, sysMCStat: {dn: -0.09483, up: 0.09483}, sysPhotonES: {dn: -0.28449, up: 0.34771}, sysPhotonID: {dn: -0.34771, up: 0.34771}, sysPhotonInvertVar: {dn: 0, up: 0.15805}, sysPhotonRES: {dn: 0, up: 0}, sysPileUp: {dn: -0.03161, up: 0.03161}, sysRbg: {dn: -0.15805, up: 0.15805}, sysTrigger: {dn: -0.3161, up: 0.3161}, sysUnfolding: {dn: -0.47415, up: 0.47415}}, 2: {stat: {dn: -0.35827, up: 0.35827}, sysEtisoGap: {dn: 0, up: 0}, sysEtisoMC: {dn: -0.22799, up: 0.22799}, sysEtisoUpperLimit: {dn: -0.06514, up: 0.06514}, sysJetES: {dn: -0.61883, up: 0.68397}, sysJetRES: {dn: -0.03257, up: 0.03257}, sysLeakage: {dn: -0.19542, up: 0.19542}, sysLumi: {dn: -0.68397, up: 0.68397}, sysMCStat: {dn: -0.09771, up: 0.09771}, sysPhotonES: {dn: -0.3257, up: 0.35827}, sysPhotonID: {dn: -0.35827, up: 0.35827}, sysPhotonInvertVar: {dn: -0.22799, up: 0.09771}, sysPhotonRES: {dn: 0, up: 0}, sysPileUp: {dn: -0.06514, up: 0.13028}, sysRbg: {dn: -0.16285, up: 0.16285}, sysTrigger: {dn: -0.3257, up: 0.3257}, sysUnfolding: {dn: 0, up: 0}}, 3: {stat: {dn: -0.37169, up: 0.37169}, sysEtisoGap: {dn: 0, up: 0}, sysEtisoMC: {dn: -0.20274, up: 0.20274}, sysEtisoUpperLimit: {dn: -0.06758, up: 0.06758}, sysJetES: {dn: -0.6758, up: 0.70959}, sysJetRES: {dn: -0.03379, up: 0.03379}, sysLeakage: {dn: -0.20274, up: 0.20274}, sysLumi: {dn: -0.70959, up: 0.70959}, sysMCStat: {dn: -0.10137, up: 0.10137}, sysPhotonES: {dn: -0.3379, up: 0.40548}, sysPhotonID: {dn: -0.37169, up: 0.37169}, sysPhotonInvertVar: {dn: -0.13516, up: 0.16895}, sysPhotonRES: {dn: 0, up: 0.03379}, sysPileUp: {dn: -0.06758, up: 0}, sysRbg: {dn: -0.20274, up: 0.20274}, sysTrigger: {dn: -0.3379, up: 0.3379}, sysUnfolding: {dn: -0.13516, up: 0.13516}}, 4: {stat: {dn: -0.4079, up: 0.4079}, sysEtisoGap: {dn: 0, up: 0}, sysEtisoMC: {dn: -0.24474, up: 0.24474}, sysEtisoUpperLimit: {dn: -0.12237, up: 0.12237}, sysJetES: {dn: -0.8158, up: 0.89738}, sysJetRES: {dn: -0.04079, up: 0.04079}, sysLeakage: {dn: -0.28553, up: 0.28553}, sysLumi: {dn: -0.85659, up: 0.85659}, sysMCStat: {dn: -0.12237, up: 0.12237}, sysPhotonES: {dn: -0.44869, up: 0.48948}, sysPhotonID: {dn: -0.44869, up: 0.48948}, sysPhotonInvertVar: {dn: -0.32632, up: 0.16316}, sysPhotonRES: {dn: 0, up: 0.04079}, sysPileUp: {dn: -0.12237, up: 0.12237}, sysRbg: {dn: -0.28553, up: 0.28553}, sysTrigger: {dn: -0.4079, up: 0.4079}, sysUnfolding: {dn: -0.4079, up: 0.4079}}, 5: {stat: {dn: -0.45423, up: 0.45423}, sysEtisoGap: {dn: 0, up: 0}, sysEtisoMC: {dn: -0.35329, up: 0.35329}, sysEtisoUpperLimit: {dn: -0.15141, up: 0.15141}, sysJetES: {dn: -1.05987, up: 1.11034}, sysJetRES: {dn: -0.05047, up: 0.05047}, sysLeakage: {dn: -0.35329, up: 0.35329}, sysLumi: {dn: -1.05987, up: 1.05987}, sysMCStat: {dn: -0.15141, up: 0.15141}, sysPhotonES: {dn: -0.60564, up: 0.65611}, sysPhotonID: {dn: -0.60564, up: 0.60564}, sysPhotonInvertVar: {dn: -0.20188, up: 0.45423}, sysPhotonRES: {dn: 0, up: 0.05047}, sysPileUp: {dn: -0.15141, up: 0.10094}, sysRbg: {dn: -0.5047, up: 0.5047}, sysTrigger: {dn: -0.5047, up: 0.5047}, sysUnfolding: {dn: -0.35329, up: 0.35329}}, 6: {stat: {dn: -0.57776, up: 0.57776}, sysEtisoGap: {dn: 0, up: 0.07222}, sysEtisoMC: {dn: -0.50554, up: 0.50554}, sysEtisoUpperLimit: {dn: -0.28888, up: 0.28888}, sysJetES: {dn: -1.51662, up: 1.58884}, sysJetRES: {dn: -0.14444, up: 0.14444}, sysLeakage: {dn: -0.86664, up: 0.86664}, sysLumi: {dn: -1.51662, up: 1.51662}, sysMCStat: {dn: -0.21666, up: 0.21666}, sysPhotonES: {dn: -0.86664, up: 0.93886}, sysPhotonID: {dn: -0.93886, up: 0.93886}, sysPhotonInvertVar: {dn: -0.93886, up: 0.64998}, sysPhotonRES: {dn: 0, up: 0.07222}, sysPileUp: {dn: -0.14444, up: 0.14444}, sysRbg: {dn: -0.93886, up: 0.93886}, sysTrigger: {dn: -0.7222, up: 0.7222}, sysUnfolding: {dn: -0.50554, up: 0.50554}}, 7: {stat: {dn: -0.656, up: 0.656}, sysEtisoGap: {dn: -0.1312, up: 0.1312}, sysEtisoMC: {dn: -0.9184, up: 0.9184}, sysEtisoUpperLimit: {dn: -0.5248, up: 0.5248}, sysJetES: {dn: -2.7552, up: 2.8864}, sysJetRES: {dn: -0.2624, up: 0.2624}, sysLeakage: {dn: -1.968, up: 1.968}, sysLumi: {dn: -2.7552, up: 2.7552}, sysMCStat: {dn: -0.2624, up: 0.2624}, sysPhotonES: {dn: -1.5744, up: 1.7056}, sysPhotonID: {dn: -1.8368, up: 1.8368}, sysPhotonInvertVar: {dn: -1.4432, up: 1.4432}, sysPhotonRES: {dn: -0.1312, up: 0.1312}, sysPileUp: {dn: -0.2624, up: 0.2624}, sysRbg: {dn: -2.4928, up: 2.4928}, sysTrigger: {dn: -1.312, up: 1.312}, sysUnfolding: {dn: -0.656, up: 0.656}}}
+IsRef=1
+Path=/REF/ATLAS_2017_I1645627/d05-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	3.056000e+01	1.135254e+00	1.155233e+00
+1.000000e-01	2.000000e-01	3.161000e+01	1.245290e+00	1.286337e+00
+2.000000e-01	3.000000e-01	3.257000e+01	1.227764e+00	1.258905e+00
+3.000000e-01	4.000000e-01	3.379000e+01	1.282685e+00	1.322567e+00
+4.000000e-01	5.000000e-01	4.079000e+01	1.636182e+00	1.677853e+00
+5.000000e-01	6.000000e-01	5.047000e+01	2.045125e+00	2.123942e+00
+6.000000e-01	7.000000e-01	7.222000e+01	3.207088e+00	3.192418e+00
+7.000000e-01	8.300000e-01	1.312000e+02	6.094801e+00	6.190082e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/ATLAS_2017_I1645627/d05-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0.6813842120500012, dn: 0.6813842120500012}}, 1: {"": {up: 0.6067253206500008, dn: 0.6067253206500008}}, 2: {"": {up: 0.7131287025499987, dn: 0.7131287025499987}}, 3: {"": {up: 0.8226434665500019, dn: 0.8226434665500019}}, 4: {"": {up: 1.0182285519, dn: 1.0182285519}}, 5: {"": {up: 1.452642452200002, dn: 1.452642452200002}}, 6: {"": {up: 2.511755205300004, dn: 2.511755205300004}}, 7: {"": {up: 5.842908619999995, dn: 5.842908619999995}}}
+IsRef=1
+LineColor=green
+Path=/THY/ATLAS_2017_I1645627/d05-x01-y01
+RemoveOptions=0
+Title=NNLO QCD arXiv:1904.01044
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	3.142329e+01	6.813842e-01	6.813842e-01
+1.000000e-01	2.000000e-01	3.237694e+01	6.067253e-01	6.067253e-01
+2.000000e-01	3.000000e-01	3.329149e+01	7.131287e-01	7.131287e-01
+3.000000e-01	4.000000e-01	3.562410e+01	8.226435e-01	8.226435e-01
+4.000000e-01	5.000000e-01	4.126432e+01	1.018229e+00	1.018229e+00
+5.000000e-01	6.000000e-01	5.205471e+01	1.452642e+00	1.452642e+00
+6.000000e-01	7.000000e-01	7.206115e+01	2.511755e+00	2.511755e+00
+7.000000e-01	8.300000e-01	1.261897e+02	5.842909e+00	5.842909e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2017_I1645627/d05-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/ATLAS_2017_I1645627/d05-x01-y01-SM
+Title=SM as BG: Correlated   1\% (  0\% expected)
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	3.142618e+01	6.813846e-01	6.813846e-01
+1.000000e-01	2.000000e-01	3.237935e+01	6.067256e-01	6.067256e-01
+2.000000e-01	3.000000e-01	3.329518e+01	7.131291e-01	7.131291e-01
+3.000000e-01	4.000000e-01	3.562731e+01	8.226438e-01	8.226438e-01
+4.000000e-01	5.000000e-01	4.126817e+01	1.018229e+00	1.018229e+00
+5.000000e-01	6.000000e-01	5.205808e+01	1.452643e+00	1.452643e+00
+6.000000e-01	7.000000e-01	7.206500e+01	2.511755e+00	2.511755e+00
+7.000000e-01	8.300000e-01	1.261917e+02	5.842909e+00	5.842909e+00
+# END HISTO1D
+

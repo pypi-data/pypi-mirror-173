@@ -1,0 +1,48 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=All hadronic channel
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendYPos=0.90
+LegendXPos=0.95
+LegendAlign=r
+LogY=1
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+LeftMargin=2
+YLabelSep=8.0
+XLabel=$\Delta\phi^{t\bar{t}}$ [Rad]
+YLabel=$\dfrac{\text{$d^2$}\sigma^\text{fid}}{\text{$d^2$} {\Delta\phi^{t\bar{t}} \cdot N_{jets}}}$ [pb/Rad]
+DrawOnly=/REF/ATLAS_2020_I1801434/d265-x01-y01 /ATLAS_2020_I1801434/d265-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2020_I1801434/d265-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2020_I1801434/d265-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.0015451251756, up: 0.0015451251756}, "sys,(jes) BJES Response": {dn: -0.0008031265368, up: 0.0008398032756}, "sys,(jes) EffectiveNP Detector1": {dn: -0.00014106438000000002, up: 5.6425752e-05}, "sys,(jes) EffectiveNP Mixed1": {dn: 3.7617168000000003e-06, up: -9.028120320000001e-05}, "sys,(jes) EffectiveNP Mixed2": {dn: 2.06894424e-05, up: -0.00013166008800000002}, "sys,(jes) EffectiveNP Mixed3": {dn: -4.5140601600000005e-05, up: 0.0}, "sys,(jes) EffectiveNP Modelling1": {dn: -0.0022814812392000002, up: 0.0018695732496000002}, "sys,(jes) EffectiveNP Modelling2": {dn: -6.1127898e-05, up: 0.0}, "sys,(jes) EffectiveNP Modelling3": {dn: 4.79618892e-05, up: -0.00016457511}, "sys,(jes) EffectiveNP Modelling4": {dn: -2.5391588400000003e-05, up: 0.0}, "sys,(jes) EffectiveNP Statistical1": {dn: -3.0093734400000002e-05, up: 0.0}, "sys,(jes) EffectiveNP Statistical2": {dn: 2.5391588400000003e-05, up: -0.00020125184880000001}, "sys,(jes) EffectiveNP Statistical3": {dn: -3.9498026400000005e-05, up: 0.0}, "sys,(jes) EffectiveNP Statistical4": {dn: -0.00010156635360000001, up: 0.0}, "sys,(jes) EffectiveNP Statistical5": {dn: 3.47958804e-05, up: -9.780463680000001e-05}, "sys,(jes) EffectiveNP Statistical6": {dn: -3.2915022000000006e-05, up: 0.0}, "sys,(jes) EtaIntercalibration Modelling": {dn: -0.0005172360600000001, up: 0.0003441970872}, "sys,(jes) EtaIntercalibration NonClosure highE": {dn: 0.0, up: 0.0}, "sys,(jes) EtaIntercalibration NonClosure negEta": {dn: -7.523433600000001e-06, up: 0.0}, "sys,(jes) EtaIntercalibration NonClosure posEta": {dn: -0.0, up: 4.702146e-06}, "sys,(jes) EtaIntercalibration TotalStat": {dn: -0.00016457511, up: 7.429390680000001e-05}, "sys,(jes) Flavor Composition": {dn: 2.16298716e-05, up: -6.300875640000001e-05}, "sys,(jes) Flavor Response": {dn: 0.000954535638, up: -0.001184940792}, "sys,(jes) Pileup OffsetMu": {dn: -5.0783176800000006e-05, up: 0.0}, "sys,(jes) Pileup OffsetNPV": {dn: -2.5391588400000003e-05, up: 0.0}, "sys,(jes) Pileup PtTerm": {dn: -0.000178681548, up: 0.0001335409464}, "sys,(jes) Pileup RhoTopology": {dn: -0.0015319591668, up: 0.0014087629416}, "sys,(jes) PunchThrough MC16": {dn: 7.523433600000001e-06, up: -9.404292e-06}, "sys,(jes) SingleParticle HighPt": {dn: -0.0, up: 0.0}, "sys,Cross section systematic": {dn: 0.00022382214960000002, up: -0.00022006043280000003}, "sys,ISR": {dn: 0.0001984305612, up: -0.0003441970872}, "sys,Inter-PDF": {dn: -0.00606576834, up: 0.00606576834}, "sys,Intra-PDF": {dn: -0.000112851504, up: 0.000112851504}, "sys,JER Effective NP 1": {dn: -0.0029548285464, up: 0.0}, "sys,JER Effective NP 10": {dn: -0.0013288264596000002, up: 0.0}, "sys,JER Effective NP 11": {dn: -0.0002275838664, up: 2.06894424e-05}, "sys,JER Effective NP 12 restTerm": {dn: -0.0005275807812000001, up: 0.0}, "sys,JER Effective NP 2": {dn: -0.0032087444304000003, up: 0.0}, "sys,JER Effective NP 3": {dn: -0.0009789867972, up: 0.0}, "sys,JER Effective NP 4": {dn: -0.0011106468852000002, up: 0.0}, "sys,JER Effective NP 5": {dn: -0.0011435619072, up: 0.0}, "sys,JER Effective NP 6": {dn: -0.00042601442760000006, up: 0.0}, "sys,JER Effective NP 7": {dn: -0.0005012487636000001, up: 0.0}, "sys,JER Effective NP 8": {dn: -0.0005209977768000001, up: 0.0}, "sys,JER Effective NP 9": {dn: -0.0005764830996, up: 0.0}, "sys,Lumi": {dn: 0.0019335224352000002, up: -0.0019335224352000002}, "sys,QCD estimation": {dn: 0.0010024975272000002, up: -0.0010024975272000002}, "sys,QCD stat": {dn: -0.0003329119368, up: 0.0003329119368}, "sys,Signal stat": {dn: -0.0006808707408, up: 0.0006808707408}, "sys,b extrapolation": {dn: 4.702146e-06, up: -4.702146e-06}, "sys,b extrapolation from c": {dn: 9.404292000000001e-07, up: -9.404292000000001e-07}, "sys,b tag eff (eig 0)": {dn: -0.0006357301392000001, up: 0.0006376109976}, "sys,b tag eff (eig 1)": {dn: 0.00043635914880000003, up: -0.0004344782904000001}, "sys,b tag eff (eig 2)": {dn: -0.0017962197720000001, up: 0.0018140879268000003}, "sys,b tag eff (eig 3)": {dn: -0.0005915299668, up: 0.0005934108252000001}, "sys,b tag eff (eig 4)": {dn: 0.00025485631320000003, up: -0.00025391588400000006}, "sys,b tag eff (eig 5)": {dn: 8.08769112e-05, up: -8.08769112e-05}, "sys,c tag eff (eig 0)": {dn: -0.0003968611224, up: 0.00039780155160000003}, "sys,c tag eff (eig 1)": {dn: -0.0003601843836, up: 0.00036112481280000004}, "sys,c tag eff (eig 2)": {dn: 0.0001730389728, up: -0.0001730389728}, "sys,hadronis-model": {dn: -0.0032397785940000002, up: 0.0032397785940000002}, "sys,hardscat-model": {dn: -0.0025353971232000005, up: 0.0025353971232000005}, "sys,jvt": {dn: -0.0007175474796, up: 0.0007081431876}, "sys,light-jet tag eff (eig 0)": {dn: -0.00026332017600000005, up: 0.00026332017600000005}, "sys,light-jet tag eff (eig 1)": {dn: -1.4106438e-05, up: 1.4106438e-05}, "sys,light-jet tag eff (eig 2)": {dn: 4.2319314000000005e-05, up: -4.2319314000000005e-05}, "sys,light-jet tag eff (eig 3)": {dn: 1.8808584000000001e-06, up: -1.8808584000000001e-06}, "sys,pileup": {dn: 0.00016457511, up: -0.00016457511}}}
+IsRef=1
+Path=/REF/ATLAS_2020_I1801434/d265-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	3.200000e+00	9.404292e-02	1.012476e-02	8.602465e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2020_I1801434/d265-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2020_I1801434/d265-x01-y01
+Title=Data as BG: Correlated   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	3.200000e+00	9.407298e-02	1.227341e-05	1.227341e-05
+# END HISTO1D
+

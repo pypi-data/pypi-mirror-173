@@ -1,0 +1,62 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LegendXPos=0.95
+Title=$pp \rightarrow e^{\pm}\mu^{\mp}\nu\nu$
+XLabel=$\cos(\theta^\ast)$
+YLabel=$\mathrm{d}\sigma / \mathrm{d}\cos(\theta^\ast)$ [fb]
+LogY=0
+DrawOnly=/REF/ATLAS_2019_I1734263/d19-x01-y01 /ATLAS_2019_I1734263/d19-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2019_I1734263/d19-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2019_I1734263/d19-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {BkgOther: {dn: -7.4, up: 7.4}, BkgWjets: {dn: -29.3, up: 29.3}, Bkgtopsinglet: {dn: -18.3, up: 18.3}, ElMuMETUnfTheoLumi: {dn: -10.3, up: 10.3}, FTag: {dn: -12.0, up: 12.0}, JetFlav: {dn: -8.3, up: 8.3}, JetPileup: {dn: -5.9, up: 5.9}, JetRes: {dn: -0.6, up: 0.6}, JetScaleOther: {dn: -6.6, up: 6.6}, Pileup: {dn: -5.4, up: 5.4}, StatsBkgMC: {dn: -10.8, up: 10.8}, stat: {dn: -16.3, up: 16.3}}, 1: {BkgOther: {dn: -12.1, up: 12.1}, BkgWjets: {dn: -30.8, up: 30.8}, Bkgtopsinglet: {dn: -9.9, up: 9.9}, ElMuMETUnfTheoLumi: {dn: -12.7, up: 12.7}, FTag: {dn: -12.4, up: 12.4}, JetFlav: {dn: -8.9, up: 8.9}, JetPileup: {dn: -6.3, up: 6.3}, JetRes: {dn: -3.7, up: 3.7}, JetScaleOther: {dn: -6.8, up: 6.8}, Pileup: {dn: -4.3, up: 4.3}, StatsBkgMC: {dn: -7.8, up: 7.8}, stat: {dn: -15.8, up: 15.8}}, 2: {BkgOther: {dn: -7.6, up: 7.6}, BkgWjets: {dn: -9.2, up: 9.2}, Bkgtopsinglet: {dn: -10.4, up: 10.4}, ElMuMETUnfTheoLumi: {dn: -9.6, up: 9.6}, FTag: {dn: -13.2, up: 13.2}, JetFlav: {dn: -6.4, up: 6.4}, JetPileup: {dn: -4.3, up: 4.3}, JetRes: {dn: -3.3, up: 3.3}, JetScaleOther: {dn: -5.2, up: 5.2}, Pileup: {dn: -6.9, up: 6.9}, StatsBkgMC: {dn: -8.3, up: 8.3}, stat: {dn: -15.7, up: 15.7}}, 3: {BkgOther: {dn: -4.5, up: 4.5}, BkgWjets: {dn: -7.7, up: 7.7}, Bkgtopsinglet: {dn: -10.6, up: 10.6}, ElMuMETUnfTheoLumi: {dn: -9.3, up: 9.3}, FTag: {dn: -13.4, up: 13.4}, JetFlav: {dn: -9.0, up: 9.0}, JetPileup: {dn: -6.4, up: 6.4}, JetRes: {dn: -2.2, up: 2.2}, JetScaleOther: {dn: -6.2, up: 6.2}, Pileup: {dn: -3.4, up: 3.4}, StatsBkgMC: {dn: -7.9, up: 7.9}, stat: {dn: -16.3, up: 16.3}}, 4: {BkgOther: {dn: -6.1, up: 6.1}, BkgWjets: {dn: -7.6, up: 7.6}, Bkgtopsinglet: {dn: -10.7, up: 10.7}, ElMuMETUnfTheoLumi: {dn: -9.9, up: 9.9}, FTag: {dn: -15.7, up: 15.7}, JetFlav: {dn: -8.8, up: 8.8}, JetPileup: {dn: -6.3, up: 6.3}, JetRes: {dn: -1.7, up: 1.7}, JetScaleOther: {dn: -6.3, up: 6.3}, Pileup: {dn: -7.0, up: 7.0}, StatsBkgMC: {dn: -7.6, up: 7.6}, stat: {dn: -16.2, up: 16.2}}, 5: {BkgOther: {dn: -8.2, up: 8.2}, BkgWjets: {dn: -7.6, up: 7.6}, Bkgtopsinglet: {dn: -11.2, up: 11.2}, ElMuMETUnfTheoLumi: {dn: -14.1, up: 14.1}, FTag: {dn: -16.1, up: 16.1}, JetFlav: {dn: -7.8, up: 7.8}, JetPileup: {dn: -6.7, up: 6.7}, JetRes: {dn: -1.6, up: 1.6}, JetScaleOther: {dn: -6.5, up: 6.5}, Pileup: {dn: -5.3, up: 5.3}, StatsBkgMC: {dn: -8.3, up: 8.3}, stat: {dn: -16.4, up: 16.4}}, 6: {BkgOther: {dn: -14.9, up: 14.9}, BkgWjets: {dn: -8.7, up: 8.7}, Bkgtopsinglet: {dn: -12.8, up: 12.8}, ElMuMETUnfTheoLumi: {dn: -11.8, up: 11.8}, FTag: {dn: -16.2, up: 16.2}, JetFlav: {dn: -10.3, up: 10.3}, JetPileup: {dn: -7.9, up: 7.9}, JetRes: {dn: -0.4, up: 0.4}, JetScaleOther: {dn: -8.6, up: 8.6}, Pileup: {dn: -8.8, up: 8.8}, StatsBkgMC: {dn: -8.6, up: 8.6}, stat: {dn: -18.1, up: 18.1}}, 7: {BkgOther: {dn: -3.7, up: 3.7}, BkgWjets: {dn: -9.0, up: 9.0}, Bkgtopsinglet: {dn: -18.3, up: 18.3}, ElMuMETUnfTheoLumi: {dn: -15.7, up: 15.7}, FTag: {dn: -15.2, up: 15.2}, JetFlav: {dn: -8.0, up: 8.0}, JetPileup: {dn: -5.5, up: 5.5}, JetRes: {dn: -3.3, up: 3.3}, JetScaleOther: {dn: -7.0, up: 7.0}, Pileup: {dn: -8.9, up: 8.9}, StatsBkgMC: {dn: -8.1, up: 8.1}, stat: {dn: -17.1, up: 17.1}}, 8: {BkgOther: {dn: -3.5, up: 3.5}, BkgWjets: {dn: -7.1, up: 7.1}, Bkgtopsinglet: {dn: -17.1, up: 17.1}, ElMuMETUnfTheoLumi: {dn: -10.2, up: 10.2}, FTag: {dn: -7.9, up: 7.9}, JetFlav: {dn: -4.5, up: 4.5}, JetPileup: {dn: -3.7, up: 3.7}, JetRes: {dn: -0.002, up: 0.002}, JetScaleOther: {dn: -3.8, up: 3.8}, Pileup: {dn: -6.3, up: 6.3}, StatsBkgMC: {dn: -5.1, up: 5.1}, stat: {dn: -10.1, up: 10.1}}}
+IsRef=1
+Path=/REF/ATLAS_2019_I1734263/d19-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	3.835000e+02	4.535791e+01	4.535791e+01
+1.000000e-01	2.000000e-01	3.583000e+02	4.489889e+01	4.489889e+01
+2.000000e-01	3.000000e-01	3.287000e+02	3.126228e+01	3.126228e+01
+3.000000e-01	4.000000e-01	3.631000e+02	3.102982e+01	3.102982e+01
+4.000000e-01	5.000000e-01	3.973000e+02	3.290699e+01	3.290699e+01
+5.000000e-01	6.000000e-01	4.077000e+02	3.499914e+01	3.499914e+01
+6.000000e-01	7.000000e-01	4.867000e+02	3.981017e+01	3.981017e+01
+7.000000e-01	8.000000e-01	4.556000e+02	3.871021e+01	3.871021e+01
+8.000000e-01	1.000000e+00	3.097000e+02	2.715898e+01	2.715898e+01
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2019_I1734263/d19-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2019_I1734263/d19-x01-y01
+Title=Data as BG: No exclusion
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e-01	3.835000e+02	0.000000e+00	0.000000e+00
+1.000000e-01	2.000000e-01	3.583000e+02	0.000000e+00	0.000000e+00
+2.000000e-01	3.000000e-01	3.287000e+02	0.000000e+00	0.000000e+00
+3.000000e-01	4.000000e-01	3.631000e+02	0.000000e+00	0.000000e+00
+4.000000e-01	5.000000e-01	3.973000e+02	0.000000e+00	0.000000e+00
+5.000000e-01	6.000000e-01	4.077000e+02	0.000000e+00	0.000000e+00
+6.000000e-01	7.000000e-01	4.867000e+02	0.000000e+00	0.000000e+00
+7.000000e-01	8.000000e-01	4.556000e+02	0.000000e+00	0.000000e+00
+8.000000e-01	1.000000e+00	3.097000e+02	0.000000e+00	0.000000e+00
+# END HISTO1D
+

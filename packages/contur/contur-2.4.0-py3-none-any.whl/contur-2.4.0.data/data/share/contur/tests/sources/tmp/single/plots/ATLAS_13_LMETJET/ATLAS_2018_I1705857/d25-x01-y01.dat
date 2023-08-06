@@ -1,0 +1,52 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XTwosidedTicks=1
+YTwosidedTicks=1
+LogX=1
+LogY=1
+LegendAlign=r
+LegendXPos=0.95
+LegendYPos=0.95
+Title=lepton-plus-jets channel
+XLabel=$p_{\mathrm{T}}^{b_4}$ [GeV]
+YLabel=$\frac{1}{\sigma_{t\bar{t}b\bar{b}}} \frac{d \sigma_{t\bar{t}b\bar{b}}}{d p_{\mathrm{T}}^{b_4}}$ [GeV$^{-1}$]
+DrawOnly=/REF/ATLAS_2018_I1705857/d25-x01-y01 /ATLAS_2018_I1705857/d25-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2018_I1705857/d25-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2018_I1705857/d25-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.00407175, up: 0.00407175}, sys: {dn: -0.0103437, up: 0.0103437}}, 1: {stat: {dn: -0.00117867, up: 0.00117867}, sys: {dn: -0.00197061, up: 0.00197061}}, 2: {stat: {dn: -5.307e-05, up: 5.307e-05}, sys: {dn: -8.759e-05, up: 8.759e-05}}}
+IsRef=1
+Path=/REF/ATLAS_2018_I1705857/d25-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+2.500000e+01	3.000000e+01	5.969110e-02	1.111626e-02	1.111626e-02
+3.000000e+01	4.500000e+01	2.927560e-02	2.296207e-03	2.296207e-03
+4.500000e+01	4.800000e+02	6.032400e-04	1.024131e-04	1.024131e-04
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2018_I1705857/d25-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2018_I1705857/d25-x01-y01
+Title=Data as BG: Bin 2,  0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+2.500000e+01	3.000000e+01	5.969111e-02	8.932546e-09	8.932546e-09
+3.000000e+01	4.500000e+01	2.927561e-02	4.210843e-09	4.210843e-09
+4.500000e+01	4.800000e+02	6.032402e-04	1.452015e-10	1.452015e-10
+# END HISTO1D
+

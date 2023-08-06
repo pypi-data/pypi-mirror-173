@@ -1,0 +1,50 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=CMS, 13 TeV, Three-jet pT3/pT2 for large-angle radiation
+XLabel=$p_{T3}/p_{T2}$
+YLabel=$\frac{1}{N} \frac{dN}{d(p_{T3}/p_{T2})}$
+LogX=0
+LogY=0
+DrawOnly=/REF/CMS_2021_I1847230/d06-x01-y01 /CMS_2021_I1847230:MODE=QCD13TeV/d06-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2021_I1847230/d06-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2021_I1847230/d06-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.01277032, up: 0.01277032}, syst: {dn: -0.01811147623, up: 0.01811147623}}, 1: {stat: {dn: -0.01305092, up: 0.01305092}, syst: {dn: -0.01338508262, up: 0.01338508262}}, 2: {stat: {dn: -0.01230477, up: 0.01230477}, syst: {dn: -0.0156065656, up: 0.0156065656}}, 3: {stat: {dn: -0.006772678, up: 0.006772678}, syst: {dn: -0.00764016246, up: 0.00764016246}}, 4: {stat: {dn: -0.004002288, up: 0.004002288}, syst: {dn: -0.003587852436, up: 0.003587852436}}}
+IsRef=1
+Path=/REF/CMS_2021_I1847230/d06-x01-y01
+PolyMarkers=*
+Title=CMS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e-01	2.000000e-01	2.621053e+00	2.216093e-02	2.216093e-02
+2.000000e-01	3.000000e-01	1.794247e+00	1.869457e-02	1.869457e-02
+3.000000e-01	4.000000e-01	1.381112e+00	1.987391e-02	1.987391e-02
+4.000000e-01	6.000000e-01	1.007937e+00	1.020986e-02	1.020986e-02
+6.000000e-01	9.000000e-01	7.292383e-01	5.375034e-03	5.375034e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2021_I1847230:MODE=QCD13TeV/d06-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/CMS_2021_I1847230:MODE=QCD13TeV/d06-x01-y01
+Title=Data as BG: Bin 1,  2\%
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e-01	2.000000e-01	2.636483e+00	5.730689e-04	5.730689e-04
+2.000000e-01	3.000000e-01	1.803697e+00	4.484658e-04	4.484658e-04
+3.000000e-01	4.000000e-01	1.388157e+00	3.872147e-04	3.872147e-04
+4.000000e-01	6.000000e-01	1.012492e+00	2.201556e-04	2.201556e-04
+6.000000e-01	9.000000e-01	7.321399e-01	1.434757e-04	1.434757e-04
+# END HISTO1D
+

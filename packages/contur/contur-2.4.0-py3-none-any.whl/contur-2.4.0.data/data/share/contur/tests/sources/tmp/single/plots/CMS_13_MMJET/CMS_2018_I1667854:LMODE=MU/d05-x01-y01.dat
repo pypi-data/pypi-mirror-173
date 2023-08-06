@@ -1,0 +1,59 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+XLabelSep=4.4
+YLabelSep=5.4
+ConnectBins=0
+RatioPlotSameStyle=0
+RatioPlotErrorBandColor=Yellow
+XTwosidedTicks=1
+YTwosidedTicks=1
+Title={$\sqrt{s}=13\,\mathrm{TeV}$}
+FullRange=1
+LogX=0
+LogY=1
+XLabel={Second jet $p_{\mathrm{T}}$ [GeV]}
+YLabel={$d\sigma/dp_{\mathrm{T}}$ [pb/GeV]}
+LegendXPos=0.5
+LegendYPos=0.9
+DrawOnly=/REF/CMS_2018_I1667854/d05-x01-y01 /CMS_2018_I1667854:LMODE=MU/d05-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotReference=/REF/CMS_2018_I1667854/d05-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2018_I1667854/d05-x01-y01
+ConnectBins=0
+ErrorBars=1
+IsRef=1
+Path=/REF/CMS_2018_I1667854/d05-x01-y01
+PolyMarkers=*
+Title=CMS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+3.000000e+01	4.100000e+01	1.125050e+00	9.539580e-02	9.539580e-02
+4.100000e+01	5.900000e+01	4.565720e-01	3.401910e-02	3.401910e-02
+5.900000e+01	8.300000e+01	1.732330e-01	1.140130e-02	1.140130e-02
+8.300000e+01	1.180000e+02	5.895740e-02	3.456890e-03	3.456890e-03
+1.180000e+02	1.680000e+02	1.874150e-02	1.207680e-03	1.207680e-03
+1.680000e+02	2.500000e+02	5.181270e-03	3.825160e-04	3.825160e-04
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2018_I1667854:LMODE=MU/d05-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/CMS_2018_I1667854:LMODE=MU/d05-x01-y01
+Title=Data as BG: Bin 5,  0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+3.000000e+01	4.100000e+01	1.125054e+00	2.524688e-06	2.524688e-06
+4.100000e+01	5.900000e+01	4.565756e-01	1.781546e-06	1.781546e-06
+5.900000e+01	8.300000e+01	1.732350e-01	1.157148e-06	1.157148e-06
+8.300000e+01	1.180000e+02	5.896015e-02	1.122140e-06	1.122140e-06
+1.180000e+02	1.680000e+02	1.874342e-02	7.854983e-07	7.854983e-07
+1.680000e+02	2.500000e+02	5.181857e-03	3.386776e-07	3.386776e-07
+# END HISTO1D
+

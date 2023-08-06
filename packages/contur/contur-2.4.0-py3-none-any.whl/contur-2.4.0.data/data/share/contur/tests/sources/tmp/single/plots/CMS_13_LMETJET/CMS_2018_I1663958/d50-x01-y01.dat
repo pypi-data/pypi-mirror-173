@@ -1,0 +1,68 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LogY=1
+Title=CMS, 13$\,$TeV, $\mathrm{t}\mathrm{\bar{t}}$ $e/\mu +\mathrm{jets}$
+XLabel=$p_\mathrm{T}(\mathrm{j}_\mathrm{W2})$ [GeV]
+YLabel=$\frac{{d}\sigma}{{d}p_\mathrm{T}(\mathrm{\mathrm{j}_\mathrm{W2}j}_\mathrm{W2})}$ [pb GeV$^{-1}$]
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotYSize=2.6
+PlotSize=10.7,7.2
+DrawOnly=/REF/CMS_2018_I1663958/d50-x01-y01 /THY/CMS_2018_I1663958/d50-x01-y01 /CMS_2018_I1663958/d50-x01-y01-SM
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2018_I1663958/d50-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2018_I1663958/d50-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.004406, up: 0.004406}, sys: {dn: -0.090162, up: 0.090162}}, 1: {stat: {dn: -0.002364, up: 0.002364}, sys: {dn: -0.027638, up: 0.027638}}, 2: {stat: {dn: -0.001244, up: 0.001244}, sys: {dn: -0.007719, up: 0.007719}}, 3: {stat: {dn: -0.0001665, up: 0.0001665}, sys: {dn: -0.0007122, up: 0.0007122}}}
+IsRef=1
+Path=/REF/CMS_2018_I1663958/d50-x01-y01
+PolyMarkers=*
+Title=CMS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+3.000000e+01	5.000000e+01	1.729702e+00	9.026959e-02	9.026959e-02
+5.000000e+01	7.500000e+01	4.431480e-01	2.773892e-02	2.773892e-02
+7.500000e+01	1.000000e+02	1.222960e-01	7.818599e-03	7.818599e-03
+1.000000e+02	2.500000e+02	1.018980e-02	7.314035e-04	7.314035e-04
+# END HISTO1D
+
+
+# BEGIN HISTO1D /THY/CMS_2018_I1663958/d50-x01-y01
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+ErrorBreakdown={0: {"": {up: 0.2021812, dn: 0.1896791}, pdf: {up: 0.01406360850780779, dn: -0.01406360850780779}, scale: {up: 0.2015780000000003, dn: -0.189036}, stat: {up: 0.006764063128031849, dn: 0.006764063128031849}}, 1: {"": {up: 0.05690764, dn: 0.05312911}, pdf: {up: 0.003785439649591975, dn: -0.003785439649591975}, scale: {up: 0.05669320000000005, dn: -0.05289935999999995}, stat: {up: 0.003167101387704536, dn: 0.003167101387704536}}, 2: {"": {up: 0.01698068, dn: 0.0157907}, pdf: {up: 0.001095677198048418, dn: -0.001095677198048418}, scale: {up: 0.01685924, dn: -0.01566004}, stat: {up: 0.001705543901516464, dn: 0.001705543901516464}}, 3: {"": {up: 0.001667562, dn: 0.001430856}, pdf: {up: 9.396239428538889e-05, dn: -9.396239428538889e-05}, scale: {up: 0.001653326666666666, dn: -0.001414240000000001}, stat: {up: 0.0001960772976829971, dn: 0.0001960772976829971}}}
+LineColor=green
+Path=/THY/CMS_2018_I1663958/d50-x01-y01
+RemoveOptions=0
+Title=PowhegBoxZpWp
+# xlow	 xhigh	 val	 errminus	 errplus
+3.000000e+01	5.000000e+01	1.540153e+00	1.896791e-01	2.021812e-01
+5.000000e+01	7.500000e+01	4.213540e-01	5.312911e-02	5.690764e-02
+7.500000e+01	1.000000e+02	1.218244e-01	1.579070e-02	1.698068e-02
+1.000000e+02	2.500000e+02	9.656260e-03	1.430856e-03	1.667562e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2018_I1663958/d50-x01-y01-SM
+ErrorBars=1
+LineColor=blue
+Path=/CMS_2018_I1663958/d50-x01-y01-SM
+Title=SM as BG: No exclusion; expected exclusion was   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+3.000000e+01	5.000000e+01	1.540406e+00	1.896791e-01	2.021812e-01
+5.000000e+01	7.500000e+01	4.214367e-01	5.312911e-02	5.690764e-02
+7.500000e+01	1.000000e+02	1.218674e-01	1.579070e-02	1.698068e-02
+1.000000e+02	2.500000e+02	9.663636e-03	1.430856e-03	1.667562e-03
+# END HISTO1D
+

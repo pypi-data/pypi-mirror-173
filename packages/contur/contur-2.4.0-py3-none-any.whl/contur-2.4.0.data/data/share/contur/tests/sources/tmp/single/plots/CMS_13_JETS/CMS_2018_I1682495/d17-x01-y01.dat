@@ -1,0 +1,60 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=CMS, 13 TeV, Groomed jet mass $m_g$ ($550 < p_T < 650$ GeV)
+XLabel=$m_g$
+YLabel=$\frac{d^2\sigma}{dp_{T} dm_g}$
+LogY=0
+DrawOnly=/REF/CMS_2018_I1682495/d17-x01-y01 /CMS_2018_I1682495/d17-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/CMS_2018_I1682495/d17-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/CMS_2018_I1682495/d17-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat uncertainty: {dn: -0.00037028, up: 0.00037028}, syst uncertainty: {dn: -0.0036602, up: 0.0036602}}, 1: {stat uncertainty: {dn: -0.00020425, up: 0.00020425}, syst uncertainty: {dn: -0.0014308, up: 0.0014308}}, 2: {stat uncertainty: {dn: -0.00016362, up: 0.00016362}, syst uncertainty: {dn: -0.00095121, up: 0.00095121}}, 3: {stat uncertainty: {dn: -0.00014614, up: 0.00014614}, syst uncertainty: {dn: -0.00071183, up: 0.00071183}}, 4: {stat uncertainty: {dn: -0.0001358, up: 0.0001358}, syst uncertainty: {dn: -0.0006124, up: 0.0006124}}, 5: {stat uncertainty: {dn: -7.8475e-05, up: 7.8475e-05}, syst uncertainty: {dn: -0.00050328, up: 0.00050328}}, 6: {stat uncertainty: {dn: -6.6423e-05, up: 6.6423e-05}, syst uncertainty: {dn: -0.00039873, up: 0.00039873}}, 7: {stat uncertainty: {dn: -4.5368e-05, up: 4.5368e-05}, syst uncertainty: {dn: -0.00022329, up: 0.00022329}}, 8: {stat uncertainty: {dn: -1.9921e-05, up: 1.9921e-05}, syst uncertainty: {dn: -9.2976e-05, up: 9.2976e-05}}, 9: {stat uncertainty: {dn: -4.0461e-06, up: 4.0461e-06}, syst uncertainty: {dn: -1.0274e-05, up: 1.0274e-05}}}
+IsRef=1
+Path=/REF/CMS_2018_I1682495/d17-x01-y01
+PolyMarkers=*
+Title=CMS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+01	2.000000e+01	5.575900e-02	3.678882e-03	3.678882e-03
+2.000000e+01	4.000000e+01	2.599500e-02	1.445305e-03	1.445305e-03
+4.000000e+01	6.000000e+01	1.656800e-02	9.651798e-04	9.651798e-04
+6.000000e+01	8.000000e+01	1.315100e-02	7.266766e-04	7.266766e-04
+8.000000e+01	1.000000e+02	1.121600e-02	6.272762e-04	6.272762e-04
+1.000000e+02	1.500000e+02	8.420800e-03	5.093614e-04	5.093614e-04
+1.500000e+02	2.000000e+02	6.051800e-03	4.042247e-04	4.042247e-04
+2.000000e+02	2.500000e+02	2.919100e-03	2.278523e-04	2.278523e-04
+2.500000e+02	3.000000e+02	6.007000e-04	9.508619e-05	9.508619e-05
+3.000000e+02	3.500000e+02	3.063200e-05	1.104201e-05	1.104201e-05
+# END HISTO1D
+
+
+# BEGIN HISTO1D /CMS_2018_I1682495/d17-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/CMS_2018_I1682495/d17-x01-y01
+Title=Data as BG: Bin 7,  0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+01	2.000000e+01	5.576256e-02	2.389000e-07	2.389000e-07
+2.000000e+01	4.000000e+01	2.599697e-02	1.257411e-07	1.257411e-07
+4.000000e+01	6.000000e+01	1.656923e-02	9.916431e-08	9.916431e-08
+6.000000e+01	8.000000e+01	1.315229e-02	1.017238e-07	1.017238e-07
+8.000000e+01	1.000000e+02	1.121731e-02	1.023537e-07	1.023537e-07
+1.000000e+02	1.500000e+02	8.421993e-03	6.185021e-08	6.185021e-08
+1.500000e+02	2.000000e+02	6.053230e-03	6.772314e-08	6.772314e-08
+2.000000e+02	2.500000e+02	2.919482e-03	3.498188e-08	3.498188e-08
+2.500000e+02	3.000000e+02	6.007802e-04	1.603392e-08	1.603392e-08
+3.000000e+02	3.500000e+02	3.063200e-05	0.000000e+00	0.000000e+00
+# END HISTO1D
+

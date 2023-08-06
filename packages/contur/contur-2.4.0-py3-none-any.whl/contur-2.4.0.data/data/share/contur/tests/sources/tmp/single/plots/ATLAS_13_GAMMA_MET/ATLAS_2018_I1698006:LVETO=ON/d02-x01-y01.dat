@@ -1,0 +1,55 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+LogY=1
+XTwosidedTicks=1
+YTwosidedTicks=1
+LegendAlign=r
+LeftMargin=1.5
+Title=Inclusive $N_{\mathrm{jets}}\geq0$ region
+XLabel=$E_{\mathrm{T}}^{\gamma}$ (GeV)
+YLabel=$d\sigma/dE_{\mathrm{T}}^{\gamma}$ (fb/GeV)
+DrawOnly=/REF/ATLAS_2018_I1698006/d02-x01-y01 /ATLAS_2018_I1698006:LVETO=ON/d02-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2018_I1698006/d02-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2018_I1698006/d02-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {stat: {dn: -0.03374, up: 0.03374}, sys: {dn: -0.1075, up: 0.1075}}, 1: {stat: {dn: -0.02483, up: 0.02483}, sys: {dn: -0.03557, up: 0.03557}}, 2: {stat: {dn: -0.01007, up: 0.01007}, sys: {dn: -0.01393, up: 0.01393}}, 3: {stat: {dn: -0.005852, up: 0.005852}, sys: {dn: -0.006524, up: 0.006524}}, 4: {stat: {dn: -0.002424, up: 0.002424}, sys: {dn: -0.001894, up: 0.001894}}, 5: {stat: {dn: -0.0002353, up: 0.0002353}, sys: {dn: -0.0001788, up: 0.0001788}}}
+IsRef=1
+Path=/REF/ATLAS_2018_I1698006/d02-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+# xlow	 xhigh	 val	 errminus	 errplus
+1.500000e+02	2.000000e+02	8.626000e-01	1.126705e-01	1.126705e-01
+2.000000e+02	2.500000e+02	4.053000e-01	4.337919e-02	4.337919e-02
+2.500000e+02	3.500000e+02	1.460000e-01	1.718865e-02	1.718865e-02
+3.500000e+02	4.500000e+02	3.947000e-02	8.764045e-03	8.764045e-03
+4.500000e+02	6.000000e+02	8.900000e-03	3.076201e-03	3.076201e-03
+6.000000e+02	1.100000e+03	4.364000e-06	2.955259e-04	2.955259e-04
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2018_I1698006:LVETO=ON/d02-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2018_I1698006:LVETO=ON/d02-x01-y01
+Title=Data as BG: Bin 4,  3\%
+# xlow	 xhigh	 val	 errminus	 errplus
+1.500000e+02	2.000000e+02	8.638827e-01	6.413567e-04	6.413567e-04
+2.000000e+02	2.500000e+02	4.059414e-01	4.535077e-04	4.535077e-04
+2.500000e+02	3.500000e+02	1.464810e-01	2.777156e-04	2.777156e-04
+3.500000e+02	4.500000e+02	3.979068e-02	2.267539e-04	2.267539e-04
+4.500000e+02	6.000000e+02	9.006893e-03	1.068928e-04	1.068928e-04
+6.000000e+02	1.100000e+03	4.364000e-06	0.000000e+00	0.000000e+00
+# END HISTO1D
+

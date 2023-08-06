@@ -1,0 +1,58 @@
+# BEGIN PLOT
+RatioPlotYLabel=(Bkgd+BSM)/Data
+Title=single lepton channel: lepton-photon $\Delta R$
+XLabel=$\Delta R (\gamma,\ell)$
+YLabel=$1$/$\sigma$ d$\sigma$/d$ \Delta R (\gamma,\ell)$
+RatioPlotYMin=-3.0
+RatioPlotYMax=3.0
+LogY=0
+DrawOnly=/REF/ATLAS_2018_I1707015/d05-x01-y01 /ATLAS_2018_I1707015:LMODE=SINGLE/d05-x01-y01
+Legend=1
+MainPlot=1
+RatioPlot=1
+RatioPlotSameStyle=0
+RemoveOptions=1
+RatioPlotMode=deviation
+RatioPlotErrorBandColor=Yellow
+RatioPlotReference=/REF/ATLAS_2018_I1707015/d05-x01-y01
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2018_I1707015/d05-x01-y01
+ConnectBins=0
+ErrorBars=1
+ErrorBreakdown={0: {exp: {dn: -0.0069, up: 0.0069}, others: {dn: -0.011, up: 0.01}, signal: {dn: -0.0039, up: 0.0039}, stat: {dn: -0.034, up: 0.034}, ttbar: {dn: -0.027, up: 0.027}}, 1: {exp: {dn: -0.0058, up: 0.006}, others: {dn: -0.0057, up: 0.0057}, signal: {dn: -0.01, up: 0.01}, stat: {dn: -0.032, up: 0.032}, ttbar: {dn: -0.0078, up: 0.0077}}, 2: {exp: {dn: -0.0074, up: 0.0075}, others: {dn: -0.011, up: 0.012}, signal: {dn: -0.0089, up: 0.0089}, stat: {dn: -0.035, up: 0.035}, ttbar: {dn: -0.029, up: 0.029}}, 3: {exp: {dn: -0.0062, up: 0.0063}, others: {dn: -0.011, up: 0.011}, signal: {dn: -0.0065, up: 0.0065}, stat: {dn: -0.035, up: 0.035}, ttbar: {dn: -0.036, up: 0.037}}, 4: {exp: {dn: -0.0057, up: 0.0058}, others: {dn: -0.0071, up: 0.0071}, signal: {dn: -0.0049, up: 0.0049}, stat: {dn: -0.032, up: 0.032}, ttbar: {dn: -0.051, up: 0.051}}, 5: {exp: {dn: -0.0073, up: 0.0071}, others: {dn: -0.0075, up: 0.0077}, signal: {dn: -0.014, up: 0.014}, stat: {dn: -0.036, up: 0.036}, ttbar: {dn: -0.016, up: 0.016}}, 6: {exp: {dn: -0.0099, up: 0.0098}, others: {dn: -0.018, up: 0.018}, signal: {dn: -0.0035, up: 0.0035}, stat: {dn: -0.052, up: 0.052}, ttbar: {dn: -0.005, up: 0.0049}}, 7: {exp: {dn: -0.0072, up: 0.0071}, others: {dn: -0.0082, up: 0.01}, signal: {dn: -0.028, up: 0.028}, stat: {dn: -0.038, up: 0.038}, ttbar: {dn: -0.029, up: 0.029}}, 8: {exp: {dn: -0.0013, up: 0.0013}, others: {dn: -0.003, up: 0.0029}, signal: {dn: -0.0013, up: 0.0013}, stat: {dn: -0.0043, up: 0.0043}, ttbar: {dn: -0.0033, up: 0.0033}}}
+IsRef=1
+Path=/REF/ATLAS_2018_I1707015/d05-x01-y01
+PolyMarkers=*
+Title=ATLAS Data
+Variations=[""]
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	1.200000e+00	3.950000e-01	4.548428e-02	4.525285e-02
+1.200000e+00	1.400000e+00	3.730000e-01	3.536905e-02	3.538050e-02
+1.400000e+00	1.600000e+00	4.030000e-01	4.817645e-02	4.842995e-02
+1.600000e+00	1.800000e+00	3.460000e-01	5.217940e-02	5.288610e-02
+1.800000e+00	2.000000e+00	3.310000e-01	6.108936e-02	6.109877e-02
+2.000000e+00	2.200000e+00	4.120000e-01	4.309919e-02	4.310104e-02
+2.200000e+00	2.400000e+00	3.630000e-01	5.624287e-02	5.621655e-02
+2.400000e+00	2.600000e+00	4.740000e-01	5.646309e-02	5.673984e-02
+2.600000e+00	6.000000e+00	1.120000e-01	6.462198e-03	6.416385e-03
+# END HISTO1D
+
+
+# BEGIN HISTO1D /ATLAS_2018_I1707015:LMODE=SINGLE/d05-x01-y01
+ErrorBars=1
+LineColor=red
+Path=/ATLAS_2018_I1707015:LMODE=SINGLE/d05-x01-y01
+Title=Data as BG: Correlated   0\%
+# xlow	 xhigh	 val	 errminus	 errplus
+1.000000e+00	1.200000e+00	3.950006e-01	3.077528e-07	3.077528e-07
+1.200000e+00	1.400000e+00	3.730003e-01	2.176141e-07	2.176141e-07
+1.400000e+00	1.600000e+00	4.030009e-01	3.769186e-07	3.769186e-07
+1.600000e+00	1.800000e+00	3.460008e-01	3.440781e-07	3.440781e-07
+1.800000e+00	2.000000e+00	3.310008e-01	3.440781e-07	3.440781e-07
+2.000000e+00	2.200000e+00	4.120003e-01	2.176141e-07	2.176141e-07
+2.200000e+00	2.400000e+00	3.630008e-01	3.440781e-07	3.440781e-07
+2.400000e+00	2.600000e+00	4.740002e-01	1.538764e-07	1.538764e-07
+2.600000e+00	6.000000e+00	1.120002e-01	4.340972e-08	4.340972e-08
+# END HISTO1D
+
