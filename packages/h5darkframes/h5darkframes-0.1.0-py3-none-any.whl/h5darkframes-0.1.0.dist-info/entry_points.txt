@@ -1,0 +1,6 @@
+[console_scripts]
+darkframes-display=h5darkframes.main:darkframes_display
+darkframes-info=h5darkframes.main:darkframes_info
+darkframes-zwoasi-config=h5darkframes.main:asi_zwo_darkframes_config
+darkframes-zwoasi-library=h5darkframes.main:asi_zwo_darkframes_library
+
