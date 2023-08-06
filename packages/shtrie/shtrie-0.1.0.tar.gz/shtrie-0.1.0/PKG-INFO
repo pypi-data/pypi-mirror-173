@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: shtrie
+Version: 0.1.0
+Summary: Single-hash-table Trie
+Author-email: Vee Satayamas <vsatayamas@gmail.com>
+Project-URL: homepage, https://git.sr.ht/~veer66/shtrie
+Keywords: trie
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# shtrie
+
+Single-hash-table Trie
+
+## Usage
+
+```
+>>> import shtrie
+>>> trie = shtrie.list_to_trie([("CAT", 100), ("RAT", 200), ("DOG", 300)])
+>>> from shtrie import PAYLOAD_KEY, ROW_KEY, TERMINAL_KEY
+>>> from shtrie import lookup
+>>> val0 = lookup(trie, 0, 0, "C")
+>>> val0[TERMINAL_KEY]
+False
+>>> val1 = lookup(trie, val0[ROW_KEY], 1, "A")
+>>> val2 = lookup(trie, val1[ROW_KEY], 2, "T")
+>>> val2
+(0, True, 100)
+>>> lookup(trie, 0, 0, "O")
+```

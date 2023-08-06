@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shtrie"
+version = "0.1.0"
+authors = [{name = "Vee Satayamas", email = "vsatayamas@gmail.com"}]
+description = "Single-hash-table Trie"
+readme = "README.md"
+keywords = ["trie"]
+license = {file = "LICENSE.txt"}
+classifiers = [
+	    "Programming Language :: Python :: 3",
+	    "License :: OSI Approved :: Apache Software License",
+	    "Intended Audience :: Developers",
+	    "Operating System :: OS Independent",
+	    "Topic :: Software Development :: Libraries",
+	    ]
+dependencies = []
+
+[project.urls]
+homepage = "https://git.sr.ht/~veer66/shtrie"
+
+[tool.pylsp-mypy]
+enabled = true
+live_mode = true
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
