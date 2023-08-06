@@ -1,0 +1,3 @@
+[console_scripts]
+julgi=julgi.__main__:cli
+

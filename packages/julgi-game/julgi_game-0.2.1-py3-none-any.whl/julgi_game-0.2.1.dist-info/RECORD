@@ -1,0 +1,14 @@
+julgi/__init__.py,sha256=VNtmtiI7FE-XG5ak2tc06CHVRfUmP0zrWBP_8gyHngY,103
+julgi/__main__.py,sha256=mKWQgtLzKPqjjy0Z6gWwnOv-RFHJ4UC9y7zL-2rSMH4,1322
+julgi/__version__.py,sha256=7VyHp48OUTQQUylqTtD2KYmDnZ1N5qU2-WFiy4BFYEo,23
+julgi/battle.py,sha256=9gHdqSD4P1b7XKHWVPptLljZncVjnrKYaEkTHeS_zZc,5380
+julgi/classes.py,sha256=ElX0kk06vFoij87F1su0rtfq9HElccfYzjY8wVfDBYQ,2267
+julgi/parse.py,sha256=lk1HGQyJBqW3a9q-HeTbrIhDIL1i-bn6iGKSoe2E45g,3227
+julgi/skill/ko.yml,sha256=Bbbc9GK5cJnCmT9liWgSQysT8QfwBEnIyttwzK-8lYs,3362
+julgi/skill/sort_skill.py,sha256=0qde5mkMHwk7RBljxha-G7klCbSlh8FbtVdV-56Y2Kw,782
+julgi/util.py,sha256=BU4zsQnYNoa1fScIYIqdaXHx4aZW1vDdB5eQ55RQi8M,573
+julgi_game-0.2.1.dist-info/entry_points.txt,sha256=uf6JTXcC5qhSAoqSg5aL3vu297MJFcSdWRkMuSjwyiE,44
+julgi_game-0.2.1.dist-info/WHEEL,sha256=TQSpXlWZjPl29LMjkpbkR7iGxKB2AMwzfSmPuPn1ZS8,87
+julgi_game-0.2.1.dist-info/METADATA,sha256=9RApaLBWveUB8oWdNwx8r4kX6C0t5n4urLFWZMZVsCI,3269
+julgi_game-0.2.1.dist-info/licenses/LICENSE,sha256=cN2i11fc2Qwuqkh2-WirvhO00hK10ipgiczou1SksQY,379
+julgi_game-0.2.1.dist-info/RECORD,,
