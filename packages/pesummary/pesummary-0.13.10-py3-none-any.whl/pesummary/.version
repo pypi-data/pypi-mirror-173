@@ -1,0 +1,11 @@
+# pesummary version information
+
+version = '0.13.10'
+last_stable_release = '0.13.10'
+
+git_hash = 'b4d82f3'
+git_author = 'Charlie Hoy <charlie.hoy@ligo.org>'
+git_status = 'CLEAN: All modifications committed'
+git_builder = 'Charlie Hoy <charlie.hoy@port.ac.uk>'
+git_build_date = '2022-10-27 14:39:44 +0000'
+
