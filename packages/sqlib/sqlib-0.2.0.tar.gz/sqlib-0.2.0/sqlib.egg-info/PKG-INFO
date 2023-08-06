@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sqlib
+Version: 0.2.0
+Summary: Sqlib is a small ORM for MariaDB.
+Home-page: https://github.com/meyiapir/sqlib
+Author: meyap
+Author-email: mmeyiapir@gmail.com
+License: Apache License, Version 2.0, see LICENSE file
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: NOTICE.txt
+
+
+It provides a simple interface for quick and convenient work with MariaDB.
+
+

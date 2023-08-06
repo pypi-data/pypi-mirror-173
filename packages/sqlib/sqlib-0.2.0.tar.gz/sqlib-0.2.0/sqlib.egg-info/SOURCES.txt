@@ -1,0 +1,17 @@
+LICENSE.txt
+NOTICE.txt
+README.md
+setup.cfg
+setup.py
+sqlib/__init__.py
+sqlib/sqlib.py
+sqlib.egg-info/PKG-INFO
+sqlib.egg-info/SOURCES.txt
+sqlib.egg-info/dependency_links.txt
+sqlib.egg-info/requires.txt
+sqlib.egg-info/top_level.txt
+sqlib/modules/connection.py
+sqlib/modules/create.py
+sqlib/modules/insert.py
+sqlib/modules/select.py
+sqlib/modules/update.py
