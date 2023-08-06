@@ -1,0 +1,12 @@
+[project]
+name = "bentopy"
+version = "0.0.0"
+authors = [
+  { name="Jan Stevens", email="j.a.stevens@rug.nl" },
+]
+description = "Packs stuff in boxes"
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/marrink-lab/bentopy"

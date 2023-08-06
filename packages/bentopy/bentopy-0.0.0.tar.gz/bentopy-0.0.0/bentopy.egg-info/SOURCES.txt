@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+bentopy.egg-info/PKG-INFO
+bentopy.egg-info/SOURCES.txt
+bentopy.egg-info/dependency_links.txt
+bentopy.egg-info/top_level.txt
