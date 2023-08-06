@@ -1,0 +1,7 @@
+LICENCE
+README.txt
+setup.py
+Roqiacal.egg-info/PKG-INFO
+Roqiacal.egg-info/SOURCES.txt
+Roqiacal.egg-info/dependency_links.txt
+Roqiacal.egg-info/top_level.txt

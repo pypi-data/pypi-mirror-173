@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Roqiacal
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: 
+Author: roqiaaleiwi
+Author-email: josh@edublocks.org
+License: MIT
+Keywords: calculator
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE
+
+This is a very simple calculator that takes two numbers and either add or subtract them.
+
+Change Log
+==========
+
+0.0.1 (5/10/2022)
+-------------------
+- First Release
