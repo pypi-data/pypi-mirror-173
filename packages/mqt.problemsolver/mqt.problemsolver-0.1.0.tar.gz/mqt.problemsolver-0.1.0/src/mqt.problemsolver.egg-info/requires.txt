@@ -1,0 +1,17 @@
+qiskit~=0.36
+numpy~=1.23.3
+matplotlib~=3.5.1
+mqt.ddsim~=1.11.0
+networkx~=2.8.6
+python_tsp~=0.3.1
+
+[coverage]
+mqt.problemsolver[test]
+coverage[toml]~=6.5.0
+pytest-cov~=4.0.0
+
+[dev]
+mqt.problemsolver[coverage]
+
+[test]
+pytest>=7
