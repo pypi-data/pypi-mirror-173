@@ -1,0 +1,8 @@
+poetry_plugin_pycopy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_plugin_pycopy/models.py,sha256=XbzjEFEXY-KSAtizEa0saJ_6p499rcAUp_MC2n85iI4,124
+poetry_plugin_pycopy/plugin.py,sha256=0f2jFmBLhWehCuZxVAlvM0Aaoos855ES_iIfD5dTbbk,1161
+poetry_plugin_pycopy/pycopy.py,sha256=swZfe4FnLQbw_Qg7Y8WEbwPVvy-Pa9zddD6xaQCb8bM,3815
+poetry_plugin_pycopy-1.0.6.dist-info/entry_points.txt,sha256=Hr2MkhJ5_qECBJPiYZ4B13x8yj25hib5xrxYxMjm3RE,97
+poetry_plugin_pycopy-1.0.6.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+poetry_plugin_pycopy-1.0.6.dist-info/METADATA,sha256=IltlSrMpTaKtWpCDPlS7sRWhUNTxAUtITfbrlsliBbI,2806
+poetry_plugin_pycopy-1.0.6.dist-info/RECORD,,
