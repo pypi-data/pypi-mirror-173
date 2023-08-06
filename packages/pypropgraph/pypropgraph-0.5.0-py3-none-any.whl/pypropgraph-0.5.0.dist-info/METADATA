@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pypropgraph
+Version: 0.5.0
+Summary: A property graphs library for importing and generating cypher in python
+Home-page: https://github.com/alexmilowski/pypropgraph
+Author: Alex Miłowski
+Author-email: alex@milowski.com
+License: MIT License
+Keywords: cypher,property,graph
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: lark-parser
+Requires-Dist: redis
+Requires-Dist: redisgraph
+
