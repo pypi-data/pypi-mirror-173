@@ -1,0 +1,29 @@
+from __future__ import annotations
+
+from datetime import datetime
+from typing import Optional, Union
+
+from pydantic import BaseModel, HttpUrl
+
+
+class Repository(BaseModel):
+    """Not complete!!"""
+
+    id: int
+    description: Union[str, None] = ""
+    name: str  # 'pyworkon'
+    name_with_namespace: str  # 'assing / pyworkon'
+    path: str  # 'pyworkon'
+    path_with_namespace: str  # 'assing/pyworkon'
+    created_at: datetime
+    default_branch: str  # 'main'
+    # tag_list: []
+    # topics: []
+    ssh_url_to_repo: str  # 'git@local.com:assing/pyworkon.git'
+    http_url_to_repo: HttpUrl  # 'https://local.com/assing/pyworkon.git'
+    web_url: HttpUrl  # 'https://local.com/assing/pyworkon'
+    readme_url: Union[HttpUrl, None] = None  # 'https://local.com/assing/pyworkon/-/blob/main/README.md'
+    avatar_url: Optional[HttpUrl] = None
+    forks_count: int  # 0
+    star_count: int  # 1
+    last_activity_at: datetime  # '2021-11-26T08:28:28.518Z'
