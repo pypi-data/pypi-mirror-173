@@ -1,0 +1,11 @@
+pandas
+rdkit
+tqdm
+nfp
+shortuuid
+scikit-learn
+tensorflow>=2
+m2p
+
+[test]
+pytest
