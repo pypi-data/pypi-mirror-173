@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: sphinx-stan
+Version: 0.1.2
+Description-Content-Type: text/x-rst
+Provides-Extra: tests
+
+Please see https://sphinx-stan.readthedocs.io/.
