@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+ensverif.py
+pyproject.toml
+ensverif.egg-info/PKG-INFO
+ensverif.egg-info/SOURCES.txt
+ensverif.egg-info/dependency_links.txt
+ensverif.egg-info/top_level.txt
