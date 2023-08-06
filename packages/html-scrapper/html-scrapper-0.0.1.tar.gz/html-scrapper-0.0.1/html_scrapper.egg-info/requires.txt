@@ -1,0 +1,3 @@
+cssutils
+bs4
+requests

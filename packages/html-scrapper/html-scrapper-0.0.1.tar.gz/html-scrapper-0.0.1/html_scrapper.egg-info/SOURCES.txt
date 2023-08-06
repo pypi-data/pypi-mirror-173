@@ -1,0 +1,12 @@
+README.md
+setup.py
+html_scrapper.egg-info/PKG-INFO
+html_scrapper.egg-info/SOURCES.txt
+html_scrapper.egg-info/dependency_links.txt
+html_scrapper.egg-info/entry_points.txt
+html_scrapper.egg-info/requires.txt
+html_scrapper.egg-info/top_level.txt
+scrapper/__init__.py
+scrapper/bootstrap.py
+scrapper/css_scrapper.py
+scrapper/html_scapper.py
