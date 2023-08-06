@@ -1,0 +1,8 @@
+README.md
+setup.py
+supper_regrresion/__init__.py
+supper_regrresion/supper_regrression.py
+supper_regrresion.egg-info/PKG-INFO
+supper_regrresion.egg-info/SOURCES.txt
+supper_regrresion.egg-info/dependency_links.txt
+supper_regrresion.egg-info/top_level.txt
