@@ -1,0 +1,15 @@
+pyswit/__init__.py,sha256=dOqrBXiDg3T63EMPitojX9_a-Qee3tdrZxF5NkNLm6Q,585
+pyswit/baseAPI.py,sha256=N_oe5tA9RHxN9Mi16OEyPR7Ejin9Qt98UG6KPoJjpeo,1908
+pyswit/channel.py,sha256=UY05R9xw-MMpIi9wSD2bLjmy_cKXp651Kgy13oSYQmE,2235
+pyswit/message.py,sha256=mVPOXjO_l_B8Q2eTyBjLL_tV1ouz247CBxm_ulL2zTo,3205
+pyswit/oauth.py,sha256=iGzB3fX-DrLm2bLTXXHXvWF68T51Tuuv2EVgWhYosDk,4476
+pyswit/project.py,sha256=DK7A4C1NvFl8DQWnGeYiw6RJHFuQ9mKvM9o0obMcIb4,2551
+pyswit/task.py,sha256=9XeuIfRaqemOAqkdC7PYH2FS_KmxNz8CWnPKtpHtLd8,3221
+pyswit/user.py,sha256=lWXfCOfDSms7LwoDJgOprvMwGcI_-UX3O7EiOfV5jyY,159
+pyswit/webhook.py,sha256=KvgAcDvidNSaf34a6Kfqe1lNXlT5BsapkrKOYJhBag4,233
+pyswit/workspace.py,sha256=0vGd2ZUYXFGEkY6BDrwvNMSlPeiLJmwWYM4f_AUHke4,2188
+pyswit-0.0.8.dist-info/LICENSE.md,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyswit-0.0.8.dist-info/METADATA,sha256=MkJUmX6AG2QgkTqbQQngvhAl2865ElsbOEPVrjACdUg,7299
+pyswit-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyswit-0.0.8.dist-info/top_level.txt,sha256=Wt4XSQjN986ZYBeDiOly5Zfwp5j0-WCrievrtuaFQiU,7
+pyswit-0.0.8.dist-info/RECORD,,
