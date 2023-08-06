@@ -1,0 +1,11 @@
+dagster_managed_elements/__init__.py,sha256=DMGXIqPsmut9H5GT0ZeSzQIzYzzPwI-2gLXydpbwiV8,21
+dagster_managed_elements/cli.py,sha256=hNl_ZwLcZr4A-XuPo-TxLmLovZwjBCPiG2qNZnKmZdg,4439
+dagster_managed_elements/types.py,sha256=K-KCwTpzL3wNGvhekIQsn_xZsl6sBZsTrPZFbx6qKwQ,9107
+dagster_managed_elements/utils.py,sha256=VlhD5uYn4f9TLNXZKpWRljELb-rVSUm_Nqegwvj18yY,1885
+dagster_managed_elements/version.py,sha256=Azoo055kJozZURSVgiLattbf2Jz2HF7CxKYQAdjTAfw,24
+dagster_managed_elements-0.16.15.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+dagster_managed_elements-0.16.15.dist-info/METADATA,sha256=CRR3SFm4hzaCD9IYki0sQq6F0ecIOhjSnCpQ97yOldU,671
+dagster_managed_elements-0.16.15.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dagster_managed_elements-0.16.15.dist-info/entry_points.txt,sha256=efvwXOI013Ak2aV5ql8bbL6Vxh1Rt2K2XaBclR-GSUA,127
+dagster_managed_elements-0.16.15.dist-info/top_level.txt,sha256=HgwHPdAeKpsc1fOt3m3o1bJdRdnwgKBgf_qcQ6spats,25
+dagster_managed_elements-0.16.15.dist-info/RECORD,,
