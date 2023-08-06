@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=58.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "galaxy-online-battle-simulation"
+version = "1.0.0"
+description = "Module for simulation of different battles in the online space strategy game Galaxy Online."
+readme = "README.md"
+authors = [{ name = "fadedness" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["galaxy", "online", "battle", "simulation"]
+dependencies = []
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://github.com/fadedness/galaxy-online-battle-simulation"
+
+[project.scripts]
+battlesimulation = "battlesimulation.__main__:main"
