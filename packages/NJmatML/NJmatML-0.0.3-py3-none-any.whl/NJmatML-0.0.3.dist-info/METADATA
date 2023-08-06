@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: NJmatML
+Version: 0.0.3
+Summary: Automates machine learning model construction for materials science via NJmatML. Please check https://github.com/Zhang-NJ-Lab/NJmatML-Functions/blob/main/define.ipynb 
+Home-page: UNKNOWN
+Author: Lei_Zhang
+Author-email: ervin42772@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+定义了一些函数用于机器学习建模，数据使用的是表面修饰钙钛矿薄膜的水环境光电压. The test dataset is photocurrent voltages for surface modified halide perovksite films in water. file_name('train1.csv')  hist()  heatmap_before()    feature_select(23,0) #第一个为剩的特征个数，第二个一般都为0   heatmap_afterRFE()   FeatureImportance_before(80,8,10,4)  #rotation=80, fontsize=8, figure_size_xaxis=10,figure_size_yaxis=4   FeatureImportance_afterRFE(80,12,5,4) #rotation=80, fontsize=12, figure_size_xaxis=5,figure_size_yaxis=4      xgboost_default()     xgboost_modify(1000,200,0.2,0,0.9,0.8,0.2)
+
+
