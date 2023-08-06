@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: salamanderspace
+Version: 0.0.6
+Summary: A package of usefule aerospace functions
+Author-email: "Jason Saladiner Jr." <saladiner.jason@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# salamanderspace
+A package of Aerospace related functions created by Jason Salamander.
