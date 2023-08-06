@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+xnat2jupyterhub/__init__.py
+xnat2jupyterhub/auth.py
+xnat2jupyterhub.egg-info/PKG-INFO
+xnat2jupyterhub.egg-info/SOURCES.txt
+xnat2jupyterhub.egg-info/dependency_links.txt
+xnat2jupyterhub.egg-info/top_level.txt
+xnat2jupyterhub/hooks/__init__.py
+xnat2jupyterhub/hooks/swarmspawner.py
