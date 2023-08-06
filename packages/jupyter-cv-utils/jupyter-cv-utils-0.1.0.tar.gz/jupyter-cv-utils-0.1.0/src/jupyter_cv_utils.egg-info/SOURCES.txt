@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/jupyter_cv_utils/__init__.py
+src/jupyter_cv_utils/jupyter_cv_utils.py
+src/jupyter_cv_utils.egg-info/PKG-INFO
+src/jupyter_cv_utils.egg-info/SOURCES.txt
+src/jupyter_cv_utils.egg-info/dependency_links.txt
+src/jupyter_cv_utils.egg-info/requires.txt
+src/jupyter_cv_utils.egg-info/top_level.txt
