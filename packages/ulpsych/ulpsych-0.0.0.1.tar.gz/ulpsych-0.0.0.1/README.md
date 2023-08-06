@@ -1,0 +1,74 @@
+# grading_colation
+
+# Brief 
+
+
+## Aims
+The aim of this package is to reduce the burden of administrative work that is associated with student courwork or exams. In essence it aims to create a directory and structure to allow for all files (student submissions, student grade sheets, assignment details and rubric, colated final grades) to be stored and tracked easily, to limit the amount of manual copying and pasting, to facilitate working with TA's, and, finally to allow easy return of marks to students. If possible it should also help to create packages which can be sent to second markers and external examiners as well as get the work ready for the course board. 
+
+## Principles
+The principles which will guide the development of this package:
+1. Where possible the minimum burden of knowledge should be placed on the user
+2. Where possible the package should aim to follow the good enough principles for computer science
+3. Where possible the results of the package should be traceable
+4. Where possible the user input should be taken, used, and then discarded
+5. At all times the code should not put the users existing files at risk
+6. All user facing text should be in plain language and contain clear instructions
+7. Should use object oriented programming where possible
+
+
+## Required Documents. 
+All modules will have documents, other than lecture/lab (class) content. These documents can be highlevel, associated with the module itself, or lower level, associated with an assignment or exam. 
+
+### Module documents
+    1. Module handbooks. Often in the `.docx` format and there can be significant carryover from year to year, with minor adjustments.
+
+
+### Coursework required documents
+At the outset the coursework needs some documents associated with it:
+    1. The assignment details (usually a .docx or .pdf file)
+    2. A grading rubric (often .xlsx file)
+    3. A marking guide (often .xlsx file)
+Items 2 and 3 can be the same file if properly formatted. 
+
+Some of the above documents will be uploaded to sulis as part of releasing the assignment to students.
+
+Students (ideally) upload their submission to sulis and faculty can then download these submissions, as either a batch download or individually.
+
+Depending on the module there may need to be a note to the external examiner
+
+## Steps
+0. Take required information from the user #maybe not
+1. set up the directory and subdirectories
+2. Import the student submissions into directory
+3. Create the colated grade work book
+4. create individual grading workbooks for each student and copy them into each student submission sub-directory
+5. if there are TAs, randomly assign students to all graders (module leaders and graders)
+6. read the final grades from the completed individual grading sheets back into the colated work book
+7. randomly assign students from each grade band to second marker, and create a 'pack' for them
+8. if required do the same for the second marker
+
+### step 0 Take the variables from the user. 
+This is probably the last thing I should actually code but it involves taking all the input from the user. Almost all of these start out as string input and then would be converted to raw strings where needed. 
+
+
+#### Input Variables
+1. **Module code**: the UL code used on the time tables. ie 'PS4034'
+2. **Year**: This can be a single string in the form '20xx' >There may need to be more latitude around this.
+3. **Assignment name** : The assignment name given by the ML for a particular assingment. ie 'coursework 1', 'qualitative report, 'lab report 2', etc
+4. **Assignment Brief path** : This is the file path to the document that contains all the assignment instructions. This is often a word document and is frequently preexisting . ie 'c:\Users\user.name\Documents\teaching\coursework 1 brief.docx'
+5. **Assignment rubric path**: Similar to the above, but most often in .xlsx format. ie. 'c:\Users\user.name\Documents\teaching\coursework 1 grading guidlines.xlsx'
+6. **Prefered parent directory**: This is the folder address of the directory that the user prefers to store thier teaching related work in. is 'c:\Users\user.name\Documents\teaching\'
+7. **Sulis download path**: When the assignment is closed and you download the student submissions from SULIS this will take the form of a new directory, most often in the downloads folder, which contains a subdirectory for each student.
+
+####  Produced variables
+1. **assignment directory path**: The path that will be created by setting up the work space. I'll need to think about how to split this up. 
+2. **assignment code book path**: The path to assignment master work book whiich is produced as part of the code, probably in the `set_up.py` function.
+3. output text path
+
+
+### Step 1 set up the directory and subdirectories
+Each teaching module is an instance of a class and this allows me to run class methods to set up each module smoothly. By prompting the user to supply information about the module we can set up the cottrect folder structure for each teachimg module. Containing folders for teaching resources, assignments and exams (if required). 
+
+#### Step 1.1 Locate and move module documents (If neccesary)
+Module documents such as the handbook( which contains a link to the essential reading for psych students) and assignment/exam documents should be located and copied into the appropriate folders. This assumes that documents from previous years can be reused with minor changes... this could be dificult to manage for some users, and they may wish to perform the operations manually, but it is possible to have the process mostly automated. It's just important to make sure that the code *can not* overwrite changes the use may have made manually.  

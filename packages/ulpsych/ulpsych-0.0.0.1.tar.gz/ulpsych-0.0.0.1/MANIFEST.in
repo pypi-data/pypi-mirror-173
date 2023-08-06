@@ -1,0 +1,5 @@
+include *.md
+include *.txt
+recursive-include src *.ipynb
+recursive-include src *.md
+recursive-include src *.py
