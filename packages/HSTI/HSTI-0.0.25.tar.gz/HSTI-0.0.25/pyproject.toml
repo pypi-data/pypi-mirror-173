@@ -1,0 +1,8 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "opencv-python",
+    "scipy"
+]
+build-backend = "setuptools.build_meta"
