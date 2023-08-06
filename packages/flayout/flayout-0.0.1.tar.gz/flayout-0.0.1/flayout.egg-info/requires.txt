@@ -1,0 +1,17 @@
+klayout
+
+[dev]
+black
+bokeh
+bump2version
+ipykernel
+isort
+lxml
+nbdev
+nbstripout
+numpy
+papermill
+pre-commit
+pytest
+pyyaml
+tqdm
