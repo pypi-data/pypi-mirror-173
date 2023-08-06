@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-fs
+Version: 0.1
+Summary: A Python package to works with the filesystem
+Home-page: https://github.com/alekay2200/PyFileSystem
+Author: Alejandro Palomino Gomez
+Author-email: alejandropalomino22@gmail.com
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+UNKNOWN
+
