@@ -1,0 +1,9 @@
+qaseio>=3.0.0
+pytest>=5.2.0
+filelock>=3.0
+
+[testing]
+pytest
+pytest-cov
+requests_mock
+urllib3-mock
