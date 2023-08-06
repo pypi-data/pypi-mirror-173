@@ -1,0 +1,2 @@
+[console_scripts]
+battlesimulation = battlesimulation.__main__:main
