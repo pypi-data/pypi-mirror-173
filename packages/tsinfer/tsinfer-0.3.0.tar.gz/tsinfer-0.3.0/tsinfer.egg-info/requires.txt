@@ -1,0 +1,11 @@
+numpy
+six
+tqdm
+humanize
+daiquiri
+tskit>=0.5.3
+numcodecs>=0.6
+zarr>=2.2!=2.11.0!=2.11.1!=2.11.2
+lmdb
+sortedcontainers
+attrs>=19.2.0
