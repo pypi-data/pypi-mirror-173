@@ -1,0 +1,16 @@
+PartSeg_smfish/__init__.py,sha256=B8qHTlpAMKywewQKnWXpzUYS7wND-tg0Z_YuaJhyrQs,775
+PartSeg_smfish/_version.py,sha256=_xTDbhAtM9SYakiczDUFEUS4jS3NReWyzslGWPu0ey4,176
+PartSeg_smfish/copy_labels.py,sha256=27O32FGRSqeFdjiPFr_jbJRqkFGJ51jDVQb-5uDw0MQ,3696
+PartSeg_smfish/measurement.py,sha256=WWzuYRBGmNLOmZbrMCTmxt62d7ZRonz951qCESedYhk,706
+PartSeg_smfish/napari.yaml,sha256=9Ee4JHC0sbHsJwPfrTgBTuyP4OuUAp91A58BcUWJpck,1979
+PartSeg_smfish/segmentation.py,sha256=0DmDG3LZQen8wrZM34ZZDX9Ad4Zbytt1JKfJ0rRacHo,19607
+PartSeg_smfish/verify_points.py,sha256=NG3SpP4m9wjOCNVQQvoC0nNJrq10CMFqOuEZgP_N68A,6301
+PartSeg_smfish/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PartSeg_smfish/_tests/test_copy_labels.py,sha256=H1cwNuZLWJ6godJsr1Mu_j-L7NyKfJF3MDQOPKTK0nU,220
+PartSeg_smfish/_tests/test_segmentation.py,sha256=p20MEaEt--NSyNlxECmWH1XMgvZabz7phR1l-RlN7L4,1038
+PartSeg_smfish-0.1.2.dist-info/LICENSE,sha256=nQ_Qfe1sxsOPw-6u62tWSY-hHhm0lnGIaRF4BrDyOWQ,1490
+PartSeg_smfish-0.1.2.dist-info/METADATA,sha256=utnua02bgeFkpryxvkcMN9LUP_I4vOPavwxlXuogWJk,4167
+PartSeg_smfish-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+PartSeg_smfish-0.1.2.dist-info/entry_points.txt,sha256=_FSzg48TcEgAW7-lUrk_HlGKiTvruGHqhKEd43gr3aY,117
+PartSeg_smfish-0.1.2.dist-info/top_level.txt,sha256=gI0ra9lUqB7cyXCH3LCmRf0UCz_bR5rsqww09LcxAUM,15
+PartSeg_smfish-0.1.2.dist-info/RECORD,,
