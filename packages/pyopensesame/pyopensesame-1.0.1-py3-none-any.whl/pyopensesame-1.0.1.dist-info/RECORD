@@ -1,0 +1,15 @@
+opensesame/__init__.py,sha256=ADL69wFdSR5KW4dueV7a1vIlqSHxMDQd7k5Bx4NC63o,24
+opensesame/__main__.py,sha256=4VaVPlCIWc0Eu-zZqLcb7crodoxUyNoQi9U5wM925vo,86
+opensesame/clipboard.py,sha256=ODIZ3Qiq75uWv9F3A6khWG-8A7IM52RXhwHreCiBGWw,408
+opensesame/error.py,sha256=ExTrr0uCpkp0zQg1I8l7ZNGNEDPJgP1rktTQywKEQfw,40
+opensesame/helpers.py,sha256=c7-h-3pHUQ3trDEX65dM903xs6Zkr3BH4H8j1FfhScY,296
+opensesame/letters.py,sha256=1cR726QIP2aSU67XOmOGllB_iasFB9G2YO4IRRBheVQ,50
+opensesame/list.txt,sha256=L8RV2VD0UcMDeMz1R1RKB-4C_qZgkY5G3LfmddpI-O0,600806
+opensesame/main_click.py,sha256=k0-ljb66lZ9VatYaOh8-dIqsdVMUKPnNmt-p7TYxKAc,4328
+opensesame/password.py,sha256=hkHcFgaFjTMiPf5xqx6b5EFDmhU41SK8HmKmTdTLeVo,6984
+opensesame/words.py,sha256=3Zr9PngtRnewTMriJCfJUGVuSWBKVQBePkgC1zwqzrI,167
+pyopensesame-1.0.1.dist-info/METADATA,sha256=KaP2SX_lyi_HUfLGS1U-rU8kbEVUOfUS_wcGNqYGb8A,11198
+pyopensesame-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pyopensesame-1.0.1.dist-info/entry_points.txt,sha256=5CjM48o03-PNaLg7o_jr-5SRI0Ad7qVevNmLeIufv8g,58
+pyopensesame-1.0.1.dist-info/top_level.txt,sha256=lRXmX0bLc3zYwZHbL9gLvQVoblmSskHorXcnUQtxQuY,11
+pyopensesame-1.0.1.dist-info/RECORD,,

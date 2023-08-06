@@ -1,0 +1,2 @@
+vowels='aeiouy'
+consonants='bcdfghjklmnpqrstvwxz'

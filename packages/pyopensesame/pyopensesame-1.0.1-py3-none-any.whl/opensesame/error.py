@@ -1,0 +1,1 @@
+class CategoryWarning(UserWarning):pass
