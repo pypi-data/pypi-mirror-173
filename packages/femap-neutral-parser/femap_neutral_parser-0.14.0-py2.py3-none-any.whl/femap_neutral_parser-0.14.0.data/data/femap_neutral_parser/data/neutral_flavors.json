@@ -1,0 +1,453 @@
+{
+  "applied_gpf": {
+    "t1": [
+      "T1 Applied GPForce"
+    ],
+    "t2": [
+      "T2 Applied GPForce"
+    ],
+    "t3": [
+      "T3 Applied GPForce"
+    ],
+    "t_total": [
+      "Total Applied GPForce"
+    ],
+    "r1": [
+      "R1 Applied GPMoment"
+    ],
+    "r2": [
+      "R2 Applied GPMoment"
+    ],
+    "r3": [
+      "R3 Applied GPMoment"
+    ],
+    "r_total": [
+      "Total Applied GPMoment"
+    ]
+  },
+  "cbar_force": {
+    "torque_a": [
+      "BAR EndA Torque",
+      "Bar EndA Torque"
+    ],
+    "torque_b": [
+      "BAR EndB Torque"
+    ],
+    "shear_a1": [
+      "BAR EndA Pl1 Shear Force",
+      "Bar EndA Pl1 Shear Force"
+    ],
+    "shear_a2": [
+      "BAR EndA Pl2 Shear Force",
+      "Bar EndA Pl2 Shear Force"
+    ],
+    "shear_b1": [
+      "BAR EndB Pl1 Shear Force"
+    ],
+    "shear_b2": [
+      "BAR EndB Pl2 Shear Force"
+    ],
+    "bending_moment_a1": [
+      "BAR EndA Plane1 Moment",
+      "Bar EndA Plane1 Moment"
+    ],
+    "bending_moment_a2": [
+      "BAR EndA Plane2 Moment",
+      "Bar EndA Plane2 Moment"
+    ],
+    "bending_moment_b1": [
+      "BAR EndB Plane1 Moment",
+      "Bar EndB Plane1 Moment"
+    ],
+    "bending_moment_b2": [
+      "BAR EndB Plane2 Moment",
+      "Bar EndB Plane2 Moment"
+    ],
+    "axial_a": [
+      "BAR EndA Axial Force",
+      "Bar EndA Axial Force"
+    ],
+    "axial_b": [
+      "BAR EndB Axial Force"
+    ]
+  },
+  "cbar_ms": {
+    "tension": [
+      "Bar Tension M.S."
+    ],
+    "compression": [
+      "Bar Compression M.S."
+    ]
+  },
+  "cbar_stress": {
+    "max_comb_a": [
+      "BAR EndA Max Stress",
+      "Bar EndA Max Comb Stress"
+    ],
+    "max_comb_b": [
+      "BAR EndB Max Stress",
+      "Bar EndB Max Comb Stress"
+    ],
+    "min_comb_a": [
+      "BAR EndA Min Stress",
+      "Bar EndA Min Comb Stress"
+    ],
+    "min_comb_b": [
+      "BAR EndB Min Stress",
+      "Bar EndB Min Comb Stress"
+    ],
+    "comb_a1": [
+      "BAR EndA Pt1 Comb Stress"
+    ],
+    "comb_a2": [
+      "BAR EndA Pt2 Comb Stress"
+    ],
+    "comb_a3": [
+      "BAR EndA Pt3 Comb Stress"
+    ],
+    "comb_a4": [
+      "BAR EndA Pt4 Comb Stress"
+    ],
+    "comb_b1": [
+      "BAR EndB Pt1 Comb Stress"
+    ],
+    "comb_b2": [
+      "BAR EndB Pt2 Comb Stress"
+    ],
+    "comb_b3": [
+      "BAR EndB Pt3 Comb Stress"
+    ],
+    "comb_b4": [
+      "BAR EndB Pt4 Comb Stress"
+    ],
+    "bend_a1": [
+      "Bar EndA Pt1 Bend Stress"
+    ],
+    "bend_a2": [
+      "Bar EndA Pt2 Bend Stress"
+    ],
+    "bend_a3": [
+      "Bar EndA Pt3 Bend Stress"
+    ],
+    "bend_a4": [
+      "Bar EndA Pt4 Bend Stress"
+    ],
+    "bend_b1": [
+      "Bar EndB Pt1 Bend Stress"
+    ],
+    "bend_b2": [
+      "Bar EndB Pt2 Bend Stress"
+    ],
+    "bend_b3": [
+      "Bar EndB Pt3 Bend Stress"
+    ],
+    "bend_b4": [
+      "Bar EndB Pt4 Bend Stress"
+    ],
+    "axial_a": [
+      "Bar EndA Axial Stress"
+    ]
+  },
+  "cbeam_force": {
+    "torque_a": [
+      "Beam EndA Torque"
+    ],
+    "torque_b": [
+      "Beam EndB Torque"
+    ],
+    "shear_a1": [
+      "Beam EndA Pl1 Shear Force"
+    ],
+    "shear_a2": [
+      "Beam EndA Pl2 Shear Force"
+    ],
+    "shear_b1": [
+      "Beam EndB Pl1 Shear Force"
+    ],
+    "shear_b2": [
+      "Beam EndB Pl2 Shear Force"
+    ],
+    "bending_moment_a1": [
+      "Beam EndA Plane1 Moment"
+    ],
+    "bending_moment_a2": [
+      "Beam EndA Plane2 Moment"
+    ],
+    "bending_moment_b1": [
+      "Beam EndB Plane1 Moment"
+    ],
+    "bending_moment_b2": [
+      "Beam EndB Plane2 Moment"
+    ],
+    "axial_a": [
+      "Beam EndA Axial Force"
+    ],
+    "axial_b": [
+      "Beam EndB Axial Force"
+    ]
+  },
+  "cbush_force": {
+    "t1": [
+      "BUSH Force XE",
+      "Bush X Force"
+    ],
+    "t2": [
+      "BUSH Force YE",
+      "Bush Y Force"
+    ],
+    "t3": [
+      "BUSH Force ZE",
+      "Bush Z Force"
+    ],
+    "r1": [
+      "BUSH Moment XE",
+      "Bush X Moment"
+    ],
+    "r2": [
+      "BUSH Moment YE",
+      "Bush Y Moment"
+    ],
+    "r3": [
+      "BUSH Moment ZE",
+      "Bush Z Moment"
+    ]
+  },
+  "cbush_stress": {
+    "t1": [
+      "Bush t1 Stress"
+    ],
+    "t2": [
+      "Bush t2 Stress"
+    ],
+    "t3": [
+      "Bush t3 Stress"
+    ],
+    "r1": [
+      "Bush r1 Stress"
+    ],
+    "r2": [
+      "Bush r2 Stress"
+    ],
+    "r3": [
+      "Bush r3 Stress"
+    ]
+  },
+  "constraint_gpf": {
+    "t1": [
+      "T1 Constraint GPForce"
+    ],
+    "t2": [
+      "T2 Constraint GPForce"
+    ],
+    "t3": [
+      "T3 Constraint GPForce"
+    ],
+    "t_total": [
+      "Total Constraint GPForce"
+    ],
+    "r1": [
+      "R1 Constraint GPMoment"
+    ],
+    "r2": [
+      "R2 Constraint GPMoment"
+    ],
+    "r3": [
+      "R3 Constraint GPMoment"
+    ],
+    "r_total": [
+      "Total Constraint GPMoment"
+    ]
+  },
+  "displacements": {
+    "t1": [
+      "T1 translation",
+      "T1 Translation"
+    ],
+    "t2": [
+      "T2 translation",
+      "T2 Translation"
+    ],
+    "t3": [
+      "T3 translation",
+      "T3 Translation"
+    ],
+    "t_total": [
+      "RSS translation",
+      "Total Translation"
+    ],
+    "r1": [
+      "R1 rotation",
+      "R1 Rotation"
+    ],
+    "r2": [
+      "R2 rotation",
+      "R2 Rotation"
+    ],
+    "r3": [
+      "R3 rotation",
+      "R3 Rotation"
+    ],
+    "r_total": [
+      "RSS rotation",
+      "Total Rotation"
+    ]
+  },
+  "elem_gpf": {
+    "c1_r1": [
+      "Elem C1 R1 GPMoment"
+    ],
+    "c1_r2": [
+      "Elem C1 R2 GPMoment"
+    ],
+    "c1_r3": [
+      "Elem C1 R3 GPMoment"
+    ],
+    "c1_t1": [
+      "Elem C1 T1 GPForce"
+    ],
+    "c1_t2": [
+      "Elem C1 T2 GPForce"
+    ],
+    "c1_t3": [
+      "Elem C1 T3 GPForce"
+    ],
+    "c2_r1": [
+      "Elem C2 R1 GPMoment"
+    ],
+    "c2_r2": [
+      "Elem C2 R2 GPMoment"
+    ],
+    "c2_r3": [
+      "Elem C2 R3 GPMoment"
+    ],
+    "c2_t1": [
+      "Elem C2 T1 GPForce"
+    ],
+    "c2_t2": [
+      "Elem C2 T2 GPForce"
+    ],
+    "c2_t3": [
+      "Elem C2 T3 GPForce"
+    ]
+  },
+  "force_vectors": {
+    "t1": [
+      "T1 applied force",
+      "T1 Applied Force"
+    ],
+    "t2": [
+      "T2 applied force",
+      "T2 Applied Force"
+    ],
+    "t3": [
+      "T3 applied force",
+      "T3 Applied Force"
+    ],
+    "t_total": [
+      "RSS applied force",
+      "Total Applied Force"
+    ],
+    "r1": [
+      "R1 applied moment",
+      "R1 Applied Moment"
+    ],
+    "r2": [
+      "R2 applied moment",
+      "R2 Applied Moment"
+    ],
+    "r3": [
+      "R3 applied moment",
+      "R3 Applied Moment"
+    ],
+    "r_total": [
+      "RSS applied moment",
+      "Total Applied Moment"
+    ]
+  },
+  "mpc_forces": {
+    "t1": [
+      "T1 MultiPoint Force"
+    ],
+    "t2": [
+      "T2 MultiPoint Force"
+    ],
+    "t3": [
+      "T3 MultiPoint Force"
+    ],
+    "t_total": [
+      "Total MultiPoint Force"
+    ],
+    "r1": [
+      "R1 MultiPoint Moment"
+    ],
+    "r2": [
+      "R2 MultiPoint Moment"
+    ],
+    "r3": [
+      "R3 MultiPoint Moment"
+    ],
+    "r_total": [
+      "Total MultiPoint Moment"
+    ]
+  },
+  "spc_forces": {
+    "t1": [
+      "T1 SPC force",
+      "T1 Constraint Force"
+    ],
+    "t2": [
+      "T2 SPC force",
+      "T2 Constraint Force"
+    ],
+    "t3": [
+      "T3 SPC force",
+      "T3 Constraint Force"
+    ],
+    "t_total": [
+      "RSS SPC force",
+      "Total Constraint Force"
+    ],
+    "r1": [
+      "R1 SPC moment",
+      "R1 Constraint Moment"
+    ],
+    "r2": [
+      "R2 SPC moment",
+      "R2 Constraint Moment"
+    ],
+    "r3": [
+      "R3 SPC moment",
+      "R3 Constraint Moment"
+    ],
+    "r_total": [
+      "RSS SPC moment",
+      "Total Constraint Moment"
+    ]
+  },
+  "summed_gpf": {
+    "t1": [
+      "T1 Summed GPForce"
+    ],
+    "t2": [
+      "T2 Summed GPForce"
+    ],
+    "t3": [
+      "T3 Summed GPForce"
+    ],
+    "t_total": [
+      "Total Summed GPForce"
+    ],
+    "r1": [
+      "R1 Summed GPMoment"
+    ],
+    "r2": [
+      "R2 Summed GPMoment"
+    ],
+    "r3": [
+      "R3 Summed GPMoment"
+    ],
+    "r_total": [
+      "Total Summed GPMoment"
+    ]
+  }
+}

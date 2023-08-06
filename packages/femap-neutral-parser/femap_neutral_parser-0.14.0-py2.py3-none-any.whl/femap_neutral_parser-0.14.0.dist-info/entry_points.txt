@@ -1,0 +1,2 @@
+[console_scripts]
+femap_neutral_parser = femap_neutral_parser.cli:main
