@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: types-tortoise
+Version: 0.3.6
+Summary: Type stubs that make tortoise-orm a lot easier to work with when using type checkers.
+Home-page: https://github.com/Ovsyanka83/tortoise-stubs
+License: MIT
+Author: Stanislav Zmiev
+Author-email: szmiev2000@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: tortoise-orm
+Project-URL: Repository, https://github.com/Ovsyanka83/tortoise-stubs
+Description-Content-Type: text/markdown
+
+# types-tortoise
+
+**Warning**: This package is deprecated. Use `tortoise-orm-stubs` instead.
+
+Type stubs that make tortoise-orm a lot easier to work with when using type checkers.
+
+Specifically,
+
+* ForeignKeyField can be typehinted without an extra type ignore
+* OneToOneField can be typehinted without an extra type ignore
+* Data fields' types are now automatically typehinted as the primitive types they describe, not Field subclasses
+* Data fields' types automatically reflect the value of null argument (i.e. become optional if you set null=True)
+
