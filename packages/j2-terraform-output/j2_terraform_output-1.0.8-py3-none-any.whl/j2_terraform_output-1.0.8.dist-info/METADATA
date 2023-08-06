@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: j2-terraform-output
+Version: 1.0.8
+Summary: A Jinja extension to fetch terraform state output versions
+Author: Arnold
+Author-email: arnoldjohnson401@gmail.com
+License: MIT
+Requires-Dist: Jinja2 (<4)
+Requires-Dist: requests (<3)
+
+A Jinja extension to fetch terraform state output versions
