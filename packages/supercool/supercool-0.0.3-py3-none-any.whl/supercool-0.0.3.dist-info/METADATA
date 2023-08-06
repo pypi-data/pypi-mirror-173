@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: supercool
+Version: 0.0.3
+Summary: This is the SDK for example.
+Home-page: http://example.com
+Author: isaachan
+Author-email: isaachanstar@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+License-File: LICENSE
+Requires-Dist: requests
+
+ha ha ha ha
