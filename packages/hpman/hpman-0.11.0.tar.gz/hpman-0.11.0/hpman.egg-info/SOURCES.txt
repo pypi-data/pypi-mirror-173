@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+hpman/__init__.py
+hpman/__version__.py
+hpman/hpm.py
+hpman/hpm_db.py
+hpman/hpm_zoo_monkey_patch.py
+hpman/m.py
+hpman/primitives.py
+hpman/source_helper.py
+hpman.egg-info/PKG-INFO
+hpman.egg-info/SOURCES.txt
+hpman.egg-info/dependency_links.txt
+hpman.egg-info/requires.txt
+hpman.egg-info/top_level.txt
