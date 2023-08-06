@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/source_openweather.egg-info/PKG-INFO
+src/source_openweather.egg-info/SOURCES.txt
+src/source_openweather.egg-info/dependency_links.txt
+src/source_openweather.egg-info/top_level.txt
