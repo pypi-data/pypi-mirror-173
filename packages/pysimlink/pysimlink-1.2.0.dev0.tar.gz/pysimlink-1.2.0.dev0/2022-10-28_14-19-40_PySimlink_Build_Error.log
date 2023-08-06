@@ -1,0 +1,97 @@
+[  1%] Building C object CMakeFiles/StarterSystemP2.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/StarterSystemP2/StarterSystemP2.c.o
+[  2%] Building C object CMakeFiles/StarterSystemP2.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/StarterSystemP2/StarterSystemP2_capi.c.o
+[  4%] Linking C static library libStarterSystemP2.a
+[  4%] Built target StarterSystemP2
+[  5%] Building C object CMakeFiles/SiEngineController.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/SiEngineController/SiEngineController.c.o
+[  6%] Building C object CMakeFiles/SiEngineController.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/SiEngineController/SiEngineController_capi.c.o
+[  8%] Linking C static library libSiEngineController.a
+[  8%] Built target SiEngineController
+[  9%] Building C object CMakeFiles/BattHev.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/BattHev/BattHev_capi.c.o
+[ 11%] Building C object CMakeFiles/BattHev.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/BattHev/BattHev.c.o
+[ 12%] Linking C static library libBattHev.a
+[ 12%] Built target BattHev
+[ 13%] Building C object CMakeFiles/MotMapped.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/MotMapped/MotMapped_capi.c.o
+[ 15%] Building C object CMakeFiles/MotMapped.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/MotMapped/MotMapped.c.o
+[ 16%] Linking C static library libMotMapped.a
+[ 16%] Built target MotMapped
+[ 18%] Building C object CMakeFiles/SiMappedEngine.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/SiMappedEngine/SiMappedEngine.c.o
+[ 19%] Building C object CMakeFiles/SiMappedEngine.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/SiMappedEngine/SiMappedEngine_capi.c.o
+[ 20%] Linking C static library libSiMappedEngine.a
+[ 20%] Built target SiMappedEngine
+[ 22%] Building C object CMakeFiles/DrivetrainHevP4.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/DrivetrainHevP4/DrivetrainHevP4.c.o
+[ 23%] Building C object CMakeFiles/DrivetrainHevP4.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/DrivetrainHevP4/DrivetrainHevP4_capi.c.o
+[ 25%] Linking C static library libDrivetrainHevP4.a
+[ 25%] Built target DrivetrainHevP4
+[ 26%] Building C object CMakeFiles/TransmissionController.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/TransmissionController/TransmissionController_capi.c.o
+[ 27%] Building C object CMakeFiles/TransmissionController.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/TransmissionController/TransmissionController.c.o
+[ 29%] Linking C static library libTransmissionController.a
+[ 29%] Built target TransmissionController
+[ 30%] Building C object CMakeFiles/Blazer_Plant_Model.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/Blazer_Plant_Model/Blazer_Plant_Model.c.o
+[ 31%] Building C object CMakeFiles/Blazer_Plant_Model.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/Blazer_Plant_Model/Blazer_Plant_Model_capi.c.o
+[ 33%] Linking C static library libBlazer_Plant_Model.a
+[ 33%] Built target Blazer_Plant_Model
+[ 34%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/rtGetInf.c.o
+[ 36%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/look2_binlcapw.c.o
+[ 37%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/look1_binlxpw.c.o
+[ 38%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/expm_rrwM3mqJ.c.o
+[ 40%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/look2_binlcpw.c.o
+[ 41%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/plook_bincpa.c.o
+[ 43%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/rt_zcfcn.c.o
+[ 44%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/mpower_58AdjX5y.c.o
+[ 45%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/automldiffopen_eNQs0sqC.c.o
+[ 47%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/intrp3d_la_pw.c.o
+[ 48%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/intrp4d_l_pw.c.o
+[ 50%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/rt_roundd_snf.c.o
+[ 51%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/plook_binca.c.o
+[ 52%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/look2_binncapwe.c.o
+[ 54%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/binsearch_u32d_prevIdx.c.o
+[ 55%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/look1_pbinlcapw.c.o
+[ 56%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/plook_u32d_binckan.c.o
+[ 58%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/interp2_IwyYdeWj.c.o
+[ 59%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/PadeApproximantOfDegre_RoTRRf9U.c.o
+[ 61%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/rt_powd_snf.c.o
+[ 62%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/plook_binc.c.o
+[ 63%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/rtGetNaN.c.o
+[ 65%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/BINARYSEARCH_real_T.c.o
+[ 66%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/look2_binlxpw.c.o
+[ 68%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/intrp1d_la_pw.c.o
+[ 69%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/look1_binlcapw.c.o
+[ 70%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/look1_binlcpw.c.o
+[ 72%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/rt_atan2d_snf.c.o
+[ 73%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/binsearch_u32d.c.o
+[ 75%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/rt_nonfinite.c.o
+[ 76%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/rt_modd_snf.c.o
+[ 77%] Building C object CMakeFiles/shared_utils.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/_sharedutils/LookUp_real_T_real_T.c.o
+[ 79%] Linking C static library libshared_utils.a
+[ 79%] Built target shared_utils
+[ 80%] Building C object CMakeFiles/HSC_Model.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/HSC_Model/HSC_Model_capi.c.o
+[ 81%] Building C object CMakeFiles/HSC_Model.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/HSC_Model/HSC_Model_ACCpedals.c.o
+[ 83%] Building C object CMakeFiles/HSC_Model.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/slprj/grt/HSC_Model/HSC_Model.c.o
+[ 84%] Linking C static library libHSC_Model.a
+[ 84%] Built target HSC_Model
+[ 86%] Building C object CMakeFiles/Blazer_MiL_Model.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/Blazer_MiL_Model_grt_rtw/Blazer_MiL_Model_data.c.o
+[ 87%] Building C object CMakeFiles/Blazer_MiL_Model.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/Blazer_MiL_Model_grt_rtw/Blazer_MiL_Model_capi.c.o
+[ 88%] Building C object CMakeFiles/Blazer_MiL_Model.dir/Users/landon/Code/python-simulink/models/with_refs/rl_model/code_gen/Blazer_MiL_Model_grt_rtw/Blazer_MiL_Model.c.o
+[ 90%] Linking C static library libBlazer_MiL_Model.a
+[ 90%] Built target Blazer_MiL_Model
+[ 91%] Building CXX object CMakeFiles/blazer_mil_model_interface_c.dir/c_files/src/model_utils.cpp.o
+[ 93%] Building CXX object CMakeFiles/blazer_mil_model_interface_c.dir/c_files/src/safe_utils.cpp.o
+[ 94%] Building CXX object CMakeFiles/blazer_mil_model_interface_c.dir/c_files/src/dev_tools.cpp.o
+[ 95%] Building CXX object CMakeFiles/blazer_mil_model_interface_c.dir/c_files/src/model_interface.cpp.o
+/Users/landon/Code/python-simulink/tests/__pycache__/pysimlink/Blazer_MiL_Model/c_files/src/model_utils.cpp:384:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+/Users/landon/Code/python-simulink/tests/__pycache__/pysimlink/Blazer_MiL_Model/c_files/src/model_utils.cpp:417:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+2 warnings generated.
+/Users/landon/Code/python-simulink/tests/__pycache__/pysimlink/Blazer_MiL_Model/c_files/src/model_interface.cpp:295:11: error: no matching function for call to 'memcpy'
+    (void)memcpy(ret, sig_info.data.addr, sig_info.type_size);
+          ^~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/string.h:72:7: note: candidate function not viable: no known conversion from 'PYSIMLINK::all_dtypes' to 'void *' for 1st argument; take the address of the argument with &
+void    *memcpy(void *__dst, const void *__src, size_t __n);
+         ^
+1 error generated.
+gmake[2]: *** [CMakeFiles/blazer_mil_model_interface_c.dir/build.make:118: CMakeFiles/blazer_mil_model_interface_c.dir/c_files/src/model_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:416: CMakeFiles/blazer_mil_model_interface_c.dir/all] Error 2
+gmake: *** [Makefile:91: all] Error 2
