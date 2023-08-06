@@ -1,0 +1,7 @@
+README.md
+setup.py
+daan_object_detection.egg-info/PKG-INFO
+daan_object_detection.egg-info/SOURCES.txt
+daan_object_detection.egg-info/dependency_links.txt
+daan_object_detection.egg-info/requires.txt
+daan_object_detection.egg-info/top_level.txt
