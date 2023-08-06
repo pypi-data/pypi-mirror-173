@@ -1,0 +1,12 @@
+poliduckie_segmentation/__init__.py,sha256=BlQi4L_7Vmj2ErzFyhjMrAfgHycNtCpyydmFcchwwp4,276
+poliduckie_segmentation/control.py,sha256=mC5YrPJdd0R5CN2t6U4_U6CjutY1OKAlRI6tImGue3A,1818
+poliduckie_segmentation/segmentation.py,sha256=wJ2b02yrk3f-iWC0aiCA3jHRQrGqHFbW0ZstjgZfdNE,923
+poliduckie_segmentation/models/mpc_model/MPC.casadi,sha256=L99h5V0yeIFcaVUlI1TgFrRLaY69jX2SCM2CDf5BRIg,447100
+poliduckie_segmentation/models/multiclass_segmentation_model/keras_metadata.pb,sha256=i3uzIJoAddMarKJ0Sf55m3oxX6YaoKVP8YlWdzFojeI,88760
+poliduckie_segmentation/models/multiclass_segmentation_model/saved_model.pb,sha256=7djCM6UvVK0_0Ag3lfT0LwDca5-pQz8PO5i0Y6BJOlo,747676
+poliduckie_segmentation/models/multiclass_segmentation_model/variables/variables.data-00000-of-00001,sha256=NY8-N__wg6nkTwmKYlKa9uvJvUyqA0XoIVZ_8SnnDCA,23338789
+poliduckie_segmentation/models/multiclass_segmentation_model/variables/variables.index,sha256=OmvEnU58mNe-DY98kpiz3KVpLFF6EtwfwkptczfM_9o,10322
+poliduckie_segmentation-0.1.1.dist-info/METADATA,sha256=2J-ZxjhGEwLiwEVarQOpemUmomyRqZQQS-Dx9FjrGZU,1429
+poliduckie_segmentation-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+poliduckie_segmentation-0.1.1.dist-info/top_level.txt,sha256=wsPF3PV-iN5tQOiPKjO0BYYV_d90wYiTZ64flMYENt4,24
+poliduckie_segmentation-0.1.1.dist-info/RECORD,,
