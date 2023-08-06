@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: quickdb
+Version: 0.0.2
+Summary: 利用 sqlalchemy 封装一个易用的用来处理数据库的工具，以及其余的便捷连接操作
+Author: 郭一会儿
+Author-email: 1015295213@qq.com
+License: MIT Licence
+Keywords: quickdb
+Platform: any
+
+利用 sqlalchemy 封装一个易用的用来处理数据库的工具，以及其余的便捷连接操作
