@@ -1,0 +1,8 @@
+yduie/__init__.py,sha256=CdMFEGcOacVQoPFTpDgqRyLHAUz67Lrwgyn3tZ91ybA,25
+yduie/uie_predict.py,sha256=A70fI6Z2a7rxRcR9iGJ0CPKeJ_bjwdKn7DTGur7v-YI,168316
+yduie/utils/__init__.py,sha256=kb2-tFfGxK8NgUOglGtHf_sPp2h0iEDL6g-QxW7A-uk,24
+yduie/utils/downloader.py,sha256=mgh_o_fQ9lhSKGMkQr6LiJnEtHGRTIJIXruyBmmJ8b0,2337
+yduie-1.5.dist-info/METADATA,sha256=z6_7cmCJ0XrL3Z4ow3UJQszmE759ELVTXrHbq1whtc4,4406
+yduie-1.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yduie-1.5.dist-info/top_level.txt,sha256=xscTrSfnXFTDfiXEVqBCwzA81RQ1JCkFZzwj_OLF44Q,6
+yduie-1.5.dist-info/RECORD,,
