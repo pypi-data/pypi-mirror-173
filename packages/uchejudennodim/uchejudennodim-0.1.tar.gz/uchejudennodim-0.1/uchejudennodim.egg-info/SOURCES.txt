@@ -1,0 +1,10 @@
+setup.py
+uchejudennodim/Binomialdistribution.py
+uchejudennodim/Gaussiandistribution.py
+uchejudennodim/Generaldistribution.py
+uchejudennodim/__init__.py
+uchejudennodim.egg-info/PKG-INFO
+uchejudennodim.egg-info/SOURCES.txt
+uchejudennodim.egg-info/dependency_links.txt
+uchejudennodim.egg-info/not-zip-safe
+uchejudennodim.egg-info/top_level.txt
