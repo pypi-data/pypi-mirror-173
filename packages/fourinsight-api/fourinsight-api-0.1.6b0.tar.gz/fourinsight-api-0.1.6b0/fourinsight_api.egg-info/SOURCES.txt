@@ -1,0 +1,13 @@
+README.rst
+pyproject.toml
+setup.cfg
+fourinsight/api/__init__.py
+fourinsight/api/_constants.json
+fourinsight/api/appdirs.py
+fourinsight/api/authenticate.py
+fourinsight_api.egg-info/PKG-INFO
+fourinsight_api.egg-info/SOURCES.txt
+fourinsight_api.egg-info/dependency_links.txt
+fourinsight_api.egg-info/not-zip-safe
+fourinsight_api.egg-info/requires.txt
+fourinsight_api.egg-info/top_level.txt
