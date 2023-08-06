@@ -1,0 +1,8 @@
+psutil
+pytest
+numpy>1.9.0
+scipy
+silx>=0.15.0
+tomoscan>=1.0.2
+h5py
+tifffile
