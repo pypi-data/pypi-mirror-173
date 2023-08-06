@@ -1,0 +1,16 @@
+{
+    "7e701bf2-91ef-4729-91f7-cb039e49b085": {
+        "brand": "general",
+        "gender": [
+            "male",
+            "female"
+        ],
+        "model": "general",
+        "style": "cloth",
+        "supported_position": [
+            "chin",
+            "mouth",
+            "nose"
+        ]
+    }
+}

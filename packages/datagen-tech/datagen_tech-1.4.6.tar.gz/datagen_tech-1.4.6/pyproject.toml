@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "datagen-tech"
+version = "1.4.6"
+description = "Datagen SDK"
+readme = "README.md"
+authors = ["Datagen Technologies Ltd."]
+packages = [{ include = "datagen", from ="src"}]
+repository = "https://gitlab.com/datagen1/core/sdk"
+
+[tool.poetry.dependencies]
+python = ">=3.9 ,<4.0.0"
+dependency-injector = ">4.6"
+marshmallow-dataclass = ">=6"
+marshmallow-enum = ">=1.5"
+numpy = ">=1"
+pillow = ">=7.0"
+opencv-python = ">=4.4"
+pydantic = ">=1.9"
+rich = ">=12.5"
+beautifulsoup4 = ">=4.11"
+dynaconf = ">=3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = ">=6"
+Sphinx= ">=5.1.1"
+sphinx-rtd-theme = ">=1.0.0"
+sphinxcontrib-apidoc = ">=0.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
