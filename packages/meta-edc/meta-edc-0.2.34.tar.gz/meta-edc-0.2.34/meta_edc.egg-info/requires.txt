@@ -1,0 +1,4 @@
+edc==0.4.49
+edc-egfr==0.1.10
+canned-views
+beautifulsoup4
