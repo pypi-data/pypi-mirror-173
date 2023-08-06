@@ -1,0 +1,9 @@
+asgi_background/__init__.py,sha256=3B5o1zIUcxZ5g6NzwUfS5dWkqGjEhpB5Pun7fjs1too,197
+asgi_background/_background_tasks.py,sha256=9D7-M5B6kpRzbKev2YIrPGFuykO7_CTQ40VLnXHbqKg,1083
+asgi_background/_middleware.py,sha256=g4Iv8J7FOZUc0WEdJzvbcfqFsdNLj7eb93kAbIIoXBU,2376
+asgi_background/_types.py,sha256=RbisZ8DEsquztH1HwK6_8Iy5ZvQwddYcDDFW32KEN3o,302
+asgi_background/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asgi_background-0.2.1.dist-info/LICENSE.txt,sha256=xycPafmpfgnjoK1RVSGiErW_TuEZMN0jXXCTgHzzKFY,1063
+asgi_background-0.2.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+asgi_background-0.2.1.dist-info/METADATA,sha256=gTUp6ivEpDqksxhgBwZKRRPwzoaCsnt1DVTbz4sbepU,3513
+asgi_background-0.2.1.dist-info/RECORD,,
