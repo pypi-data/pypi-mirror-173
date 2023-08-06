@@ -1,0 +1,9 @@
+cdk_s3_bucketreplication/__init__.py,sha256=ew3jZF-yRZ2eSKdSQFSGTfPbwJLkhlOog5hGm_YLBdk,21390
+cdk_s3_bucketreplication/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk_s3_bucketreplication/_jsii/__init__.py,sha256=Yo6soxUYal25ZPCpX-3HF93FaMSEyNAjo6uWrzeupog,492
+cdk_s3_bucketreplication/_jsii/cdk-s3-bucketreplication@0.0.20.jsii.tgz,sha256=kSya9niA01qiNFhFBXLf5JUPTgl2GGoltIS3JYLkeCM,14617
+cdk_s3_bucketreplication-0.0.20.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+cdk_s3_bucketreplication-0.0.20.dist-info/METADATA,sha256=H24kqk8ovnEotQVED6oTSwD3lekTn3pBI1z6GnTqka0,1784
+cdk_s3_bucketreplication-0.0.20.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cdk_s3_bucketreplication-0.0.20.dist-info/top_level.txt,sha256=pGdA2f4MxZw64umuCK5MfCHpgPG9lTzMzTA9tFdGqCU,25
+cdk_s3_bucketreplication-0.0.20.dist-info/RECORD,,
