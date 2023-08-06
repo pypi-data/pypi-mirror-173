@@ -1,0 +1,7 @@
+[console_scripts]
+ip2as = ip2as.ip2as:main
+ip2as-reserved = ip2as.reserved:main
+ip2ases = ip2as.ip2ases:main
+prefix2as = ip2as.prefix2as:main
+rir2as = ip2as.rir_delegations:main
+whois2as = ip2as.whois2as:main
