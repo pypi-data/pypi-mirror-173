@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: libraryshad
+Version: 1.0.0
+Summary: Shad Library Bot
+Home-page: https://github.com/pypa/sampleproject
+Author: mamadcoder
+Author-email: x.coder.2721@gmail.com
+License: MIT
+Keywords: shad,bot,robot,library,shadlib,shadlib.ml,shadlib.ir,libraryshad,shadlibrary,shadapp,Shad,Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+License-File: LICENCE
+
+How to import rubiran's library is as follows:
+
+<< from libraryshad import robo_shad >>
+
+An example:
+
+from libraryshad import robo_shad
+
+bot = robo_shad("Your Auth Account")
