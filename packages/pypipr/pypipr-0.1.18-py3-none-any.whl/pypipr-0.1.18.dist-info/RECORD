@@ -1,0 +1,10 @@
+pypipr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypipr/iconsole.py,sha256=VS65DvmggNllF7J99fM8x06ygeGmc3ciALj4sPsHgM8,1867
+pypipr/iconstant.py,sha256=870SJCy6G7LemFDhs8F2zhiISbyq8TXY3QqEq7EWNuM,199
+pypipr/idatetime.py,sha256=bUe4PoyindXJq6yN8vgBo42Pjsnh5VoYkJ9WfGZokVc,567
+pypipr/ifile.py,sha256=zaGQF9GZ-5pWygCTAp94zX20cSYfv2W1g5IuQcJgvSo,1273
+pypipr/iregex.py,sha256=KMIIRECyU5lrHQOSFlKHD9GbhdzZFbfUEKHe5UfI_CI,523
+pypipr/pypipr.py,sha256=orzGAU6xGw2pPVfNyiLYAY6l01_ARyWQYxCEiD7bAe8,739
+pypipr-0.1.18.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pypipr-0.1.18.dist-info/METADATA,sha256=9KTWt9b0jYsSx8Zhi7TNGtz8waYQkjhk8u-UpJc-wlk,4217
+pypipr-0.1.18.dist-info/RECORD,,
