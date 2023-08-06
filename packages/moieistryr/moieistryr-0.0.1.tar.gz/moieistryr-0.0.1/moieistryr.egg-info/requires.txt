@@ -1,0 +1,5 @@
+numpy
+random
+selenium
+time
+webdriver-manager

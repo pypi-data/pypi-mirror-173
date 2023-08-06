@@ -1,0 +1,8 @@
+setup.py
+moieistryr.egg-info/PKG-INFO
+moieistryr.egg-info/SOURCES.txt
+moieistryr.egg-info/dependency_links.txt
+moieistryr.egg-info/requires.txt
+moieistryr.egg-info/top_level.txt
+trymoieis/__init__.py
+trymoieis/yuy.py
