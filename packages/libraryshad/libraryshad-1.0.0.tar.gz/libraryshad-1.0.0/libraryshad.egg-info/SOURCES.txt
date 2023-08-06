@@ -1,0 +1,12 @@
+LICENCE
+README.md
+setup.py
+libraryshad/An_Wb.py
+libraryshad/__init__.py
+libraryshad/encryption.py
+libraryshad/matn.py
+libraryshad/shad.py
+libraryshad.egg-info/PKG-INFO
+libraryshad.egg-info/SOURCES.txt
+libraryshad.egg-info/dependency_links.txt
+libraryshad.egg-info/top_level.txt
