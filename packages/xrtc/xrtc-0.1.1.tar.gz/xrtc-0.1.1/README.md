@@ -1,0 +1,63 @@
+# XRTC API
+[![xrtc](https://snyk.io/advisor/python/xrtc/badge.svg)](https://snyk.io/advisor/python/xrtc)
+
+This is an SDK for XRTC API in Python. It implements the following features:
+
+- handling parallel HTTPs requests with asyncio/aiohttp, appropriate error management
+- loading login and connection configurations from .env file or from the environment
+- parsing configurations, serialized and deserialized request bodies and response data with Pydantic
+
+To start using XRTC, please obtain your free API token at [XRTC web site](https://xrtc.org)
+
+This project is sponsored by Delta Cygni Labs Ltd with the headquarters in Tampere, Finland.
+
+## Installation
+
+Installation from Pypi:
+```
+pip install xrtc
+```
+
+From source:
+```
+pip install .
+```
+
+## Login credentials and connection URLs
+
+Login credentials are taken from the environment or from a .env file
+(e.g. xrtc.env) placed to the work directory. Here is the format of
+a sample file:
+```
+# XRTC credentials
+ACCOUNT_ID=123
+API_KEY=xxx
+```
+
+## Usage examples
+
+See examples directory in GitHub. Examples show discrete and continuous use of the XRTC API.
+
+Simple set and get:
+
+```
+import os
+
+from xrtc import *
+
+
+async def main():
+
+    # Connection credentials from environment variables
+    os.environ["ACCOUNT_ID"] = "123456789"
+    os.environ["API_KEY"] = "****"
+
+    async with XRTC() as xrtc:
+        # Upload data
+        await xrtc.set_item(items=[{"portalid": "send", "payload": "sämple"}])
+
+        # Download data and parse it
+        print((await xrtc.get_item(portals=[{"portalid": "send"}])).dict())
+
+XRTC.run(main())
+```
