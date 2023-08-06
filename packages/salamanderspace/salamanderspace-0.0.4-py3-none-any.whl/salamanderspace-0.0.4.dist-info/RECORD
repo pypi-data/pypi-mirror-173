@@ -1,0 +1,14 @@
+salamanderspace/FileIO.py,sha256=xej9iFXDoaDaqOvnSWBYPC9Tps0KbPRQCmOmOB1GN0U,3667
+salamanderspace/Shocks.py,sha256=SeDqsTRbhZA_7hBlnZYff1GMpCRSoICw1sw4jKC0MVE,5345
+salamanderspace/Tables.py,sha256=bM6fynbggBRfq9bkRVyBf73RLVYOq7--lanUWxq48oA,9821
+salamanderspace/__init__.py,sha256=hh2a1n6hup05vh-H6xHNX78uiVjo90dAhZaiCEyK22w,641
+salamanderspace/vlm.py,sha256=MbO5dxqW4eJrDjvvYIcA1fG4FEIquK-14pJQWVD5UL8,3562
+salamanderspace/Relations/Dimensionless.py,sha256=daRlJpJ2LbxosuI65-aLZ3kEg6IIqkMH6kgq-gHSQok,1334
+salamanderspace/Relations/Isentropic.py,sha256=Hp2z2gw-vsi0oom8opmMwqdgNBk1uHebpUe2s_OYPh0,4434
+salamanderspace/Relations/ShockRelations.py,sha256=mcu2Hk3X1itzxOYcjiXJLARPGaHeH9gV9garngpfsP8,7784
+salamanderspace/Relations/Thermodynamic.py,sha256=nio8Xii3xtv3NsT_nyTk1Mi-x8RdZXSw_nbOJbyGQ1k,1284
+salamanderspace/Relations/__init__.py,sha256=3Qii_nUpqG71QRp_F8eVTu6ZXC7IM5yYuKu47Wvq3Q8,347
+salamanderspace-0.0.4.dist-info/METADATA,sha256=YpoMmj92D3v1NdOvcVhzL2soWZ7yH1T-T0zUTffu_Ko,493
+salamanderspace-0.0.4.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+salamanderspace-0.0.4.dist-info/licenses/LICENSE,sha256=IQFfmYbWjDm4RKs1tPPHEkiVSZ_vnVWVod-nPBmP7cQ,1099
+salamanderspace-0.0.4.dist-info/RECORD,,
