@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bit-parser
+Version: 0.0.2
+Summary: Parse binary data fields (bit maps, flag sets) represented as hex strings (helpful for parsing separate protocol elements found in trace files for example)
+Home-page: https://github.com/vitalij555/bit-parser
+Author: Vitalij Gotovskij
+Author-email: vitalij@cdeveloper.eu
+License: MIT
+Keywords: EVENT,NOTIFY,SUBSCRIBE,OBSERVER
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# bit-parser
+Simple bitmap parser.
