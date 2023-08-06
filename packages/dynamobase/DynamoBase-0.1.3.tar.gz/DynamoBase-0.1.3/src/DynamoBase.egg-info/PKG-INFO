@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: DynamoBase
+Version: 0.1.3
+Summary: A Json Model that is the easiest way to query DynamoDB.
+Author-email: Jaguar <jack.v.yang@gmail.com>
+Project-URL: Homepage, https://github.com/jaguaryang/dynamo-base
+Project-URL: Bug Tracker, https://github.com/jaguaryang/dynamo-base/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dynamo-base
