@@ -1,0 +1,8 @@
+README.rst
+setup.py
+getHashData/__init__.py
+getHashData.egg-info/PKG-INFO
+getHashData.egg-info/SOURCES.txt
+getHashData.egg-info/dependency_links.txt
+getHashData.egg-info/entry_points.txt
+getHashData.egg-info/top_level.txt

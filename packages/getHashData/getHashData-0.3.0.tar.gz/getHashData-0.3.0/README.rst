@@ -1,0 +1,108 @@
+getHashData
+=============
+
+This tool includes the following features:
+
+- Calculate the function selector
+
+- Calculate the event hash
+
+- Sign the message with the private key
+
+Install
+=======
+
+::
+
+   pip install getHashData
+
+Usage
+=====
+
+::
+
+   getHash [-h] [-s STRING] [-i INPUTFILE] [-o OUTPUTFILE] [-w] [-f] [-k PRIVATEKEY] [-d DATA] [--hex HEXDATA] [--sign]
+
+For example:
+
+::
+
+   getHash -f -s "deposit(uint256 amount)"
+
+or
+
+::
+
+   getHash -s "event Transfer(address indexed from, address indexed to, uint value);"
+
+or
+
+::
+
+   getHash -i WETH.sol -w
+
+or
+
+::
+
+   getHash --sign -k 503f38a9c967ed597e47fe25643985f032b072db8075426a92110f82df48dfcb -d test
+
+The command execution result is as follows:
+
+::
+
+    [root@hxzy test]# getHash -i WETH.sol -w
+    0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925 Approval(address,address,uint256)
+    0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef Transfer(address,address,uint256)
+    0xe1fffcc4923d04b559f4d29a8bfc6cda04eb5b0d3c460751c2402c5c5cc9109c Deposit(address,uint256)
+    0x7fcf532c15f0a6db0bd6d0e038bea71d30d808c7d98cb3bf7268a95bf5081b65 Withdrawal(address,uint256)
+
+::
+
+    [root@hxzy test]# getHash -i WETH.sol -f -w
+    0xd0e30db0 deposit()
+    0x2e1a7d4d withdraw(uint256)
+    0x18160ddd totalSupply()
+    0x095ea7b3 approve(address,uint256)
+    0xa9059cbb transfer(address,uint256)
+    0x23b872dd transferFrom(address,address,uint256)
+
+::
+
+    [root@hxzy test]# getHash --sign -k 503f38a9c967ed597e47fe25643985f032b072db8075426a92110f82df48dfcb -d test
+    messageHash: 0x4a5c5d454721bbbb25540c3317521e71c373ae36458f960d2ad46ef088110e95
+    r: 20244968675263885789641154308893275165564988016430923511170968009192763532491
+    s: 28
+    v: 11173329355043853472430040186306718615936366010803441194858472702323556023666
+    signature: 0x2cc23f074ec0d40421d95b58b67d667120d0a3d4f8feba6c7c5ff88d1ec3a4cb18b3e15bac816bb53a075d045632703600c4ee7ef31ff6fdc237362c8b76fd721c
+
+::
+
+    [root@hxzy test]# getHash --sign -k 503f38a9c967ed597e47fe25643985f032b072db8075426a92110f82df48dfcb --hex 0x4a5c5d454721bbbb25540c3317521e71c373ae36458f960d2ad46ef088110e95
+    messageHash: 0x4a5c5d454721bbbb25540c3317521e71c373ae36458f960d2ad46ef088110e95
+    r: 20244968675263885789641154308893275165564988016430923511170968009192763532491
+    s: 28
+    v: 11173329355043853472430040186306718615936366010803441194858472702323556023666
+    signature: 0x2cc23f074ec0d40421d95b58b67d667120d0a3d4f8feba6c7c5ff88d1ec3a4cb18b3e15bac816bb53a075d045632703600c4ee7ef31ff6fdc237362c8b76fd721c
+
+Parameter description:
+
+
+::
+
+    optional arguments:
+      -h, --help     show this help message and exit
+      -s STRING      Choose a string as input.
+      -i INPUTFILE   Input file path and name.
+      -o OUTPUTFILE  Output file path and name. Default is None.
+      -w             Use web3. Default is using sha3.
+      -f             Use funtion.
+      -k PRIVATEKEY  Provide a key to sign message.
+      -d DATA        Message to sign.
+      --hex HEXDATA  Hex message to sign.
+      --sign         Sign a message.
+
+Contact
+=======
+
+If you have any suggestions or needs please contact: th35tr0n9@gmail.com
