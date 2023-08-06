@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: microscopemetrics
+Version: 0.1.0
+Summary: A package providing analysis routines to measure the performance of micrsocopes used in biomedical research
+Home-page: https://github.com/MontpellierRessourcesImagerie/microscope-metrics
+License: GPL-3.0-only
+Keywords: microscopy,metrology
+Author: Julio Mateos Langerak
+Author-email: julio.matoes-langerak@igh.cnrs.fr
+Maintainer: Julio Mateos Langerak
+Maintainer-email: julio.matoes-langerak@igh.cnrs.fr
+Requires-Python: >=3.8,<3.11
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pandas (>=1.1.5,<2.0.0)
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: scikit-image (>=0.19.3,<0.20.0)
+Requires-Dist: scipy (>=1.5.4,<2.0.0)
+Project-URL: Documentation, https://github.com/MontpellierRessourcesImagerie/microscope-metrics/tree/master/docs
+Project-URL: Repository, https://github.com/MontpellierRessourcesImagerie/microscope-metrics
+Description-Content-Type: text/markdown
+
+# OMERO.metrics
+A python library to run micrsocope metrology
+
+Try it here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/juliomateoslangerak/microscope-metrics/HEAD)
+
