@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "pilotis"
+version = "0.3.0a0"
+description = "Pilotis is the core package of an opinionated framework aiming at facilitating and accelerating the creation of Data Science python applications, from prototyping till usage in production"
+authors = ["ekinox <contact@ekinox.io>"]
+packages = [
+    { include = "pilotis" },
+    { include = "templates" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7 <4"
+copier = "^7.0.1"
+click = "^7.1.2"
+GitPython = "^3.1.13"
+inquirer = "^2.7.0"
+toml = "^0.10.2"
+mkdocs-material = "^7.1.9"
+# Optional dependencies to be part of `test` extra
+pytest = {version = "^5.1", optional = true}
+pytest-mock = {version = "^3.5.1", optional = true}
+PyHamcrest = {version = "^2.0.2", optional = true}
+
+[tool.poetry.extras]
+test = ["pytest", "pytest-mock", "PyHamcrest"]
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+pilotis = "pilotis.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
