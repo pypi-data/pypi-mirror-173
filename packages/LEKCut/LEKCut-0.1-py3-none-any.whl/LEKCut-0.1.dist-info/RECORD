@@ -1,0 +1,9 @@
+lekcut/__init__.py,sha256=-SP3swnjDqG5h9wmDB38KnrIMFNoYEHRXOhq1OO1MLU,328
+lekcut/deepcut.py,sha256=mENoh1zdbF9DOSIVSS-hAcOCv69qcmNJfib2za8DvdU,5602
+lekcut/model/__init__.py,sha256=UysjRCvMRCfGrTf_OjxDnU73NIV-h9hxpEEBW4yqnsY,194
+lekcut/model/deepcut.onnx,sha256=rI5NfihRIjDYFkdA0ZXITsqDTBxS-g86af6-OhRzrMg,2176911
+LEKCut-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+LEKCut-0.1.dist-info/METADATA,sha256=vq_xr-JoMMWoPPq76BBTNEuwhqlO_V8PRBZ6B4XnsqM,2431
+LEKCut-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+LEKCut-0.1.dist-info/top_level.txt,sha256=xdTZFI5gwXL0rsiY5EHRJ21GQkIofuaMQu1oeL28gyo,7
+LEKCut-0.1.dist-info/RECORD,,
