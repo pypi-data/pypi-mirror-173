@@ -1,0 +1,4 @@
+click>=7.1.2
+nltk>=3.5
+sqlite_utils>=3.26.1
+ext_sort>=0.2.0
