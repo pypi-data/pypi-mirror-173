@@ -1,0 +1,9 @@
+path_dict/__init__.py,sha256=W6i1HsaCMBaI50VCbRKU3vTitB9kOrRAcYMmHdB4D6c,1313
+path_dict/multi_path_dict.py,sha256=YouXzydLqeQLaoEAjhCvZSOdg8amkobjbco7iaf50sE,3965
+path_dict/path.py,sha256=hOtLKTq382lxgPvQoUTKrYr6NGMI3rlOveBYRip85-0,2357
+path_dict/path_dict.py,sha256=n_vML5zNBSdjbLXFiFoDx7_r7V7q9UD7oNMbPDEpbEI,11389
+path_dict/utils.py,sha256=ntGTqPUwZ26XuuB1trrhxabHRlyUhCgwR8M9Ides23U,2754
+path_dict-3.0.1.dist-info/LICENSE,sha256=rIUTMGtXt2gnKznsGVPEFRxp1Z842XkWHOxxyR2jN-I,1061
+path_dict-3.0.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+path_dict-3.0.1.dist-info/METADATA,sha256=9x845Xv8P1udjX59DEcikmehrA9tYRP5zNideXgpwnA,8976
+path_dict-3.0.1.dist-info/RECORD,,
