@@ -1,0 +1,9 @@
+README.md
+setup.py
+fast_elm_kernel/__init__.py
+fast_elm_kernel/elm_kernel.py
+fast_elm_kernel.egg-info/PKG-INFO
+fast_elm_kernel.egg-info/SOURCES.txt
+fast_elm_kernel.egg-info/dependency_links.txt
+fast_elm_kernel.egg-info/requires.txt
+fast_elm_kernel.egg-info/top_level.txt
