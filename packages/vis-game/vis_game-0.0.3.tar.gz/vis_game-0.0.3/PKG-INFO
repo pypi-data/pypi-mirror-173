@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vis_game
+Version: 0.0.3
+Summary: a system reinforcement learning
+Home-page: UNKNOWN
+Author: Ngo Xuan Phong
+Author-email: phong@vis-laboratory.com
+License: MIT
+Keywords: vis_game
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+License-File: LICENCE.txt
+
+a system reinforcement learning
+
+Change log
+===========
+
+0.01 (27/10/2022)
+-----------------
+- First Release
+
