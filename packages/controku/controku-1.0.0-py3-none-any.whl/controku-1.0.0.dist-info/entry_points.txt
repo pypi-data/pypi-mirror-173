@@ -1,0 +1,2 @@
+[gui_scripts]
+controku = controku.main:main
