@@ -1,0 +1,12 @@
+redis
+pymongo
+kafka-python
+xlsxwriter
+openpyxl
+loguru
+parsel
+requests
+pymysql
+psycopg2
+sqlacodegen
+sqlalchemy
