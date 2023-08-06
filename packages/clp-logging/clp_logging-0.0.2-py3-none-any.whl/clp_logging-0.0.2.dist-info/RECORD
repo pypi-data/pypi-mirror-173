@@ -1,0 +1,12 @@
+clp_logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_logging/decoder.py,sha256=0F6CHkE3m8GOZRdlBViLGhpqiD1LidvFwJywUjtTH6U,5248
+clp_logging/encoder.py,sha256=gXO-A_L2__e2HHRmPjmNysHh4MVWqxR6mAH8-OWWilQ,11856
+clp_logging/handlers.py,sha256=J-KEnuQh5J28ahulMiJq2eKSCIpPAz4PztFC5l6t1jI,11630
+clp_logging/protocol.py,sha256=DwiP9Wd3a5obr3QEZb7X2rg9s-iSOzf_WrEDYP49QjA,3413
+clp_logging/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_logging/readers.py,sha256=Mj5S9K23k4g4npoUwtFLHr9rt1Ta4Jbx4V7CLyikUHI,12919
+clp_logging-0.0.2.dist-info/LICENSE,sha256=kr_C39s0W9_KuMVK_xjGq76B777Y4zS7G-Nxg9_Hdso,11341
+clp_logging-0.0.2.dist-info/METADATA,sha256=yYzhzJDhleUEkotCyxF_1EUrxjON0sH87UB5hjCZeDU,6012
+clp_logging-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+clp_logging-0.0.2.dist-info/top_level.txt,sha256=cae_QYL-rmmoMLSpCEuBnMwgf_zBG_E_WC1KAFHXriE,12
+clp_logging-0.0.2.dist-info/RECORD,,
