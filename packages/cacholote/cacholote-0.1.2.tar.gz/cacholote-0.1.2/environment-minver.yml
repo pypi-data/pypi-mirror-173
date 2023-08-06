@@ -1,0 +1,15 @@
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- make
+- pytest
+- pytest-cov
+# DO NOT EDIT ABOVE THIS LINE, ADD DEPENDENCIES BELOW
+- aiohttp
+- fsspec
+- moto
+- pytest-httpserver
+- requests
+- s3fs
+- sqlalchemy
