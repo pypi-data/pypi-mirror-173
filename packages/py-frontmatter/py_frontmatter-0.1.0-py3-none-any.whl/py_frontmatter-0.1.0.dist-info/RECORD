@@ -1,0 +1,11 @@
+py_frontmatter/__init__.py,sha256=3pZS0u4kTIxM69VmURM5yAIY9DEAOzqcFTFo1IvuX5k,80
+py_frontmatter/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_frontmatter/core/__init__.py,sha256=QOCYCVg3Vu2KCoR5G8Hcd36Net-nE65oBPPDhfuXMoo,64
+py_frontmatter/core/document.py,sha256=CdoXJoF9hES8rEEXPvhcvUxcbp-A5NlWWVWRB9r9hPQ,191
+py_frontmatter/core/dump.py,sha256=Ycdf837d1b6gi5eABoo-07QasHVNWZg5daqBj0tMjsI,466
+py_frontmatter/core/load.py,sha256=P7zj46KyixX9pbt7F9wC9tz9xPkTKgcN1RmLZHR99ho,1441
+py_frontmatter/py.typed,sha256=TwPJI6kJEZ-ta5YatEnypb7s7Hgt8d8-eVK7ZS4E5QI,28
+py_frontmatter-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+py_frontmatter-0.1.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+py_frontmatter-0.1.0.dist-info/METADATA,sha256=f22Kk2SeW-n_BBJZdJUIBv7D2LJlBB7v5EBOVJqtcjY,552
+py_frontmatter-0.1.0.dist-info/RECORD,,
