@@ -1,0 +1,7 @@
+requests
+matplotlib
+pandas
+boto3
+m3u8
+aiohttp
+imutils
