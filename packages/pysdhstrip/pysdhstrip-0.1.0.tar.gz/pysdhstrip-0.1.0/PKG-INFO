@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pysdhstrip
+Version: 0.1.0
+Summary: Intelligent SDH stripper for SRT subtitles
+License: MIT
+Author-email: nyuszika7h <nyuszika7h@gmail.com>
+Requires-Python: ~= 3.9
+Provides-Extra: cli
