@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: webix
+Version: 0.0.1
+Summary: Linux for the web
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+
+Webix
+===
+
+Linux for the web.

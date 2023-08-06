@@ -1,0 +1,9 @@
+.envrc
+.gitignore
+README.rst
+pyproject.toml
+webix/__init__.py
+webix.egg-info/PKG-INFO
+webix.egg-info/SOURCES.txt
+webix.egg-info/dependency_links.txt
+webix.egg-info/top_level.txt
