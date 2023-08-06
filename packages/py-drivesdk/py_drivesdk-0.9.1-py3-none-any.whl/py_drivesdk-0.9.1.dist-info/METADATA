@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: py-drivesdk
+Version: 0.9.1
+Summary: Object oriented library for controlling Anki Overdrive vehicles
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bleak
+Requires-Dist: importlib-metadata ; python_version >= "3.10"
+
