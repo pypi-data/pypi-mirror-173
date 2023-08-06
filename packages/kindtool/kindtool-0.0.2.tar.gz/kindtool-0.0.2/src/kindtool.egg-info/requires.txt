@@ -1,0 +1,8 @@
+Jinja2
+typer
+
+[dev]
+check-manifest
+
+[test]
+coverage
