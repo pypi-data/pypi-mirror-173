@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pytorch-types
+Version: 0.1.0
+Summary: Pytorch project template and related tools
+Home-page: https://github.com/nextml-code/pytorch-types
+License: Apache-2.0
+Keywords: pytorch,machine,learning
+Author: NextML AB
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
+Requires-Dist: pydantic (>=1.0.0,<2.0.0)
+Requires-Dist: torch (>=1.6.0,<2.0.0)
+Project-URL: Documentation, https://pytorch-types.readthedocs.io
+Project-URL: Repository, https://github.com/nextml-code/pytorch-types
+Description-Content-Type: text/x-rst
+
+=============
+Pytorch Types
+=============
+
+.. image:: https://badge.fury.io/py/pytorch-types.svg
+       :target: https://badge.fury.io/py/pytorch-types
+
+.. image:: https://img.shields.io/pypi/pyversions/pytorch-types.svg
+       :target: https://pypi.python.org/pypi/pytorch-types
+
+.. image:: https://readthedocs.org/projects/pytorch-types/badge/?version=latest
+       :target: https://pytorch-types.readthedocs.io/en/latest/?badge=latest
+
+.. image:: https://img.shields.io/pypi/l/pytorch-types.svg
+       :target: https://pypi.python.org/pypi/pytorch-types
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/psf/black
+
+Pytorch typing for pydantic.
+
+Install from pypi using pip or poetry:
+
+.. code-block::
+
+    poetry add pytorch-types
+    # pip install pytorch-types
+
