@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: remt
+Version: 0.11.0
+Summary: remt - note-taking support tool for reMarkable tablet
+Home-page: https://wrobell.dcmod.org/remt/
+Author: Artur Wroblewski
+Author-email: wrobell@riseup.net
+License: GPLv3+
+Project-URL: Source Code, https://gitlab.com/wrobell/remt
+Project-URL: Bug tracker, https://gitlab.com/wrobell/remt/issues
+Keywords: remarkable,tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Provides-Extra: tests
+License-File: COPYING
+
+Remt is note-taking support tool for reMarkable tablet.
+
+Features
+
+- reMarkable tablet operations
+
+  - list files and directories
+  - create directories
+  - export a notebook as PDF file using reMarkable tablet renderer or
+    Remt project renderer
+  - export an annotated PDF document using reMarkable tablet renderer or
+    Remt project renderer
+  - import a PDF document
+  - create index of PDF document annotations
+  - interactive selection of files on a tablet using `fzf` command
+
+- cache of reMarkable tablet metadata to speed up tablet operations;
+  caching supports multiple devices
+- Remt project renderer supports
+
+  - export of large files and usually produces smaller PDF files comparing
+    to the reMarkable tablet renderer
+  - processing of multi-page notebooks and PDF files
+  - most of the drawing tools
+
+- Remt project can be used as a library for UI and other applications
+
+Acknowledgements
+================
+Kudos to
+
+- https://github.com/phil777/maxio
+- https://github.com/reHackable/maxio
+- https://github.com/reHackable/scripts
+- https://plasma.ninja/blog/devices/remarkable/binary/format/2017/12/26/reMarkable-lines-file-format.html
+- https://github.com/Samathy/pdfcommentextractor
+
+Disclaimer
+==========
+This project is *not* an official project of the reMarkable company.
+
+License
+=======
+Remt project is licensed under terms of GPL license, version 3, see COPYING
+file for details. As stated in the license, there is no warranty, so any
+usage is on your own risk.
+
+.. image:: examples/rm.png

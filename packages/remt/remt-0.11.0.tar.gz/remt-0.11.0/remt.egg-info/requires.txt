@@ -1,0 +1,17 @@
+pygobject
+pycairo
+asyncssh
+cytoolz
+iterfzf
+getmac
+
+[tests]
+mypy==0.982
+pylint
+flake8
+pytest-cov
+pytest-timeout
+pytest-asyncio
+uvloop
+types-pkg-resources
+types-setuptools
