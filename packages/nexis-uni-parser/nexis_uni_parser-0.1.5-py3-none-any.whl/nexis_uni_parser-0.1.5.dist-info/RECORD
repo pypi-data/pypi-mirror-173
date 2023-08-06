@@ -1,0 +1,10 @@
+nexis_uni_parser/__init__.py,sha256=oPMMbIfhPWt-jYxLZw6lPN8UCmHN2bMrwFsiNrzsYsc,214
+nexis_uni_parser/__main__.py,sha256=zmupzkmFS0Z52hsu5kyXyJvaTHJwCtdhkDsak8wkClU,91
+nexis_uni_parser/cli.py,sha256=52Ar0Q_LnyRmRRZhgtmbqV7z7IgBADTEkXL3bJEEi0o,509
+nexis_uni_parser/parser.py,sha256=9irTYXMxHQVUT_nk0eEKglBIx3DiKxOyvCqOkoRZ__s,8444
+nexis_uni_parser/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nexis_uni_parser-0.1.5.dist-info/entry_points.txt,sha256=oMgmg_7Vo4Zh4CiZehrwmy9NOtBASh5YAO0WbC4hF3U,67
+nexis_uni_parser-0.1.5.dist-info/LICENSE,sha256=_1wwI8VHE3ohKlahwBZ8yCRusOG-G9IKSynjNESTI6U,1074
+nexis_uni_parser-0.1.5.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+nexis_uni_parser-0.1.5.dist-info/METADATA,sha256=_s8du0XYF5C8wgxneVTJ1Mx3nSn7z3_R6Pee_uJCeyY,4790
+nexis_uni_parser-0.1.5.dist-info/RECORD,,
