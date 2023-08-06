@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: omero-cred
+Version: 0.0.6
+Summary: OMERO.web with OAuth2 support
+Home-page: https://github.com/ome/omero-web/
+Author: The Open Microscopy Team
+Author-email: ome-devel@lists.openmicroscopy.org.uk
+License: GPLv2+
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3
+Provides-Extra: redis
+License-File: LICENSE
+
+<H2>OMERO.web integrated with OME Oauth2</h2>
+<hr>
+
+This is a combination of two packages the OMERO.web available from The Open Microscopy Environment, Glencoe Software, Inc.
+copyright 2009-2022 and the OMERO.oauth which is a fork off of the openmicroscopy github repos developed by a separate team.
+
+This package is built to be used by the CReD Portal project exclusively.
+
+<hr>
+
