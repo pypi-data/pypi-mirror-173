@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cleanfill/__init__.py
+cleanfill/fill.py
+cleanfill.egg-info/PKG-INFO
+cleanfill.egg-info/SOURCES.txt
+cleanfill.egg-info/dependency_links.txt
+cleanfill.egg-info/top_level.txt
