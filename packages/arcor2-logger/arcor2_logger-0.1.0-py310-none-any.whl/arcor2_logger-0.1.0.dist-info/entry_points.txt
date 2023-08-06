@@ -1,0 +1,2 @@
+[console_scripts]
+arcor2_logger = arcor2_logger.scripts.logger:main
