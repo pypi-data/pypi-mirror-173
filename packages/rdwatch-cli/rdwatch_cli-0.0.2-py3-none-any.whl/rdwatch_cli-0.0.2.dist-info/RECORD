@@ -1,0 +1,10 @@
+rdwatch_cli/__init__.py,sha256=GYIaMA1iaZCLba5clTDTms19y4roGWB-cb7XuE0SH2A,295
+rdwatch_cli/config.py,sha256=CuoW-FtqNNaidEWL9jGw9pRJp6otqoPxYPmc63XeEuY,916
+rdwatch_cli/image.py,sha256=RxB8uIg-20uQSGDNffl40Z7mtQD06kW45Exe2cn3zvU,3063
+rdwatch_cli/login.py,sha256=qBwDMuMfTr3cfGpQq5Bib4PZ-D7qc62g66bVYQDHfec,578
+rdwatch_cli/movie.py,sha256=qHyHiaqugmUAKk71A5haeCe_4MCnRDtH_j0mfqIYNyg,1793
+rdwatch_cli/validators.py,sha256=pGm4TMVQORx-un_wAPkPATfr6PDeqbosE0z3jEPbQ04,800
+rdwatch_cli-0.0.2.dist-info/entry_points.txt,sha256=EvrmnfHyXwMZcyX4VXk-pjLnxVu5KrCSszdZL5AH_H0,43
+rdwatch_cli-0.0.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+rdwatch_cli-0.0.2.dist-info/METADATA,sha256=qsA9gL-MJAhLrXh6sDC9ls8RbzaW_6w86T6RM8vXvxE,881
+rdwatch_cli-0.0.2.dist-info/RECORD,,
