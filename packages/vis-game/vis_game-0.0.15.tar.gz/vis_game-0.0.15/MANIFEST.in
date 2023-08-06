@@ -1,0 +1,5 @@
+global-include *.txt 
+global-include *.py 
+global-include *.npy 
+global-include *.npz
+include vis_game/system/Agent/An_270922/Data/TLMN_79200/*.npz
