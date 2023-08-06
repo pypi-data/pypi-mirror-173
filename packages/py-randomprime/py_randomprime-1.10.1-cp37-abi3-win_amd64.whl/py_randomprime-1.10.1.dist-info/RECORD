@@ -1,0 +1,9 @@
+py_randomprime/__init__.py,sha256=JpmY7mUcOsRQyV6APheJPf8CQVjWGEH1Axrcqt4QlJk,2106
+py_randomprime/__main__.py,sha256=UTu4EcERTRuqKbbqQnkOexvC8-5tVTR-dC4ROl2TP1Q,468
+py_randomprime/rust.pyd,sha256=Y_JGgeEtji3myqiE6fyhc8i5V40aE9B1G8Gs9ayEsik,4423168
+py_randomprime/version.py,sha256=lgE5uPCKLvUjYZ51iZASfdPdn2ZGLLmsUE7ifvsuzGs,183
+py_randomprime-1.10.1.dist-info/LICENSE,sha256=DQlxF4FmV-Y_TWCo74unp8BYu7LHhYnEiVfc_-I3SeU,1108
+py_randomprime-1.10.1.dist-info/METADATA,sha256=dVNiuHXAT1fCJJQYY0VdPu47LoySBIs0dkcLAfEWr48,756
+py_randomprime-1.10.1.dist-info/WHEEL,sha256=LKtEauSplqWa0sjNYnJ13q5_Idcducx4apRNRmsW-Dc,100
+py_randomprime-1.10.1.dist-info/top_level.txt,sha256=OOWdWR8Fexew5n0GqnUkcSsYI0QJRGpnJd70EBI2CIU,15
+py_randomprime-1.10.1.dist-info/RECORD,,
