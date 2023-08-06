@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+libvmd/__init__.py
+libvmd/vmd.py
+libvmd.egg-info/PKG-INFO
+libvmd.egg-info/SOURCES.txt
+libvmd.egg-info/dependency_links.txt
+libvmd.egg-info/requires.txt
+libvmd.egg-info/top_level.txt
