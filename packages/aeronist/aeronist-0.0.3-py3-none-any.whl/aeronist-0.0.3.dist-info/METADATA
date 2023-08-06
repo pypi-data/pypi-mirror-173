@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: aeronist
+Version: 0.0.3
+Summary: Simple control mechanism for aerial vehicles
+Author-email: Ertuğrul Soylu <ertugrul.soylu2001@gmail.com>
+Project-URL: Homepage, https://github.com/ErtugrulSoylu/Aeronist
+License-File: LICENSE
+Requires-Dist: pymavlink
+
