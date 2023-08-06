@@ -1,0 +1,13 @@
+README.md
+setup.py
+package_name_cod/__init__.py
+package_name_cod.egg-info/PKG-INFO
+package_name_cod.egg-info/SOURCES.txt
+package_name_cod.egg-info/dependency_links.txt
+package_name_cod.egg-info/requires.txt
+package_name_cod.egg-info/top_level.txt
+package_name_cod/processamento/__init__.py
+package_name_cod/processamento/combinacao.py
+package_name_cod/processamento/transformacao.py
+package_name_cod/utils/__init__.py
+package_name_cod/utils/io.py
