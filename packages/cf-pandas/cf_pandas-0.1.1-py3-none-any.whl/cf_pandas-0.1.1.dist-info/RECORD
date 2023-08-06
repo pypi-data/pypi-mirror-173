@@ -1,0 +1,10 @@
+cf_pandas/__init__.py,sha256=Vu6y8kXAJXXqEMG1S5Jg3rZmzE3wo1B1k-Pl_aQSUTo,443
+cf_pandas/_version.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+cf_pandas/accessor.py,sha256=UAU92-g-3b1ozLIJVJ2g0l8B0jc6Vx-SRSptDp7I58Q,1138
+cf_pandas/options.py,sha256=iiytKb71_S3kNpm8zHkvczQaYWaVU30hUKpXi_xA7J8,2068
+cf_pandas/utils.py,sha256=OU0thpxhB33HBNg_ZXGbIpR0dfZK_hmXEKeR5irdvRk,3398
+cf_pandas-0.1.1.dist-info/LICENSE.txt,sha256=bolgTtGf6rHq7Sx3-p5jshtO7uB4gCnv31hqFxsbBKw,1086
+cf_pandas-0.1.1.dist-info/METADATA,sha256=zM-D8JiliJKHyhxGy68xlK1dy-ezHMUkKCLROPmfzFY,2411
+cf_pandas-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cf_pandas-0.1.1.dist-info/top_level.txt,sha256=rpxFC_Wx_rD5Q35dktF8-B_9AbkMRBOCzPmLfYgT-l4,10
+cf_pandas-0.1.1.dist-info/RECORD,,
