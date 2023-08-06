@@ -1,0 +1,8 @@
+monitoring_exam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monitoring_exam/app.py,sha256=Bdpy4LFzbritTwh3VvhdyyslCxdD8n3Zl9aoYq_nitA,4962
+monitoring_exam/integration-test.py,sha256=la3myEc3WO0WTTXeSqfHtOV6aqPm_kaVTJD0NgvlJKM,400
+monitoring_exam/unit-test.py,sha256=YQFaXPdOOIIkdTg7M5WE9oyxdJ2czqhMp_m2BvSPTHI,376
+monitoring_exam-0.0.1.dist-info/METADATA,sha256=Wkdqo0ou70dHIsNv90Oh2luSAPB1M8M8Yov2AQZr8ak,362
+monitoring_exam-0.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+monitoring_exam-0.0.1.dist-info/top_level.txt,sha256=ecSOlrkOPNyd6xsxR5-HFjRJMsIAgo-37By7-tYKaBE,16
+monitoring_exam-0.0.1.dist-info/RECORD,,
