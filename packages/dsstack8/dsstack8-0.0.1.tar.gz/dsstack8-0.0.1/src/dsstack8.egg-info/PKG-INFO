@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dsstack8
+Version: 0.0.1
+Summary: A stack data structure
+Author-email: Yazan Alfarra <yalfarra@outlook.com>
+Project-URL: Homepage, https://github.com/yazanismail1/dss
+Project-URL: Bug Tracker, https://github.com/yazanismail1/dss
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Data Structures
+
+## Stack
+This is an implementation of stack data structure where you can use it directly instead of reimplementing it.
+
+
+

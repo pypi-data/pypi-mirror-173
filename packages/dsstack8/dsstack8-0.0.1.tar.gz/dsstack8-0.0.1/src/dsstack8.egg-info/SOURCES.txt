@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/dsstack8.egg-info/PKG-INFO
+src/dsstack8.egg-info/SOURCES.txt
+src/dsstack8.egg-info/dependency_links.txt
+src/dsstack8.egg-info/top_level.txt
+src/stack/__init__.py
+src/stack/stack.py

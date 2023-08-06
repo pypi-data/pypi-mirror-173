@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dsstack8"
+version = "0.0.1"
+authors = [
+  { name="Yazan Alfarra", email="yalfarra@outlook.com" },
+]
+description = "A stack data structure"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yazanismail1/dss"
+"Bug Tracker" = "https://github.com/yazanismail1/dss"
