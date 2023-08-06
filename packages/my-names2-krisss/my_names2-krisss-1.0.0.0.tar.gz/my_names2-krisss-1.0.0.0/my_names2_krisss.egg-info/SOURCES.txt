@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+bin/my_names2.bat
+my_names2/__init__.py
+my_names2/my_names2.py
+my_names2_krisss.egg-info/PKG-INFO
+my_names2_krisss.egg-info/SOURCES.txt
+my_names2_krisss.egg-info/dependency_links.txt
+my_names2_krisss.egg-info/requires.txt
+my_names2_krisss.egg-info/top_level.txt
