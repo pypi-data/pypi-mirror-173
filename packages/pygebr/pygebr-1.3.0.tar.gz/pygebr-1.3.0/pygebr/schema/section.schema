@@ -1,0 +1,23 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/section.schema",
+  "title": "Section meta parameter",
+  "description": "Meta parameter only for organization purposes",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "section"
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    }
+  },
+  "required": [
+    "type",
+    "title"
+  ],
+  "additionalProperties": false
+}

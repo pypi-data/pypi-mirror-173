@@ -1,0 +1,20 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/comment.schema",
+  "title": "Comment meta parameter",
+  "description": "Meta parameter only for provinding commentaries inside parameters list",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "comment"
+    },
+    "description": {
+      "type": "string",
+      "description": "A block of text (with simple HTML tags) as comment within the list of parameters"
+    }
+  },
+  "required": [
+    "type",
+    "description"
+  ],
+  "additionalProperties": false
+}

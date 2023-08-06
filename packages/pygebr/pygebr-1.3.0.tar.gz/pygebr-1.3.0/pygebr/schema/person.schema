@@ -1,0 +1,27 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/person.schema",
+  "title": "Person/institution information",
+  "description": "One person or institution to credit for",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Full name"
+    },
+    "email": {
+      "type": "string",
+      "description": "Person's email",
+      "format": "email"
+    },
+    "institution": {
+      "type": "string",
+      "description": "Institution's name"
+    },
+    "homepage": {
+      "type": "string",
+      "description": "Person or institution's home page",
+      "format": "uri"
+    }
+  },
+  "additionalProperties": false
+}

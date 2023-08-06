@@ -1,0 +1,1234 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/full-flow.schema",
+  "title": "Flow",
+  "description": "A sequence of programs working on a data",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "Short title for the flow",
+      "type": "string"
+    },
+    "description": {
+      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+      "type": "string",
+      "description": "One-line sentence description",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "tags": {
+      "type": "array",
+      "description": "Array of tags for the flow",
+      "items": {
+        "type": "string"
+      }
+    },
+    "authors": {
+      "description": "People or institutions to credit for the flow",
+      "type": "array",
+      "items": {
+        "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/person.schema",
+        "title": "Person/institution information",
+        "description": "One person or institution to credit for",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Full name"
+          },
+          "email": {
+            "type": "string",
+            "description": "Person's email",
+            "format": "email"
+          },
+          "institution": {
+            "type": "string",
+            "description": "Institution's name"
+          },
+          "homepage": {
+            "type": "string",
+            "description": "Person or institution's home page",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "filename": {
+      "description": "last file from which the flow was read or to which it was saved",
+      "type": "string"
+    },
+    "io": {
+      "description": "list of files to connect to standard input and outputs",
+      "type": "object",
+      "properties": {
+        "stdin": {
+          "type": "string",
+          "description": "file to feed the standard input"
+        },
+        "stdout": {
+          "type": "array",
+          "description": "file to be written by the standard output",
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "enum": [
+                "w",
+                "a"
+              ]
+            }
+          ],
+          "items": false
+        },
+        "stderr": {
+          "type": "array",
+          "description": "file to be written by the standard error",
+          "prefixItems": [
+            {
+              "type": "string"
+            },
+            {
+              "enum": [
+                "w",
+                "a"
+              ]
+            }
+          ],
+          "items": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "programs": {
+      "description": "List of programs",
+      "type": "array",
+      "items": {
+        "description": "A program with its status in the flow",
+        "type": "object",
+        "properties": {
+          "enabled": {
+            "type": "boolean"
+          },
+          "program": {
+            "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/program.schema",
+            "title": "Program",
+            "description": "A command-line oriented program",
+            "type": "object",
+            "properties": {
+              "title": {
+                "description": "Short title for program",
+                "type": "string"
+              },
+              "description": {
+                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                "type": "string",
+                "description": "One-line sentence description",
+                "minLength": 1,
+                "maxLength": 120
+              },
+              "url": {
+                "description": "A URL related to the program",
+                "type": "string",
+                "format": "uri"
+              },
+              "authors": {
+                "description": "People or institutions to credit for the program",
+                "type": "array",
+                "items": {
+                  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/person.schema",
+                  "title": "Person/institution information",
+                  "description": "One person or institution to credit for",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "description": "Full name"
+                    },
+                    "email": {
+                      "type": "string",
+                      "description": "Person's email",
+                      "format": "email"
+                    },
+                    "institution": {
+                      "type": "string",
+                      "description": "Institution's name"
+                    },
+                    "homepage": {
+                      "type": "string",
+                      "description": "Person or institution's home page",
+                      "format": "uri"
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "executable": {
+                "description": "Basename for executable file",
+                "type": "string"
+              },
+              "io": {
+                "description": "IO behaviour for the program, concerning standard input/ouput",
+                "type": "object",
+                "properties": {
+                  "stdin": {
+                    "type": "boolean"
+                  },
+                  "stdout": {
+                    "type": "boolean"
+                  },
+                  "stderr": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "stdin",
+                  "stdout",
+                  "stderr"
+                ],
+                "additionalProperties": false
+              },
+              "parallel": {
+                "description": "Parallel capabilities",
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "none",
+                    "mpi",
+                    "openmp",
+                    "gpu"
+                  ]
+                }
+              },
+              "parameters": {
+                "description": "List of parameters",
+                "type": "array",
+                "items": {
+                  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/parameter.schema",
+                  "title": "Simple parameter",
+                  "description": "One command-line parameter",
+                  "oneOf": [
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/int.schema",
+                      "title": "Integer parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "integer"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "integer",
+                              "description": "Default int value"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "integer"
+                              }
+                            }
+                          ]
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "integer",
+                                    "description": "Integer value"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/float.schema",
+                      "title": "Float parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "float"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "number",
+                              "description": "Default float value"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "number"
+                              }
+                            }
+                          ]
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "number",
+                                    "description": "Float value"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/range.schema",
+                      "title": "Range parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "range"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "number",
+                              "description": "Default value"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "number"
+                              }
+                            }
+                          ]
+                        },
+                        "min": {
+                          "type": "number",
+                          "description": "minimal acceptable value (inclusive)"
+                        },
+                        "max": {
+                          "type": "number",
+                          "description": "maximal acceptable value (inclusive)"
+                        },
+                        "inc": {
+                          "type": "number",
+                          "description": "reasonable increment in value (for use in GUI)"
+                        },
+                        "digits": {
+                          "type": "integer",
+                          "description": "reasonable amount of decimal digits to show in GUI"
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "number",
+                                    "description": "Number with a range"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple",
+                        "min",
+                        "max",
+                        "default"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/string.schema",
+                      "title": "String parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "string"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "placeholder": {
+                          "type": "string",
+                          "description": "placeholder to be used in widget's entry"
+                        },
+                        "regexp": {
+                          "type": "string",
+                          "format": "regexp",
+                          "description": "regular expression to validate the string"
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "string",
+                              "description": "Default string value"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          ]
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "string",
+                                    "description": "String value"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/ints.schema",
+                      "title": "Array of integers parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "integers"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "separator": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/separator.schema",
+                          "type": "string",
+                          "description": "String used as separator between arrays elements"
+                        },
+                        "placeholder": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/placeholder.schema",
+                          "type": "string",
+                          "description": "placeholder to be used in widget's entry"
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "string",
+                              "description": "Default ints value"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          ]
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "string",
+                                    "description": "Array of integers"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple",
+                        "separator"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/floats.schema",
+                      "title": "Array of floats parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "floats"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "separator": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/separator.schema",
+                          "type": "string",
+                          "description": "String used as separator between arrays elements"
+                        },
+                        "placeholder": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/placeholder.schema",
+                          "type": "string",
+                          "description": "placeholder to be used in widget's entry"
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "string",
+                              "description": "Default floats value"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          ]
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "string",
+                                    "description": "Array of floats"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple",
+                        "separator"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/strings.schema",
+                      "title": "Array of strings parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "strings"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "separator": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/separator.schema",
+                          "type": "string",
+                          "description": "String used as separator between arrays elements"
+                        },
+                        "placeholder": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/placeholder.schema",
+                          "type": "string",
+                          "description": "placeholder to be used in widget's entry"
+                        },
+                        "regexp": {
+                          "type": "string",
+                          "format": "regexp",
+                          "description": "regular expression to validate the string"
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "string",
+                              "description": "Default strings value"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          ]
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "string",
+                                    "description": "Array of string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple",
+                        "separator"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/file.schema",
+                      "title": "Filename parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "file"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "placeholder": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/placeholder.schema",
+                          "type": "string",
+                          "description": "placeholder to be used in widget's entry"
+                        },
+                        "fileType": {
+                          "type": "string",
+                          "description": "Type of expected file",
+                          "examples": [
+                            "Image file",
+                            "SEG-Y data"
+                          ]
+                        },
+                        "filePattern": {
+                          "type": "string",
+                          "description": "Pattern to filter filenames",
+                          "examples": [
+                            "*.png; *.jpg",
+                            "*.su"
+                          ]
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "string",
+                              "description": "Default filename"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          ]
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "string",
+                                    "description": "Filename"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple"
+                      ],
+                      "dependencies": {
+                        "filePattern": [
+                          "fileType"
+                        ]
+                      },
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/path.schema",
+                      "title": "Path parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "path"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "placeholder": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/placeholder.schema",
+                          "type": "string",
+                          "description": "placeholder to be used in widget's entry"
+                        },
+                        "default": {
+                          "oneOf": [
+                            {
+                              "type": "string",
+                              "description": "Default path"
+                            },
+                            {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            }
+                          ]
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "string",
+                                    "description": "Relative or absolute path"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/enum.schema",
+                      "title": "Enum parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "enum"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "required": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter is required or not"
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "informs whether the parameter can be informed more than once"
+                        },
+                        "options": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "description": {
+                                "type": "string"
+                              },
+                              "value": {
+                                "type": "string"
+                              }
+                            },
+                            "additionalProperties": false
+                          },
+                          "description": "Array of possible values"
+                        },
+                        "default": {
+                          "type": "string",
+                          "description": "Default options"
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "literal": {
+                                "type": "string",
+                                "description": "Option value"
+                              }
+                            },
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "required",
+                        "multiple",
+                        "options"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/flag.schema",
+                      "title": "Flag parameter",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "flag"
+                        },
+                        "keyword": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+                          "type": "string",
+                          "description": "Keyword used to set parameter in command line"
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        },
+                        "multiple": {
+                          "type": "boolean",
+                          "description": "property defined for standardness (only false is accepted)"
+                        },
+                        "default": {
+                          "type": "boolean",
+                          "description": "Default flag state [ true/on or false/off ]"
+                        },
+                        "value": {
+                          "type": "array",
+                          "items": {
+                            "oneOf": [
+                              {
+                                "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema",
+                                "description": "Expression that evaluates to parameter type",
+                                "type": "object",
+                                "properties": {
+                                  "expression": {
+                                    "type": "string"
+                                  }
+                                },
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "literal": {
+                                    "type": "boolean",
+                                    "description": "Flag state"
+                                  }
+                                },
+                                "additionalProperties": false
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "keyword",
+                        "description",
+                        "default"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/section.schema",
+                      "title": "Section meta parameter",
+                      "description": "Meta parameter only for organization purposes",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "section"
+                        },
+                        "title": {
+                          "type": "string",
+                          "maxLength": 120
+                        },
+                        "description": {
+                          "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+                          "type": "string",
+                          "description": "One-line sentence description",
+                          "minLength": 1,
+                          "maxLength": 120
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/comment.schema",
+                      "title": "Comment meta parameter",
+                      "description": "Meta parameter only for provinding commentaries inside parameters list",
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "comment"
+                        },
+                        "description": {
+                          "type": "string",
+                          "description": "A block of text (with simple HTML tags) as comment within the list of parameters"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "description"
+                      ],
+                      "additionalProperties": false
+                    }
+                  ]
+                }
+              }
+            },
+            "required": [
+              "title",
+              "description",
+              "authors",
+              "executable",
+              "io"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "additionalProperties": false
+}

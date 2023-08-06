@@ -1,0 +1,51 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/flag.schema",
+  "title": "Flag parameter",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "flag"
+    },
+    "keyword": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema"
+    },
+    "description": {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema"
+    },
+    "multiple": {
+      "type": "boolean",
+      "description": "property defined for standardness (only false is accepted)"
+    },
+    "default": {
+      "type": "boolean",
+      "description": "Default flag state [ true/on or false/off ]"
+    },
+    "value": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/expression.schema"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "literal": {
+                "type": "boolean",
+                "description": "Flag state"
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "keyword",
+    "description",
+    "default"
+  ],
+  "additionalProperties": false
+}

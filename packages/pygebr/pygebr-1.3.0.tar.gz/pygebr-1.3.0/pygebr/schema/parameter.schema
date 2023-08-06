@@ -1,0 +1,46 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/parameter.schema",
+  "title": "Simple parameter",
+  "description": "One command-line parameter",
+  "oneOf": [
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/int.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/float.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/range.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/string.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/ints.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/floats.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/strings.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/file.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/path.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/enum.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/flag.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/section.schema"
+    },
+    {
+      "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/comment.schema"
+    }
+  ]
+}

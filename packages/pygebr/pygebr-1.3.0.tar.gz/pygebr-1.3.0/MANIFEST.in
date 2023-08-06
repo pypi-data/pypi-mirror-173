@@ -1,0 +1,8 @@
+include AUTHORS COPYING README.md ubuntu-install.md
+prune tools
+prune samples
+prune src
+include pygebr/menus/others/menus.py
+include pygebr/menus/rsf/menus.py
+include pygebr/menus/shell/menus.py
+include pygebr/menus/su/menus.py

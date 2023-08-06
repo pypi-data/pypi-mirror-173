@@ -1,0 +1,5 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/separator.schema",
+  "type": "string",
+  "description": "String used as separator between arrays elements"
+}

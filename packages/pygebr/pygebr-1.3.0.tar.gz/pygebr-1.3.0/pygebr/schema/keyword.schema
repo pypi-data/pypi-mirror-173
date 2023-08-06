@@ -1,0 +1,5 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/keyword.schema",
+  "type": "string",
+  "description": "Keyword used to set parameter in command line"
+}

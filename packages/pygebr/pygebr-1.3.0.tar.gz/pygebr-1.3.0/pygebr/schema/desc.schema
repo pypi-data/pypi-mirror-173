@@ -1,0 +1,7 @@
+{
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/desc.schema",
+  "type": "string",
+  "description": "One-line sentence description",
+  "minLength": 1,
+  "maxLength": 120
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gitlab.com/Biloti/pygebr/-/raw/main/pygebr/schema/config.schema",
+  "title": "Config",
+  "description": "PyGêBR local configuration",
+  "type": "object",
+  "properties": {
+    "authors": {
+      "description": "default authors for a new flows",
+      "type": "array",
+      "items": {
+        "$ref": "/Biloti/pygebr/-/raw/main/pygebr/schema/person.schema"
+      }
+    },
+    "path": {
+      "type": "object",
+      "description": "default paths",
+      "properties": {
+        "data": {
+          "type": "string",
+          "description": "default path for input and output data files"
+        },
+        "export": {
+          "type": "string",
+          "description": "default path for exported files"
+        },
+        "menu": {
+          "type": "array",
+          "description": "paths to look up for menus",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
