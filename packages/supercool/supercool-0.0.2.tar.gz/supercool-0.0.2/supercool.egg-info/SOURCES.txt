@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+scripts/supercool.py
+supercool.egg-info/PKG-INFO
+supercool.egg-info/SOURCES.txt
+supercool.egg-info/dependency_links.txt
+supercool.egg-info/requires.txt
+supercool.egg-info/top_level.txt
