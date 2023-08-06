@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webix"
+description = "Linux for the web"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "sphinx",
+]
+keywords = []
+classifiers = []
+dynamic = ["version"]
+
+
+[tool.setuptools]
+packages = ["webix"]
+
+[tool.setuptools.dynamic]
+version = {attr = "webix.__version__"}
