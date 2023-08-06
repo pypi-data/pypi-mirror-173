@@ -1,0 +1,8 @@
+setup.py
+abcdef.egg-info/PKG-INFO
+abcdef.egg-info/SOURCES.txt
+abcdef.egg-info/dependency_links.txt
+abcdef.egg-info/requires.txt
+abcdef.egg-info/top_level.txt
+libname/__init__.py
+libname/functions.py
