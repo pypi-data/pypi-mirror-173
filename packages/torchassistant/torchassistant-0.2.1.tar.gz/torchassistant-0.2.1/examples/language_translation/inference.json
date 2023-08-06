@@ -1,0 +1,64 @@
+{
+    "session_dir": "pretrained",
+    "input_adapter": {
+        "class": "examples.language_translation.adapters.InputAdapter"
+    },
+    "initialize": {
+        "definitions": {
+            "data": {
+                "replace_strategy": "override",
+                "override_key": ["name"],
+                "options": [
+                    {
+                        "name": "my_collator",
+                        "spec": {
+                            "factory_fn": "examples.language_translation.collators.build_inference_collator"
+                        }
+                    }
+                ]
+            },
+            "computation": {
+                "replace_strategy": "override",
+                "override_key": ["name"],
+                "options": [
+                    {
+                        "name": "neural_translator",
+                        "spec": {
+                            "input_adapter": {
+                                "class": "examples.language_translation.adapters.BatchInferenceAdapter"
+                            },
+                            "neural_graph": {
+                                "replace_strategy": "override",
+                                "override_key": ["model_name"],
+                                "options": [
+                                    {
+                                        "model_name": "decoder_model",
+                                        "inputs": ["sos", "h_e"],
+                                        "outputs": ["y_hat"]
+                                    }
+                                ]
+                            },
+                            "output_adapter": {
+                                "class": "examples.language_translation.adapters.NullAdapter"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "inputs_meta": [
+        {
+            "input_port": "default_port",
+            "input_converter": {
+                "class": "examples.language_translation.adapters.InputConverter"
+            }
+        }
+    ],
+    "results": [
+        "y_hat"
+    ],
+    "post_processor": {
+        "class": "examples.language_translation.postprocessors.PostProcessor"
+    }
+}
