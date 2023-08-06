@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+databricks.thrift=databricks.sqlalchemy:DatabricksDialect
+
