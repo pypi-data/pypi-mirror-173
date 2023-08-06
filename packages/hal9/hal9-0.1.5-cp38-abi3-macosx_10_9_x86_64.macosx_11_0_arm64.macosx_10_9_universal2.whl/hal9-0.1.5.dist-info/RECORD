@@ -1,0 +1,7 @@
+hal9-0.1.5.dist-info/METADATA,sha256=cMzNat_e-kAhzw51Xy83WFQONxU7DdRtD4sXxX7Wr_Q,1079
+hal9-0.1.5.dist-info/WHEEL,sha256=ux1XS4B0PO41cewJwbpsB7DMHIGps8wMq_woYyxzDyE,145
+hal9/controls.py,sha256=MMF3SDQmioTGMmeJ7EgbPLLtpJkUpIte7wAVBxw5cNk,2614
+hal9/__init__.py,sha256=DLvg1hij5Raz7c1d-TGm2AKT6n3BCvA1k35_s4Ge2Y4,135
+hal9/core.py,sha256=trnUnXFrv5O_nxcrhKPMRTh7ZQOHIfLPwPGUWnLg-jo,4114
+hal9/_hal9.abi3.so,sha256=YH1qME1j_HSS7acTWpoyctOl-HBBxkKlAftGxm7Vx94,22228506
+hal9-0.1.5.dist-info/RECORD,,
