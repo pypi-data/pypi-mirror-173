@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: square-skill-api
+Version: 0.0.34
+Home-page: https://github.com/UKP-SQuARE/square-skill-api
+Download-URL: https://github.com/UKP-SQuARE/square-skill-api/archive/refs/tags/v0.0.34.tar.gz
+Author: UKP
+Author-email: baumgaertner@ukp.informatik.tu-darmstadt.de
+License: MIT
+Requires-Dist: uvicorn (>=0.15.0)
+Requires-Dist: fastapi (>=0.65.2)
+Requires-Dist: pydantic (>=1.8.2)
+Requires-Dist: numpy (>=1.21.3)
+
