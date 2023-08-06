@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+src/Usero.egg-info/PKG-INFO
+src/Usero.egg-info/SOURCES.txt
+src/Usero.egg-info/dependency_links.txt
+src/Usero.egg-info/top_level.txt
+src/usero/__init__.py
