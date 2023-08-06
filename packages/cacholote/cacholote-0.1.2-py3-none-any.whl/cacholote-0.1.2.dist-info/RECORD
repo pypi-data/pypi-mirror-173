@@ -1,0 +1,15 @@
+cacholote/__init__.py,sha256=Wl93hPvabzLE2B5oAGD8H4UbPBn-dWl6bNlBlK4zIKE,1383
+cacholote/cache.py,sha256=JxwUASNA7yvOVHLxIEYDDk0tNoq79ehPuc3p-EOqAsE,3928
+cacholote/clean.py,sha256=RWO7HlRvNh7ygOdLaJteIzzW5_bie8GcAdJXIF4ixZY,3156
+cacholote/config.py,sha256=ndPUjy9Pt9FeIkBJA7XuqsARsuhpAiOQ9wsheM1pjdI,5380
+cacholote/decode.py,sha256=FUHhpSo2dx2C0y7c5L1pNPtjWs9Nz9apzrUgtu8u44U,2780
+cacholote/encode.py,sha256=WyoyDVFgAeO5uneh9o0qPcRPuWbKBFSDBWnquB5LVMQ,5563
+cacholote/extra_encoders.py,sha256=oRRnFWRl5UqcJE5KQlOklpDnc8IWd4nre_CyjfLLsE8,10321
+cacholote/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cacholote/utils.py,sha256=541xXYPlpln2MANx5dp2Pi1X1fz1puHl5GZvWU3R_-I,1947
+cacholote/version.py,sha256=mhn-Q_iWjqoedVgII6vgkOSx-xmaRDKE9OpdXyfd0pQ,72
+cacholote-0.1.2.dist-info/LICENSE,sha256=BOh85UrF33Jr1apgV2yE2dMZyhzoaYciH8DIyhQqJKA,11352
+cacholote-0.1.2.dist-info/METADATA,sha256=xRaX3j1_NgQwnOB2nQ7_KQk0bY-Xnl3VjQ-MUjbyQuQ,2527
+cacholote-0.1.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cacholote-0.1.2.dist-info/top_level.txt,sha256=AudAikGF1EhoK-qpRxc-6tY2bVq_e3FqIZge3eRhdG4,10
+cacholote-0.1.2.dist-info/RECORD,,
