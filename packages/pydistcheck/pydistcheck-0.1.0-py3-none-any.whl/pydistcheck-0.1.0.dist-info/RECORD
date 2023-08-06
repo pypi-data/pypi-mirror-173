@@ -1,0 +1,13 @@
+pydistcheck/__init__.py,sha256=HoM4DJJBKP3YfS6t0mU1jCzESFXZJe0DbByJqw9YPG0,120
+pydistcheck/_compat.py,sha256=Ve8gGfl-koCQD9XeZzFAP8wQa7hW1dxPKQ_wG6CMCJM,300
+pydistcheck/checks.py,sha256=hRH4pQaQ-ekoEgR5-gDx9cKiSyyp0eG5cR3sWA4hMu8,2437
+pydistcheck/cli.py,sha256=bJFZ9qhpuuQNwLxMRuK1gZOoc9KkBjSyYPc7uxab6_c,3651
+pydistcheck/distribution_summary.py,sha256=emAfiykG-eAhgQFmD9t5s9lOJeQmqj5S4cxdw4QpzN0,3181
+pydistcheck/inspect.py,sha256=0jEC5o-Ycq5DvPoyqQacz-UfdB2q6TAtUePaO_vqCLk,1148
+pydistcheck/utils.py,sha256=18iygn3mkQDm8gCMV5Dn1jvsgVun9zHHEPVsaBmOVYk,1885
+pydistcheck-0.1.0.dist-info/LICENSE,sha256=SLaJbQ52vppYwAAbqe0gDkOl8Xi17YXGlwVmkL9lxy8,1510
+pydistcheck-0.1.0.dist-info/METADATA,sha256=MGy5xpk2qTwMy9_yEIwn8zs8jcVme-Ulukl1DreHai4,2489
+pydistcheck-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pydistcheck-0.1.0.dist-info/entry_points.txt,sha256=zh-IkFmTAp1b07oK10aFAtoGydEXID3DK3Ooe5IzQEY,54
+pydistcheck-0.1.0.dist-info/top_level.txt,sha256=_ND8Cp868Lgw-PLOc3uPWh-JjNH3bpVoKDmd604GTLo,12
+pydistcheck-0.1.0.dist-info/RECORD,,
