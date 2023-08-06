@@ -1,0 +1,12 @@
+oakx_oger/__init__.py,sha256=I0Y5KPWZV3PsgqMy6MfrANmIl3_0_ECG1RqCdGAjHS0,98
+oakx_oger/cli.py,sha256=S_GItIydiWPwXrnLpbjQhQVoaBxxHN-38ZeOukKKTvE,939
+oakx_oger/input/README.md,sha256=fd6csNaLKn-QKtlAofhn1NkvUFgaOubgQpOkfdy3QPs,40
+oakx_oger/input/tmp/input.txt,sha256=5nIouIiweWLUJBYT9KJRoOVRxbnbNIHC3mpcoTJgiIM,60
+oakx_oger/oger_implementation.py,sha256=x5cewb0cE_2-5jzmxam_e-mJgkrvIl73Y0-9gm9AoUs,4797
+oakx_oger/output/README.md,sha256=R_lRRqlYvkYIKW0L6JRiY70kvQTQORUUWQJCVgDB0ns,41
+oakx_oger/terms/README.md,sha256=vm7wQVDKMBv9RkVZaOpbIriSsmfVf6yBgu-9NxRAjW4,59
+oakx_oger-0.1.1.dist-info/entry_points.txt,sha256=oco4bZfSLsnP1X1Of_G1ttnhy955-j4XvX7g7b9PKC8,116
+oakx_oger-0.1.1.dist-info/LICENSE,sha256=gvJN6i0gGxYF2VNrSo4ajtgVOEebb82u5TOQiW29QJY,1515
+oakx_oger-0.1.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+oakx_oger-0.1.1.dist-info/METADATA,sha256=wYNPzn39XblcOmyHyg9dW_oJjlw-uNidt_a5iIkEpRQ,2110
+oakx_oger-0.1.1.dist-info/RECORD,,
