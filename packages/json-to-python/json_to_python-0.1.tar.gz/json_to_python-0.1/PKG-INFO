@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: json_to_python
+Version: 0.1
+Summary: converts api json responses to python objects
+Home-page: https://github.com/arokosaki/json_to_python
+Author: kobi kolodner
+Author-email: kobi@commugen.com
+License: MIT
+Classifier: Development Status :: 2 - Pre-Alpha
+Description-Content-Type: text/markdown
+
+# json_to_python
+allow create python file with objects of json data
