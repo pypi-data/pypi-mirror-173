@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: hcaptcha-solver
+Version: 0.1.1
+Summary: Selenium hCaptcha Solver
+Project-URL: GitHub, https://github.com/xTerradon/hcaptcha-solver.git
+Author: Terradon
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# hCaptcha Solver
+
+This is a tool for bypassing hCaptchas in Selenium.
+
+First, create an Instance of the Captcha_Handler to load the models.
+
+```
+import captcha_handler
+ch = captcha_handler.Captcha_Handler()
+```
+
+When on a website that requires a hCaptcha, simply pass the selenium webdriver object to the Captcha_Handler's solve_captcha() function.
+
+```
+from selenium import webdriver
+wd = webdriver.Chrome()
+# requires hCaptcha
+ch.solve_captcha(wd)
+```
