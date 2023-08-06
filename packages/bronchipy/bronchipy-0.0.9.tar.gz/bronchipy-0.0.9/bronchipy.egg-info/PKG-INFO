@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bronchipy
+Version: 0.0.9
+Summary: Supporting tools for processing the output of the AirFlow pipeline.
+Author: ImaLife
+Author-email: <i.dudurych@umcg.nl>
+License: UNKNOWN
+Keywords: python,analysis,medical,imaging,research
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+Scripts and functions to process the output of AirFlow pipeline, for use with the output files. Allows for post-processing of the data tables.
+
