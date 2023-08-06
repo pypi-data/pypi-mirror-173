@@ -1,0 +1,56 @@
+DESCRIPTION.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tests/__init__.py
+tests/conftest.py
+tests/test_base.py
+tests/test_funcs.py
+tests/test_metrics.py
+tests/test_models.py
+tests/test_splitter.py
+tests/test_transformers.py
+tests/test_tsfeatures.py
+tests/test_utils.py
+tests/valid_outputs/all_transforms.json
+tests/valid_outputs/differences.json
+tests/valid_outputs/dt_transform_only.json
+tests/valid_outputs/interactions.json
+tests/valid_outputs/multi_ewm_[2].json
+tests/valid_outputs/multi_ewm_[3, 6].json
+tests/valid_outputs/multi_interactions.json
+tests/valid_outputs/multi_lags_1.json
+tests/valid_outputs/multi_lags_3.json
+tests/valid_outputs/multi_lags_6.json
+tests/valid_outputs/multi_pct_chg_1.json
+tests/valid_outputs/multi_pct_chg_6.json
+tests/valid_outputs/multi_rolling_[2].json
+tests/valid_outputs/multi_rolling_[3, 6].json
+tests/valid_outputs/poly_[2, 3].json
+tests/valid_outputs/uni_dt_features.json
+tests/valid_outputs/uni_ewm_[2].json
+tests/valid_outputs/uni_ewm_[3, 6].json
+tests/valid_outputs/uni_lags_1.json
+tests/valid_outputs/uni_lags_3.json
+tests/valid_outputs/uni_lags_6.json
+tests/valid_outputs/uni_pct_chg_1.json
+tests/valid_outputs/uni_pct_chg_6.json
+tests/valid_outputs/uni_rolling_[2].json
+tests/valid_outputs/uni_rolling_[3, 6].json
+tsfeast/__init__.py
+tsfeast/_base.py
+tsfeast/funcs.py
+tsfeast/metrics.py
+tsfeast/models.py
+tsfeast/splitter.py
+tsfeast/transformers.py
+tsfeast/tsfeatures.py
+tsfeast/utils.py
+tsfeast.egg-info/PKG-INFO
+tsfeast.egg-info/SOURCES.txt
+tsfeast.egg-info/dependency_links.txt
+tsfeast.egg-info/not-zip-safe
+tsfeast.egg-info/requires.txt
+tsfeast.egg-info/top_level.txt
