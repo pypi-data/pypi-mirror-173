@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+ShellcodeFormatter.egg-info/PKG-INFO
+ShellcodeFormatter.egg-info/SOURCES.txt
+ShellcodeFormatter.egg-info/dependency_links.txt
+ShellcodeFormatter.egg-info/top_level.txt
