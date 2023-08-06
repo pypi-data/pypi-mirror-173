@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+XDARK7X/XDARK7X.py
+XDARK7X/__init__.py
+XDARK7X.egg-info/PKG-INFO
+XDARK7X.egg-info/SOURCES.txt
+XDARK7X.egg-info/dependency_links.txt
+XDARK7X.egg-info/requires.txt
+XDARK7X.egg-info/top_level.txt
