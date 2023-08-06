@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+nixstrings.c
+nixstrings.pyx
+setup.cfg
+setup.py
+nixstrings.egg-info/PKG-INFO
+nixstrings.egg-info/SOURCES.txt
+nixstrings.egg-info/dependency_links.txt
+nixstrings.egg-info/top_level.txt
