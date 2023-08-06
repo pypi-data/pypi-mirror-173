@@ -1,0 +1,6 @@
+xarray
+numpy
+tqdm
+
+[working examples notebook]
+matplotlib
