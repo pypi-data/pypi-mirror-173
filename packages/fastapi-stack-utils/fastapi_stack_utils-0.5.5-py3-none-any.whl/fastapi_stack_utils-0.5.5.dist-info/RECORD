@@ -1,0 +1,13 @@
+fastapi_stack_utils/__init__.py,sha256=bTJ2PrQEOJZGgdu2PVR-trVLloZTpUbfSIlTY_qgBlA,128
+fastapi_stack_utils/exception_handler.py,sha256=RLKoNkr7FIZT40VhWde9IYBlePwXV8ymBWxfTV3NYdA,3704
+fastapi_stack_utils/logging_config.py,sha256=Hb3RntRLCxyCyWbYx8-iCNhF_UZhPilwTmTU8kh7WDo,3498
+fastapi_stack_utils/middleware.py,sha256=0_ce55xxWmtrCmSdtjNQ1LJ2zRSN8HHbaz6FEYW5ByY,3586
+fastapi_stack_utils/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_stack_utils/route.py,sha256=htNyemeLeZZdktycYOjz60nD0D85CnBPIHp-kh_DCBk,1629
+fastapi_stack_utils/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_stack_utils/schemas/http_exceptions.py,sha256=8YlO5Af05omHPn3CeSb8xs5yqzdHftfLwE0fCcwVQDg,940
+fastapi_stack_utils/uvloop.py,sha256=Cs7Iw7xs5cHHlP6KYpi8W64mwmChElPEuXDANJtCTwY,503
+fastapi_stack_utils-0.5.5.dist-info/LICENSE,sha256=OKE7tMInfrn6tM7V1pR6sdEjPPPdN9C_LKR35lgtvUo,1079
+fastapi_stack_utils-0.5.5.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+fastapi_stack_utils-0.5.5.dist-info/METADATA,sha256=4RlwOOpzgBy706qN3B6vC6ZvEeZYfoKkahOnEr4omTw,723
+fastapi_stack_utils-0.5.5.dist-info/RECORD,,
