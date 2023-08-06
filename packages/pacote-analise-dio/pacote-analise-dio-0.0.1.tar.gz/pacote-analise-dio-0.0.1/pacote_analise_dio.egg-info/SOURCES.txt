@@ -1,0 +1,13 @@
+README.md
+setup.py
+pacote-analise-dio/__init__.py
+pacote-analise-dio/manipulation/__init__.py
+pacote-analise-dio/manipulation/data-clean.py
+pacote-analise-dio/manipulation/data-info.py
+pacote-analise-dio/utils/__init__.py
+pacote-analise-dio/utils/plot.py
+pacote_analise_dio.egg-info/PKG-INFO
+pacote_analise_dio.egg-info/SOURCES.txt
+pacote_analise_dio.egg-info/dependency_links.txt
+pacote_analise_dio.egg-info/requires.txt
+pacote_analise_dio.egg-info/top_level.txt
