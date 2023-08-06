@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: TF-COMB
+Version: 1.0.0
+Summary: Transcription Factor Co-Occurrence using Market Basket analysis
+Home-page: UNKNOWN
+Author: Mette Bentsen
+Author-email: mette.bentsen@mpi-bn.mpg.de
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TF-COMB
+
+TF-COMB stands for “**T**ranscription **F**actor **C**o-**O**ccurrence using **M**arket **B**asket analysis” and is a python module for identifying co-occurring TFs in regulatory regions.
+
+<img align="right" width=200 src="docs/_figures/tfcomb_logo.png">
+
+With a flexible input of ChIP-seq peaks, motif positions, footprint locations, ATAC-seq peaks etc., TF-COMB utilizes a modified market basket analysis to identify TFs (or regions) which are highly co-occurring. The identified TF pairs can then be analyzed in more detail using downstream analysis such as:
+- Preferred distance between TFs
+- Orientation of stranded regions
+- Differential co-occurrence between conditions
+- Network analysis to identify protein hubs
+
+
+Please visit the [Examples](https://tf-comb.readthedocs.io/en/latest/examples/index.html) to see modes of usage.
+
+## Installation
+```
+$ mamba create -n tfcomb_env --file required_packages.txt
+$ conda activate tfcomb_env 
+$ pip install .
+```  
+
+## Usage
+Please visit the full documentation at: [tf-comb.readthedocs.io](https://tf-comb.readthedocs.io)
+
+
