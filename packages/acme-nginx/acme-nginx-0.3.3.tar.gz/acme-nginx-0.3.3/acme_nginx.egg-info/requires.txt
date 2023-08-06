@@ -1,0 +1,4 @@
+pyOpenSSL~=20.0
+cryptography==37.0.4
+pycryptodome~=3.14
+boto3~=1.17
