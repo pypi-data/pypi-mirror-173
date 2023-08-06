@@ -1,0 +1,11 @@
+vpc_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vpc_cli/command.py,sha256=RnjrfyC6HD4apjkdc25AzIlILmhRpUQu-3zJXta17f8,18932
+vpc_cli/create_yaml.py,sha256=2x4RWNSDMDhL2IJWvsnkRdATgMLFmDMgHMrBw3AIz1w,11444
+vpc_cli/main.py,sha256=KtQs1IdBREalMfab4Z0k7KUaSDABhqXV9mN9ix-PjZk,104
+vpc_cli/print_table.py,sha256=51FyU6pwpIiHm0dUwpb321hNRBQHlzowHAyQJ7DCqmQ,3227
+vpc_cli/tools.py,sha256=ISihFtPRc6vJu7iH_iZNekM7kf46UFccGKydb46A-a0,2471
+aws_vpc_cli-0.0.2.dist-info/METADATA,sha256=XCImDQJaFcUSyPnJ89dnd-hyCvxANLWBh5uOtQJSHYQ,597
+aws_vpc_cli-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aws_vpc_cli-0.0.2.dist-info/entry_points.txt,sha256=oAXEFQUKi3CD6Ot9w7as8PVwsoluGcccpjs5usKC5tI,46
+aws_vpc_cli-0.0.2.dist-info/top_level.txt,sha256=ySB3I74vqfEcQSM9hddrgKE6YIXvG20DC_bDFw0ZRYw,8
+aws_vpc_cli-0.0.2.dist-info/RECORD,,
