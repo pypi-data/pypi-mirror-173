@@ -1,0 +1,17 @@
+parse_rest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+parse_rest/config.py,sha256=jJYc7GHyJ6oe2qBmXeJTAxU9R68g3kletd-K44hArtg,250
+parse_rest/connection.py,sha256=hthgvu10T83IHsnBCto59ZRkPmaFyxO4y6jwxu5Uplw,6838
+parse_rest/core.py,sha256=UjwifIPuSW6k9mEVHdfocZ5hTsznNdBDSBNqPFbLAlU,1216
+parse_rest/datatypes.py,sha256=IsOXCe23EhwhO5ozTl0lvmPd96tSLSxaD8zDKGmXXE8,22014
+parse_rest/installation.py,sha256=c4PVIpbmph2Gf4s7d7vCZR8c7yKnkR9vJeDQzaDnLR0,2770
+parse_rest/query.py,sha256=AKqI7hFvvs95DqBajNh9Hp6FmBG3uG0JVAwm8ZVjs1w,6352
+parse_rest/role.py,sha256=lg4Q6XkTRYy62WmLmydEdF1ielk_bCcxW_LDkA8Kkow,1293
+parse_rest/test_relations.py,sha256=qFGmuMSoiS8N7UyHa3AND8Bd-jzU8PMoG_4WC6eKxTg,6501
+parse_rest/tests.py,sha256=G5z2LwI0BFJsQn5-5zTghsQfjXH_js6L85UkNT3NyIU,23180
+parse_rest/user.py,sha256=BjkJLIFFp_AmK3UwwkwZgs8ULH8OkLASnx-ecXyezyU,5668
+parse_rest/cloudcode/cloud/main.js,sha256=tP75QDY7MEsNa6Kfg6ZVuON6csHF2KPX2F2d_UrCnts,1150
+qs_parse_rest-0.2.20170114.dist-info/COPYING,sha256=rTNSCERtnXDERw5d6O_6HN2guJzx0YTqZBw47rS79hs,1099
+qs_parse_rest-0.2.20170114.dist-info/METADATA,sha256=1AL9vHEumyKCYHyUKpBvWCAaD4i1X3IEWHBs-zsUiUk,740
+qs_parse_rest-0.2.20170114.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+qs_parse_rest-0.2.20170114.dist-info/top_level.txt,sha256=EWVTB1K2QfE1TqBIkLhPt2OlymnfZamgwPH3Ft2WmWE,11
+qs_parse_rest-0.2.20170114.dist-info/RECORD,,
