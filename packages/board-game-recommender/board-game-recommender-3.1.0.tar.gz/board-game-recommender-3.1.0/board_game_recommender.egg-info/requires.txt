@@ -1,0 +1,11 @@
+
+[full]
+pytility
+turicreate
+
+[light]
+numpy
+pandas
+
+[trust]
+scipy
