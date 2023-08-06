@@ -1,0 +1,2 @@
+[console_scripts]
+befake = BeFake.__main__:cli

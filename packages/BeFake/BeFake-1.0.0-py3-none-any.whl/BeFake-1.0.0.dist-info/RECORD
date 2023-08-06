@@ -1,0 +1,17 @@
+BeFake/BeFake.py,sha256=jqVtFOtTwEUCYsv7nSshqnjQaa1h5fbP8xxDx2CAhQk,11899
+BeFake/__init__.py,sha256=ZhzQKWZ8RFrTIkj7z87B144DI95e8LMfA5w8NDWQDtg,23
+BeFake/__main__.py,sha256=MGwKT8BLaIStjsh_8JDoXAYiOPINEqLDreK-visg7Vc,9012
+BeFake/utils.py,sha256=OP1aTuCQE3Lk-ijKVO9azblfkgRfQqSlUQRz-9F1vuU,175
+BeFake/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BeFake/models/memory.py,sha256=Il4TugCZLeieCkgNm2l3eVE53NRQcE-F0Yqg7M0SUYU,608
+BeFake/models/picture.py,sha256=9_X1JAjZwU8Na5Yx3gk1vgIGVC9AW8iu3W0n4bl-yNQ,3821
+BeFake/models/post.py,sha256=GXUssBcXmljW-0QodxqRINu62fzFgbQZlcZqbeXqkCU,3663
+BeFake/models/realmoji.py,sha256=Bf_ieLGgGmV0frBRVEdyDIxotnGkPPxkufOSl3OanqY,786
+BeFake/models/realmoji_picture.py,sha256=uwvaAOrCDDzjnnhtdwUDYT24fI4e2aYsUwR9DM43T1M,3811
+BeFake/models/user.py,sha256=0SyNVxhVBf4V8cck88OSCwQQskwxZb3-85Q-AUpB0gQ,2361
+BeFake-1.0.0.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+BeFake-1.0.0.dist-info/METADATA,sha256=EtbNop0l8S6KFyzsXBJc32PLtKKtw54Fl08nIFJ0Mx4,1877
+BeFake-1.0.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+BeFake-1.0.0.dist-info/entry_points.txt,sha256=3vrz1JxdER6MJgezr1egSFMBrld_D6Nn2n1rnTXWAyI,47
+BeFake-1.0.0.dist-info/top_level.txt,sha256=9ZXAPGXeV4JUWE9DxjTXP4-y_uOp_AbpIoSYRgb1Xok,7
+BeFake-1.0.0.dist-info/RECORD,,
