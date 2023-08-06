@@ -1,0 +1,9 @@
+numpy
+numba
+scipy
+pandas>=1.4.0
+sciris>=2.0.0
+matplotlib
+seaborn
+wbgapi
+optuna
