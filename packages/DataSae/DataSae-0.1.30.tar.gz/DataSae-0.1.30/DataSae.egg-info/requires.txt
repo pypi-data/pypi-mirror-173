@@ -1,0 +1,15 @@
+psycopg2
+minio
+pandas
+python-dotenv
+SQLAlchemy
+oauth2client
+gspread
+requests
+simplejson
+nltk
+Sastrawi
+claming
+numpy
+pyyaml
+pymongo
