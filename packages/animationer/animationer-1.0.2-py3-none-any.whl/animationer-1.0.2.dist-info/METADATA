@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: animationer
+Version: 1.0.2
+Summary: A lightweight animation library for console applications. Made entirely in my free time (OUTDATED! GET PAL INSTEAD!)
+Author: LeWolfYT
+Author-email: ciblox3@gmail.com
+License: MIT
+Requires: pal
+
