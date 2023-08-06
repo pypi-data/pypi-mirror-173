@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: yasp
+Version: 0.0.1
+Summary: Yet another Apertium stream parser
+Author-email: Vee Satayamas <vsatayamas@gmail.com>
+Project-URL: homepage, https://git.sr.ht/~veer66/yasp
+Keywords: apertium,stream,parser
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# YASP
+
+Yet another Apertium stream parser
+
+## Usage
+
+```
+>>> from pprint import pprint
+>>> import yasp
+>>> pprint(yasp.stream.parse('^prpers<prn><subj><p1><mf><sg>$ ^saw<vblex><pres>$ ^a<det><ind><sg>$ ^cat<n><sg>$'))
+[('LEXICAL-UNIT',
+  [(('FLAG', ''),
+    ('LING-FORM', 'prpers'),
+    ('INVARIABLE-PART', []),
+    ('TAGS', ['prn', 'subj', 'p1', 'mf', 'sg']),
+    ('INVARIABLE-PART', []))]),
+ ('UNPARSED', ' '),
+ ('LEXICAL-UNIT',
+  [(('FLAG', ''),
+    ('LING-FORM', 'saw'),
+    ('INVARIABLE-PART', []),
+    ('TAGS', ['vblex', 'pres']),
+    ('INVARIABLE-PART', []))]),
+ ('UNPARSED', ' '),
+ ('LEXICAL-UNIT',
+  [(('FLAG', ''),
+    ('LING-FORM', 'a'),
+    ('INVARIABLE-PART', []),
+    ('TAGS', ['det', 'ind', 'sg']),
+    ('INVARIABLE-PART', []))]),
+ ('UNPARSED', ' '),
+ ('LEXICAL-UNIT',
+  [(('FLAG', ''),
+    ('LING-FORM', 'cat'),
+    ('INVARIABLE-PART', []),
+    ('TAGS', ['n', 'sg']),
+    ('INVARIABLE-PART', []))])]
+>>> 
+```

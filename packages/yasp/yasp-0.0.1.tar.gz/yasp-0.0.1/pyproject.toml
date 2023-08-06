@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yasp"
+version = "0.0.1"
+authors = [{name = "Vee Satayamas", email = "vsatayamas@gmail.com"}]
+description = "Yet another Apertium stream parser"
+readme = "README.md"
+keywords = ["apertium", "stream", "parser"]
+license = {file = "LICENSE.txt"}
+classifiers = [
+	    "Programming Language :: Python :: 3",
+	    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	    "Intended Audience :: Developers",
+	    "Operating System :: OS Independent",
+	    "Topic :: Software Development :: Libraries",
+	    ]
+dependencies = [
+	   "parsec==3.14",
+]
+
+[project.urls]
+homepage = "https://git.sr.ht/~veer66/yasp"
+
+[tool.pylsp-mypy]
+enabled = true
+live_mode = true
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
