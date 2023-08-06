@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: crc_calculator
+Version: 0.6.2
+Summary: Define program version
+Author-email: junghoon-vans <junghoon.ban@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Project-URL: Source, https://github.com/junghoon-vans/crc-calculator
+
+==============
+CRC Calculator
+==============
+
+|PyPI version|
+
+Installation
+------------
+
+.. code:: bash
+
+   $ pip install crc-calculator
+
+How to use
+----------
+
+.. code:: bash
+
+   $ crc -h
+    usage: crc -p [POLYNOMIAL] -d [DATA]
+
+   $ crc --polynomial 100101 --data 101101001
+    checksum: 00010
+    validation: 00000
+
+.. |PyPI version| image:: https://img.shields.io/pypi/v/crc-calculator
+   :target: https://pypi.org/project/crc-calculator/
+

@@ -1,0 +1,11 @@
+crc_calculator/__init__.py,sha256=BG-6osJ87dls_Ls76Q9-IOx77Vgs7OoHb2xM8uxi0ZY,51
+crc_calculator/__main__.py,sha256=ULngSbHY_wwV52wReqrslOc2vIFeIHdFvPzutNUKyiw,93
+crc_calculator/calculator.py,sha256=Gu7Hrj_UOpND_HqUETnq7pkGujwB4kFuBvADqjV80T4,1141
+crc_calculator/cli.py,sha256=Dr3B-yMMyZTpin1hXXv0TMLXSEG0cQjV4WJdTjxyKGs,882
+crc_calculator/parser.py,sha256=8ScjjsLK9ReQu_oBCSyo_jWikHpmpuukf1Hll-P6z1I,1736
+crc_calculator/utils.py,sha256=fJrjrfPXuoHVdmn9QwUY8E9sFtxXqVPFCsEVA8KsMO8,561
+crc_calculator-0.6.2.dist-info/entry_points.txt,sha256=q81wPhQgeyRbp7adZFt6nLzgNN5A4pQRb66r-xTfBW4,47
+crc_calculator-0.6.2.dist-info/LICENSE,sha256=L-qpK-Ts6XkgLadKNW_W2Ka3JAWgMUz6RQmtvGBFFV4,1069
+crc_calculator-0.6.2.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+crc_calculator-0.6.2.dist-info/METADATA,sha256=bHLp9s4j2j6Dj1dDRSuXV7VWHAx0LQMEkBm-_-hCN7k,769
+crc_calculator-0.6.2.dist-info/RECORD,,
