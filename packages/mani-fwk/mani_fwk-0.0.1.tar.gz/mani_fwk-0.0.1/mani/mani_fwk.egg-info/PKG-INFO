@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: mani-fwk
+Version: 0.0.1
+Summary: A simple framework for building complex web applications.
+Home-page: https://palletsprojects.com/p/flask
+Author: Joan Valduvieco
+Author-email: jvalduvieco@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/jvalduvieco/mani
+Project-URL: Issue Tracker, https://github.com/jvalduvieco/mani/issues/
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.10
+Description-Content-Type: "text/markdown"
+License-File: LICENSE
+
+# Mani framework
+A small CQRS inspired framework with many things.
+
+![build status](https://github.com/jvalduvieco/mani/actions/workflows/ci.yml/badge.svg)
+
+
