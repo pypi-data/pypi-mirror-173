@@ -1,0 +1,10 @@
+README.md
+setup.py
+facleaning/Cleaning.py
+facleaning/Data.py
+facleaning/LanguageCheck.py
+facleaning/__init__.py
+facleaning.egg-info/PKG-INFO
+facleaning.egg-info/SOURCES.txt
+facleaning.egg-info/dependency_links.txt
+facleaning.egg-info/top_level.txt
