@@ -1,0 +1,4 @@
+requests
+randomname
+msgpack
+tenacity
