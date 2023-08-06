@@ -1,0 +1,12 @@
+trustfall-0.1.3.dist-info/METADATA,sha256=NxkJIRf3TGwznoWJjiQUVIJsJ-tsQTXSwoheHn09JFA,2511
+trustfall-0.1.3.dist-info/WHEEL,sha256=fNktRpP25hCXanHuZRhhXjlqsVoXLg5wFDWyfF52O9Y,145
+trustfall/execution.py,sha256=uZlk3A2OLXIAYiiRIO13ijdmhjjPC_oK6TrosdR3AEM,628
+trustfall/adapter.py,sha256=0UxfyKaJvnBb_HfSmq5F7BKSttnCfH1gEoFJZe0FLTo,6671
+trustfall/tests/numbers_adapter.py,sha256=sbnYSgYS0OJR2iz_LBs6vSU0aI999lGy2SDYwSd4ZBw,2713
+trustfall/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trustfall/tests/test_schema.py,sha256=sL3h7bLpwQwxhaaLC8NS6IrUwblB7F3xTfrIAeyZ7ng,845
+trustfall/tests/test_execution.py,sha256=dI40YiEPMrQx_vn4qcEyeUfTrNL7IDk6LlXdxlA5coM,7049
+trustfall/__init__.py,sha256=rYuSm1yK8qWPnZMibx5KJwbta1Jww6fXgl5qRyMnK0w,856
+trustfall/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trustfall/trustfall.cpython-39-darwin.so,sha256=OTOEcbIbDGe4_OFNYk5wx5RazXaDP97_typxSsz-Tlo,7232143
+trustfall-0.1.3.dist-info/RECORD,,
