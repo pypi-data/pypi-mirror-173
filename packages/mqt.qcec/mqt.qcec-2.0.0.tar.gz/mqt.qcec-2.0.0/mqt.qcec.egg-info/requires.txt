@@ -1,0 +1,31 @@
+qiskit-terra>=0.20
+retworkx<0.12.0,>=0.11.0
+
+[:python_version < "3.10"]
+importlib_resources>=5.0
+
+[coverage]
+mqt.qcec[test]
+coverage[toml]>=6.3
+pytest-cov>=3
+
+[dev]
+mqt.qcec[coverage,docs]
+
+[docs]
+sphinx>=5
+sphinx-rtd-theme
+sphinxcontrib-bibtex>=2.4.2
+sphinx-copybutton
+sphinx-hoverxref
+pybtex>=0.24
+ipython
+ipykernel
+nbsphinx
+qiskit-terra[visualization]
+
+[docs:python_version < "3.10"]
+importlib_metadata>=4.4
+
+[test]
+pytest>=7
