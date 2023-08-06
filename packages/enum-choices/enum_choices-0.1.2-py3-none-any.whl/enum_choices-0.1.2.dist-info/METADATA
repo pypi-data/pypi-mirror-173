@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: enum-choices
+Version: 0.1.2
+Summary: a choices
+Home-page: https://github.com/pydtools/choices/
+Author: huoyinghui
+Author-email: yhhuo@yunjinginc.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Bug Tracker, https://github.com/pydtools/choices/issues
+Project-URL: Documentation, https://github.com/pydtools/choices/wiki
+Project-URL: Repository, https://github.com/pydtools/choices/
+Project-URL: github, https://github.com/pydtools/choices/
