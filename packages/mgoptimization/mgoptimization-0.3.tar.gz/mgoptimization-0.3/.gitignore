@@ -1,0 +1,10 @@
+
+*.toml
+*.gz
+*.whl
+*.xml
+*.iml
+*.csv
+*.log
+.ipynb_checkpoints/Untitled-checkpoint.ipynb
+*.pyc
