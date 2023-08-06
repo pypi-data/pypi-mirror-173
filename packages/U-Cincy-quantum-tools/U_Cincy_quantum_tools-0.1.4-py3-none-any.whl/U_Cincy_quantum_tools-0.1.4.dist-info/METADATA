@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: U-Cincy-quantum-tools
+Version: 0.1.4
+Summary: Provides functionaliy for UC_Quantum_Lab development tools
+Home-page: https://github.com/brodkemd/UCQ_tools
+Author: Marek Brodke, with support from the University of Cincinnati
+Author-email: brodkemd@mail.uc.edu
+License: MIT
+Keywords: development
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: qiskit (>=0.36)
+Requires-Dist: matplotlib (>=2.2.0)
+Requires-Dist: qiskit-aer (>=0.10.4)
+Requires-Dist: qiskit-ibmq-provider (>=0.19.1)
+Requires-Dist: qiskit-ignis (>=0.7.0)
+Requires-Dist: qiskit-terra (>=0.20.1)
+Requires-Dist: pylatexenc (>=2.0)
+
+Provides functionaliy for UC_Quantum_Lab development tools
