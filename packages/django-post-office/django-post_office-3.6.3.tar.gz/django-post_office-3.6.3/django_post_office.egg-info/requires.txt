@@ -1,0 +1,10 @@
+bleach[css]
+django>=2.2
+jsonfield>=3.0
+pytz
+
+[prevent-XSS]
+bleach
+
+[test]
+tox>=2.3
