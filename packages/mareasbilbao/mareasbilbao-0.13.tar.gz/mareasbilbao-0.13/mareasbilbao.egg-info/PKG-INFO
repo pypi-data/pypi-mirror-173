@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mareasbilbao
+Version: 0.13
+Summary: Get to know the tides of bilbao
+Home-page: https://github.com/mikeljuarez/mareasbilbao
+Download-URL: https://github.com/mikeljuarez/mareasbilbao/archive/refs/tags/mareasbilbao-0.13.tar.gz
+Author: Mikel Juarez
+Author-email: mikel.juarez@alumni.mondragon.edu
+License: MIT
+Keywords: scraping,easy,scraper,website,download,links,images,videos
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE
+License-File: LICENSE.txt
