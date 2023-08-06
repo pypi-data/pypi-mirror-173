@@ -1,0 +1,16 @@
+_geoslib.pyd,sha256=SihnhectsP7BVDM7smiuH2gX3RhbWEJ6Afd8TKhEc4w,54784
+basemap-1.3.5-py2.7-nspkg.pth,sha256=g9pwhlfLQRispACfr-Zaah4Psceyhyx9K_qv929IpMo,570
+geos_c.dll,sha256=tpJbpt8FxlfOdvB7QqLpq7CXX27UpwMDYu1rnXw8_r0,882176
+mpl_toolkits/basemap/__init__.py,sha256=L3_te_c4iRzy2UVq8wNCslMfaJvVhz0TmjF_9oRMS6s,253678
+mpl_toolkits/basemap/cm.py,sha256=pw17zRVfom_Y-iPr9sjJ2zzZpHViDcFv2YHRobJaV5k,47867
+mpl_toolkits/basemap/diagnostic.py,sha256=p333X5Qhhgldc4GM4MWyfvTaqnisu-yxbBTiUF84RPk,4026
+mpl_toolkits/basemap/proj.py,sha256=C-RCRhFczdp9kTWhXlImkvcaph4YOCkcS0S_RyK55O8,18032
+mpl_toolkits/basemap/solar.py,sha256=J4vtxYimZ3MwVOGnNNAGesq6NEzXX0RW-78eAkHqHYY,4834
+mpl_toolkits/basemap/test.py,sha256=iYvluz5LvETusgCMW58py4dvpS14tIPbIV8tRi9uAFo,10153
+basemap-1.3.5.dist-info/LICENSE,sha256=wrPV-NGgktGiiBhnQSUbBm-RSOaLv4wBaAqE9IfLMLE,1060
+basemap-1.3.5.dist-info/LICENSE.geos,sha256=oZDcnIBDdV2Q-LCnX6ZrnkLUr0yYC_XdxjPwEk2zzuc,26430
+basemap-1.3.5.dist-info/METADATA,sha256=Bk5uCjx18DfXRvcHKmbkzIeqKbTRMti_MJ8YYLjGpW8,7383
+basemap-1.3.5.dist-info/WHEEL,sha256=6T9Pg2pD_yPHLuMTEFjb-Zm7zh3tSJ_FWsG-py1owQ4,101
+basemap-1.3.5.dist-info/namespace_packages.txt,sha256=A2PHFg9NKYOU4pEQ1h97U0Qd-rB-65W34XqC-56ZN9g,13
+basemap-1.3.5.dist-info/top_level.txt,sha256=ZjL7WiCmlSHcJ_SjYWRzejHmMrpJgRDQRy3Et0bu66Y,22
+basemap-1.3.5.dist-info/RECORD,,
