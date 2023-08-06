@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+text2struct/__init__.py
+text2struct/_modidx.py
+text2struct/core.py
+text2struct.egg-info/PKG-INFO
+text2struct.egg-info/SOURCES.txt
+text2struct.egg-info/dependency_links.txt
+text2struct.egg-info/entry_points.txt
+text2struct.egg-info/not-zip-safe
+text2struct.egg-info/requires.txt
+text2struct.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[nbdev]
+text2struct = text2struct._modidx:d
