@@ -1,0 +1,10 @@
+pyproject.toml
+oestatpy/__init__.py
+oestatpy/logic.py
+oestatpy/table.py
+oestatpy/tools.py
+oestatpy.egg-info/PKG-INFO
+oestatpy.egg-info/SOURCES.txt
+oestatpy.egg-info/dependency_links.txt
+oestatpy.egg-info/requires.txt
+oestatpy.egg-info/top_level.txt
