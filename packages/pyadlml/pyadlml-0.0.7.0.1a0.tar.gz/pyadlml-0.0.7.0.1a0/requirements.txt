@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+joblib
+mega.py
+dask[complete]
+matplotlib
+scipy
+sqlalchemy

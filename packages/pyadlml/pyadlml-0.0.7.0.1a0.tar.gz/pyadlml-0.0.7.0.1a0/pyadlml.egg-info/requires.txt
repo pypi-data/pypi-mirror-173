@@ -1,0 +1,9 @@
+dask[complete]
+joblib
+matplotlib
+mega.py
+numpy
+pandas
+scipy
+sklearn
+sqlalchemy
