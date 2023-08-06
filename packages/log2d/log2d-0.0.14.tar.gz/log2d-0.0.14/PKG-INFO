@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: log2d
+Version: 0.0.14
+Summary: Simple, sane, and sensible Logging
+Home-page: https://github.com/Pfython/log2d
+Download-URL: https://github.com/Pfython/log2d/archive/0.0.14.tar.gz
+Author: Peter Fison
+Author-email: peter@awsom.solutions
+License: MIT License
+Keywords: log2d,logging,log,logs,monitoring,simple,sensible,sane
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Desktop Environment :: File Managers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Acceptance
+Classifier: Topic :: Software Development :: Testing :: Unit
+Classifier: Topic :: System
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# `log2d`
+
+<p align="center">
+    <a href="https://pypi.python.org/pypi/log2d"><img alt="PyPI" src="https://img.shields.io/pypi/v/log2d.svg"></a>
+	<a href="https://pypi.python.org/pypi/log2d"><img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/log2d.svg"></a>
+    <a href="https://pepy.tech/project/log2d"><img alt="Downloads" src="https://pepy.tech/badge/log2d"></a>
+    <a href="#Contribution" title="Contributions are welcome"><img src="https://img.shields.io/badge/contributions-welcome-green.svg"></a>
+    <a href="https://github.com/{self.Github_username}/log2d/releases" title="log2d"><img src="https://img.shields.io/github/release-date/{self.Github_username}/log2d?color=green&label=updated"></a>
+    <img alt="PyPI - License" src="https://img.shields.io/pypi/l/log2d">
+    <img alt="PyPI - Status" src="https://img.shields.io/pypi/status/log2d">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{self.Github_username}/log2d">
+    <a href="https://twitter.com/@{self.Github_username}" title="Follow us on Twitter"><img src="https://img.shields.io/twitter/follow/{self.Github_username}.svg?style=social&label=Follow"></a>
+</p>
+
+![Replace with your own inspirational logo here](https://github.com/PFython/easypypi/blob/main/easypypi.png?raw=true)
+
+## CONTENTS
+
+1. [OVERVIEW](#1.-OVERVIEW)
+2. [INSTALLATION](#2.-INSTALLATION)
+3. [BASIC USE](#3.-BASIC-USE)
+4. [UNDER THE BONNET](#4.-UNDER-THE-BONNET)
+5. [CONTRIBUTING](#5.-CONTRIBUTING)
+6. [CREDITS](#6.-CREDITS)
+7. [PAYING IT FORWARD](#7.-PAYING-IT-FORWARD)
+
+
+## 1. OVERVIEW
+Simple, sane, and sensible Logging
+
+## 2. INSTALLATION
+
+    pip install log2d
+
+
+## 3. BASIC USE
+
+    >>> import log2d
+
+
+## 4. UNDER THE BONNET
+
+Describe any important inner workings of your Package, including API details.
+
+## 5. CONTRIBUTING
+
+Contact Peter Fison peter@awsom.solutions or feel free to raise Pull Requests / Issue in the normal Github way.
+
+## 6. CREDITS
+
+Who helped you or inspired you?  What other packages are you using or have you modified?
+
+## 7. PAYING IT FORWARD
+
+If `log2d` helps you save time and focus on more important things, please feel free to to show your appreciation by starring the repository on Github.
+
+I'd also be delighted if you wanted to:
+
+<a href="https://www.buymeacoffee.com/{self.Github_username}" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" width="217px" ></a>
