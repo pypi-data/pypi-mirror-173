@@ -1,0 +1,8 @@
+sendroid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sendroid/_java_stuff.py,sha256=IyDJNx-LwN5g9OVmXQlpCRVdSUD8IcMLqyPonVTRL6Y,1542
+sendroid/manager.py,sha256=qV4NQqKhxj_6vRqaGFzlFIY6kI2r_8sStG4qMldvDM0,3050
+sendroid/sensor.py,sha256=bV0A_fo7LHR_b8A13bjqxlfx_9LixKvXhKis9AeHjfw,4211
+sendroid-1.0b1.dist-info/METADATA,sha256=tRtW4y24rdFysb0bqq4XwL49t-6NM1XJVLWyGpSEAw8,522
+sendroid-1.0b1.dist-info/WHEEL,sha256=NaLmgHHW_f9jTvv_wRh9vcK7c7EK9o5fwsIXMOzoGgM,87
+sendroid-1.0b1.dist-info/licenses/LICENSE,sha256=ClCs9ges4vY6NA_h7C3bvz2SnpI27soMCbR0RwV6vX8,11512
+sendroid-1.0b1.dist-info/RECORD,,

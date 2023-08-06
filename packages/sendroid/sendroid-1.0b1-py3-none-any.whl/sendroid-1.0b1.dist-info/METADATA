@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sendroid
+Version: 1.0b1
+Summary: Android sensors manager for Kivy
+Project-URL: Homepage, https://github.com/bwilk315/sendroid
+Project-URL: License, https://www.apache.org/licenses/LICENSE-2.0.txt
+Author-email: bwilk315 <bwilk315@onet.pl>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Sendroid
+
