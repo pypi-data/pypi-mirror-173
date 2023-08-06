@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: notify-via-slack
+Version: 0.1.1
+Summary: notify messages on channels
+Home-page: https://github.com/lucassimon/notify-via-slack
+License: MIT
+Keywords: slack
+Author: Lucas
+Author-email: lucassrod@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: python-decouple (>=3.6,<4.0)
+Requires-Dist: python-dotenv (>=0.21.0,<0.22.0)
+Requires-Dist: slack-sdk (>=3.19.2,<4.0.0)
+Project-URL: Repository, https://github.com/lucassimon/notify-via-slack
+Description-Content-Type: text/markdown
+
+# Notify via slack
+
+Install: `pip install notify-via-slack`
+
+## Usage
+
+Create an app in [slack api](https://api.slack.com/apps)
+
+Save the bot token
+
+Copy the .env.example to .env `cp .env.example .env`
+
+Replace the `SLACK_BOT_TOKEN`
+
+Send a message
+
+```python
+slack.notify import SlackNotify
+
+handler = SlackNotify(app_name='My app name')
+handler.notify(message='some message', emit_log=True, is_error=True)
+
+```
+

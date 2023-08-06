@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "notify_via_slack"
+version = "0.1.1"
+description = "notify messages on channels"
+authors = ["Lucas <lucassrod@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/lucassimon/notify-via-slack"
+repository = "https://github.com/lucassimon/notify-via-slack"
+keywords = ["slack"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+include = [
+    "LICENSE",
+]
+packages = [{include = "slack"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^0.21.0"
+slack-sdk = "^3.19.2"
+python-decouple = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+ipdb = "^0.13.9"
+isort = "^5.10.1"
+black = "^22.8.0"
+pylint = "^2.15.5"
+
+[tool.black]
+line_length=120
+
+[tool.isort]
+profile="black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
