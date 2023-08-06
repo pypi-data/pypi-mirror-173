@@ -1,0 +1,11 @@
+pypipr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypipr/iconsole.py,sha256=CqMttHEM2uQ5JRJ3u9OcZM5UREDgMxiRWMgfQ0aMXjg,1883
+pypipr/iconstant.py,sha256=870SJCy6G7LemFDhs8F2zhiISbyq8TXY3QqEq7EWNuM,199
+pypipr/idatetime.py,sha256=a4LOYhKxrZCYCBF3lvgHFrWXqdA09wiO7iuVoReen_Y,571
+pypipr/ifile.py,sha256=0KSgFRfu2zF0Hsbgmk66AuTZYPrrXlSFG0RghPG9f88,1273
+pypipr/igithub.py,sha256=pRNtuFLn7HnlTjaEoiNgOC467dR3eOK8NtE8udqWr7M,754
+pypipr/iregex.py,sha256=-kV3DboSvl2aSLMQUuJb3z_pL-_jmxrC3lq6HmQl0g8,523
+pypipr/pypipr.py,sha256=orzGAU6xGw2pPVfNyiLYAY6l01_ARyWQYxCEiD7bAe8,739
+pypipr-0.1.19.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pypipr-0.1.19.dist-info/METADATA,sha256=WdDq--h6ji1dvYJG-9VbbJjrr0oautZy1l0E4ShLul0,4437
+pypipr-0.1.19.dist-info/RECORD,,
