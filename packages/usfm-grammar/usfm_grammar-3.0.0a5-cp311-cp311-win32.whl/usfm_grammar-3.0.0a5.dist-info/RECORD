@@ -1,0 +1,11 @@
+grammar_rebuild.py,sha256=T7Arj7-eEnh771muP2ArTE3dct_h-HAeRhu7IRVQwzg,675
+usfm_grammar/__init__.py,sha256=sN56G51m8FfkSejT1RFFJKewGUZoXXt5d12Zbe0RTso,227
+usfm_grammar/__main__.py,sha256=16vqLDwo5IxEvGU_RoY_Kjp_cLsu-uuqfUxZ_qinvX4,2894
+usfm_grammar/my-languages.so,sha256=ZTpNV93flrm8ouFCYJhei0oO7H32jRy6_jOaezauLno,2803200
+usfm_grammar/usfm_parser.py,sha256=SlTmmXNAV1qs3MNiKBKj8Ebe2SS1aiiBi0Kg79GpSQM,35442
+usfm_grammar-3.0.0a5.dist-info/LICENSE,sha256=OUK_Gi1nXYeTR6bbPNzsAd0FR7DF_jI1BEEVehRloVo,1074
+usfm_grammar-3.0.0a5.dist-info/METADATA,sha256=BzIWQf4k7OaKPbass-2h8F_qINVYX5L04V-7KdaIJl4,3911
+usfm_grammar-3.0.0a5.dist-info/WHEEL,sha256=ZFq5jXtyqHWnKeYLzD3mUo8rAiNhy_FNqiMNKNc1pHA,98
+usfm_grammar-3.0.0a5.dist-info/entry_points.txt,sha256=4cmMtPgfaaRylQQz4_97G-ORYOr7StOuMP1QsTFeCWM,60
+usfm_grammar-3.0.0a5.dist-info/top_level.txt,sha256=YC5n05QjjZlG6fS0pXSq9qVU83CnzMKgK_itjkKBNgw,29
+usfm_grammar-3.0.0a5.dist-info/RECORD,,
