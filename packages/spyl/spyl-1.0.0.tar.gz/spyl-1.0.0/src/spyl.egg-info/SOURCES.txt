@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/spyl/__init__.py
+src/spyl.egg-info/PKG-INFO
+src/spyl.egg-info/SOURCES.txt
+src/spyl.egg-info/dependency_links.txt
+src/spyl.egg-info/requires.txt
+src/spyl.egg-info/top_level.txt

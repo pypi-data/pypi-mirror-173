@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dependencies = [
+  "colorama >= 0.4.5"
+]
+name = "spyl"
+version = "1.0.0"
+authors = [
+  { name="PentaMine", email="author@example.com" },
+]
+description = "A simple python logger"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PentaMine/python-logger"
+"Bug Tracker" = "https://github.com/PentaMine/python-logger/issues"
