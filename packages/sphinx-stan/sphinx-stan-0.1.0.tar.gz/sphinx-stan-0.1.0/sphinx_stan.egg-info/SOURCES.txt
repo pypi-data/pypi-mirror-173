@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+VERSION
+setup.cfg
+setup.py
+sphinx_stan.egg-info/PKG-INFO
+sphinx_stan.egg-info/SOURCES.txt
+sphinx_stan.egg-info/dependency_links.txt
+sphinx_stan.egg-info/requires.txt
+sphinx_stan.egg-info/top_level.txt
+sphinxcontrib/stan/__init__.py
+tests/test_sphinx_stan.py

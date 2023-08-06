@@ -1,0 +1,7 @@
+sphinx
+version-wizard
+
+[tests]
+flake8
+pytest
+twine
