@@ -1,0 +1,11 @@
+swish_qr/__init__.py,sha256=qf3eXoii8Ppqh0ObXw7QCAbqu9Rn6l8G3nLRbpKYPUI,42
+swish_qr/png.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swish_qr/qrcodegen.py,sha256=4hexz2P1AwpAsbvgPxRQHRZohty6A60HM4FKI8HIaHw,49313
+swish_qr/svg.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swish_qr/svg_templates.py,sha256=r7_q84fkkT_2Bc4WIcA_u-9mv6EeLSJvUswzq4p0qPI,2001
+swish_qr/swish_qr.py,sha256=4uj2k6EXCOo1RorV9TuMKpKFgPZbn9d2o57EWPTQl70,5851
+swish_qr-0.2.3.dist-info/LICENSE,sha256=B7wuxjrBk0EhBh58G4DLfZPftI7lhEw1KCA6NyymUTM,1100
+swish_qr-0.2.3.dist-info/METADATA,sha256=uqGMWyueFez9KIl1sQRF1sMqRFP61FPont94EMn0I2U,2489
+swish_qr-0.2.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+swish_qr-0.2.3.dist-info/top_level.txt,sha256=as90_eutyVANbCwJNrBcXwHYy4a40mRxAyX-tDD1mYQ,9
+swish_qr-0.2.3.dist-info/RECORD,,
