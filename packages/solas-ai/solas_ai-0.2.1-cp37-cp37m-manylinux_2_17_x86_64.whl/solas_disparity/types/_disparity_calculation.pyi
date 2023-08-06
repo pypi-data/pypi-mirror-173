@@ -1,0 +1,11 @@
+from ._enum_base import EnumBase as EnumBase
+
+class DisparityCalculation(EnumBase):
+    ADVERSE_IMPACT_RATIO: str
+    SEGMENTED_ADVERSE_IMPACT_RATIO: str
+    ADVERSE_IMPACT_RATIO_BY_QUANTILE: str
+    CATEGORICAL_ADVERSE_IMPACT_RATIO: str
+    STANDARDIZED_MEAN_DIFFERENCE: str
+    RESIDUAL_STANDARDIZED_MEAN_DIFFERENCE: str
+    ODDS_RATIO: str
+    NOT_SET: str
