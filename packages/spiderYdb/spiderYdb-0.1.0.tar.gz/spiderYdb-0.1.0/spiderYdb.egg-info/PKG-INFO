@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: spiderYdb
+Version: 0.1.0
+Summary: My first ORM for work with YDB
+Author: Vyacheslav Linnik
+License: MIT
