@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: experiences
+Version: 0.1.2
+Summary: Experience Research
+Author: Joe Chelladurai
+Requires-Python: >=2.7, !=3.0.*, !=3.1*
+License-File: LICENSE
+Requires-Dist: pandas (>=1.0)
+Requires-Dist: scipy (==1.1)
+
