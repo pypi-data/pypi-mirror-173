@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/destination_kvdb.egg-info/PKG-INFO
+src/destination_kvdb.egg-info/SOURCES.txt
+src/destination_kvdb.egg-info/dependency_links.txt
+src/destination_kvdb.egg-info/top_level.txt
