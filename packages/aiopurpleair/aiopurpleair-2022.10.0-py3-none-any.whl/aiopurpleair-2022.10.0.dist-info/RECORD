@@ -1,0 +1,9 @@
+aiopurpleair/__init__.py,sha256=zZqwqUnvwDE_MJzxTCvw9qIHWeyvRqFvJBgSNsSukKA,39
+aiopurpleair/api.py,sha256=QNdQAa0SDd3zPYXonqDlXgCuWnL-LjYVXzoeRUdCfIU,28
+aiopurpleair/const.py,sha256=9SVwtsu3UAaxyJxcKtIN2GGXsQdgXaSLZdOQMreVk3A,88
+aiopurpleair/errors.py,sha256=-Z3WfvyzLVFzRzB5iPuHjr_ODin2xlNy2LXH0ZkV5zs,113
+aiopurpleair/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiopurpleair-2022.10.0.dist-info/LICENSE,sha256=GJ01d7aBgivx-5WmtiJPHRowcDvIxcxs4skapKPTFg0,1067
+aiopurpleair-2022.10.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+aiopurpleair-2022.10.0.dist-info/METADATA,sha256=Z0RPVUbkTKNT-hlxyiM0bsWjUhPwcKFwJ7Y1aQQplek,3486
+aiopurpleair-2022.10.0.dist-info/RECORD,,
