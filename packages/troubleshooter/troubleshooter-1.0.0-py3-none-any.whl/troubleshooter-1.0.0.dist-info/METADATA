@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: troubleshooter
+Version: 1.0.0
+Summary: A troubleshooting toolbox for MindSpore. Git version: [sha1]:1d2f074, [branch]: (HEAD -> master, origin/master, origin/HEAD)
+Home-page: https://www.mindspore.cn/
+Author: Tiger Miao
+Author-email: asktiger@yeah.net
+License: Apache 2.0
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
+Requires-Dist: PySnooper (>=1.1.0)
+Requires-Dist: prettytable (>=3.0.0)
+
