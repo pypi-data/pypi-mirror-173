@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: jiosaavnapi
+Version: 0.0.1
+Summary: Unofficial API wrapper for Jiosaavn.
+Author: ZingyTomato
+License: MIT
+Requires-Dist: requests
+Requires-Dist: pyDes
+
