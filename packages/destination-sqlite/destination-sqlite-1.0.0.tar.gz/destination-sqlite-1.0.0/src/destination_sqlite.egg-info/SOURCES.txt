@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/destination_sqlite.egg-info/PKG-INFO
+src/destination_sqlite.egg-info/SOURCES.txt
+src/destination_sqlite.egg-info/dependency_links.txt
+src/destination_sqlite.egg-info/top_level.txt
