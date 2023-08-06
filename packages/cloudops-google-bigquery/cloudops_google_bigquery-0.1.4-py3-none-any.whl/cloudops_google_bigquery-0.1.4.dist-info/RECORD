@@ -1,0 +1,8 @@
+cloudops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudops/google/__init__.py,sha256=eWa3GuEK3hAszBBFKqH03K1WMFIsBx3N5CIOf6Ig2LM,115
+cloudops/google/bigquery.py,sha256=TDq9vGEeUf4tE9_fX4ozWnEN9lA3KFVC9nrn7rvU7Wk,4994
+cloudops/logging.py,sha256=n09U978C24CwQc-RR-fv-nmY_9GKVNbH5PruXPKPoRo,527
+cloudops_google_bigquery-0.1.4.dist-info/LICENSE,sha256=WTpVHJVcwtu1Qd8tLwC_07HIEfNFasL6doY3jBlabU8,1088
+cloudops_google_bigquery-0.1.4.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+cloudops_google_bigquery-0.1.4.dist-info/METADATA,sha256=g7Kw0fLzkH5qAD0IVzhyhQMMJW3WpO_o1747rwocOKo,806
+cloudops_google_bigquery-0.1.4.dist-info/RECORD,,
