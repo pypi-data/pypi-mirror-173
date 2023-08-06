@@ -1,0 +1,12 @@
+boppf/__init__.py,sha256=su_2Xd7VRTX94a-ulQfe9JEGU0qaj9uY2SPcQReN70E,82
+boppf/boppf.py,sha256=PEa0X3lRmukV_9--Kg1qE1zY3FdJu_fXXxepgTtlwCY,4257
+boppf/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boppf/utils/ax.py,sha256=idstJlFAT9PojfbM07XAfLmr6L_6S4XuMopRj2wJPMk,14522
+boppf/utils/data.py,sha256=3QlaDUXgSr0qpQ7cmG2P9irQ-oCkC1WBRjaqwpSdOpU,8326
+boppf/utils/particle_packing.py,sha256=RLw77hVDiQccsLRpkxBkFAP2U0yqVEpOvmTBu3ZIyW8,7046
+boppf/utils/plotting.py,sha256=YX1Ma84nEtzYShZq5HsTPot57ztipyjMji36146NZfc,14142
+boppf/utils/run_executable.py,sha256=PpjciVk_Gc0tiGU00tNCB1OEeqlZ2e07RVBi4VL_sFU,157
+boppf-0.1.0.dist-info/LICENSE,sha256=2meHP-c5RTnNwyBI4rekKhGbQLQZ2UZxsLOaAJXMA2Q,1112
+boppf-0.1.0.dist-info/WHEEL,sha256=jPMR_Dzkc4X4icQtmz81lnNY_kAsfog7ry7qoRvYLXw,81
+boppf-0.1.0.dist-info/METADATA,sha256=TBCkt0Oh29099VgnkMTthITHbnYtVobtg53J9NgibPA,6181
+boppf-0.1.0.dist-info/RECORD,,
