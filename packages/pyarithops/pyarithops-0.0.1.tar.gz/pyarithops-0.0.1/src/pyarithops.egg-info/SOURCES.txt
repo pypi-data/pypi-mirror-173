@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyarithops/__init__.py
+src/pyarithops.egg-info/PKG-INFO
+src/pyarithops.egg-info/SOURCES.txt
+src/pyarithops.egg-info/dependency_links.txt
+src/pyarithops.egg-info/top_level.txt
