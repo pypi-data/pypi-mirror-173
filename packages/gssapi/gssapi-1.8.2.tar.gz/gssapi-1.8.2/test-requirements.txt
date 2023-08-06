@@ -1,0 +1,7 @@
+build
+flake8
+parameterized
+k5test
+decorator
+mypy==0.971
+types-decorator
